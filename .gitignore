@@ -10,3 +10,4 @@ _ReSharper.*
 .svn
 *.swp
 lib/EPiServer/*
+*~
