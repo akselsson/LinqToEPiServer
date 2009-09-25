@@ -1,0 +1,3007 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<languages>
+  <language name="français" id="fr">
+    <accesslevels>
+      <accesslevel name="Administer">
+        <description>Administrer</description>
+      </accesslevel>
+      <accesslevel name="Create">
+        <description>Créer</description>
+      </accesslevel>
+      <accesslevel name="Delete">
+        <description>Supprimer</description>
+      </accesslevel>
+      <accesslevel name="Edit">
+        <description>Modifier</description>
+      </accesslevel>
+      <accesslevel name="NoAccess">
+        <description>Aucun accès</description>
+      </accesslevel>
+      <accesslevel name="Publish">
+        <description>Publier</description>
+      </accesslevel>
+      <accesslevel name="Read">
+        <description>Lire</description>
+      </accesslevel>
+    </accesslevels>
+    <admin>
+      <admingroup>
+        <approvedheading>Approuvé</approvedheading>
+        <deletegrouptooltip>Supprimer un groupe</deletegrouptooltip>
+        <description see="/labels/description" />
+        <group>				Groupe</group>
+        <groupexists>		Il existe déjà un groupe avec le nom {0}</groupexists>
+        <heading>			Administrer des groupes</heading>
+        <info>				Permet de supprimer ou d'ajouter des groupes utilisés pour assigner des droits d'accès.</info>
+        <ldapinfo>	Permet d'importer des informations sur les groupes à partir du serveur LDAP. Entrez une expression de recherche dans le champ, par exemple User* retournera tous les groups/OU:s commençant par User.</ldapinfo>
+        <ldappath>			Serveur LDAP</ldappath>
+        <localgroup>		Groupes Windows</localgroup>
+        <lockedoutheading>Verrouillé</lockedoutheading>
+        <membersofrole>Utilisateurs du groupe "{0}"</membersofrole>
+        <newgroupinfo>Créer un groupe à utiliser dans EPiServer</newgroupinfo>
+        <noroleprovider>Aucun fournisseur de rôle n’est configuré et/ou activé dans Web.config.</noroleprovider>
+        <provider>Fournisseur</provider>
+        <removeuserfromgrouptooltip>Supprimer un utilisateur du groupe</removeuserfromgrouptooltip>
+        <roledeletefailed>Impossible de supprimer le groupe "{0}"</roledeletefailed>
+        <rolenameinvalid>Nom de groupe incorrect</rolenameinvalid>
+        <syncbutton>		Synchroniser</syncbutton>
+        <syncinfo>	Synchroniser les informations concernant les groupes locaux avec EPiServer</syncinfo>
+        <syncldapbutton>	Importer du serveur LDAP</syncldapbutton>
+        <userremovedfromrole>Le membre '{0}' du groupe '{1}' a été supprimé</userremovedfromrole>
+      </admingroup>
+      <categories>
+        <deleletereferencewarning>Une ou plusieurs pages renvoient à la catégorie "{0}" que vous essayez de supprimer.</deleletereferencewarning>
+        <deleteconfirmmessage>Voulez-vous quand même supprimer la catégorie "{0}" et toutes ses sous-catégories‑?</deleteconfirmmessage>
+        <delreferenceconfirm>Voulez-vous quand même supprimer cette catégorie ?</delreferenceconfirm>
+        <heading>Catégories</heading>
+        <helpadd>Ajoutez une catégorie en dessous de la catégorie sélectionnée. Notez qu'aucune modification ne sera effectuée tant que vous n'aurez pas cliqué sur Enregistrer.</helpadd>
+        <helpdelete>Permet de supprimer la catégorie. Notez que si la catégorie a des sous-catégories, les sous-catégories remonteront d'un niveau.</helpdelete>
+        <helpmovedown>Déplace la catégorie d'un niveau vers le bas dans la liste.</helpmovedown>
+        <info>Définissez les catégories utilisées par votre site Web. Ces catégories seront disponibles en mode édition pour chaque page sous l'en-tête "Catégories".</info>
+        <movedown>Descendre</movedown>
+        <moveup>Monter</moveup>
+        <notselectable>Non sélectionnable</notselectable>
+        <notvisible>Non visible</notvisible>
+        <tabledescription>Description</tabledescription>
+        <tablename>Nom</tablename>
+        <tableselectable>Sélectionnable</tableselectable>
+        <tablevisible>Visible</tablevisible>
+      </categories>
+      <cleanupupload>
+        <directory>Le répertoire</directory>
+        <heading>Supprimer les fichiers non utilisés</heading>
+        <info>Cliquez sur OK pour supprimer les fichiers des dossiers spécifiques des pages que n'existent plus.En mode édition, les éditeurs peuvent télécharger des images et des documents dans un dossier appelé Fichiers de page ; ces fichiers restent sur le serveur lorsqu’une page est supprimée. Cliquez sur le bouton "OK" pour supprimer ces fichiers.En mode édition, les éditeurs peuvent télécharger des fichiers vers un dossier intitulé "Fichiers de page". Ces fichiers sont conservés sur le serveur une fois les pages supprimées. Ici, vous pouvez supprimer les fichiers inutilisés conservés dans le dossier "Fichiers de page".</info>
+        <leftintact>est resté intact</leftintact>
+        <notdeleted>Impossible de supprimer&amp;nbsp;</notdeleted>
+        <nothing>Rien à supprimer.</nothing>
+        <wasdeleted>a été supprimé</wasdeleted>
+        <wasnotdeleted>n’a pas été supprimé</wasnotdeleted>
+      </cleanupupload>
+      <confirmlanguagespecific>
+        <heading>Les valeurs seront suppriméesConversion du contenu existant</heading>
+        <info>Les valeurs de propriété seront supprimées pour les pages qui existent dans les langues différentes de la langue d'origine.</info>
+        <pagelist>Pages concernées ({0})</pagelist>
+        <title>Avertissement</title>
+      </confirmlanguagespecific>
+      <contentmirroring>
+        <description>Canaux définis dans le système.</description>
+        <displayname see="/admin/contentmirroring/heading" />
+        <heading>Administration de mise en miroir</heading>
+        <info>Définit les canaux de contenu pour la mise en miroir de contenu d'EPiServer CMS vers un système externe.</info>
+        <name>Nom du canal</name>
+      </contentmirroring>
+      <contentmirroringedit>
+        <activatefilter>Activer le filtre</activatefilter>
+        <alllanguages>Actif (toutes les langues sont mises en miroir vers une destination avec support de globalisation)</alllanguages>
+        <automatic>Type de transfert</automatic>
+        <automaticapproval>Approuver automatiquement les modifications</automaticapproval>
+        <channeltype>Type de miroir</channeltype>
+        <confirmdelete>Voulez-vous vraiment supprimer les paramètres de mise en miroir ?</confirmdelete>
+        <filterpropertyname>Filtrer par nom de propriété</filterpropertyname>
+        <filterpropertyvalue>Filtrer par valeur de propriété</filterpropertyvalue>
+        <frompagelink>Page de démarrage</frompagelink>
+        <globalizationsupport>Support de globalisation</globalizationsupport>
+        <heading>Paramètres de mise en miroir</heading>
+        <impersonatedomain>Domaine</impersonatedomain>
+        <impersonatepassword>Définir le mot de passe</impersonatepassword>
+        <impersonateusername>Nom d'utilisateur</impersonateusername>
+        <includeroot>Inclure la page de démarrage</includeroot>
+        <info>Définit les paramètres de ce canal.</info>
+        <language>Langue</language>
+        <name>Nom</name>
+        <noglobalizationsupport>Inactif (la langue d'origine est mise en miroir vers une destination sans support de globalisation)</noglobalizationsupport>
+        <runasanonymoususer>Exécuter en tant qu'utilisateur anonyme</runasanonymoususer>
+        <singlelanguage>Seule "{0}" est mise en miroir vers une destination sans support de globalisation</singlelanguage>
+        <tabfilter>Filtre de la propriété</tabfilter>
+        <tabinformation>Informations</tabinformation>
+        <types>
+          <list>Liste</list>
+          <search>Rechercher (uniquement les pages mises à jour)</search>
+          <tree>Arborescence</tree>
+        </types>
+      </contentmirroringedit>
+      <contentmirroringmanager>
+        <description />
+        <displayname>Service de mise en miroir</displayname>
+      </contentmirroringmanager>
+      <contentmirroringmapping>
+        <delete>Supprimer</delete>
+        <deleteall>Supprimer tous les mappages</deleteall>
+        <deleteallmessage>Voulez-vous vraiment supprimer tous les mappages de ce canal ?</deleteallmessage>
+        <deletemessage>Voulez-vous vraiment supprimer ce mappage ?</deletemessage>
+        <foldermapping>Mappages du dossier</foldermapping>
+        <message>Cette liste indique comment les ID de page et de dossier sont mappés entre le site source et le site distant. Lorsque vous supprimez un mappage, la page ou le dossier cible est déconnecté de sa source. Les prochaines mises à jour de la mise en miroir recréeront la page ou le dossier cible et une copie propre du contenu du dossier.</message>
+        <pagemapping>Mappages de la page</pagemapping>
+        <pagename>Nom de la page</pagename>
+        <sourceid>ID source</sourceid>
+        <targetid>ID cible</targetid>
+        <title>Mise en miroir des mappages pour "{0}"</title>
+      </contentmirroringmapping>
+      <contentmirroringqueue>
+        <created>Créé</created>
+        <deletepackage>Supprimer le package</deletepackage>
+        <deletewarningi0>Voulez-vous vraiment supprimer les modifications de la file ?</deletewarningi0>
+        <deletewarningi1>Vous devez appliquer manuellement les opérations de déplacement et de suppression sur le site de destination</deletewarningi1>
+        <deletewarningi2>Vous devez republier les pages mises à jour et créées</deletewarningi2>
+        <info>Répertorie les pages qui seront mises en miroir à la prochaine exécution du service de mise en miroir.</info>
+        <packagetitle>Package</packagetitle>
+        <pageid>ID de page</pageid>
+        <pagename>Nom de la page</pagename>
+        <title>Mise en miroir de la file pour la destination "{0}" sur "{1}"</title>
+        <type>Modifier le type</type>
+        <warning>Avertissement ! Les pages supprimées du package ne sont pas prises en compte lorsque le site Web est mis en miroir. Les prochaines mises en miroir peuvent en être affectées. Ne cliquez pas sur "Supprimer" si vous voulez inclure toutes les pages du package à la prochaine exécution du service de mise en miroir.</warning>
+      </contentmirroringqueue>
+      <contentmirroringview>
+        <continuereset>Continuer avec la réinitialisation</continuereset>
+        <createdestination>Créer la destination</createdestination>
+        <editmappings>Mappages</editmappings>
+        <editqueue>Modifier la file</editqueue>
+        <errorsamechannelname>Le nom de canal "{0}" est déjà utilisé par un autre canal</errorsamechannelname>
+        <heading>Vue d'ensemble des destinations</heading>
+        <htmlmirroring>HTML</htmlmirroring>
+        <info>Une vue d'ensemble des destinations a été définie pour ce canal.</info>
+        <lastchanges>Les dernières modifications ont été appliquées</lastchanges>
+        <lastexecution>Dernière exécution</lastexecution>
+        <laststatus>Dernier état</laststatus>
+        <name>Destinations</name>
+        <noaction>Aucune modification n'a été appliquée</noaction>
+        <notallowedsourcepage>La mise en miroir est impossible depuis la page racine ou la Corbeille.</notallowedsourcepage>
+        <nousername>Aucun nom d'utilisateur attribué</nousername>
+        <pagemirroring>EPiServer CMS</pagemirroring>
+        <queuelength>Longueur de la file d'attente</queuelength>
+        <reset>Réinitialiser l'état</reset>
+        <resetwarning1>Si vous poursuivez cette action, toutes les pages apparaîtront comme étant créées.</resetwarning1>
+        <resetwarning2>Cette action entraînera la perte des éléments qui n'ont pas été mis miroir dans la destination.</resetwarning2>
+        <settingslocked>Les paramètres de ce canal et ses destinations sont verrouillés, car un travail de mise en miroir a déjà été exécuté avec les paramètres actuels. Les travaux suivants nécessitent des paramètres identiques pour que la mise en miroir s'effectue correctement. Modifiez les paramètres en cliquant sur "Réinitialiser l'état" pour réinitialiser les informations sur les travaux précédents.</settingslocked>
+        <title>Destinations du canal "{0}"</title>
+        <type>Type de cible</type>
+        <xmlmirroring>XML</xmlmirroring>
+      </contentmirroringview>
+      <contentpublisheredit>
+        <applyfilterontemplates>Appliquer le filtre de canal</applyfilterontemplates>
+        <changelog>Fichier journal des modifications</changelog>
+        <confirmdelete>Voulez-vous vraiment supprimer cette destination ?</confirmdelete>
+        <defaultdocument>Nom par défaut des fichiers</defaultdocument>
+        <destinationnameduplicate>Une destination portant ce nom existe déjà</destinationnameduplicate>
+        <flatfiles>Un fichier par page</flatfiles>
+        <heading>Destination</heading>
+        <info>Définit un destinataire des modifications envoyées depuis un canal.</info>
+        <instantpublish>Publier des pages</instantpublish>
+        <name>Nom</name>
+        <nopageref>Les données d'entrée doivent pouvoir être identifiées comme des données PageReference.</nopageref>
+        <pathnameproperty>Utiliser la propriété suivante pour les noms de dossiers</pathnameproperty>
+        <queuecreated>Élément créé</queuecreated>
+        <queueid>Numéro de la file d'attente</queueid>
+        <remotesite>Site distant</remotesite>
+        <rootdir>Chemin d'accès relatif de la racine</rootdir>
+        <selecttype>Sélectionner le type de destination</selecttype>
+        <sitemap>Plan du site global</sitemap>
+        <tabqueue>File d'attente</tabqueue>
+        <tabsettings>Informations</tabsettings>
+        <targetdirectory>Répertoire cible sur le serveur</targetdirectory>
+        <topagelink>Page racine sur la destination</topagelink>
+        <usedirectoryweblinks>Ne pas inclure le nom de fichier dans les liens</usedirectoryweblinks>
+        <verifychecksum>Vérifier le total de contrôle de toutes les pages à chaque fois</verifychecksum>
+        <xmloutputstyle>Créer une sortie</xmloutputstyle>
+        <xslfile>Chemin d'accès du modèle XSL</xslfile>
+      </contentpublisheredit>
+      <convertpagetype>
+        <cancel>Annuler</cancel>
+        <confirmconvertcheckbox>Je souhaite supprimer définitivement ces propriétés.</confirmconvertcheckbox>
+        <convert>Convertir</convert>
+        <converterror>Impossible de convertir la page : </converterror>
+        <converterrorsameproperty>
+          Une nouvelle propriété est mappée à plusieurs propriétés anciennes. Les nouvelles propriétés ne peuvent
+          être mappées qu'à une seule propriété ancienne.
+        </converterrorsameproperty>
+        <frompageproperties>Convertir à partir de la propriété</frompageproperties>
+        <frompagetype>Convertir à partir du type de page</frompagetype>
+        <heading>Convertir les pages</heading>
+        <info>
+          Permet de changer le type d'une ou plusieurs pages de l'arborescence.&lt;br/&gt;
+          &lt;b&gt;Remarque&lt;/b&gt;Cette opération est irréversible et le contenu sera supprimé définitivement.
+        </info>
+        <istesting>Résultats du test</istesting>
+        <languageid>Langue de la page</languageid>
+        <log>
+          <clearcache>Le cache de la page {0} est effacé.</clearcache>
+          <clearcacheall>Le cache de toutes les pages est effacé.</clearcacheall>
+          <cntpages>{0} page(s) a/ont été convertie(s).</cntpages>
+          <cntpagestest>{0} page(s) serai(en)t convertie(s).</cntpagestest>
+          <commit>La transaction a réussi.</commit>
+          <convertedpagetype>{0} page(s) du type de page {1} a/ont été convertie(s) au type de page {2}.</convertedpagetype>
+          <convertedpagetypetest>{0} page(s) du type de page {1} serai(en)t convertie(s) au type de page {2}.</convertedpagetypetest>
+          <heading>Les pages suivantes ont été affectées à la page {0} (y compris les versions).</heading>
+          <headingrecursive>Les pages suivantes ont été affectées à la page {0} (y compris les versions et sous-page du type de page sélectionné).</headingrecursive>
+          <headingrecursivetest>Les pages suivantes seraient affectées à la page {0} (y compris les versions et les sous-pages du type de page sélectionné).</headingrecursivetest>
+          <headingtest>Les pages suivantes seraient affectées à la page {0} (y compris les versions).</headingtest>
+          <noproperty>Aucune propriété du type {0} n'a été trouvée.</noproperty>
+          <removeproperty>{0} propriété(s) du type {1} a/ont été définitivement supprimée(s).</removeproperty>
+          <removepropertytest>{0} propriété(s) du type {1} serai(en)t définitivement supprimée(s).</removepropertytest>
+          <updateproperty>{0} propriété(s) du type {1} a/ont été convertie(s) au type {2}.</updateproperty>
+          <updatepropertytest>{0} propriété(s) du type {1} serai(en)t convertie(s) au type {2}.</updatepropertytest>
+        </log>
+        <nomatchingpages>Il n'existe aucune sous-page pour le type de page sélectionné. Le type de la page racine sélectionnée est {0}.</nomatchingpages>
+        <noselectedpage>Sélectionnez une page à convertir. </noselectedpage>
+        <notaccepted>L'utilisateur a annulé l'opération</notaccepted>
+        <notmatchingpagetype>Le type de page choisi ne correspond pas à la page sélectionnée. Le type de la page sélectionnée est {0}.</notmatchingpagetype>
+        <ok>OK</ok>
+        <recursive>Convertir la page sélectionnée et toutes les sous-pages (du type de page sélectionné)</recursive>
+        <remotepage>Seules les pages générées par la base de données CMS EPiServer locale peuvent être converties.</remotepage>
+        <removelanguage>Supprimer la langue</removelanguage>
+        <removepropertywarning1>Vérifiez qu'aucun utilisateur n'est en train de modifier des pages du type de page à convertir.</removepropertywarning1>
+        <removepropertywarning2>Toutes les valeurs des propriétés sélectionnées seront définitivement supprimées de la base de données et ne pourront être récupérées.</removepropertywarning2>
+        <removepropertywarningheading>Cette opération peut endommager le contenu du site Web.</removepropertywarningheading>
+        <removepropety>Supprimer définitivement la propriété</removepropety>
+        <requierdremovecomfirmation>Pour continuer, vous devez sélectionner l'option Supprimer définitivement la propriété.</requierdremovecomfirmation>
+        <runtest>Tester la conversion et afficher le journal</runtest>
+        <selectpageroot>Sélectionnez les pages à convertir</selectpageroot>
+        <topageproperties>Convertir pour affecter la propriété</topageproperties>
+        <topagetype>Convertir pour affecter le type de page</topagetype>
+      </convertpagetype>
+      <copypagetype>
+        <caption>Faire une copie de</caption>
+        <heading>Copier le type de page</heading>
+        <info>Sélectionnez le type de page à copier.</info>
+      </copypagetype>
+      <databasejob>
+        <activecaption>		Actif</activecaption>
+        <archive>
+          <description>	Spécifiez si la fonction d'archivage est active/inactive et la fréquence à laquelle les pages doivent être archivées. La fonction d'archivage déplacera les pages dont la date de fin de publication a expiré vers le dossier d'archivage sélectionné, si ce dernier est spécifié.</description>
+          <displayname>	Fonction d'archivage</displayname>
+        </archive>
+        <delayedpublish>
+          <displayname>Publier les versions des pages différées</displayname>
+        </delayedpublish>
+        <logdate>			Date</logdate>
+        <logmessage>Message</logmessage>
+        <logstatus>			Statut</logstatus>
+        <nextexecution>Prochaine date planifiée</nextexecution>
+        <savemessage>		Les paramètres ont été enregistrés.</savemessage>
+        <schedulecaption>	Ce travail doit être exécuté tous/toutes les</schedulecaption>
+        <starterrormessage>	Le travail a échoué : {0}</starterrormessage>
+        <startokmessage>	Le travail a démarré sans problème.</startokmessage>
+        <subscription>
+          <description>Le travail d'abonnement envoie des messages aux utilisateurs qui s'abonnent pour recevoir des mises à jour dans les différentes sections du site Web.</description>
+          <displayname>Abonnement</displayname>
+          <mailsubject>Dernières nouvelles</mailsubject>
+          <pagelinktext>En savoir plus</pagelinktext>
+        </subscription>
+        <tabhistory>Historique</tabhistory>
+        <tabsettings>		Paramètres</tabsettings>
+        <testbutton>		Démarrer manuellement</testbutton>
+        <wastebasket>
+          <description>	Spécifiez si la fonction de vidage est active/inactive et la fréquence de vidage de la Corbeille. Le travail de la Corbeille supprimera de manière définitive les pages de plus de 30 jours dans la Corbeille.</description>
+          <displayname>	Vidage automatique de la Corbeille</displayname>
+        </wastebasket>
+      </databasejob>
+      <deletemembershipdialog>
+        <confirmdeleteuserorgroup>Souhaitez-vous supprimer l’utilisateur/le groupe {0} ?</confirmdeleteuserorgroup>
+        <deletemembershipaccessrights>Supprimer les droits d'accès à la page</deletemembershipaccessrights>
+        <deletemembershippermissionrights>Supprimer les autorisations pour des fonctions</deletemembershippermissionrights>
+        <deletemembershipunifiedrights>Supprimer les droits d’accès à la gestion des fichiers</deletemembershipunifiedrights>
+        <deletemembershipworkflowrights>Supprimer les droits d'accès relatifs au flux de travail</deletemembershipworkflowrights>
+        <deleterightsforrole>Supprimer les droits d'accès du groupe </deleterightsforrole>
+        <deleterightsforuser>Supprimer les droits d'accès de l’utilisateur </deleterightsforuser>
+        <groupdeleted>Le groupe "{0}" a été supprimé</groupdeleted>
+        <heading>Supprimer un utilisateur/groupe</heading>
+        <info>Cette option vous permet de supprimer un utilisateur ou un groupe (ainsi que tous les droits d’accès correspondants) du système.</info>
+        <userdeletefailed>Impossible de supprimer l’utilisateur {0}.</userdeletefailed>
+        <userremoved>Utilisateur '{0}' supprimé</userremoved>
+      </deletemembershipdialog>
+      <editdynprop>
+        <heading>	Modifier les propriétés dynamiques</heading>
+        <info>		Les propriétés dynamiques sont disponibles indépendamment du type de page que vous utilisez.</info>
+      </editdynprop>
+      <editdynpropfield>
+        <advancedcaption see="/admin/editpagetypefield/advancedcaption" />
+        <editcaption see="/admin/editpagetypefield/editcaption" />
+        <heading>	Modifier les propriétés dynamiques</heading>
+        <headingnew>Créer une nouvelle propriété dynamique</headingnew>
+        <helptextcaption see="/admin/editpagetypefield/helpcaption" />
+        <info />
+        <longstringsettingscaption see="/admin/editpagetypefield/editorhelp" />
+        <namecaption see="/admin/editpagetypefield/namecaption" />
+        <tabinfo>	Informations</tabinfo>
+        <typecaption see="/admin/editpagetypefield/typecaption" />
+      </editdynpropfield>
+      <editlanguage>
+        <charsetcaption>		Jeu de caractères</charsetcaption>
+        <currentsystemdefaultcaption>Codage par défaut du système actuel</currentsystemdefaultcaption>
+        <fontcharsetcaption>	Police utilisée par l'éditeur</fontcharsetcaption>
+        <heading>				Codage linguistique</heading>
+        <info>					&lt;b&gt;AVERTISSEMENT !&lt;/b&gt; En cas de modifications incorrectes sur cette page, le site Web risque de cesser de répondre.</info>
+        <languageidcaption>		Code de langue </languageidcaption>
+        <languagenamecaption>	Nom de langue locale</languagenamecaption>
+        <languagenameencaption>	Nom de langue Anglais</languagenameencaption>
+        <localecaption>			Format de date/d'heure</localecaption>
+        <mailcodepagecaption>	Jeu de caractères pour la messagerie</mailcodepagecaption>
+        <setsystemdefaultcaption>Définir comme codage par défaut du système</setsystemdefaultcaption>
+      </editlanguage>
+      <editlanguagebranch>
+        <cantsave>Impossible d'enregistrer la langue de site Web.</cantsave>
+        <confirmdelete>Voulez-vous vraiment supprimer cette langue ?</confirmdelete>
+        <customiconcaption>Icône Modèle</customiconcaption>
+        <customiconhelp>Chemin d'accès à l'image personnalisée à utiliser dans les pages de modèle. Il doit commencer par "/" ou "~/".</customiconhelp>
+        <enabledcaption>Activé</enabledcaption>
+        <enabledlanguageexception>Si le support de globalisation est activé, vous devez activer au moins une langue.</enabledlanguageexception>
+        <errorcantdelteusedlanguage>Cette langue est utilisée dans les paramètres de langue des pages suivantes et ne peut pas être supprimée : {0}.</errorcantdelteusedlanguage>
+        <errorlanguageonpage>Il est impossible de supprimer cette langue, car elle est utilisée dans les pages suivantes : {0}.</errorlanguageonpage>
+        <headingnew>Créer une langue de site Web</headingnew>
+        <iconcaption>Icône</iconcaption>
+        <info>Définissez une langue de site Web qui doit être disponible pour les visiteurs de votre site Web.</info>
+        <invalidiconpath>Le chemin de recherche de l'icône Modèle doit commencer par "/" ou "~/".</invalidiconpath>
+        <namecaption>Nom</namecaption>
+        <urlsegmentcaption>Préfixe de l'adresse Web</urlsegmentcaption>
+        <warningchangelanguage>Avertissement ! Le code de langue est utilisé dans plusieurs emplacements du système, par exemple les liens et les langues de secours. Modifiez uniquement ce paramètre lors de la configuration initiale du système.</warningchangelanguage>
+      </editlanguagebranch>
+      <editlanguagebranches>
+        <addlanguage>Ajouter une langue</addlanguage>
+        <customiconcaption>Icône Modèle</customiconcaption>
+        <enabledcaption>Activé</enabledcaption>
+        <heading>Gérer les langues du site Web</heading>
+        <iconcaption>Icône</iconcaption>
+        <idcaption>Code de langue</idcaption>
+        <info>Définissez les langues qui doivent être disponibles pour les visiteurs de votre site Web.</info>
+        <namecaption>Nom</namecaption>
+        <registered>Inscrit</registered>
+        <registeredcaption>Déjà inscrit</registeredcaption>
+        <systemiconcaption>Icône système</systemiconcaption>
+      </editlanguagebranches>
+      <editpagetype>
+        <addproperty>			Ajouter une propriété</addproperty>
+      </editpagetype>
+      <editpagetypebase>
+        <!--This part is just a reference to above and needs no translation. It must be here though since what it references has been moved here-->
+        <alltypeavailable>Tous les types de page sont disponibles</alltypeavailable>
+        <archivepagelinkcaption see="/pagetypes/common/property[@name='PageArchiveLink']/caption" />
+        <archivepagelinkhelp see="/pagetypes/common/property[@name='PageArchiveLink']/help" />
+        <availablecaption>Disponible en mode édition</availablecaption>
+        <childorderrulecaption see="/pagetypes/common/property[@name='PageChildOrderRule']/caption" />
+        <childorderrulehelp see="/pagetypes/common/property[@name='PageChildOrderRule']/help" />
+        <defaultidcaption see="#usecustomdefaultcaption" />
+        <defaultidhelp see="#usecustomdefaulthelp" />
+        <defaultnamecaption see="/pagetypes/common/property[@name='PageName']/caption" />
+        <defaultnamehelp see="/pagetypes/common/property[@name='PageName']/help" />
+        <defaultstartpublishcaption>Définir la "Date de début de la publication" par rapport au moment où la page a été créée</defaultstartpublishcaption>
+        <defaultstoppublishcaption>Définir la "Date de fin de la publication" par rapport au moment où la page a été créée</defaultstoppublishcaption>
+        <delete>Voulez-vous supprimer ce type de page ?</delete>
+        <descriptioncaption>Description</descriptioncaption>
+        <editpagecaption>Page d'édition personnalisée</editpagecaption>
+        <filenamecaption>Nom du fichier</filenamecaption>
+        <filenameerror>Le nom de fichier doit se rapporter à la racine du site, commencer par '/' et se terminer par .aspx, par exemple '/templates/Page.aspx'.</filenameerror>
+        <frameidcaption see="/pagetypes/common/property[@name='PageFrameID']/caption" />
+        <frameidhelp see="/pagetypes/common/property[@name='PageFrameID']/help" />
+        <heading>Modifier "{0}"</heading>
+        <headingdeleted>Type de page supprimé</headingdeleted>
+        <headingdeletefailed>Le type de page n'a pas pu être supprimé, car des pages de ce type existent</headingdeletefailed>
+        <headingnew>Créer de nouveaux types de page</headingnew>
+        <headingsaved>Type de page enregistré</headingsaved>
+        <info>Permet de modifier les informations de base sur le type de page.</info>
+        <namecaption>Nom</namecaption>
+        <peerordercaption see="/pagetypes/common/property[@name='PagePeerOrder']/caption" />
+        <peerorderhelp see="/pagetypes/common/property[@name='PagePeerOrder']/help" />
+        <sortordercaption>Index de tri</sortordercaption>
+        <tabdefaultvalues>Valeurs par défaut</tabdefaultvalues>
+        <tabinfo>Informations</tabinfo>
+        <tabtypetotype>Types de page disponibles</tabtypetotype>
+        <typetotype>Sélectionner les types de page pouvant être créés sous ce type de page</typetotype>
+        <usecustomdefaultcaption>Utiliser les paramètres par défaut ajustés pour les pages qui utilisent ce type</usecustomdefaultcaption>
+        <usecustomdefaulthelp>Utilisez des valeurs par défaut personnalisées si vous ne souhaitez pas que le système définisse ces valeurs automatiquement</usecustomdefaulthelp>
+        <visibleinmenucaption see="/pagetypes/common/property[@name='PageVisibleInMenu']/caption" />
+        <visibleinmenuhelp see="/pagetypes/common/property[@name='PageVisibleInMenu']/help" />
+      </editpagetypebase>
+      <editpagetypefield>
+        <advancedcaption>Place sous l'en-tête</advancedcaption>
+        <confirmdelete>Voulez-vous vraiment supprimer cette propriété ?</confirmdelete>
+        <defaultcaption>Valeur par défaut</defaultcaption>
+        <displayeditui>Afficher en mode édition</displayeditui>
+        <editcaption>Modifier l'en-tête</editcaption>
+        <editoraboutcaption>			À propos de...</editoraboutcaption>
+        <editorboldcaption>Gras</editorboldcaption>
+        <editorbulletscaption>Liste à puces</editorbulletscaption>
+        <editorcellpropertiescaption>	Propriétés de la cellule...</editorcellpropertiescaption>
+        <editorcellsubmenucaption>Cellule</editorcellsubmenucaption>
+        <editorcentercaption>Centré</editorcentercaption>
+        <editorcopycaption>				Copier</editorcopycaption>
+        <editorcutcaption>				Couper</editorcutcaption>
+        <editordynamiccontentcaption>Insérer un contenu dynamique</editordynamiccontentcaption>
+        <editordynamiccontentmenucaption>Contenu dynamique...</editordynamiccontentmenucaption>
+        <editorfindcaption>Rechercher</editorfindcaption>
+        <editorfindmenucaption>			Rechercher...</editorfindmenucaption>
+        <editorfontcaption>Police</editorfontcaption>
+        <editorfontmenucaption>			Police...</editorfontmenucaption>
+        <editorformatparagraphcaption>	Format du paragraphe</editorformatparagraphcaption>
+        <editorhelp>Propriété de l'éditeur – désélectionnez tout pour utiliser une zone de texte à la place de l'éditeur</editorhelp>
+        <editorhyperlinkpropertiescaption>Propriétés du lien...</editorhyperlinkpropertiescaption>
+        <editorimagepropertiescaption>Propriétés des images...</editorimagepropertiescaption>
+        <editorinsertanchorcaption>Insérer un signet</editorinsertanchorcaption>
+        <editorinsertanchormenucaption>	Signet...</editorinsertanchormenucaption>
+        <editorinsertdoccaption>Insérer un document</editorinsertdoccaption>
+        <editorinsertdocmenucaption>	Document...</editorinsertdocmenucaption>
+        <editorinserthrcaption>Règle horizontale</editorinserthrcaption>
+        <editorinsertimagecaption>Insérer une image à partir du fichier</editorinsertimagecaption>
+        <editorinsertimagemenucaption>	Image...</editorinsertimagemenucaption>
+        <editorinsertsubmenucaption>		Insérer</editorinsertsubmenucaption>
+        <editorinserttablecaption>Insérer un tableau</editorinserttablecaption>
+        <editorinserttablemenucaption>	Tableau...</editorinserttablemenucaption>
+        <editorinserturlcaption>Insérer un lien hypertexte</editorinserturlcaption>
+        <editorinserturlmenucaption>	Lien hypertexte...</editorinserturlmenucaption>
+        <editoritaliccaption>Italique</editoritaliccaption>
+        <editorleftcaption>Aligné à gauche</editorleftcaption>
+        <editorloading>Chargement de l'éditeur...</editorloading>
+        <editormaximizercaption>Agrandir/restaurer l'éditeur</editormaximizercaption>
+        <editornumbercaption>Liste numérotée</editornumbercaption>
+        <editorpastecaption>			Coller</editorpastecaption>
+        <editorpasteunformattedcaption>	Coller sans mise en forme</editorpasteunformattedcaption>
+        <editorquotecaption>Insérer un guillemet</editorquotecaption>
+        <editorquotemenucaption>Guillemet…</editorquotemenucaption>
+        <editorredocaption>Rétablir</editorredocaption>
+        <editorrefreshcaption>Actualiser</editorrefreshcaption>
+        <editorremoveformattingcaption>	Supprimer la mise en forme</editorremoveformattingcaption>
+        <editorrightcaption>Aligné à droite</editorrightcaption>
+        <editorselectallcaption>Tous</editorselectallcaption>
+        <editorselectcontractcaption>Réduire</editorselectcontractcaption>
+        <editorselectexpandcaption>Développer</editorselectexpandcaption>
+        <editorselectnextcaption>Suivant</editorselectnextcaption>
+        <editorselectpreviouscaption>Précédent</editorselectpreviouscaption>
+        <editorselectsectioncaption>Paragraphe</editorselectsectioncaption>
+        <editorselectsubmenucaption>Sélectionner</editorselectsubmenucaption>
+        <editorselecttablecaption>Tableau</editorselecttablecaption>
+        <editorselecttablecellcaption>Cellule du tableau</editorselecttablecellcaption>
+        <editorselecttablecolumncaption>Colonne du tableau</editorselecttablecolumncaption>
+        <editorselecttablerowcaption>Ligne du tableau</editorselecttablerowcaption>
+        <editorspellcheckcaption>		Orthographe</editorspellcheckcaption>
+        <editorspellcheckmenucaption>	Orthographe...</editorspellcheckmenucaption>
+        <editortabledeletecolscaption>		Supprimer des colonnes</editortabledeletecolscaption>
+        <editortabledeleterowscaption>		Supprimer des lignes</editortabledeleterowscaption>
+        <editortabledeletetablecaption>		Supprimer un tableau</editortabledeletetablecaption>
+        <editortableinsertcolaftercaption>	Insérer une colonne après</editortableinsertcolaftercaption>
+        <editortableinsertcolbeforecaption>	Insérer une colonne avant</editortableinsertcolbeforecaption>
+        <editortableinsertrowaftercaption>	Insérer une ligne après</editortableinsertrowaftercaption>
+        <editortableinsertrowbeforecaption>	Insérer une ligne avant</editortableinsertrowbeforecaption>
+        <editortablemergecellscaption>		Fusionner les cellules</editortablemergecellscaption>
+        <editortablepropertiescaption>	Propriétés du tableau...</editortablepropertiescaption>
+        <editortablesplithorizontalcaption>	Fractionner la cellule horizontalement</editortablesplithorizontalcaption>
+        <editortablesplitverticalcaption>	Fractionner la cellule verticalement</editortablesplitverticalcaption>
+        <editortablesubmenucaption>		Tableau</editortablesubmenucaption>
+        <editortogglehtmlcaption>Afficher/masquer le code HTML</editortogglehtmlcaption>
+        <editortogglehtmlmenucaption>	Afficher la source</editortogglehtmlmenucaption>
+        <editorunderlinecaption>Souligné</editorunderlinecaption>
+        <editorundocaption>Annuler</editorundocaption>
+        <heading>Modifier la propriété</heading>
+        <headingnew>				Créer une nouvelle propriété</headingnew>
+        <helpcaption>Texte d'aide</helpcaption>
+        <info />
+        <inheritcaption>Hérite de la valeur</inheritcaption>
+        <inuseproperty>Une propriété portant le nom "{0}" existe déjà.</inuseproperty>
+        <languagespecificcaption>Valeur unique par langue</languagespecificcaption>
+        <namecaption>Nom</namecaption>
+        <nodefaultcaption>Aucune valeur par défaut</nodefaultcaption>
+        <objectcaption>Gestion de l'édition personnalisée via l'objet</objectcaption>
+        <requiredcaption>Une valeur doit être entrée</requiredcaption>
+        <reservedproperty>"{0}" est un nom réservé pour les métadonnées</reservedproperty>
+        <searchablecaption>Propriété Searchable</searchablecaption>
+        <tabinfo>					Informations</tabinfo>
+        <typeappsettings>Liste dynamique (une option)</typeappsettings>
+        <typeappsettingsmultiple>Liste dynamique (plusieurs options)</typeappsettingsmultiple>
+        <typeboolean>Sélectionné/non sélectionné</typeboolean>
+        <typecaption>Type</typecaption>
+        <typecategory>Sélection de catégorie</typecategory>
+        <typedate>Date/Heure</typedate>
+        <typedocumenturl>URL vers document</typedocumenturl>
+        <typefilesortorder>Ordre de tri pour les fichiers</typefilesortorder>
+        <typefloatnumber>Nombre à virgule flottante</typefloatnumber>
+        <typeform>Formulaire</typeform>
+        <typeframe>Cadre</typeframe>
+        <typeimageurl>URL vers image</typeimageurl>
+        <typelanguage>Langue</typelanguage>
+        <typelanguagebranch>Langue de la page (une seule option)</typelanguagebranch>
+        <typelanguagebranchlist>Langue de la page (plusieurs options)</typelanguagebranchlist>
+        <typelinkcollection>Liste de liens</typelinkcollection>
+        <typelongstring>Chaîne longue (&gt;255)</typelongstring>
+        <typenumber>Entier</typenumber>
+        <typepagelink>Page</typepagelink>
+        <typepagereference>Page</typepagereference>
+        <typepagetype>Type de page</typepagetype>
+        <typepassword>Mot de passe</typepassword>
+        <typeselector>Propriété sur la page actuelle</typeselector>
+        <typesortorder>Ordre de tri pour les pages</typesortorder>
+        <typestring>Chaîne (&lt;= 255)</typestring>
+        <typeuilanguage>Langue du système</typeuilanguage>
+        <typeurl>URL vers page/adresse externe</typeurl>
+        <typeweekday>Jour de semaine</typeweekday>
+        <typexform>Formulaire XForms</typexform>
+        <typexhtmlstring>Chaîne XHTML (&gt;255)</typexhtmlstring>
+      </editpagetypefield>
+      <edituser>
+        <bademailadress>L'adresse de messagerie n'est pas valide.</bademailadress>
+        <changepassword>		Changer le mot de passe</changepassword>
+        <charsnotallowed>Le nom d'utilisateur n'est pas valide. Les caractères suivants ne sont pas autorisés : {0}Le nom de groupe/d'utilisateur n'est pas valide. Les caractères suivants ne sont pas autorisés : {0}</charsnotallowed>
+        <confirmdeleteuser>		Souhaitez-vous supprimer cet utilisateur/ce groupe {0} ?</confirmdeleteuser>
+        <confirmremoveuser>Supprimer {0} du groupe</confirmremoveuser>
+        <duplicateemailaddress>L’inscription de compte utilisateur n’autorise pas les adresses de messagerie en double</duplicateemailaddress>
+        <duplicateprovideruserkey>L’inscription de compte utilisateur nécessite des clés uniques</duplicateprovideruserkey>
+        <duplicateusername>Ce nom d’utilisateur existe déjà</duplicateusername>
+        <enterpassword>			Entrer le mot de passe</enterpassword>
+        <invalidemail>Adresse de messagerie incorrecte</invalidemail>
+        <invalidpassword>Mot de passe incorrect ; longueur minimale requise : {0}, nombre minimal de caractères non alphanumérique : {1}</invalidpassword>
+        <invalidpasswordanswer>La réponse à la question du mot de passe est obligatoire</invalidpasswordanswer>
+        <invalidpasswordquestion>La question du mot de passe est obligatoire</invalidpasswordquestion>
+        <invalidprovideruserkey>Le type de la clé unique fournie pour l’inscription du compte utilisateur est incorrect</invalidprovideruserkey>
+        <invalidusername>Nom d’utilisateur incorrect</invalidusername>
+        <keeppassword>			Conserver le mot de passe</keeppassword>
+        <mailsent>				Le message électronique a été envoyé à l'utilisateur.</mailsent>
+        <maintabname>			Paramètres</maintabname>
+        <missmatchpassword>Le mot de passe initial et le mot de passe de confirmation ne correspondent pas</missmatchpassword>
+        <notificationfailed>	Impossible d'envoyer un message, car les "Paramètres pour les utilisateurs extranet" ne sont pas définis correctement.</notificationfailed>
+        <notificationquestion>	L'utilisateur sera automatiquement averti par messagerie que le compte a été activé.</notificationquestion>
+        <passwordmismatch>		Le mot de passe est différent dans les champs d'entrée</passwordmismatch>
+        <providererror>Le fournisseur d’appartenance a détecté une erreur lors de l’inscription</providererror>
+        <repeatpassword>		Répéter le mot de passe</repeatpassword>
+        <usercreated>Date de création</usercreated>
+        <userdeleted>			L'utilisateur/le groupe a été supprimé</userdeleted>
+        <userguisettings>
+          <displayname>Options d'affichage</displayname>
+          <settings>
+            <legendlanguagesettings>Paramètres des langues</legendlanguagesettings>
+            <statusexpired>La page a une publication planifiée dont la date et l'heure sont passées.</statusexpired>
+            <statuslanguagefallback>La page étant absente pour la langue actuelle, elle sera affichée dans une autre langue. Si l'autre langue dispose d'une icône, elle sera utilisée comme indication.</statuslanguagefallback>
+            <statuslanguagemissing>La page étant absente pour la langue actuelle, elle ne sera pas affichée</statuslanguagemissing>
+            <statusnew>Une nouvelle page a été créée au cours des 48 dernières heures.</statusnew>
+            <statusnotpublished>Page non publiée</statusnotpublished>
+            <statusnotstarted>La page a une publication planifiée mais n'a pas encore été publiée</statusnotstarted>
+            <statusnotvisibleinmenu>Cette page n'apparaît pas dans les menus.</statusnotvisibleinmenu>
+            <statuspageprovider>La page n'est pas une page locale de CMS EPiServer. Si une icône a été définie, le fournisseur de la page l'utilise.</statuspageprovider>
+            <statusreadonly>Vous ne disposez pas des droits d'accès requis pour modifier cette page.</statusreadonly>
+            <toolbar>Barre d'outils</toolbar>
+            <treesymbols>Symboles dans l'arborescence</treesymbols>
+            <usedefaultsettings>Utiliser les paramètres par défaut</usedefaultsettings>
+            <usesystemlanguage>Utiliser la langue du système</usesystemlanguage>
+          </settings>
+        </userguisettings>
+        <userlastlogin>Date de la dernière connexion</userlastlogin>
+        <usernotfound>L'utilisateur '{0}' est introuvable. Un autre administrateur l'a peut-être supprimé.</usernotfound>
+        <usernotsaved>			L'utilisateur/le groupe n'a pas pu être enregistré</usernotsaved>
+        <userrejected>L’inscription du compte utilisateur a été refusée</userrejected>
+        <usersaved>				L'utilisateur/le groupe a été enregistré</usersaved>
+        <usersuccess>Compte utilisateur enregistré</usersuccess>
+      </edituser>
+      <exportdata>
+        <abortexport>Annuler l'exportation</abortexport>
+        <description />
+        <displayname>Exporter des données</displayname>
+        <errorconnectiontoserver>La connexion au serveur a été interrompue.\r\nEssayez de recharger et redémarrez.</errorconnectiontoserver>
+        <errorsoccured>Les erreurs suivantes se sont produites</errorsoccured>
+        <exportbutton>Exporter</exportbutton>
+        <exportcategories>Exporter des catégories</exportcategories>
+        <exportdownloadexportfile>Télécharger le fichier d'exportation</exportdownloadexportfile>
+        <exportdynamicpropertydefinitions>Exporter des définitions de propriétés dynamiques</exportdynamicpropertydefinitions>
+        <exportfiles>Exporter des fichiers</exportfiles>
+        <exportframes>Exporter des cadres</exportframes>
+        <exporthasbeenaborted>L'exportation a été annulée</exporthasbeenaborted>
+        <exporthaserrortext>Erreur lors de l'exportation, voulez-vous quand même télécharger le fichier d'exportation ?</exporthaserrortext>
+        <exportinprogressimagetooltip>Exportation en cours...</exportinprogressimagetooltip>
+        <exportpagedependencies>Exporter automatiquement les types de page dépendants</exportpagedependencies>
+        <exportpagefiles>Exportez les fichiers auxquels les pages sont liées</exportpagefiles>
+        <exportpagelanguages>Exportez les pages globalisées</exportpagelanguages>
+        <exportpages>Exporter des pages</exportpages>
+        <exportpagetypes>Exporter des types de page</exportpagetypes>
+        <exportsucceeded>L'exportation s'est terminée sans erreurs ni avertissements</exportsucceeded>
+        <exporttabdefinitions>Onglets d'exportation</exporttabdefinitions>
+        <gobacktoexportdata>Revenir à l'exportation de données</gobacktoexportdata>
+        <heading>Exporter des données</heading>
+        <info>Exporter des données d'EPiServer CMS vers un autre.</info>
+        <pagecount>Nombre de pages exportées : </pagecount>
+        <selectpage>Sélectionnez une partie de la structure</selectpage>
+        <testexportbutton>Tester l'exécution avec le journal d'erreurs</testexportbutton>
+        <warningsoccured>Les avertissements suivants ont été générés</warningsoccured>
+      </exportdata>
+      <filebrowser>
+        <heading>Sélectionner fichier</heading>
+      </filebrowser>
+      <filemanagement>
+        <description>Télécharger et gérer les fichiers et les dossiers.</description>
+        <displayname>Gestion de fichiers</displayname>
+      </filemanagement>
+      <frames>
+        <confirmdelete>Voulez-vous vraiment supprimer le cadre "[name]" ?</confirmdelete>
+        <duplicateframeserror>Il ne peut y avoir plusieurs cadres portant le même nom</duplicateframeserror>
+        <heading>Modifier des cadres</heading>
+        <info>Définissez les cadres utilisés par votre site Web. Ils seront disponibles comme options pour "Cadre cible" en créant les liens.</info>
+        <tabledescription>Description</tabledescription>
+        <tablename>Nom du cadre</tablename>
+      </frames>
+      <headings>
+        <confirmdelete>Voulez-vous vraiment supprimer l’onglet "[name]" ?</confirmdelete>
+        <heading>Onglets d'édition</heading>
+        <info>Définissez les onglets disponibles sous l'onglet Edition. Lorsque vous créez ou modifiez une propriété, vous pouvez choisir l'onglet sous lequel vous voulez afficher la propriété.</info>
+        <tableaccesslevel>Nécessite le niveau d'accès</tableaccesslevel>
+        <tablename>Onglet</tablename>
+        <tablesortindex>Index de tri</tablesortindex>
+        <tablevisible>Visible</tablevisible>
+      </headings>
+      <importdata>
+        <abortimport>Annuler l'importation</abortimport>
+        <beginimport>Commencer l'importation</beginimport>
+        <categorycount>Nombre de catégories</categorycount>
+        <createnotsupported>Le fournisseur générant la page sélectionnée ne prend pas en charge la création de pages.</createnotsupported>
+        <description />
+        <displayname>Importer des données</displayname>
+        <dynamicpropertydefinitioncount>Nombre de définitions de propriétés dynamiques</dynamicpropertydefinitioncount>
+        <errorconnectiontoserver>La connexion au serveur a été interrompue.\r\nEssayez de recharger et redémarrez.</errorconnectiontoserver>
+        <errorsoccured>Les erreurs suivantes se sont produites</errorsoccured>
+        <filecount>Nombre de fichiers</filecount>
+        <framecount>Nombre de cadres</framecount>
+        <gobacktoimportdata>Revenir à l'importation de données</gobacktoimportdata>
+        <heading>Importer des données</heading>
+        <importcompleted>Importation complète</importcompleted>
+        <importhasbeenaborted>L'importation a été annulée</importhasbeenaborted>
+        <importinprogressimagetooltip>Importation en cours...</importinprogressimagetooltip>
+        <importsucceeded>Importation réussie</importsucceeded>
+        <info>Importe des données à partir d'un autre EPiServer CMS.</info>
+        <nofileuploaded>Aucun fichier téléchargé</nofileuploaded>
+        <of>sur</of>
+        <pagecount>Nombre de pages</pagecount>
+        <pagetypecount>Nombre de types de page</pagetypecount>
+        <selectfile>Sélectionner un fichier d'exportation et le télécharger</selectfile>
+        <selectpageroot>Sélectionner la destination de page</selectpageroot>
+        <show>Afficher</show>
+        <tabdefinitioncount>Nombre d'en-têtes</tabdefinitioncount>
+        <testsucceeded>Le fichier d'importation a été vérifié ; aucune erreur et aucun avertissement n'ont été générés</testsucceeded>
+        <uploadfile>Télécharger et vérifier le fichier</uploadfile>
+        <warningsoccured>Les avertissements suivants ont été générés</warningsoccured>
+        <verifyimportfile>Télécharger et vérifier le fichier</verifyimportfile>
+      </importdata>
+      <license>
+        <heading>Informations sur la licence</heading>
+        <info />
+        <licensedcompany>Société</licensedcompany>
+        <licensedto>Licence d'utilisation accordée à </licensedto>
+        <licenseid>ID de la licence</licenseid>
+        <licenserestrictions>Restrictions</licenserestrictions>
+        <newfileinstalled>Le nouveau fichier de licence a été installé</newfileinstalled>
+        <selectfile>Sélectionner un nouveau fichier de licence</selectfile>
+        <tabinfo>Informations</tabinfo>
+        <tabinstallnew>Installer une nouvelle licence</tabinstallnew>
+        <uploadlicense>Télécharger et vérifier la licence</uploadlicense>
+      </license>
+      <menu>
+        <admingroups>Administrer des groupes</admingroups>
+        <archive>Fonction d'archivage</archive>
+        <cleanupupload see="/admin/cleanupupload/heading" />
+        <convertpagetype>Convertir les pages</convertpagetype>
+        <copypagetype>Copier le type de page</copypagetype>
+        <createuser>Créer un utilisateur</createuser>
+        <databasemaintenance>Maintenance de la base de données</databasemaintenance>
+        <datatypes>Modifier les types de propriété personnalisés</datatypes>
+        <defaultgroup see="/admin/registrationsettings/heading" />
+        <editcategories>Modifier les catégories</editcategories>
+        <editdynamicproperty>Propriétés dynamiques</editdynamicproperty>
+        <editframes>Modifier les cadres</editframes>
+        <editheadings>Onglets d'édition</editheadings>
+        <editlanguage>			Codage linguistique</editlanguage>
+        <editlanguagebranches>Gérer les langues du site Web</editlanguagebranches>
+        <editremotesite>Sites Web distants</editremotesite>
+        <language>				Langue</language>
+        <license>Informations sur la licence</license>
+        <newpagetype>Créer un nouveau type de page</newpagetype>
+        <pagetype>Types de page</pagetype>
+        <plugins>Outils</plugins>
+        <productupdate>			Mise à jour du produit</productupdate>
+        <scheduledjobs>Travaux planifiés</scheduledjobs>
+        <searchuser>Rechercher un utilisateur/un groupe</searchuser>
+        <security>Droits d'accès</security>
+        <setloglevel>Définir le niveau du journal</setloglevel>
+        <setpermission>Autorisations pour des fonctions</setpermission>
+        <setsecurity>Définir les droits d'accès</setsecurity>
+        <settings>Paramètres du système</settings>
+        <systemadministration>Administration du système</systemadministration>
+        <systemmessages>Afficher les messages du système</systemmessages>
+        <tooltipedit>Mode édition</tooltipedit>
+        <tooltiphelp>Aide</tooltiphelp>
+        <tooltipview>Mode affichage</tooltipview>
+        <wastebasket>Vider la Corbeille</wastebasket>
+        <workflowdefinition>Flux de travail</workflowdefinition>
+        <workflowdefinitionedit>Modifier le flux de travail</workflowdefinitionedit>
+        <workflowdefinitionnew>Créer un nouveau flux de travail</workflowdefinitionnew>
+      </menu>
+      <menuheadings>
+        <accessrights see="/admin/menu/security" />
+        <generalsettings>Paramètres généraux</generalsettings>
+        <managepagetypes>Gérer les types de pages</managepagetypes>
+        <nopagetypestext>Aucun type de page n'a été défini.</nopagetypestext>
+        <noscheduledjobstext>Aucun travail planifié n'a été défini.</noscheduledjobstext>
+        <notoolsettingstext>Aucun paramètre d'outil n'a été défini.</notoolsettingstext>
+        <notoolstext>Aucun outil n'a été défini.</notoolstext>
+        <pagetypes see="/admin/menu/pagetype" />
+        <pagetypesorting>
+          <sortalphabetically>Trier par ordre alphabétique</sortalphabetically>
+          <sortbyindex>Trier par index</sortbyindex>
+        </pagetypesorting>
+        <scheduledjobs see="/admin/menu/scheduledjobs" />
+        <security>Sécurité</security>
+        <systemadministration see="/admin/menu/systemadministration" />
+        <systemconfiguration>Configuration système</systemconfiguration>
+        <tools see="/admin/menu/plugins" />
+        <toolsettings>Paramètres des outils</toolsettings>
+      </menuheadings>
+      <menutabs>
+        <admin>Admin</admin>
+        <config>Config</config>
+        <pagetypes see="/pagetypes/common/property[@name='PageTypeName']/caption" />
+      </menutabs>
+      <pagedefinitiontype>
+        <heading>				Modifier les types de propriété</heading>
+        <info>					Vous pouvez modifier et créer de nouveaux types de données à utiliser pour les propriétés sur les pages EPiServer CMS.</info>
+      </pagedefinitiontype>
+      <pagedefinitiontypeedit>
+        <assemblynamecaption>	Nom d'assembly</assemblynamecaption>
+        <assemblynamehelp>		Le nom de classe d'assembly est inclus dans (par exemple, EPiServerSample)</assemblynamehelp>
+        <confirmdelete>Voulez-vous vraiment supprimer ce type de propriété ?</confirmdelete>
+        <duplicatecustomproperty>Une propriété portant le nom '{0}' existe déjà. </duplicatecustomproperty>
+        <heading>				Modifier le type de données</heading>
+        <headingnew>			Créer un nouveau type de données</headingnew>
+        <info />
+        <namecaption>			Nom</namecaption>
+        <namehelp>				Choisissez un nom pour le type de propriété</namehelp>
+        <property name="property">
+          <caption>				Type de base</caption>
+        </property>
+        <propertycaption>Type de base</propertycaption>
+        <tabinfo>				Définition</tabinfo>
+        <typeinuse>Il n'est pas possible de supprimer ce type, car il est utilisé dans les propriétés suivantes :</typeinuse>
+        <typenamecaption>		Nom de classe</typenamecaption>
+        <typenamehelp>			Nom de classe et espace de noms (par exemple, EPiServer.SpecializedProperties.PropertyPassword)</typenamehelp>
+      </pagedefinitiontypeedit>
+      <permission>
+        <editpermission>Utilisateurs/groupes ayant l'autorisation "{0}"</editpermission>
+        <heading>Autorisations pour des fonctions</heading>
+        <info>	Accorde à des utilisateurs/des groupes l'accès à des fonctions spécifiques dans EPiServer CMS.</info>
+        <sidsaved>		Nouvelles autorisations pour des fonctions qui ont été enregistrées</sidsaved>
+      </permission>
+      <plugin>
+        <displayname see="/admin/plugin/heading" />
+        <editorpluginattribute>Éditeur</editorpluginattribute>
+        <guipluginattribute>Interface utilisateur</guipluginattribute>
+        <heading>Gestionnaire de plug-ins</heading>
+        <info>La liste ci-dessous affiche les composants qui ont été inscrits en tant que plug-ins dans EPiServer CMS.</info>
+        <overviewtab>Vue d'ensemble</overviewtab>
+        <pagedefinitiontypepluginattribute>Types de propriété avec inscription automatique</pagedefinitiontypepluginattribute>
+        <pagepluginattribute>Extensions de page</pagepluginattribute>
+        <plugintab>Plug-ins</plugintab>
+        <scheduledpluginattribute>Administration des travaux d'administration</scheduledpluginattribute>
+        <subscriptionpluginattribute>Abonnement</subscriptionpluginattribute>
+        <workflowpluginattribute>Type d'étape du flux de travail</workflowpluginattribute>
+      </plugin>
+      <pluginadminsettings>
+        <nosettings>Ce plug-in n'a pas de paramètres</nosettings>
+      </pluginadminsettings>
+      <pluginedit>
+        <configurationtab>Configuration</configurationtab>
+        <heading>Modifier le plug-in</heading>
+        <info />
+        <overviewtab>Vue d'ensemble</overviewtab>
+      </pluginedit>
+      <plugingrouplist>
+        <company>Société</company>
+        <description>Description</description>
+        <license>Licence</license>
+        <moreinfo>Plus d'infos</moreinfo>
+        <name>Nom</name>
+        <version>Version</version>
+      </plugingrouplist>
+      <pluginlist>
+        <description>Description</description>
+        <enabled>Activé(e)</enabled>
+        <license>Licence</license>
+        <name>Nom affiché</name>
+        <plugin>Plug-ins</plugin>
+      </pluginlist>
+      <rebuildurlsegments>
+        <description>Remplace le nom des adresses Web afin de créer des liens qui reflètent la structure du contenu du site Web</description>
+        <displayname>Reconstruire le nom des adresses Web</displayname>
+        <heading>Remplacer les noms de page dans les adresses Web</heading>
+        <pages>Pages analysées</pages>
+        <pagestoreplace>Pages fixes</pagestoreplace>
+        <rebuild>Reconstruire les liens</rebuild>
+        <rebuildnonempty>Reconstruire tous les noms de page dans les adresses Web (en remplaçant les liens existants)</rebuildnonempty>
+        <rebuildwarning>
+                    {0} pages ne comportent pas de nom pour l’adresse Web. Les adresses Web de ces pages\n seront générées avec l’identité de la page, par exemple, http://.../10/40 permettra de créer un lien vers cette page.\n Nous vous recommandons de reconstruire les noms de ces adresses Web à l’aide de l’outil "Reconstruire le nom\n des adresses Web" avant de modifier ces dernières afin de refléter la structure du site Web.\n\n Cliquez sur OK pour utiliser des adresses Web qui reflètent la structure du site Web\n
+                </rebuildwarning>
+        <status>Statut</status>
+        <statusended>Inactif</statusended>
+        <statusstarted>Remplacement des liens</statusstarted>
+      </rebuildurlsegments>
+      <remotesite>
+        <heading>Sites Web distants</heading>
+        <info>Sites Web distants inscrits pour le trafic entrant et sortant. Les droits d'accès pour les sites distants et la possibilité ou non pour les sites anonymes de se connecter sont configurés dans web.config.</info>
+        <localsite>Nom de site local</localsite>
+        <name>Nom</name>
+        <ping>Ping</ping>
+        <pingfalse>Le site Web "{0}" a répondu, mais n'a pas accepté la signature, ou aucune signature n'a été définieLe site Web "{0}" a répondu, mais n’a pas accepté la signature, ou aucune signature n’a été définie</pingfalse>
+        <pingtrue>Le site Web "{0}" a répondu et accepté la signatureLe site Web "{0}" a répondu et accepté la signatureLe site Web "{0}" a répondu et accepté l’utilisateur</pingtrue>
+        <url>URL</url>
+      </remotesite>
+      <remotesiteedit>
+        <allowurllookup>Autoriser le nom de site dans les URL (par exemple page.aspx?id=30__mysite)</allowurllookup>
+        <confirmdelete>Voulez-vous vraiment supprimer le site Web distant ?</confirmdelete>
+        <domain>Domaine</domain>
+        <heading>Modifier le site Web distant</heading>
+        <info>Ne modifiez pas le nom d'un site externe, car il peut être utilisé dans le code. Créez un secret partagé qui doit être copié manuellement vers le site distant pour signer des communications. Ceci permet de s'assurer que les données ne peuvent pas être falsifiées lors de leur transmission sur un canal non sécurisé.Ne modifiez pas le nom d’un site externe, car il peut être utilisé dans le code. </info>
+        <istrusted>Agir en tant que front end</istrusted>
+        <istrustedwarning>Avertissement de sécurité ! Ce site pourra lire les informations d'assembly sur les propriétés et les paramètres de niveau d'accès. Un secret partagé et une signature valide sur les deux sites seront nécessaires pour un fonctionnement correct.</istrustedwarning>
+        <name>Nom</name>
+        <nameisnotunique>Le nom '{0}' est déjà utilisé par un autre site Web distant.</nameisnotunique>
+        <password>Mot de passe</password>
+        <sharedsecret>Secret partagé pour la signature</sharedsecret>
+        <url>URL</url>
+        <username>Nom d'utilisateur</username>
+      </remotesiteedit>
+      <remotewebsite>
+        <localsitebadchars>
+                    La chaîne doit soit être vide, soit comporter une association de caractères alphanumériques, de points (.) et de tirets (-), pour une longueur maximale de 256 caractères, par exemple 'site.com' ou 'MonSite-2'.
+                </localsitebadchars>
+      </remotewebsite>
+      <searchusers>
+        <descriptioncaption>	Description</descriptioncaption>
+        <heading>				Rechercher des utilisateurs/groupes</heading>
+        <info />
+        <namecaption>			Nom</namecaption>
+        <nomembershipprovider>Aucun fournisseur d’appartenance n’est configuré dans Web.config.</nomembershipprovider>
+        <pagingsize>		Nombre de résultats par page</pagingsize>
+        <searchname>Nom</searchname>
+        <typecaption>			Type</typecaption>
+        <typegroup>				Groupes</typegroup>
+        <typeuser>				Utilisateurs</typeuser>
+      </searchusers>
+      <secedit>
+        <alpharequiredpassword>	Le mot de passe doit contenir des lettres.</alpharequiredpassword>
+        <changepassword>Changer le mot de passe</changepassword>
+        <editactive>			Actif</editactive>
+        <editaddress>			Adresse</editaddress>
+        <editadspath>			Nom ActiveDirectory</editadspath>
+        <editchanged>Modifié</editchanged>
+        <editcompany>			Société</editcompany>
+        <editconfirmpassword>	Confirmer le mot de passe</editconfirmpassword>
+        <editcountry>Pays</editcountry>
+        <editcreated>Créé</editcreated>
+        <editdescription>		Description</editdescription>
+        <editemail>				Adresse de messagerie</editemail>
+        <editgroupheading>		Modifier le groupe</editgroupheading>
+        <editlanguage>Langue personnelle</editlanguage>
+        <editname>				Nom de l'utilisateur</editname>
+        <editpassword>			Mot de passe</editpassword>
+        <editpostaladdress>		Adresse postale</editpostaladdress>
+        <editpostalnumber>		Code postal</editpostalnumber>
+        <edittelephone>			Numéro de téléphone</edittelephone>
+        <edituserheading>		Modifier l'utilisateur</edituserheading>
+        <editvalidto>			Valide jusqu'à</editvalidto>
+        <firstname>				Prénom</firstname>
+        <info>&amp;nbsp;</info>
+        <ipaddress>				Connexion uniquement à partir de l'adresse IP</ipaddress>
+        <ipmask>				Masque de sous-réseau pour l'adresse IP ci-dessus</ipmask>
+        <lastname>				Nom</lastname>
+        <listcontains>			Contient</listcontains>
+        <listmemberof>			Membre de</listmemberof>
+        <listnotcontains>		Ne contient pas</listnotcontains>
+        <listnotmemberof>		Non membre de</listnotmemberof>
+        <lockedout>				Compte verrouillé (trop de tentatives de connexion infructueuses)</lockedout>
+        <missingpassword>		Vous devez entrer un mot de passe.</missingpassword>
+        <mobile>				Téléphone mobile</mobile>
+        <newuserheading>		Nouvel utilisateur</newuserheading>
+        <numberrequiredpassword>Le mot de passe doit contenir des chiffres.</numberrequiredpassword>
+        <passwordanswer>Réponse</passwordanswer>
+        <passwordquestion>Question du mot de passe</passwordquestion>
+        <providerdonotsupportcreateuser>Le fournisseur actuel ({0}) ne prend pas en charge la création/l'enregistrement d'utilisateurs</providerdonotsupportcreateuser>
+        <symbolrequiredpassword>Le mot de passe doit contenir des symboles (caractères autres que les chiffres et les lettres).</symbolrequiredpassword>
+        <title>					Titre</title>
+        <tooshortpassword>		Le mot de passe doit compter au moins {0} caractères</tooshortpassword>
+        <usernameexists>		Le nom d'utilisateur {0} existe déjà.</usernameexists>
+      </secedit>
+      <security>
+        <applyrecursive>Appliquer les paramètres aux sous-pages</applyrecursive>
+        <heading>					Définir les droits d'accès pour la page "{0}"</heading>
+        <info>						Restaurez les droits d'accès dans EPiServer CMS pour les pages auxquelles vous avez, par exemple, complètement supprimé l'accès. Vous pouvez modifier tous les droits sur toutes les pages.</info>
+        <mark>Sélectionner</mark>
+        <markall>Tout sélectionner</markall>
+        <notselectedinfo>Les paramètres de cette ligne ne seront pas affectés lors de l'enregistrement ou de la suppression</notselectedinfo>
+        <notsupportedoperation>Cette opération n'est pas prise en charge pour les pages externes.</notsupportedoperation>
+        <recursivedeleteconfirm>Les paramètres des lignes sélectionnées seront supprimés pour la page marquée et toutes les sous-pages. Cliquez sur OK pour poursuivre.</recursivedeleteconfirm>
+        <recursiveinfo>Si vous enregistrez ou supprimez avec l'option "Appliquer les paramètres aux sous-pages" sélectionnée, les droits d'accès seront affectés aux lignes sélectionnées sur la page marquée, ainsi qu'à toutes les sous-pages, ou supprimés de celles-ci</recursiveinfo>
+        <recursivereplaceconfirm>Si les lignes sélectionnées comportent d'autres droits d'accès pour les sous-pages, ces derniers seront remplacés et les lignes non sélectionnées seront supprimées de toutes les sous-pages. Cliquez sur OK pour poursuivre.</recursivereplaceconfirm>
+        <recursivesaveconfirm>Si les lignes sélectionnées comportent d'autres paramètres pour les sous-pages, ces paramètres seront remplacés. Cliquez sur OK pour poursuivre.</recursivesaveconfirm>
+        <removeaccessrightstext>Ajouter les lignes sélectionnées et supprimer les lignes non sélectionnées </removeaccessrightstext>
+        <removeaccessrightstexttooltip>En choisissant Enregistrer, vous allez affecter des droits d'accès à toutes les lignes sélectionnées. Les lignes non sélectionnées seront supprimées. Option généralement utilisée pour remplacer des droits d'accès obsolètes.</removeaccessrightstexttooltip>
+        <removeconfirm>Voulez-vous vraiment supprimer les droits d'accès des lignes sélectionnées pour la page sélectionnée ? Cliquez sur OK pour poursuivre.</removeconfirm>
+        <replaceconfirm>Si les lignes sélectionnées comportent d'autres paramètres pour la page marquée, ces paramètres seront remplacés. Les lignes non sélectionnées seront supprimées de la page marquée. Cliquez sur OK pour poursuivre.</replaceconfirm>
+        <savemessage>				Nouveaux droits d'accès enregistrés</savemessage>
+        <selectedinfo>Les paramètres de cette ligne seront affectés lors de l'enregistrement ou de la suppression</selectedinfo>
+        <unmark>Désélectionner</unmark>
+        <unmarkall>Tout désélectionner</unmarkall>
+      </security>
+      <settings>
+        <databasetab>				Base de données</databasetab>
+        <defaultsubscriptionhandler>
+          <description>Gestionnaire intégré EPiServer CMS pour les messages d'abonnement</description>
+          <displayname>Par défaut EPiServer CMS</displayname>
+        </defaultsubscriptionhandler>
+        <editordivonreturncaption>	Utiliser DIV dans l'éditeur à la place de P</editordivonreturncaption>
+        <edittab>					Édition</edittab>
+        <epfbrowserlanguagedetectioncaption>Détecter la langue via les préférences de langue du navigateur</epfbrowserlanguagedetectioncaption>
+        <epfenableglobalizationsupportcaption>Activer la globalisation</epfenableglobalizationsupportcaption>
+        <epfencryptsensitiveinformationcaption>Chiffrer le fichier web.config</epfencryptsensitiveinformationcaption>
+        <epfkeeploggedoncaption>				Activer les cookies pour que le visiteur reste connecté</epfkeeploggedoncaption>
+        <epncategoryidcaption>			Racine pour les catégories</epncategoryidcaption>
+        <epneditorheightcaption>				Hauteur de l'éditeur (pixels)</epneditorheightcaption>
+        <epneditorwidthcaption>Largeur de l'éditeur (pixels)</epneditorwidthcaption>
+        <epnversioncountcaption>		Nombre maximal d'anciennes versions d'une page</epnversioncountcaption>
+        <epsconnectioncaption>		Connexion base de données</epsconnectioncaption>
+        <epseditcontrolversion>		Version actuelle de l'éditeur ActiveX (par exemple 2,0,0,31)</epseditcontrolversion>
+        <epseditcsscaption>			Chemin d'accès du fichier CSS de l'éditeur</epseditcsscaption>
+        <epserrorhandling>	Gestion des erreurs dans EPiServer CMS</epserrorhandling>
+        <epserrorhandlingoff>			Gestion des erreurs désactivée</epserrorhandlingoff>
+        <epserrorhandlingon>			Active pour tous</epserrorhandlingon>
+        <epserrorhandlingremoteonly>	Active pour les visiteurs distants</epserrorhandlingremoteonly>
+        <epserrormail>		Adresse de messagerie à laquelle envoyer les rapports d'erreur </epserrormail>
+        <epshosturlcaption>			Adresse de votre site Web (par exemple, http://www.x.y)</epshosturlcaption>
+        <epsldappasswordcaption>	Mot de passe pour l'utilisateur</epsldappasswordcaption>
+        <epsldapservercaption>		Serveur LDAP, par exemple company.com. Laissez vide pour désactiver les fonctions LDAP</epsldapservercaption>
+        <epsldapusercaption>		Se connecter au serveur LDAP en tant que cet utilisateur</epsldapusercaption>
+        <epsrootdircaption>			Dossier racine</epsrootdircaption>
+        <epssitenamecaption>			Nom du site Web</epssitenamecaption>
+        <epssubscriptionhandler>Gestionnaire des mises à jour des abonnements</epssubscriptionhandler>
+        <heading>					Paramètres du système</heading>
+        <info>						&lt;b&gt;AVERTISSEMENT !&lt;/b&gt; En cas de modifications incorrectes sur cette page, le site Web risque de cesser de répondre.</info>
+        <inforequired>				Les champs qui doivent être remplis sont marqués avec le signe *</inforequired>
+        <pageuploadcaption>			Télécharger des fichiers vers une page spécifique</pageuploadcaption>
+        <renamefiledircaption>		Renommer un fichier/dossier à partir de l'outil de liens</renamefiledircaption>
+        <restricteduploadcaption>	Téléchargement de fichiers restreint</restricteduploadcaption>
+        <saved>Les nouvelles valeurs ont été enregistrées</saved>
+        <sitetab>					Général</sitetab>
+        <unlimitedversions>Versions illimitées</unlimitedversions>
+      </settings>
+      <setup>
+        <cancelmessage>Retournez à cette page ultérieurement pour compléter l'installation</cancelmessage>
+        <emptysample>	Seulement la page de démarrage sans aucun contenu ni type de page</emptysample>
+        <englishsample>Modèles d'exemples anglais avec tous les modèles installés</englishsample>
+        <globalizationsample>Modèles d'exemples globalisés (anglais et suédois) avec tous les modèles installés</globalizationsample>
+        <heading>Installer le contenu de base</heading>
+        <info>Pour commencer à utiliser EPiServer CMS, vous devez d’abord lui fournir un contenu de base. Sélectionnez l’une des options ci-dessous ainsi que la langue du système, puis cliquez sur Terminer.</info>
+        <installpackagespathempty>Le dossier qui a été défini pour les packages à importer ne contient pas de packages [{0}].</installpackagespathempty>
+        <norootpage>Vous devez sélectionner une destination de page</norootpage>
+        <progress>Veuillez patienter pendant la mise à jour du système</progress>
+        <redirectwarning>L'attribut pageStartId de l'élément siteSettings dans web.config est défini sur 0 (zéro), ce qui signifie que le contenu n'a pas été installé.&lt;br/&gt; Définissez pageStartId="1" dans web.config pour utiliser la page racine comme page de démarrage.&lt;br/&gt;</redirectwarning>
+        <selectcontent>Sélectionnez le contenu</selectcontent>
+        <selectdestination>Sélectionner la destination de page</selectdestination>
+        <selectlanguage>Sélectionnez la langue du système</selectlanguage>
+        <setupbutton>Terminer</setupbutton>
+        <startpageexists>Une page de démarrage est déjà configurée pour vous</startpageexists>
+        <swedishsample>Modèles d'exemples suédois avec tous les modèles installés</swedishsample>
+        <utilsetupempty>Aucun package à importer trouvé dans ~/util/setup et InstallPackagesPath n'est pas défini comme paramètre dans l'adresse de page Web.</utilsetupempty>
+      </setup>
+      <siteinfo>
+        <buttonresetcounters>		Réinitialiser les compteurs</buttonresetcounters>
+        <countergetitem>			Pages remises à partir du cache</countergetitem>
+        <counterlistchildren>			Listes remises à partir du cache</counterlistchildren>
+        <counteroutputinvalid>Pages non valides dans le cache HTML</counteroutputinvalid>
+        <counteroutputvalid>Pages envoyées à partir du cache HTML</counteroutputvalid>
+        <counterpages>				Pages dans le cache</counterpages>
+        <counterreadchildpages>		Lectures de la base de données pour les listes</counterreadchildpages>
+        <counterreadsinglepage>		Lectures de la base de données pour les pages uniques</counterreadsinglepage>
+        <countersince>				Les compteurs ont été réinitialisés </countersince>
+        <dbcachecaption>			Utilisation du cache de la base de données</dbcachecaption>
+        <dbcachehitpercentage>		Pourcentage d'opérations réussies dans le cache </dbcachehitpercentage>
+        <dbstatcaption>				Informations sur la base de données</dbstatcaption>
+        <dbstatchangedlastweek>		Pages modifiées depuis la semaine dernière</dbstatchangedlastweek>
+        <dbstatepisecusercount>		Utilisateurs extranet (EPiSec)</dbstatepisecusercount>
+        <dbstatntusercount>			Utilisateurs Windows (NT)</dbstatntusercount>
+        <dbstatpagecount>			Nombre total de pages dans la base de données</dbstatpagecount>
+        <dbstatsubscribercount>		Abonnés</dbstatsubscribercount>
+        <dbsystemprocessinfocaption>Informations sur le processus/système</dbsystemprocessinfocaption>
+        <heading>					Statistiques</heading>
+        <info />
+        <outputcachecaption>Utilisation du cache HTML depuis le</outputcachecaption>
+        <processconfigfile>			Fichier de configuration</processconfigfile>
+        <processid>					ID du processus</processid>
+        <processpeakmemory>			Utilisation maximale de la mémoire (Mo)</processpeakmemory>
+        <processpubpolicy>			Stratégies de publication</processpubpolicy>
+        <processshadowcopy>			Copie fantôme d'assemblys</processshadowcopy>
+        <processshadowdir>			Dossier caché</processshadowdir>
+        <processstarted>			Processus de travail démarré</processstarted>
+      </siteinfo>
+      <tabs>
+        <duplicatetabname>Un onglet portant ce nom existe déjà.</duplicatetabname>
+        <invalidsortindex>Index de tri non valide pour l'onglet. L'index de tri doit être un nombre entier positif.</invalidsortindex>
+        <missingsortindex>Vous devez indiquer un index de tri pour l'onglet</missingsortindex>
+        <missingtabname>Vous devez indiquer un nom d'onglet</missingtabname>
+        <referencedheadinghelp>Si vous voulez toujours supprimer cet en-tête, sélectionnez l'en-tête sous lequel les propriétés ci-dessus doivent être placées.</referencedheadinghelp>
+        <referencedheadingmessage>Fait référence à "{0}"</referencedheadingmessage>
+      </tabs>
+      <webpartadmin>
+        <consume>Utiliser le Portlet</consume>
+        <control>Contrôle</control>
+        <description>Description</description>
+        <displayname see="/admin/webpartadmin/heading" />
+        <heading>Inscrire les composants WebPart</heading>
+        <info>Définissez les composants WebPart qui doivent être disponibles pour être utilisés</info>
+        <install>Installer le composant WebPart</install>
+        <name>Nom</name>
+        <portlet>Portlet</portlet>
+        <producer>Producteur</producer>
+      </webpartadmin>
+      <webpartadminedit>
+        <addparameter>Ajouter un paramètre</addparameter>
+        <ambiguoustypename>Le nom de type spécifié est ambigu. Le nom correspond aux noms qualifiés suivants.</ambiguoustypename>
+        <assemblyloadfailed>Une erreur s'est produite lors du chargement de l'assembly.</assemblyloadfailed>
+        <control>Contrôle</control>
+        <description>Description</description>
+        <emptyvalueerror>Vous devez entrer la valeur du paramètre</emptyvalueerror>
+        <heading>Modifier l'inscription de "{0}"</heading>
+        <headingconsume>Utiliser le Portlet</headingconsume>
+        <headinginstall>Installer le composant WebPart</headinginstall>
+        <info>Définir les propriétés des composants WebPart</info>
+        <infoconsume>Définir les propriétés du portlet</infoconsume>
+        <invalidcontrol>Impossible de charger le contrôle spécifié.</invalidcontrol>
+        <name>Nom</name>
+        <nameexists>Un composant WebPart portant le nom "{0}" existe déjà</nameexists>
+        <parametername>Nom</parametername>
+        <parameters>Paramètres</parameters>
+        <parametertype>Type</parametertype>
+        <parametervalue>Valeur</parametervalue>
+        <portlet>Portlet</portlet>
+        <producer>Producteur</producer>
+        <requiredfield>Vous devez entrer une valeur pour :</requiredfield>
+        <resolvecontrol>Résoudre le contrôle</resolvecontrol>
+        <typeconversionerror>Impossible de convertir la valeur du paramètre vers le type sélectionné</typeconversionerror>
+        <typenameblank>Vous devez saisir un nom de type ou un chemin virtuel.</typenameblank>
+        <typenamenotfound>Impossible de trouver un contrôle ayant le nom de type spécifié.</typenamenotfound>
+        <typenameresolved>Le contrôle a été résolu.</typenameresolved>
+        <virtualpathloadfailed>Impossible de charger le chemin virtuel.</virtualpathloadfailed>
+      </webpartadminedit>
+      <wsrpadmin>
+        <description see="/admin/wsrpadmin/info" />
+        <detailederror>Description détaillée de l'erreur :</detailederror>
+        <displayname see="/admin/wsrpadmin/heading" />
+        <heading>Sources WSRP</heading>
+        <info>Définit les sources WSRP qui doivent être disponibles pour la consommation.</info>
+      </wsrpadmin>
+    </admin>
+    <april>Avril</april>
+    <august>Août</august>
+    <button>
+      <activate>		Activer</activate>
+      <add>			Ajouter</add>
+      <addgroupsid>	Ajouter un groupe</addgroupsid>
+      <addlink>Ajouter un lien</addlink>
+      <addusergroupsid>Ajouter des utilisateurs/groupes</addusergroupsid>
+      <addusersid>	Ajouter un utilisateur</addusersid>
+      <apply>Appliquer</apply>
+      <browse>		Parcourir...</browse>
+      <cancel>		Annuler</cancel>
+      <change>		Remplacer</change>
+      <checkin>		Prêt pour la publication</checkin>
+      <clear>			Effacer</clear>
+      <close>			Fermer</close>
+      <comingmonth>30 prochains jours</comingmonth>
+      <comingweek>7 prochains jours</comingweek>
+      <compare>		Comparer</compare>
+      <continue>Continuer</continue>
+      <copy>			Copier</copy>
+      <create>		Créer</create>
+      <deactivate>	Désactiver</deactivate>
+      <delaypublish>Publication différée</delaypublish>
+      <delete>		Supprimer</delete>
+      <deletefoundposting>Supprimer tous les postages</deletefoundposting>
+      <deleteselected>Supprimer les postages sélectionnés</deleteselected>
+      <edit>			Modifier</edit>
+      <export>Exporter</export>
+      <exportasxml>Exporter en tant que données XML</exportasxml>
+      <exporttoexcel>Exporter vers Excel</exporttoexcel>
+      <findnext>		Suivant</findnext>
+      <help>			Aide</help>
+      <ignore>		Ignorer</ignore>
+      <ignoreall>		Ignorer tout</ignoreall>
+      <import>Importer</import>
+      <insert>		Insérer</insert>
+      <lastmonth>30 derniers jours</lastmonth>
+      <lastweek>7 derniers jours</lastweek>
+      <login>			Connexion</login>
+      <next>			&gt;&gt;</next>
+      <no>			Non</no>
+      <ok>			OK</ok>
+      <prev>			&lt;&lt;</prev>
+      <preview>		Aperçu</preview>
+      <print>			Imprimer</print>
+      <publish>		Publier</publish>
+      <refresh>		Actualiser</refresh>
+      <reset>			Réinitialiser</reset>
+      <resize>Redimensionner</resize>
+      <save>			Enregistrer</save>
+      <saveandclose>	Enregistrer et fermer</saveandclose>
+      <saveandpublish>Enregistrer et publier</saveandpublish>
+      <saveandview>	Enregistrer et afficher</saveandview>
+      <saveonly>Enregistrer</saveonly>
+      <search>		Rechercher</search>
+      <select>		Sélectionner</select>
+      <send>			Envoyer</send>
+      <settings>		Paramètres</settings>
+      <showreport>Afficher le rapport</showreport>
+      <today>Aujourd'hui</today>
+      <unpublish>		Annuler la publication</unpublish>
+      <yes>			Oui</yes>
+      <yesterday>Hier</yesterday>
+      <zoom>Zoom</zoom>
+    </button>
+    <clienttools>
+      <installstatus>
+        <componentdescription see="/labels/description" />
+        <componentname>Composant</componentname>
+        <components>
+          <componentexcelexport>
+            <description>Composant qui peut exporter des données de formulaire vers Microsoft Excel.</description>
+            <heading>Exporter vers Excel, prise en charge Microsoft Office</heading>
+          </componentexcelexport>
+          <componentmultiupload>
+            <description>Composant qui permet la prise en charge du téléchargement de fichiers avancé, par exemple via la technique du glisser-déplacer.</description>
+            <heading>Téléchargement de fichiers avancé</heading>
+          </componentmultiupload>
+          <componentshelltools>
+            <description>Fonctions de prise en charge pour communiquer avec EPiServer, utilisées par le complément Microsoft Office par exemple.</description>
+            <heading>Fonctions de prise en charge de clients</heading>
+          </componentshelltools>
+          <componentspellchecker>
+            <description>Composant qui permet à l'éditeur d'utiliser le vérificateur orthographique de Microsoft Word.</description>
+            <heading>Orthographe, prise en charge Microsoft Office</heading>
+          </componentspellchecker>
+          <currentversion>Vous utilisez la version {0} de {1}</currentversion>
+          <heading>Composants</heading>
+          <intro>Certaines fonctions d'EPiServer CMS exigent l'installation de composants clients EPiServer CMS sur votre ordinateur local. La liste ci-dessous affiche les composants disponibles et leur statut.</intro>
+        </components>
+        <componentstatus>Statut</componentstatus>
+        <componentversion>Version</componentversion>
+        <heading>Outils clients</heading>
+        <install>Installer</install>
+        <installversion>Installer la version {0}</installversion>
+        <missingactivexsupport>Cette fonctionnalité nécessite un navigateur Web prenant en charge Active X, tel que Microsoft Internet Explorer.</missingactivexsupport>
+        <officeaddin>
+          <activated>Ce site Web a été activé pour la publication à partir de votre ordinateur</activated>
+          <confirmactivate>Voulez-vous activer la publication vers le site suivant ?</confirmactivate>
+          <confirmdeactivate>Voulez-vous désactiver la publication vers le site suivant ?</confirmdeactivate>
+          <heading>Complément Microsoft Office</heading>
+          <installation>Installation</installation>
+          <intro>Ce complément vous permet de publier des informations depuis Microsoft Word, Microsoft Excel et Microsoft PowerPoint vers EPiServer CMS.</intro>
+          <needssave>Vous devez enregistrer le document avant de pouvoir le publier dans EPiServer CMS. Voulez-vous enregistrer le document maintenant ?</needssave>
+          <noaccess>Pour pouvoir installer et utiliser ce complément, des autorisations sont requises pour certaines fonctions. Un administrateur peut vous assigner ces autorisations.</noaccess>
+          <notactivated>Ce site Web n'a pas été activé pour la publication à partir de votre ordinateur</notactivated>
+        </officeaddin>
+        <registersite>Inscrire le site</registersite>
+        <statusinstalled>Le composant est installé</statusinstalled>
+        <statusloading>Vérification du statut...</statusloading>
+        <statusnotinstalled>Le composant n'est pas installé</statusnotinstalled>
+        <upgrade>Mise à niveau</upgrade>
+      </installstatus>
+      <preview>
+        <tooltipclose>Fermez l'aperçu et supprimez les modifications</tooltipclose>
+      </preview>
+      <wizard>
+        <createpage>Sélectionnez le type de page sur lequel vous voulez baser ce document.</createpage>
+        <doneblock1>Terminé !</doneblock1>
+        <doneblock2>Sélectionnez Enregistrer et afficher pour terminer cet Assistant et créer un aperçu de cette page.</doneblock2>
+        <editpage>Le type de page sélectionné est {0}. Entrez les informations comme le nom de page et les dates de publication.</editpage>
+        <noextension>Le fichier "{0}" n'a pas d'extension et ne peut pas être identifié</noextension>
+        <nosupport>Aucune prise en charge pour l'extension "{0}" n'a été configurée</nosupport>
+        <selectpagelanguage>Langue</selectpagelanguage>
+      </wizard>
+    </clienttools>
+    <cookie>
+      <logincaption>		Des cookies sont utilisés lorsque vous vous connectez.</logincaption>
+      <logininfo>			Un cookie contient des informations de connexion qui sont envoyées à votre navigateur Web. Si vous ne souhaitez pas recevoir de cookies, vous ne pourrez pas vous connecter au site Web.</logininfo>
+    </cookie>
+    <day>jour</day>
+    <december>Décembre</december>
+    <dope>
+      <adminmode>Mode admin</adminmode>
+      <cancel>Annuler</cancel>
+      <confirmsave>"Type de lien" est défini sur "Extraire les données d’une autre page". Si vous enregistrez vos modifications, vous créerez une copie statique de la page et les données ne seront plus extraites de l’adresse spécifiée. Voulez-vous continuer ?</confirmsave>
+      <copy>Copier vers le Presse-papiers</copy>
+      <delete>Supprimer</delete>
+      <disablemenu>Désactiver le menu</disablemenu>
+      <edit>Modifier</edit>
+      <editmode>Mode édition</editmode>
+      <new>Nouveau</new>
+      <newwindow>Ouvrir dans une nouvelle fenêtre</newwindow>
+      <print>Imprimer</print>
+      <properties>Propriétés</properties>
+      <quickedit>Édition rapide</quickedit>
+      <refresh>Actualiser</refresh>
+      <save>Enregistrer et publier</save>
+      <security>Droits d'accès</security>
+      <viewmode>Mode affichage</viewmode>
+    </dope>
+    <dynamiccontenttypes>
+      <dynamiccontent name="PagePropertyPlugin">
+        <caption>Propriété de la page</caption>
+        <description>Insère le contenu d'une propriété de page définie.</description>
+      </dynamiccontent>
+    </dynamiccontenttypes>
+    <edit>
+      <actionwindow>
+        <heading>Fenêtre Action</heading>
+        <hide>Masquer</hide>
+      </actionwindow>
+      <activityloader>
+        <assignedtasks>Mes tâches assignées</assignedtasks>
+        <duedate>Échéance</duedate>
+        <grouptask>Tâches de groupe</grouptask>
+        <noactivity>Aucune activité en cours</noactivity>
+        <personaltask>Tâches personnelles</personaltask>
+        <personaltaskstaskstooltip>Tâches personnelles :</personaltaskstaskstooltip>
+        <readytopublishtooltip>Prêt(e) pour la publication :</readytopublishtooltip>
+        <statusnotready>Non publié(e)</statusnotready>
+        <statusreadytopublish>Prêt(e) pour la publication</statusreadytopublish>
+        <statusrejected>Commenté(e)</statusrejected>
+        <workflowowner>Vue d'ensemble du flux de travail</workflowowner>
+      </activityloader>
+      <clienttools>
+        <clientinstaller>
+          <closewindow>Fermer la fenêtre</closewindow>
+          <installationstatus>Les composants clients sont à présent installés. Vous pouvez fermer cette fenêtre.</installationstatus>
+          <pagetitle>Installation des composants clients</pagetitle>
+          <restartbrowser>Les composants clients ont été mis à niveau. Redémarrez Internet Explorer pour utiliser les composants mis à niveau. Fermez toutes les fenêtres Internet Explorer, puis ouvrez de nouveau le navigateur.</restartbrowser>
+        </clientinstaller>
+        <multifileupload>
+          <directorynotfound>Le dossier "{0}" est introuvable sur le serveur.</directorynotfound>
+          <functiondisabled>Vous ne disposez pas de l'autorisation nécessaire au téléchargement avancé des fichiers. Assurez-vous que cela a été activé dans "Autorisations pour des fonctions".</functiondisabled>
+          <permissiondenied>Vous ne disposez pas de l'autorisation nécessaire à la création de fichiers dans ce dossier.</permissiondenied>
+        </multifileupload>
+        <wizard>
+          <pagenotfound>
+            <message>
+              La page que vous tentez de mettre à jour n'a pu être trouvée. Elle a probablement été supprimée.&lt;br/&gt;
+              Pour publier ce document dans un autre emplacement, cliquez sur l'option d'annulation dans cette boîte de dialogue.  Répondez ensuite "Non" à la question vous demandant si vous souhaitez mettre à jour une page existante.
+            </message>
+            <title>Impossible de trouver la page</title>
+          </pagenotfound>
+        </wizard>
+      </clienttools>
+      <conflicteditor>
+        <heading>Conflit d'éditeur</heading>
+        <info>Les informations sur la version publiée ont été modifiées depuis que vous avez extrait cette version.</info>
+        <tabmychanges>Mes modifications</tabmychanges>
+        <tabpublishedchanges>Modifications publiées</tabpublishedchanges>
+      </conflicteditor>
+      <contentmirroringadmin>
+        <description>Liste de canaux définis disponibles sur ce système.</description>
+        <displayname>Approuver les mises à jour de mise en miroir</displayname>
+        <failure>Une défaillance est survenue ({0}), contactez l'administrateur du site.</failure>
+        <itemcreated>Créé(e)</itemcreated>
+        <itemdeleted>Supprimé(e)</itemdeleted>
+        <itemmoved>Déplacé(e)</itemmoved>
+        <itemupdated>Mis(e) à jour</itemupdated>
+      </contentmirroringadmin>
+      <deletepage>
+        <deleteconfirmation>Voulez-vous vraiment supprimer "{0}" ?</deleteconfirmation>
+        <deletenotsupported>Le fournisseur de cette page ne prend pas en charge la suppression.</deletenotsupported>
+        <deletesuffix>"{0}" a été supprimée</deletesuffix>
+        <deletesystempage>	La Corbeille, la page de démarrage et la page racine ne peuvent pas être supprimées</deletesystempage>
+        <failedreferenced>Les pages suivantes sont référencées dans d'autres parties du système et ne peuvent donc pas être supprimées :</failedreferenced>
+        <hasentrypointchild>Cette page (ou l'une de ses sous-pages) est parente d'un fournisseur de page et ne peut pas être supprimée. Commencez par supprimer le fournisseur de page dans web.config.</hasentrypointchild>
+        <heading>Suppression de la page "{0}"</heading>
+        <headingfailed>Impossible de supprimer une ou plusieurs pages</headingfailed>
+        <info />
+        <movesuffix>"{0}" a été envoyée à la Corbeille</movesuffix>
+        <nodeleteaccessrights>Vous ne disposez pas des droits d’accès suffisants pour supprimer cette page.</nodeleteaccessrights>
+        <reftypearchive>{0} est le dossier d'archivage pour {1}</reftypearchive>
+        <reftypedefaultarchive>{1} est utilisé comme page d'archivage par défaut sur le type de page {0}</reftypedefaultarchive>
+        <reftypeproperty>{0} est référencée par une propriété dans {1}</reftypeproperty>
+        <reftypeshortcut>La page dont l'ID est {0} comporte un lien vers cette page ou l'une de ses sous-pages.</reftypeshortcut>
+      </deletepage>
+      <deletepagelanguage>
+        <alertlangnotselected>Vous devez sélectionner une langue.</alertlangnotselected>
+        <confirmdeletemessage>Si vous continuez, la langue sélectionnée sera définitivement supprimée pour la page.</confirmdeletemessage>
+        <confirmdeletequestion>Voulez-vous vraiment supprimer cette langue ?</confirmdeletequestion>
+        <deletedlanguage>	La langue "{0}" a été supprimée pour cette page.</deletedlanguage>
+        <heading>			Supprimer la langue de la page "{0}"</heading>
+        <info>				Supprimez une des langues de la page, sans supprimer la page entière. Remarque : Lorsque vous supprimez une langue d'une page, sa suppression est définitive. En d'autres termes, elle n'est pas placée dans la Corbeille. Les sous-pages dans la même langue ne seront pas supprimées.</info>
+        <nothingtodelete>	Il n'existe qu'une seule langue pour cette page. Utilisez la fonction "Supprimer" pour supprimer la page et ses sous-pages.</nothingtodelete>
+        <selectlanguage>	Supprimer la langue</selectlanguage>
+        <selectlanguageitem>Sélectionner une langue à supprimer</selectlanguageitem>
+      </deletepagelanguage>
+      <dynamiccontent>
+        <dynamicpagepropertysettings>
+          <dynamicproperties>Propriétés dynamiques</dynamicproperties>
+          <metadataproperties>Propriétés intégrées</metadataproperties>
+          <pagelinkerror>Vous devez sélectionner une page</pagelinkerror>
+          <pagelinklabel>Page de chargement des données</pagelinklabel>
+          <pagetypeproperties>Propriétés du type de page</pagetypeproperties>
+          <propertylisterror>Vous devez sélectionner une propriété</propertylisterror>
+          <propertylistlabel>Propriété de chargement des données</propertylistlabel>
+        </dynamicpagepropertysettings>
+      </dynamiccontent>
+      <editcommand>
+        <actionwindowhelp>Permet d'ouvrir la fenêtre Action</actionwindowhelp>
+        <addfavoritecaption>Ajouter aux Favoris</addfavoritecaption>
+        <adminmodehelp see="/dope/adminmode" />
+        <askdelete>Voulez-vous supprimer cette page {0} ?</askdelete>
+        <askemptywastebasket>Voulez-vous vider la Corbeille ?</askemptywastebasket>
+        <askmove>Souhaitez-vous déplacer cette page ?</askmove>
+        <askprovidermove>Souhaitez-vous déplacer cette page ? Le déplacement de pages entre fournisseurs de pages implique le déplacement des données réelles entre les zones de stockage principales.</askprovidermove>
+        <copypagecaption>Copier</copypagecaption>
+        <copypagehelp>Copie la page sélectionnée</copypagehelp>
+        <createnewpagecaption>Créer un nouveau</createnewpagecaption>
+        <createnewpagehelp>Créer une nouvelle page</createnewpagehelp>
+        <cutpagecaption>Couper</cutpagecaption>
+        <cutpagehelp>Coupe la page sélectionnée</cutpagehelp>
+        <deletepagecaption>Supprimer</deletepagecaption>
+        <deletepagehelp>Supprime la page sélectionnée</deletepagehelp>
+        <deletepagelanguagecaption>Supprimer une langue</deletepagelanguagecaption>
+        <editdynpropcaption>Propriétés dynamiques</editdynpropcaption>
+        <editdynprophelp>Modifie les propriétés dynamiques</editdynprophelp>
+        <editmode>Mode édition</editmode>
+        <editpagecaption>Modifier</editpagecaption>
+        <favoritesmode>Favoris</favoritesmode>
+        <filemanagementhelp>Gestion de fichiers</filemanagementhelp>
+        <languageoverviewcaption>Vue d'ensemble des langues</languageoverviewcaption>
+        <languageoverviewhelp see="/edit/editcommand/languageoverviewcaption" />
+        <languagepagecaption>Langues de la page</languagepagecaption>
+        <languagepagehelp see="/edit/editcommand/languagepagecaption" />
+        <languagesettingscaption>Paramètres des langues</languagesettingscaption>
+        <languagesettingshelp see="/edit/editcommand/languagesettingscaption" />
+        <logoutdombrowser>Vous êtes connecté en tant qu’utilisateur Windows authentifié. Vous devez fermer toutes les fenêtres du navigateur afin de pouvoir vous déconnecter totalement.</logoutdombrowser>
+        <logouthelp>Déconnexion</logouthelp>
+        <movedisabled>Vous ne disposez pas de l'autorisation nécessaire au déplacement des données entre fournisseurs de pages. Assurez-vous que cela a été activé dans "Autorisations pour des fonctions".</movedisabled>
+        <pagetypenotallowed>	Le type de page n'est pas autorisé à la destination</pagetypenotallowed>
+        <pastepagecaption>Coller</pastepagecaption>
+        <pastepagehelp>Colle la page sélectionnée</pastepagehelp>
+        <personalmode>Mes tâches</personalmode>
+        <removefavoritecaption>Supprimer un Favori</removefavoritecaption>
+        <reportcenterhelp>Centre des rapports</reportcenterhelp>
+        <setaccesscaption>Droits d'accès</setaccesscaption>
+        <setaccesshelp>Modifie les droits d'accès</setaccesshelp>
+        <settingshelp see="/edit/workspace/mysettings" />
+        <viewmode>Structure</viewmode>
+        <viewmodehelp see="/dope/viewmode" />
+      </editcommand>
+      <editdynprop>
+        <heading>Modifier les propriétés dynamiques sur la page "{0}"</heading>
+        <info />
+        <nodynprop>Aucune propriété dynamique n'est définie</nodynprop>
+        <save>Les propriétés dynamiques ont été enregistrées</save>
+      </editdynprop>
+      <editform>
+        <addcolumnbutton>Ajouter une colonne</addcolumnbutton>
+        <addrowbutton>Ajouter une ligne</addrowbutton>
+        <allowanonymouspostcaption>Le formulaire peut être envoyé sans connexion</allowanonymouspostcaption>
+        <allowmultiplepostcaption>La même personne peut envoyer le formulaire plusieurs fois</allowmultiplepostcaption>
+        <buttoncaption>Texte de bouton</buttoncaption>
+        <buttonproperties>Propriétés des boutons</buttonproperties>
+        <checkboxproperties>Propriétés de la case à cocher</checkboxproperties>
+        <checkedcaption>Présélection</checkedcaption>
+        <classcaption>Classe CSS</classcaption>
+        <confirmdelete>Voulez-vous vraiment supprimer ce champ ?</confirmdelete>
+        <defaultpropertyheading>Propriétés</defaultpropertyheading>
+        <deletecolumnbutton>Supprimer une colonne</deletecolumnbutton>
+        <deletecolumnconfirmmessage>Voulez-vous vraiment supprimer la colonne sélectionnée ?</deletecolumnconfirmmessage>
+        <deleterowbutton>Supprimer une ligne</deleterowbutton>
+        <deleterowconfirmmessage>Voulez-vous vraiment supprimer la ligne sélectionnée ?</deleterowconfirmmessage>
+        <descriptionhrproperties>Propriétés de la règle horizontale</descriptionhrproperties>
+        <descriptionproperties>Propriétés de l'en-tête</descriptionproperties>
+        <fieldexists>Un champ existe déjà dans cette cellule</fieldexists>
+        <formcontrolinfotext>Faites glisser un champ sur une cellule de tableau ou sélectionnez une cellule puis cliquez sur le type de champ souhaité.</formcontrolinfotext>
+        <formfields>Champs du formulaire</formfields>
+        <formnamecaption>Nom du formulaire</formnamecaption>
+        <heading>Paramètres de formulaire</heading>
+        <headingcaption>En-tête</headingcaption>
+        <heightcaption>Hauteur (nombre de lignes)</heightcaption>
+        <horizontal>Horizontal</horizontal>
+        <horizontalrule>Règle horizontale</horizontalrule>
+        <htmlcode>Code HTML</htmlcode>
+        <importexport>Importer/Exporter</importexport>
+        <inputcheckbox>Case à cocher</inputcheckbox>
+        <inputdescription>En-tête</inputdescription>
+        <inputradiobutton>Case d'option</inputradiobutton>
+        <inputselectbox>Liste déroulante</inputselectbox>
+        <inputsubmit>Bouton</inputsubmit>
+        <inputtext>Zone de texte</inputtext>
+        <inputtextarea>Zone de texte</inputtextarea>
+        <insertcolumnbutton>Insérer une colonne</insertcolumnbutton>
+        <insertrowbutton>Insérer une ligne</insertrowbutton>
+        <mailanddboption>Env. un mess. é. et enreg. dans la b. de données</mailanddboption>
+        <namecaption>Nom</namecaption>
+        <optionscaption>Options</optionscaption>
+        <pageafterpost>La page affichée après le formulaire a été envoyé</pageafterpost>
+        <placefieldsinmatrix>Placer des champs dans la matrice ci-dessous</placefieldsinmatrix>
+        <placementcaption>Placement</placementcaption>
+        <postresultcaption>Résultat d'envoi</postresultcaption>
+        <radiobuttonproperties>Propriétés de la case d'option</radiobuttonproperties>
+        <requiredcaption>Une valeur doit être entrée</requiredcaption>
+        <savetodatabaseoption>Enregistrer dans la base de données</savetodatabaseoption>
+        <selectboxproperties>Propriétés de la liste déroulante</selectboxproperties>
+        <sendemailfromadresscaption>Adresse de messagerie de l'expéditeur</sendemailfromadresscaption>
+        <sendemailoption>Envoyer un message électronique</sendemailoption>
+        <sendemailsubjectcaption>Objet du message</sendemailsubjectcaption>
+        <sendemailtoadresscaption>Envoyer un message à cette adresse</sendemailtoadresscaption>
+        <sendformtourlcaption>Envoyer le formulaire à cette URL</sendformtourlcaption>
+        <sendtourloption>Envoyer à l'URL spécifiée</sendtourloption>
+        <tablelayout>Disposition du tableau</tablelayout>
+        <textareaproperties>Propriétés de la zone de texte</textareaproperties>
+        <textcaption>Texte</textcaption>
+        <textinputproperties>Propriétés du zone de texte</textinputproperties>
+        <tooltipcaption>Info-bulle</tooltipcaption>
+        <typecaption>Valider en tant que</typecaption>
+        <valuecaption>Valeur</valuecaption>
+        <vertical>Vertical</vertical>
+        <widthcaption>Largeur (nombre de caractères)</widthcaption>
+      </editform>
+      <editformdata>
+        <activexnotinstalled>Il semble que les composants clients EPiServer CMS ne soient pas installés. Pour les installer, sélectionnez la page racine et cliquez sur l'onglet "Composants".</activexnotinstalled>
+        <alertforselectingexportrow>Sélectionnez au moins une ligne à exporter.</alertforselectingexportrow>
+        <confirmdelete>		Voulez-vous vraiment supprimer tous les éléments trouvés lors de cette recherche ?</confirmdelete>
+        <confirmselecteddelete>Voulez-vous vraiment supprimer tous les éléments sélectionnés ?</confirmselecteddelete>
+        <date>				Date</date>
+        <errorexportingdata>Erreur d'exportation de données</errorexportingdata>
+        <excelexport>		Exporter vers Excel</excelexport>
+        <export>			Exporter</export>
+        <fromdate>			Date début</fromdate>
+        <heading>			Données du formulaire</heading>
+        <matches>			correspondance(s)</matches>
+        <newestfirst>		Plus récent d'abord</newestfirst>
+        <nohits>			Aucun résultat</nohits>
+        <pagingsize>		Nombre de résultats par page</pagingsize>
+        <selectform>		Sélectionner le formulaire</selectform>
+        <sortorder>			Tri</sortorder>
+        <todate>			Date fin</todate>
+        <user>				Utilisateur</user>
+      </editformdata>
+      <editorguide>
+        <description>Ce guide vous aide à créer un contenu Web exploitable et accessible.</description>
+        <displayname>Guide d'utilisabilité (en anglais)</displayname>
+        <hidesection>Masquer la section</hidesection>
+        <showsection>Afficher la section</showsection>
+      </editorguide>
+      <editpage>
+        <changed>Page modifiée</changed>
+        <checkedinversionswarning>Remarque ! Une version enregistrée est prête pour la publication. Elle est indiquée sous l'onglet Liste des versions, avec le statut Prêt pour la publication.</checkedinversionswarning>
+        <createdby>Page créée par</createdby>
+        <creator>Créé(e) par</creator>
+        <externallinkcaption>Lier à la page sur un autre site Web</externallinkcaption>
+        <externallinkwarning>Remarque ! "Type de lien" est défini sur "Lier à la page sur un autre site Web". Le contenu est extrait d’une autre adresse spécifiée. "Type de lien" peut être modifié dans "Édition", "Raccourci/Lien externe".</externallinkwarning>
+        <fetchdatacaption>Extraire les données de la page dans EPiServer CMS</fetchdatacaption>
+        <fetchdatawarning>Remarque ! "Type de lien" est défini sur "Extraire les données de la page dans EPiServer CMS". Le contenu est extrait d’une autre page dans EPiServer CMS. "Type de lien" peut être modifié dans "Édition", "Raccourci/Lien externe".</fetchdatawarning>
+        <mustpublishmasterfirst>La langue d'origine ({0}) de cette page n'a pas encore été publiée. La langue d'origine doit être publiée avant que la page ne puisse être publiée dans d'autres langues.</mustpublishmasterfirst>
+        <nolinkcaption>Aucun lien, uniquement du texte</nolinkcaption>
+        <nolinkwarning>Remarque ! "Type de lien" est défini sur "Lien vers cette page". Aucun contenu ne sera visible dans l’onglet "Afficher" et le nom de la page dans le menu ne comportera aucun lien. "Type de lien" peut être modifié dans "Édition", "Raccourci/Lien externe".</nolinkwarning>
+        <normallinkcaption>Lien vers cette page</normallinkcaption>
+        <normallinkwarning />
+        <publishedby>Page publiée par</publishedby>
+        <savedby>Page enregistrée pour la dernière fois par</savedby>
+        <shortcutcaption>Raccourci vers la page dans EPiServer CMS</shortcutcaption>
+        <shortcutwarning>Remarque ! "Type de lien" est un "Raccourci vers la page dans EPiServer CMS". Le visiteur est redirigé lorsqu’il clique sur le nom de la page. "Type de lien" peut être modifié dans "Édition", "Raccourci/Lien externe".</shortcutwarning>
+        <updatechanged>&amp;nbsp;Marquer la page comme modifiée&amp;nbsp;</updatechanged>
+      </editpage>
+      <editpanel>
+        <actionapprove>Publier</actionapprove>
+        <actioncheckin>Prêt</actioncheckin>
+        <actiondelete>Supprimer la version</actiondelete>
+        <actionreject>Commentaire</actionreject>
+        <changelanguageheading>Vue Page</changelanguageheading>
+        <compareto>Comparer avec</compareto>
+        <confirmdelete>Voulez-vous vraiment supprimer cette version ?</confirmdelete>
+        <confirmnavigate>Vous avez effectué des modifications dans cette page</confirmnavigate>
+        <creatingnewpage>Création d'une nouvelle page</creatingnewpage>
+        <creatingnewpagelanguage>Création d'une page dans une nouvelle langue</creatingnewpagelanguage>
+        <delayinfo>					Permet de gérer la publication différée de la version de cette page.</delayinfo>
+        <delaypublishinfo>Activer la publication différée</delaypublishinfo>
+        <delaystartpublishinfo>		Permet d'entrer la date/l'heure de la publication différée</delaystartpublishinfo>
+        <notreadyitem>--- Non publié(e) ---</notreadyitem>
+        <pagenotavailable>Cette page n'est pas disponible dans la langue activée.</pagenotavailable>
+        <pagetypeheading>Type de page</pagetypeheading>
+        <prefixcopyof>Copie de</prefixcopyof>
+        <rejectprompt>Commentaires à l'auteur</rejectprompt>
+        <savedelaypublishbutton>	Enregistrer</savedelaypublishbutton>
+        <selectversion>Version :</selectversion>
+        <showversionlist>       Afficher la liste des versions</showversionlist>
+        <statusheading>Statut</statusheading>
+        <tabedit>
+          <description />
+          <displayname>		Édition</displayname>
+        </tabedit>
+        <tabformdata>Données du formulaire</tabformdata>
+        <tabversionlist>
+          <description />
+          <displayname>		Liste des versions</displayname>
+          <oneunpublishedversionglobalizedtooltip>Une version non publiée pour la langue : {0}</oneunpublishedversionglobalizedtooltip>
+          <oneunpublishedversiontooltip>Une version non publiée</oneunpublishedversiontooltip>
+          <unpublishedversionsglobalizedtooltip>{0} versions non publiées pour la langue : {1}</unpublishedversionsglobalizedtooltip>
+          <unpublishedversionstooltip>{0} versions non publiées</unpublishedversionstooltip>
+        </tabversionlist>
+        <tabview>Affichage</tabview>
+        <tooltipapprove>Publier cette version</tooltipapprove>
+        <tooltipcancel>Annuler les modifications dans cette version</tooltipcancel>
+        <tooltipcheckin>Envoyer la version pour publication</tooltipcheckin>
+        <tooltipdelete>Supprimer cette version</tooltipdelete>
+        <tooltipedit>Modifier cette version</tooltipedit>
+        <tooltipeditnew>Modifier nouvelle version (faire une copie de cette version)</tooltipeditnew>
+        <tooltipreject>Commentaire sur cette version</tooltipreject>
+        <tooltipsave>Enregistrer cette versionEnregistrer et afficher cette version</tooltipsave>
+        <tooltipsaveonly>Enregistrer cette version</tooltipsaveonly>
+        <viewsavedby>Par</viewsavedby>
+        <viewsaveddate>Enregistré(e)</viewsaveddate>
+        <viewstatus>Statut</viewstatus>
+      </editpanel>
+      <editsecurity>
+        <aclremovepermissionrights>Vous avez essayé de supprimer des autorisations d’administration pour cette page. Pour effectuer cette opération, définissez les autorisations relatives à la page en mode d'administration.</aclremovepermissionrights>
+        <heading>		Définir les droits d'accès pour la page "{0}"</heading>
+        <info>			Vous pouvez sélectionner les utilisateurs et les groupes qui auront accès à cette page ainsi que les opérations qu'ils sont autorisés à effectuer avec la page.</info>
+        <savemessage comment="heading of savesecurity">Aucun droit d'accès n'a été enregistré</savemessage>
+        <user>			Vous êtes connecté en tant que {0} et vous êtes membre des groupes suivants</user>
+      </editsecurity>
+      <edittree>
+        <copypage>Copier "{0}" vers "{1}"</copypage>
+        <movepage>Déplacer "{0}" vers "{1}"</movepage>
+        <nofavoritesfound>			Aucun Favori n'est défini</nofavoritesfound>
+        <notasksfound>				Aucune tâche active n'a été trouvée</notasksfound>
+      </edittree>
+      <editversionlist>
+        <columnheadingdatesaved>Enregistré(e)</columnheadingdatesaved>
+        <columnheadinglanguage>Langue</columnheadinglanguage>
+        <columnheadingname>Nom</columnheadingname>
+        <columnheadingsavedby>Par</columnheadingsavedby>
+        <columnheadingstatus>Statut</columnheadingstatus>
+        <columnheadingversion>Version</columnheadingversion>
+        <confirmdelete>Voulez-vous vraiment supprimer cette version ?</confirmdelete>
+        <showalllanguages>Afficher toutes les langues</showalllanguages>
+        <versionidtitle>N° de version : </versionidtitle>
+      </editversionlist>
+      <editxform>
+        <allforms>Tous les formulaires</allforms>
+        <allpages>Afficher les données pour toutes les pages</allpages>
+        <changed>Dernière modification :</changed>
+        <changedby>Modifié par :</changedby>
+        <confirmdelete>Voulez-vous vraiment supprimer ce champ?</confirmdelete>
+        <copysuffix>Copier</copysuffix>
+        <created>Créé le :</created>
+        <createdby>Créé par :</createdby>
+        <createnewformfoldertooltip>Créer un dossier de formulaires</createnewformfoldertooltip>
+        <datatypes>
+          <date1>
+            <caption>Date (JJ/MM/AAAA)</caption>
+            <errormessage>"{0}" n'est pas une date valide. Entrez une date au format "JJ/MM/AAAA".</errormessage>
+          </date1>
+          <date2>
+            <caption>Date (MM/JJ/AAAA)</caption>
+            <errormessage>"{0}" n'est pas une date valide. Entrez une date au format "MM/JJ/AAAA".</errormessage>
+          </date2>
+          <defaulttype>
+            <errormessage>Vous avez entré des caractères interdits ("&lt;" ou "&gt;").</errormessage>
+          </defaulttype>
+          <email>
+            <caption>Adresse de messagerie</caption>
+            <errormessage>"{0}" n'est pas une adresse de messagerie valide.</errormessage>
+          </email>
+          <integer>
+            <caption>Entier</caption>
+            <errormessage>"{0}" n'est pas un entier valide.</errormessage>
+          </integer>
+          <isodate>
+            <caption>Date (AAAA-MM-JJ)</caption>
+            <errormessage>"{0}" n'est pas une date valide. Entrez une date au format "AAAA-MM-JJ".</errormessage>
+          </isodate>
+          <positiveinteger>
+            <caption>Entier positif</caption>
+            <errormessage>"{0}" n'est pas un entier positif valide.</errormessage>
+          </positiveinteger>
+        </datatypes>
+        <deleteformfoldertooltip>Supprimer le dossier de formulaires sélectionné</deleteformfoldertooltip>
+        <deletequestion>Voulez-vous vraiment supprimer le formulaire sélectionné ?</deletequestion>
+        <editformbutton>Modifier</editformbutton>
+        <editordescription>L'onglet Disposition du tableau sert à concevoir la mise en page de votre formulaire.</editordescription>
+        <errorimporting>Le formulaire n'a pas pu être importé. Vérifiez que le fichier contient des données XML valides.</errorimporting>
+        <existonpages>Remarquez que ce formulaire est utilisé sur plusieurs pages. Des modifications au formulaire affecteront les pages suivantes :</existonpages>
+        <folder>Dossier</folder>
+        <folderdialog>
+          <createnewformfolderheading>Créer un dossier de formulaires</createnewformfolderheading>
+          <createnewformfoldersavewarning>Vous devez entrer un nom valide pour le nouveau dossier de formulaires (sans les caractères \ / " ' &lt; &gt;).</createnewformfoldersavewarning>
+          <createnewformfoldertext>Nom du nouveau dossier :</createnewformfoldertext>
+          <deletequestion>Voulez-vous vraiment supprimer le dossier de formulaires sélectionné ?</deletequestion>
+          <renamefoldererroralreadyexists>Le dossier {0} n'a pas pu être renommé {1}, car un dossier portant ce nom existe déjà.</renamefoldererroralreadyexists>
+          <renamefoldererrorrootfolder>Ce dossier racine ne peut pas être renommé.</renamefoldererrorrootfolder>
+          <renameformfolderheading>Renommer le dossier de formulaires</renameformfolderheading>
+          <renameformfoldersavewarning>Vous devez entrer un nouveau nom valide pour le dossier de formulaires (sans les caractères \ / " ' &lt; &gt;).</renameformfoldersavewarning>
+          <renameformfoldertext>Nouveau nom de dossier :</renameformfoldertext>
+        </folderdialog>
+        <formdatamailsubject>Données de formulaire de "{0}" ({1})</formdatamailsubject>
+        <formfoldercaption>Dossier des formulaires</formfoldercaption>
+        <forminformation>Informations sur le formulaire</forminformation>
+        <formname>Nom du formulaire</formname>
+        <formnameempty>Entrez un nom pour le formulaire.</formnameempty>
+        <formnotused>Le formulaire n'est utilisé sur aucune page.</formnotused>
+        <formusedonpages>Le formulaire est utilisé sur les pages suivantes :</formusedonpages>
+        <fromdate>Date Début</fromdate>
+        <gridheadingchanged>Modifié</gridheadingchanged>
+        <gridheadingchangedby>Modifié par</gridheadingchangedby>
+        <gridheadingcreated>Créé</gridheadingcreated>
+        <gridheadingcreatedby>Créé par</gridheadingcreatedby>
+        <heading>Modifier le formulaire</heading>
+        <headingtextrequired>Un texte doit être spécifié pour le libellé</headingtextrequired>
+        <importinfotext>L'importation écrase toutes les modifications non enregistrées apportées au contenu et à la disposition du formulaire.</importinfotext>
+        <invalid>Formulaire incorrect.</invalid>
+        <listmyformonly>Liste de mes formulaires uniquement :</listmyformonly>
+        <morethanoneoptionselected>Vous ne pouvez sélectionner qu'une seule option.</morethanoneoptionselected>
+        <multiplevalueinvalid>Valeur incorrecte pour les options</multiplevalueinvalid>
+        <nameempty>Les noms doivent être spécifiés pour tous les champs.</nameempty>
+        <nameexistsmorethanonce>Plusieurs champs possèdent le même nom : "{0}".</nameexistsmorethanonce>
+        <nameinvalid>Nom de champ incorrect. Le nom doit commencer par une lettre et contenir uniquement des caractères alphanumériques (a-z, A-Z, 1-9 et "_" ; l'espace est interdit).</nameinvalid>
+        <namenotallowedcharacters>Nom de champ incorrect : "{0}". Le nom doit contenir uniquement des caractères alphanumériques (a-z, A-Z, 1-9 et "_" ; l'espace est interdit).</namenotallowedcharacters>
+        <namerequired>Un nom doit être spécifié pour le champ.</namerequired>
+        <newformnamecaption>Nouveau nom</newformnamecaption>
+        <nofolder>Aucun dossier</nofolder>
+        <noformbutton>Aucun formulaire</noformbutton>
+        <notselectedrow>Sélectionnez une cellule.</notselectedrow>
+        <renameformfoldertooltip>Renommer le dossier de formulaires sélectionné</renameformfoldertooltip>
+        <saveas>Enregistrer sous ...</saveas>
+        <savewarninginfo>Ce formulaire est utilisé sur plusieurs pages.</savewarninginfo>
+        <savewarningquestion>Voulez-vous vraiment enregistrer les modifications ?</savewarningquestion>
+        <selectedfolder>Dossier :</selectedfolder>
+        <selectform>Sélectionner le formulaire</selectform>
+        <submitdefaultvalue>Envoyer une requête</submitdefaultvalue>
+        <todate>Date Fin</todate>
+        <usedonpages>Utilisé sur des pages</usedonpages>
+        <useformbutton>Utiliser</useformbutton>
+      </editxform>
+      <editxformdata>
+        <allpages>Afficher les données pour toutes les pages</allpages>
+        <fromdate>Date Début</fromdate>
+        <selectform>Sélectionner le formulaire</selectform>
+        <todate>Date Fin</todate>
+      </editxformdata>
+      <filemanagerbrowser>
+        <directoryselectionerrormessage>Sélectionnez d'abord un dossier.</directoryselectionerrormessage>
+        <fileselectionerrormessage>Sélectionnez d'abord un fichier.</fileselectionerrormessage>
+        <imageselectionerrormessage>Sélectionnez d'abord une image.</imageselectionerrormessage>
+        <selectfile>Sélectionner un fichier</selectfile>
+        <selectfolder>Sélectionner un dossier</selectfolder>
+        <selectimage>Sélectionner une image</selectimage>
+      </filemanagerbrowser>
+      <formpostings>
+        <description>		Afficher les données du formulaire</description>
+        <displayname>		Données du formulaire</displayname>
+      </formpostings>
+      <globalizationcontrol>
+        <description>Afficher l'état et accéder aux différentes langues de la page actuelle.</description>
+        <displayname>Langues de la page</displayname>
+        <heading>Langues de la page "{0}"</heading>
+        <published>Publiée</published>
+        <saved>Enregistrée</saved>
+      </globalizationcontrol>
+      <globalizationmatrix>
+        <description />
+        <goup>Vers le haut</goup>
+        <heading>Vue d'ensemble des langues de la page "{0}"</heading>
+        <languagestatusnotpublished>La page n'est pas encore publiée</languagestatusnotpublished>
+        <languagestatuspublished>La page est publiée</languagestatuspublished>
+        <page>Page</page>
+      </globalizationmatrix>
+      <imageeditor>
+        <compressioninformation>
+          <compression>Compression</compression>
+          <format>Format</format>
+          <quality>Qualité</quality>
+        </compressioninformation>
+        <cropinformation>
+          <crop>Rogner</crop>
+          <height>Hauteur</height>
+          <help>Sélectionnez une partie de l'image, choisissez un des formats prédéfinis ou entrez directement des valeurs dans les champs. Double-cliquez sur la partie sélectionnée ou cliquez sur "Appliquer" pour rogner l'image.</help>
+          <left>Gauche</left>
+          <top>Haut</top>
+          <width>Largeur</width>
+        </cropinformation>
+        <disabledinformation>Vous ne disposez pas de l'autorisation nécessaire à la modification du fichier image. Cependant, vous pouvez modifier les paramètres d'affichage de l'image sur la page.</disabledinformation>
+        <generalinformation>Utilisez l'éditeur d'image pour rogner, redimensionner ou transformer les images. Sélectionnez l'outil approprié ci-dessus.</generalinformation>
+        <generalinformationheading>Informations générales</generalinformationheading>
+        <imageformat>
+          <formatgif>GIF</formatgif>
+          <formatjpeg>JPEG</formatjpeg>
+          <formatpng>PNG</formatpng>
+        </imageformat>
+        <imagepreset>
+          <presetmedium>Moyen</presetmedium>
+          <presetselect>Sélectionner</presetselect>
+          <presetsmall>Petit</presetsmall>
+        </imagepreset>
+        <imgpagelabels>
+          <compress>Compresser</compress>
+          <crop>Rogner</crop>
+          <heading>Éditeur d'image</heading>
+          <height>Hauteur :</height>
+          <manualdimensionoverflow>Votre sélection ne doit pas être plus grande que les dimensions de l'image.</manualdimensionoverflow>
+          <redo>Rétablir</redo>
+          <resize>Redimensionner</resize>
+          <reverttooriginal>Restaurer</reverttooriginal>
+          <saveas>Enregistrer sous</saveas>
+          <transform>Transformer</transform>
+          <undo>Annuler</undo>
+          <width>Largeur :</width>
+          <zoomminus>Zoom -</zoomminus>
+          <zoomplus>Zoom +</zoomplus>
+        </imgpagelabels>
+        <information>
+          <unitkilobytes>Ko</unitkilobytes>
+        </information>
+        <moredisplaysettings>Autres paramètres</moredisplaysettings>
+        <pageleavemessage>Voulez-vous vraiment fermer l'éditeur d'image sans enregistrer vos modifications ?</pageleavemessage>
+        <quality>
+          <high>Élevée (recommandé)</high>
+          <low>Faible</low>
+          <maximum>Maximale</maximum>
+          <medium>Moyenne</medium>
+          <veryhigh>Très élevée</veryhigh>
+        </quality>
+        <resizeinformation>
+          <contrainproportion>Conserver les proportions</contrainproportion>
+          <height>Hauteur</height>
+          <help>Pour redimensionner l'image, faites glisser une des poignées d'angle, sélectionnez un format prédéfini ou entrez directement des valeurs dans les champs. Cliquez sur Appliquer pour redimensionner l'image.</help>
+          <preset>Prédéfinir</preset>
+          <resize>Redimensionner</resize>
+          <width>Largeur</width>
+        </resizeinformation>
+        <saveas>
+          <accessdenied>Vous ne disposez pas de l'autorisation nécessaire à l'enregistrement de l'image"{0}".</accessdenied>
+          <confirmareplaceimage>La nouvelle image sera utilisée dans toutes les pages ci-avant. Cliquez sur OK pour remplacer l'image.</confirmareplaceimage>
+          <directorypath>Chemin d'accès :</directorypath>
+          <emptyfilename>Entrez un nom de fichier.</emptyfilename>
+          <fileexists>Le fichier "{0}" existe déjà.</fileexists>
+          <filename>Nom du fichier :</filename>
+          <fileusageadditionalpages>and &lt;strong&gt;{0} other page(s)&lt;/strong&gt; not shown in the list above.</fileusageadditionalpages>
+          <fileusageheading>L'image est utilisée dans les pages suivantes :</fileusageheading>
+          <illegalname>"{0}" n’est pas un nom de fichier valide.</illegalname>
+          <invalidcharacters>Le nom de fichier ne doit contenir aucun des caractères suivants : {0}</invalidcharacters>
+          <pathnotfound>Le chemin d'accès"{0}" n'existe pas. Vérifiez que le gestionnaire du chemin d'accès virtuel PageFiles est correctement configuré et que modifiedImagesTargetVirtualPath est défini sur l'élément de configuration imageEditor.</pathnotfound>
+          <saveasheading>Enregistrer l'image sous</saveasheading>
+          <saveastitle>Enregistrer sous</saveastitle>
+        </saveas>
+        <saveoptions>
+          <savecopy>Enregistrer l'image en tant que copie</savecopy>
+          <saveoriginal>Remplacer l'image originale</saveoriginal>
+        </saveoptions>
+        <transforminformation>
+          <flip>Retourner</flip>
+          <fliphorizontal>Retourner horizontalement</fliphorizontal>
+          <flipvertical>Retourner verticalement</flipvertical>
+          <grayscale>Nuances de gris</grayscale>
+          <help>Utilisez l'outil de transformation pour retourner, faire pivoter l'image, ou encore supprimer les informations de couleur.</help>
+          <rotate>Faire pivoter</rotate>
+          <rotateclockwise>Faire pivoter vers la droite</rotateclockwise>
+          <rotatecounterclockwise>Faire pivoter vers la gauche</rotatecounterclockwise>
+          <transformation>Transformation</transformation>
+        </transforminformation>
+      </imageeditor>
+      <languageselection>
+        <heading>Afficher l'arborescence des pages</heading>
+      </languageselection>
+      <languagesettings>
+        <addwarning>Voulez-vous vraiment avoir vos propres paramètres de langue pour cette page au lieu de les hériter de la page parente ?</addwarning>
+        <availablelanguagesdescriptionfirst>Les pages de cette partie du site doivent être disponibles dans les langues ci-dessous. Cela signifie qu'elles ne peuvent être créées et traduites que dans ces langues.</availablelanguagesdescriptionfirst>
+        <availablelanguagesdescriptionsecond>Ce paramètre affecte les langues auxquelles les éditeurs ont accès pour cette partie du site.</availablelanguagesdescriptionsecond>
+        <availablelanguagestitle>Langues disponibles</availablelanguagestitle>
+        <deletewarning>Voulez-vous vraiment supprimer les paramètres de langue de cette page et hériter de ceux de la page parente ?</deletewarning>
+        <description />
+        <fallbacklanguageheading>Langue de secours</fallbacklanguageheading>
+        <fallbacklanguagesdescriptionfirst>Les pages de cette partie du site peuvent être disponibles dans une langue différente de celle que le visiteur a sélectionnée. Cela signifie que les pages non encore traduites et publiées dans la langue sélectionnée peuvent être temporairement affichées dans une autre langue.</fallbacklanguagesdescriptionfirst>
+        <fallbacklanguagesdescriptionsecond>Notez que ce paramètre peut générer des mélanges de langues au cours de la navigation et dans les listes, ce qui peut créer la confusion chez le visiteur.</fallbacklanguagesdescriptionsecond>
+        <fallbacklanguagestitle>Langues de secours</fallbacklanguagestitle>
+        <heading>Paramètres des langues de la page "{0}"</heading>
+        <inheritsettings>Hériter les paramètres de la page parente : "{0}"</inheritsettings>
+        <replacementlanguageheading>Langue de remplacement</replacementlanguageheading>
+        <replacementlanguagesdescriptionfirst>Dans les cas ci-dessous, les pages de cette partie du site doivent être affichées dans une langue différente de celle que le visiteur a sélectionnée. Cela signifie que les pages non disponibles dans ces langues peuvent l'être dans les autres langues.</replacementlanguagesdescriptionfirst>
+        <replacementlanguagesdescriptionsecond>Par exemple, ce paramètre peut être utilisé lorsque des informations générales d'une langue spécifique doivent être disponibles pour tous les visiteurs quelle que soit la langue sélectionnée.</replacementlanguagesdescriptionsecond>
+        <replacementlanguagestitle>Langues de remplacement</replacementlanguagestitle>
+        <visitorlanguageheading>Langue du visiteur</visitorlanguageheading>
+      </languagesettings>
+      <linkcollection>
+        <linkheading>Lien</linkheading>
+        <sortheading>Trier</sortheading>
+      </linkcollection>
+      <loginstatus>Vous êtes connecté en tant que :</loginstatus>
+      <logservice>
+        <realtimeanalyzer>
+          <noreferrer>Accès direct à la page</noreferrer>
+          <referrercount>Nombre de références</referrercount>
+          <referrerurl>URL</referrerurl>
+        </realtimeanalyzer>
+        <timespananalyzer>
+          <dayinterval>Jour</dayinterval>
+          <hourinterval>Heure</hourinterval>
+          <min5interval>5 minutes</min5interval>
+          <monthinterval>Mois</monthinterval>
+          <nodatabase>Le service de journalisation n'est pas configuré avec une base de données. L'historique enregistré ne sera pas affiché.</nodatabase>
+          <problemconnecting>Impossible de se connecter au service de journalisation.</problemconnecting>
+          <selectinterval>Sélectionner l'intervalle</selectinterval>
+          <statisticsdate>Date</statisticsdate>
+          <statisticshits>Nombre de résultats</statisticshits>
+          <total>Total</total>
+          <yearinterval>Année</yearinterval>
+        </timespananalyzer>
+      </logservice>
+      <newpage>
+        <heading>		Créer une nouvelle page</heading>
+        <info>			Sélectionnez le type de page à créer à partir de la liste ci-dessous.</info>
+        <nopagetype>	Aucun type de page n'est disponible pour cette page</nopagetype>
+        <tooltipcancel>Annule la création d'une nouvelle page</tooltipcancel>
+      </newpage>
+      <pageexplorer>
+        <tooltip>
+                    Type de page : [PageTypeName]&lt;br/&gt;Créé : [Created]&lt;br/&gt;Modifié : [Changed]&lt;br/&gt; ID de page : [PageLink]&lt;br /&gt; Index de tri : [PagePeerOrder]
+                </tooltip>
+      </pageexplorer>
+      <quicksearch>
+        <notfound>Aucun ID ou nom de page correspondant trouvé</notfound>
+      </quicksearch>
+      <sidbrowser>
+        <heading>Ajouter des utilisateurs/groupes</heading>
+        <info />
+        <newsid>Ajouter :</newsid>
+        <orgsid>Existant :</orgsid>
+        <role>Groupes</role>
+        <user>Utilisateurs</user>
+      </sidbrowser>
+      <timespanview>
+        <displayname>Statistiques</displayname>
+      </timespanview>
+      <wastebasketpage>
+        <askemptywastebasket see="/edit/editcommand/askemptywastebasket" />
+        <emptiedmessage>La Corbeille a été vidée</emptiedmessage>
+        <emptywastebasket>Vider la Corbeille</emptywastebasket>
+        <heading>Corbeille</heading>
+        <info />
+        <numdeletedpages>Nombre de pages dans la Corbeille</numdeletedpages>
+        <reftypearchive see="/edit/deletepage/reftypearchive" />
+        <reftypeproperty see="/edit/deletepage/reftypeproperty" />
+        <reftypeshortcut see="/edit/deletepage/reftypeshortcut" />
+      </wastebasketpage>
+      <workflowlog>
+        <changed>Modifié(e)</changed>
+        <changedby>Modifié(e) par</changedby>
+        <created>Créé(e)</created>
+        <deleted>Supprimé(e)</deleted>
+        <heading>Vue d'ensemble du flux du travail</heading>
+        <owner>Propriétaire</owner>
+        <pagelink>Page</pagelink>
+        <status>Statut</status>
+        <statuscomments>Commentaires</statuscomments>
+        <taskname>Nom</taskname>
+      </workflowlog>
+      <workspace>
+        <license>Contrat de licence</license>
+        <mysettings>Mes paramètres </mysettings>
+        <userinfo>Informations utilisateur</userinfo>
+        <welcome>Bienvenue dans EPiServer CMS</welcome>
+      </workspace>
+    </edit>
+    <editor>
+      <tools>
+        <cellproperties>
+          <axis>Axe :</axis>
+          <axiswindowtext>Sélectionnez un ou plusieurs des axes existants ci-dessous, ou créez un axe en entrant un nom dans le champ d'entrée.</axiswindowtext>
+          <axiswindowtitle>Sélectionner l'axe</axiswindowtitle>
+          <backgroundcolor>Couleur :</backgroundcolor>
+          <backgroundheading>Arrière-plan</backgroundheading>
+          <bordercolor>Couleur :</bordercolor>
+          <borderdark>Bordure foncée :</borderdark>
+          <borderheading>Bordures</borderheading>
+          <borderlight>Bordure claire :</borderlight>
+          <datacell>Cellule de données</datacell>
+          <halignmentcenter>Centré</halignmentcenter>
+          <halignmentheading>Alignement horizontal :</halignmentheading>
+          <halignmentleft>Gauche</halignmentleft>
+          <halignmentright>Droite</halignmentright>
+          <headercell>Cellule d'en-tête</headercell>
+          <headers>En-têtes :</headers>
+          <headersheading>En-têtes</headersheading>
+          <headerswindowtext>Sélectionnez un ou plusieurs des en-têtes disponibles (valeurs d'ID) ci-dessous, ou entrez un ID que vous envisagez d'ajouter ultérieurement dans le champ d'entrée.</headerswindowtext>
+          <headerswindowtitle>Sélectionner des en-têtes</headerswindowtitle>
+          <id>ID :</id>
+          <layoutheading>Disposition</layoutheading>
+          <multiplevalues>Multiple</multiplevalues>
+          <percent>En pourcentage</percent>
+          <pixels>En pixels</pixels>
+          <scope>Étendue :</scope>
+          <scopecol>Colonne</scopecol>
+          <scoperow>Ligne</scoperow>
+          <sizeheading>Taille</sizeheading>
+          <specifyheight>Spécifier la hauteur :</specifyheight>
+          <specifywidth>Spécifier la largeur :</specifywidth>
+          <toolheading>Propriétés des cellules</toolheading>
+          <type>Type de cellule :</type>
+          <usepicture>Utiliser l'image d'arrière-plan</usepicture>
+          <valignmentbaseline>Ligne de base </valignmentbaseline>
+          <valignmentbottom>Bas</valignmentbottom>
+          <valignmentheading>Alignement vertical :</valignmentheading>
+          <valignmentmiddle>Milieu</valignmentmiddle>
+          <valignmenttop>Haut</valignmenttop>
+        </cellproperties>
+        <common>
+          <cssclass>Classe CSS :</cssclass>
+        </common>
+        <dynamiccontent>
+          <adapterdescriptionlabel>Description</adapterdescriptionlabel>
+          <adapterheading>Plug-ins</adapterheading>
+          <adapterlistlabel>Sélectionner le plug-in</adapterlistlabel>
+          <adapterpreviewheading>Aperçu</adapterpreviewheading>
+          <adaptersettingheading>Paramètres</adaptersettingheading>
+          <adaptersettingserror>La commande utilisateur '{0}' n'a pas pu être chargée.</adaptersettingserror>
+          <noplugins>Aucun plug-in de contenu dynamique configuré pour ce site Web.</noplugins>
+          <toolheading>Contenu dynamique</toolheading>
+        </dynamiccontent>
+        <font>
+          <colorheading>Couleur :</colorheading>
+          <effectheading>Effets :</effectheading>
+          <fontheading>Police :</fontheading>
+          <samlpeheading>Aperçu</samlpeheading>
+          <sizeheading>Taille :</sizeheading>
+          <stylebold>			Gras</stylebold>
+          <stylebolditalic>	Gras Italique</stylebolditalic>
+          <styleheading>Style :</styleheading>
+          <styleitalic>		Italique</styleitalic>
+          <styleregular>		Normal</styleregular>
+          <toolheading>Police</toolheading>
+          <underline>Souligné</underline>
+        </font>
+        <hyperlinkproperties>
+          <address see="/util/linkeditor/urlfieldcaption" />
+          <anchor>Signet :</anchor>
+          <anchorlink>Signet sur cette page</anchorlink>
+          <automatically>Automatiquement</automatically>
+          <clickableimage>Image interactive :</clickableimage>
+          <clickabletext>Texte interactif :</clickabletext>
+          <documentaccessdeniedmessage>Vous n'avez pas accès au document auquel ce lien renvoyait.</documentaccessdeniedmessage>
+          <documentnotfoundmessage>Le document auquel ce lien renvoyait n'existe plus ou a été déplacé.</documentnotfoundmessage>
+          <editimageproperties>Modifier les propriétés de l'image</editimageproperties>
+          <emailaddress see="/util/linkeditor/mailfieldcaption" />
+          <externaldocumentlink>Document sur un autre site Web</externaldocumentlink>
+          <externallink>Page sur un autre site Web</externallink>
+          <informationheading see="/editor/tools/imageeditor/informationheading" />
+          <internaldocumentlink>Document sur ce site Web</internaldocumentlink>
+          <internallink>Page sur ce site Web</internallink>
+          <language>Langue :</language>
+          <linktargetheading>Cible du lien</linktargetheading>
+          <linktitle see="/util/linkeditor/linktitlefieldcaption" />
+          <networkdocumentlink>Document sur le réseau</networkdocumentlink>
+          <noimageinfovalidationmessage>Vous avez voulu que le lien soit une image interactive.</noimageinfovalidationmessage>
+          <nourlvalidationmessage>Spécifiez une cible de lien avant d'enregistrer.</nourlvalidationmessage>
+          <page>Page :</page>
+          <pageaccessdeniedmessage>Vous n'avez pas accès à la page à laquelle ce lien renvoyait.</pageaccessdeniedmessage>
+          <pagenotfoundmessage>La page à laquelle ce lien renvoyait n'existe plus.</pagenotfoundmessage>
+          <path>Chemin d'accès :</path>
+          <selectnewdocumentmessage>Sélectionnez un nouveau document avant d'enregistrer, ou optez pour un autre type de lien.</selectnewdocumentmessage>
+          <selectnewpagemessage>Sélectionnez une nouvelle page avant d'enregistrer, ou optez pour un autre type de lien.</selectnewpagemessage>
+          <specifyimagemessage>Spécifiez une image avant d'enregistrer ou remplacez la sélection par un texte interactif.</specifyimagemessage>
+          <tabs>
+            <document>Document</document>
+            <email>Messagerie électronique</email>
+            <webpage>Page Web</webpage>
+          </tabs>
+          <targetframe see="/util/linkeditor/targetfieldcaption" />
+          <toolheading>Propriétés du lien</toolheading>
+        </hyperlinkproperties>
+        <imageeditor>
+          <alignment>Alignement :</alignment>
+          <alignmentbottom>Bas</alignmentbottom>
+          <alignmentleft>Gauche</alignmentleft>
+          <alignmentmiddle>Milieu</alignmentmiddle>
+          <alignmentright>Droite</alignmentright>
+          <alignmenttop>Haut</alignmenttop>
+          <alttext>Texte de remplacement :</alttext>
+          <borderwidth>Épaisseur de la bordure :</borderwidth>
+          <edithyperlinkproperties>Modifier les propriétés du lien</edithyperlinkproperties>
+          <filename>Nom du fichier :</filename>
+          <filesize>Taille du fichier :</filesize>
+          <hspace>Espacement horizontal :</hspace>
+          <hyperlinkaddress>Lier à :</hyperlinkaddress>
+          <hyperlinkheading>Lien hypertexte</hyperlinkheading>
+          <imagefile>Fichier image :</imagefile>
+          <informationheading>Informations</informationheading>
+          <invalidlink>Lien non valide</invalidlink>
+          <layoutheading>Disposition et bordures</layoutheading>
+          <lockproportions>Proportionnel</lockproportions>
+          <noimagevalidationmessage>Spécifiez une image avant d'enregistrer.</noimagevalidationmessage>
+          <nolinkinfovalidationmessage>Vous avez indiqué que l'image doit être connectée à un lien.</nolinkinfovalidationmessage>
+          <percent>En pourcentage</percent>
+          <pixels>En pixels</pixels>
+          <sizeheading>Afficher la taille</sizeheading>
+          <specifyheight>Spécifier la hauteur :</specifyheight>
+          <specifylinkinfomessage>Spécifiez les informations du lien avant d'enregistrer ou de supprimer l'indication.</specifylinkinfomessage>
+          <specifywidth>Spécifier la largeur :</specifywidth>
+          <toolheading>Propriétés des images</toolheading>
+          <unitbytes>octets</unitbytes>
+          <uselink>Connecter le lien à l'image</uselink>
+          <vspace>Espacement vertical :</vspace>
+        </imageeditor>
+        <insertanchor>
+          <anchorname>Nom du signet :</anchorname>
+          <toolheading>Insérer un signet</toolheading>
+        </insertanchor>
+        <inserttable>
+          <border>Bordure</border>
+          <columns>Colonnes</columns>
+          <rows>Lignes</rows>
+          <toolheading>Insérer un tableau</toolheading>
+          <width>Largeur</width>
+        </inserttable>
+        <quote>
+          <blockquote>Renfoncement</blockquote>
+          <citeheading>Informations de référence sur les guillemets</citeheading>
+          <informationheading>Informations</informationheading>
+          <inlinequote>Guillemet</inlinequote>
+          <quotetypeheading>Saisir un guillemet</quotetypeheading>
+          <quotetypenotavailable>Ce type de guillemet n’est pas autorisé pour la sélection actuelle.</quotetypenotavailable>
+          <quotetypenotchangeable>Le type de guillemet ne peut pas être modifié.</quotetypenotchangeable>
+          <removequote>Supprimer un guillemet</removequote>
+          <titleheading>Titre</titleheading>
+          <toolheading>Insérer un guillemet</toolheading>
+        </quote>
+        <search>
+          <findheading>Rechercher :</findheading>
+          <finisheddocument>	La recherche dans le document est terminée.</finisheddocument>
+          <matchcase>Respecter la casse</matchcase>
+          <matchwhole>Mots entiers uniquement</matchwhole>
+          <reachedend>		La recherche a atteint la fin du document. Voulez-vous recommencer au début ?</reachedend>
+          <toolheading>Rechercher</toolheading>
+        </search>
+        <selectvalue>
+          <newvalue>Nouvelle valeur :</newvalue>
+        </selectvalue>
+        <spellcheck>
+          <cannotspellcheck>	La sélection actuelle ne peut pas faire l'objet d'une vérification orthographique.</cannotspellcheck>
+          <errorspellchecktext>Erreur lors de l'appel de SpellcheckText dans : </errorspellchecktext>
+          <finisheddocument>	Fin de la vérification orthographique du document.</finisheddocument>
+          <finishedselection>	Fin de la vérification orthographique de la sélection.</finishedselection>
+          <initializing>		(Initialisation de la vérification orthographique, veuillez patienter...)</initializing>
+          <missingdictionary>Microsoft Office ne dispose d'aucun dictionnaire installé pour</missingdictionary>
+          <nosuggestions>		(aucune suggestion)</nosuggestions>
+          <notindictionary>Absent du dictionnaire :</notindictionary>
+          <officenotinstalled>Microsoft Office n'est pas installé sur cet ordinateur.</officenotinstalled>
+          <suggestions>Suggestions :</suggestions>
+          <textnotfound>		introuvable dans le texte.</textnotfound>
+          <toolheading>Orthographe</toolheading>
+        </spellcheck>
+        <tableproperties>
+          <alignmentcenter>Centré</alignmentcenter>
+          <alignmentheading>Alignement :</alignmentheading>
+          <alignmentleft>Gauche</alignmentleft>
+          <alignmentright>Droite</alignmentright>
+          <backgroundcolor>Couleur :</backgroundcolor>
+          <backgroundheading>Arrière-plan</backgroundheading>
+          <bordercolor>Couleur :</bordercolor>
+          <borderdark>Bordure foncée :</borderdark>
+          <borderheading>Bordures</borderheading>
+          <borderlight>Bordure claire :</borderlight>
+          <bordersize>Taille :</bordersize>
+          <caption>Légende :</caption>
+          <cellpadding>Marge intérieure :</cellpadding>
+          <cellspacing>Espacement entre les cellules :</cellspacing>
+          <descriptionheading>Description</descriptionheading>
+          <layoutheading>Disposition</layoutheading>
+          <percent>En pourcentage</percent>
+          <pixels>En pixels</pixels>
+          <sizeheading>Taille</sizeheading>
+          <specifyheight>Spécifier la hauteur :</specifyheight>
+          <specifywidth>Spécifier la largeur :</specifywidth>
+          <summary>Résumé :</summary>
+          <toolheading>Propriétés du tableau</toolheading>
+          <usepicture>Utiliser l'image d'arrière-plan</usepicture>
+        </tableproperties>
+      </tools>
+    </editor>
+    <episerver.webparts>
+      <webcontrols>
+        <catalogzone>
+          <emptyzonetext>La section Zone de catalogue ne contient aucun composant de catalogue.</emptyzonetext>
+          <headertext>Zone de catalogue</headertext>
+          <instructiontext>Sélectionnez le catalogue que vous souhaitez parcourir.</instructiontext>
+          <selecttargetzonetext>Ajouter à :</selecttargetzonetext>
+        </catalogzone>
+        <connectionszone>
+          <configureconnectiontitle>Configurer la connexion</configureconnectiontitle>
+          <connecttoconsumerinstructiontext>Créer les connexions utilisateur pour ce composant WebPart.</connecttoconsumerinstructiontext>
+          <connecttoconsumertext>Créer une connexion à un utilisateur</connecttoconsumertext>
+          <connecttoconsumertitle>Envoyer les données au composant WebPart</connecttoconsumertitle>
+          <connecttoproviderinstructiontext>Créer les connexions fournisseur pour ce composant WebPart.</connecttoproviderinstructiontext>
+          <connecttoprovidertext>Créer une connexion à un fournisseur</connecttoprovidertext>
+          <connecttoprovidertitle>Obtenir les données du composant WebPart</connecttoprovidertitle>
+          <consumersinstructiontext>Les composants WebPart auxquels le composant WebPart actuel envoie les informations :</consumersinstructiontext>
+          <consumertitle>Utilisateurs</consumertitle>
+          <existingconnectionerrormessage />
+          <getfromtext>Du :</getfromtext>
+          <gettext>Obtenir :</gettext>
+          <headertext>Zone des connexions</headertext>
+          <instructiontext>Gérer les connexions pour le composant WebPart actuel.</instructiontext>
+          <instructiontitle>Gérer les connexions pour {0}</instructiontitle>
+          <newconnectionerrormessage />
+          <noexistingcinnectiontitle>Aucune connexion active</noexistingcinnectiontitle>
+          <noexistingconnectioninstructiontext>Aucune connexion active n'est disponible dans votre composant WebPart. Vous pouvez créer une connexion en sélectionnant les liens ci-dessus, s'il existe des composants WebPart compatibles sur la page.</noexistingconnectioninstructiontext>
+          <providersinstructiontext>Les composants WebPart à partir desquels le composant WebPart actuel obtient des informations :</providersinstructiontext>
+          <providerstitle>Fournisseurs</providerstitle>
+          <sendtext>Envoyer :</sendtext>
+          <sendtotext>Au :</sendtotext>
+        </connectionszone>
+        <displaymodedropdown>
+          <browse>Parcourir</browse>
+          <catalog>Catalogue</catalog>
+          <connect>Connecter</connect>
+          <design>Concevoir</design>
+          <edit>Modifier</edit>
+        </displaymodedropdown>
+        <editorzone>
+          <emptyzonetext>La section Zone d'éditeurs ne contient aucun composant d'éditeur.</emptyzonetext>
+          <errortext>Une erreur est survenue lors de l'application d'un ou de plusieurs composants d'éditeur.</errortext>
+          <headertext>Zone d'éditeurs</headertext>
+          <instructiontext>Modifiez les propriétés du composant WebPart, puis cliquez sur OK ou sur Appliquer pour appliquer vos modifications.</instructiontext>
+        </editorzone>
+        <extendedwebpartzone>
+          <emptyzonetext>Ajoutez un Web Part à cette zone en faisant glisser un flux RSS ou en le sélectionnant dans un dossier.</emptyzonetext>
+        </extendedwebpartzone>
+        <scopedropdown>
+          <all>Les modifications sont partagées</all>
+          <user>Les modifications sont personnelles</user>
+        </scopedropdown>
+        <wsrp>
+          <portletcatalogpart>
+            <producer>Producteur</producer>
+          </portletcatalogpart>
+        </wsrp>
+      </webcontrols>
+      <verbs>
+        <add>Ajouter</add>
+        <apply>Appliquer</apply>
+        <cancel>Annuler</cancel>
+        <close>Fermer</close>
+        <configure>Configurer</configure>
+        <connect>Connecter</connect>
+        <delete>Supprimer</delete>
+        <disconnect>Déconnecter</disconnect>
+        <edit>Modifier</edit>
+        <editwsrp>Modifier le Portlet</editwsrp>
+        <export>Exporter</export>
+        <help>Aide</help>
+        <maximize>Agrandir</maximize>
+        <minimize>Réduire</minimize>
+        <ok>OK</ok>
+        <restore>Restaurer</restore>
+        <solo>Solo</solo>
+        <view>Afficher</view>
+      </verbs>
+    </episerver.webparts>
+    <exceptionmanager>
+      <errorform>
+        <description>Si vous constatez un dysfonctionnement quelconque, veuillez nous en faire part afin que nous puissions corriger l'erreur à l'origine du problème (pensez à nous envoyer une description de l'opération ayant conduit à l'erreur).</description>
+        <messagesentdescription>Votre message a maintenant été envoyé. Nous examinerons votre description de l'erreur et prendrons les mesures appropriées pour y remédier.</messagesentdescription>
+        <messagesenttitle>Message envoyé</messagesenttitle>
+        <sendbutton>Envoyer un message</sendbutton>
+      </errorform>
+      <exceptions>
+        <exception type="EPiServer.Core.AccessDeniedException">
+          <description>Vous ne disposez pas des droits suffisants pour consulter cette page.</description>
+          <title>Accès refusé</title>
+        </exception>
+        <exception type="EPiServer.Core.PageNotFoundException">
+          <description>Le lien indiqué ne fonctionne pas, parce que la page à laquelle il renvoie a été soit supprimée, soit déplacée. Si vous avez cliqué sur un lien, informez l'administrateur Web du site que le lien est défectueux.</description>
+          <title>Page inexistante</title>
+        </exception>
+      </exceptions>
+      <httperrors>
+        <status code="404">
+          <description>Le lien indiqué ne fonctionne pas, parce que la page à laquelle il renvoie a été soit supprimée, soit déplacée. Si vous avez cliqué sur un lien, informez l'administrateur Web du site que le lien est défectueux.</description>
+          <title>Lien incorrect</title>
+        </status>
+        <status code="500">
+          <description>Le lien que vous avez spécifié ne fonctionne pas. Il se peut qu'une opération de maintenance temporaire soit en cours ou que le lien soit incorrect.</description>
+          <title>Impossible de charger la page</title>
+        </status>
+      </httperrors>
+    </exceptionmanager>
+    <february>Février</february>
+    <filemanager>
+      <addversion>
+        <title>Créer une nouvelle version</title>
+      </addversion>
+      <browse>
+        <checkedoutby>Extrait par</checkedoutby>
+        <created>Créée</created>
+        <emptyfolder>Ce dossier est vide</emptyfolder>
+        <goback>Retour</goback>
+        <modified>Modifiée</modified>
+        <name>Nom</name>
+        <size>Taille</size>
+        <thumbnail>Miniature</thumbnail>
+      </browse>
+      <checkinselection>
+        <comments>Commentaires</comments>
+        <currentfile see="/filemanager/search/filename" />
+        <filenotcheckedout>Le fichier n'a pas été extrait</filenotcheckedout>
+        <filexofy>fichier {0} sur {1}</filexofy>
+        <selectversion>Sélectionner une nouvelle version</selectversion>
+        <title>Archiver le fichier</title>
+      </checkinselection>
+      <createdirectory>
+        <alreadyexists>Le dossier existe déjà</alreadyexists>
+        <name>Nom du dossier</name>
+        <title>Créer un dossier</title>
+      </createdirectory>
+      <deleteselection>
+        <confirmdirectorydelete>Voulez-vous vraiment supprimer ce dossier ?</confirmdirectorydelete>
+        <confirmfiledelete>Voulez-vous vraiment supprimer ce fichier ?</confirmfiledelete>
+        <confirmmultidelete>{0} objets ont été sélectionnés, voulez-vous vraiment les supprimer ?</confirmmultidelete>
+        <objectnotfound>Impossible de trouver l'objet que vous souhaitez supprimer. Il l'a peut-être déjà été par un autre utilisateur.</objectnotfound>
+        <title>Supprimer "{0}"</title>
+        <warningmultinotempty>Avertissement ! Certains des dossiers sélectionnés ne sont pas vides.</warningmultinotempty>
+        <warningnotempty>Avertissement ! Le dossier n'est pas vide.</warningnotempty>
+      </deleteselection>
+      <dhtmlsupport>
+        <addfavorite>Ajouter un Favori</addfavorite>
+        <addversion>Créer une nouvelle version</addversion>
+        <checkinselection>Archiver</checkinselection>
+        <checkoutselection>Extraire</checkoutselection>
+        <copyselection>Copier</copyselection>
+        <createdirectory>Créer un dossier</createdirectory>
+        <cutselection>Couper</cutselection>
+        <deleteselection>Supprimer</deleteselection>
+        <directorysecurity>Modifier les droits d'accès</directorysecurity>
+        <editimage>Modifier</editimage>
+        <editinoffice>Modifier dans Office</editinoffice>
+        <editsummary>Modifier un résumé de fichier</editsummary>
+        <notanimage>Le fichier sélectionné n'est pas une image.</notanimage>
+        <openfile>Ouvrir un fichier</openfile>
+        <pasteselection>Coller</pasteselection>
+        <removefavorite>Supprimer un Favori</removefavorite>
+        <renamedirectory>Renommer un dossier</renamedirectory>
+        <renamefile>Renommer un fichier</renamefile>
+        <renameselection see="/filemanager/directorytools/rename" />
+        <undocheckoutselection>Annuler l'extraction</undocheckoutselection>
+        <uploadfile see="/filemanager/directorytools/addfile" />
+        <uploadmultiplefiles>Ajouter plusieurs fichiers</uploadmultiplefiles>
+        <versionlist>Historique des versions</versionlist>
+        <viewfile>Afficher le résumé du fichier</viewfile>
+      </dhtmlsupport>
+      <directorysecurity>
+        <inheritsecurity>Hériter des autorisations du dossier parent</inheritsecurity>
+        <title>Changer les droits d'accès pour "{0}"</title>
+      </directorysecurity>
+      <directorytools>
+        <addfile>Ajouter un fichier</addfile>
+        <addfiletooltip>Ajoute un nouveau fichier</addfiletooltip>
+        <create>Créer un dossier</create>
+        <createtooltip>Créer un nouveau dossier</createtooltip>
+        <delete>Supprimer</delete>
+        <deletetooltip>Supprime le fichier ou le dossier sélectionné</deletetooltip>
+        <gouptooltip>Vers le haut</gouptooltip>
+        <rename>Renommer</rename>
+        <renametooltip>Renomme le fichier ou le dossier sélectionné</renametooltip>
+        <search>Rechercher</search>
+        <searchtooltip>Recherche des fichiers</searchtooltip>
+        <security>Droits d'accès</security>
+        <securitytooltip>Modifie les droits d'accès</securitytooltip>
+        <viewthumbnails>Afficher les miniatures</viewthumbnails>
+        <viewthumbnailstooltip>Affiche toutes les images sous forme de miniatures</viewthumbnailstooltip>
+      </directorytools>
+      <editfilesummary>
+        <inputauthor>Auteur</inputauthor>
+        <inputcategory>Catégorie</inputcategory>
+        <inputcomments>Commentaires</inputcomments>
+        <inputdescription>Description</inputdescription>
+        <inputdocumenttype>Type de document</inputdocumenttype>
+        <inputkeywords>Mots clés</inputkeywords>
+        <inputpublisher>Éditeur</inputpublisher>
+        <inputsubject>Description</inputsubject>
+        <inputtitle>Titre</inputtitle>
+        <title>Modifier le résumé du fichier pour "{0}"</title>
+      </editfilesummary>
+      <filereferencelist>
+        <gotopage>Atteindre la page</gotopage>
+        <noreferences>Aucune référence</noreferences>
+        <referencewarning>Si vous choisissez de continuer, les liens suivants seront rompus</referencewarning>
+        <xlinkstoy>{0} liens vers {1}</xlinkstoy>
+      </filereferencelist>
+      <filetools>
+        <delete>Supprimer</delete>
+        <deletetooltip>Supprimer le fichier actuel</deletetooltip>
+        <editfilesummary>Modifier le résumé du fichier</editfilesummary>
+        <editfilesummarytooltip>Modifier le résumé de fichier du fichier actuel</editfilesummarytooltip>
+        <open>Ouvrir</open>
+        <opentooltip>Ouvrir le fichier actuel</opentooltip>
+        <rename>Renommer</rename>
+        <renametooltip>Renommer le fichier actuel</renametooltip>
+        <replacefile>Remplacer un fichier</replacefile>
+        <replacefiletooltip>Remplacer le fichier actuel par un nouveau fichier</replacefiletooltip>
+      </filetools>
+      <illegalname>Les caractères {0} ne sont pas autorisés dans les noms de fichier ou de dossier.</illegalname>
+      <invalidcharacters>Caractères non valides dans le nom</invalidcharacters>
+      <invalidfiledirectoryname>Il est impossible d'utiliser un nom de périphérique système en tant que nom de fichier ou de répertoire.</invalidfiledirectoryname>
+      <licenseerror>Une erreur de licence pour le fournisseur de chemin d'accès virtuel sélectionné empêche son affichage correct.</licenseerror>
+      <newpage>Nouvelle page</newpage>
+      <nofileselected>Aucun fichier sélectionné</nofileselected>
+      <notsavedpage>Page non enregistrée</notsavedpage>
+      <novppconfigured>Aucun fournisseur de chemin virtuel enregistré n'est accessible</novppconfigured>
+      <pagefoldernotcreated>Aucun dossier n'a été créé pour cette page, voulez-vous en créer un maintenant ?</pagefoldernotcreated>
+      <pagefoldernotcreatednoaccess>Aucun dossier n'a été créé pour cette page</pagefoldernotcreatednoaccess>
+      <pasteselection>
+        <alreadyexists>L'action a été annulée. Certains objets existent déjà dans le dossier actuel</alreadyexists>
+        <cannotcopyinsideitselfmessage>L'action a été annulée. La copie du dossier actuel ne peut pas être collée dans le même dossier</cannotcopyinsideitselfmessage>
+        <cannotmoveinsideitselfmessage>L'action a été annulée. Le dossier coupé ne peut pas être déplacé vers le même dossier</cannotmoveinsideitselfmessage>
+        <confirmcopy>{0} objets ont été sélectionnés. Voulez-vous les copier dans le dossier actuel ?</confirmcopy>
+        <confirmmove>{0} objets ont été sélectionnés. Voulez-vous les déplacer vers le dossier actuel ?</confirmmove>
+        <title>Coller "{0}"</title>
+      </pasteselection>
+      <path>Chemin d'accès</path>
+      <renamedirectory>
+        <directorynotfound>
+                    Le dossier est introuvable. Il a peut-être été supprimé par une autre personne.
+                </directorynotfound>
+        <newname>Sélectionner un nouveau nom de dossier</newname>
+        <title>Renommer "{0}"</title>
+      </renamedirectory>
+      <renamefile>
+        <alreadyexists>Un fichier portant ce nom existe déjà</alreadyexists>
+        <filenotfound>
+                    Le fichier est introuvable. Il a peut-être été supprimé par une autre personne.
+                </filenotfound>
+        <newname>Sélectionner un nouveau nom de fichier</newname>
+        <title>Renommer "{0}"</title>
+      </renamefile>
+      <search>
+        <advancedoptions>Options avancées</advancedoptions>
+        <allpagefolders>Dossiers de pages</allpagefolders>
+        <currentdirectory>Dossier actuel</currentdirectory>
+        <filedirectory>Dossier</filedirectory>
+        <filename>Nom du fichier</filename>
+        <filenamepattern>Nom du fichier</filenamepattern>
+        <gotodirectory>Atteindre le dossier</gotodirectory>
+        <locations>Dossiers</locations>
+        <modifiedfrom>Modifié(e) après le</modifiedfrom>
+        <modifiedto>Modifié(e) avant le</modifiedto>
+        <numberofhits>Nombre de résultats</numberofhits>
+        <query>Rechercher du texte</query>
+        <searchlimited>Le résultat a été limité aux {0} premières correspondances</searchlimited>
+        <viewfileinfo see="/filemanager/dhtmlsupport/viewfile" />
+      </search>
+      <unauthorizedpagefoldercreation>Vous n'êtes pas autorisé à créer des dossiers de pages pour cette page.</unauthorizedpagefoldercreation>
+      <uploadfile>
+        <confirmreplacefile>Un fichier portant ce nom existe déjà. Souhaitez-vous remplacer ce fichier ?</confirmreplacefile>
+        <selectfile>Sélectionner le fichier à ajouter</selectfile>
+        <title>Ajouter un fichier</title>
+      </uploadfile>
+      <versionlist>
+        <comments>Commentaires</comments>
+        <created see="/filemanager/browse/created" />
+        <createdby>Créé(s) par</createdby>
+        <size see="/filemanager/browse/size" />
+        <title>Historique des versions : {0}</title>
+        <version>Version</version>
+      </versionlist>
+      <versionlisttoolbar>
+        <addversion>Créer une version</addversion>
+        <addversiontooltip>Crée une nouvelle version</addversiontooltip>
+        <confirmdelete>Voulez-vous vraiment supprimer cette version ?</confirmdelete>
+        <copyshortcut>Copier le raccourci vers le Presse-papiers</copyshortcut>
+        <delete>Supprimer</delete>
+        <deletetooltip>Supprime la version</deletetooltip>
+        <download>Télécharger</download>
+        <downloadtooltip>Télécharge la version</downloadtooltip>
+        <restore>Restaurer la version</restore>
+        <restoretooltip>Rétablit cette version</restoretooltip>
+      </versionlisttoolbar>
+      <viewfile>
+        <backtofolder>Retour au dossier</backtofolder>
+        <linkingpages>Liaison de pages</linkingpages>
+      </viewfile>
+      <virtualpath>Chemin virtuel</virtualpath>
+    </filemanager>
+    <filemanagernavigator>
+      <currentpage see="/util/linkeditor/pageuploaddir" />
+      <favoritesinfo>Ajouter aux Favoris des dossiers à l'aide du menu contextuel (clic droit) pour l'un des dossiers dans la liste de droite</favoritesinfo>
+      <folders>Dossiers</folders>
+      <hide>Masquer</hide>
+      <myfavorites>Mes Favoris</myfavorites>
+      <show>Afficher</show>
+      <startingpoints>Points début</startingpoints>
+      <uploaddir see="/util/linkeditor/uploaddir" />
+      <virtualpathroots>
+        <virtualpathroot name="Page Files">
+          <name>Fichiers de page</name>
+        </virtualpathroot>
+      </virtualpathroots>
+    </filemanagernavigator>
+    <frames>
+      <frame name="_blank">
+        <description>Ouvrir le lien dans une nouvelle fenêtre</description>
+      </frame>
+      <frame name="_top">
+        <description>Ouvrir le lien dans la fenêtre complète</description>
+      </frame>
+    </frames>
+    <friday>Vendredi</friday>
+    <headings>
+      <heading name="Advanced">
+        <description>Informations avancées</description>
+      </heading>
+      <heading name="Advanced_short">
+        <description>Avancé</description>
+      </heading>
+      <heading name="Categories">
+        <description>Catégories</description>
+      </heading>
+      <heading name="General">
+        <description>Général</description>
+      </heading>
+      <heading name="Information">
+        <description>Informations</description>
+      </heading>
+      <heading name="Shortcut">
+        <description>Raccourci/Lien externe</description>
+      </heading>
+      <heading name="Subscription">
+        <description>Abonnement</description>
+      </heading>
+    </headings>
+    <hour>heure</hour>
+    <january>Janvier</january>
+    <javascript>
+      <system>
+        <popupsblocked>Les fenêtres contextuelles sont bloquées pour ce site. Vous devez activer les fenêtres contextuelles pour accéder à cette fonction.</popupsblocked>
+      </system>
+    </javascript>
+    <july>Juillet</july>
+    <june>Juin</june>
+    <labels>
+      <description>			Description</description>
+    </labels>
+    <login>
+      <loginfailed>			La connexion a échoué</loginfailed>
+      <missingpassword>		Vous devez entrer un mot de passe</missingpassword>
+      <password>				Mot de passe</password>
+      <persistentlogin>		Activer la connexion automatique à ce site Web</persistentlogin>
+      <username>				Nom</username>
+      <usernamerequired>		Vous devez entrer un nom</usernamerequired>
+    </login>
+    <march>Mars</march>
+    <may>Mai</may>
+    <minute>minute</minute>
+    <monday>Lundi</monday>
+    <month>mois</month>
+    <november>Novembre</november>
+    <october>Octobre</october>
+    <pagetypes>
+      <common>
+        <property name="PageArchiveLink">
+          <caption>	Archiver vers la page</caption>
+          <help>		Cette page peut être archivée à un emplacement spécial une fois que la "date d'arrêt de publication" a expiré. Spécifiez la page qui sera utilisée comme archive.</help>
+        </property>
+        <property name="PageCategory">
+          <caption>	Catégorie</caption>
+          <help>		Choisissez les catégories auxquelles votre page doit se connecter. </help>
+        </property>
+        <property name="PageChanged">
+          <caption>	Modifié(e)</caption>
+          <help>		Date à laquelle la page a été marquée comme modifiée.</help>
+        </property>
+        <property name="PageChangedOnPublish">
+          <caption>	Marquer une page comme modifiée</caption>
+          <help>		La date de modification de la page sera mise à jour si cette case est activée. Ceci est nécessaire pour que la page soit incluse dans les abonnements, par exemple.</help>
+        </property>
+        <property name="PageChildOrderRule">
+          <caption>	Ordre de tri</caption>
+          <help>		Définit l'ordre dans lequel les enfants de cette page seront affichés.</help>
+        </property>
+        <property name="PageCreated">
+          <caption>	Créé(e)</caption>
+          <help>		Date de création de la page.</help>
+        </property>
+        <property name="PageDelayedPublish">
+          <caption>	Publication future</caption>
+          <help>		Activez cette case cette option pour publier cette version automatiquement à la date "Début de publication".</help>
+        </property>
+        <property name="PageExternalURL">
+          <caption>	Adresse simple pour cette page</caption>
+          <help>		Spécifiez le chemin d'accès à partir de la racine de votre site Web, par exemple "/products". Cette page peut être rendue accessible via une simple adresse sans "?" ni aucun autre symbole. Le visiteur entre www.foretaget.se/products, puis la page s'affiche. </help>
+        </property>
+        <property name="PageFrameID">
+          <caption>	Cadre cible</caption>
+          <help>		Détermine comment un lien sera ouvert (cible dans &lt;a href&gt;).</help>
+        </property>
+        <property name="PageLanguageID">
+          <caption>Codage linguistique</caption>
+          <help>Définissez le codage linguistique pour la page, s'il est différent de la valeur par défaut.</help>
+        </property>
+        <property name="PageLink">
+          <caption>	Lien de la page</caption>
+          <help>		Lien vers la page</help>
+        </property>
+        <property name="PageLinkURL">
+          <caption>Lien externe</caption>
+          <help>Cette page s'ouvre avec le contenu de la page externe ou le document auquel vous êtes lié.</help>
+        </property>
+        <property name="PageName">
+          <caption>Nom</caption>
+          <help>Nom de la page qui sera utilisée, par exemple en tant qu'en-tête dans les menus.</help>
+        </property>
+        <property name="PagePeerOrder">
+          <caption>	Index de tri</caption>
+          <help>		Spécifiez un entier pour le numéro d'index de cette page. En sélectionnant l'option "Selon l'index de tri" pour le parent de cette page, la page ayant l'index le plus bas sera affichée au début.</help>
+        </property>
+        <property name="PageShortcutLink">
+          <caption>	Raccourci interne/Extraire les données de</caption>
+          <help>		La page ouvre le contenu d'une autre page et transfère le visiteur vers la page en question dans la structure. /  Cette page ouvre le contenu d'une autre page et reste à l'emplacement actuel dans la structure.</help>
+        </property>
+        <property name="PageShortcutType">
+          <caption>Type de lien</caption>
+          <help>		Choisissez le type de lien que vous voulez créer.</help>
+        </property>
+        <property name="PageStartPublish">
+          <caption>	Commencer la publication</caption>
+          <help>		Publier la page à compter de cette date. Si ce champ est laissé vide, la page sera publiée dès que vous aurez cliqué sur le bouton Publier.</help>
+        </property>
+        <property name="PageStopPublish">
+          <caption>	Arrêter la publication</caption>
+          <help>		Publie la page jusqu'à cette date. Si ce champ est laissé vide, vous devez supprimer manuellement la page pour arrêter sa publication.</help>
+        </property>
+        <property name="PageTargetFrame">
+          <caption>Cadre cible</caption>
+          <help>Détermine comment un lien sera ouvert (cible dans &lt;a href&gt;).</help>
+        </property>
+        <property name="PageTypeName">
+          <caption>	Type de page</caption>
+          <help>		Nom du type de page.</help>
+        </property>
+        <property name="PageURLSegment">
+          <caption>	Nom de la page dans l'adresse Web</caption>
+          <help>		Attribuez un nom court pour la page dans l'adresse Web</help>
+        </property>
+        <property name="PageVisibleInMenu">
+          <caption>	Afficher la page dans les menus</caption>
+          <help>		Activez cette case si vous voulez afficher la page dans les menus. Si cette case n'est pas activée, la page sera uniquement affichée dans les listes.</help>
+        </property>
+        <property name="SubscriptionMailBody">
+          <caption>Texte d'introduction dans le message électronique d'abonnement</caption>
+          <help>Entrez le texte qui constituera le corps du message au-dessus de la liste des pages modifiées envoyée dans le message électronique d'abonnement.</help>
+        </property>
+        <property name="SubscriptionMailFrom">
+          <caption>Adresse de l'expéditeur du message électronique d'abonnement</caption>
+          <help>Adresse de messagerie utilisée en tant qu'expéditeur du message électronique d'abonnement.</help>
+        </property>
+        <property name="SubscriptionMailReadMore">
+          <caption>Texte du lien contenu dans le message électronique d'abonnement</caption>
+          <help>Ce texte constituera le lien sur lequel l'utilisateur pourra cliquer dans le message électronique d'abonnement.</help>
+        </property>
+        <property name="SubscriptionMailSubject">
+          <caption>Objet du message électronique d'abonnement</caption>
+          <help>Champ de l'objet du message électronique d'abonnement qui sera envoyé aux abonnés.</help>
+        </property>
+      </common>
+      <pagetype name="SysRecycleBin">
+        <description>Structure arborescente pour la Corbeille sur le site Web</description>
+        <name>Corbeille</name>
+      </pagetype>
+      <pagetype name="SysRoot">
+        <description>Première page en mode édition</description>
+        <name>Page de bienvenue en mode édition</name>
+      </pagetype>
+    </pagetypes>
+    <permissions>
+      <clienttools>Afficher et publier des pages à partir du complément Microsoft Office</clienttools>
+      <detailederrormessage>Messages d'erreur détaillés pour le dépannage</detailederrormessage>
+      <editorunlimitedfunctions>	Toutes les fonctions disponibles dans l'éditeur</editorunlimitedfunctions>
+      <multifileupload>Autoriser le téléchargement avancé à l'aide par exemple du glisser-déplacer</multifileupload>
+      <pageprovidermove>Autoriser les utilisateurs à déplacer des données/pages entre fournisseurs de pages</pageprovidermove>
+      <webserviceaccess>Permet à l’utilisateur d’agir en tant qu’utilisateur du service Web</webserviceaccess>
+      <virtualpathunauthorizedaccess>Accès non autorisé au chemin virtuel : "{0}"</virtualpathunauthorizedaccess>
+    </permissions>
+    <personalization>
+      <task>
+        <assignedto>		Assigné à</assignedto>
+        <assignto>				Assigner à</assignto>
+        <buttoncompleted>		Terminé</buttoncompleted>
+        <buttoncontinue>		Continuer</buttoncontinue>
+        <buttonreject>			Rejeter</buttonreject>
+        <changed>			Mis à jour</changed>
+        <comments>				Commentaires</comments>
+        <createdby>				Créé(e) par</createdby>
+        <description>			Description</description>
+        <duedate>				Échéance </duedate>
+        <owner>				Assigné par</owner>
+        <reminder>			Rappel</reminder>
+        <status>				Statut</status>
+        <statuscompleted>		Terminé</statuscompleted>
+        <statusinprogress>		En cours</statusinprogress>
+        <statusnotstarted>		Nouveau</statusnotstarted>
+        <statusrejected>		Rejeté(e)</statusrejected>
+        <subject>				Objet</subject>
+        <timeout>				Échéance  dépassée</timeout>
+        <typeapprovepage>		Page existante</typeapprovepage>
+        <typeautomail>			Envoyer des rapports par messagerie</typeautomail>
+        <typenewpage>			Créer une nouvelle page</typenewpage>
+        <typeurl>				Afficher l'URL</typeurl>
+      </task>
+    </personalization>
+    <pleasewait>Veuillez patienter</pleasewait>
+    <reportcenter>
+      <categories>
+        <category name="pagereports">Rapports de la page</category>
+      </categories>
+      <numberofhits>Nombre de résultats : {0}</numberofhits>
+      <report name="changedpages">
+        <caption>Pages modifiées</caption>
+        <description>Affiche les pages dont la date de modification appartient à une plage temporelle déterminée.</description>
+        <heading>Pages modifiées</heading>
+        <info>
+          Ce rapport affiche les pages dont la date de modification appartient à une plage temporelle déterminée.
+          Sélectionnez une page dans la liste des résultats du rapport pour l'ouvrir en mode d'édition.
+        </info>
+      </report>
+      <report name="expiredpages">
+        <caption>Pages arrivées à expiration</caption>
+        <description>Affiche les pages dont la date d'arrêt de publication appartient à une plage temporelle déterminée.</description>
+        <heading>Pages arrivées à expiration</heading>
+        <info>
+          Ce rapport affiche les pages dont la date d'arrêt de publication appartient à une plage temporelle déterminée.
+          Sélectionnez une page dans la liste des résultats du rapport pour l'ouvrir en mode d'édition.
+        </info>
+      </report>
+      <report name="notpublishedpages">
+        <caption> Pages non publiées</caption>
+        <description>Affiche les pages qui n'ont pas encore été publiées.</description>
+        <heading>Pages non publiées</heading>
+        <info>
+          Ce rapport affiche les pages qui n'ont pas encore été publiées et dont la date de dernière modification appartient à une plage temporelle déterminée.
+          Sélectionnez une page dans la liste des résultats du rapport pour l'ouvrir mode d'édition.
+        </info>
+      </report>
+      <report name="publishedpages">
+        <caption>Pages publiées</caption>
+        <description>Affiche les pages publiées au cours d'une période déterminée.</description>
+        <heading>Pages publiées</heading>
+        <info>
+          Affiche les pages publiées au cours d'une période déterminée.
+          Sélectionnez une page dans la liste des résultats du rapport pour l'ouvrir en mode d'édition.
+        </info>
+      </report>
+      <report name="simpleaddresses">
+        <caption>Adresses simples</caption>
+        <description>Affiche les pages publiées portant une adresse simple.</description>
+        <heading>Adresses simples</heading>
+        <info>
+          Ce rapport affiche les pages publiées portant une adresse simple.
+          Sélectionnez une page dans la liste des résultats du rapport pour l'ouvrir en mode d'édition.
+        </info>
+      </report>
+      <reportcolumnheadings>
+        <language>Langue</language>
+        <modified>Dernière modification</modified>
+        <modifiedby>Modifié par</modifiedby>
+        <notvisibleinmenu>Visible dans les menus</notvisibleinmenu>
+        <pageid>ID de page</pageid>
+        <pagename>Nom de la page</pagename>
+        <pagetypename>Type de page</pagetypename>
+        <publishedstatus>Statut Publié</publishedstatus>
+        <simpleaddress>Adresse simple</simpleaddress>
+        <startpublish>Date de publication</startpublish>
+        <stoppublish>Publication arrêtée</stoppublish>
+        <version>Version</version>
+      </reportcolumnheadings>
+      <reportcriterias>
+        <after>Après</after>
+        <all>Tous</all>
+        <before>Avant</before>
+        <between>Entre</between>
+        <changed>Modifié</changed>
+        <changedbetween>Dernière modification</changedbetween>
+        <changedbyme>Dernière modification par moi-même</changedbyme>
+        <expired>Arrivé à expiration</expired>
+        <expiringbetween>Publication arrêtée</expiringbetween>
+        <heading>Critères du rapport</heading>
+        <numberofitemsperpage>Nombre d'éléments par page</numberofitemsperpage>
+        <published>Publiée</published>
+        <publishedbetween>Date de publication</publishedbetween>
+        <publishedbyme>Publiés par moi-même</publishedbyme>
+        <readytopublish>Prêt pour la publication ?</readytopublish>
+        <selectlanguage>Langue</selectlanguage>
+        <selectrootpage>Page de début de la recherche</selectrootpage>
+      </reportcriterias>
+      <startpage>
+        <helpimagetext>Une nouvelle disposition de votre espace de travail peut faciliter les échanges avec le centre des rapports.</helpimagetext>
+        <info>
+          Voulez-vous connaître les pages publiées ou modifiées au cours d'une période déterminée ? Voulez-vous également connaître lesquelles de ces
+          pages ont été modifiées par vous-même ? &lt;br/&gt;&lt;br/&gt;
+          Le centre des rapports CMS EPiServer permet de trouver facilement et rapidement des informations sur votre site Web, allégeant ainsi votre travail au quotidien.
+        </info>
+      </startpage>
+      <title>Centre des rapports</title>
+    </reportcenter>
+    <saturday>Samedi</saturday>
+    <savenochanges>Aucune modification n'a été effectuée</savenochanges>
+    <second>seconde</second>
+    <september>Septembre</september>
+    <status>
+      <active>		Actif</active>
+      <inactive>		Inactif</inactive>
+    </status>
+    <subscription>
+      <mailsubject>Dernières nouvelles</mailsubject>
+      <pagelinktext>En savoir plus</pagelinktext>
+    </subscription>
+    <sunday>Dimanche</sunday>
+    <system>
+      <datebrowser>
+        <heading>Sélectionner date</heading>
+        <selectmonthcaption>Sélectionner le mois à atteindre (1-12)</selectmonthcaption>
+        <selectyearcaption>Sélectionner l'année à atteindre</selectyearcaption>
+        <time>Heure</time>
+      </datebrowser>
+      <editutil>
+        <filelisting>
+          <rootpatherror>				Le dossier racine n'est pas défini</rootpatherror>
+          <sortorderdatecreated>		Créé(e)</sortorderdatecreated>
+          <sortorderdatecreateddesc>Créé - décroissant</sortorderdatecreateddesc>
+          <sortorderdatelastaccessed>	Dernier accès</sortorderdatelastaccessed>
+          <sortorderdatelastaccesseddesc>Dernier accès - décroissant</sortorderdatelastaccesseddesc>
+          <sortorderdatelastmodified>	Dernière modification</sortorderdatelastmodified>
+          <sortorderdatelastmodifieddesc>Dernière modification - décroissant</sortorderdatelastmodifieddesc>
+          <sortordername>				Nom</sortordername>
+          <sortordernamedesc>Nom - décroissant</sortordernamedesc>
+          <sortordernone />
+          <sortordersize>				Taille</sortordersize>
+          <sortordersizedesc>Taille - décroissant</sortordersizedesc>
+          <sortordertype>				Type de fichier</sortordertype>
+          <sortordertypedesc>Type de fichier - décroissant</sortordertypedesc>
+        </filelisting>
+        <helpcreated>Date de création de la page</helpcreated>
+        <helpdynprop>Activez cette case pour définir la valeur spécifiée pour toutes les pages enfants</helpdynprop>
+        <helpdynpropdef>La propriété a une valeur définie sur cette page</helpdynpropdef>
+        <helpdynpropundef>La propriété n'a aucune valeur</helpdynpropundef>
+        <languagecommonpropertyicontooltiporiginal>Cette propriété est commune à toutes les langues et vous ne pouvez la modifier qu'ici.</languagecommonpropertyicontooltiporiginal>
+        <languagecommonpropertyicontooltiptranslation>Cette propriété est commune à toutes les langues et ne peut être modifiée que dans la langue d'origine de la page</languagecommonpropertyicontooltiptranslation>
+        <leavepagewarning>Vous avez effectué des modifications dans la page actuelle.
+Si vous quittez cette page, les modifications seront perdues.
+
+Cliquez sur OK pour quitter  sans enregistrer. Cliquez sur Annuler pour ne pas quitter la page.</leavepagewarning>
+        <sortorder1>Selon la date de création (la plus récente d’abord)</sortorder1>
+        <sortorder2>Selon la date de création (la moins récente d’abord)</sortorder2>
+        <sortorder3>Alphabétique</sortorder3>
+        <sortorder4>Selon l'index de tri</sortorder4>
+        <sortorder5>Selon la date de modification (la plus récente d’abord)</sortorder5>
+        <sortorder7>Selon la date de début de la publication (la moins récente d’abord)</sortorder7>
+        <sortorder8>Selon la date de début de la publication (la plus récente d’abord)</sortorder8>
+      </editutil>
+      <firefox>
+        <functionnotsupported>Cette fonctionnalité n'est pas prise en charge par Firefox.</functionnotsupported>
+      </firefox>
+      <pagebrowser>
+        <buttonnolink>Aucune page</buttonnolink>
+        <buttonselflink>Page actuelle</buttonselflink>
+        <heading>Sélectionner page</heading>
+        <infoselflink>Cette page</infoselflink>
+        <noaccesswarning>Ce lien renvoie vers une page à laquelle vous ne pouvez accéder en lecture. Si vous le modifiez, sa valeur précédente ne pourra être rétablie.</noaccesswarning>
+        <notfound see="/edit/quicksearch/notfound" />
+        <title>Lien vers la page</title>
+      </pagebrowser>
+    </system>
+    <thursday>Jeudi</thursday>
+    <tuesday>Mardi</tuesday>
+    <ui>
+      <title>
+        <process32bit>Processus 32 bits</process32bit>
+        <process64bit>Processus 64 bits</process64bit>
+      </title>
+    </ui>
+    <util>
+      <editor>
+        <dialogs>
+          <insertanchor>
+            <invalidcharacters>Signet non valide. Seuls les caractères alphanumériques de l'alphabet anglais sont autorisés.</invalidcharacters>
+          </insertanchor>
+        </dialogs>
+        <javascript>
+          <quote>
+            <noparentquote>La sélection ne permet pas cette opération.</noparentquote>
+          </quote>
+        </javascript>
+      </editor>
+      <linkeditor>
+        <alttextfieldcaption>	Texte de remplacement :</alttextfieldcaption>
+        <douploadcaption>		Sélectionner le téléchargement</douploadcaption>
+        <linktitlefieldcaption>	Titre du lien :</linktitlefieldcaption>
+        <mailfieldcaption>		Adresse de messagerie :</mailfieldcaption>
+        <pageuploaddir>			Fichiers de page</pageuploaddir>
+        <selectpagecaption>		Sélectionner une page :</selectpagecaption>
+        <targetfieldcaption>	Cadre cible :</targetfieldcaption>
+        <uploaddir>				Fichiers globaux</uploaddir>
+        <urlfieldcaption>		Adresse :</urlfieldcaption>
+      </linkeditor>
+      <logout>
+        <linktologinformsauthenticated>Nouvelle connexion</linktologinformsauthenticated>
+        <linktologinwindowsauthenticated>Nouvelle connexion</linktologinwindowsauthenticated>
+        <logoutbodytextformsauthenticated>Utilisez le lien ci-dessous pour vous reconnecter.</logoutbodytextformsauthenticated>
+        <logoutbodytextwindowsauthenticated>Utilisez le lien ci-dessous pour vous reconnecter.</logoutbodytextwindowsauthenticated>
+        <logoutbodytextwindowsauthenticateddombrowser>Déconnectez-vous totalement en fermant toutes les fenêtres du navigateur</logoutbodytextwindowsauthenticateddombrowser>
+        <logoutconfirmdialogdombrowser>Vous êtes connecté en tant qu'utilisateur Windows authentifié. Vous devez fermer toutes les fenêtres du navigateur afin de pouvoir vous déconnecter totalement.</logoutconfirmdialogdombrowser>
+        <logoutheader>Vous êtes déconnecté</logoutheader>
+        <logouttitle>Déconnexion</logouttitle>
+      </logout>
+      <plugins>
+        <edittask>
+          <description>Permet de créer une tâche et de l'assigner à un utilisateur ou à un groupe.</description>
+          <displayname>Créer une nouvelle tâche</displayname>
+        </edittask>
+        <viewtask>
+          <description>Affiche une tâche qui a été assignée à un utilisateur.</description>
+          <displayname>Afficher la tâche assignée</displayname>
+        </viewtask>
+      </plugins>
+    </util>
+    <validation>
+      <assurenospaces>"{0}" ne peut pas contenir d’espaces vides</assurenospaces>
+      <assurenumber>"{0}" ne peut contenir que des nombres</assurenumber>
+      <dateorder>La date pour "{0}" doit être antérieure à "{1}".</dateorder>
+      <formrequired>	* Ce champ ne peut pas être vide.</formrequired>
+      <invalidLongstring>	Le contenu de la propriété "{0}" a généré une erreur avec le message non traduit "{1}".</invalidLongstring>
+      <invalidvalue>	"{1}" n'est pas une valeur valide pour "{0}".</invalidvalue>
+      <invalidvalueexception>	"{1}" n'est pas une valeur valide pour "{0}". ({2})</invalidvalueexception>
+      <namenotunique>Ce nom n'est pas unique.</namenotunique>
+      <notrelative>Les chemins relatifs doivent commencer par ~/ ou /</notrelative>
+      <outofrange>	Vous devez entrer une valeur comprise entre {1} et {2} pour "{0}".</outofrange>
+      <pagelinksettings>
+        <externalurlrequired>Entrez l'URL du site Web externe.</externalurlrequired>
+        <fetchdatapagerequired>Sélectionnez la page à partir de laquelle les données sont récupérées.</fetchdatapagerequired>
+        <shortcutpagerequired>Sélectionnez la page cible du raccourci.</shortcutpagerequired>
+      </pagelinksettings>
+      <propertyname>"{0}" doit commencer par une lettre et contenir uniquement des caractères alphanumériques (a-z, A-Z, 1-9), "_" ou "-".</propertyname>
+      <required>		"{0}" ne peut pas être vide.</required>
+      <stringoverflow>"{0}" a dépassé sa limite de {1} caractères.</stringoverflow>
+      <summary>		Les problèmes suivants doivent être corrigés :</summary>
+      <urlcharactersonly>Utilisez uniquement des caractères (a à z), des chiffres (0 à 9) et des traits d'union (-).</urlcharactersonly>
+      <valuealreadyused>"{0}" avec la valeur "{1}" est déjà utilisé par {2}.</valuealreadyused>
+      <valuesameasfolder>Impossible d'utiliser "{0}" avec la valeur "{1}" car cette valeur coïncide avec le chemin d'accès du dossier "{2}".</valuesameasfolder>
+    </validation>
+    <webcontrols>
+      <explorertree>
+        <!--
+				<infonotpublished>	Ej publicerad</infonotpublished>
+				<infoexpired>		, löpte ut {0}</infoexpired>
+				<infonotstarted>	, börjar {0}</infonotstarted>
+			-->
+        <statusexpired>				Page expirée {0}</statusexpired>
+        <statuslanguagefallback>La page est affichée dans une autre langue</statuslanguagefallback>
+        <statuslanguagemissing>La page étant absente pour la langue actuelle, elle ne sera pas affichée</statuslanguagemissing>
+        <statusnew>					Nouvelle page</statusnew>
+        <statusnotlocal>Page externe</statusnotlocal>
+        <statusnotpublished>		Page non publiée</statusnotpublished>
+        <statusnotstarted>			Page visible {0}</statusnotstarted>
+        <statusnotvisibleinmenu>	Page non visible dans les menus</statusnotvisibleinmenu>
+        <statusreadonly>			Vous n'avez pas reçu les droits d'utilisateur permettant d'effectuer des modifications dans cette page</statusreadonly>
+      </explorertree>
+      <paging>
+        <currentpage>Page actuelle</currentpage>
+        <firstpage>Première page</firstpage>
+        <lastpage>Dernière page</lastpage>
+        <nextpage>Page suivante</nextpage>
+        <pagenumber>Page {0}</pagenumber>
+        <prevpage>Page précédente</prevpage>
+      </paging>
+    </webcontrols>
+    <wednesday>Mercredi</wednesday>
+    <week>semaine</week>
+    <versionstatus>
+      <checkedin>				Prête pour la publication</checkedin>
+      <checkedout>			Non prête</checkedout>
+      <delayedpublish>	Publication différée</delayedpublish>
+      <previouslypublished>	Publiée précédemment</previouslypublished>
+      <published>				Version publiée</published>
+      <rejected>				Commentaires</rejected>
+    </versionstatus>
+    <wsrp>
+      <portlets>
+        <wsrpiframecontrol>
+          <description>Afficher les informations dans un IFrame</description>
+          <displayname>IFrame</displayname>
+          <keywords>IFrame</keywords>
+          <shorttitle>Portlet IFrame</shorttitle>
+          <title>Portlet EPiServer IFrame</title>
+        </wsrpiframecontrol>
+        <wsrpinfoservicecontrol>
+          <description>Afficher les informations à partir d'EPiServer</description>
+          <displayname>Infos sur le visualiseur</displayname>
+          <keywords>EPiServerInformations</keywords>
+          <shorttitle>Visualiseur d'informations</shorttitle>
+          <title>Portlet du visualiseur d'informations EPiServer</title>
+        </wsrpinfoservicecontrol>
+        <wsrpnewschannelcontrol>
+          <description>Afficher les infos à partir d'EPiServer</description>
+          <displayname>Canal d'infos</displayname>
+          <keywords>Infos</keywords>
+          <shorttitle>Portlet du canal d'infos</shorttitle>
+          <title>Portlet du canal d'infos EPiServer</title>
+        </wsrpnewschannelcontrol>
+        <wsrprsscontrol>
+          <description>Afficher les informations à partir de la source RSS</description>
+          <displayname>RSS</displayname>
+          <keywords>RSSRésumé développé du siteSyndication simple réelle</keywords>
+          <shorttitle>Portlet RSS</shorttitle>
+          <title>Portlet EPiServer RSS</title>
+        </wsrprsscontrol>
+        <wsrpusersettingscontrol>
+          <description>Configurer les paramètres utilisateur</description>
+          <displayname>Paramètres utilisateur</displayname>
+          <shorttitle>Portlet des paramètres utilisateurs</shorttitle>
+          <title>Portlet des paramètres utilisateur EPiServer</title>
+        </wsrpusersettingscontrol>
+      </portlets>
+    </wsrp>
+    <xform>
+      <datatypes>
+        <date1>
+          <caption>Date (JJ/MM/AAAA)</caption>
+          <inlineerrormessage>N’est pas une date valide. Entrez une date au format "JJ/MM/AAAA".</inlineerrormessage>
+          <summaryerrormessage>* n’est pas une date valide. Entrez une date au format "JJ/MM/AAAA".</summaryerrormessage>
+        </date1>
+        <date2>
+          <caption>Date (MM/JJ/AAAA)</caption>
+          <inlineerrormessage>N’est pas une date valide. Entrez une date au format "MM/JJ/AAAA".</inlineerrormessage>
+          <summaryerrormessage>* n’est pas une date valide. Entrez une date au format "MM/JJ/AAAA".</summaryerrormessage>
+        </date2>
+        <defaulttype>
+          <inlineerrormessage>Vous avez saisi des caractères non autorisés ("&lt;" ou "&gt;").</inlineerrormessage>
+          <summaryerrormessage>Vous avez saisi des caractères non autorisés ("&lt;" ou "&gt;").</summaryerrormessage>
+        </defaulttype>
+        <email>
+          <caption>Adresse de messagerie</caption>
+          <inlineerrormessage>N’est pas une adresse de messagerie valide.</inlineerrormessage>
+          <summaryerrormessage>* n’est pas une adresse de messagerie valide.</summaryerrormessage>
+        </email>
+        <integer>
+          <caption>Entier</caption>
+          <inlineerrormessage>N’est pas un entier valide.</inlineerrormessage>
+          <summaryerrormessage>* n’est pas un entier valide.</summaryerrormessage>
+        </integer>
+        <isodate>
+          <caption>Date (AAAA-MM-JJ)</caption>
+          <inlineerrormessage>N’est pas une date valide. Entrez une date au format "AAAA-MM-JJ".</inlineerrormessage>
+          <summaryerrormessage>* n’est pas une date valide. Entrez une date au format "AAAA-MM-JJ".</summaryerrormessage>
+        </isodate>
+        <positiveinteger>
+          <caption>Entier positif</caption>
+          <inlineerrormessage>N’est pas un entier positif valide.</inlineerrormessage>
+          <summaryerrormessage>* n’est pas un entier positif valide.</summaryerrormessage>
+        </positiveinteger>
+      </datatypes>
+      <denymultipleposts>Vous avez déjà rempli ce formulaire</denymultipleposts>
+      <errorpostingtocustomurl>Le formulaire n’a pas pu être transmis à une adresse personnalisée</errorpostingtocustomurl>
+      <errorpostingtodatabase>Le formulaire n’a pas pu être transmis à la base de données</errorpostingtodatabase>
+      <errorpostingtoemail>Le formulaire n’a pas pu être transmis à une adresse de messagerie</errorpostingtoemail>
+      <requiredfield>
+        <inlineerrormessage>Ce champ est obligatoire</inlineerrormessage>
+        <summaryerrormessage>Vous n’avez pas renseigné tous les champs obligatoires</summaryerrormessage>
+      </requiredfield>
+      <requirelogon>Vous devez être connecté pour pouvoir répondre</requirelogon>
+    </xform>
+  </language>
+</languages>

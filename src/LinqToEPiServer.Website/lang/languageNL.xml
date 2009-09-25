@@ -1,0 +1,3007 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<languages>
+  <language name="Nederlands" id="nl">
+    <accesslevels>
+      <accesslevel name="Administer">
+        <description>Beheren</description>
+      </accesslevel>
+      <accesslevel name="Create">
+        <description>Aanmaken</description>
+      </accesslevel>
+      <accesslevel name="Delete">
+        <description>Verwijderen</description>
+      </accesslevel>
+      <accesslevel name="Edit">
+        <description>Wijzigen</description>
+      </accesslevel>
+      <accesslevel name="NoAccess">
+        <description>Geen toegang</description>
+      </accesslevel>
+      <accesslevel name="Publish">
+        <description>Publiceren</description>
+      </accesslevel>
+      <accesslevel name="Read">
+        <description>Lezen</description>
+      </accesslevel>
+    </accesslevels>
+    <admin>
+      <admingroup>
+        <approvedheading>Goedgekeurd</approvedheading>
+        <deletegrouptooltip>Groep verwijderen</deletegrouptooltip>
+        <description see="/labels/description" />
+        <group>				Groep</group>
+        <groupexists>		Er is al een groep met de naam {0}</groupexists>
+        <heading>			Groepen beheren</heading>
+        <info>				Groepen voor het toewijzen van toegangsrechten verwijderen of toevoegen.</info>
+        <ldapinfo>	Groepsinformatie van LDAP-server importeren. Typ een zoekuitdrukking in het veld. Met Gebruiker* krijgt u bijvoorbeeld een lijst met alle groepen of organisatie-eenheden die beginnen met Gebruiker.</ldapinfo>
+        <ldappath>			LDAP-server</ldappath>
+        <localgroup>		Windows-groepen</localgroup>
+        <lockedoutheading>Buitengesloten</lockedoutheading>
+        <membersofrole>Gebruikers van groep {0}</membersofrole>
+        <newgroupinfo>Groep aanmaken om te gebruiken in EPiServer</newgroupinfo>
+        <noroleprovider>Er is geen rolprovider geconfigureerd en/of ingeschakeld in web.config.</noroleprovider>
+        <provider>Provider</provider>
+        <removeuserfromgrouptooltip>Gebruiker uit groep verwijderen</removeuserfromgrouptooltip>
+        <roledeletefailed>Kan groep {0} niet verwijderen</roledeletefailed>
+        <rolenameinvalid>Ongeldige groepsnaam</rolenameinvalid>
+        <syncbutton>		Synchroniseren</syncbutton>
+        <syncinfo>	Informatie over lokale groepen synchroniseren met EPiServer</syncinfo>
+        <syncldapbutton>	Importeren vanuit LDAP-server</syncldapbutton>
+        <userremovedfromrole>Lid {0} in groep {1} is verwijderd</userremovedfromrole>
+      </admingroup>
+      <categories>
+        <deleletereferencewarning>Een of meer pagina’s bevatten verwijzingen naar categorie {0} die u probeert te verwijderen.</deleletereferencewarning>
+        <deleteconfirmmessage>Wilt u categorie {0} en alle subcategorieën verwijderen?</deleteconfirmmessage>
+        <delreferenceconfirm>Wilt u deze categorie nog steeds verwijderen?</delreferenceconfirm>
+        <heading>Categorieën</heading>
+        <helpadd>Een categorie toevoegen onder de geselecteerde categorie. De wijzigingen worden pas doorgevoerd als u op Opslaan klikt.</helpadd>
+        <helpdelete>Categorie verwijderen. Als de categorie subcategorieën bevat, komen deze een niveau hoger te staan.</helpdelete>
+        <helpmovedown>De categorie een niveau lager plaatsen in de lijst.</helpmovedown>
+        <info>De categorieën definiëren die u op de website wilt gebruiken. Deze categorieën zijn beschikbaar in de bewerkingsmodus voor elke pagina onder de kop "Categorieën".</info>
+        <movedown>Omlaag verplaatsen</movedown>
+        <moveup>Omhoog verplaatsen</moveup>
+        <notselectable>Niet selecteerbaar</notselectable>
+        <notvisible>Niet zichtbaar</notvisible>
+        <tabledescription>Beschrijving</tabledescription>
+        <tablename>Naam</tablename>
+        <tableselectable>Selecteerbaar</tableselectable>
+        <tablevisible>Zichtbaar</tablevisible>
+      </categories>
+      <cleanupupload>
+        <directory>Directory</directory>
+        <heading>Niet-gebruikte bestanden verwijderen</heading>
+        <info>In de bewerkingsmodus kunnen redacteuren bestanden uploaden naar de map Paginabestanden. Deze bestanden blijven op de server staan als pagina’s worden verwijderd. Hier kunt u ongebruikte bestanden verwijderen die zijn opgeslagen onder "Paginabestanden".</info>
+        <leftintact>is intact gebleven</leftintact>
+        <notdeleted>&amp;nbsp; kan niet worden verwijderd</notdeleted>
+        <nothing>Niets te verwijderen.</nothing>
+        <wasdeleted>is verwijderd</wasdeleted>
+        <wasnotdeleted>is niet verwijderd</wasnotdeleted>
+      </cleanupupload>
+      <confirmlanguagespecific>
+        <heading>Waarden worden verwijderd, bestaande inhoud wordt geconverteerd</heading>
+        <info>Eigenschappenwaarden worden verwijderd voor pagina’s in een taal die niet de originele taal is.</info>
+        <pagelist>Pagina's die worden gewijzigd ({0})</pagelist>
+        <title>Waarschuwing</title>
+      </confirmlanguagespecific>
+      <contentmirroring>
+        <description>De kanalen die zijn gedefinieerd in het systeem.</description>
+        <displayname see="/admin/contentmirroring/heading" />
+        <heading>Mirrorbeheer</heading>
+        <info>Hiermee definieert u inhoudskanalen die inhoud van EPiServer CMS spiegelen naar een extern systeem.</info>
+        <name>Kanaalnaam</name>
+      </contentmirroring>
+      <contentmirroringedit>
+        <activatefilter>Filter activeren</activatefilter>
+        <alllanguages>Actief (alle talen worden gespiegeld naar de bestemming met globaliseringsondersteuning)</alllanguages>
+        <automatic>Overdrachtstype</automatic>
+        <automaticapproval>Wijzigingen automatisch goedkeuren</automaticapproval>
+        <channeltype>Mirrortype</channeltype>
+        <confirmdelete>Weet u zeker dat u de mirrorinstellingen wilt verwijderen?</confirmdelete>
+        <filterpropertyname>Filteren op naam eigenschap</filterpropertyname>
+        <filterpropertyvalue>Filteren op waarde eigenschap</filterpropertyvalue>
+        <frompagelink>Startpagina</frompagelink>
+        <globalizationsupport>Globaliseringsondersteuning</globalizationsupport>
+        <heading>Mirrorinstellingen</heading>
+        <impersonatedomain>Domein</impersonatedomain>
+        <impersonatepassword>Wachtwoord instellen</impersonatepassword>
+        <impersonateusername>Gebruikersnaam</impersonateusername>
+        <includeroot>Inclusief de startpagina</includeroot>
+        <info>Hiermee definieert u de instellingen voor dit kanaal.</info>
+        <language>Taal</language>
+        <name>Naam</name>
+        <noglobalizationsupport>Inactief (de originele taal wordt gespiegeld naar de bestemming zonder globaliseringsondersteuning)</noglobalizationsupport>
+        <runasanonymoususer>Uitvoeren als anonieme gebruiker</runasanonymoususer>
+        <singlelanguage>Alleen {0} wordt gespiegeld naar de bestemming zonder globaliseringsondersteuning</singlelanguage>
+        <tabfilter>Eigenschappenfilter</tabfilter>
+        <tabinformation>Informatie</tabinformation>
+        <types>
+          <list>Lijst</list>
+          <search>Zoeken (alleen bijgewerkte pagina's)</search>
+          <tree>Structuur</tree>
+        </types>
+      </contentmirroringedit>
+      <contentmirroringmanager>
+        <description />
+        <displayname>Mirrorservice</displayname>
+      </contentmirroringmanager>
+      <contentmirroringmapping>
+        <delete>Verwijderen</delete>
+        <deleteall>Alle toewijzingen verwijderen</deleteall>
+        <deleteallmessage>Weet u zeker dat u alle toewijzingen voor dit kanaal wilt verwijderen?</deleteallmessage>
+        <deletemessage>Weet u zeker dat u deze toewijzing wilt verwijderen?</deletemessage>
+        <foldermapping>Maptoewijzingen</foldermapping>
+        <message>In deze lijst wordt weergegeven hoe pagina- en map-ID’s worden toegewezen tussen de bronsite en de externe site. Na het verwijderen van een toewijzing wordt de verbinding van de doelpagina of -map met de bron verbroken. Verdere mirrorupdates leiden ertoe dat de doelpagina of -map en een schone kopie van eventuele mapinhoud opnieuw worden aangemaakt.</message>
+        <pagemapping>Paginatoewijzingen</pagemapping>
+        <pagename>Paginanaam</pagename>
+        <sourceid>Bron-ID</sourceid>
+        <targetid>Doel-ID</targetid>
+        <title>Mirrortoewijzingen voor {0}</title>
+      </contentmirroringmapping>
+      <contentmirroringqueue>
+        <created>Aangemaakt</created>
+        <deletepackage>Pakket verwijderen</deletepackage>
+        <deletewarningi0>Weet u zeker dat u de wijzigingen in de wachtrij wilt verwijderen?</deletewarningi0>
+        <deletewarningi1>Het verplaatsen en verwijderen aan de bestemmingszijde moet handmatig gebeuren.</deletewarningi1>
+        <deletewarningi2>U moet de bijgewerkte en gemaakte pagina's opnieuw publiceren.</deletewarningi2>
+        <info>Hier staan de pagina's die worden gespiegels als de mirrorservice de volgende keer wordt uitgevoerd.</info>
+        <packagetitle>Pakket</packagetitle>
+        <pageid>Pagina-ID</pageid>
+        <pagename>Paginanaam</pagename>
+        <title>Mirrorwachtrij voor bestemming {0} op {1}</title>
+        <type>Type wijzigen</type>
+        <warning>Waarschuwing! Pagina’s die uit het pakket zijn verwijderd, worden niet meegenomen bij het spiegelen van de website. Dit kan gevolgen hebben voor toekomstig spiegelen. Klik niet op Verwijderen als u alle pagina's in het pakket wilt opnemen de volgende keer dat de mirrorservice wordt uitgevoerd.</warning>
+      </contentmirroringqueue>
+      <contentmirroringview>
+        <continuereset>Doorgaan met opnieuw instellen</continuereset>
+        <createdestination>Bestemming aanmaken</createdestination>
+        <editmappings>Toewijzingen</editmappings>
+        <editqueue>Wachtrij bewerken</editqueue>
+        <errorsamechannelname>De kanaalnaam '{0}' wordt al gebruikt door een ander kanaal</errorsamechannelname>
+        <heading>Overzicht bestemming</heading>
+        <htmlmirroring>HTML</htmlmirroring>
+        <info>Een overzicht van de bestemmingen die zijn gedefinieerd voor dit kanaal.</info>
+        <lastchanges>Laatste keer dat wijzigingen zijn toegepast</lastchanges>
+        <lastexecution>Laatste uitvoering</lastexecution>
+        <laststatus>Laatste status</laststatus>
+        <name>Bestemmingen</name>
+        <noaction>Geen wijzigingen toegepast</noaction>
+        <notallowedsourcepage>Mirroring is niet mogelijk vanaf de hoofdpagina of de Prullenbak.</notallowedsourcepage>
+        <nousername>Geen gebruikersnaam opgegeven</nousername>
+        <pagemirroring>EPiServer CMS</pagemirroring>
+        <queuelength>Lengte wachtrij</queuelength>
+        <reset>Status opnieuw instellen</reset>
+        <resetwarning1>Als u doorgaat met deze bewerking, worden alle pagina’s weergegeven zoals ze zijn gemaakt.</resetwarning1>
+        <resetwarning2>Deze bewerking leidt tot het verlies van items die niet zijn gespiegeld naar de bestemming.</resetwarning2>
+        <settingslocked>De instellingen voor dit kanaal en de desbetreffende bestemmingen zijn vergrendeld, omdat er al een mirroropdracht is uitgevoerd met de huidige instellingen. Voor een juiste uitvoering van eventuele volgende opdrachten zijn identieke mirrorinstellingen nodig. Wijzig de instellingen door te klikken op 'Status opnieuw instellen' om de gegevens uit eerdere opdrachten te herstellen.</settingslocked>
+        <title>Bestemmingen voor kanaal {0}</title>
+        <type>Doeltype</type>
+        <xmlmirroring>XML</xmlmirroring>
+      </contentmirroringview>
+      <contentpublisheredit>
+        <applyfilterontemplates>Kanaalfilter toepassen</applyfilterontemplates>
+        <changelog>Een logbestand met wijzigingen</changelog>
+        <confirmdelete>Weet u zeker dat u de bestemming wilt verwijderen?</confirmdelete>
+        <defaultdocument>Standaardnaam voor bestanden</defaultdocument>
+        <destinationnameduplicate>Er is al een bestemming met deze naam.</destinationnameduplicate>
+        <flatfiles>Eén bestand per pagina</flatfiles>
+        <heading>Bestemming</heading>
+        <info>Hiermee definieert u de ontvanger van de wijzigingen die vanuit een kanaal zijn verzonden.</info>
+        <instantpublish>Pagina's publiceren</instantpublish>
+        <name>Naam</name>
+        <nopageref>Invoer moet kunnen worden ontleed als een PageReference.</nopageref>
+        <pathnameproperty>Gebruik de volgende eigenschap voor mapnamen</pathnameproperty>
+        <queuecreated>Item aangemaakt</queuecreated>
+        <queueid>Nummer wachtrij</queueid>
+        <remotesite>Externe site</remotesite>
+        <rootdir>Relatief pad naar hoofdmap</rootdir>
+        <selecttype>Bestemmingstype selecteren</selecttype>
+        <sitemap>Globaal siteoverzicht</sitemap>
+        <tabqueue>Wachtrij</tabqueue>
+        <tabsettings>Informatie</tabsettings>
+        <targetdirectory>Doeldirectory op de server</targetdirectory>
+        <topagelink>Hoofdpagina op bestemming</topagelink>
+        <usedirectoryweblinks>Neem geen bestandsnaam op in koppelingen</usedirectoryweblinks>
+        <verifychecksum>Controleer altijd het controlegetal voor alle pagina’s</verifychecksum>
+        <xmloutputstyle>Uitvoer aanmaken</xmloutputstyle>
+        <xslfile>Pad naar XSL-sjabloon</xslfile>
+      </contentpublisheredit>
+      <convertpagetype>
+        <cancel>Annuleren</cancel>
+        <confirmconvertcheckbox>Ik wil deze eigenschappen permanent verwijderen.</confirmconvertcheckbox>
+        <convert>Converteren</convert>
+        <converterror>Pagina kan niet worden geconverteerd: </converterror>
+        <converterrorsameproperty>
+          Er is een nieuwe eigenschap toegewezen aan meer dan één oude eigenschap. Nieuwe eigenschappen kunnen aan slechts één oude eigenschap worden toegewezen.
+        </converterrorsameproperty>
+        <frompageproperties>Converteren van eigenschap</frompageproperties>
+        <frompagetype>Converteren van paginatype</frompagetype>
+        <heading>Pagina's converteren</heading>
+        <info>
+          Er worden één of meer pagina's in de boomstructuur geconverteerd van het ene paginatype naar één ander paginatype.&lt;br/&gt;
+          &lt;b&gt;Let op!&lt;/b&gt; Deze bewerking is onomkeerbaar en kan tot gevolg hebben dat inhoud permanent wordt verwijderd.
+        </info>
+        <istesting>Testresultaten</istesting>
+        <languageid>Paginataal</languageid>
+        <log>
+          <clearcache>De cache wordt gewist voor pagina {0}.</clearcache>
+          <clearcacheall>De cache wordt gewist voor alle pagina's .</clearcacheall>
+          <cntpages>{0} pagina('s) werden geconverteerd.</cntpages>
+          <cntpagestest>{0} pagina('s) worden geconverteerd.</cntpagestest>
+          <commit>De transactie is geslaagd.</commit>
+          <convertedpagetype>{0} pagina('s) van paginatype {1} werd(en) geconverteerd naar paginatype {2}.</convertedpagetype>
+          <convertedpagetypetest>{0} pagina('s) van paginatype {1} wordt/worden geconverteerd naar paginatype {2}.</convertedpagetypetest>
+          <heading>Het volgende werd gewijzigd voor pagina {0} (inclusief versies).</heading>
+          <headingrecursive>Het volgende werd gewijzigd voor pagina {0} (inclusief versies en subpagina's van het geselecteerde paginatype).</headingrecursive>
+          <headingrecursivetest>Het volgende werd gewijzigd voor pagina {0} (inclusief versies en subpagina's van het geselecteerde paginatype).</headingrecursivetest>
+          <headingtest>Het volgende werd gewijzigd voor pagina {0} (inclusief versies).</headingtest>
+          <noproperty>Er zijn geen eigenschappen van type {0} gevonden.</noproperty>
+          <removeproperty>{0} eigenschap(pen) van type {1} werd(en) permanent verwijderd.</removeproperty>
+          <removepropertytest>{0} eigenschap(pen) van type {1} wordt/worden permanent verwijderd.</removepropertytest>
+          <updateproperty>{0} eigenschap(pen) van type {1} werd(en) geconverteerd naar type {2}.</updateproperty>
+          <updatepropertytest>{0} eigenschap(pen) van type {1} wordt/worden geconverteerd naar type {2}.</updatepropertytest>
+        </log>
+        <nomatchingpages>Er zijn geen subpagina's voor het geselecteerde paginatype. De geselecteerde hoofdpagina heeft paginatype {0}.</nomatchingpages>
+        <noselectedpage>Selecteer een pagina om van te converteren</noselectedpage>
+        <notaccepted>Door de gebruiker geannuleerde bewerking</notaccepted>
+        <notmatchingpagetype>Het gekozen paginatype komt niet overeen met de geselecteerde pagina. De geselecteerde pagina heeft paginatype {0}.</notmatchingpagetype>
+        <ok>OK</ok>
+        <recursive>De geselecteerde pagina en alle subpagina's (van het geselecteerde paginatype) converteren</recursive>
+        <remotepage>Conversie van pagina's wordt alleen ondersteund voor pagina's die afkomstig zijn uit de lokale EPiServer CMS-database.</remotepage>
+        <removelanguage>Taal verwijderen</removelanguage>
+        <removepropertywarning1>Controleer of niemand bezig is pagina's van het te converteren paginatype te bewerken.</removepropertywarning1>
+        <removepropertywarning2>Alle waarden van de eigenschappen die u selecteert om permanent te verwijderen, worden voorgoed verwijderd uit de database en kunnen niet worden hersteld.</removepropertywarning2>
+        <removepropertywarningheading>Deze bewerking kan de inhoud van de website beschadigen!</removepropertywarningheading>
+        <removepropety>Eigenschap permanent verwijderen</removepropety>
+        <requierdremovecomfirmation>U moet Eigenschappen permanent verwijderen selecteren om verder te gaan</requierdremovecomfirmation>
+        <runtest>Conversie testen en logboek weergeven</runtest>
+        <selectpageroot>Pagina's selecteren voor conversie</selectpageroot>
+        <topageproperties>Converteren naar eigenschap</topageproperties>
+        <topagetype>Converteren naar paginatype</topagetype>
+      </convertpagetype>
+      <copypagetype>
+        <caption>Kopie maken van</caption>
+        <heading>Paginatype kopiëren</heading>
+        <info>Selecteer het paginatype dat u wilt kopiëren.</info>
+      </copypagetype>
+      <databasejob>
+        <activecaption>		Actief</activecaption>
+        <archive>
+          <description>	Geef op of de archieffunctie actief of niet actief is en hoe vaak u pagina's wilt archiveren. Met behulp van de archieffunctie worden pagina’s met een verlopen publicatiedatum verplaatst naar de geselecteerde archieffolder, indien opgegeven.</description>
+          <displayname>	Archieffunctie</displayname>
+        </archive>
+        <delayedpublish>
+          <displayname>Uitgestelde paginaversies publiceren</displayname>
+        </delayedpublish>
+        <logdate>			Datum</logdate>
+        <logmessage>Bericht</logmessage>
+        <logstatus>			Status</logstatus>
+        <nextexecution>Volgende geplande datum</nextexecution>
+        <savemessage>		De instellingen zijn opgeslagen.</savemessage>
+        <schedulecaption>	Deze opdracht uitvoeren, elke</schedulecaption>
+        <starterrormessage>	De opdracht is mislukt: {0}</starterrormessage>
+        <startokmessage>	De opdracht is zonder problemen gestart.</startokmessage>
+        <subscription>
+          <description>Met behulp van de abonnementsopdracht wordt e-mail verzonden naar gebruikers die zich abonneren op updates in verschillende onderdelen van de website.</description>
+          <displayname>Abonnement</displayname>
+          <mailsubject>Laatste nieuws</mailsubject>
+          <pagelinktext>Meer lezen</pagelinktext>
+        </subscription>
+        <tabhistory>Geschiedenis</tabhistory>
+        <tabsettings>		Instellingen</tabsettings>
+        <testbutton>		Handmatig starten</testbutton>
+        <wastebasket>
+          <description>	Geef op of de leegmaakfunctie actief of niet actief is en hoe vaak u de Prullenbak wilt leegmaken. Met behulp van de Prullenbak-opdracht worden pagina's die ouder zijn dan 30 dagen, permanent verwijderd uit de Prullenbak.</description>
+          <displayname>	Automatisch leegmaken van de Prullenbak</displayname>
+        </wastebasket>
+      </databasejob>
+      <deletemembershipdialog>
+        <confirmdeleteuserorgroup>Wilt u de gebruiker/groep {0} verwijderen?</confirmdeleteuserorgroup>
+        <deletemembershipaccessrights>Paginatoegangsrechten verwijderen</deletemembershipaccessrights>
+        <deletemembershippermissionrights>Machtigingen voor functies verwijderen</deletemembershippermissionrights>
+        <deletemembershipunifiedrights>Bestandsbeheertoegangsrechten verwijderen</deletemembershipunifiedrights>
+        <deletemembershipworkflowrights>Werkstroomtoegangsrechten verwijderen</deletemembershipworkflowrights>
+        <deleterightsforrole>Toegangsrechten van groep verwijderen </deleterightsforrole>
+        <deleterightsforuser>Toegangsrechten van gebruiker verwijderen </deleterightsforuser>
+        <groupdeleted>Groep {0} is verwijderd</groupdeleted>
+        <heading>Gebruiker/groep verwijderen</heading>
+        <info>Hier kunt u een gebruiker of groep, inclusief toegangsrechten, verwijderen uit het systeem.</info>
+        <userdeletefailed>Kan gebruiker {0} niet verwijderen.</userdeletefailed>
+        <userremoved>Gebruiker {0} is verwijderd</userremoved>
+      </deletemembershipdialog>
+      <editdynprop>
+        <heading>	Dynamische eigenschappen bewerken</heading>
+        <info>		Dynamische eigenschappen zijn beschikbaar, ongeacht het paginatype dat u gebruikt.</info>
+      </editdynprop>
+      <editdynpropfield>
+        <advancedcaption see="/admin/editpagetypefield/advancedcaption" />
+        <editcaption see="/admin/editpagetypefield/editcaption" />
+        <heading>	Dynamische eigenschap bewerken</heading>
+        <headingnew>Nieuwe dynamische eigenschap aanmaken</headingnew>
+        <helptextcaption see="/admin/editpagetypefield/helpcaption" />
+        <info />
+        <longstringsettingscaption see="/admin/editpagetypefield/editorhelp" />
+        <namecaption see="/admin/editpagetypefield/namecaption" />
+        <tabinfo>	Informatie</tabinfo>
+        <typecaption see="/admin/editpagetypefield/typecaption" />
+      </editdynpropfield>
+      <editlanguage>
+        <charsetcaption>		Tekenset</charsetcaption>
+        <currentsystemdefaultcaption>Standaardcodering van huidig systeem</currentsystemdefaultcaption>
+        <fontcharsetcaption>	Lettertype gebruikt in Editor</fontcharsetcaption>
+        <heading>				Taalcodering</heading>
+        <info>					&lt;b&gt;WAARSCHUWING&lt;/b&gt; Onjuiste wijzigingen op deze pagina kunnen ertoe leiden dat de website niet meer reageert.</info>
+        <languageidcaption>		Taalcode</languageidcaption>
+        <languagenamecaption>	Naam lokale taal</languagenamecaption>
+        <languagenameencaption>	Taalnaam in het Engels</languagenameencaption>
+        <localecaption>			Datum-/tijdnotatie</localecaption>
+        <mailcodepagecaption>	Tekenset voor e-mail</mailcodepagecaption>
+        <setsystemdefaultcaption>Instellen als standaardsysteemcodering</setsystemdefaultcaption>
+      </editlanguage>
+      <editlanguagebranch>
+        <cantsave>Kan taal website niet opslaan.</cantsave>
+        <confirmdelete>Weet u zeker dat u de taal wilt verwijderen?</confirmdelete>
+        <customiconcaption>Sjabloonpictogram</customiconcaption>
+        <customiconhelp>Pad naar aangepaste afbeelding voor gebruik in sjabloonpagina's. Moet met "/" of "~/" beginnen.</customiconhelp>
+        <enabledcaption>Ingeschakeld</enabledcaption>
+        <enabledlanguageexception>Als de globaliseringsondersteuning is ingeschakeld, moet er altijd ten minste één taal zijn ingeschakeld</enabledlanguageexception>
+        <errorcantdelteusedlanguage>De taal wordt gebruikt in de taalinstellingen op de volgende pagina’s en kan niet worden verwijderd: {0}.</errorcantdelteusedlanguage>
+        <errorlanguageonpage>De taal kan niet worden verwijderd omdat deze wordt gebruikt op de volgende pagina’s: {0}.</errorlanguageonpage>
+        <headingnew>Nieuwe taal voor website aanmaken</headingnew>
+        <iconcaption>Pictogram</iconcaption>
+        <info>Definieer een nieuwe taal voor de website die beschikbaar moet zijn voor de bezoekers van uw website.</info>
+        <invalidiconpath>Het zoekpad van het sjabloonpictogram moet beginnen met  "/" of "~/".</invalidiconpath>
+        <namecaption>Naam</namecaption>
+        <urlsegmentcaption>Voorvoegsel webadres</urlsegmentcaption>
+        <warningchangelanguage>Waarschuwing! De taalcode wordt gebruikt op verschillende plaatsen in het systeem, zoals koppelingen en terugvaltalen. U kunt deze instelling alleen wijzigen tijdens de initiële configuratie van het systeem.</warningchangelanguage>
+      </editlanguagebranch>
+      <editlanguagebranches>
+        <addlanguage>Taal toevoegen</addlanguage>
+        <customiconcaption>Sjabloonpictogram</customiconcaption>
+        <enabledcaption>Ingeschakeld</enabledcaption>
+        <heading>Talen website beheren</heading>
+        <iconcaption>Pictogram</iconcaption>
+        <idcaption>Taalcode</idcaption>
+        <info>Definieer de talen die beschikbaar moeten zijn voor de bezoekers van uw website.</info>
+        <namecaption>Naam</namecaption>
+        <registered>Geregistreerd</registered>
+        <registeredcaption>Al geregistreerd</registeredcaption>
+        <systemiconcaption>Systeempictogram</systemiconcaption>
+      </editlanguagebranches>
+      <editpagetype>
+        <addproperty>			Eigenschap toevoegen</addproperty>
+      </editpagetype>
+      <editpagetypebase>
+        <alltypeavailable>Alle paginatypen zijn beschikbaar</alltypeavailable>
+        <archivepagelinkcaption see="/pagetypes/common/property[@name='PageArchiveLink']/caption" />
+        <archivepagelinkhelp see="/pagetypes/common/property[@name='PageArchiveLink']/help" />
+        <availablecaption>Beschikbaar in bewerkingsmodus</availablecaption>
+        <childorderrulecaption see="/pagetypes/common/property[@name='PageChildOrderRule']/caption" />
+        <childorderrulehelp see="/pagetypes/common/property[@name='PageChildOrderRule']/help" />
+        <defaultidcaption see="#usecustomdefaultcaption" />
+        <defaultidhelp see="#usecustomdefaulthelp" />
+        <defaultnamecaption see="/pagetypes/common/property[@name='PageName']/caption" />
+        <defaultnamehelp see="/pagetypes/common/property[@name='PageName']/help" />
+        <defaultstartpublishcaption>Stel de 'Begindatum publicatie' relatief in ten opzichte van de datum waarop de pagina is gemaakt</defaultstartpublishcaption>
+        <defaultstoppublishcaption>Stel de 'Einddatum publicatie' relatief in ten opzichte van de datum waarop de pagina is gemaakt</defaultstoppublishcaption>
+        <delete>Wilt u dit paginatype verwijderen?</delete>
+        <descriptioncaption>Beschrijving</descriptioncaption>
+        <editpagecaption>Aangepaste bewerkingspagina</editpagecaption>
+        <filenamecaption>Bestandsnaam</filenamecaption>
+        <filenameerror>De bestandsnaam moet relatief zijn ingesteld ten opzichte van de hoofdpagina van de website. Begin met '/' en eindig met een .aspx-bestand, bijvoorbeeld '/templates/Page.aspx'.</filenameerror>
+        <frameidcaption see="/pagetypes/common/property[@name='PageFrameID']/caption" />
+        <frameidhelp see="/pagetypes/common/property[@name='PageFrameID']/help" />
+        <heading>{0} bewerken</heading>
+        <headingdeleted>Paginatype verwijderd</headingdeleted>
+        <headingdeletefailed>Kan paginatype niet verwijderen; er bestaan pagina’s van dit type</headingdeletefailed>
+        <headingnew>Nieuwe paginatypen aanmaken</headingnew>
+        <headingsaved>Paginatype opgeslagen</headingsaved>
+        <info>De basisinformatie over het paginatype bewerken.</info>
+        <namecaption>Naam</namecaption>
+        <peerordercaption see="/pagetypes/common/property[@name='PagePeerOrder']/caption" />
+        <peerorderhelp see="/pagetypes/common/property[@name='PagePeerOrder']/help" />
+        <sortordercaption>Sorteerindex</sortordercaption>
+        <tabdefaultvalues>Standaardwaarden</tabdefaultvalues>
+        <tabinfo>Informatie</tabinfo>
+        <tabtypetotype>Beschikbare paginatypen</tabtypetotype>
+        <typetotype>Selecteer de paginatypen die u onder dit paginatype kunt maken</typetotype>
+        <usecustomdefaultcaption>Aangepaste standaardinstellingen gebruiken voor pagina’s van dit paginatype</usecustomdefaultcaption>
+        <usecustomdefaulthelp>Gebruik aangepaste standaardwaarden als u niet wilt dat deze waarden automatisch worden ingesteld</usecustomdefaulthelp>
+        <visibleinmenucaption see="/pagetypes/common/property[@name='PageVisibleInMenu']/caption" />
+        <visibleinmenuhelp see="/pagetypes/common/property[@name='PageVisibleInMenu']/help" />
+      </editpagetypebase>
+      <editpagetypefield>
+        <advancedcaption>Onder kop plaatsen</advancedcaption>
+        <confirmdelete>Weet u zeker dat u de eigenschap wilt verwijderen?</confirmdelete>
+        <defaultcaption>Standaardwaarde</defaultcaption>
+        <displayeditui>In bewerkingsmodus weergeven</displayeditui>
+        <editcaption>Kop bewerken</editcaption>
+        <editoraboutcaption>			Info...</editoraboutcaption>
+        <editorboldcaption>Vet</editorboldcaption>
+        <editorbulletscaption>Lijst met opsommingstekens</editorbulletscaption>
+        <editorcellpropertiescaption>	Celeigenschappen...</editorcellpropertiescaption>
+        <editorcellsubmenucaption>Cel</editorcellsubmenucaption>
+        <editorcentercaption>Centreren</editorcentercaption>
+        <editorcopycaption>				Kopie</editorcopycaption>
+        <editorcutcaption>				Knippen</editorcutcaption>
+        <editordynamiccontentcaption>Dynamische inhoud invoegen</editordynamiccontentcaption>
+        <editordynamiccontentmenucaption>Dynamische inhoud...</editordynamiccontentmenucaption>
+        <editorfindcaption>Zoeken</editorfindcaption>
+        <editorfindmenucaption>			Zoeken...</editorfindmenucaption>
+        <editorfontcaption>Lettertype</editorfontcaption>
+        <editorfontmenucaption>			Lettertype...</editorfontmenucaption>
+        <editorformatparagraphcaption>	Alinea opmaken</editorformatparagraphcaption>
+        <editorhelp>Editoreigenschappen – wis alles om een tekstgebied te gebruiken in plaats van de Editor</editorhelp>
+        <editorhyperlinkpropertiescaption>Eigenschappen koppeling...</editorhyperlinkpropertiescaption>
+        <editorimagepropertiescaption>Eigenschappen afbeelding...</editorimagepropertiescaption>
+        <editorinsertanchorcaption>Bladwijzer invoegen</editorinsertanchorcaption>
+        <editorinsertanchormenucaption>	Bladwijzer...</editorinsertanchormenucaption>
+        <editorinsertdoccaption>Document invoegen</editorinsertdoccaption>
+        <editorinsertdocmenucaption>	Document...</editorinsertdocmenucaption>
+        <editorinserthrcaption>Horizontale regel</editorinserthrcaption>
+        <editorinsertimagecaption>Afbeelding invoegen vanuit bestand</editorinsertimagecaption>
+        <editorinsertimagemenucaption>	Afbeelding...</editorinsertimagemenucaption>
+        <editorinsertsubmenucaption>		Invoegen</editorinsertsubmenucaption>
+        <editorinserttablecaption>Tabel invoegen</editorinserttablecaption>
+        <editorinserttablemenucaption>	Tabel...</editorinserttablemenucaption>
+        <editorinserturlcaption>Hyperlink invoegen</editorinserturlcaption>
+        <editorinserturlmenucaption>	Hyperlink...</editorinserturlmenucaption>
+        <editoritaliccaption>Cursief</editoritaliccaption>
+        <editorleftcaption>Links uitlijnen</editorleftcaption>
+        <editorloading>Editor laden...</editorloading>
+        <editormaximizercaption>Editor maximaliseren/herstellen</editormaximizercaption>
+        <editornumbercaption>Genummerde lijst</editornumbercaption>
+        <editorpastecaption>			Plakken</editorpastecaption>
+        <editorpasteunformattedcaption>	Plakken zonder opmaak</editorpasteunformattedcaption>
+        <editorquotecaption>Citaat invoegen</editorquotecaption>
+        <editorquotemenucaption>Citaat...</editorquotemenucaption>
+        <editorredocaption>Opnieuw</editorredocaption>
+        <editorrefreshcaption>Verversen</editorrefreshcaption>
+        <editorremoveformattingcaption>	Opmaak verwijderen</editorremoveformattingcaption>
+        <editorrightcaption>Rechts uitlijnen</editorrightcaption>
+        <editorselectallcaption>Alle</editorselectallcaption>
+        <editorselectcontractcaption>Samenvouwen</editorselectcontractcaption>
+        <editorselectexpandcaption>Uitbreiden</editorselectexpandcaption>
+        <editorselectnextcaption>Volgende</editorselectnextcaption>
+        <editorselectpreviouscaption>Vorige</editorselectpreviouscaption>
+        <editorselectsectioncaption>Alinea</editorselectsectioncaption>
+        <editorselectsubmenucaption>Selecteren</editorselectsubmenucaption>
+        <editorselecttablecaption>Tabel</editorselecttablecaption>
+        <editorselecttablecellcaption>Tabelcel</editorselecttablecellcaption>
+        <editorselecttablecolumncaption>Tabelkolom</editorselecttablecolumncaption>
+        <editorselecttablerowcaption>Tabelrij</editorselecttablerowcaption>
+        <editorspellcheckcaption>		Spelling</editorspellcheckcaption>
+        <editorspellcheckmenucaption>	Spelling...</editorspellcheckmenucaption>
+        <editortabledeletecolscaption>		Kolommen verwijderen</editortabledeletecolscaption>
+        <editortabledeleterowscaption>		Rijen verwijderen</editortabledeleterowscaption>
+        <editortabledeletetablecaption>		Tabel verwijderen</editortabledeletetablecaption>
+        <editortableinsertcolaftercaption>	Kolom invoegen na</editortableinsertcolaftercaption>
+        <editortableinsertcolbeforecaption>	Kolom invoegen vóór</editortableinsertcolbeforecaption>
+        <editortableinsertrowaftercaption>	Rij invoegen na</editortableinsertrowaftercaption>
+        <editortableinsertrowbeforecaption>	Rij invoegen vóór</editortableinsertrowbeforecaption>
+        <editortablemergecellscaption>		Cellen samenvoegen</editortablemergecellscaption>
+        <editortablepropertiescaption>	Tabeleigenschappen...</editortablepropertiescaption>
+        <editortablesplithorizontalcaption>	Cel horizontaal splitsen</editortablesplithorizontalcaption>
+        <editortablesplitverticalcaption>	Cel verticaal splitsen</editortablesplitverticalcaption>
+        <editortablesubmenucaption>		Tabel</editortablesubmenucaption>
+        <editortogglehtmlcaption>HTML-code weergeven/verbergen</editortogglehtmlcaption>
+        <editortogglehtmlmenucaption>	Bron weergeven</editortogglehtmlmenucaption>
+        <editorunderlinecaption>Onderstrepen</editorunderlinecaption>
+        <editorundocaption>Ongedaan maken</editorundocaption>
+        <heading>Eigenschap bewerken</heading>
+        <headingnew>				Nieuwe eigenschap aanmaken</headingnew>
+        <helpcaption>Helptekst</helpcaption>
+        <info />
+        <inheritcaption>Neemt waarde over</inheritcaption>
+        <inuseproperty>Er is al een eigenschap met de naam {0}.</inuseproperty>
+        <languagespecificcaption>Unieke waarde per taal</languagespecificcaption>
+        <namecaption>Naam</namecaption>
+        <nodefaultcaption>Geen standaardwaarde</nodefaultcaption>
+        <objectcaption>Afhandeling aangepast bewerken via object</objectcaption>
+        <requiredcaption>Waarde moet worden ingevoerd</requiredcaption>
+        <reservedproperty>'{0}' is een gereserveerde naam voor metagegevens</reservedproperty>
+        <searchablecaption>Doorzoekbare eigenschap</searchablecaption>
+        <tabinfo>					Informatie</tabinfo>
+        <typeappsettings>Dynamische lijst (één optie)</typeappsettings>
+        <typeappsettingsmultiple>Dynamische lijst (meerdere opties)</typeappsettingsmultiple>
+        <typeboolean>Geselecteerd/niet geselecteerd</typeboolean>
+        <typecaption>Type</typecaption>
+        <typecategory>Categorie selecteren</typecategory>
+        <typedate>Tijd/datum</typedate>
+        <typedocumenturl>URL naar document</typedocumenturl>
+        <typefilesortorder>Sorteervolgorde voor bestanden</typefilesortorder>
+        <typefloatnumber>Getal met drijvende komma</typefloatnumber>
+        <typeform>Formulier</typeform>
+        <typeframe>Frame</typeframe>
+        <typeimageurl>URL naar afbeelding</typeimageurl>
+        <typelanguage>Taal</typelanguage>
+        <typelanguagebranch>Paginataal (één optie)</typelanguagebranch>
+        <typelanguagebranchlist>Paginataal (meerdere opties)</typelanguagebranchlist>
+        <typelinkcollection>Verzameling koppelingen</typelinkcollection>
+        <typelongstring>Lange tekenreeks (&gt;255)</typelongstring>
+        <typenumber>Integer</typenumber>
+        <typepagelink>Pagina</typepagelink>
+        <typepagereference>Pagina</typepagereference>
+        <typepagetype>Paginatype</typepagetype>
+        <typepassword>Wachtwoord</typepassword>
+        <typeselector>Eigenschap op huidige pagina</typeselector>
+        <typesortorder>Sorteervolgorde voor pagina's</typesortorder>
+        <typestring>Tekenreeks (&lt;=255)</typestring>
+        <typeuilanguage>Systeemtaal</typeuilanguage>
+        <typeurl>URL naar pagina/extern adres</typeurl>
+        <typeweekday>Weekdag</typeweekday>
+        <typexform>XForms-formulier</typexform>
+        <typexhtmlstring>XHTML-reeks (&gt;255)</typexhtmlstring>
+      </editpagetypefield>
+      <edituser>
+        <bademailadress>Het e-mailadres is niet geldig</bademailadress>
+        <changepassword>		Wachtwoord wijzigen</changepassword>
+        <charsnotallowed>De naam van de groep/gebruiker is niet geldig. De volgende tekens zijn niet toegestaan: {0}</charsnotallowed>
+        <confirmdeleteuser>		Wilt u de gebruiker/groep {0} verwijderen?</confirmdeleteuser>
+        <confirmremoveuser>Gebruiker {0} uit groep verwijderen</confirmremoveuser>
+        <duplicateemailaddress>Bij de registratie van gebruikersaccounts zijn dubbele e-mailadressen niet toegestaan</duplicateemailaddress>
+        <duplicateprovideruserkey>Bij de registratie van gebruikersaccounts zijn unieke sleutels vereist</duplicateprovideruserkey>
+        <duplicateusername>Gebruikersnaam bestaat al</duplicateusername>
+        <enterpassword>			Voer wachtwoord in</enterpassword>
+        <invalidemail>Ongeldig e-mailadres</invalidemail>
+        <invalidpassword>Ongeldig wachtwoord, minimumlengte: {0}, minimumaantal niet-alfanumerieke tekens: {1}</invalidpassword>
+        <invalidpasswordanswer>Het antwoord op de wachtwoordvraag is verplicht</invalidpasswordanswer>
+        <invalidpasswordquestion>Wachtwoordvraag is verplicht</invalidpasswordquestion>
+        <invalidprovideruserkey>De unieke sleutel voor de registratie van gebruikersaccounts is niet van het juiste type</invalidprovideruserkey>
+        <invalidusername>Ongeldige gebruikersnaam</invalidusername>
+        <keeppassword>			Wachtwoord behouden</keeppassword>
+        <mailsent>				E-mail is naar de gebruiker verzonden.</mailsent>
+        <maintabname>			Instellingen</maintabname>
+        <missmatchpassword>Het wachtwoord en de bevestiging van het wachtwoord komen niet overeen</missmatchpassword>
+        <notificationfailed>	Kon e-mail niet verzenden omdat 'Instellingen voor extranetgebruikers' niet juist is ingesteld.</notificationfailed>
+        <notificationquestion>	De gebruiker krijgt automatisch bericht per e-mail dat de account is geactiveerd.</notificationquestion>
+        <passwordmismatch>		De wachtwoorden in de invoervelden verschillen</passwordmismatch>
+        <providererror>De lidmaatschapprovider heeft een fout gedetecteerd bij de registratie.</providererror>
+        <repeatpassword>		Voer wachtwoord nogmaals in</repeatpassword>
+        <usercreated>Aanmaakdatum</usercreated>
+        <userdeleted>			De gebruiker/groep is verwijderd</userdeleted>
+        <userguisettings>
+          <displayname>Opties weergeven</displayname>
+          <settings>
+            <legendlanguagesettings>Taalinstellingen</legendlanguagesettings>
+            <statusexpired>Op de pagina is een publicatie gepland waarvan de datum en tijd zijn verstreken</statusexpired>
+            <statuslanguagefallback>De pagina ontbreekt voor de huidige taal en wordt weergegeven in een andere taal. Als de andere taal is voorzien van een pictogram, wordt dit gebruikt als aanduiding.</statuslanguagefallback>
+            <statuslanguagemissing>De pagina ontbreekt voor de huidige taal en wordt niet weergegeven</statuslanguagemissing>
+            <statusnew>Nieuwe pagina gemaakt in de afgelopen 48 uur</statusnew>
+            <statusnotpublished>De pagina is niet gepubliceerd</statusnotpublished>
+            <statusnotstarted>Op de pagina is een publicatie gepland die nog niet is gepubliceerd.</statusnotstarted>
+            <statusnotvisibleinmenu>De pagina wordt niet weergegeven in menu’s</statusnotvisibleinmenu>
+            <statuspageprovider>De pagina is geen lokale EPiServer CMS-pagina. De paginaprovider gebruikt een pictogram, indien een pictogram is gedefinieerd.</statuspageprovider>
+            <statusreadonly>U ben niet bevoegd om de pagina te wijzigen</statusreadonly>
+            <toolbar>Werkbalk</toolbar>
+            <treesymbols>Symbolen in de boomstructuur</treesymbols>
+            <usedefaultsettings>Standaardinstellingen gebruiken</usedefaultsettings>
+            <usesystemlanguage>Systeemtaal gebruiken</usesystemlanguage>
+          </settings>
+        </userguisettings>
+        <userlastlogin>Laatste aanmeldingsdatum</userlastlogin>
+        <usernotfound>Kan gebruiker '{0}' niet vinden. Het kan zijn dat een andere beheerder de gebruiker heeft verwijderd.</usernotfound>
+        <usernotsaved>			Kan gebruiker/groep niet opslaan</usernotsaved>
+        <userrejected>De registratie van de gebruikersaccount is afgewezen</userrejected>
+        <usersaved>				Gebruiker/groep is opgeslagen</usersaved>
+        <usersuccess>Gebruikeraccount is opgeslagen</usersuccess>
+      </edituser>
+      <exportdata>
+        <abortexport>Exporteren annuleren</abortexport>
+        <description />
+        <displayname>Gegevens exporteren</displayname>
+        <errorconnectiontoserver>De verbinding met de server is beëindigd.\r\nProbeer opnieuw te laden en start nogmaals.</errorconnectiontoserver>
+        <errorsoccured>De volgende fouten zijn opgetreden</errorsoccured>
+        <exportbutton>Exporteren</exportbutton>
+        <exportcategories>Categorieën exporteren</exportcategories>
+        <exportdownloadexportfile>Exportbestand downloaden</exportdownloadexportfile>
+        <exportdynamicpropertydefinitions>Definities dynamische eigenschappen exporteren</exportdynamicpropertydefinitions>
+        <exportfiles>Bestanden exporteren</exportfiles>
+        <exportframes>Frames exporteren</exportframes>
+        <exporthasbeenaborted>Het exporteren is geannuleerd</exporthasbeenaborted>
+        <exporthaserrortext>Bij het exporteren heeft zich een fout voorgedaan. Wilt u het exportbestand toch downloaden?</exporthaserrortext>
+        <exportinprogressimagetooltip>Bezig met exporteren...</exportinprogressimagetooltip>
+        <exportpagedependencies>Afhankelijke paginatypen automatisch exporteren</exportpagedependencies>
+        <exportpagefiles>Bestanden exporteren waarnaar de paginakoppelingen verwijzen</exportpagefiles>
+        <exportpagelanguages>Geglobaliseerde pagina's exporteren</exportpagelanguages>
+        <exportpages>Pagina's exporteren</exportpages>
+        <exportpagetypes>Paginatypen exporteren</exportpagetypes>
+        <exportsucceeded>Export voltooid zonder fouten of waarschuwingen</exportsucceeded>
+        <exporttabdefinitions>Tabbladen exporteren</exporttabdefinitions>
+        <gobacktoexportdata>Terug naar exportgegevens</gobacktoexportdata>
+        <heading>Gegevens exporteren</heading>
+        <info>Gegevens exporteren van de ene naar de andere EPiServer CMS</info>
+        <pagecount>Aantal geëxporteerde pagina's: </pagecount>
+        <selectpage>Deel van structuur selecteren</selectpage>
+        <testexportbutton>Testrun met foutenlog</testexportbutton>
+        <warningsoccured>De volgende waarschuwingen zijn gegenereerd</warningsoccured>
+      </exportdata>
+      <filebrowser>
+        <heading>Bestand selecteren</heading>
+      </filebrowser>
+      <filemanagement>
+        <description>Bestanden en mappen uploaden en beheren.</description>
+        <displayname>Bestandsbeheer</displayname>
+      </filemanagement>
+      <frames>
+        <confirmdelete>Weet u zeker dat u het frame [name] wilt verwijderen?</confirmdelete>
+        <duplicateframeserror>U kunt niet meerdere frames met dezelfde naam hebben</duplicateframeserror>
+        <heading>Frames bewerken</heading>
+        <info>Defineer de frames die u op de website gebruikt. Deze zijn beschikbaar als 'Doelframe'-opties bij het maken van koppelingen.</info>
+        <tabledescription>Beschrijving</tabledescription>
+        <tablename>Framenaam</tablename>
+      </frames>
+      <headings>
+        <confirmdelete>Weet u zeker dat u het tabblad [name] wilt verwijderen?</confirmdelete>
+        <heading>Tabbladen bewerken</heading>
+        <info>Definieer de tabbladen onder Bewerken. Bij het maken of bewerken van een eigenschap kunt u het tabblad kiezen waarop u de eigenschap wilt weergeven.</info>
+        <tableaccesslevel>Toegangsniveau vereist</tableaccesslevel>
+        <tablename>Tabblad</tablename>
+        <tablesortindex>Sorteerindex</tablesortindex>
+        <tablevisible>Zichtbaar</tablevisible>
+      </headings>
+      <importdata>
+        <abortimport>Importeren annuleren</abortimport>
+        <beginimport>Importeren starten</beginimport>
+        <categorycount>Aantal categorieën</categorycount>
+        <createnotsupported>De paginaprovider die de geselecteerde pagina aanbiedt, biedt geen ondersteuning voor het maken van pagina's.</createnotsupported>
+        <description />
+        <displayname>Gegevens importeren</displayname>
+        <dynamicpropertydefinitioncount>Aantal definities dynamische eigenschappen</dynamicpropertydefinitioncount>
+        <errorconnectiontoserver>De verbinding met de server is beëindigd.\r\nProbeer opnieuw te laden en start nogmaals.</errorconnectiontoserver>
+        <errorsoccured>De volgende fouten zijn opgetreden</errorsoccured>
+        <filecount>Aantal bestanden</filecount>
+        <framecount>Aantal frames</framecount>
+        <gobacktoimportdata>Terug naar importgegevens</gobacktoimportdata>
+        <heading>Gegevens importeren</heading>
+        <importcompleted>Importeren voltooid</importcompleted>
+        <importhasbeenaborted>Het importeren is geannuleerd</importhasbeenaborted>
+        <importinprogressimagetooltip>Bezig met importeren...</importinprogressimagetooltip>
+        <importsucceeded>Importeren geslaagd</importsucceeded>
+        <info>Gegevens importeren van een andere EPiServer CMS.</info>
+        <nofileuploaded>Geen bestand geüpload</nofileuploaded>
+        <of>van</of>
+        <pagecount>Aantal pagina's</pagecount>
+        <pagetypecount>Aantal paginatypen</pagetypecount>
+        <selectfile>Een exportbestand selecteren en uploaden</selectfile>
+        <selectpageroot>Paginabestemming selecteren</selectpageroot>
+        <show>Weergeven</show>
+        <tabdefinitioncount>Aantal koppen</tabdefinitioncount>
+        <testsucceeded>Importbestand geverifieerd en geen fouten of waarschuwingen gegenereerd</testsucceeded>
+        <uploadfile>Bestand uploaden en verifiëren</uploadfile>
+        <warningsoccured>De volgende waarschuwingen zijn gegenereerd</warningsoccured>
+        <verifyimportfile>Bestand uploaden en verifiëren</verifyimportfile>
+      </importdata>
+      <license>
+        <heading>Licentie-informatie</heading>
+        <info />
+        <licensedcompany>Bedrijf</licensedcompany>
+        <licensedto>Gelicentieerd aan</licensedto>
+        <licenseid>Licentie-ID</licenseid>
+        <licenserestrictions>Beperkingen</licenserestrictions>
+        <newfileinstalled>Het nieuwe licentiebestand is geïnstalleerd</newfileinstalled>
+        <selectfile>Nieuw licentiebestand selecteren</selectfile>
+        <tabinfo>Informatie</tabinfo>
+        <tabinstallnew>Een nieuwe licentie installeren</tabinstallnew>
+        <uploadlicense>Licentie uploaden en verifiëren</uploadlicense>
+      </license>
+      <menu>
+        <admingroups>Groepen beheren</admingroups>
+        <archive>Archieffunctie</archive>
+        <cleanupupload see="/admin/cleanupupload/heading" />
+        <convertpagetype>Pagina's converteren</convertpagetype>
+        <copypagetype>Paginatype kopiëren</copypagetype>
+        <createuser>Gebruiker aanmaken</createuser>
+        <databasemaintenance>Databaseonderhoud</databasemaintenance>
+        <datatypes>Aangepaste eigenschapstypen bewerken</datatypes>
+        <defaultgroup see="/admin/registrationsettings/heading" />
+        <editcategories>Categorieën bewerken</editcategories>
+        <editdynamicproperty>Dynamische eigenschappen</editdynamicproperty>
+        <editframes>Frames bewerken</editframes>
+        <editheadings>Tabbladen bewerken</editheadings>
+        <editlanguage>			Taalcodering</editlanguage>
+        <editlanguagebranches>Talen website beheren</editlanguagebranches>
+        <editremotesite>Externe websites</editremotesite>
+        <language>				Taal</language>
+        <license>Licentie-informatie</license>
+        <newpagetype>Nieuw paginatype aanmaken</newpagetype>
+        <pagetype>Paginatypen</pagetype>
+        <plugins>Tools</plugins>
+        <productupdate>			Productupdate</productupdate>
+        <scheduledjobs>Geplande taken</scheduledjobs>
+        <searchuser>Gebruiker/groep zoeken</searchuser>
+        <security>Toegangsrechten</security>
+        <setloglevel>Logboekniveau instellen</setloglevel>
+        <setpermission>Machtigingen voor functies</setpermission>
+        <setsecurity>Toegangsrechten instellen</setsecurity>
+        <settings>Systeeminstellingen</settings>
+        <systemadministration>Systeembeheer</systemadministration>
+        <systemmessages>Systeemberichten weergeven</systemmessages>
+        <tooltipedit>Bewerkingsmodus</tooltipedit>
+        <tooltiphelp>Help</tooltiphelp>
+        <tooltipview>Weergavemodus</tooltipview>
+        <wastebasket>Prullenbak leegmaken</wastebasket>
+        <workflowdefinition>Werkstromen</workflowdefinition>
+        <workflowdefinitionedit>Werkstroom bewerken</workflowdefinitionedit>
+        <workflowdefinitionnew>Nieuwe werkstroom aanmaken</workflowdefinitionnew>
+      </menu>
+      <menuheadings>
+        <accessrights see="/admin/menu/security" />
+        <generalsettings>Algemene instellingen</generalsettings>
+        <managepagetypes>Paginatypen beheren</managepagetypes>
+        <nopagetypestext>Er zijn geen paginatypen gedefinieerd </nopagetypestext>
+        <noscheduledjobstext>Er zijn geen geplande opdrachten gedefinieerd </noscheduledjobstext>
+        <notoolsettingstext>Er zijn geen toolinstellingen gedefinieerd </notoolsettingstext>
+        <notoolstext>Er zijn geen tools gedefinieerd </notoolstext>
+        <pagetypes see="/admin/menu/pagetype" />
+        <pagetypesorting>
+          <sortalphabetically>Alfabetisch sorteren</sortalphabetically>
+          <sortbyindex>Sorteren op index</sortbyindex>
+        </pagetypesorting>
+        <scheduledjobs see="/admin/menu/scheduledjobs" />
+        <security>Beveiliging</security>
+        <systemadministration see="/admin/menu/systemadministration" />
+        <systemconfiguration>Systeemconfiguratie</systemconfiguration>
+        <tools see="/admin/menu/plugins" />
+        <toolsettings>Toolinstellingen</toolsettings>
+      </menuheadings>
+      <menutabs>
+        <admin>Beheer</admin>
+        <config>Config</config>
+        <pagetypes see="/pagetypes/common/property[@name='PageTypeName']/caption" />
+      </menutabs>
+      <pagedefinitiontype>
+        <heading>				Eigenschapstypen bewerken</heading>
+        <info>					U kunt op de EPiServer CMS-pagina’s nieuwe gegevenstypen maken en bewerken voor de eigenschappen.</info>
+      </pagedefinitiontype>
+      <pagedefinitiontypeedit>
+        <assemblynamecaption>	Naam assembly</assemblynamecaption>
+        <assemblynamehelp>		De naam van de assemblyklasse is opgenomen in bijv. EPiServerSample</assemblynamehelp>
+        <confirmdelete>Weet u zeker dat u het eigenschapstype wilt verwijderen?</confirmdelete>
+        <duplicatecustomproperty>Er is al een eigenschap met de naam  '{0}' . </duplicatecustomproperty>
+        <heading>				Gegevenstype bewerken</heading>
+        <headingnew>			Nieuw gegevenstype aanmaken</headingnew>
+        <info />
+        <namecaption>			Naam</namecaption>
+        <namehelp>				Kies een naam voor het eigenschapstype</namehelp>
+        <property name="property">
+          <caption>				Basistype</caption>
+        </property>
+        <propertycaption>Basistype</propertycaption>
+        <tabinfo>				Definitie</tabinfo>
+        <typeinuse>Dit type kan niet worden verwijderd omdat dit wordt gebruikt in de volgende eigenschappen:</typeinuse>
+        <typenamecaption>		Klassenaam</typenamecaption>
+        <typenamehelp>			Klassenaam en naamruimte (bijv. EPiServer.SpecializedProperties.PropertyPassword)</typenamehelp>
+      </pagedefinitiontypeedit>
+      <permission>
+        <editpermission>Gebruikers/groepen met machtiging {0}</editpermission>
+        <heading>Machtigingen voor functies</heading>
+        <info>	Geef gebruikers/groepen toegang tot specifieke functies in EPiServer CMS.</info>
+        <sidsaved>		Er zijn nieuwe machtigingen voor functies opgeslagen</sidsaved>
+      </permission>
+      <plugin>
+        <displayname see="/admin/plugin/heading" />
+        <editorpluginattribute>Editor</editorpluginattribute>
+        <guipluginattribute>Gebruikersinterface</guipluginattribute>
+        <heading>Plug-in beheerder</heading>
+        <info>De onderstaande lijst bevat onderdelen die in EPiServer CMS zijn geregistreerd als plug-ins.</info>
+        <overviewtab>Overzicht</overviewtab>
+        <pagedefinitiontypepluginattribute>Zelfregistrerende eigenschapstypen</pagedefinitiontypepluginattribute>
+        <pagepluginattribute>Pagina-uitbreidingen</pagepluginattribute>
+        <plugintab>Plug-ins</plugintab>
+        <scheduledpluginattribute>Beheer geplande taken</scheduledpluginattribute>
+        <subscriptionpluginattribute>Abonnement</subscriptionpluginattribute>
+        <workflowpluginattribute>Werkstromen</workflowpluginattribute>
+      </plugin>
+      <pluginadminsettings>
+        <nosettings>Deze plug-in bevat geen instellingen</nosettings>
+      </pluginadminsettings>
+      <pluginedit>
+        <configurationtab>Configuratie</configurationtab>
+        <heading>Plug-in bewerken</heading>
+        <info />
+        <overviewtab>Overzicht</overviewtab>
+      </pluginedit>
+      <plugingrouplist>
+        <company>Bedrijf</company>
+        <description>Beschrijving</description>
+        <license>Licentie</license>
+        <moreinfo>Meer info</moreinfo>
+        <name>Naam</name>
+        <version>Versie</version>
+      </plugingrouplist>
+      <pluginlist>
+        <description>Beschrijving</description>
+        <enabled>Ingeschakeld</enabled>
+        <license>Licentiëren</license>
+        <name>Weergavenaam</name>
+        <plugin>Plug-in</plugin>
+      </pluginlist>
+      <rebuildurlsegments>
+        <description>Hiermee vervangt u de naam van het webadres om koppelingen te maken die de structuur van de  website weerspiegelen.</description>
+        <displayname>Naam voor webadressen opnieuw opbouwen</displayname>
+        <heading>Paginanamen in webadressen vervangen</heading>
+        <pages>Gescande pagina's</pages>
+        <pagestoreplace>Vaste pagina's</pagestoreplace>
+        <rebuild>Koppelingen opnieuw opbouwen</rebuild>
+        <rebuildnonempty>Alle paginanamen in webadressen opnieuw opbouwen (bestaande koppelingen overschrijven)</rebuildnonempty>
+        <rebuildwarning>
+          {0} pagina’s hebben geen naam voor het webadres. De webadressen voor deze pagina’s\n
+          worden gegenereerd aan de hand van de pagina-identiteit; zo geeft http://.../10/40 bijvoorbeeld een koppeling naar de pagina.\n
+          Wij raden u aan de namen voor deze webadressen opnieuw op te bouwen met de tool 'Naam voor webadressen opnieuw opbouwen'\n
+          voordat u de webadressen wijzigt, zodat deze de structuur van de website weerspiegelen.\n\n 
+          Klik op OK om webadressen te gebruiken die de structuur van de website weerspiegelen.\n
+        </rebuildwarning>
+        <status>Status</status>
+        <statusended>Niet actief</statusended>
+        <statusstarted>Koppelingen vervangen</statusstarted>
+      </rebuildurlsegments>
+      <remotesite>
+        <heading>Externe websites</heading>
+        <info>Geregistreerde externe websites voor binnenkomend en uitgaand verkeer. Toegangsrechten voor externe sites en een optie om verbindingen met anonieme sites toe te staan, worden geconfigureerd in web.config.</info>
+        <localsite>Naam lokale site</localsite>
+        <name>Naam</name>
+        <ping>Ping</ping>
+        <pingfalse>Website '{0}' heeft gereageerd, maar de handtekening is niet geaccepteerd of niet ingesteld</pingfalse>
+        <pingtrue>Website '{0}' heeft gereageerd en de gebruiker is geaccepteerd</pingtrue>
+        <url>URL</url>
+      </remotesite>
+      <remotesiteedit>
+        <allowurllookup>Sitenaam in URL’s toestaan (bijvoorbeeld page.aspx?id=30__mysite)</allowurllookup>
+        <confirmdelete>Weet u zeker dat u de externe website wilt verwijderen?</confirmdelete>
+        <domain>Domein</domain>
+        <heading>Externe website bewerken</heading>
+        <info>Wijzig de naam van een externe site niet. Mogelijk is de naam gebruikt bij de codering. </info>
+        <istrusted>Werken als front end</istrusted>
+        <istrustedwarning>Beveiligingswaarschuwing! Deze site kan assembly-gegevens over eigenschappen en toegangsniveau-instellingen lezen. Er is een gedeelde geheime en geldige handtekening nodig aan beide zijden, wil dit goed werken.</istrustedwarning>
+        <name>Naam</name>
+        <nameisnotunique>De naam '{0}' wordt al gebruikt door een andere externe website.</nameisnotunique>
+        <password>Wachtwoord</password>
+        <sharedsecret>Gedeeld geheim voor handtekening</sharedsecret>
+        <url>URL</url>
+        <username>Gebruikersnaam</username>
+      </remotesiteedit>
+      <remotewebsite>
+        <localsitebadchars>De tekenreeks moet een lege tekenreeks zijn of een willekeurige combinatie van alfanumerieke tekens, punten (.) en streepjes (-) van maximaal 256 tekens lang, bijvoorbeeld 'site.com' of 'MySite-2'.</localsitebadchars>
+      </remotewebsite>
+      <searchusers>
+        <descriptioncaption>	Beschrijving</descriptioncaption>
+        <heading>				Gebruikers/groepen zoeken</heading>
+        <info />
+        <namecaption>			Naam</namecaption>
+        <nomembershipprovider>Er is geen lidmaatschapprovider geconfigureerd in web.config.</nomembershipprovider>
+        <pagingsize>		Aantal treffers per pagina</pagingsize>
+        <searchname>Naam</searchname>
+        <typecaption>			Type</typecaption>
+        <typegroup>				Groepen</typegroup>
+        <typeuser>				Gebruikers</typeuser>
+      </searchusers>
+      <secedit>
+        <alpharequiredpassword>	Het wachtwoord moet letters bevatten.</alpharequiredpassword>
+        <changepassword>Wachtwoord wijzigen</changepassword>
+        <editactive>			Actief</editactive>
+        <editaddress>			Adres</editaddress>
+        <editadspath>			Naam ActiveDirectory</editadspath>
+        <editchanged>Gewijzigd</editchanged>
+        <editcompany>			Bedrijf</editcompany>
+        <editconfirmpassword>	Wachtwoord bevestigen</editconfirmpassword>
+        <editcountry>Land</editcountry>
+        <editcreated>Aangemaakt</editcreated>
+        <editdescription>		Beschrijving</editdescription>
+        <editemail>				E-mailadres</editemail>
+        <editgroupheading>		Groep bewerken</editgroupheading>
+        <editlanguage>Persoonlijke taal</editlanguage>
+        <editname>				Gebruikersnaam</editname>
+        <editpassword>			Wachtwoord</editpassword>
+        <editpostaladdress>		Postadres</editpostaladdress>
+        <editpostalnumber>		Postcode</editpostalnumber>
+        <edittelephone>			Telefoonnummer</edittelephone>
+        <edituserheading>		Gebruiker bewerken</edituserheading>
+        <editvalidto>			Geldig tot</editvalidto>
+        <firstname>				Voornaam</firstname>
+        <info>&amp;nbsp;</info>
+        <ipaddress>				Alleen aanmelden vanaf dit IP-adres</ipaddress>
+        <ipmask>				Subnetmasker voor bovenstaand IP-adres</ipmask>
+        <lastname>				Achternaam</lastname>
+        <listcontains>			Bevat</listcontains>
+        <listmemberof>			Lid van</listmemberof>
+        <listnotcontains>		Bevat geen</listnotcontains>
+        <listnotmemberof>		Geen lid van</listnotmemberof>
+        <lockedout>				Account vergrendeld (te veel mislukte aanmeldingspogingen)</lockedout>
+        <missingpassword>		U moet een wachtwoord invoeren.</missingpassword>
+        <mobile>				Mobiele telefoon</mobile>
+        <newuserheading>		Nieuwe gebruiker</newuserheading>
+        <numberrequiredpassword>Het wachtwoord moet cijfers bevatten.</numberrequiredpassword>
+        <passwordanswer>Antwoord</passwordanswer>
+        <passwordquestion>Wachtwoordvraag</passwordquestion>
+        <providerdonotsupportcreateuser>Huidige provider ({0}) ondersteunt het maken en registeren van gebruikers niet.</providerdonotsupportcreateuser>
+        <symbolrequiredpassword>Het wachtwoord moet symbolen bevatten (andere tekens dan letters en cijfers).</symbolrequiredpassword>
+        <title>					Titel</title>
+        <tooshortpassword>		Het wachtwoord moet ten minste {0} tekens bevatten</tooshortpassword>
+        <usernameexists>		De gebruikersnaam {0} bestaat al.</usernameexists>
+      </secedit>
+      <security>
+        <applyrecursive>Instellingen voor subpagina's toepassen</applyrecursive>
+        <heading>					Toegangsrechten instellen voor pagina {0}</heading>
+        <info>						Toegangsrechten in EPiServer CMS herstellen voor pagina’s waarvan u de toegang bijvoorbeeld helemaal hebt verwijderd. U kunt alle rechten op alle pagina’s wijzigen.</info>
+        <mark>Selecteren</mark>
+        <markall>Alles selecteren</markall>
+        <notselectedinfo>De instellingen voor deze rij worden niet beïnvloed bij Opslaan of Verwijderen</notselectedinfo>
+        <notsupportedoperation>De bewerking wordt niet ondersteund voor externe pagina's</notsupportedoperation>
+        <recursivedeleteconfirm>De instellingen voor de geselecteerde rijen worden verwijderd voor de gemarkeerde pagina en alle subpagina’s. Kies OK om verder te gaan.</recursivedeleteconfirm>
+        <recursiveinfo>Als u Opslaan of Verwijderen kiest en 'Instellingen voor subpagina's toepassen' is geselecteerd, worden toegangsrechten voor de gemarkeerde pagina en alle subpagina’s toegewezen of verwijderd.</recursiveinfo>
+        <recursivereplaceconfirm>Hebben de geselecteerde rijen andere toegangsrechten voor de subpagina’s, dan worden deze overschreven en worden niet-geselecteerde rijen van alle subpagina’s verwijderd. Kies OK om verder te gaan.</recursivereplaceconfirm>
+        <recursivesaveconfirm>Als de geselecteerde rijen andere instellingen voor de subpagina’s hebben, worden deze overschreven. Kies OK om verder te gaan.</recursivesaveconfirm>
+        <removeaccessrightstext>Geselecteerde rijen toevoegen en niet-geselecteerde rijen verwijderen </removeaccessrightstext>
+        <removeaccessrightstexttooltip>Kies Opslaan als u toegangsrechten wilt toewijzen aan alle geselecteerde rijen. Niet-geselecteerde rijen worden verwijderd. Wordt doorgaans gebruikt voor het overschrijven van oude toegangsrechten.</removeaccessrightstexttooltip>
+        <removeconfirm>Weet u zeker dat u toegangsrechten wilt verwijderen voor de geselecteerde rijen op de geselecteerde pagina? Kies OK om verder te gaan.</removeconfirm>
+        <replaceconfirm>Als de geselecteerde rijen andere instellingen voor de gemarkeerde pagina hebben, worden deze overschreven. De niet-geselecteerde rijen worden verwijderd op de gemarkeerde pagina. Kies OK om verder te gaan.</replaceconfirm>
+        <savemessage>				Nieuwe toegangsrechten opgeslagen</savemessage>
+        <selectedinfo>De instellingen voor deze rij worden beïnvloed bij Opslaan of Verwijderen</selectedinfo>
+        <unmark>Deselecteren</unmark>
+        <unmarkall>Alles deselecteren</unmarkall>
+      </security>
+      <settings>
+        <databasetab>				Database</databasetab>
+        <defaultsubscriptionhandler>
+          <description>Ingebouwde EPiServer CMS-afhandeling van abonnements-e-mail.</description>
+          <displayname>Standaard EPiServer CMS</displayname>
+        </defaultsubscriptionhandler>
+        <editordivonreturncaption>	DIV in plaats van P gebruiken in Editor</editordivonreturncaption>
+        <edittab>					Bewerken...</edittab>
+        <epfbrowserlanguagedetectioncaption>Taal detecteren via de taalvoorkeuren van de browser</epfbrowserlanguagedetectioncaption>
+        <epfenableglobalizationsupportcaption>Globalisering inschakelen</epfenableglobalizationsupportcaption>
+        <epfencryptsensitiveinformationcaption>Het bestand web.config versleutelen</epfencryptsensitiveinformationcaption>
+        <epfkeeploggedoncaption>				Cookies inschakelen zodat bezoeker aangemeld kan blijven</epfkeeploggedoncaption>
+        <epncategoryidcaption>			Hoofdmap voor categorieën</epncategoryidcaption>
+        <epneditorheightcaption>				Hoogte van de Editor (pixels)</epneditorheightcaption>
+        <epneditorwidthcaption>Breedte van de Editor (pixels)</epneditorwidthcaption>
+        <epnversioncountcaption>		Maximum aantal oude versies van een pagina</epnversioncountcaption>
+        <epsconnectioncaption>		Databaseverbinding</epsconnectioncaption>
+        <epseditcontrolversion>		Huidige versie van ActiveX-editor (bijvoorbeeld 2.0.0.31)</epseditcontrolversion>
+        <epseditcsscaption>			Pad naar het CSS-bestand voor de Editor</epseditcsscaption>
+        <epserrorhandling>	Foutafhandeling in EPiServer CMS</epserrorhandling>
+        <epserrorhandlingoff>			Foutafhandeling uit</epserrorhandlingoff>
+        <epserrorhandlingon>			Actief voor alles</epserrorhandlingon>
+        <epserrorhandlingremoteonly>	Actief voor externe bezoekers</epserrorhandlingremoteonly>
+        <epserrormail>		E-mailadres voor het verzenden van foutrapporten </epserrormail>
+        <epshosturlcaption>			Adres van uw website (bijv. http://www.x.y)</epshosturlcaption>
+        <epsldappasswordcaption>	Wachtwoord voor de gebruiker</epsldappasswordcaption>
+        <epsldapservercaption>		LDAP-server, bijvoorbeeld bedrijf.com. Leeg laten voor het uitschakelen van LDAP-functies</epsldapservercaption>
+        <epsldapusercaption>		Verbinding maken met LDAP-server als deze gebruiker</epsldapusercaption>
+        <epsrootdircaption>			Hoofdmap</epsrootdircaption>
+        <epssitenamecaption>			Naam van de website</epssitenamecaption>
+        <epssubscriptionhandler>Afhandeling van abonnementsupdates</epssubscriptionhandler>
+        <heading>					Systeeminstellingen</heading>
+        <info>						&lt;b&gt;WAARSCHUWING&lt;/b&gt; Onjuiste wijzigingen op deze pagina kunnen ertoe leiden dat de website niet meer reageert.</info>
+        <inforequired>				Velden die u moet invullen, zijn gemarkeerd met een sterretje (*).</inforequired>
+        <pageuploadcaption>			Bestanden uploaden naar specifieke pagina</pageuploadcaption>
+        <renamefiledircaption>		Naam wijzigen van bestand/map uit koppelingstool</renamefiledircaption>
+        <restricteduploadcaption>	Beperkte bestandsupload</restricteduploadcaption>
+        <saved>Nieuwe waarden opgeslagen</saved>
+        <sitetab>					Algemeen</sitetab>
+        <unlimitedversions>Onbeperkte versies</unlimitedversions>
+      </settings>
+      <setup>
+        <cancelmessage>Kom later terug naar deze pagina om de installatie te voltooien</cancelmessage>
+        <emptysample>	Alleen startpagina zonder paginatypen of inhoud</emptysample>
+        <englishsample>Engelse voorbeeldsjablonen bij alle geïnstalleerde sjablonen</englishsample>
+        <globalizationsample>Geglobaliseerde voorbeeldsjablonen (Engels en Zweeds) bij alle geïnstalleerde sjablonen</globalizationsample>
+        <heading>Basisinhoud installeren</heading>
+        <info>Er is enige basisinhoud nodig voor het starten met behulp van EPiServer CMS. Selecteer een van de onderstaande opties en een systeemtaal, en klik op Afsluiten.</info>
+        <installpackagespathempty>De map voor importpakketten die als parameter is ingesteld bevat geen importpakketten. [{0}].</installpackagespathempty>
+        <norootpage>U moet een paginabestemming selecteren</norootpage>
+        <progress>Wacht tot het systeem is bijgewerkt</progress>
+        <redirectwarning>Het attribuut pageStartId van het element siteSettings in web.config is op 0 (nul) ingesteld, wat erop wijst dat er geen inhoud is geïnstalleerd.&lt;br/&gt; Stel pageStartId="1" in web.config in om de hoofdpagina als startpagina te gebruiken.&lt;br/&gt;</redirectwarning>
+        <selectcontent>Inhoud selecteren</selectcontent>
+        <selectdestination>Paginabestemming selecteren</selectdestination>
+        <selectlanguage>Systeemtaal selecteren</selectlanguage>
+        <setupbutton>Afsluiten</setupbutton>
+        <startpageexists>Een startpagina is al voor u geconfigureerd</startpageexists>
+        <swedishsample>Zweedse voorbeeldsjablonen bij alle geïnstalleerde sjablonen</swedishsample>
+        <utilsetupempty>Geen importpakketten gevonden in ~/util/setup en het InstallPackagesPath is niet ingesteld als parameter in het adres van de webpagina.</utilsetupempty>
+      </setup>
+      <siteinfo>
+        <buttonresetcounters>		Tellers opnieuw instellen</buttonresetcounters>
+        <countergetitem>			Vanuit cache aangeleverde pagina's</countergetitem>
+        <counterlistchildren>			Vanuit cache aangeleverde lijsten</counterlistchildren>
+        <counteroutputinvalid>Ongeldige pagina's in HTML-cache</counteroutputinvalid>
+        <counteroutputvalid>Vanuit HTML-cache verzonden pagina's</counteroutputvalid>
+        <counterpages>				Pagina's in cache</counterpages>
+        <counterreadchildpages>		Database uitlezen voor lijsten</counterreadchildpages>
+        <counterreadsinglepage>		Database uitlezen voor afzonderlijke pagina’s</counterreadsinglepage>
+        <countersince>				Tellers zijn opnieuw ingesteld </countersince>
+        <dbcachecaption>			Gebruik databasecache</dbcachecaption>
+        <dbcachehitpercentage>		Frequentie treffers in cache</dbcachehitpercentage>
+        <dbstatcaption>				Database-informatie</dbstatcaption>
+        <dbstatchangedlastweek>		Vorige week gewijzigde pagina's</dbstatchangedlastweek>
+        <dbstatepisecusercount>		Extranetgebruikers (EPiSec)</dbstatepisecusercount>
+        <dbstatntusercount>			Windows-gebruikers (NT)</dbstatntusercount>
+        <dbstatpagecount>			Totaal aantal pagina's in database</dbstatpagecount>
+        <dbstatsubscribercount>		Abonnees</dbstatsubscribercount>
+        <dbsystemprocessinfocaption>Systeem-/procesinformatie</dbsystemprocessinfocaption>
+        <heading>					Statistieken</heading>
+        <info />
+        <outputcachecaption>Gebruik HTML-cache sinds</outputcachecaption>
+        <processconfigfile>			Configuratiebestand</processconfigfile>
+        <processid>					Proces-ID</processid>
+        <processpeakmemory>			Gebruik piekgeheugen (MB)</processpeakmemory>
+        <processpubpolicy>			Publicatiebeleid</processpubpolicy>
+        <processshadowcopy>			Schaduwkopie van assembly’s</processshadowcopy>
+        <processshadowdir>			Schaduwmap</processshadowdir>
+        <processstarted>			Werkproces gestart</processstarted>
+      </siteinfo>
+      <tabs>
+        <duplicatetabname>Er is al een tabblad met die naam.</duplicatetabname>
+        <invalidsortindex>Ongeldige sorteerindex voor het tabblad. De sorteerindex moet een positieve integer zijn.</invalidsortindex>
+        <missingsortindex>Geef een sorteerindex op voor het tabblad</missingsortindex>
+        <missingtabname>Geef een naam op voor het tabblad</missingtabname>
+        <referencedheadinghelp>Als u deze kop nog steeds wilt verwijderen, selecteert u de kop waaronder u de bovenstaande eigenschappen wilt plaatsen.</referencedheadinghelp>
+        <referencedheadingmessage>Verwijzingen naar '{0}'</referencedheadingmessage>
+      </tabs>
+      <webpartadmin>
+        <consume>Portlet gebruiken</consume>
+        <control>Besturingselement</control>
+        <description>Beschrijving</description>
+        <displayname see="/admin/webpartadmin/heading" />
+        <heading>Webonderdelen registreren</heading>
+        <info>Definieer de webonderdelen die beschikbaar moeten zijn voor gebruik</info>
+        <install>Webonderdeel installeren</install>
+        <name>Naam</name>
+        <portlet>Portlet</portlet>
+        <producer>Producer</producer>
+      </webpartadmin>
+      <webpartadminedit>
+        <addparameter>Parameter toevoegen</addparameter>
+        <ambiguoustypename>De opgegeven typenaam is dubbelzinnig. De naam komt overeen met de volgende geldige namen.</ambiguoustypename>
+        <assemblyloadfailed>Er is een fout opgetreden tijdens het laden van de assembly.</assemblyloadfailed>
+        <control>Besturingselement</control>
+        <description>Beschrijving</description>
+        <emptyvalueerror>Voer de parameterwaarde in</emptyvalueerror>
+        <heading>Registratie van {0} wijzigen</heading>
+        <headingconsume>Portlet gebruiken</headingconsume>
+        <headinginstall>Webonderdeel installeren</headinginstall>
+        <info>Eigenschappen van webonderdeel instellen</info>
+        <infoconsume>Eigenschappen van de portlet instellen</infoconsume>
+        <invalidcontrol>Kan het opgegevens besturingselement niet laden.</invalidcontrol>
+        <name>Naam</name>
+        <nameexists>Er is al een webonderdeel met de naam '{0}'</nameexists>
+        <parametername>Naam</parametername>
+        <parameters>Parameters</parameters>
+        <parametertype>Type</parametertype>
+        <parametervalue>Waarde</parametervalue>
+        <portlet>Portlet</portlet>
+        <producer>Producer</producer>
+        <requiredfield>Voer een waarde in voor:</requiredfield>
+        <resolvecontrol>Besturingselement oplossen</resolvecontrol>
+        <typeconversionerror>Kan de parameterwaarde niet converteren naar het geselecteerde type</typeconversionerror>
+        <typenameblank>Voer een typenaam of een virtueel pad in.</typenameblank>
+        <typenamenotfound>Kan geen besturingselement met de opgegeven naam vinden.</typenamenotfound>
+        <typenameresolved>Besturingselement is opgelost.</typenameresolved>
+        <virtualpathloadfailed>Kan het virtuele pad niet laden.</virtualpathloadfailed>
+      </webpartadminedit>
+      <wsrpadmin>
+        <description see="/admin/wsrpadmin/info" />
+        <detailederror>Gedetailleerde foutbeschrijving:</detailederror>
+        <displayname see="/admin/wsrpadmin/heading" />
+        <heading>WSRP-bronnen</heading>
+        <info>Definieer de WSRP-bronnen die beschikbaar moeten zijn voor gebruik.</info>
+      </wsrpadmin>
+    </admin>
+    <april>April</april>
+    <august>Augustus</august>
+    <button>
+      <activate>		Activeren</activate>
+      <add>			Toevoegen</add>
+      <addgroupsid>	Groep toevoegen</addgroupsid>
+      <addlink>Koppeling toevoegen</addlink>
+      <addusergroupsid>Gebruikers/groepen toevoegen</addusergroupsid>
+      <addusersid>	Gebruiker toevoegen</addusersid>
+      <apply>Toepassen</apply>
+      <browse>		Bladeren...</browse>
+      <cancel>		Annuleren</cancel>
+      <change>		Wijzigen</change>
+      <checkin>		Gereed voor publicatie</checkin>
+      <clear>			Wissen</clear>
+      <close>			Sluiten</close>
+      <comingmonth>Volgende 30 dagen</comingmonth>
+      <comingweek>Volgende 7 dagen</comingweek>
+      <compare>		Vergelijken</compare>
+      <continue>Doorgaan</continue>
+      <copy>			Kopie</copy>
+      <create>		Aanmaken</create>
+      <deactivate>	Deactiveren</deactivate>
+      <delaypublish>Uitgestelde publicatie</delaypublish>
+      <delete>		Verwijderen</delete>
+      <deletefoundposting>Alle artikelen verwijderen</deletefoundposting>
+      <deleteselected>Geselecteerde artikelen verwijderen</deleteselected>
+      <edit>			Bewerken</edit>
+      <export>Exporteren</export>
+      <exportasxml>Exporteren als XML</exportasxml>
+      <exporttoexcel>Exporteren naar Excel</exporttoexcel>
+      <findnext>		Volgende zoeken</findnext>
+      <help>			Help</help>
+      <ignore>		Negeren</ignore>
+      <ignoreall>		Alles negeren</ignoreall>
+      <import>Importeren</import>
+      <insert>		Invoegen</insert>
+      <lastmonth>Laatste 30 dagen</lastmonth>
+      <lastweek>Laatste 7 dagen</lastweek>
+      <login>			Aanmelden</login>
+      <next>			&gt;&gt;</next>
+      <no>			Nee</no>
+      <ok>			OK</ok>
+      <prev>			&lt;&lt;</prev>
+      <preview>		Voorbeeld</preview>
+      <print>			Afdrukken</print>
+      <publish>		Publiceren</publish>
+      <refresh>		Verversen</refresh>
+      <reset>			Opnieuw instellen</reset>
+      <resize>Grootte wijzigen</resize>
+      <save>			Opslaan</save>
+      <saveandclose>	Opslaan en sluiten</saveandclose>
+      <saveandpublish>Opslaan en publiceren</saveandpublish>
+      <saveandview>	Opslaan en weergeven</saveandview>
+      <saveonly>Opslaan</saveonly>
+      <search>		Zoeken</search>
+      <select>		Selecteren</select>
+      <send>			Verzenden</send>
+      <settings>		Instellingen</settings>
+      <showreport>Rapport weergeven</showreport>
+      <today>Vandaag</today>
+      <unpublish>		Publicatie ongedaan maken</unpublish>
+      <yes>			Ja</yes>
+      <yesterday>Gisteren</yesterday>
+      <zoom>In-/uitzoomen</zoom>
+    </button>
+    <clienttools>
+      <installstatus>
+        <componentdescription see="/labels/description" />
+        <componentname>Onderdeel</componentname>
+        <components>
+          <componentexcelexport>
+            <description>Een onderdeel waarmee u formuliergegevens naar Microsoft Excel kunt verzenden.</description>
+            <heading>Exporteren naar Excel, Microsoft Office-ondersteuning</heading>
+          </componentexcelexport>
+          <componentmultiupload>
+            <description>Een onderdeel met ondersteuning voor geavanceerde bestandsuploads, bijvoorbeeld via slepen en neerzetten.</description>
+            <heading>Geavanceerde bestandsupload</heading>
+          </componentmultiupload>
+          <componentshelltools>
+            <description>Functies ondersteunen om met EPiServer te communiceren, bijvoorbeeld te gebruiken via een invoegtoepassing in Microsoft Office.</description>
+            <heading>Ondersteuningsfuncties voor clients</heading>
+          </componentshelltools>
+          <componentspellchecker>
+            <description>Een onderdeel waarmee de Editor gebruik kan maken van de spellingscontrole in Microsoft Word.</description>
+            <heading>Spellingscontrole, Microsoft Office-ondersteuning</heading>
+          </componentspellchecker>
+          <currentversion>U gebruikt versie {0} van {1}</currentversion>
+          <heading>Onderdelen</heading>
+          <intro>Voor sommige functies in EPiServer CMS moet u EPiServer CMS-clientonderdelen installeren op uw lokale computer. In de onderstaande lijst staan de beschikbare onderdelen en de status.</intro>
+        </components>
+        <componentstatus>Status</componentstatus>
+        <componentversion>Versie</componentversion>
+        <heading>Clienttools</heading>
+        <install>Installeren</install>
+        <installversion>Versie {0} installeren</installversion>
+        <missingactivexsupport>Voor deze functionaliteit hebt u een webbrowser nodig met ondersteuning van ActiveX, zoals Microsoft Internet Explorer.</missingactivexsupport>
+        <officeaddin>
+          <activated>Vanaf uw computer kunt u voortaan publiceren op deze website</activated>
+          <confirmactivate>Wilt u publicaties activeren voor de volgende site?</confirmactivate>
+          <confirmdeactivate>Wilt u publicaties deactiveren voor de volgende site?</confirmdeactivate>
+          <heading>Microsoft Office-invoegtoepassing</heading>
+          <installation>Installatie</installation>
+          <intro>Met deze invoegtoepassing kunt u informatie publiceren vanuit Microsoft Word, Microsoft Excel en Microsoft PowerPoint naar EPiServer CMS.</intro>
+          <needssave>Sla het document op voordat u dit publiceerd naar EPiServer CMS. Wilt u het document nu opslaan?</needssave>
+          <noaccess>Als u deze invoegtoepassing wilt installeren en gebruiken, zijn bepaalde functiemachtigingen vereist. Een beheerder kan u deze machtigingen toewijzen.</noaccess>
+          <notactivated>Vanaf uw computer kunt u nog niet publiceren op deze website</notactivated>
+        </officeaddin>
+        <registersite>Site registreren</registersite>
+        <statusinstalled>Onderdeel is geïnstalleerd</statusinstalled>
+        <statusloading>Status controleren...</statusloading>
+        <statusnotinstalled>Onderdeel is niet geïnstalleerd</statusnotinstalled>
+        <upgrade>Upgrade</upgrade>
+      </installstatus>
+      <preview>
+        <tooltipclose>Voorbeeld sluiten en wijzigingen verwijderen</tooltipclose>
+      </preview>
+      <wizard>
+        <createpage>Selecteer de pagina waarop u dit document wilt baseren.</createpage>
+        <doneblock1>Klaar!</doneblock1>
+        <doneblock2>Selecteer Opslaan en weergeven om deze wizard af te sluiten en een voorbeeld van deze pagina te maken.</doneblock2>
+        <editpage>Het geselecteerde paginatype is {0}. Voer gegevens in, zoals de paginanaam en publicatiedata.</editpage>
+        <noextension>Het bestand {0} heeft geen extensie en kan niet worden herkend</noextension>
+        <nosupport>Er is geen ondersteuning voor extensie {0} geconfigureerd</nosupport>
+        <selectpagelanguage>Paginataal selecteren</selectpagelanguage>
+      </wizard>
+    </clienttools>
+    <cookie>
+      <logincaption>		Als u zich aanmeldt, worden cookies gebruikt.</logincaption>
+      <logininfo>			Een cookie met aanmeldingsgegevens wordt naar uw webbrowser verzonden. Als u geen cookies wilt ontvangen, kunt u zich niet bij de website aanmelden.</logininfo>
+    </cookie>
+    <day>dag</day>
+    <december>December</december>
+    <dope>
+      <adminmode>Beheermodus</adminmode>
+      <cancel>Annuleren</cancel>
+      <confirmsave>'Koppelingstype' is ingesteld op 'Gegevens ophalen van pagina in EPiServer CMS'. Als u de wijzigingen opslaat, maakt u een statische kopie van de pagina en worden de gegevens niet langer opgehaald vanuit het opgegeven adres. Wilt u doorgaan?</confirmsave>
+      <copy>Naar klembord kopiëren</copy>
+      <delete>Verwijderen</delete>
+      <disablemenu>Menu uitschakelen</disablemenu>
+      <edit>Bewerken</edit>
+      <editmode>Bewerkingsmodus</editmode>
+      <new>Nieuw</new>
+      <newwindow>Openen in nieuw venster</newwindow>
+      <print>Afdrukken</print>
+      <properties>Eigenschappen</properties>
+      <quickedit>Snel bewerken</quickedit>
+      <refresh>Verversen</refresh>
+      <save>Opslaan en publiceren</save>
+      <security>Toegangsrechten</security>
+      <viewmode>Weergavemodus</viewmode>
+    </dope>
+    <dynamiccontenttypes>
+      <dynamiccontent name="PagePropertyPlugin">
+        <caption>Pagina-eigenschap</caption>
+        <description>De inhoud van een opgegeven pagina-eigenschap wordt ingevoegd.</description>
+      </dynamiccontent>
+    </dynamiccontenttypes>
+    <edit>
+      <actionwindow>
+        <heading>Actievenster</heading>
+        <hide>Verbergen</hide>
+      </actionwindow>
+      <activityloader>
+        <assignedtasks>Mijn toegewezen taken</assignedtasks>
+        <duedate>Einddatum</duedate>
+        <grouptask>Groepstaken</grouptask>
+        <noactivity>Geen lopende activiteiten</noactivity>
+        <personaltask>Persoonlijke taken</personaltask>
+        <personaltaskstaskstooltip>Persoonlijke taken:</personaltaskstaskstooltip>
+        <readytopublishtooltip>Gereed voor publicatie:</readytopublishtooltip>
+        <statusnotready>Niet gepubliceerd</statusnotready>
+        <statusreadytopublish>Gereed voor publicatie</statusreadytopublish>
+        <statusrejected>Met opmerking</statusrejected>
+        <workflowowner>Overzicht van werkstroom</workflowowner>
+      </activityloader>
+      <clienttools>
+        <clientinstaller>
+          <closewindow>Venster sluiten</closewindow>
+          <installationstatus>De clientonderdelen zijn nu geïnstalleerd. U kunt dit venster sluiten.</installationstatus>
+          <pagetitle>Clientonderdelen installeren</pagetitle>
+          <restartbrowser>De upgrade van de clientonderdelen is voltooid. Start Internet Explorer opnieuw om de bijgewerkte onderdelen te gebruiken. Sluit alle geopende vensters in Internet Explorer en start de webbrowser opnieuw.</restartbrowser>
+        </clientinstaller>
+        <multifileupload>
+          <directorynotfound>Kan de map '{0}' niet vinden op de server.</directorynotfound>
+          <functiondisabled>U hebt niet de vereiste machtiging voor een geavanceerde bestandsupload. Zorg ervoor dat deze is ingeschakeld onder 'Machtigingen voor functies'.</functiondisabled>
+          <permissiondenied>U hebt geen machtiging voor het maken van bestanden in deze map.</permissiondenied>
+        </multifileupload>
+        <wizard>
+          <pagenotfound>
+            <message>
+              Kan de pagina niet vinden die u probeerde bij te werken. Hoogstwaarschijnlijk is deze verwijderd.&lt;br/&gt; 
+              Annuleer dit dialoogvenster als u dit document naar een andere locatie wilt publiceren. Selecteer vervolgens Nee op de vraag of u een bestaande pagina wilt bijwerken.
+            </message>
+            <title>Kan de pagina niet vinden</title>
+          </pagenotfound>
+        </wizard>
+      </clienttools>
+      <conflicteditor>
+        <heading>Conflicteditor</heading>
+        <info>De informatie over de gepubliceerde versie is gewijzigd sinds u deze versie hebt gecontroleerd</info>
+        <tabmychanges>Mijn wijzigingen</tabmychanges>
+        <tabpublishedchanges>Gepubliceerde wijzigingen</tabpublishedchanges>
+      </conflicteditor>
+      <contentmirroringadmin>
+        <description>Een lijst met gedefinieerde kanalen die beschikbaar zijn op het systeem.</description>
+        <displayname>Mirrorupdates goedkeuren</displayname>
+        <failure>Er is een fout opgetreden ({0}). Neem contact op met de websitebeheerder.</failure>
+        <itemcreated>Aangemaakt</itemcreated>
+        <itemdeleted>Verwijderd</itemdeleted>
+        <itemmoved>Verplaatst</itemmoved>
+        <itemupdated>Bijgewerkt</itemupdated>
+      </contentmirroringadmin>
+      <deletepage>
+        <deleteconfirmation>Weet u zeker dat u "{0}" wilt verwijderen?</deleteconfirmation>
+        <deletenotsupported>De provider die deze pagina aanbiedt, biedt geen ondersteuning voor verwijderen.</deletenotsupported>
+        <deletesuffix>'{0}' is verwijderd.</deletesuffix>
+        <deletesystempage>	U kunt de Prullenbak, de startpagina en de hoofdpagina niet verwijderen.</deletesystempage>
+        <failedreferenced>Naar de volgende pagina’s wordt verwezen vanuit andere delen van het systeem. Deze kunnen derhalve niet worden verwijderd:</failedreferenced>
+        <hasentrypointchild>Deze pagina of enkele van de subpagina's zijn de hoofdpagina's van een paginaprovider en kunnen niet worden verwijderd. Verwijder eerst de paginaprovider in web.config.</hasentrypointchild>
+        <heading>Pagina "{0}" verwijderen</heading>
+        <headingfailed>Kan een of meer pagina’s niet verwijderen</headingfailed>
+        <info />
+        <movesuffix>'{0}' is verplaatst naar de Prullenbak</movesuffix>
+        <nodeleteaccessrights>U hebt niet voldoende toegangsrechten om deze pagina te verwijderen.</nodeleteaccessrights>
+        <reftypearchive>{0} is de archiefmap voor {1}</reftypearchive>
+        <reftypedefaultarchive>{1} wordt gebruikt als standaardarchiefpagina op paginatype {0}</reftypedefaultarchive>
+        <reftypeproperty>{0} - hiernaar verwijst een eigenschap in {1}</reftypeproperty>
+        <reftypeshortcut>Pagina met ID {0} is gekoppeld aan deze pagina of aan enkele van de onderliggende pagina's.</reftypeshortcut>
+      </deletepage>
+      <deletepagelanguage>
+        <alertlangnotselected>Selecteer een taal.</alertlangnotselected>
+        <confirmdeletemessage>Als u doorgaat, wordt de geselecteerde taal permanent verwijderd voor die pagina.</confirmdeletemessage>
+        <confirmdeletequestion>Weet u zeker dat u de taal wilt verwijderen?</confirmdeletequestion>
+        <deletedlanguage>	Taal '{0}' is verwijderd voor deze pagina.</deletedlanguage>
+        <heading>			Taal verwijderen voor pagina '{0}'</heading>
+        <info>				Verwijder een van de talen voor de pagina zonder de hele pagina te verwijderen. Let op! Als u een taal voor een pagina verwijdert, wordt deze permanent verwijderd. Dit houdt in dat deze niet naar de Prullenbak wordt verplaatst. Eventuele subpagina’s in dezelfde taal worden niet verwijderd.</info>
+        <nothingtodelete>	Er bestaat slechts één taal voor deze pagina. Kies Verwijderen als u de pagina en alle subpagina’s wilt verwijderen.</nothingtodelete>
+        <selectlanguage>	Taal verwijderen</selectlanguage>
+        <selectlanguageitem>Te verwijderen taal selecteren</selectlanguageitem>
+      </deletepagelanguage>
+      <dynamiccontent>
+        <dynamicpagepropertysettings>
+          <dynamicproperties>Dynamische eigenschappen</dynamicproperties>
+          <metadataproperties>Geïntegreerde eigenschappen</metadataproperties>
+          <pagelinkerror>Er moet een pagina worden geselecteerd</pagelinkerror>
+          <pagelinklabel>Pagina waarvan gegevens moeten worden geladen</pagelinklabel>
+          <pagetypeproperties>Eigenschappen paginatype</pagetypeproperties>
+          <propertylisterror>Er moet een eigenschap worden geselecteerd</propertylisterror>
+          <propertylistlabel>Eigenschap waarvan gegevens moeten worden geladen</propertylistlabel>
+        </dynamicpagepropertysettings>
+      </dynamiccontent>
+      <editcommand>
+        <actionwindowhelp>Actievenster openen</actionwindowhelp>
+        <addfavoritecaption>Toevoegen aan favorieten</addfavoritecaption>
+        <adminmodehelp see="/dope/adminmode" />
+        <askdelete>Wilt u de pagina '{0}' verwijderen?</askdelete>
+        <askemptywastebasket>Wilt u de Prullenbak leegmaken?</askemptywastebasket>
+        <askmove>Wilt u deze pagina verplaatsen?</askmove>
+        <askprovidermove>Wilt u deze pagina verplaatsen? Verplaatsing van pagina's van de ene paginaprovider naar een andere houdt in dat de feitelijke gegevens worden verplaatst van de ene backendserver naar de andere.</askprovidermove>
+        <copypagecaption>Kopie</copypagecaption>
+        <copypagehelp>Geselecteerde pagina kopiëren</copypagehelp>
+        <createnewpagecaption>Nieuwe aanmaken</createnewpagecaption>
+        <createnewpagehelp>Nieuwe pagina aanmaken</createnewpagehelp>
+        <cutpagecaption>Knippen</cutpagecaption>
+        <cutpagehelp>Geselecteerde pagina knippen</cutpagehelp>
+        <deletepagecaption>Verwijderen</deletepagecaption>
+        <deletepagehelp>Geselecteerde pagina verwijderen</deletepagehelp>
+        <deletepagelanguagecaption>Taal verwijderen</deletepagelanguagecaption>
+        <editdynpropcaption>Dynamische eigenschappen</editdynpropcaption>
+        <editdynprophelp>Dynamische eigenschappen bewerken</editdynprophelp>
+        <editmode>Bewerkingsmodus</editmode>
+        <editpagecaption>Bewerken</editpagecaption>
+        <favoritesmode>Favorieten</favoritesmode>
+        <filemanagementhelp>Bestandsbeheer</filemanagementhelp>
+        <languageoverviewcaption>Taaloverzicht</languageoverviewcaption>
+        <languageoverviewhelp see="/edit/editcommand/languageoverviewcaption" />
+        <languagepagecaption>Paginatalen</languagepagecaption>
+        <languagepagehelp see="/edit/editcommand/languagepagecaption" />
+        <languagesettingscaption>Taalinstellingen</languagesettingscaption>
+        <languagesettingshelp see="/edit/editcommand/languagesettingscaption" />
+        <logoutdombrowser>U bent aangemeld als een geverifieerde Windows-gebruiker. Voordat u zich volledig afmeldt, moet u alle browservensters sluiten.</logoutdombrowser>
+        <logouthelp>Afmelden</logouthelp>
+        <movedisabled>U hebt niet de vereiste machtiging om gegevens van de ene paginaprovider naar de andere te verplaatsen. Zorg ervoor dat deze is ingeschakeld onder 'Machtigingen voor functies'.</movedisabled>
+        <pagetypenotallowed>	Paginatype is niet toegestaan op de bestemming</pagetypenotallowed>
+        <pastepagecaption>Plakken</pastepagecaption>
+        <pastepagehelp>Geselecteerde pagina plakken</pastepagehelp>
+        <personalmode>Mijn taken</personalmode>
+        <removefavoritecaption>Favoriet verwijderen</removefavoritecaption>
+        <reportcenterhelp>Rapportcentrum</reportcenterhelp>
+        <setaccesscaption>Toegangsrechten</setaccesscaption>
+        <setaccesshelp>Toegangsrechten wijzigen</setaccesshelp>
+        <settingshelp see="/edit/workspace/mysettings" />
+        <viewmode>Structuur</viewmode>
+        <viewmodehelp see="/dope/viewmode" />
+      </editcommand>
+      <editdynprop>
+        <heading>Dynamische eigenschappen op pagina '{0}' bewerken</heading>
+        <info />
+        <nodynprop>Geen dynamische eigenschappen gedefinieerd</nodynprop>
+        <save>Dynamische eigenschappen opgeslagen</save>
+      </editdynprop>
+      <editform>
+        <addcolumnbutton>Kolom toevoegen</addcolumnbutton>
+        <addrowbutton>Rij toevoegen</addrowbutton>
+        <allowanonymouspostcaption>U kunt het formulier verzenden zonder u aan te melden</allowanonymouspostcaption>
+        <allowmultiplepostcaption>Dezelfde persoon kan het formulier verschillende keren verzenden</allowmultiplepostcaption>
+        <buttoncaption>Knoptekst</buttoncaption>
+        <buttonproperties>Eigenschappen van knop</buttonproperties>
+        <checkboxproperties>Eigenschappen van selectievakje</checkboxproperties>
+        <checkedcaption>Geselect.</checkedcaption>
+        <classcaption>CSS-klasse</classcaption>
+        <confirmdelete>Weet u zeker dat u dit veld wilt verwijderen?</confirmdelete>
+        <defaultpropertyheading>Eigenschappen</defaultpropertyheading>
+        <deletecolumnbutton>Kolom verwijderen</deletecolumnbutton>
+        <deletecolumnconfirmmessage>Weet u zeker dat u de geselecteerde kolom wilt verwijderen?</deletecolumnconfirmmessage>
+        <deleterowbutton>Rij verwijderen</deleterowbutton>
+        <deleterowconfirmmessage>Weet u zeker dat u de  geselecteerde rij wilt verwijderen?</deleterowconfirmmessage>
+        <descriptionhrproperties>Eigenschappen voor horizontale regel</descriptionhrproperties>
+        <descriptionproperties>Eigenschappen van kop</descriptionproperties>
+        <fieldexists>Er staat al een veld in deze cel</fieldexists>
+        <formcontrolinfotext>Sleep een veld naar een tabelcel of selecteer een cel en klik op het gewenste veldtype.</formcontrolinfotext>
+        <formfields>Formuliervelden</formfields>
+        <formnamecaption>Naam van formulier</formnamecaption>
+        <heading>Formulierinstellingen</heading>
+        <headingcaption>Kop</headingcaption>
+        <heightcaption>Hoogte (aantal rijen)</heightcaption>
+        <horizontal>Horizontaal</horizontal>
+        <horizontalrule>Horizontale regel</horizontalrule>
+        <htmlcode>HTML-code</htmlcode>
+        <importexport>Importeren/exporteren</importexport>
+        <inputcheckbox>Selectievakje</inputcheckbox>
+        <inputdescription>Kop</inputdescription>
+        <inputradiobutton>Keuzerondje</inputradiobutton>
+        <inputselectbox>Keuzelijst</inputselectbox>
+        <inputsubmit>Knop</inputsubmit>
+        <inputtext>Tekstvak</inputtext>
+        <inputtextarea>Tekstgebied</inputtextarea>
+        <insertcolumnbutton>Kolom invoegen</insertcolumnbutton>
+        <insertrowbutton>Rij invoegen</insertrowbutton>
+        <mailanddboption>E-mail verzenden en opslaan in database</mailanddboption>
+        <namecaption>Naam</namecaption>
+        <optionscaption>Opties</optionscaption>
+        <pageafterpost>Pagina die wordt weergegeven nadat het formulier is verzonden</pageafterpost>
+        <placefieldsinmatrix>Plaats velden in de onderstaande matrix</placefieldsinmatrix>
+        <placementcaption>Plaatsing</placementcaption>
+        <postresultcaption>Resultaat van verzending</postresultcaption>
+        <radiobuttonproperties>Eigenschappen voor keuzerondje</radiobuttonproperties>
+        <requiredcaption>Waarde moet worden ingevoerd</requiredcaption>
+        <savetodatabaseoption>Opslaan in database</savetodatabaseoption>
+        <selectboxproperties>Eigenschappen voor keuzelijst</selectboxproperties>
+        <sendemailfromadresscaption>E-mailadres afzender</sendemailfromadresscaption>
+        <sendemailoption>E-mail verzenden</sendemailoption>
+        <sendemailsubjectcaption>Onderwerp e-mail</sendemailsubjectcaption>
+        <sendemailtoadresscaption>E-mail verzenden naar dit adres</sendemailtoadresscaption>
+        <sendformtourlcaption>Formulier verzenden naar deze URL</sendformtourlcaption>
+        <sendtourloption>Verzenden naar een specifieke URL</sendtourloption>
+        <tablelayout>Tabelindeling</tablelayout>
+        <textareaproperties>Eigenschappen van tekstgebied</textareaproperties>
+        <textcaption>Tekst</textcaption>
+        <textinputproperties>Eigenschappen van tekstvak</textinputproperties>
+        <tooltipcaption>Toolinfo</tooltipcaption>
+        <typecaption>Valideren als</typecaption>
+        <valuecaption>Waarde</valuecaption>
+        <vertical>Verticaal</vertical>
+        <widthcaption>Breedte (aantal tekens)</widthcaption>
+      </editform>
+      <editformdata>
+        <activexnotinstalled>EPiServer CMS-clientonderdelen lijken niet te zijn geïnstalleerd. Als u deze wilt installeren, selecteert u de hoofdpagina en klikt u op het tabblad Onderdelen.</activexnotinstalled>
+        <alertforselectingexportrow>Selecteer ten minste één rij om te exporteren.</alertforselectingexportrow>
+        <confirmdelete>		Weet u zeker dat u alle items in deze zoekopdracht wilt verwijderen?</confirmdelete>
+        <confirmselecteddelete>Weet u zeker dat u de geselecteerde items wilt verwijderen?</confirmselecteddelete>
+        <date>				Datum</date>
+        <errorexportingdata>Fout bij exporteren van gegevens</errorexportingdata>
+        <excelexport>		Exporteren naar Excel</excelexport>
+        <export>			Exporteren</export>
+        <fromdate>			Van datum</fromdate>
+        <heading>			Formuliergegevens</heading>
+        <matches>			overeenkomst(en)</matches>
+        <newestfirst>		Nieuwste eerst</newestfirst>
+        <nohits>			Geen treffers</nohits>
+        <pagingsize>		Aantal treffers per pagina</pagingsize>
+        <selectform>		Formulier selecteren</selectform>
+        <sortorder>			Sorteren</sortorder>
+        <todate>			Tot datum</todate>
+        <user>				Gebruiker</user>
+      </editformdata>
+      <editorguide>
+        <description>De gids die u helpt bruikbare en toegankelijke webinhoud te maken.</description>
+        <displayname>Praktijkgids</displayname>
+        <hidesection>Sectie verbergen</hidesection>
+        <showsection>Sectie weergeven</showsection>
+      </editorguide>
+      <editpage>
+        <changed>Pagina gewijzigd</changed>
+        <checkedinversionswarning>Let op! Er is een opgeslagen versie gereed voor publicatie. De versie bevindt zich op het tabblad Versielijst met de status Gereed voor publicatie.</checkedinversionswarning>
+        <createdby>Pagina aangemaakt door</createdby>
+        <creator>Aangemaakt door</creator>
+        <externallinkcaption>Koppeling naar pagina op een andere website</externallinkcaption>
+        <externallinkwarning>Let op! 'Koppelingstype' is ingesteld op 'Koppeling naar pagina op een andere website'. Dit betekent dat inhoud op het opgegeven adres wordt opgehaald. U kunt het koppelingstype wijzigen onder Bewerken, Snelkoppeling/externe koppeling.</externallinkwarning>
+        <fetchdatacaption>Gegevens ophalen van pagina in EPiServer CMS</fetchdatacaption>
+        <fetchdatawarning>Let op! 'Koppelingstype' is ingesteld op 'Gegevens ophalen van pagina in EPiServer CMS'. Dit betekent dat inhoud van een andere pagina in EPiServer CMS wordt gehaald. U kunt het koppelingstype wijzigen onder Bewerken, Snelkoppeling/externe koppeling.</fetchdatawarning>
+        <mustpublishmasterfirst>De originele taal {0} voor deze pagina is nog niet gepubliceerd. Deze moet worden gepubliceerd voordat de pagina in andere talen kan worden gepubliceerd.</mustpublishmasterfirst>
+        <nolinkcaption>Geen koppeling, alleen tekst</nolinkcaption>
+        <nolinkwarning>Let op! 'Koppelingstype' is ingesteld op 'Geen koppeling, alleen tekst'. Dat betekent dat de inhoud niet zichtbaar is op het weergavetabblad en dat het menu geen koppelingen bevat naar de paginanaam. U kunt het koppelingstype wijzigen onder Bewerken, Snelkoppeling/externe koppeling.</nolinkwarning>
+        <normallinkcaption>Koppeling naar deze pagina</normallinkcaption>
+        <normallinkwarning />
+        <publishedby>Pagina gepubliceerd door</publishedby>
+        <savedby>Pagina voor het laatst opgeslagen door</savedby>
+        <shortcutcaption>Snelkoppeling naar pagina in EPiServer CMS</shortcutcaption>
+        <shortcutwarning>Let op! 'Koppelingstype' is ingesteld op 'Snelkoppeling naar pagina in EPiServer CMS'. Dit betekent dat de bezoeker wordt omgeleid als deze op de naam van de pagina klikt. U kunt het koppelingstype wijzigen onder Bewerken, Snelkoppeling/externe koppeling.</shortcutwarning>
+        <updatechanged>Pagina als gewijzigd markeren</updatechanged>
+      </editpage>
+      <editpanel>
+        <actionapprove>Publiceren</actionapprove>
+        <actioncheckin>Gereed</actioncheckin>
+        <actiondelete>Versie verwijderen</actiondelete>
+        <actionreject>Opmerking</actionreject>
+        <changelanguageheading>Paginaweergave</changelanguageheading>
+        <compareto>Vergelijken met</compareto>
+        <confirmdelete>Wilt u deze versie echt verwijderen?</confirmdelete>
+        <confirmnavigate>U hebt wijzigingen aangebracht op deze pagina</confirmnavigate>
+        <creatingnewpage>Nieuwe pagina aanmaken</creatingnewpage>
+        <creatingnewpagelanguage>Pagina in een nieuwe taal aanmaken</creatingnewpagelanguage>
+        <delayinfo>					Uitgestelde publicatie van deze paginaversie beheren</delayinfo>
+        <delaypublishinfo>Uitgestelde publicatie inschakelen</delaypublishinfo>
+        <delaystartpublishinfo>		Voer de datum/tijd voor de uitgestelde publicatie in</delaystartpublishinfo>
+        <notreadyitem>--- Niet gepubliceerd ---</notreadyitem>
+        <pagenotavailable>Deze pagina is niet beschikbaar in de actieve taal.</pagenotavailable>
+        <pagetypeheading>Paginatype</pagetypeheading>
+        <prefixcopyof>Kopie van</prefixcopyof>
+        <rejectprompt>Opmerkingen voor auteur</rejectprompt>
+        <savedelaypublishbutton>	Opslaan</savedelaypublishbutton>
+        <selectversion>Versie:</selectversion>
+        <showversionlist>       Versielijst weergeven</showversionlist>
+        <statusheading>Status</statusheading>
+        <tabedit>
+          <description />
+          <displayname>		Bewerken</displayname>
+        </tabedit>
+        <tabformdata>Formuliergegevens</tabformdata>
+        <tabversionlist>
+          <description />
+          <displayname>		Versielijst</displayname>
+          <oneunpublishedversionglobalizedtooltip>Eén niet-gepubliceerde versie voor taal: {0}</oneunpublishedversionglobalizedtooltip>
+          <oneunpublishedversiontooltip>Eén niet-gepubliceerde versie</oneunpublishedversiontooltip>
+          <unpublishedversionsglobalizedtooltip>{0} niet-gepubliceerde versies voor taal: {1}</unpublishedversionsglobalizedtooltip>
+          <unpublishedversionstooltip>{0} niet-gepubliceerde versies</unpublishedversionstooltip>
+        </tabversionlist>
+        <tabview>Weergeven</tabview>
+        <tooltipapprove>Deze versie publiceren</tooltipapprove>
+        <tooltipcancel>Bewerken van deze versie annuleren</tooltipcancel>
+        <tooltipcheckin>Versie voor publicatie indienen</tooltipcheckin>
+        <tooltipdelete>Deze versie verwijderen</tooltipdelete>
+        <tooltipedit>Deze versie bewerken</tooltipedit>
+        <tooltipeditnew>Nieuwe versie bewerken (kopie maken van deze versie)</tooltipeditnew>
+        <tooltipreject>Opmerkingen voor deze versie</tooltipreject>
+        <tooltipsave>Deze versie opslaan / Deze versie opslaan en weergeven</tooltipsave>
+        <tooltipsaveonly>Deze versie opslaan</tooltipsaveonly>
+        <viewsavedby>Door</viewsavedby>
+        <viewsaveddate>Opgeslagen</viewsaveddate>
+        <viewstatus>Status</viewstatus>
+      </editpanel>
+      <editsecurity>
+        <aclremovepermissionrights>U probeerde machtigingen te verwijderen voor het beheer van deze pagina. Als u dit echt wilt doen, gaat u naar de beheermodus en stelt u de machtigingen voor deze pagina in</aclremovepermissionrights>
+        <heading>		Toegangsrechten instellen voor pagina '{0}'</heading>
+        <info>			U kunt aangeven welke gebruikers en groepen toegang krijgen tot deze pagina en wat zij met en op de pagina mogen doen.</info>
+        <savemessage comment="heading of savesecurity">Nieuwe toegangsrechten zijn opgeslagen</savemessage>
+        <user>			U bent aangemeld als {0} en u bent lid van de volgende groepen</user>
+      </editsecurity>
+      <edittree>
+        <copypage>Kopiëren van {0} naar {1}</copypage>
+        <movepage>Verplaatsen van {0} naar {1}</movepage>
+        <nofavoritesfound>			Er zijn geen favorieten gedefinieerd</nofavoritesfound>
+        <notasksfound>				Er zijn geen actieve taken gevonden</notasksfound>
+      </edittree>
+      <editversionlist>
+        <columnheadingdatesaved>Opgeslagen</columnheadingdatesaved>
+        <columnheadinglanguage>Taal</columnheadinglanguage>
+        <columnheadingname>Naam</columnheadingname>
+        <columnheadingsavedby>Door</columnheadingsavedby>
+        <columnheadingstatus>Status</columnheadingstatus>
+        <columnheadingversion>Versie</columnheadingversion>
+        <confirmdelete>Weet u zeker dat u deze versie wilt verwijderen?</confirmdelete>
+        <showalllanguages>Alle talen weergeven</showalllanguages>
+        <versionidtitle>Versie-ID: </versionidtitle>
+      </editversionlist>
+      <editxform>
+        <allforms>Alle formulieren</allforms>
+        <allpages>Gegevens voor alle pagina's weergeven</allpages>
+        <changed>Laatste wijziging:</changed>
+        <changedby>Gewijzigd door:</changedby>
+        <confirmdelete>Weet u zeker dat u dit veld wilt verwijderen?</confirmdelete>
+        <copysuffix>Kopie</copysuffix>
+        <created>Aangemaakt:</created>
+        <createdby>Aangemaakt door:</createdby>
+        <createnewformfoldertooltip>Nieuwe formulierenmap aanmaken</createnewformfoldertooltip>
+        <datatypes>
+          <date1>
+            <caption>Datum (DD/MM/JJJJ)</caption>
+            <errormessage>{0} is geen geldige datum. Voer een datum in met de indeling DD/MM/JJJJ.</errormessage>
+          </date1>
+          <date2>
+            <caption>Datum (MM/DD/JJJJ)</caption>
+            <errormessage>{0} is geen geldige datum. Voer een datum in met de indeling MM/DD/JJJJ.</errormessage>
+          </date2>
+          <defaulttype>
+            <errormessage>U hebt tekens ingevoerd die niet zijn toegestaan ("&lt;" of "&gt;").</errormessage>
+          </defaulttype>
+          <email>
+            <caption>E-mailadres</caption>
+            <errormessage>{0} is geen geldig e-mailadres.</errormessage>
+          </email>
+          <integer>
+            <caption>Integer</caption>
+            <errormessage>{0} is geen geldige integer.</errormessage>
+          </integer>
+          <isodate>
+            <caption>Datum (JJJJ-MM-DD)</caption>
+            <errormessage>{0} is geen geldige datum. Voer een datum in met de indeling JJJJ-MM-DD.</errormessage>
+          </isodate>
+          <positiveinteger>
+            <caption>Positief geheel getal</caption>
+            <errormessage>{0} is geen geldige positieve integer.</errormessage>
+          </positiveinteger>
+        </datatypes>
+        <deleteformfoldertooltip>Geselecteerde formulierenmap verwijderen</deleteformfoldertooltip>
+        <deletequestion>Weet u zeker dat u het geselecteerde formulier wilt verwijderen?</deletequestion>
+        <editformbutton>Bewerken</editformbutton>
+        <editordescription>Het tabblad Tabelindeling wordt gebruikt om de indeling van uw formulier te ontwerpen.</editordescription>
+        <errorimporting>Het formulier kan niet worden geïmporteerd. Controleer of het bestand geldige XML-code bevat.</errorimporting>
+        <existonpages>Houd er rekening mee dat u dit formulier op verschillende pagina’s hebt gebruikt. Wijzigingen aan het formulier zijn daarom van invloed op de volgende pagina's:</existonpages>
+        <folder>Map</folder>
+        <folderdialog>
+          <createnewformfolderheading>Nieuwe formulierenmap aanmaken</createnewformfolderheading>
+          <createnewformfoldersavewarning>Geef een geldige naam op voor de nieuwe formulierenmap (zonder de tekens \ / " ' &lt; &gt;).</createnewformfoldersavewarning>
+          <createnewformfoldertext>Naam voor nieuwe map:</createnewformfoldertext>
+          <deletequestion>Weet u zeker dat u de geselecteerde formulierenmap wilt verwijderen?</deletequestion>
+          <renamefoldererroralreadyexists>Map {0} kan niet de naam {1} krijgen omdat er reeds een map met deze naam bestaat.</renamefoldererroralreadyexists>
+          <renamefoldererrorrootfolder>De hoofdmap kan geen nieuwe naam krijgen.</renamefoldererrorrootfolder>
+          <renameformfolderheading>Naam formulierenmap wijzigen</renameformfolderheading>
+          <renameformfoldersavewarning>Geef een geldige nieuwe naam op voor de formulierenmap (zonder de tekens \ / " ' &lt; &gt;).</renameformfoldersavewarning>
+          <renameformfoldertext>Nieuwe mapnaam:</renameformfoldertext>
+        </folderdialog>
+        <formdatamailsubject>Formuliergegevens van {0} ({1})</formdatamailsubject>
+        <formfoldercaption>Formulierenmap</formfoldercaption>
+        <forminformation>Formulierinformatie</forminformation>
+        <formname>Formuliernaam</formname>
+        <formnameempty>Geef een naam op voor het formulier.</formnameempty>
+        <formnotused>Het formulier wordt op geen enkele pagina gebruikt.</formnotused>
+        <formusedonpages>Het formulier wordt op de volgende pagina’s gebruikt:</formusedonpages>
+        <fromdate>Van datum</fromdate>
+        <gridheadingchanged>Gewijzigd</gridheadingchanged>
+        <gridheadingchangedby>Gewijzigd door</gridheadingchangedby>
+        <gridheadingcreated>Gemaakt</gridheadingcreated>
+        <gridheadingcreatedby>Gemaakt door</gridheadingcreatedby>
+        <heading>Formulier bewerken</heading>
+        <headingtextrequired>Geef een tekst op voor het label</headingtextrequired>
+        <importinfotext>Bij importeren worden alle niet-opgeslagen wijzigingen in de inhoud en de indeling van het formulier overschreven.</importinfotext>
+        <invalid>Onjuist formulier.</invalid>
+        <listmyformonly>Alleen mijn formulieren weergeven:</listmyformonly>
+        <morethanoneoptionselected>Er kan slechts één optie worden geselecteerd.</morethanoneoptionselected>
+        <multiplevalueinvalid>Ongeldige waarde voor opties</multiplevalueinvalid>
+        <nameempty>Geef voor alle velden een naam op.</nameempty>
+        <nameexistsmorethanonce>Verschillende velden hebben dezelfde naam: '{0}'.</nameexistsmorethanonce>
+        <nameinvalid>Onjuiste veldnaam. De naam moet beginnen met een letter en mag alleen alfanumerieke tekens bevatten (a-z, A-Z, 1-9 en "_", een spatie is niet toegestaan).</nameinvalid>
+        <namenotallowedcharacters>Onjuiste veldnaam: '{0}'. De naam mag alleen alfanumerieke tekens bevatten (a-z, A-Z, 1-9 en "_", een spatie is niet toegestaan).</namenotallowedcharacters>
+        <namerequired>Geef een naam op voor het veld.</namerequired>
+        <newformnamecaption>Nieuwe naam</newformnamecaption>
+        <nofolder>Geen map</nofolder>
+        <noformbutton>Geen formulier</noformbutton>
+        <notselectedrow>Selecteer een cel.</notselectedrow>
+        <renameformfoldertooltip>Naam geselecteerde formulierenmap wijzigen</renameformfoldertooltip>
+        <saveas>Opslaan als...</saveas>
+        <savewarninginfo>Dit formulier is op verschillende pagina’s gebruikt.</savewarninginfo>
+        <savewarningquestion>Weet u zeker dat u de wijzigingen wilt opslaan?</savewarningquestion>
+        <selectedfolder>Map:</selectedfolder>
+        <selectform>Formulier selecteren</selectform>
+        <submitdefaultvalue>Query verzenden</submitdefaultvalue>
+        <todate>Tot datum</todate>
+        <usedonpages>Gebruikt op pagina's</usedonpages>
+        <useformbutton>Gebruik</useformbutton>
+      </editxform>
+      <editxformdata>
+        <allpages>Gegevens voor alle pagina's weergeven</allpages>
+        <fromdate>Van datum</fromdate>
+        <selectform>Formulier selecteren</selectform>
+        <todate>Tot datum</todate>
+      </editxformdata>
+      <filemanagerbrowser>
+        <directoryselectionerrormessage>Selecteer eerst een map.</directoryselectionerrormessage>
+        <fileselectionerrormessage>Selecteer eerst een bestand.</fileselectionerrormessage>
+        <imageselectionerrormessage>Selecteer eerst een afbeelding.</imageselectionerrormessage>
+        <selectfile>Bestand selecteren</selectfile>
+        <selectfolder>Map selecteren</selectfolder>
+        <selectimage>Afbeelding selecteren</selectimage>
+      </filemanagerbrowser>
+      <formpostings>
+        <description>		Geef de formuliergegevens weer.</description>
+        <displayname>		Formuliergegevens</displayname>
+      </formpostings>
+      <globalizationcontrol>
+        <description>Geef de status weer van de verschillende talen voor de huidige pagina en open deze.</description>
+        <displayname>Paginatalen</displayname>
+        <heading>Talen voor pagina '{0}'</heading>
+        <published>Gepubliceerd</published>
+        <saved>Opgeslagen</saved>
+      </globalizationcontrol>
+      <globalizationmatrix>
+        <description />
+        <goup>Omhoog</goup>
+        <heading>Taaloverzicht voor pagina '{0}'</heading>
+        <languagestatusnotpublished>Pagina is nog niet gepubliceerd</languagestatusnotpublished>
+        <languagestatuspublished>Pagina is gepubliceerd</languagestatuspublished>
+        <page>Pagina</page>
+      </globalizationmatrix>
+      <imageeditor>
+        <compressioninformation>
+          <compression>Compressie</compression>
+          <format>Indeling</format>
+          <quality>Kwaliteit</quality>
+        </compressioninformation>
+        <cropinformation>
+          <crop>Bijsnijden</crop>
+          <height>Hoogte</height>
+          <help>Teken een selectie in de afbeelding, kies een indeling uit een van de vooraf ingestelde waarden of geef direct een waarde op in de velden. Dubbelklik op de selectie of klik op "Toepassen" om de afbeelding bij te snijden.</help>
+          <left>Links</left>
+          <top>Boven</top>
+          <width>Breedte</width>
+        </cropinformation>
+        <disabledinformation>U hebt geen machtiging om het afbeeldingsbestand te bewerken. U kunt wel de instellingen wijzigen van de manier waarop de afbeelding wordt weergegeven op de pagina.</disabledinformation>
+        <generalinformation>Met het beeldbewerkingsprogramma kunt u afbeeldingen bijsnijden en transformeren of de grootte van afbeeldingen wijzigen. Selecteer het juiste hulpprogramma hierboven.</generalinformation>
+        <generalinformationheading>Algemene informatie</generalinformationheading>
+        <imageformat>
+          <formatgif>GIF</formatgif>
+          <formatjpeg>JPEG</formatjpeg>
+          <formatpng>PNG</formatpng>
+        </imageformat>
+        <imagepreset>
+          <presetmedium>Normaal</presetmedium>
+          <presetselect>Selecteren</presetselect>
+          <presetsmall>Klein</presetsmall>
+        </imagepreset>
+        <imgpagelabels>
+          <compress>Comprimeren</compress>
+          <crop>Bijsnijden</crop>
+          <heading>Beeldbewerkingsprogramma</heading>
+          <height>Hoogte:</height>
+          <manualdimensionoverflow>Uw selectie kan niet groter zijn dan de afmetingen van de afbeelding.</manualdimensionoverflow>
+          <redo>Opnieuw</redo>
+          <resize>Grootte wijzigen</resize>
+          <reverttooriginal>Terugkeren</reverttooriginal>
+          <saveas>Opslaan als</saveas>
+          <transform>Transformeren</transform>
+          <undo>Ongedaan maken</undo>
+          <width>Breedte:</width>
+          <zoomminus>Uitzoomen</zoomminus>
+          <zoomplus>Inzoomen</zoomplus>
+        </imgpagelabels>
+        <information>
+          <unitkilobytes>KB</unitkilobytes>
+        </information>
+        <moredisplaysettings>Meer instellingen</moredisplaysettings>
+        <pageleavemessage>Weet u zeker dat u het beeldbewerkingsprogramma wilt sluiten zonder de wijzigingen op te slaan?</pageleavemessage>
+        <quality>
+          <high>Hoog (aanbevolen)</high>
+          <low>Laag</low>
+          <maximum>Maximum</maximum>
+          <medium>Normaal</medium>
+          <veryhigh>Zeer hoog</veryhigh>
+        </quality>
+        <resizeinformation>
+          <contrainproportion>Proporties beperken</contrainproportion>
+          <height>Hoogte</height>
+          <help>Pas de grootte van de afbeelding aan door de hoek te verslepen, een vooraf ingestelde waarde te selecteren of direct een waarde in te voeren in de velden. Klik op Toepassen om de grootte van de afbeelding aan te passen.</help>
+          <preset>Vooraf ingestelde waarde</preset>
+          <resize>Grootte wijzigen</resize>
+          <width>Breedte</width>
+        </resizeinformation>
+        <saveas>
+          <accessdenied>U hebt geen machtiging om de afbeelding "{0}" op te slaan.</accessdenied>
+          <confirmareplaceimage>De nieuwe afbeelding wordt op alle pagina's hierboven gebruikt. Klik op OK om de afbeelding te vervangen.</confirmareplaceimage>
+          <directorypath>Pad:</directorypath>
+          <emptyfilename>Geef een bestandsnaam op.</emptyfilename>
+          <fileexists>Het bestand "{0}" bestaat reeds.</fileexists>
+          <filename>Bestandsnaam:</filename>
+          <fileusageadditionalpages>en &lt;strong&gt;{0} andere pagina('s)&lt;/strong&gt; die niet in de lijst hierboven wordt/worden weergegeven.</fileusageadditionalpages>
+          <fileusageheading>Deze afbeelding wordt op de volgende pagina's gebruikt:</fileusageheading>
+          <illegalname>"{0}" is geen geldige bestandsnaam.</illegalname>
+          <invalidcharacters>De bestandsnaam mag geen van de volgende tekens bevatten: {0}</invalidcharacters>
+          <pathnotfound>Het pad "{0}" bestaat niet. Controleer of de virtuele PageFiles-padafhandeling correct is geconfigureerd of dat het pad modifiedImagesTargetVirtualPath is ingesteld in het configuratie-element van imageEditor.</pathnotfound>
+          <saveasheading>Afbeelding opslaan als</saveasheading>
+          <saveastitle>Opslaan als</saveastitle>
+        </saveas>
+        <saveoptions>
+          <savecopy>Afbeelding opslaan als kopie</savecopy>
+          <saveoriginal>Oorspronkelijke afbeelding vervangen</saveoriginal>
+        </saveoptions>
+        <transforminformation>
+          <flip>Omkeren</flip>
+          <fliphorizontal>Horizontaal omkeren</fliphorizontal>
+          <flipvertical>Verticaal omkeren</flipvertical>
+          <grayscale>Grijstinten</grayscale>
+          <help>Met het transformatiehulpprogramma kunt u de afbeelding omkeren en roteren en kunt u kleurgegevens verwijderen uit de afbeelding.</help>
+          <rotate>Roteren</rotate>
+          <rotateclockwise>Naar rechts draaien</rotateclockwise>
+          <rotatecounterclockwise>Naar links draaien</rotatecounterclockwise>
+          <transformation>Transformatie</transformation>
+        </transforminformation>
+      </imageeditor>
+      <languageselection>
+        <heading>Paginastructuur weergeven</heading>
+      </languageselection>
+      <languagesettings>
+        <addwarning>Weet u zeker dat u voor deze pagina uw eigen taalinstellingen wilt gebruiken in plaats van de instellingen van de bovenliggende pagina over te nemen?</addwarning>
+        <availablelanguagesdescriptionfirst>De pagina's in dit gedeelte van de site moeten beschikbaar zijn in de onderstaande talen. Dit betekent dat de pagina's alleen in deze talen kunnen worden gemaakt en naar deze talen kunnen worden vertaald.</availablelanguagesdescriptionfirst>
+        <availablelanguagesdescriptionsecond>Deze instelling is van invloed op de talen waartoe redacteuren toegang toe hebben voor dit gedeelte van de site.</availablelanguagesdescriptionsecond>
+        <availablelanguagestitle>Beschikbare talen</availablelanguagestitle>
+        <deletewarning>Weet u zeker dat u de taalinstellingen voor deze pagina wilt verwijderen en de instellingen wilt overnemen van de bovenliggende pagina?</deletewarning>
+        <description />
+        <fallbacklanguageheading>Terugvaltaal</fallbacklanguageheading>
+        <fallbacklanguagesdescriptionfirst>De pagina's in dit gedeelte van de site kunnen beschikbaar worden gesteld in een andere taal dan de taal die door de bezoeker is geselecteerd. Dit betekent dat pagina's nog niet zijn vertaald en gepubliceerd in de geselecteerde taal, maar wel tijdelijk worden weergegeven in een andere taal.</fallbacklanguagesdescriptionfirst>
+        <fallbacklanguagesdescriptionsecond>Denk eraan dat navigatie en lijsten in verschillende talen kunnen zijn weergegeven door deze instelling. Dit kan verwarrend zijn voor de bezoeker.</fallbacklanguagesdescriptionsecond>
+        <fallbacklanguagestitle>Terugvaltalen</fallbacklanguagestitle>
+        <heading>Taalinstellingen voor pagina '{0}'</heading>
+        <inheritsettings>Instellingen overnemen van de bovenliggende pagina: '{0}'</inheritsettings>
+        <replacementlanguageheading>Vervangende taal</replacementlanguageheading>
+        <replacementlanguagesdescriptionfirst>De pagina's in dit gedeelte van de site zouden, in de onderstaande gevallen, moeten worden weergegeven in een andere taal dan de taal die door de bezoeker is geselecteerd. Dit betekent dat de pagina's die niet beschikbaar zijn in deze talen, in andere talen weergegeven kunnen worden.</replacementlanguagesdescriptionfirst>
+        <replacementlanguagesdescriptionsecond>Deze instelling kan bijvoorbeeld worden gebruikt als algemene informatie in een specifieke taal beschikbaar moet zijn voor alle bezoekers, ongeacht welke taal deze hebben geselecteerd.</replacementlanguagesdescriptionsecond>
+        <replacementlanguagestitle>Vervangende talen</replacementlanguagestitle>
+        <visitorlanguageheading>Taal bezoeker</visitorlanguageheading>
+      </languagesettings>
+      <linkcollection>
+        <linkheading>Koppeling</linkheading>
+        <sortheading>Sorteren</sortheading>
+      </linkcollection>
+      <loginstatus>U bent aangemeld als:</loginstatus>
+      <logservice>
+        <realtimeanalyzer>
+          <noreferrer>Directe toegang tot pagina</noreferrer>
+          <referrercount>Aantal verwijzingen</referrercount>
+          <referrerurl>URL</referrerurl>
+        </realtimeanalyzer>
+        <timespananalyzer>
+          <dayinterval>Dag</dayinterval>
+          <hourinterval>Uur</hourinterval>
+          <min5interval>5 minuten</min5interval>
+          <monthinterval>Maand</monthinterval>
+          <nodatabase>De logservice is niet geconfigureerd met een database. De opgeslagen geschiedenis wordt niet weergegeven.</nodatabase>
+          <problemconnecting>Kan geen verbinding maken met de logservice.</problemconnecting>
+          <selectinterval>Tijdsspanne selecteren</selectinterval>
+          <statisticsdate>Datum</statisticsdate>
+          <statisticshits>Aantal treffers</statisticshits>
+          <total>Totaal</total>
+          <yearinterval>Jaar</yearinterval>
+        </timespananalyzer>
+      </logservice>
+      <newpage>
+        <heading>		Nieuwe pagina aanmaken</heading>
+        <info>			Selecteer het paginatype dat u wilt maken in de onderstaande lijst</info>
+        <nopagetype>	Geen paginatypen beschikbaar voor deze pagina</nopagetype>
+        <tooltipcancel>Aanmaken van nieuwe pagina annuleren</tooltipcancel>
+      </newpage>
+      <pageexplorer>
+        <tooltip>
+          Paginatype: [PageTypeName]&lt;br/&gt; 
+          Aangemaakt: [Created]&lt;br/&gt; 
+          Gewijzigd: [Changed]&lt;br/&gt; 
+          Pagina-ID: [PageLink]&lt;br/&gt; 
+          Sorteerindex: [PagePeerOrder]
+        </tooltip>
+      </pageexplorer>
+      <quicksearch>
+        <notfound>Kan geen overeenkomende ID of paginanaam vinden</notfound>
+      </quicksearch>
+      <sidbrowser>
+        <heading>Gebruikers/groepen toevoegen</heading>
+        <info />
+        <newsid>Toevoegen:</newsid>
+        <orgsid>Bestaande:</orgsid>
+        <role>Groepen</role>
+        <user>Gebruikers</user>
+      </sidbrowser>
+      <timespanview>
+        <displayname>Statistieken</displayname>
+      </timespanview>
+      <wastebasketpage>
+        <askemptywastebasket see="/edit/editcommand/askemptywastebasket" />
+        <emptiedmessage>De Prullenbak is leeggemaakt</emptiedmessage>
+        <emptywastebasket>Prullenbak leegmaken</emptywastebasket>
+        <heading>Prullenbak</heading>
+        <info />
+        <numdeletedpages>Aantal pagina's in Prullenbak</numdeletedpages>
+        <reftypearchive see="/edit/deletepage/reftypearchive" />
+        <reftypeproperty see="/edit/deletepage/reftypeproperty" />
+        <reftypeshortcut see="/edit/deletepage/reftypeshortcut" />
+      </wastebasketpage>
+      <workflowlog>
+        <changed>Gewijzigd</changed>
+        <changedby>Gewijzigd door</changedby>
+        <created>Aangemaakt</created>
+        <deleted>Verwijderd</deleted>
+        <heading>Overzicht van werkstroom</heading>
+        <owner>Eigenaar</owner>
+        <pagelink>Pagina</pagelink>
+        <status>Status</status>
+        <statuscomments>Opmerkingen</statuscomments>
+        <taskname>Naam</taskname>
+      </workflowlog>
+      <workspace>
+        <license>Licentieovereenkomst</license>
+        <mysettings>Mijn instellingen</mysettings>
+        <userinfo>Gebruikersinformatie</userinfo>
+        <welcome>Welkom bij EPiServer CMS</welcome>
+      </workspace>
+    </edit>
+    <editor>
+      <tools>
+        <cellproperties>
+          <axis>As:</axis>
+          <axiswindowtext>Selecteer een of meer bestaande assen of maak een nieuwe as door een naam te typen in het tekstvak.</axiswindowtext>
+          <axiswindowtitle>As selecteren</axiswindowtitle>
+          <backgroundcolor>Kleur:</backgroundcolor>
+          <backgroundheading>Achtergrond</backgroundheading>
+          <bordercolor>Kleur:</bordercolor>
+          <borderdark>Donkere rand:</borderdark>
+          <borderheading>Randen</borderheading>
+          <borderlight>Lichte rand:</borderlight>
+          <datacell>Gegevenscel</datacell>
+          <halignmentcenter>Centreren</halignmentcenter>
+          <halignmentheading>Horizontale uitlijning:</halignmentheading>
+          <halignmentleft>Links</halignmentleft>
+          <halignmentright>Rechts</halignmentright>
+          <headercell>Kopcel</headercell>
+          <headers>Koppen:</headers>
+          <headersheading>Koppen</headersheading>
+          <headerswindowtext>Selecteer hieronder een of meerdere beschikbare koppen (ID-waarden) of typ in het tekstvak een ID die u later wilt toevoegen.</headerswindowtext>
+          <headerswindowtitle>Koppen selecteren</headerswindowtitle>
+          <id>ID:</id>
+          <layoutheading>Indeling</layoutheading>
+          <multiplevalues>Meerdere</multiplevalues>
+          <percent>In procenten</percent>
+          <pixels>In pixels</pixels>
+          <scope>Bereik:</scope>
+          <scopecol>Kolom</scopecol>
+          <scoperow>Rij</scoperow>
+          <sizeheading>Grootte</sizeheading>
+          <specifyheight>Hoogte opgeven:</specifyheight>
+          <specifywidth>Breedte opgeven:</specifywidth>
+          <toolheading>Celeigenschappen</toolheading>
+          <type>Celtype:</type>
+          <usepicture>Achtergrondafbeelding gebruiken</usepicture>
+          <valignmentbaseline>Basislijn</valignmentbaseline>
+          <valignmentbottom>Onder</valignmentbottom>
+          <valignmentheading>Verticale uitlijning:</valignmentheading>
+          <valignmentmiddle>Midden</valignmentmiddle>
+          <valignmenttop>Boven</valignmenttop>
+        </cellproperties>
+        <common>
+          <cssclass>CSS-klasse:</cssclass>
+        </common>
+        <dynamiccontent>
+          <adapterdescriptionlabel>Beschrijving</adapterdescriptionlabel>
+          <adapterheading>Plug-in</adapterheading>
+          <adapterlistlabel>Plug-in selecteren</adapterlistlabel>
+          <adapterpreviewheading>Voorbeeld</adapterpreviewheading>
+          <adaptersettingheading>Instellingen</adaptersettingheading>
+          <adaptersettingserror>Het gebruikersbesturingselement "{0}" kan niet worden geladen.</adaptersettingserror>
+          <noplugins>Er zijn geen plug-ins voor dynamische inhoud geconfigureerd voor deze website.</noplugins>
+          <toolheading>Dynamische inhoud</toolheading>
+        </dynamiccontent>
+        <font>
+          <colorheading>Kleur:</colorheading>
+          <effectheading>Effecten:</effectheading>
+          <fontheading>Lettertype:</fontheading>
+          <samlpeheading>Voorbeeld</samlpeheading>
+          <sizeheading>Grootte:</sizeheading>
+          <stylebold>			Vet</stylebold>
+          <stylebolditalic>	Vet en cursief</stylebolditalic>
+          <styleheading>Stijl:</styleheading>
+          <styleitalic>		Cursief</styleitalic>
+          <styleregular>		Regulier</styleregular>
+          <toolheading>Lettertype</toolheading>
+          <underline>Onderstrepen</underline>
+        </font>
+        <hyperlinkproperties>
+          <address see="/util/linkeditor/urlfieldcaption" />
+          <anchor>Bladwijzer:</anchor>
+          <anchorlink>Bladwijzer op deze pagina</anchorlink>
+          <automatically>Automatisch</automatically>
+          <clickableimage>Aanklikbare afbeelding:</clickableimage>
+          <clickabletext>Aanklikbare tekst:</clickabletext>
+          <documentaccessdeniedmessage>U hebt geen toegang tot het document waarnaar deze koppeling verwees.</documentaccessdeniedmessage>
+          <documentnotfoundmessage>Het document waarnaar deze koppeling verwees, bestaat niet meer of is verplaatst.</documentnotfoundmessage>
+          <editimageproperties>Afbeeldingseigenschappen bewerken</editimageproperties>
+          <emailaddress see="/util/linkeditor/mailfieldcaption" />
+          <externaldocumentlink>Document op een andere website</externaldocumentlink>
+          <externallink>Paginanaam op een andere website</externallink>
+          <informationheading see="/editor/tools/imageeditor/informationheading" />
+          <internaldocumentlink>Document op deze website</internaldocumentlink>
+          <internallink>Pagina op deze website</internallink>
+          <language>Taal:</language>
+          <linktargetheading>Doel koppeling</linktargetheading>
+          <linktitle see="/util/linkeditor/linktitlefieldcaption" />
+          <networkdocumentlink>Document op het netwerk</networkdocumentlink>
+          <noimageinfovalidationmessage>U hebt geselecteerd dat de koppeling een aanklikbare afbeelding moet zijn.</noimageinfovalidationmessage>
+          <nourlvalidationmessage>Geef een koppelingsdoel op voordat u opslaat.</nourlvalidationmessage>
+          <page>Pagina:</page>
+          <pageaccessdeniedmessage>U hebt geen toegang tot de pagina waarnaar deze koppeling verwees.</pageaccessdeniedmessage>
+          <pagenotfoundmessage>De pagina waarnaar deze koppeling verwees, bestaat niet meer.</pagenotfoundmessage>
+          <path>Pad:</path>
+          <selectnewdocumentmessage>Selecteer een nieuw document voordat u opslaat, of wijzig dit in een ander type koppeling.</selectnewdocumentmessage>
+          <selectnewpagemessage>Selecteer een nieuwe pagina voordat u opslaat, of wijzig deze in een ander type koppeling.</selectnewpagemessage>
+          <specifyimagemessage>Geef een afbeelding op voordat u opslaat of wijzig de selectie in aanklikbare tekst.</specifyimagemessage>
+          <tabs>
+            <document>Document</document>
+            <email>E-mail</email>
+            <webpage>Webpagina</webpage>
+          </tabs>
+          <targetframe see="/util/linkeditor/targetfieldcaption" />
+          <toolheading>Eigenschappen koppeling</toolheading>
+        </hyperlinkproperties>
+        <imageeditor>
+          <alignment>Uitlijning:</alignment>
+          <alignmentbottom>Onder</alignmentbottom>
+          <alignmentleft>Links</alignmentleft>
+          <alignmentmiddle>Midden</alignmentmiddle>
+          <alignmentright>Rechts</alignmentright>
+          <alignmenttop>Boven</alignmenttop>
+          <alttext>Alternatieve tekst:</alttext>
+          <borderwidth>Randbreedte:</borderwidth>
+          <edithyperlinkproperties>Koppelingseigenschappen bewerken</edithyperlinkproperties>
+          <filename>Bestandsnaam:</filename>
+          <filesize>Bestandsgrootte:</filesize>
+          <hspace>Horizontale afstand:</hspace>
+          <hyperlinkaddress>Koppeling naar:</hyperlinkaddress>
+          <hyperlinkheading>Hyperlink</hyperlinkheading>
+          <imagefile>Afbeeldingsbestand:</imagefile>
+          <informationheading>Informatie</informationheading>
+          <invalidlink>Ongeldige koppeling</invalidlink>
+          <layoutheading>Indeling en randen</layoutheading>
+          <lockproportions>Hoogte-breedteverhouding vergrendelen</lockproportions>
+          <noimagevalidationmessage>Geef een afbeelding op voordat u opslaat.</noimagevalidationmessage>
+          <nolinkinfovalidationmessage>U hebt aangegeven dat de afbeelding moet worden verbonden met een koppeling.</nolinkinfovalidationmessage>
+          <percent>In procenten</percent>
+          <pixels>In pixels</pixels>
+          <sizeheading>Weergavegrootte</sizeheading>
+          <specifyheight>Hoogte opgeven:</specifyheight>
+          <specifylinkinfomessage>Geef koppelingsgegevens op voordat u opslaat of verwijder de indicatie.</specifylinkinfomessage>
+          <specifywidth>Breedte opgeven:</specifywidth>
+          <toolheading>Eigenschappen afbeelding</toolheading>
+          <unitbytes>bytes</unitbytes>
+          <uselink>Koppeling met de afbeelding verbinden</uselink>
+          <vspace>Verticale afstand:</vspace>
+        </imageeditor>
+        <insertanchor>
+          <anchorname>Naam bladwijzer:</anchorname>
+          <toolheading>Bladwijzer invoegen</toolheading>
+        </insertanchor>
+        <inserttable>
+          <border>Rand</border>
+          <columns>Kolommen</columns>
+          <rows>Rijen</rows>
+          <toolheading>Tabel invoegen</toolheading>
+          <width>Breedte</width>
+        </inserttable>
+        <quote>
+          <blockquote>Blokcitaat</blockquote>
+          <citeheading>Verwijzingsinformatie voor het citaat</citeheading>
+          <informationheading>Informatie</informationheading>
+          <inlinequote>Citaat</inlinequote>
+          <quotetypeheading>Type citaat</quotetypeheading>
+          <quotetypenotavailable>Dit citaattype is niet toegestaan voor de huidige selectie.</quotetypenotavailable>
+          <quotetypenotchangeable>Kan het cittaattype niet wijzigen.</quotetypenotchangeable>
+          <removequote>Citaat verwijderen</removequote>
+          <titleheading>Titel</titleheading>
+          <toolheading>Citaat invoegen</toolheading>
+        </quote>
+        <search>
+          <findheading>Zoeken:</findheading>
+          <finisheddocument>	Klaar met het doorzoeken van het document.</finisheddocument>
+          <matchcase>Identieke hoofdletters/kleine letters</matchcase>
+          <matchwhole>Alleen heel woord</matchwhole>
+          <reachedend>		Einde van het document bereikt. Wilt u doorgaan vanaf het begin?</reachedend>
+          <toolheading>Zoeken</toolheading>
+        </search>
+        <selectvalue>
+          <newvalue>Nieuwe waarde:</newvalue>
+        </selectvalue>
+        <spellcheck>
+          <cannotspellcheck>	Kan geen spellingscontrole uitvoeren op de huidige selectie.</cannotspellcheck>
+          <errorspellchecktext>Fout bij het aanroepen van SpellcheckText in: </errorspellchecktext>
+          <finisheddocument>	Klaar met de spellingscontrole voor het document.</finisheddocument>
+          <finishedselection>	Klaar met de spellingscontrole voor de selectie.</finishedselection>
+          <initializing>		(Initialisatie spellingscontrole. Even geduld a.u.b.)</initializing>
+          <missingdictionary>Microsoft Office heeft geen woordenboek geïnstalleerd voor</missingdictionary>
+          <nosuggestions>		(geen spellingsuggesties)</nosuggestions>
+          <notindictionary>Niet in woordenboek:</notindictionary>
+          <officenotinstalled>Microsoft Office is niet geïnstalleerd op deze computer.</officenotinstalled>
+          <suggestions>Suggesties:</suggestions>
+          <textnotfound>		is niet gevonden in de tekst.</textnotfound>
+          <toolheading>Spelling</toolheading>
+        </spellcheck>
+        <tableproperties>
+          <alignmentcenter>Centreren</alignmentcenter>
+          <alignmentheading>Uitlijning:</alignmentheading>
+          <alignmentleft>Links</alignmentleft>
+          <alignmentright>Rechts</alignmentright>
+          <backgroundcolor>Kleur:</backgroundcolor>
+          <backgroundheading>Achtergrond</backgroundheading>
+          <bordercolor>Kleur:</bordercolor>
+          <borderdark>Donkere rand:</borderdark>
+          <borderheading>Randen</borderheading>
+          <borderlight>Lichte rand:</borderlight>
+          <bordersize>Grootte:</bordersize>
+          <caption>Opschrift:</caption>
+          <cellpadding>Celopvulling:</cellpadding>
+          <cellspacing>Celafstand:</cellspacing>
+          <descriptionheading>Beschrijving</descriptionheading>
+          <layoutheading>Indeling</layoutheading>
+          <percent>In procenten</percent>
+          <pixels>In pixels</pixels>
+          <sizeheading>Grootte</sizeheading>
+          <specifyheight>Hoogte opgeven:</specifyheight>
+          <specifywidth>Breedte opgeven:</specifywidth>
+          <summary>Samenvatting:</summary>
+          <toolheading>Tabeleigenschappen</toolheading>
+          <usepicture>Achtergrondafbeelding gebruiken</usepicture>
+        </tableproperties>
+      </tools>
+    </editor>
+    <episerver.webparts>
+      <webcontrols>
+        <catalogzone>
+          <emptyzonetext>Cataloguszone bevat geen catalogusonderdelen.</emptyzonetext>
+          <headertext>Cataloguszone</headertext>
+          <instructiontext>Selecteer de catalogus waarin u wilt bladeren.</instructiontext>
+          <selecttargetzonetext>Toevoegen aan:</selecttargetzonetext>
+        </catalogzone>
+        <connectionszone>
+          <configureconnectiontitle>Verbinding configureren</configureconnectiontitle>
+          <connecttoconsumerinstructiontext>Verbindingen maken met gebruikers voor dit webonderdeel</connecttoconsumerinstructiontext>
+          <connecttoconsumertext>Verbinding maken met een gebruiker </connecttoconsumertext>
+          <connecttoconsumertitle>Gegevens verzenden naar webonderdeel</connecttoconsumertitle>
+          <connecttoproviderinstructiontext>Verbindingen maken met providers voor dit webonderdeel</connecttoproviderinstructiontext>
+          <connecttoprovidertext>Verbinding maken met een provider</connecttoprovidertext>
+          <connecttoprovidertitle>Gegevens ophalen van webonderdeel</connecttoprovidertitle>
+          <consumersinstructiontext>Webonderdelen waarnaar het huidige webonderdeel informatie verzendt:</consumersinstructiontext>
+          <consumertitle>Gebruikers</consumertitle>
+          <existingconnectionerrormessage />
+          <getfromtext>Van:</getfromtext>
+          <gettext>Ophalen:</gettext>
+          <headertext>Verbindingenzone</headertext>
+          <instructiontext>De verbindingen beheren voor het huidige webonderdeel</instructiontext>
+          <instructiontitle>De verbindingen beheren voor {0}</instructiontitle>
+          <newconnectionerrormessage />
+          <noexistingcinnectiontitle>Geen actieve verbindingen</noexistingcinnectiontitle>
+          <noexistingconnectioninstructiontext>Er zijn geen actieve verbindingen beschikbaar in uw webonderdeel. U kunt een nieuwe verbinding maken door de bovenstaande koppelingen te selecteren als er compatibele webonderdelen op de pagina staan.</noexistingconnectioninstructiontext>
+          <providersinstructiontext>Webonderdelen van waaruit het huidige webonderdeel informatie krijgt:</providersinstructiontext>
+          <providerstitle>Providers</providerstitle>
+          <sendtext>Verzenden:</sendtext>
+          <sendtotext>Naar:</sendtotext>
+        </connectionszone>
+        <displaymodedropdown>
+          <browse>Bladeren</browse>
+          <catalog>Catalogus</catalog>
+          <connect>Verbinden</connect>
+          <design>Ontwerpen</design>
+          <edit>Bewerken</edit>
+        </displaymodedropdown>
+        <editorzone>
+          <emptyzonetext>Editorzone bevat geen Editor-onderdelen.</emptyzonetext>
+          <errortext>Er is een fout opgetreden bij het toepassen van een of meer Editor-onderdelen.</errortext>
+          <headertext>Editorzone</headertext>
+          <instructiontext>Wijzig de eigenschappen van het webonderdeel en klik op OK of Toepassen om de wijzigingen toe te passen.</instructiontext>
+        </editorzone>
+        <extendedwebpartzone>
+          <emptyzonetext>Voeg een webonderdeel toe aan deze zone door er een RSS-feed naartoe te slepen of deze in een map te selecteren.</emptyzonetext>
+        </extendedwebpartzone>
+        <scopedropdown>
+          <all>Wijzigingen worden gedeeld</all>
+          <user>Wijzigingen zijn privé</user>
+        </scopedropdown>
+        <wsrp>
+          <portletcatalogpart>
+            <producer>Producer</producer>
+          </portletcatalogpart>
+        </wsrp>
+      </webcontrols>
+      <verbs>
+        <add>Toevoegen</add>
+        <apply>Toepassen</apply>
+        <cancel>Annuleren</cancel>
+        <close>Sluiten</close>
+        <configure>Configureren</configure>
+        <connect>Verbinden</connect>
+        <delete>Verwijderen</delete>
+        <disconnect>Verbinding verbreken</disconnect>
+        <edit>Bewerken</edit>
+        <editwsrp>Portlet bewerken</editwsrp>
+        <export>Exporteren</export>
+        <help>Help</help>
+        <maximize>Maximaliseren</maximize>
+        <minimize>Minimaliseren</minimize>
+        <ok>OK</ok>
+        <restore>Herstellen</restore>
+        <solo>Solo</solo>
+        <view>Weergeven</view>
+      </verbs>
+    </episerver.webparts>
+    <exceptionmanager>
+      <errorform>
+        <description>Als u iets hebt gevonden dat niet werkt, laat het ons dan weten zodat wij de oorzaak van de fout kunnen corrigeren (vergeet niet om te vermelden hoe het probleem precies is ontstaan).</description>
+        <messagesentdescription>Het bericht is nu verzonden. Wij zullen uw foutbeschrijving onderzoeken en actie ondernemen om het probleem te verhelpen.</messagesentdescription>
+        <messagesenttitle>Bericht verzonden</messagesenttitle>
+        <sendbutton>Bericht verzenden</sendbutton>
+      </errorform>
+      <exceptions>
+        <exception type="EPiServer.Core.AccessDeniedException">
+          <description>U bent niet bevoegd om deze pagina weer te geven.</description>
+          <title>Toegang geweigerd</title>
+        </exception>
+        <exception type="EPiServer.Core.PageNotFoundException">
+          <description>De opgegeven koppeling werkt niet, omdat de pagina waarnaar deze verwijst, is verwijderd of verplaatst. Als u op een koppeling hebt geklikt, geef dan a.u.b. aan de webmaster van de site door dat de koppeling niet werkt.</description>
+          <title>Pagina bestaat niet</title>
+        </exception>
+      </exceptions>
+      <httperrors>
+        <status code="404">
+          <description>De opgegeven koppeling werkt niet, omdat de pagina waarnaar deze verwijst, is verwijderd of verplaatst. Als u op een koppeling hebt geklikt, geef dan a.u.b. aan de webmaster van de site door dat de koppeling niet werkt.</description>
+          <title>Onjuiste koppeling</title>
+        </status>
+        <status code="500">
+          <description>De opgegeven koppeling werkt niet. Dit kan het gevolg zijn van tijdelijk onderhoud of het kan een onjuiste koppeling zijn.</description>
+          <title>Kan de pagina niet laden</title>
+        </status>
+      </httperrors>
+    </exceptionmanager>
+    <february>Februari</february>
+    <filemanager>
+      <addversion>
+        <title>Nieuwe versie aanmaken</title>
+      </addversion>
+      <browse>
+        <checkedoutby>Uitgecheckt door</checkedoutby>
+        <created>Aangemaakt</created>
+        <emptyfolder>Deze map is leeg</emptyfolder>
+        <goback>Terug</goback>
+        <modified>Aangepast</modified>
+        <name>Naam</name>
+        <size>Grootte</size>
+        <thumbnail>Miniatuur</thumbnail>
+      </browse>
+      <checkinselection>
+        <comments>Opmerkingen</comments>
+        <currentfile see="/filemanager/search/filename" />
+        <filenotcheckedout>Het bestand is niet uitgecheckt</filenotcheckedout>
+        <filexofy>bestand {0} van {1}</filexofy>
+        <selectversion>Nieuwe versie selecteren</selectversion>
+        <title>Bestand inchecken</title>
+      </checkinselection>
+      <createdirectory>
+        <alreadyexists>Map bestaat al</alreadyexists>
+        <name>Mapnaam</name>
+        <title>Map aanmaken</title>
+      </createdirectory>
+      <deleteselection>
+        <confirmdirectorydelete>Weet u zeker dat u deze map wilt verwijderen?</confirmdirectorydelete>
+        <confirmfiledelete>Weet u zeker dat u dit bestand wilt verwijderen?</confirmfiledelete>
+        <confirmmultidelete>{0} objecten geselecteerd. Weet u zeker dat u deze wilt verwijderen?</confirmmultidelete>
+        <objectnotfound>Kan het object niet vinden dat u probeert te verwijderen. Mogelijk is het door iemand anders verwijderd.</objectnotfound>
+        <title>{0} verwijderen</title>
+        <warningmultinotempty>Waarschuwing! Niet alle geselecteerde mappen zijn leeg.</warningmultinotempty>
+        <warningnotempty>Waarschuwing! Map is niet leeg.</warningnotempty>
+      </deleteselection>
+      <dhtmlsupport>
+        <addfavorite>Favoriet toevoegen</addfavorite>
+        <addversion>Nieuwe versie aanmaken</addversion>
+        <checkinselection>Inchecken</checkinselection>
+        <checkoutselection>Uitchecken</checkoutselection>
+        <copyselection>Kopie</copyselection>
+        <createdirectory>Map aanmaken</createdirectory>
+        <cutselection>Knippen</cutselection>
+        <deleteselection>Verwijderen</deleteselection>
+        <directorysecurity>Toegangsrechten bewerken</directorysecurity>
+        <editimage>Bewerken</editimage>
+        <editinoffice>Bewerken in Office</editinoffice>
+        <editsummary>Bestandssamenvatting bewerken</editsummary>
+        <notanimage>Het geselecteerde bestand is geen afbeelding.</notanimage>
+        <openfile>Bestand openen</openfile>
+        <pasteselection>Plakken</pasteselection>
+        <removefavorite>Favoriet verwijderen</removefavorite>
+        <renamedirectory>Mapnaam wijzigen</renamedirectory>
+        <renamefile>Bestandsnaam wijzigen</renamefile>
+        <renameselection see="/filemanager/directorytools/rename" />
+        <undocheckoutselection>Uitchecken annuleren</undocheckoutselection>
+        <uploadfile see="/filemanager/directorytools/addfile" />
+        <uploadmultiplefiles>Meerdere bestanden toevoegen</uploadmultiplefiles>
+        <versionlist>Versiegeschiedenis</versionlist>
+        <viewfile>Bestandssamenvatting weergeven</viewfile>
+      </dhtmlsupport>
+      <directorysecurity>
+        <inheritsecurity>Machtigingen overnemen van de bovenliggende map</inheritsecurity>
+        <title>Toegangsrechten wijzigen voor {0}</title>
+      </directorysecurity>
+      <directorytools>
+        <addfile>Bestand toevoegen</addfile>
+        <addfiletooltip>Nieuw bestand toevoegen</addfiletooltip>
+        <create>Map aanmaken</create>
+        <createtooltip>Een nieuwe map aanmaken</createtooltip>
+        <delete>Verwijderen</delete>
+        <deletetooltip>Geselecteerd bestand of map verwijderen</deletetooltip>
+        <gouptooltip>Omhoog</gouptooltip>
+        <rename>Naam wijzigen</rename>
+        <renametooltip>Naam geselecteerd bestand of map wijzigen</renametooltip>
+        <search>Zoeken</search>
+        <searchtooltip>Zoeken naar bestanden</searchtooltip>
+        <security>Toegangsrechten</security>
+        <securitytooltip>Toegangsrechten wijzigen</securitytooltip>
+        <viewthumbnails>Miniaturen weergeven</viewthumbnails>
+        <viewthumbnailstooltip>Alle afbeeldingen als miniaturen weergeven</viewthumbnailstooltip>
+      </directorytools>
+      <editfilesummary>
+        <inputauthor>Auteur</inputauthor>
+        <inputcategory>Categorie</inputcategory>
+        <inputcomments>Opmerkingen</inputcomments>
+        <inputdescription>Beschrijving</inputdescription>
+        <inputdocumenttype>Documenttype</inputdocumenttype>
+        <inputkeywords>Trefwoorden</inputkeywords>
+        <inputpublisher>Uitgever</inputpublisher>
+        <inputsubject>Beschrijving</inputsubject>
+        <inputtitle>Titel</inputtitle>
+        <title>Bestandssamenvatting bewerken voor {0}</title>
+      </editfilesummary>
+      <filereferencelist>
+        <gotopage>Ga naar pagina</gotopage>
+        <noreferences>Geen verwijzingen</noreferences>
+        <referencewarning>Als u doorgaat, worden de volgende koppelingen verbroken</referencewarning>
+        <xlinkstoy>{0} koppelingen naar {1}</xlinkstoy>
+      </filereferencelist>
+      <filetools>
+        <delete>Verwijderen</delete>
+        <deletetooltip>Huidige bestand verwijderen</deletetooltip>
+        <editfilesummary>Bestandssamenvatting bewerken</editfilesummary>
+        <editfilesummarytooltip>Bestandssamenvatting bewerken voor het huidige bestand</editfilesummarytooltip>
+        <open>Openen</open>
+        <opentooltip>Huidige bestand openen</opentooltip>
+        <rename>Naam wijzigen</rename>
+        <renametooltip>Naam huidige bestand wijzigen</renametooltip>
+        <replacefile>Bestand vervangen</replacefile>
+        <replacefiletooltip>Huidige bestand vervangen door een nieuw bestand</replacefiletooltip>
+      </filetools>
+      <illegalname>De tekens '{0}' zijn niet toegestaan in bestands- of mapnamen.</illegalname>
+      <invalidcharacters>Ongeldige tekens in naam</invalidcharacters>
+      <invalidfiledirectoryname>Het is niet mogelijk systeemapparaatnamen te gebruiken als bestands- of mapnaam.</invalidfiledirectoryname>
+      <licenseerror>Door een licentiefout voor de geselecteerde provider van het virtuale pad wordt het pad niet correct weergegeven.</licenseerror>
+      <newpage>Nieuwe pagina</newpage>
+      <nofileselected>Er is geen bestand geselecteerd</nofileselected>
+      <notsavedpage>Niet-opgeslagen pagina</notsavedpage>
+      <novppconfigured>Er zijn geen geregistreerde providers van virtuele paden toegankelijk</novppconfigured>
+      <pagefoldernotcreated>Er is geen map voor deze pagina gemaakt. Wilt u er nu een maken?</pagefoldernotcreated>
+      <pagefoldernotcreatednoaccess>Er is geen map voor deze pagina gemaakt.</pagefoldernotcreatednoaccess>
+      <pasteselection>
+        <alreadyexists>De bewerking is geannuleerd. Sommige objecten staan al in de huidige map.</alreadyexists>
+        <cannotcopyinsideitselfmessage>De bewerking is geannuleerd omdat de kopie van de volgende map niet naar zichzelf kan worden geplakt.</cannotcopyinsideitselfmessage>
+        <cannotmoveinsideitselfmessage>De bewerking is geannuleerd omdat de geknipte map niet naar zichzelf kan worden verplaatst.</cannotmoveinsideitselfmessage>
+        <confirmcopy>{0} objecten geselecteerd. Wilt u deze kopiëren naar de huidige map?</confirmcopy>
+        <confirmmove>{0} objecten geselecteerd. Wilt u deze verplaatsen naar de huidige map?</confirmmove>
+        <title>'{0}' plakken</title>
+      </pasteselection>
+      <path>Pad</path>
+      <renamedirectory>
+        <directorynotfound>Kan de map niet vinden. Mogelijk is deze door iemand anders verwijderd.</directorynotfound>
+        <newname>Nieuwe mapnaam selecteren</newname>
+        <title>Naam '{0}' wijzigen</title>
+      </renamedirectory>
+      <renamefile>
+        <alreadyexists>Er is al een bestand met deze naam.</alreadyexists>
+        <filenotfound>Kan het bestand niet vinden. Mogelijk is dit door iemand anders verwijderd.</filenotfound>
+        <newname>Nieuwe bestandsnaam selecteren</newname>
+        <title>Naam '{0}' wijzigen</title>
+      </renamefile>
+      <search>
+        <advancedoptions>Geavanceerde opties</advancedoptions>
+        <allpagefolders>Paginamappen</allpagefolders>
+        <currentdirectory>Huidige map</currentdirectory>
+        <filedirectory>Map</filedirectory>
+        <filename>Bestandsnaam</filename>
+        <filenamepattern>Bestandsnaam</filenamepattern>
+        <gotodirectory>Ga naar map</gotodirectory>
+        <locations>Mappen</locations>
+        <modifiedfrom>Aangepast na</modifiedfrom>
+        <modifiedto>Aangepast vóór</modifiedto>
+        <numberofhits>Aantal treffers</numberofhits>
+        <query>Zoeken naar tekst</query>
+        <searchlimited>Het resultaat is beperkt tot de bovenste {0} overeenkomsten</searchlimited>
+        <viewfileinfo see="/filemanager/dhtmlsupport/viewfile" />
+      </search>
+      <unauthorizedpagefoldercreation>U bent niet bevoegd om bestandsmappen te maken voor deze pagina.</unauthorizedpagefoldercreation>
+      <uploadfile>
+        <confirmreplacefile>Er is al een bestand met deze naam. Wilt u dit bestand vervangen?</confirmreplacefile>
+        <selectfile>Toe te voegen bestand selecteren</selectfile>
+        <title>Bestand toevoegen</title>
+      </uploadfile>
+      <versionlist>
+        <comments>Opmerkingen</comments>
+        <created see="/filemanager/browse/created" />
+        <createdby>Aangemaakt door</createdby>
+        <size see="/filemanager/browse/size" />
+        <title>Versiegeschiedenis: {0}</title>
+        <version>Versie</version>
+      </versionlist>
+      <versionlisttoolbar>
+        <addversion>Versie aanmaken</addversion>
+        <addversiontooltip>Een nieuwe versie aanmaken</addversiontooltip>
+        <confirmdelete>Weet u zeker dat u deze versie wilt verwijderen?</confirmdelete>
+        <copyshortcut>Snelkoppeling naar klembord kopiëren</copyshortcut>
+        <delete>Verwijderen</delete>
+        <deletetooltip>Versie verwijderen</deletetooltip>
+        <download>Downloaden</download>
+        <downloadtooltip>Versie downloaden</downloadtooltip>
+        <restore>Versie herstellen</restore>
+        <restoretooltip>Naar deze versie herstellen</restoretooltip>
+      </versionlisttoolbar>
+      <viewfile>
+        <backtofolder>Terug naar map</backtofolder>
+        <linkingpages>Gekoppelde pagina's</linkingpages>
+      </viewfile>
+      <virtualpath>Virtueel pad</virtualpath>
+    </filemanager>
+    <filemanagernavigator>
+      <currentpage see="/util/linkeditor/pageuploaddir" />
+      <favoritesinfo>Voeg mapfavorieten toe met behulp van het rechtsklikmenu voor de mappen in de lijst aan de rechterkant</favoritesinfo>
+      <folders>Mappen</folders>
+      <hide>Verbergen</hide>
+      <myfavorites>Mijn favorieten</myfavorites>
+      <show>Weergeven</show>
+      <startingpoints>Startpunten</startingpoints>
+      <uploaddir see="/util/linkeditor/uploaddir" />
+      <virtualpathroots>
+        <virtualpathroot name="Page Files">
+          <name>Paginabestanden</name>
+        </virtualpathroot>
+      </virtualpathroots>
+    </filemanagernavigator>
+    <frames>
+      <frame name="_blank">
+        <description>De koppeling in een nieuw venster openen</description>
+      </frame>
+      <frame name="_top">
+        <description>De koppeling in het hele venster openen</description>
+      </frame>
+    </frames>
+    <friday>Vrijdag</friday>
+    <headings>
+      <heading name="Advanced">
+        <description>Geavanceerde informatie</description>
+      </heading>
+      <heading name="Advanced_short">
+        <description>Geavanceerd</description>
+      </heading>
+      <heading name="Categories">
+        <description>Categorieën</description>
+      </heading>
+      <heading name="General">
+        <description>Algemeen</description>
+      </heading>
+      <heading name="Information">
+        <description>Informatie</description>
+      </heading>
+      <heading name="Shortcut">
+        <description>Snelkoppeling/externe koppeling</description>
+      </heading>
+      <heading name="Subscription">
+        <description>Abonnement</description>
+      </heading>
+    </headings>
+    <hour>uur</hour>
+    <january>Januari</january>
+    <javascript>
+      <system>
+        <popupsblocked>De pop-ups voor deze site zijn geblokkeerd. Sta pop-ups toe om deze functie te gebruiken.</popupsblocked>
+      </system>
+    </javascript>
+    <july>Juli</july>
+    <june>Juni</june>
+    <labels>
+      <description>			Beschrijving</description>
+    </labels>
+    <login>
+      <loginfailed>			Aanmelden mislukt</loginfailed>
+      <missingpassword>		Geef een wachtwoord op.</missingpassword>
+      <password>				Wachtwoord</password>
+      <persistentlogin>		Automatisch aanmelden bij deze website inschakelen</persistentlogin>
+      <username>				Naam</username>
+      <usernamerequired>		Geef een naam op.</usernamerequired>
+    </login>
+    <march>Maart</march>
+    <may>Mei</may>
+    <minute>minuut</minute>
+    <monday>Maandag</monday>
+    <month>maand</month>
+    <november>November</november>
+    <october>Oktober</october>
+    <pagetypes>
+      <common>
+        <property name="PageArchiveLink">
+          <caption>	Archiveren naar pagina</caption>
+          <help>		Deze pagina kan worden gearchiveerd naar een speciale locatie als de 'Einddatum publicatie' is bereikt. Geef de pagina op die als archief wordt gebruikt.</help>
+        </property>
+        <property name="PageCategory">
+          <caption>	Categorie</caption>
+          <help>		Kies de gewenste categorieën voor uw pagina. </help>
+        </property>
+        <property name="PageChanged">
+          <caption>	Gewijzigd</caption>
+          <help>		Datum waarop de pagina als gewijzigd is gemarkeerd.</help>
+        </property>
+        <property name="PageChangedOnPublish">
+          <caption>	Pagina als gewijzigd markeren</caption>
+          <help>		De datum waarop de pagina is gewijzigd, wordt bijgewerkt als u dit selectievakje inschakelt. Dit is bijvoorbeeld nodig om de pagina te kunnen opnemen in abonnementen.</help>
+        </property>
+        <property name="PageChildOrderRule">
+          <caption>	Sorteervolgorde</caption>
+          <help>		Hiermee definieert u de volgorde waarin onderliggende pagina's worden weergegeven.</help>
+        </property>
+        <property name="PageCreated">
+          <caption>	Aangemaakt</caption>
+          <help>		Datum waarop de pagina is gemaakt.</help>
+        </property>
+        <property name="PageDelayedPublish">
+          <caption>	Toekomstige publicatie</caption>
+          <help>		Schakel dit selectievakje in als u deze versie automatisch wilt publiceren op de 'Begindatum publicatie'.</help>
+        </property>
+        <property name="PageExternalURL">
+          <caption>	Eenvoudig adres voor deze pagina</caption>
+          <help>		Geef het pad op vanaf de hoofdpagina van de website, bijvoorbeeld '/producten'. Deze pagina kunt u toegankelijk maken via een eenvoudig adres zonder '?' of andere symbolen. De bezoeker typt 'www.foretaget.se/products', waarna de pagina wordt verschijnt. </help>
+        </property>
+        <property name="PageFrameID">
+          <caption>	Doelframe</caption>
+          <help>		Hiermee bepaalt u hoe een koppeling wordt geopend (doel in &lt;a href&gt;).</help>
+        </property>
+        <property name="PageLanguageID">
+          <caption>Taalcodering</caption>
+          <help>Stel de taalcodering voor de pagina in, als deze verschilt van de standaardcodering.</help>
+        </property>
+        <property name="PageLink">
+          <caption>	Paginakoppeling</caption>
+          <help>		Koppeling naar pagina</help>
+        </property>
+        <property name="PageLinkURL">
+          <caption>Externe koppeling</caption>
+          <help>Deze pagina wordt geopend met de inhoud van de externe pagina of het document waarnaar de koppeling verwijst.</help>
+        </property>
+        <property name="PageName">
+          <caption>Naam</caption>
+          <help>Naam van de pagina die bijvoorbeeld als kop in de menu's wordt gebruikt.</help>
+        </property>
+        <property name="PagePeerOrder">
+          <caption>	Sorteerindex</caption>
+          <help>		Geef een integer op voor het indexnummer van deze pagina. Als u 'Volgens sorteerindex' selecteert voor de bovenliggende pagina, wordt de pagina met de laagste index bovenaan weergegeven.</help>
+        </property>
+        <property name="PageShortcutLink">
+          <caption>	Interne snelkoppeling/gegevens ophalen van</caption>
+          <help>		Op de pagina wordt de inhoud van een andere pagina geopend en de bezoeker wordt omgeleid naar de desbetreffende pagina in de structuur. / Op deze pagina wordt de inhoud van een andere pagina geopend, maar de bezoeker blijft op de huidige locatie in de structuur.</help>
+        </property>
+        <property name="PageShortcutType">
+          <caption>Koppelingstype</caption>
+          <help>		Kies welk type koppeling u wilt maken.</help>
+        </property>
+        <property name="PageStartPublish">
+          <caption>	Publicatie starten</caption>
+          <help>		Publiceer de pagina vanaf deze datum. Als u dit veld leeg laat, wordt de pagina gepubliceerd zodra u op Publiceren klikt.</help>
+        </property>
+        <property name="PageStopPublish">
+          <caption>	Publicatie stoppen</caption>
+          <help>		Publiceer de pagina tot deze datum. Als u dit veld leeg laat, moet u de pagina handmatig verwijderen om de publicatie te stoppen.</help>
+        </property>
+        <property name="PageTargetFrame">
+          <caption>Doelframe</caption>
+          <help>Hiermee bepaalt u hoe een koppeling wordt geopend (doel in &lt;a href&gt;).</help>
+        </property>
+        <property name="PageTypeName">
+          <caption>	Paginatype</caption>
+          <help>		Naam paginatype</help>
+        </property>
+        <property name="PageURLSegment">
+          <caption>	Paginanaam in webadres</caption>
+          <help>		Ken een korte naam toe aan de pagina die in het webadres wordt gebruikt</help>
+        </property>
+        <property name="PageVisibleInMenu">
+          <caption>	Pagina in menu's weergeven</caption>
+          <help>		Schakel dit selectievakje in als u de pagina in de menu's wilt weergegeven. Als u dit selectievakje niet inschakelt, wordt de pagina alleen in lijsten weergegeven.</help>
+        </property>
+        <property name="SubscriptionMailBody">
+          <caption>Inleidende tekst in het abonnementsbericht</caption>
+          <help>Voer de tekst in die moet worden gebruikt als berichttekst boven de lijst met gewijzigde pagina's die wordt verzonden in het abonnementsbericht.</help>
+        </property>
+        <property name="SubscriptionMailFrom">
+          <caption>Adres afzender van abonnementsbericht</caption>
+          <help>E-mailadres dat wordt gebruikt als afzender van het abonnementsbericht.</help>
+        </property>
+        <property name="SubscriptionMailReadMore">
+          <caption>Koppelingstekst in het abonnementsbericht</caption>
+          <help>Deze tekst zal in het abonnementsbericht de koppeling bevatten waarop de gebruiker kan klikken.</help>
+        </property>
+        <property name="SubscriptionMailSubject">
+          <caption>Onderwerp van abonnementsbericht</caption>
+          <help>Dit is het onderwerpveld in het abonnementsbericht dat naar de abonnees wordt verzonden.</help>
+        </property>
+      </common>
+      <pagetype name="SysRecycleBin">
+        <description>Structuur voor de Prullenbak op de website</description>
+        <name>Prullenbak</name>
+      </pagetype>
+      <pagetype name="SysRoot">
+        <description>Eerste pagina in bewerkingsmodus</description>
+        <name>Welkomstpagina in bewerkingsmodus</name>
+      </pagetype>
+    </pagetypes>
+    <permissions>
+      <clienttools>Pagina's uit de Microsoft Office-invoegtoepassing weergeven en publiceren.</clienttools>
+      <detailederrormessage>Gedetailleerde foutmeldingen voor probleemoplossing</detailederrormessage>
+      <editorunlimitedfunctions>	Alle functies in de Editor</editorunlimitedfunctions>
+      <multifileupload>Geavanceerde bestandsuploads toestaan, bijvoorbeeld via slepen en neerzetten</multifileupload>
+      <pageprovidermove>Gebruikers toestaan om gegevens/pagina's te verplaatsen van de ene paginaprovider naar de andere</pageprovidermove>
+      <webserviceaccess>Gebruiker als webservicegebruiker toestaan</webserviceaccess>
+      <virtualpathunauthorizedaccess>Onbevoegde toegang tot virtueel pad: '{0}'</virtualpathunauthorizedaccess>
+    </permissions>
+    <personalization>
+      <task>
+        <assignedto>		Toegewezen aan</assignedto>
+        <assignto>				Toewijzen aan</assignto>
+        <buttoncompleted>		Voltooid</buttoncompleted>
+        <buttoncontinue>		Doorgaan</buttoncontinue>
+        <buttonreject>			Weigeren</buttonreject>
+        <changed>			Bijgewerkt</changed>
+        <comments>				Opmerkingen</comments>
+        <createdby>				Aangemaakt door</createdby>
+        <description>			Beschrijving</description>
+        <duedate>				Einddatum</duedate>
+        <owner>				Toegewezen door</owner>
+        <reminder>			Herinnering</reminder>
+        <status>				Status</status>
+        <statuscompleted>		Voltooid</statuscompleted>
+        <statusinprogress>		Bezig</statusinprogress>
+        <statusnotstarted>		Nieuw</statusnotstarted>
+        <statusrejected>		Geweigerd</statusrejected>
+        <subject>				Onderwerp</subject>
+        <timeout>				Vervaldatum verlopen</timeout>
+        <typeapprovepage>		Bestaande pagina</typeapprovepage>
+        <typeautomail>			Rapport per post verzenden</typeautomail>
+        <typenewpage>			Nieuwe pagina aanmaken</typenewpage>
+        <typeurl>				URL weergeven</typeurl>
+      </task>
+    </personalization>
+    <pleasewait>Even geduld a.u.b.</pleasewait>
+    <reportcenter>
+      <categories>
+        <category name="pagereports">Paginarapporten</category>
+      </categories>
+      <numberofhits>Aantal treffers: {0}</numberofhits>
+      <report name="changedpages">
+        <caption>Gewijzigde pagina's</caption>
+        <description>Geeft pagina's weer waarvan de datum binnen een specifieke periode is gewijzigd.</description>
+        <heading>Gewijzigde pagina's</heading>
+        <info>
+          Dit rapport geeft pagina's weer waarvan de datum binnen een specifieke periode is gewijzigd.
+          Selecteer een pagina in de lijst met rapportresultaten om de pagina te openen in de bewerkingsmodus.
+        </info>
+      </report>
+      <report name="expiredpages">
+        <caption>Verlopen pagina's </caption>
+        <description>Geeft pagina's weer met een 'einddatum publicatie' binnen een specifieke periode.</description>
+        <heading>Verlopen pagina's </heading>
+        <info>
+          Dit rapport geeft pagina's weer met een 'einddatum publicatie' binnen een specifieke periode.
+          Selecteer een pagina in de lijst met rapportresultaten om de pagina te openen in de bewerkingsmodus.
+        </info>
+      </report>
+      <report name="notpublishedpages">
+        <caption> Niet-gepubliceerde pagina's</caption>
+        <description>Geeft pagina's weer die nog niet zijn gepubliceerd.</description>
+        <heading>Niet-gepubliceerde pagina's</heading>
+        <info>
+          Dit rapport geeft pagina's weer die nog niet zijn gepubliceerd en die een 'datum laatste wijziging' hebben die binnen een specifieke periode valt.
+          Selecteer een pagina in de lijst met rapportresultaten om de pagina te openen in de bewerkingsmodus.
+        </info>
+      </report>
+      <report name="publishedpages">
+        <caption>Gepubliceerde pagina's</caption>
+        <description>Geeft pagina's weer die binnen een specifieke periode zijn gepubliceerd.</description>
+        <heading>Gepubliceerde pagina's</heading>
+        <info>
+          Dit rapport geeft pagina's weer die binnen een specifieke periode zijn gepubliceerd.
+          Selecteer een pagina in de lijst met rapportresultaten om de pagina te openen in de bewerkingsmodus.
+        </info>
+      </report>
+      <report name="simpleaddresses">
+        <caption>Eenvoudige adressen</caption>
+        <description>Geeft gepubliceerde pagina's met een eenvoudig adres weer.</description>
+        <heading>Eenvoudige adressen</heading>
+        <info>
+          Dit rapport geeft gepubliceerde pagina's met een eenvoudig adres weer.
+          Selecteer een pagina in de lijst met rapportresultaten om de pagina te openen in de bewerkingsmodus.
+        </info>
+      </report>
+      <reportcolumnheadings>
+        <language>Taal</language>
+        <modified>Laatst gewijzigd</modified>
+        <modifiedby>Gewijzigd door</modifiedby>
+        <notvisibleinmenu>Zichtbaar in menu's</notvisibleinmenu>
+        <pageid>Pagina-ID</pageid>
+        <pagename>Paginanaam</pagename>
+        <pagetypename>Paginatype</pagetypename>
+        <publishedstatus>Gepubliceerde status</publishedstatus>
+        <simpleaddress>Eenvoudig adres</simpleaddress>
+        <startpublish>Publicatiedatum</startpublish>
+        <stoppublish>Publicatie beëindigd</stoppublish>
+        <version>Versie</version>
+      </reportcolumnheadings>
+      <reportcriterias>
+        <after>Na</after>
+        <all>Alle</all>
+        <before>Voor</before>
+        <between>Tussen</between>
+        <changed>Gewijzigd</changed>
+        <changedbetween>Laatst gewijzigd</changedbetween>
+        <changedbyme>Laatst gewijzigd door mij</changedbyme>
+        <expired>Verlopen</expired>
+        <expiringbetween>Publicatie beëindigd</expiringbetween>
+        <heading>Rapportcriteria</heading>
+        <numberofitemsperpage>Aantal items per pagina</numberofitemsperpage>
+        <published>Gepubliceerd</published>
+        <publishedbetween>Publicatiedatum</publishedbetween>
+        <publishedbyme>Gepubliceerd door mij</publishedbyme>
+        <readytopublish>Gereed voor publicatie?</readytopublish>
+        <selectlanguage>Taal</selectlanguage>
+        <selectrootpage>Startpagina zoeken</selectrootpage>
+      </reportcriterias>
+      <startpage>
+        <helpimagetext>Het opnieuw ontwerpen van uw werkgebied kan het gebruik van het rapportcentrum mogelijk vergemakkelijken.</helpimagetext>
+        <info>
+          Wilt u weten welke pagina's zijn gepubliceerd of gewijzigd in een specifieke periode? Wilt u tevens weten welke van deze
+          pagina's door u zijn gewijzigd? &lt;br/&gt;&lt;br/&gt;
+          Met het rapportcentrum van EPiServer CMS kunt u eenvoudig zoeken naar informatie over uw website om u te helpen bij uw dagelijkse bezigheden.
+        </info>
+      </startpage>
+      <title>Rapportcentrum</title>
+    </reportcenter>
+    <saturday>Zaterdag</saturday>
+    <savenochanges>Er zijn geen wijzigingen aangebracht </savenochanges>
+    <second>tweede</second>
+    <september>September</september>
+    <status>
+      <active>		Actief</active>
+      <inactive>		Niet actief</inactive>
+    </status>
+    <subscription>
+      <mailsubject>Laatste nieuws</mailsubject>
+      <pagelinktext>Meer lezen</pagelinktext>
+    </subscription>
+    <sunday>Zondag</sunday>
+    <system>
+      <datebrowser>
+        <heading>Datum selecteren</heading>
+        <selectmonthcaption>Selecteer de gewenste maand (1-12)</selectmonthcaption>
+        <selectyearcaption>Selecteer het gewenste jaar</selectyearcaption>
+        <time>Tijd</time>
+      </datebrowser>
+      <editutil>
+        <filelisting>
+          <rootpatherror>				Hoofdmap is niet gedefinieerd</rootpatherror>
+          <sortorderdatecreated>		Aangemaakt</sortorderdatecreated>
+          <sortorderdatecreateddesc>Aangemaakt (aflopend)</sortorderdatecreateddesc>
+          <sortorderdatelastaccessed>	Laatste toegang</sortorderdatelastaccessed>
+          <sortorderdatelastaccesseddesc>Laatste toegang (aflopend)</sortorderdatelastaccesseddesc>
+          <sortorderdatelastmodified>	Laatste aanpassing</sortorderdatelastmodified>
+          <sortorderdatelastmodifieddesc>Laatste aanpassing (aflopend)</sortorderdatelastmodifieddesc>
+          <sortordername>				Naam</sortordername>
+          <sortordernamedesc>Naam (aflopend)</sortordernamedesc>
+          <sortordernone />
+          <sortordersize>				Grootte</sortordersize>
+          <sortordersizedesc>Grootte (aflopend)</sortordersizedesc>
+          <sortordertype>				Bestandstype</sortordertype>
+          <sortordertypedesc>Bestandstype (aflopend)</sortordertypedesc>
+        </filelisting>
+        <helpcreated>Datum waarop de pagina is gemaakt</helpcreated>
+        <helpdynprop>Schakel dit selectievakje in als u de opgegeven waarden voor alle onderliggende pagina's wilt instellen</helpdynprop>
+        <helpdynpropdef>Er is op deze pagina een waarde gedefinieerd voor de eigenschap</helpdynpropdef>
+        <helpdynpropundef>De eigenschap heeft geen waarde</helpdynpropundef>
+        <languagecommonpropertyicontooltiporiginal>Deze eigenschap is gemeenschappelijk voor alle talen en kan daarom alleen hier worden bewerkt</languagecommonpropertyicontooltiporiginal>
+        <languagecommonpropertyicontooltiptranslation>Deze eigenschap is gemeenschappelijk voor alle talen en kan daarom alleen op de pagina van de originele taal worden bewerkt</languagecommonpropertyicontooltiptranslation>
+        <leavepagewarning>U hebt wijzigingen aangebracht op de huidige pagina. 
+        Als u deze pagina verlaat, gaan de wijzigingen verloren. 
+        
+        Selecteer OK om de pagina te verlaten zonder opslaan. Selecteer Annuleren om op de pagina te blijven.</leavepagewarning>
+        <sortorder1>Volgens aanmaakdatum (laatste eerst)</sortorder1>
+        <sortorder2>Volgens aanmaakdatum (oudste eerst)</sortorder2>
+        <sortorder3>Alfabetisch</sortorder3>
+        <sortorder4>Volgens sorteerindex</sortorder4>
+        <sortorder5>Volgens wijzigingsdatum (oudste eerst)</sortorder5>
+        <sortorder7>Volgens begindatum publicatie (oudste eerst)</sortorder7>
+        <sortorder8>Volgens begindatum publicatie (laatste eerst)</sortorder8>
+      </editutil>
+      <firefox>
+        <functionnotsupported>Deze functionaliteit wordt niet ondersteund in Firefox.</functionnotsupported>
+      </firefox>
+      <pagebrowser>
+        <buttonnolink>Geen pagina</buttonnolink>
+        <buttonselflink>De huidige pagina</buttonselflink>
+        <heading>Pagina selecteren</heading>
+        <infoselflink>Deze pagina</infoselflink>
+        <noaccesswarning>De koppeling is ingesteld op een pagina waarvoor u geen leesmachtigingen hebt. Als u deze wijzigt in iets anders, kunt u de oorspronkelijke waarde niet meer herstellen.</noaccesswarning>
+        <notfound see="/edit/quicksearch/notfound" />
+        <title>Koppeling naar pagina</title>
+      </pagebrowser>
+    </system>
+    <thursday>Donderdag</thursday>
+    <tuesday>Dinsdag</tuesday>
+    <ui>
+      <title>
+        <process32bit>32-bitsverwerking</process32bit>
+        <process64bit>64-bitsverwerking</process64bit>
+      </title>
+    </ui>
+    <util>
+      <editor>
+        <dialogs>
+          <insertanchor>
+            <invalidcharacters>Ongeldige bladwijzer. Alleen Engelse alfanumerieke tekens zijn toegestaan.</invalidcharacters>
+          </insertanchor>
+        </dialogs>
+        <javascript>
+          <quote>
+            <noparentquote>De bewerking kan niet op de selectie worden uitgevoerd.</noparentquote>
+          </quote>
+        </javascript>
+      </editor>
+      <linkeditor>
+        <alttextfieldcaption>	Alternatieve tekst:</alttextfieldcaption>
+        <douploadcaption>		Upload selecteren</douploadcaption>
+        <linktitlefieldcaption>	Titel koppeling:</linktitlefieldcaption>
+        <mailfieldcaption>		E-mailadres:</mailfieldcaption>
+        <pageuploaddir>			Paginabestanden</pageuploaddir>
+        <selectpagecaption>		Pagina selecteren:</selectpagecaption>
+        <targetfieldcaption>	Doelframe:</targetfieldcaption>
+        <uploaddir>				Globale bestanden</uploaddir>
+        <urlfieldcaption>		Adres:</urlfieldcaption>
+      </linkeditor>
+      <logout>
+        <linktologinformsauthenticated>Opnieuw aanmelden</linktologinformsauthenticated>
+        <linktologinwindowsauthenticated>Opnieuw aanmelden</linktologinwindowsauthenticated>
+        <logoutbodytextformsauthenticated>Meld u opnieuw aan met behulp van de onderstaande koppeling.</logoutbodytextformsauthenticated>
+        <logoutbodytextwindowsauthenticated>Meld u opnieuw aan met behulp van de onderstaande koppeling.</logoutbodytextwindowsauthenticated>
+        <logoutbodytextwindowsauthenticateddombrowser>Meld u volledig af door alle browservensters te sluiten.</logoutbodytextwindowsauthenticateddombrowser>
+        <logoutconfirmdialogdombrowser>U bent aangemeld als een geverifieerde Windows-gebruiker. Voordat u volledig bent afgemeld, moet u nog alle browservensters sluiten.</logoutconfirmdialogdombrowser>
+        <logoutheader>U bent afgemeld</logoutheader>
+        <logouttitle>Afmelden</logouttitle>
+      </logout>
+      <plugins>
+        <edittask>
+          <description>Een taak maken en toewijzen toe aan een gebruiker of groep.</description>
+          <displayname>Nieuwe taak aanmaken</displayname>
+        </edittask>
+        <viewtask>
+          <description>Een taak weergeven die is toegewezen aan een gebruiker.</description>
+          <displayname>Toegewezen taak weergeven</displayname>
+        </viewtask>
+      </plugins>
+    </util>
+    <validation>
+      <assurenospaces>'{0}' mag geen lege spaties bevatten</assurenospaces>
+      <assurenumber>'{0}' mag alleen getallen bevatten</assurenumber>
+      <dateorder>De datum voor '{0}' moet vóór {1} liggen.</dateorder>
+      <formrequired>	* Het veld mag niet leeg zijn.</formrequired>
+      <invalidLongstring>	De inhoud van de eigenschap "{0}" heeft een fout gegenereerd met het onvertaalde bericht "{1}".</invalidLongstring>
+      <invalidvalue>	{1} is geen geldige waarde voor {0}.</invalidvalue>
+      <invalidvalueexception>	{1} is geen geldige waarde voor {0}. ({2})</invalidvalueexception>
+      <namenotunique>Naam is niet uniek</namenotunique>
+      <notrelative>Het relatieve pad moet beginnen met ~/ of /</notrelative>
+      <outofrange>	Geef een waarde op tussen {1} en {2} voor {0}.</outofrange>
+      <pagelinksettings>
+        <externalurlrequired>Voer de URL voor de externe website in.</externalurlrequired>
+        <fetchdatapagerequired>Selecteer de pagina waaruit de gegevens worden opgehaald.</fetchdatapagerequired>
+        <shortcutpagerequired>Selecteer het doel voor de snelkoppeling.</shortcutpagerequired>
+      </pagelinksettings>
+      <propertyname>"{0}" moet beginnen met een letter en mag alleen alfanumerieke tekens bevatten (a-z, A-Z, 0-9), '_' en '-'.</propertyname>
+      <required>		'{0}' mag niet leeg zijn.</required>
+      <stringoverflow>'{0}' is groter dan de limiet van {1} tekens.</stringoverflow>
+      <summary>		Los de vogende problemen op:</summary>
+      <urlcharactersonly>Gebruik alleen de tekens a t/m z en 0 t/m 9 en een streepje (-).</urlcharactersonly>
+      <valuealreadyused>'{0}' met waarde {1} wordt al gebruikt door {2}.</valuealreadyused>
+      <valuesameasfolder>'{0}' met waarde {1} kan niet worden gebruikt aangezien de waarde samenvalt met het pad van de map {2}.</valuesameasfolder>
+    </validation>
+    <webcontrols>
+      <explorertree>
+        <!-- 
+        <infonotpublished> Ej publicerad</infonotpublished> 
+        <infoexpired> , löpte ut {0}</infoexpired> 
+        <infonotstarted> , börjar {0}</infonotstarted> 
+        -->
+        <statusexpired>				Pagina verlopen {0}</statusexpired>
+        <statuslanguagefallback>De pagina wordt in een andere taal weergegeven</statuslanguagefallback>
+        <statuslanguagemissing>De pagina ontbreekt voor de huidige taal en wordt niet weergegeven</statuslanguagemissing>
+        <statusnew>					Nieuwe pagina</statusnew>
+        <statusnotlocal>Externe pagina</statusnotlocal>
+        <statusnotpublished>		De pagina is niet gepubliceerd</statusnotpublished>
+        <statusnotstarted>			De pagina wordt zichtbaar {0}</statusnotstarted>
+        <statusnotvisibleinmenu>	De pagina is niet zichtbaar in menu's</statusnotvisibleinmenu>
+        <statusreadonly>			U beschikt niet over de gebruikersrechten om wijzigingen te maken in deze pagina</statusreadonly>
+      </explorertree>
+      <paging>
+        <currentpage>Huidige pagina</currentpage>
+        <firstpage>Eerste pagina</firstpage>
+        <lastpage>Laatste pagina</lastpage>
+        <nextpage>Volgende pagina</nextpage>
+        <pagenumber>Pagina {0}</pagenumber>
+        <prevpage>Vorige pagina</prevpage>
+      </paging>
+    </webcontrols>
+    <wednesday>Woensdag</wednesday>
+    <week>week</week>
+    <versionstatus>
+      <checkedin>				Gereed voor publicatie</checkedin>
+      <checkedout>			Niet gereed</checkedout>
+      <delayedpublish>	Uitgestelde publicatie</delayedpublish>
+      <previouslypublished>	Eerder gepubliceerd</previouslypublished>
+      <published>				Gepubliceerde versie</published>
+      <rejected>				Opmerkingen</rejected>
+    </versionstatus>
+    <wsrp>
+      <portlets>
+        <wsrpiframecontrol>
+          <description>Informatie in een IFrame weergeven</description>
+          <displayname>IFrame</displayname>
+          <keywords>IFrame</keywords>
+          <shorttitle>IFrameportlet</shorttitle>
+          <title>EPiServer-IFrameportlet</title>
+        </wsrpiframecontrol>
+        <wsrpinfoservicecontrol>
+          <description>Informatie van EPiServer weergeven</description>
+          <displayname>Infoviewer</displayname>
+          <keywords>EPiServer-informatie</keywords>
+          <shorttitle>Informatieviewer</shorttitle>
+          <title>EPiServer-informatieviewerportlet</title>
+        </wsrpinfoservicecontrol>
+        <wsrpnewschannelcontrol>
+          <description>Nieuws van EPiServer weergeven</description>
+          <displayname>Nieuwskanaal</displayname>
+          <keywords>Nieuws</keywords>
+          <shorttitle>Nieuwskanaalportlet</shorttitle>
+          <title>EPiServer-nieuwskanaalportlet</title>
+        </wsrpnewschannelcontrol>
+        <wsrprsscontrol>
+          <description>Informatie van RSS-bron weergeven</description>
+          <displayname>RSS</displayname>
+          <keywords>Rich Site Summary (RSS)Real Simple Syndication</keywords>
+          <shorttitle>RSS-portlet</shorttitle>
+          <title>EPiServer-RSS-portlet</title>
+        </wsrprsscontrol>
+        <wsrpusersettingscontrol>
+          <description>Gebruikersinstellingen configureren</description>
+          <displayname>Gebruikersinstellingen</displayname>
+          <shorttitle>Gebruikersinstellingenportlet</shorttitle>
+          <title>EPiServer-gebruikersinstellingenportlet</title>
+        </wsrpusersettingscontrol>
+      </portlets>
+    </wsrp>
+    <xform>
+      <datatypes>
+        <date1>
+          <caption>Datum (DD/MM/JJJJ)</caption>
+          <inlineerrormessage>Geen geldige datum. Voer een datum in met de indeling DD/MM/JJJJ.</inlineerrormessage>
+          <summaryerrormessage>* is geen geldige datum. Voer een datum in met de indeling DD/MM/JJJJ.</summaryerrormessage>
+        </date1>
+        <date2>
+          <caption>Datum (MM/DD/JJJJ)</caption>
+          <inlineerrormessage>Geen geldige datum. Voer een datum in met de indeling MM/DD/JJJJ.</inlineerrormessage>
+          <summaryerrormessage>* is geen geldige datum. Voer een datum in met de indeling MM/DD/JJJJ.</summaryerrormessage>
+        </date2>
+        <defaulttype>
+          <inlineerrormessage>U hebt tekens ingevoerd die niet zijn toegestaan ("&lt;" of "&gt;").</inlineerrormessage>
+          <summaryerrormessage>U hebt tekens ingevoerd die niet zijn toegestaan ("&lt;" of "&gt;").</summaryerrormessage>
+        </defaulttype>
+        <email>
+          <caption>E-mailadres</caption>
+          <inlineerrormessage>Geen geldig e-mailadres.</inlineerrormessage>
+          <summaryerrormessage>* is geen geldig e-mailadres.</summaryerrormessage>
+        </email>
+        <integer>
+          <caption>Integer</caption>
+          <inlineerrormessage>Geen geldige integer.</inlineerrormessage>
+          <summaryerrormessage>* is geen geldige integer.</summaryerrormessage>
+        </integer>
+        <isodate>
+          <caption>Datum (JJJJ-MM-DD)</caption>
+          <inlineerrormessage>Geen geldige datum. Voer een datum in met de indeling JJJJ-MM-DD.</inlineerrormessage>
+          <summaryerrormessage>* is geen geldige datum. Voer een datum in met de indeling JJJJ-MM-DD.</summaryerrormessage>
+        </isodate>
+        <positiveinteger>
+          <caption>Positief geheel getal</caption>
+          <inlineerrormessage>Geen geldige positieve integer.</inlineerrormessage>
+          <summaryerrormessage>* is geen geldige positieve integer.</summaryerrormessage>
+        </positiveinteger>
+      </datatypes>
+      <denymultipleposts>U hebt dit formulier al ingevuld</denymultipleposts>
+      <errorpostingtocustomurl>Kan het formulier niet naar een aangepast adres zenden</errorpostingtocustomurl>
+      <errorpostingtodatabase>Kan het formulier niet naar de database zenden</errorpostingtodatabase>
+      <errorpostingtoemail>Kan het formulier niet naar een e-mailadres zenden</errorpostingtoemail>
+      <requiredfield>
+        <inlineerrormessage>Dit veld is verplicht</inlineerrormessage>
+        <summaryerrormessage>U hebt niet alle verplichte velden ingevuld</summaryerrormessage>
+      </requiredfield>
+      <requirelogon>U moet zijn aangemeld om antwoord te kunnen geven</requirelogon>
+    </xform>
+  </language>
+</languages>

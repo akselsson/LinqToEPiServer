@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<languages>
+  <language name="Nederlands" id="nl">
+    <admin>
+      <plugin>
+        <activitypluginattribute>Aangepaste activiteiten</activitypluginattribute>
+        <workflowtaskattribute>Verwerkt aan werkstroom gerelateerde taken</workflowtaskattribute>
+      </plugin>
+      <workflowadmin>
+        <confirmdelete>Wilt u de definitie verwijderen?</confirmdelete>
+        <count>Aantal</count>
+        <createnew>Definitie aanmaken</createnew>
+        <definitionname>Definitienaam</definitionname>
+        <defs>Gedefinieerde werkstromen:</defs>
+        <deftab>Definities</deftab>
+        <delete>Verwijderen</delete>
+        <description>Werkstromen beheren</description>
+        <displayname>Werkstromen</displayname>
+        <edit>Bewerken</edit>
+        <eventlist>Het aantal exemplaren (indien aanwezig) dat wacht op elke EPiServer CMS-gerelateerde gebeurtenis.</eventlist>
+        <eventname>Gebeurtenis</eventname>
+        <fetchsystem>Gegevens ophalen</fetchsystem>
+        <filterondefinition>Filteren op definitie</filterondefinition>
+        <heading>Beheer van werkstromen</heading>
+        <info>Werkstroomdefinities en -exemplaren maken en beheren.</info>
+        <running>Uitgevoerde werkstromen:</running>
+        <runningtab>Uitgevoerde exemplaren</runningtab>
+        <startevents>Triggergebeurtenis</startevents>
+        <systemtab>Systeeminformatie</systemtab>
+        <type>Type</type>
+      </workflowadmin>
+      <workflowdefinitionedit>
+        <allpagetypes>Alle paginatypen</allpagetypes>
+        <assemblyerror>Assembly moet worden opgegeven</assemblyerror>
+        <assemblyname>Naam assembly</assemblyname>
+        <automaticstart>Automatische start</automaticstart>
+        <basictab>Algemeen</basictab>
+        <cancel>Annuleren</cancel>
+        <classerror>Klasse moet worden opgegeven</classerror>
+        <classname>Klassenaam</classname>
+        <completedDefinition>Volgende exemplaar automatisch starten</completedDefinition>
+        <configureparams>Startparameters configureren</configureparams>
+        <confirmdelete>Wilt u de definitie verwijderen?</confirmdelete>
+        <confirmuser>Wilt u de geselecteerde gebruiker/groep verwijderen?</confirmuser>
+        <copy>Kopie</copy>
+        <defname>Definitienaam</defname>
+        <delete>Verwijderen</delete>
+        <description>Beschrijving</description>
+        <heading>Configuratie van definitie</heading>
+        <info>Het is mogelijk om verschillende definities op basis van dezelfde klasse te hebben. Elke definitie moet een unieke naam hebben.&lt;br/&gt;De klasse moet zijn gedefinieerd met een geldige naam (inclusief naamruimte).</info>
+        <layout>Indelingsbestand</layout>
+        <layoutfileloaded>Indeling is geüpload</layoutfileloaded>
+        <multiplename>Er is al een definitie met de opgegeven naam.</multiplename>
+        <namecopy>Kopie van</namecopy>
+        <nameerror>Naam moet worden opgegeven</nameerror>
+        <namenumbercopy>Kopie ({0}) van</namenumbercopy>
+        <nolayoutfileloaded>Geen indeling geüpload</nolayoutfileloaded>
+        <none>Geen</none>
+        <notworkflowtype>Type moet SequentialWorkflowActivity of StateMachineWorkflowActivity overnemen</notworkflowtype>
+        <noxomlfileloaded>Geen Xoml geüpload</noxomlfileloaded>
+        <pageroot>Startpagina voor de definitie</pageroot>
+        <pagetypes>Toepassen op paginatypen</pagetypes>
+        <running>Uitgevoerde werkstromen:</running>
+        <runningtab>Uitgevoerde exemplaren</runningtab>
+        <save>Opslaan</save>
+        <securitytab>Beveiliging</securitytab>
+        <startevent>Gebeurtenis(sen) om exemplaar te starten</startevent>
+        <typenotloadable>Kan het opgegeven type niet laden. Zorg ervoor dat dit wordt gedistribueerd naar de binmap.</typenotloadable>
+        <view>Afbeelding werkstroom weergeven</view>
+        <xoml>Xoml-bestand</xoml>
+        <xomlfileloaded>Xoml is geüpload</xomlfileloaded>
+      </workflowdefinitionedit>
+      <workflowstartparams>
+        <cancel>Annuleren</cancel>
+        <heading>Startparameters</heading>
+        <noattribute>De gedefinieerde stroom heeft geen WorkflowPlugInAttribute</noattribute>
+        <nointerface>Via het opgegeven besturingselement in WorkflowPlugInAttribute wordt geen IWorkflowStartParameterHandler geïmplementeerd</nointerface>
+        <pathfailure>Kan het opgegeven besturingselement niet laden vanuit </pathfailure>
+        <save>Opslaan</save>
+      </workflowstartparams>
+    </admin>
+    <workflow>
+      <edit>
+        <commandaction>
+          <tooltip>Werkstroomexemplaar starten</tooltip>
+        </commandaction>
+        <task>
+          <description>Aan werkstroom gerelateerde taken</description>
+          <displayname>Werkstroomtaken</displayname>
+          <notset>Niet ingesteld</notset>
+        </task>
+        <taskcontrol>
+          <eventinvoked>Gegevens naar werkstroom verzonden</eventinvoked>
+          <eventinvokedtaskdeleted>Gegevens naar werkstroom verzonden, taak verwijderd</eventinvokedtaskdeleted>
+          <instancenotfound>Kan het werkstroomexemplaar voor deze taak niet laden (waarschijnlijk is dit beëindigd)</instancenotfound>
+          <invoke>Verzenden</invoke>
+          <loaderror>Kan opgegeven gebruikersbesturingselement niet laden, uitzondering:</loaderror>
+          <nocontrolfound>Er staat geen activiteit in de wacht voor het geregistreerde gebruikersbesturingselement</nocontrolfound>
+          <view>Weergeven</view>
+        </taskcontrol>
+        <workfloweditcontrol>
+          <displayname>Werkstroom</displayname>
+          <info>Er zijn geen exemplaren of taken beschikbaar die zijn gerelateerd aan deze pagina</info>
+          <selectdefinition>Definitie selecteren om exemplaar te starten van</selectdefinition>
+          <startworkflow>Start</startworkflow>
+          <tasksforpage>Aan pagina gerelateerde taken</tasksforpage>
+          <workflow>werkstroom</workflow>
+        </workfloweditcontrol>
+        <workflowhistory>
+          <details>Details</details>
+          <history>Geschiedenis</history>
+          <user>Gebruiker</user>
+        </workflowhistory>
+        <workflowinstance>
+          <page>
+            <description>Uitgevoerde werkstromen</description>
+            <displayname>Werkstromen</displayname>
+            <running>Uitgevoerde werkstromen:</running>
+          </page>
+          <start>
+            <definitiontostart>Een exemplaar aanmaken van</definitiontostart>
+            <description>Nieuwe werkstroom aanmaken</description>
+            <displayname>Werkstroom aanmaken</displayname>
+            <instancestartcanceled>Start exemplaar is geannuleerd door gebeurtenisafhandeling, reden:</instancestartcanceled>
+            <instancestarted>Er is een exemplaar gestart van definitie</instancestarted>
+            <nodefinition>Er zijn geen werkstroomdefinities beschikbaar</nodefinition>
+            <selectdefinition>Definitie selecteren om exemplaar te starten van</selectdefinition>
+            <start>Start</start>
+          </start>
+        </workflowinstance>
+        <workflowlist>
+          <confirmterminate>Wilt u het exemplaar afsluiten?</confirmterminate>
+          <confirmterminateall>Wilt u de exemplaren afsluiten?</confirmterminateall>
+          <count>Aantal exemplaren</count>
+          <definitionname>Definitienaam</definitionname>
+          <details>Details<definitionname>Definitienaam</definitionname><history>Geschiedenis</history><initiator>Maker</initiator><instanceid>Exemplaar-ID</instanceid><page>Pagina</page><task>Huidige taken</task><terminate>Beëindigen</terminate><type>Type</type><waitingevents>Wachtende gebeurtenissen</waitingevents><view>Weergeven</view></details>
+          <fetch>Weergeven</fetch>
+          <initiator>Maker</initiator>
+          <missingdeleteaccess>Er zijn enkele exemplaren waarvoor u geen beëindigingstoegang hebt</missingdeleteaccess>
+          <terminateall>Alles beëindigen</terminateall>
+          <type>Type</type>
+        </workflowlist>
+        <workflowtask>
+          <assignedto>Toegewezen aan</assignedto>
+          <confirmdelete>Wilt u de taak verwijderen?</confirmdelete>
+          <created>Aangemaakt</created>
+          <description>Beschrijving</description>
+          <duedate>Einddatum</duedate>
+          <subject>Onderwerp</subject>
+        </workflowtask>
+      </edit>
+      <runtime>
+        <adduserdata>
+          <description>Sleutel: </description>
+          <subject>Gebruikersgegevens toegevoegd</subject>
+        </adduserdata>
+        <associatedwithpage>
+          <description>Pagina-ID: </description>
+          <subject>Gekoppeld aan pagina</subject>
+        </associatedwithpage>
+        <instancestarted>
+          <description>Werkstroomexemplaar gestart</description>
+          <subject>Werkstroom gestart</subject>
+        </instancestarted>
+        <taskcreated>
+          <description>Taakbeschrijving: </description>
+          <subject>Taak aangemaakt, onderwerp: </subject>
+        </taskcreated>
+        <taskdeleted>
+          <description>Taak-ID: </description>
+          <subject>Taak verwijderd</subject>
+        </taskdeleted>
+        <taskupdated>
+          <description>Taakbeschrijving: </description>
+          <subject>Taak bijgewerkt, onderwerp: </subject>
+        </taskupdated>
+      </runtime>
+    </workflow>
+    <workflows>
+      <approval>
+        <approvaltask>
+          <pageheading>Goedkeuringswerkstroom voor pagina</pageheading>
+          <subject>Pagina goedkeuren</subject>
+        </approvaltask>
+        <approvedevent>
+          <approved>Goedgekeurd</approved>
+          <approvedby>Pagina is goedgekeurd door {0}</approvedby>
+          <comment>Opmerking</comment>
+          <notapproved>Niet goedgekeurd</notapproved>
+          <pageapproved>{0} is goedgekeurd</pageapproved>
+        </approvedevent>
+        <history>
+          <approved>Pagina is goedgekeurd</approved>
+          <notapproved>Pagina is niet goedgekeurd</notapproved>
+        </history>
+        <parallel>
+          <description>Een parallelle goedkeuringswerkstroom</description>
+        </parallel>
+        <sequential>
+          <description>Een sequentiële goedkeuringswerkstroom</description>
+        </sequential>
+        <startparameters>
+          <approversvisible>Selectie van goedkeurders beschikbaar in bewerkingsmodus</approversvisible>
+          <description>Beschrijving voor goedkeurders</description>
+          <isrole>Groep</isrole>
+          <name>Naam</name>
+          <noapprovers>Er moet minstens één goedkeurder worden geselecteerd</noapprovers>
+          <noapproversvisible>Er moet minstens één goedkeurder worden geselecteerd als er geen goedkeurdersselectie beschikbaar is in de bewerkingsmodus</noapproversvisible>
+          <nopage>{PageName}</nopage>
+          <notnumber>Het aantal goedkeuringen moet een getal zijn</notnumber>
+          <notpublishrights>Gebruiker {0} heeft geen lees- of publicatierechten voor {1}</notpublishrights>
+          <notvalidpage>Geen geldige pagina geselecteerd voor goedkeuringswerkstroom</notvalidpage>
+          <numberofapprovers>Minimumaantal dat goedkeuring moet verlenen</numberofapprovers>
+          <numbersvisible>Selectie van aantal goedkeurders beschikbaar in bewerkingsmodus</numbersvisible>
+          <positivenumber>Het aantal goedkeuringen moet een positief getal zijn</positivenumber>
+          <publishedversion>Geselecteerde versie is reeds gepubliceerd</publishedversion>
+          <required>Vereist</required>
+          <selectapprovers>Selecteer gebruikers/groepen die goedkeuring moeten verlenen</selectapprovers>
+          <tolarge>Het minimum aantal goedkeurders mag niet groter zijn dan het aantal goedkeurders</tolarge>
+        </startparameters>
+        <versioncontrol>
+          <changeddescription>Paginaversie gewijzigd van {0} in {1}</changeddescription>
+          <changedsubject>Paginaversie gewijzigd</changedsubject>
+          <differs>De in het bewerkingspaneel geladen paginaversie verschilt van de paginaversie in het werkstroomexemplaar</differs>
+          <loadedversion>Versie in bewerkingspaneel geladen</loadedversion>
+          <selectversion>Kies een paginaversie die u wilt verwerken in de goedkeuringswerkstroom</selectversion>
+          <workflowversion>Versie in werkstroomexemplaar</workflowversion>
+        </versioncontrol>
+      </approval>
+      <feedbackrequest>
+        <description>Beschrijving voor feedback</description>
+        <feedback>Feedback</feedback>
+        <feedbackposted>Feedback ontvangen</feedbackposted>
+        <finish>Werkstroom voltooien</finish>
+        <heading>Instellingen voor werkstroom voor feedbackverzoek</heading>
+        <nodescription>Beschrijving moet worden verzonden</nodescription>
+        <noowner>Eigenaar moet zijn ingesteld</noowner>
+        <nousers>Geen gebruikers geselecteerd</nousers>
+        <ownerdescription>Feedback van gebruikers</ownerdescription>
+        <ownerheading>Feedback voor verzoek</ownerheading>
+        <ownersubject>Feedback</ownersubject>
+        <pageroot>Pagina selecteren</pageroot>
+        <plugin>
+          <description>Een werkstroom voor een feedbackverzoek</description>
+        </plugin>
+        <post>Verzenden</post>
+        <selectusers>Selecteer gebruikers/groepen waarvan u feedback wilt</selectusers>
+        <subject>Feedbackverzoek</subject>
+        <timetolive>Tijd voor feedback instellen (uren)</timetolive>
+        <userheading>Stuur feedback</userheading>
+      </feedbackrequest>
+      <translate>
+        <addtranslator>Vertaler toevoegen voor</addtranslator>
+        <cancelled>Er wordt al een werkstroom van dit type uitgevoerd voor deze pagina</cancelled>
+        <completedescription>is niet vertaald naar</completedescription>
+        <completesubject>Pagina is volledig vertaald</completesubject>
+        <fallback>Vertaler voor niet-gespecificeerde talen</fallback>
+        <forpage>voor pagina</forpage>
+        <heading>Vertalers configureren voor een werkstroom voor een vertalingsmelding</heading>
+        <hours>uur</hours>
+        <initialdelay>Start uitstellen</initialdelay>
+        <initialdescription>Vertaal alstublieft</initialdescription>
+        <initialsubject>Pagina vertalen</initialsubject>
+        <language>Taal</language>
+        <minutes>minuten</minutes>
+        <notcompletedescription>is niet vertaald naar</notcompletedescription>
+        <notcompletesubject>Een pagina is niet volledig vertaald</notcompletesubject>
+        <owner>Proceseigenaar</owner>
+        <plugin>
+          <description>Een werkstroom voor een vertalingsmelding</description>
+        </plugin>
+        <positivenumber>Moet een positief getal zijn</positivenumber>
+        <publishneeded>Taalversie moet worden gepubliceerd</publishneeded>
+        <reminder>Tijd voordat herinnering wordt verzonden</reminder>
+        <terminate>Tijd voor vertaling</terminate>
+        <to>naar</to>
+        <translators>Vertalers</translators>
+      </translate>
+    </workflows>
+  </language>
+</languages>

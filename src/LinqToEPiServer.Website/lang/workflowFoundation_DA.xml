@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<languages>
+  <language name="dansk" id="da">
+    <admin>
+      <plugin>
+        <activitypluginattribute>Brugerdefinerede aktiviteter</activitypluginattribute>
+        <workflowtaskattribute>Håndterer arbejdsprocesrelaterede opgaver</workflowtaskattribute>
+      </plugin>
+      <workflowadmin>
+        <confirmdelete>Vil du fjerne definitionen?</confirmdelete>
+        <count>Antal</count>
+        <createnew>Opret definition</createnew>
+        <definitionname>Navn på definition</definitionname>
+        <defs>Definerede arbejdsprocesser:</defs>
+        <deftab>Definitioner</deftab>
+        <delete>Slet</delete>
+        <description>Administrer arbejdsprocesser</description>
+        <displayname>Arbejdsprocesser</displayname>
+        <edit>Rediger</edit>
+        <eventlist>Antallet af eventuelle forekomster, som venter på hver EPiServer CMS-relaterede hændelse.</eventlist>
+        <eventname>Hændelse</eventname>
+        <fetchsystem>Hent data</fetchsystem>
+        <filterondefinition>Filtrer ud fra definition</filterondefinition>
+        <heading>Administration af arbejdsprocesser</heading>
+        <info>Opret og administrer definitioner på og forekomster af arbejdsprocesser</info>
+        <running>Løbende arbejdsprocesser:</running>
+        <runningtab>Løbende forekomster</runningtab>
+        <startevents>Udløsende hændelse</startevents>
+        <systemtab>Systemoplysninger</systemtab>
+        <type>Type</type>
+      </workflowadmin>
+      <workflowdefinitionedit>
+        <allpagetypes>Alle sidetyper</allpagetypes>
+        <assemblyerror>Der skal angives en assembly</assemblyerror>
+        <assemblyname>Navn på assembly</assemblyname>
+        <automaticstart>Automatisk start</automaticstart>
+        <basictab>Generelt</basictab>
+        <cancel>Annuller</cancel>
+        <classerror>Der skal angives en klasse</classerror>
+        <classname>Klassenavn</classname>
+        <completedDefinition>Start næste forekomst automatisk</completedDefinition>
+        <configureparams>Konfigurer startparametre</configureparams>
+        <confirmdelete>Vil du fjerne denne definitionen?</confirmdelete>
+        <confirmuser>Vil du fjerne den valgte bruger/gruppe?</confirmuser>
+        <copy>Kopier</copy>
+        <defname>Navn på definition</defname>
+        <delete>Slet</delete>
+        <description>Beskrivelse</description>
+        <heading>Konfiguration af definition</heading>
+        <info>Det er muligt at have flere definitioner baseret på den samme klasse. Hver definition skal have et entydigt navn.&lt;br/&gt;Klassen skal defineres ved hjælp af dens fuldt kvalificerede navn (herunder mellemrum mellem navne).</info>
+        <layout>Layoutfil</layout>
+        <layoutfileloaded>Layoutet er sendt</layoutfileloaded>
+        <multiplename>Der findes allerede en definition med det angivne navn</multiplename>
+        <namecopy>Kopi af</namecopy>
+        <nameerror>Der skal angives et navn</nameerror>
+        <namenumbercopy>Kopi ({0}) af</namenumbercopy>
+        <nolayoutfileloaded>Der er ikke sendt noget layout</nolayoutfileloaded>
+        <none>Ingen</none>
+        <notworkflowtype>Typen skal arve SequentialWorkflowActivity eller StateMachineWorkflowActivity</notworkflowtype>
+        <noxomlfileloaded>Der er ikke sendt nogen Xoml</noxomlfileloaded>
+        <pageroot>Definitionens startside</pageroot>
+        <pagetypes>Anvend på sidetyper</pagetypes>
+        <running>Løbende arbejdsprocesser:</running>
+        <runningtab>Løbende forekomster</runningtab>
+        <save>Gem</save>
+        <securitytab>Sikkerhed</securitytab>
+        <startevent>Hændelse(r), som starter forekomst</startevent>
+        <typenotloadable>Kunne ikke indlæse given type. Kontroller, at den er distribueret til mappen bin</typenotloadable>
+        <view>Vis arbejdsprocesbillede</view>
+        <xoml>Xoml-fil</xoml>
+        <xomlfileloaded>Xoml er sendt</xomlfileloaded>
+      </workflowdefinitionedit>
+      <workflowstartparams>
+        <cancel>Annuller</cancel>
+        <heading>Startparametre</heading>
+        <noattribute>Den definerede arbejdsproces har ikke WorkflowPlugInAttribute</noattribute>
+        <nointerface>Det givne kontrolelement i WorkflowPlugInAttribute implementerer ikke IWorkflowStartParameterHandler</nointerface>
+        <pathfailure>Kunne ikke indlæse det givne kontrolelement fra </pathfailure>
+        <save>Gem</save>
+      </workflowstartparams>
+    </admin>
+    <workflow>
+      <edit>
+        <commandaction>
+          <tooltip>Start forekomst af arbejdsproces</tooltip>
+        </commandaction>
+        <task>
+          <description>Arbejdsprocesrelaterede opgaver</description>
+          <displayname>Arbejdsprocesopgaver</displayname>
+          <notset>Ikke angivet</notset>
+        </task>
+        <taskcontrol>
+          <eventinvoked>Data er sendt til arbejdsproces</eventinvoked>
+          <eventinvokedtaskdeleted>Data er sendt til arbejdsproces, opgave er slettet</eventinvokedtaskdeleted>
+          <instancenotfound>Arbejdsprocesforekomsten for denne opgave kunne ikke indlæses (den er sandsynligvis blevet afsluttet)</instancenotfound>
+          <invoke>Send</invoke>
+          <loaderror>Kunne ikke indlæse det specificerede brugerkontrolelement. Undtagelse:</loaderror>
+          <nocontrolfound>Der er ingen venteaktivitet ved det registrerede brugerkontrolelement</nocontrolfound>
+          <view>Vis</view>
+        </taskcontrol>
+        <workfloweditcontrol>
+          <displayname>Arbejdsproces</displayname>
+          <info>Der er ingen tilgængelige forekomster eller opgaver relateret til denne side</info>
+          <selectdefinition>Vælg definition for at starte forekomst af</selectdefinition>
+          <startworkflow>Start</startworkflow>
+          <tasksforpage>Opgaver, som er relateret til side</tasksforpage>
+          <workflow>arbejdsproces</workflow>
+        </workfloweditcontrol>
+        <workflowhistory>
+          <details>Detaljer</details>
+          <history>Oversigt</history>
+          <user>Bruger</user>
+        </workflowhistory>
+        <workflowinstance>
+          <page>
+            <description>Løbende arbejdsprocesser</description>
+            <displayname>Arbejdsprocesser</displayname>
+            <running>Løbende arbejdsprocesser:</running>
+          </page>
+          <start>
+            <definitiontostart>Opret en forekomst af</definitiontostart>
+            <description>Opret en ny arbejdsproces</description>
+            <displayname>Opret arbejdsproces</displayname>
+            <instancestartcanceled>Starten af forekomsten blev annulleret af et program til håndtering af hændelser. Årsag:</instancestartcanceled>
+            <instancestarted>Der er startet en forekomst af definition</instancestarted>
+            <nodefinition>Der er ingen tilgængelige arbejdsprocesdefinitioner</nodefinition>
+            <selectdefinition>Vælg definition for at starte forekomst af</selectdefinition>
+            <start>Start</start>
+          </start>
+        </workflowinstance>
+        <workflowlist>
+          <confirmterminate>Vil du afslutte forekomsten?</confirmterminate>
+          <confirmterminateall>Vil du afslutte forekomsterne?</confirmterminateall>
+          <count>Antal forekomster</count>
+          <definitionname>Navn på definition</definitionname>
+          <details>Detaljer<definitionname>Navn på definition</definitionname><history>Oversigt</history><initiator>Opretter</initiator><instanceid>Forekomst-id</instanceid><page>Side</page><task>Aktuelle opgaver</task><terminate>Afslut</terminate><type>Type</type><waitingevents>Ventende hændelser</waitingevents><view>Vis</view></details>
+          <fetch>Vis</fetch>
+          <initiator>Opretter</initiator>
+          <missingdeleteaccess>Der er forekomster, som du ikke har afslutningsrettigheder til</missingdeleteaccess>
+          <terminateall>Afslut alt</terminateall>
+          <type>Type</type>
+        </workflowlist>
+        <workflowtask>
+          <assignedto>Tildelt til</assignedto>
+          <confirmdelete>Vil du fjerne denne opgave?</confirmdelete>
+          <created>Oprettet</created>
+          <description>Beskrivelse</description>
+          <duedate>Forfaldsdato</duedate>
+          <subject>Emne</subject>
+        </workflowtask>
+      </edit>
+      <runtime>
+        <adduserdata>
+          <description>Nøgle: </description>
+          <subject>Brugerdata er blevet tilføjet</subject>
+        </adduserdata>
+        <associatedwithpage>
+          <description>Side-id: </description>
+          <subject>Tilknyttet til side</subject>
+        </associatedwithpage>
+        <instancestarted>
+          <description>Forekomst af arbejdsproces er startet</description>
+          <subject>Arbejdsproces er startet</subject>
+        </instancestarted>
+        <taskcreated>
+          <description>Opgavebeskrivelse: </description>
+          <subject>Opgave er blevet oprettet. Emne: </subject>
+        </taskcreated>
+        <taskdeleted>
+          <description>Opgave-id: </description>
+          <subject>Opgave er blevet slettet</subject>
+        </taskdeleted>
+        <taskupdated>
+          <description>Opgavebeskrivelse: </description>
+          <subject>Opgave er blevet opdateret. Emne: </subject>
+        </taskupdated>
+      </runtime>
+    </workflow>
+    <workflows>
+      <approval>
+        <approvaltask>
+          <pageheading>Godkendelsesarbejdsproces for side</pageheading>
+          <subject>Godkend side</subject>
+        </approvaltask>
+        <approvedevent>
+          <approved>Godkendt</approved>
+          <approvedby>Siden blev godkendt af {0}</approvedby>
+          <comment>Kommentar</comment>
+          <notapproved>Ikke godkendt</notapproved>
+          <pageapproved>{0} blev godkendt</pageapproved>
+        </approvedevent>
+        <history>
+          <approved>Siden blev godkendt</approved>
+          <notapproved>Siden blev ikke godkendt</notapproved>
+        </history>
+        <parallel>
+          <description>En parallel godkendelsesarbejdsproces</description>
+        </parallel>
+        <sequential>
+          <description>En sekventiel godkendelsesarbejdsproces</description>
+        </sequential>
+        <startparameters>
+          <approversvisible>Valg af godkendere kan foretages i redigeringstilstand</approversvisible>
+          <description>Beskrivelse for godkendere</description>
+          <isrole>Gruppe</isrole>
+          <name>Navn</name>
+          <noapprovers>Der skal vælges mindst én godkender</noapprovers>
+          <noapproversvisible>Der skal vælges mindst én godkender, hvis der ikke kan vælges godkendere i redigeringstilstand</noapproversvisible>
+          <nopage>{PageName}</nopage>
+          <notnumber>Antal godkendelser skal være et tal</notnumber>
+          <notpublishrights>Bruger {0} har ikke læse- eller udgivelsesadgang til {1}</notpublishrights>
+          <notvalidpage>Der er ikke valgt en gyldig side for godkendelsesarbejdsproces</notvalidpage>
+          <numberofapprovers>Vælg et minimumantal, der skal godkende</numberofapprovers>
+          <numbersvisible>Valg af antal godkendere kan foretages i redigeringstilstand</numbersvisible>
+          <positivenumber>Antal godkendelser skal være et positivt tal</positivenumber>
+          <publishedversion>Valgt side-version er allerede offentliggjort</publishedversion>
+          <required>Krævet</required>
+          <selectapprovers>Vælg brugere/grupper, som skal godkende</selectapprovers>
+          <tolarge>Minimumantal godkendere kan ikke overstige antallet af godkendere</tolarge>
+        </startparameters>
+        <versioncontrol>
+          <changeddescription>Sideversionen er ændret fra {0} til {1}</changeddescription>
+          <changedsubject>Sideversionen er ændret</changedsubject>
+          <differs>Den indlæste sideversion i redigeringspanel er forskellig fra sideversionen i forekomsten af arbejdsprocessen</differs>
+          <loadedversion>Version indlæst i redigeringspanel</loadedversion>
+          <selectversion>Vælg den sideversion, der skal behandles i godkendelsesarbejdsproces</selectversion>
+          <workflowversion>Version i forekomst af arbejdsproces</workflowversion>
+        </versioncontrol>
+      </approval>
+      <feedbackrequest>
+        <description>Beskrivelse for tilbagemelding</description>
+        <feedback>Tilbagemelding</feedback>
+        <feedbackposted>Tilbagemelding er modtaget</feedbackposted>
+        <finish>Afslut arbejdsproces</finish>
+        <heading>Indstillinger for tilbagemeldingsarbejdsproces</heading>
+        <nodescription>Beskrivelsen skal sendes</nodescription>
+        <noowner>Ejeren skal angives</noowner>
+        <nousers>Der er ikke valgt nogen brugere</nousers>
+        <ownerdescription>Tilbagemeldinger fra brugere</ownerdescription>
+        <ownerheading>Tilbagemelding på anmodning</ownerheading>
+        <ownersubject>Tilbagemelding</ownersubject>
+        <pageroot>Vælg side</pageroot>
+        <plugin>
+          <description>En arbejdsproces med anmodning om tilbagemelding</description>
+        </plugin>
+        <post>Send</post>
+        <selectusers>Vælg brugere/grupper, som du vil have tilbagemelding fra</selectusers>
+        <subject>Anmodning om tilbagemelding</subject>
+        <timetolive>Indstil tid for tilbagemelding (timer)</timetolive>
+        <userheading>Send tilbagemelding</userheading>
+      </feedbackrequest>
+      <translate>
+        <addtranslator>Tilføj oversætter for</addtranslator>
+        <cancelled>Der kører allerede en arbejdsproces af denne type for denne side</cancelled>
+        <completedescription>er blevet oversat til</completedescription>
+        <completesubject>Siden blev helt oversat</completesubject>
+        <fallback>Oversætter for ikke-angivne sprog</fallback>
+        <forpage>for side</forpage>
+        <heading>Konfigurer oversættelsesprogrammer til en arbejdsproces med en oversættelsesmeddelelse</heading>
+        <hours>time</hours>
+        <initialdelay>Startforskinkelse</initialdelay>
+        <initialdescription>Oversæt</initialdescription>
+        <initialsubject>Oversæt side</initialsubject>
+        <language>Sprog</language>
+        <minutes>minutter</minutes>
+        <notcompletedescription>er ikke blevet oversat til</notcompletedescription>
+        <notcompletesubject>En side er ikke blevet helt oversat</notcompletesubject>
+        <owner>Procesejer</owner>
+        <plugin>
+          <description>En arbejdsproces for en oversættelsesmeddelelse</description>
+        </plugin>
+        <positivenumber>Skal være et positivt tal</positivenumber>
+        <publishneeded>Sprogversion skal offentliggøres</publishneeded>
+        <reminder>Tid, før der sendes en påmindelse</reminder>
+        <terminate>Tid til oversættelse</terminate>
+        <to>til</to>
+        <translators>Oversættere</translators>
+      </translate>
+    </workflows>
+  </language>
+</languages>

@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2ADFCEBE-90BA-4841-9F5B-7321F65A4D13}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Test</RootNamespace>
+    <AssemblyName>Test</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MultiTableContext.cs" />
+    <Compile Include="MultiTableTests.cs" />
+    <Compile Include="Northwind.cs" />
+    <Compile Include="NorthwindCUDTests.cs" />
+    <Compile Include="NorthwindTestHarness.cs" />
+    <Compile Include="NorthwindTranslationTests.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestHarness.cs" />
+    <Compile Include="NorthwindExecutionTests.cs" />
+    <Compile Include="TestPolicy.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IQToolkit.Data.Access\IQToolkit.Data.Access.csproj">
+      <Project>{C7388C7B-4CC9-4F1D-AF36-6D4F6575AD04}</Project>
+      <Name>IQToolkit.Data.Access</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IQToolkit.Data.MySql\IQToolkit.Data.MySqlClient.csproj">
+      <Project>{5450EE6F-92F0-4F1F-B99F-5649A4E445FD}</Project>
+      <Name>IQToolkit.Data.MySqlClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IQToolkit.Data.SqlClient\IQToolkit.Data.SqlClient.csproj">
+      <Project>{3F003957-1B67-440B-BAFE-C2B32886A429}</Project>
+      <Name>IQToolkit.Data.SqlClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IQToolkit.Data.Sqlite\IQToolkit.Data.SQLite.csproj">
+      <Project>{E008624B-2344-420A-A514-4B2AD89906EC}</Project>
+      <Name>IQToolkit.Data.SQLite</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IQToolkit.Data.SqlServerCe\IQToolkit.Data.SqlServerCe.csproj">
+      <Project>{A7C0C2B6-4680-4F61-A062-C785BD4F92A1}</Project>
+      <Name>IQToolkit.Data.SqlServerCe</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IQToolkit\IQToolkit.csproj">
+      <Project>{0DA62A7C-3B40-456F-A4B2-B3E19ED4080E}</Project>
+      <Name>IQToolkit</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Northwind.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

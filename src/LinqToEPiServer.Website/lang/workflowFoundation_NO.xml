@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<languages>
+  <language name="norsk" id="no">
+    <admin>
+      <plugin>
+        <activitypluginattribute>Egendefinerte aktiviteter</activitypluginattribute>
+        <workflowtaskattribute>Håndterer oppgaver relatert til arbeidsflyter</workflowtaskattribute>
+      </plugin>
+      <workflowadmin>
+        <confirmdelete>Er du sikker på at du vil fjerne definisjonen?</confirmdelete>
+        <count>Antall</count>
+        <createnew>Opprett definisjon</createnew>
+        <definitionname>Definisjonsnavn</definitionname>
+        <defs>Definerte arbeidsflyter</defs>
+        <deftab>Definisjoner</deftab>
+        <delete>Slett</delete>
+        <description>Administrer arbeidsflyter</description>
+        <displayname>Arbeidsflyter</displayname>
+        <edit>Rediger</edit>
+        <eventlist>Antall forekomster (hvis finnes) som venter på hver EPiServer CMS-relatert hendelse.</eventlist>
+        <eventname>Hendelse</eventname>
+        <fetchsystem>Hent data</fetchsystem>
+        <filterondefinition>Filtrere etter definisjon</filterondefinition>
+        <heading>Administrasjon av arbeidsflyter</heading>
+        <info>Opprett og administrer arbeidsflytdefinisjoner og -forekomster</info>
+        <running>Gjeldende arbeidsflyter:</running>
+        <runningtab>Gjeldende forekomster</runningtab>
+        <startevents>Utløserhendelse</startevents>
+        <systemtab>Systeminformasjon</systemtab>
+        <type>Type</type>
+      </workflowadmin>
+      <workflowdefinitionedit>
+        <allpagetypes>Alle sidetyper</allpagetypes>
+        <assemblyerror>Samling må angis</assemblyerror>
+        <assemblyname>Samlingsnavn</assemblyname>
+        <automaticstart>Automatisk start</automaticstart>
+        <basictab>Generelt</basictab>
+        <cancel>Avbryt</cancel>
+        <classerror>Klasse må angis</classerror>
+        <classname>Klassenavn</classname>
+        <completedDefinition>Start neste forekomst automatisk</completedDefinition>
+        <configureparams>Konfigurer startparametere</configureparams>
+        <confirmdelete>Er du sikker på at du vil fjerne definisjonen?</confirmdelete>
+        <confirmuser>Er du sikker på at du vil fjerne den valgte brukeren/gruppen?</confirmuser>
+        <copy>Kopier</copy>
+        <defname>Definisjonsnavn</defname>
+        <delete>Slett</delete>
+        <description>Beskrivelse</description>
+        <heading>Konfigurasjon av definisjon</heading>
+        <info>Det er mulig å ha flere definisjoner basert på samme klasse. Hver definisjon må et unikt navn.&lt;br/&gt;Klassen må defineres ved å bruke dens fullt kvalifiserte navn (inklusive namespace).</info>
+        <layout>Oppsettsfil</layout>
+        <layoutfileloaded>Oppsett er lastet opp</layoutfileloaded>
+        <multiplename>Det finnes allerede en definisjon med angitt navn</multiplename>
+        <namecopy>Kopi av</namecopy>
+        <nameerror>Navn må angis</nameerror>
+        <namenumbercopy>Kopi ({0}) av</namenumbercopy>
+        <nolayoutfileloaded>Ingen oppsett er lastet opp</nolayoutfileloaded>
+        <none>Ingen</none>
+        <notworkflowtype>Typen må arve SequentialWorkflowActivity eller StateMachineWorkflowActivity</notworkflowtype>
+        <noxomlfileloaded>Ingen XOML er lastet opp</noxomlfileloaded>
+        <pageroot>Startside for definisjonen</pageroot>
+        <pagetypes>Bruk på sidetyper</pagetypes>
+        <running>Gjeldende arbeidsflyter:</running>
+        <runningtab>Gjeldende forekomster</runningtab>
+        <save>Lagre</save>
+        <securitytab>Sikkerhet</securitytab>
+        <startevent>Hendelse(r) som skal starte forekomsten</startevent>
+        <typenotloadable>Kunne ikke laste gitt type. Kontroller at den er distribuert til bin-katalogen.</typenotloadable>
+        <view>Vis arbeidsflytbilde</view>
+        <xoml>XOML-fil</xoml>
+        <xomlfileloaded>XOML er lastet opp</xomlfileloaded>
+      </workflowdefinitionedit>
+      <workflowstartparams>
+        <cancel>Avbryt</cancel>
+        <heading>Startparametere</heading>
+        <noattribute>Den definerte arbeidsflyten har ikke WorkflowPlugInAttribute</noattribute>
+        <nointerface>Den gitte kontrollen i WorkflowPlugInAttribute implementerer ikke IWorkflowStartParameterHandler</nointerface>
+        <pathfailure>Kunne ikke laste den gitte kontrollen fra </pathfailure>
+        <save>Lagre</save>
+      </workflowstartparams>
+    </admin>
+    <workflow>
+      <edit>
+        <commandaction>
+          <tooltip>Start arbeidsflytforekomst</tooltip>
+        </commandaction>
+        <task>
+          <description>Oppgaver relatert til arbeidsflyter</description>
+          <displayname>Arbeidsflytoppgaver</displayname>
+          <notset>Ikke angitt</notset>
+        </task>
+        <taskcontrol>
+          <eventinvoked>Data sendt til arbeidsflyt</eventinvoked>
+          <eventinvokedtaskdeleted>Data sendt til arbeidsflyt, oppgave slettet</eventinvokedtaskdeleted>
+          <instancenotfound>Arbeidsflytforekomsten for denne oppgaven kunne ikke lastes (antakeligvis er den avsluttet)</instancenotfound>
+          <invoke>Send</invoke>
+          <loaderror>Kunne ikke laste angitte brukerkontroll. Unntak:</loaderror>
+          <nocontrolfound>Det er ikke registrert aktiviteter med brukerkontroll som venter</nocontrolfound>
+          <view>Vis</view>
+        </taskcontrol>
+        <workfloweditcontrol>
+          <displayname>Arbeidsflyt</displayname>
+          <info>Det finnes ingen tilgjengelige forekomster eller oppgaver relatert til denne siden</info>
+          <selectdefinition>Velg definisjonen som skal starte forekomsten av</selectdefinition>
+          <startworkflow>Start</startworkflow>
+          <tasksforpage>Oppgaver relatert til side</tasksforpage>
+          <workflow>arbeidsflyt</workflow>
+        </workfloweditcontrol>
+        <workflowhistory>
+          <details>Detaljer</details>
+          <history>Historikk</history>
+          <user>Bruker</user>
+        </workflowhistory>
+        <workflowinstance>
+          <page>
+            <description>Gjeldende arbeidsflyter</description>
+            <displayname>Arbeidsflyter</displayname>
+            <running>Gjeldende arbeidsflyter:</running>
+          </page>
+          <start>
+            <definitiontostart>Opprett en forekomst av</definitiontostart>
+            <description>Opprett ny arbeidsflyt</description>
+            <displayname>Opprett arbeidsflyt</displayname>
+            <instancestartcanceled>Starten på forekomsten ble avbrutt av en hendelseshåndterer. Årsak:</instancestartcanceled>
+            <instancestarted>En forekomst har startet i henhold til definisjon</instancestarted>
+            <nodefinition>Det finnes ingen tilgjengelige arbeidsflytdefinisjoner</nodefinition>
+            <selectdefinition>Velg definisjonen som skal starte forekomsten av</selectdefinition>
+            <start>Start</start>
+          </start>
+        </workflowinstance>
+        <workflowlist>
+          <confirmterminate>Vil du avslutte forekomsten?</confirmterminate>
+          <confirmterminateall>Vil du avslutte forekomstene?</confirmterminateall>
+          <count>Antall forekomster</count>
+          <definitionname>Definisjonsnavn</definitionname>
+          <details>Detaljer<definitionname>Definisjonsnavn</definitionname><history>Historikk</history><initiator>Opprettet av</initiator><instanceid>Forekomst-ID</instanceid><page>Side</page><task>Gjeldende oppgaver</task><terminate>Avslutt</terminate><type>Type</type><waitingevents>Ventende hendelser</waitingevents><view>Vis</view></details>
+          <fetch>Vis</fetch>
+          <initiator>Opprettet av</initiator>
+          <missingdeleteaccess>Det er noen forekomster du ikke har avslutningstilgang til</missingdeleteaccess>
+          <terminateall>Avslutt alle</terminateall>
+          <type>Type</type>
+        </workflowlist>
+        <workflowtask>
+          <assignedto>Tilordnet</assignedto>
+          <confirmdelete>Er du sikker på at du vil fjerne oppgaven?</confirmdelete>
+          <created>Opprettet</created>
+          <description>Beskrivelse</description>
+          <duedate>Forfallsdato</duedate>
+          <subject>Emne</subject>
+        </workflowtask>
+      </edit>
+      <runtime>
+        <adduserdata>
+          <description>Nøkkel: </description>
+          <subject>Brukerdata lagt til</subject>
+        </adduserdata>
+        <associatedwithpage>
+          <description>Side-ID: </description>
+          <subject>Tilknyttet side</subject>
+        </associatedwithpage>
+        <instancestarted>
+          <description>Arbeidsflytforekomst startet</description>
+          <subject>Arbeidsflyt startet</subject>
+        </instancestarted>
+        <taskcreated>
+          <description>Oppgavebeskrivelse: </description>
+          <subject>Oppgave opprettet. Emne: </subject>
+        </taskcreated>
+        <taskdeleted>
+          <description>Oppgave-ID: </description>
+          <subject>Oppgave slettet</subject>
+        </taskdeleted>
+        <taskupdated>
+          <description>Oppgavebeskrivelse: </description>
+          <subject>Oppgave oppdatert. Emne: </subject>
+        </taskupdated>
+      </runtime>
+    </workflow>
+    <workflows>
+      <approval>
+        <approvaltask>
+          <pageheading>Godkjenningsarbeidsflyt for side</pageheading>
+          <subject>Godkjenn side</subject>
+        </approvaltask>
+        <approvedevent>
+          <approved>Godkjent</approved>
+          <approvedby>Siden er godkjent av {0}</approvedby>
+          <comment>Kommentar</comment>
+          <notapproved>Ikke godkjent</notapproved>
+          <pageapproved>{0} er godkjent</pageapproved>
+        </approvedevent>
+        <history>
+          <approved>Siden ble godkjent</approved>
+          <notapproved>Siden ble ikke godkjent</notapproved>
+        </history>
+        <parallel>
+          <description>En parallell godkjenningsarbeidsflyt</description>
+        </parallel>
+        <sequential>
+          <description>En sekvensiell godkjenningsarbeidsflyt</description>
+        </sequential>
+        <startparameters>
+          <approversvisible>Valg av godkjennere tilgjengelig i redigeringsmodus</approversvisible>
+          <description>Beskrivelse for godkjennere</description>
+          <isrole>Gruppe</isrole>
+          <name>Navn</name>
+          <noapprovers>Minst én godkjenner må velges</noapprovers>
+          <noapproversvisible>Minst én godkjenner må velges hvis valg av godkjennere ikke er tilgjengelig i redigeringsmodus</noapproversvisible>
+          <nopage>{PageName}</nopage>
+          <notnumber>Antall godkjenninger må være et tall</notnumber>
+          <notpublishrights>Bruker {0} har ikke lese- eller publiseringstilgang til {1}</notpublishrights>
+          <notvalidpage>Ingen gyldig side er valgt for godkjenningsarbeidsflyt</notvalidpage>
+          <numberofapprovers>Velg minste antall som må godkjenne</numberofapprovers>
+          <numbersvisible>Valg av antall godkjennere tilgjengelig i redigeringsmodus</numbersvisible>
+          <positivenumber>Antall godkjenninger må være et positivt tall</positivenumber>
+          <publishedversion>Den valgte sideversjonen er allerede publisert</publishedversion>
+          <required>Påkrevd</required>
+          <selectapprovers>Velg brukere/grupper som skal godkjenne</selectapprovers>
+          <tolarge>Minste antall godkjennere kan ikke være større enn antall godkjennere</tolarge>
+        </startparameters>
+        <versioncontrol>
+          <changeddescription>Sideversjon endret fra {0} til {1}</changeddescription>
+          <changedsubject>Sideversjon endret</changedsubject>
+          <differs>Sideversjonen som er lastet i redigeringspanelet, er ulik sideversjonen i arbeidsflytforekomsten</differs>
+          <loadedversion>Versjonen lastet i redigeringspanelet</loadedversion>
+          <selectversion>Velg sideversjonen som skal behandles i godkjenningsarbeidsflyten</selectversion>
+          <workflowversion>Versjonen i arbeidsflytforekomst</workflowversion>
+        </versioncontrol>
+      </approval>
+      <feedbackrequest>
+        <description>Beskrivelse for tilbakemelding</description>
+        <feedback>Tilbakemelding</feedback>
+        <feedbackposted>Tilbakemelding mottatt</feedbackposted>
+        <finish>Fullfør arbeidsflyt</finish>
+        <heading>Innstillinger for forespørsel om tilbakemeldingsarbeidsflyt</heading>
+        <nodescription>Beskrivelse må sendes</nodescription>
+        <noowner>Eier må angis</noowner>
+        <nousers>Ingen brukere valgt</nousers>
+        <ownerdescription>Tilbakemelding fra brukere</ownerdescription>
+        <ownerheading>Tilbakemelding om forespørsel</ownerheading>
+        <ownersubject>Tilbakemelding</ownersubject>
+        <pageroot>Velg side</pageroot>
+        <plugin>
+          <description>En forespørsel om tilbakemeldingsarbeidsflyt</description>
+        </plugin>
+        <post>Legg inn</post>
+        <selectusers>Velg brukere/grupper du ønsker tilbakemelding fra</selectusers>
+        <subject>Forespørsel om tilbakemelding</subject>
+        <timetolive>Angi tid for tilbakemelding (timer)</timetolive>
+        <userheading>Legg inn tilbakemelding</userheading>
+      </feedbackrequest>
+      <translate>
+        <addtranslator>Legg til oversetter for</addtranslator>
+        <cancelled>En arbeidsflyt kjører allerede for denne siden</cancelled>
+        <completedescription>er oversatt til</completedescription>
+        <completesubject>Siden ble fullstendig oversatt</completesubject>
+        <fallback>Oversetter for ikke-angitte språk</fallback>
+        <forpage>for side</forpage>
+        <heading>Konfigurer oversettere for oversettingsvarselsarbeidsflyt</heading>
+        <hours>time</hours>
+        <initialdelay>Startforsinkelse</initialdelay>
+        <initialdescription>Oversett</initialdescription>
+        <initialsubject>Oversett side</initialsubject>
+        <language>Språk</language>
+        <minutes>minutter</minutes>
+        <notcompletedescription>er ikke oversatt til</notcompletedescription>
+        <notcompletesubject>En side er ikke fullstendig oversatt</notcompletesubject>
+        <owner>Prosesseier</owner>
+        <plugin>
+          <description>En oversettingsvarselsarbeidsflyt</description>
+        </plugin>
+        <positivenumber>Må være et positivt tall</positivenumber>
+        <publishneeded>Språkversjon bør publiseres</publishneeded>
+        <reminder>Tid før påminnelsen sendes</reminder>
+        <terminate>Tid for oversettelse</terminate>
+        <to>til</to>
+        <translators>Oversettere</translators>
+      </translate>
+    </workflows>
+  </language>
+</languages>

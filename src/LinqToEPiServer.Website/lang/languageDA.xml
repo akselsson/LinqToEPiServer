@@ -1,0 +1,2978 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<languages>
+  <language name="dansk" id="da">
+    <accesslevels>
+      <accesslevel name="Administer">
+        <description>Administrer</description>
+      </accesslevel>
+      <accesslevel name="Create">
+        <description>Opret</description>
+      </accesslevel>
+      <accesslevel name="Delete">
+        <description>Slet</description>
+      </accesslevel>
+      <accesslevel name="Edit">
+        <description>Ændre</description>
+      </accesslevel>
+      <accesslevel name="NoAccess">
+        <description>Ingen adgang</description>
+      </accesslevel>
+      <accesslevel name="Publish">
+        <description>Publicer</description>
+      </accesslevel>
+      <accesslevel name="Read">
+        <description>Læs</description>
+      </accesslevel>
+    </accesslevels>
+    <admin>
+      <admingroup>
+        <approvedheading>Godkendt</approvedheading>
+        <deletegrouptooltip>Slet gruppe</deletegrouptooltip>
+        <description see="/labels/description" />
+        <group>				Gruppe</group>
+        <groupexists>		Der findes allerede en gruppe med navnet {0}</groupexists>
+        <heading>			Administrer grupper</heading>
+        <info>				Her kan du slette eller tilføje grupper, der anvendes til at tildele rettigheder.</info>
+        <ldapinfo>	Importere gruppeoplysninger fra LDAP-serveren. Angiv søgeord i feltet; f.eks. vil ordet User* få vist alle grupper/OU'er, som starter med teksten User.</ldapinfo>
+        <ldappath>			LDAP-server</ldappath>
+        <localgroup>		Windowsgrupper</localgroup>
+        <lockedoutheading>Spærret</lockedoutheading>
+        <membersofrole>Brugere af gruppen "{0}"</membersofrole>
+        <newgroupinfo>Oprette gruppe til brug i EPiServer</newgroupinfo>
+        <noroleprovider>Der er ikke konfigureret og/eller aktiveret en rolleudbyder i web.konfig!</noroleprovider>
+        <provider>Udbyder</provider>
+        <removeuserfromgrouptooltip>Fjern bruger fra gruppe</removeuserfromgrouptooltip>
+        <roledeletefailed>Gruppen "{0}" kunne ikke slettes</roledeletefailed>
+        <rolenameinvalid>Gruppenavnet er ugyldigt</rolenameinvalid>
+        <syncbutton>		Synkroniser</syncbutton>
+        <syncinfo>	Synkronisere lokale gruppeoplysninger til EPiServer</syncinfo>
+        <syncldapbutton>Importer fra LDAP-server</syncldapbutton>
+        <userremovedfromrole>Medlem '{0}' i gruppe '{1}' er blevet fjernet</userremovedfromrole>
+      </admingroup>
+      <categories>
+        <deleletereferencewarning>Én eller flere sider henviser til den kategori "{0}", som du prøver at slette.</deleletereferencewarning>
+        <deleteconfirmmessage>Vil du slette kategori "{0}" og alle dens underkategorier?</deleteconfirmmessage>
+        <delreferenceconfirm>Ønsker du alligevel at slette kategorien?</delreferenceconfirm>
+        <heading>Kategorier</heading>
+        <helpadd>Tilføj kategori under den valgte kategori. Bemærk at du skal gemme, for at ændringen kan træde i kraft</helpadd>
+        <helpdelete>Slet kategori. Bemærk at hvis denne kategori har underordnede kategorier, vil de blive flyttet et niveau op</helpdelete>
+        <helpmovedown>Flytter kategorien et trin ned på listen.</helpmovedown>
+        <info>Definer de kategorier, din web-site anvender. Disse vil være tilgængelige i redigeringsfunktionen for hver side under "Kategorier".</info>
+        <movedown>Flyt ned</movedown>
+        <moveup>Flyt op</moveup>
+        <notselectable>Kan ikke markeres</notselectable>
+        <notvisible>Ikke synligt</notvisible>
+        <tabledescription>Beskrivelse</tabledescription>
+        <tablename>Navn</tablename>
+        <tableselectable>Kan vælges</tableselectable>
+        <tablevisible>Synlig</tablevisible>
+      </categories>
+      <cleanupupload>
+        <directory>Biblioteket</directory>
+        <heading>Slet ubrugte filer</heading>
+        <info>Klik på OK for at slette ubrugte filer, hvor siden ikke længere findesI redigeringstilstand kan redaktører sende billeder og dokumenter til en mappe kaldet Sidefiler, og disse filer bliver liggende på serveren, når en side slettes. Klik på knappen OK for at fjerne disse filer.I redigeringstilstand kan redaktører sende billeder til mappen "Sidefiler". Disse filer forbliver på serveren, når siderne slettes. Her kan du fjerne ubenyttede filer, som er gemt i "Sidefiler".</info>
+        <leftintact>forblev intakt</leftintact>
+        <notdeleted>Kunne ikke slette&amp;nbsp;</notdeleted>
+        <nothing>Der var intet at slette</nothing>
+        <wasdeleted>blev slettet</wasdeleted>
+        <wasnotdeleted>blev ikke slettet</wasnotdeleted>
+      </cleanupupload>
+      <confirmlanguagespecific>
+        <heading>Værdierne slettesKonvertering af eksisterende indhold</heading>
+        <info>Egenskabsværdierne slettes for sider, der findes på sprog, som ikke er det oprindelige sprog.</info>
+        <pagelist>Sider, der påvirkes ({0})</pagelist>
+        <title>Advarsel</title>
+      </confirmlanguagespecific>
+      <contentmirroring>
+        <description>De kanaler, der er defineret i systemet.</description>
+        <displayname see="/admin/contentmirroring/heading" />
+        <heading>Administration af spejlinger</heading>
+        <info>Definerer de indholdskanaler, der skal spejle indhold fra EPiServer CMS til et eksternt system.</info>
+        <name>Kanalnavn</name>
+      </contentmirroring>
+      <contentmirroringedit>
+        <activatefilter>Aktiver filter</activatefilter>
+        <alllanguages>Aktiv (alle sprog spejles til destinationen med globaliseringsunderstøttelse)</alllanguages>
+        <automatic>Overførselstype</automatic>
+        <automaticapproval>Godkend automatisk ændringer</automaticapproval>
+        <channeltype>Spejltype</channeltype>
+        <confirmdelete>Er du sikker på, du vil fjerne spejlingsindstillingerne?</confirmdelete>
+        <filterpropertyname>Filtrér efter egenskabsnavn</filterpropertyname>
+        <filterpropertyvalue>Filtrér efter egenskabsværdi</filterpropertyvalue>
+        <frompagelink>Startside</frompagelink>
+        <globalizationsupport>Globaliseringsunderstøttelse</globalizationsupport>
+        <heading>Indstillinger for spejling</heading>
+        <impersonatedomain>Domæne</impersonatedomain>
+        <impersonatepassword>Indstil adgangskode</impersonatepassword>
+        <impersonateusername>Brugernavn</impersonateusername>
+        <includeroot>Medtag startsiden</includeroot>
+        <info>Definerer indstillinger for denne kanal.</info>
+        <language>Sprog</language>
+        <name>Navn</name>
+        <noglobalizationsupport>Inaktiv (det oprindelige sprog spejles til destinationen uden globaliseringsunderstøttelse)</noglobalizationsupport>
+        <runasanonymoususer>Kør som anonym bruger</runasanonymoususer>
+        <singlelanguage>Kun "{0}" spejles til destinationen uden globaliseringsunderstøttelse</singlelanguage>
+        <tabfilter>Egenskabsfilter</tabfilter>
+        <tabinformation>Oplysninger</tabinformation>
+        <types>
+          <list>Liste</list>
+          <search>Søg (kun opdaterede sider)</search>
+          <tree>Træ</tree>
+        </types>
+      </contentmirroringedit>
+      <contentmirroringmanager>
+        <description />
+        <displayname>Spejlingstjeneste</displayname>
+      </contentmirroringmanager>
+      <contentmirroringmapping>
+        <delete>Slet</delete>
+        <deleteall>Slet alle tilknytninger</deleteall>
+        <deleteallmessage>Er du sikker på, du vil slette alle tilknytninger for denne kanal?</deleteallmessage>
+        <deletemessage>Er du sikker på, du vil slette denne tilknytning?</deletemessage>
+        <foldermapping>Mappetilknytninger</foldermapping>
+        <message>Denne liste viser, hvordan side- og mappe-id'er er tilknyttet mellem kildewebstedet og destinationswebstedet. Når der slettes en tilknytning, frakobles målsiden eller -mappen fra sin kilde. Efterfølgende spejlingsopdateringer resulterer i en gendannelse af målsiden eller -mappen og en ren kopi af eventuelt mappeindhold.</message>
+        <pagemapping>Sidetilknytninger</pagemapping>
+        <pagename>Sidenavn</pagename>
+        <sourceid>Kilde-id</sourceid>
+        <targetid>Mål-id</targetid>
+        <title>Spejlingstilknytninger for "{0}"</title>
+      </contentmirroringmapping>
+      <contentmirroringqueue>
+        <created>Oprettet</created>
+        <deletepackage>Slet pakke</deletepackage>
+        <deletewarningi0>Er du sikker på, at du vil slette ændringerne fra køen?</deletewarningi0>
+        <deletewarningi1>Flytte- og slettehandlinger på destinationswebstedet skal udføres manuelt.</deletewarningi1>
+        <deletewarningi2>Opdaterede og oprettede sider skal genudgives.</deletewarningi2>
+        <info>Viser de sider, der bliver spejlet, næste gang spejlingstjenesten køres.</info>
+        <packagetitle>Pakke</packagetitle>
+        <pageid>Side-id</pageid>
+        <pagename>Sidenavn</pagename>
+        <title>Spejlingskø for destinationen "{0}" på "{1}"</title>
+        <type>Ændringstype</type>
+        <warning>Advarsel! Sider, der slettes fra pakken, bliver ikke medtaget, når webstedet spejles. Dette kan medføre problemer for fremtidige spejlinger. Undlad at klikke på "Slet", hvis du vil medtage alle sider i pakken, næste gang spejlingstjenesten køres.</warning>
+      </contentmirroringqueue>
+      <contentmirroringview>
+        <continuereset>Fortsæt med nulstilling</continuereset>
+        <createdestination>Opret destination</createdestination>
+        <editmappings>Tilknytninger</editmappings>
+        <editqueue>‏Rediger kø</editqueue>
+        <errorsamechannelname>Kanalnavnet "{0}" bruges allerede i forbindelse med en anden kanal</errorsamechannelname>
+        <heading>Destinationsoversigt</heading>
+        <htmlmirroring>HTML</htmlmirroring>
+        <info>En oversigt over de destinationer, der er blevet angivet for denne kanal.</info>
+        <lastchanges>Seneste tidspunkt for ændringer</lastchanges>
+        <lastexecution>Sidste kørsel</lastexecution>
+        <laststatus>Sidste status</laststatus>
+        <name>Destinationer</name>
+        <noaction>Der er ikke foretaget ændringer</noaction>
+        <notallowedsourcepage>Spejling kan ikke finde sted fra rodsiden eller papirkurven.</notallowedsourcepage>
+        <nousername>Ugyldigt brugernavn</nousername>
+        <pagemirroring>EPiServer CMS</pagemirroring>
+        <queuelength>Kølængde</queuelength>
+        <reset>Nulstil status</reset>
+        <resetwarning1>Hvis du fortsætter med denne handling, vises alle sider, som de var, da de blev oprettet.</resetwarning1>
+        <resetwarning2>Denne handling medfører tab af alle elementer, der ikke er spejlet til destinationen.</resetwarning2>
+        <settingslocked>Indstillingerne for denne kanal og dens destinationer er låste, fordi en spejlingsopgave allerede er udført med nuværende indstillinger. De følgende opgaver kræver identiske indstillinger for spejling for at kunne udføres korrekt. Juster indstillingerne ved at klikke på "Gendannelse" for at gendanne information om tidligere opgaver.</settingslocked>
+        <title>Destinationer for kanal "{0}"</title>
+        <type>Måltype</type>
+        <xmlmirroring>XML</xmlmirroring>
+      </contentmirroringview>
+      <contentpublisheredit>
+        <applyfilterontemplates>Anvend kanalfilter</applyfilterontemplates>
+        <changelog>Logfil over ændringer</changelog>
+        <confirmdelete>Er du sikker på, du vil fjerne denne destination?</confirmdelete>
+        <defaultdocument>Standardnavn til filer</defaultdocument>
+        <destinationnameduplicate>Der findes allerede en destination med dette navn</destinationnameduplicate>
+        <flatfiles>Én fil pr. side</flatfiles>
+        <heading>Destination</heading>
+        <info>Definerer en modtager af de ændringer, der sendes fra en kanal.</info>
+        <instantpublish>Udgiv sider</instantpublish>
+        <name>Navn</name>
+        <nopageref>Input skal kunne analyseres som en sidereference.</nopageref>
+        <pathnameproperty>Brug følgende egenskab til mappenavne</pathnameproperty>
+        <queuecreated>Elementet blev oprettet</queuecreated>
+        <queueid>Kønummer</queueid>
+        <remotesite>Eksternt sted</remotesite>
+        <rootdir>Sti til relativ rod</rootdir>
+        <selecttype>Vælg destinationstype</selecttype>
+        <sitemap>Oversigt over alle steder</sitemap>
+        <tabqueue>Kø</tabqueue>
+        <tabsettings>Oplysninger</tabsettings>
+        <targetdirectory>Målmappe på serveren</targetdirectory>
+        <topagelink>Rodside på destination</topagelink>
+        <usedirectoryweblinks>Medtag ikke filnavn i links</usedirectoryweblinks>
+        <verifychecksum>Kontrollér kontrolsummen for alle sider hver gang</verifychecksum>
+        <xmloutputstyle>Opret output</xmloutputstyle>
+        <xslfile>Sti til XSL-skabelon</xslfile>
+      </contentpublisheredit>
+      <convertpagetype>
+        <cancel>Annuller</cancel>
+        <confirmconvertcheckbox>Jeg vil fjerne disse egenskaber permanent.</confirmconvertcheckbox>
+        <convert>Konverter</convert>
+        <converterror>Det var ikke muligt at konvertere siden: </converterror>
+        <converterrorsameproperty>
+          En ny egenskab er tilknyttet flere gamle egenskaber. En ny egenskab kan
+          kun tilknyttes én gammel egenskab.
+        </converterrorsameproperty>
+        <frompageproperties>Konverter fra egenskab</frompageproperties>
+        <frompagetype>Konverter fra sidetype</frompagetype>
+        <heading>Konverter sider</heading>
+        <info>
+          Konverterer en eller flere sider i træstrukturen fra én sidetype til en anden sidetype.&lt;br/&gt;
+          &lt;b&gt;Bemærk!&lt;/b&gt; Denne handling kan ikke fortrydes, og indholdet kan blive fjernet permanent.
+        </info>
+        <istesting>Testresultater</istesting>
+        <languageid>Sidesprog</languageid>
+        <log>
+          <clearcache>Cachen ryddes for side {0}.</clearcache>
+          <clearcacheall>Cachen ryddes for alle sider.</clearcacheall>
+          <cntpages>{0} side(r) blev konverteret.</cntpages>
+          <cntpagestest>{0} side(r) vil blive konverteret.</cntpagestest>
+          <commit>Transaktionen lykkedes.</commit>
+          <convertedpagetype>{0} side(r) af sidetypen {1} blev konverteret til sidetypen {2}.</convertedpagetype>
+          <convertedpagetypetest>{0} side(r) af sidetypen {1} vil blive konverteret til sidetypen {2}.</convertedpagetypetest>
+          <heading>Følgende blev påvirket for side {0} (inkl. versioner).</heading>
+          <headingrecursive>Følgende blev påvirket for side {0} (inkl. versioner og undersider af den valgte sidetype).</headingrecursive>
+          <headingrecursivetest>Følgende bliver påvirket for side {0} (inkl. versioner og undersider af den valgte sidetype).</headingrecursivetest>
+          <headingtest>Følgende vil blive påvirket for side {0} (inkl. versioner).</headingtest>
+          <noproperty>Der blev ikke fundet nogen egenskaber af typen {0}.</noproperty>
+          <removeproperty>{0} egenskab(er) af typen {1} blev fjernet permanent.</removeproperty>
+          <removepropertytest>{0} egenskab(er) af typen {1} vil blive fjernet permanent.</removepropertytest>
+          <updateproperty>{0} egenskab(er) af typen {1} blev konverteret til typen {2}.</updateproperty>
+          <updatepropertytest>{0} egenskab(er) af typen {1} vil blive konverteret til typen {2}.</updatepropertytest>
+        </log>
+        <nomatchingpages>Der er ingen undersider til den valgte sidetype. Den valgte rodside har sidetypen {0}.</nomatchingpages>
+        <noselectedpage>Vælg en side at konvertere fra</noselectedpage>
+        <notaccepted>Brugeren har annulleret handlingen</notaccepted>
+        <notmatchingpagetype>Den valgte sidetype svarer ikke til den valgte side. Den valgte side har sidetypen {0}.</notmatchingpagetype>
+        <ok>OK</ok>
+        <recursive>Konverter den valgte side og alle undersider (af den valgte sidetype)</recursive>
+        <remotepage>Konvertering af sider understøttes kun for sider, der leveres fra en CMS-database på en lokal EPiServer.</remotepage>
+        <removelanguage>Fjern sprog</removelanguage>
+        <removepropertywarning1>Sørg for, at der ikke er nogen, der er i gang med at redigere en side af den sidetype, der skal konverteres.</removepropertywarning1>
+        <removepropertywarning2>Alle værdier for de egenskaber, du vælger at fjerne permanent, vil blive fjernet permanent fra databasen og kan ikke gendannes.</removepropertywarning2>
+        <removepropertywarningheading>Denne handling kan ødelægge indholdet på webstedet!</removepropertywarningheading>
+        <removepropety>Fjern egenskaben permanent</removepropety>
+        <requierdremovecomfirmation>Du skal markere Fjern egenskaber permanent for at fortsætte</requierdremovecomfirmation>
+        <runtest>Test konvertering, og vis logbog</runtest>
+        <selectpageroot>Marker de sider, der skal konverteres</selectpageroot>
+        <topageproperties>Konverter til egenskab</topageproperties>
+        <topagetype>Konverter til sidetype</topagetype>
+      </convertpagetype>
+      <copypagetype>
+        <caption>Kopier</caption>
+        <heading>Kopier sidetype</heading>
+        <info>Vælg den sidetype, der skal kopieres.</info>
+      </copypagetype>
+      <databasejob>¨
+				<activecaption>		Aktiv</activecaption><archive><description>	Indstil, om arkiveringsfunktionen skal være aktiv/inaktiv, og hvor ofte arkiveringen skal udføres. Arkiveringsfunktionen flytter sider, hvor sidste offentliggørelsesdato er overskredet, til arkiveringsmappen, hvis der er angivet en.</description><displayname>	Arkiveringsfunktion</displayname></archive><delayedpublish><displayname>Offentliggørelse af tidsstyrede versioner</displayname></delayedpublish><logdate>			Dato</logdate><logmessage>Meddelelse</logmessage><logstatus>			Status</logstatus><nextexecution>Næste kørsel</nextexecution><savemessage>		Indstillingerne er gemt.</savemessage><schedulecaption>	Jobbet skal udføres hver</schedulecaption><starterrormessage>	Jobbet kunne ikke starte: {0}</starterrormessage><startokmessage>	Jobbet er startet uden problemer.</startokmessage><subscription><description>Abonnementsjobbet sender en e-mail til brugere, som abonnerer på opdateringer af forskellige dele af webstedet.</description><displayname>Abonnement</displayname><mailsubject>Seneste nyheder</mailsubject><pagelinktext>Læs mere</pagelinktext></subscription><tabhistory>Oversigt</tabhistory><tabsettings>		Indstillinger</tabsettings><testbutton>		Prøvekør manuelt</testbutton><wastebasket><description>	Indstil, om tømningen skal være aktiv/inaktiv, og hvor ofte arbejdet skal udføres. Jobbet indebærer, at sider, der er ældre end 30 dage, fjernes permanent fra papirkurven.</description><displayname>	Automatisk tømning af papirkurven</displayname></wastebasket></databasejob>
+      <deletemembershipdialog>
+        <confirmdeleteuserorgroup>Vil du slette brugeren/gruppen {0}?</confirmdeleteuserorgroup>
+        <deletemembershipaccessrights>Slet adgangsrettigheder til side</deletemembershipaccessrights>
+        <deletemembershippermissionrights>Slet tilladelser til funktioner</deletemembershippermissionrights>
+        <deletemembershipunifiedrights>Slet adgangsrettigheder til filhåndtering</deletemembershipunifiedrights>
+        <deletemembershipworkflowrights>Slet adgangsrettigheder til arbejdsproces</deletemembershipworkflowrights>
+        <deleterightsforrole>Slet adgangsrettigheder for gruppe </deleterightsforrole>
+        <deleterightsforuser>Slet adgangsrettigheder for bruger </deleterightsforuser>
+        <groupdeleted>Gruppen "{0}" er blevet slettet</groupdeleted>
+        <heading>Slet bruger/gruppe</heading>
+        <info>Her kan du fjerne en bruger eller gruppe fra systemet samt alle tilknyttede adgangsrettigheder.</info>
+        <userdeletefailed>Brugeren {0} kunne ikke slettes.</userdeletefailed>
+        <userremoved>Brugeren '{0}' er slettet</userremoved>
+      </deletemembershipdialog>
+      <editdynprop>
+        <heading>	Rediger dynamiske egenskaber</heading>
+        <info>		Dynamiske egenskaber er tilgængelige, uanset hvilken sidetype du anvender.</info>
+      </editdynprop>
+      <editdynpropfield>
+        <advancedcaption see="/admin/editpagetypefield/advancedcaption" />
+        <editcaption see="/admin/editpagetypefield/editcaption" />
+        <heading>	Rediger dynamisk egenskab</heading>
+        <headingnew>Opret ny dynamisk egenskab</headingnew>
+        <helptextcaption see="/admin/editpagetypefield/helpcaption" />
+        <info />
+        <longstringsettingscaption see="/admin/editpagetypefield/editorhelp" />
+        <namecaption see="/admin/editpagetypefield/namecaption" />
+        <tabinfo>	Oplysninger</tabinfo>
+        <typecaption see="/admin/editpagetypefield/typecaption" />
+      </editdynpropfield>
+      <editlanguage>
+        <charsetcaption>Teckenuppsättning</charsetcaption>
+        <currentsystemdefaultcaption>Nuværende standardkodning for systemet</currentsystemdefaultcaption>
+        <fontcharsetcaption>	Font for redigeringsprogrammet</fontcharsetcaption>
+        <heading>	Språkkodning</heading>
+        <info>&lt;b&gt;ADVARSEL!&lt;/b&gt; Fejlagtige ændringer på denne side kan medføre, at dit websted ophører med at fungere.</info>
+        <languageidcaption>Språkkod</languageidcaption>
+        <languagenamecaption>Lokalt sprognavn</languagenamecaption>
+        <languagenameencaption>Engelsk sprognavn</languagenameencaption>
+        <localecaption>Formatering af dato/klokkeslæt</localecaption>
+        <mailcodepagecaption>Tegnopsætning for e-mail</mailcodepagecaption>
+        <setsystemdefaultcaption>Indstil som systemets standardkodning</setsystemdefaultcaption>
+      </editlanguage>
+      <editlanguagebranch>
+        <cantsave>Webstedssproget kan ikke gemmes.</cantsave>
+        <confirmdelete>Er du sikker på, du vil fjerne dette sprog?</confirmdelete>
+        <customiconcaption>Skabelonikon</customiconcaption>
+        <customiconhelp>Sti til kundebillede, der skal anvendes på skabelonsider. Skal starte med "/" eller "~/".</customiconhelp>
+        <enabledcaption>Aktiveret</enabledcaption>
+        <enabledlanguageexception>Hvis du har aktiveret globaliseringsunderstøttelse, skal du altid have aktiveret mindst ét sprog</enabledlanguageexception>
+        <errorcantdelteusedlanguage>Sproget bruges i sprogindstillingerne på de følgende sider og kan ikke slettes. {0}.</errorcantdelteusedlanguage>
+        <errorlanguageonpage>Sproget kan ikke slettes, fordi det bruges på de følgende sider: {0}.</errorlanguageonpage>
+        <headingnew>Opret nyt webstedssprog</headingnew>
+        <iconcaption>Ikon</iconcaption>
+        <info>Angiv et nyt webstedssprog, der skal være tilgængeligt for besøgende på webstedet.</info>
+        <invalidiconpath>Søgestien til skabelonikonet skal begynde med "/" eller "~/".</invalidiconpath>
+        <namecaption>Navn</namecaption>
+        <urlsegmentcaption>Præfiks for webadresse</urlsegmentcaption>
+        <warningchangelanguage>Advarsel! Denne sprogkode bruges flere forskellige steder i systemet, for eksempel i hyperlinks og reservesprog. Denne indstilling må kun ændres under systemets indledende konfiguration.</warningchangelanguage>
+      </editlanguagebranch>
+      <editlanguagebranches>
+        <addlanguage>Tilføj sprog</addlanguage>
+        <customiconcaption>Skabelonikon</customiconcaption>
+        <enabledcaption>Aktiveret</enabledcaption>
+        <heading>Administrer webstedssprog</heading>
+        <iconcaption>Ikon</iconcaption>
+        <idcaption>Sprogkode</idcaption>
+        <info>Angiv de sprog, der skal være tilgængelige for besøgende på webstedet.</info>
+        <namecaption>Navn</namecaption>
+        <registered>Registreret</registered>
+        <registeredcaption>Er allerede registreret</registeredcaption>
+        <systemiconcaption>Systemikon</systemiconcaption>
+      </editlanguagebranches>
+      <editpagetype>
+        <addproperty>			Tilføj egenskab</addproperty>
+      </editpagetype>
+      <editpagetypebase>
+        <!--This part is just a reference to above and needs no translation. It must be here though since what it references has been moved here-->
+        <alltypeavailable>Alle sidetyper er tilgængelige</alltypeavailable>
+        <archivepagelinkcaption see="/pagetypes/common/property[@name='PageArchiveLink']/caption" />
+        <archivepagelinkhelp see="/pagetypes/common/property[@name='PageArchiveLink']/help" />
+        <availablecaption>	Tilgængelig i redigeringstilstand</availablecaption>
+        <childorderrulecaption see="/pagetypes/common/property[@name='PageChildOrderRule']/caption" />
+        <childorderrulehelp see="/pagetypes/common/property[@name='PageChildOrderRule']/help" />
+        <defaultidcaption see="#usecustomdefaultcaption" />
+        <defaultidhelp see="#usecustomdefaulthelp" />
+        <defaultnamecaption see="/pagetypes/common/property[@name='PageName']/caption" />
+        <defaultnamehelp see="/pagetypes/common/property[@name='PageName']/help" />
+        <defaultstartpublishcaption>Start publicering dato i forhold til hvornår siden er oprettet</defaultstartpublishcaption>
+        <defaultstoppublishcaption>Slut publicering dato  i forhold til hvornår siden er oprettet</defaultstoppublishcaption>
+        <delete>Ønsker du at slette denne sidetype ?</delete>
+        <descriptioncaption>Beskrivelse</descriptioncaption>
+        <editpagecaption>	Brugerdefineret redigeringsside</editpagecaption>
+        <filenamecaption>		Filnavn</filenamecaption>
+        <filenameerror>Filnavnet skal angives relativt i forhold til webstedets rod, starte med '/' og slutte med en fil med filtypenavnet .aspx, f.eks. '/skabeloner/Side.aspx'.</filenameerror>
+        <frameidcaption see="/pagetypes/common/property[@name='PageFrameID']/caption" />
+        <frameidhelp see="/pagetypes/common/property[@name='PageFrameID']/help" />
+        <heading>			Rediger "{0}"</heading>
+        <headingdeleted>Sideypen er slettet</headingdeleted>
+        <headingdeletefailed>Sidetypen kunne ikke slettes – der findes sider af denne type</headingdeletefailed>
+        <headingnew>		Opret ny sidetype</headingnew>
+        <headingsaved>Sidetypen er gemt</headingsaved>
+        <info>				Her kan du redigere grundlæggende oplysninger om sidetypen.</info>
+        <namecaption>Navn</namecaption>
+        <peerordercaption see="/pagetypes/common/property[@name='PagePeerOrder']/caption" />
+        <peerorderhelp see="/pagetypes/common/property[@name='PagePeerOrder']/help" />
+        <sortordercaption>Sorteringsindeks</sortordercaption>
+        <tabdefaultvalues>Standardværdier</tabdefaultvalues>
+        <tabinfo>Information</tabinfo>
+        <tabtypetotype>Tilgængelige sidetyper</tabtypetotype>
+        <typetotype>Vælg hvilke sidetyper, der kan oprettes under denne sidetype</typetotype>
+        <usecustomdefaultcaption>Brug justerede standardindstillinger for sider med denne sidetype</usecustomdefaultcaption>
+        <usecustomdefaulthelp>Anvend tilpassede standardværdier, hvis du ikke ønsker, at disse indstilles automatisk af systemet</usecustomdefaulthelp>
+        <visibleinmenucaption see="/pagetypes/common/property[@name='PageVisibleInMenu']/caption" />
+        <visibleinmenuhelp see="/pagetypes/common/property[@name='PageVisibleInMenu']/help" />
+      </editpagetypebase>
+      <editpagetypefield>
+        <advancedcaption>			Placer under overskrift</advancedcaption>
+        <confirmdelete>Er du sikker på, du vil fjerne denne egenskab?</confirmdelete>
+        <defaultcaption>Standardværdi</defaultcaption>
+        <displayeditui>Vis i redigeringstilstand</displayeditui>
+        <editcaption>Redigeringsrubrik</editcaption>
+        <editoraboutcaption>			Om...</editoraboutcaption>
+        <editorboldcaption>Fed</editorboldcaption>
+        <editorbulletscaption>Punktopstilling</editorbulletscaption>
+        <editorcellpropertiescaption>	Egenskaber for celle...</editorcellpropertiescaption>
+        <editorcellsubmenucaption>Celle</editorcellsubmenucaption>
+        <editorcentercaption>Centreret</editorcentercaption>
+        <editorcopycaption>				Kopier</editorcopycaption>
+        <editorcutcaption>				Klip</editorcutcaption>
+        <editordynamiccontentcaption>Indsæt dynamisk indhold</editordynamiccontentcaption>
+        <editordynamiccontentmenucaption>Dynamisk indhold...</editordynamiccontentmenucaption>
+        <editorfindcaption>Søg</editorfindcaption>
+        <editorfindmenucaption>			Søg efter tekst...</editorfindmenucaption>
+        <editorfontcaption>Tegn</editorfontcaption>
+        <editorfontmenucaption>			Skrifttype...</editorfontmenucaption>
+        <editorformatparagraphcaption>	Formater afsnit</editorformatparagraphcaption>
+        <editorhelp>Egenskaber for Editor - afkryds alle for at anvende tekstområde i stedet for Editor</editorhelp>
+        <editorhyperlinkpropertiescaption>Egenskaber for link...</editorhyperlinkpropertiescaption>
+        <editorimagepropertiescaption>Billedegenskaber...</editorimagepropertiescaption>
+        <editorinsertanchorcaption>Indsæt bogmærke</editorinsertanchorcaption>
+        <editorinsertanchormenucaption>	Bogmærke...</editorinsertanchormenucaption>
+        <editorinsertdoccaption>Indsæt dokument</editorinsertdoccaption>
+        <editorinsertdocmenucaption>	Dokument...</editorinsertdocmenucaption>
+        <editorinserthrcaption>Vandret linje</editorinserthrcaption>
+        <editorinsertimagecaption>Indsæt billede fra fil</editorinsertimagecaption>
+        <editorinsertimagemenucaption>	Billede...</editorinsertimagemenucaption>
+        <editorinsertsubmenucaption>	Indsæt</editorinsertsubmenucaption>
+        <editorinserttablecaption>Indsæt tabel</editorinserttablecaption>
+        <editorinserttablemenucaption>	Tabel...</editorinserttablemenucaption>
+        <editorinserturlcaption>Indsæt hyperlink</editorinserturlcaption>
+        <editorinserturlmenucaption>	Hyperlink...</editorinserturlmenucaption>
+        <editoritaliccaption>Kursiv</editoritaliccaption>
+        <editorleftcaption>Venstrejusteret</editorleftcaption>
+        <editorloading>Indlæser editor...</editorloading>
+        <editormaximizercaption>Maksimer/gendan editor</editormaximizercaption>
+        <editornumbercaption>Nummereret liste</editornumbercaption>
+        <editorpastecaption>			Sæt ind</editorpastecaption>
+        <editorpasteunformattedcaption>	Sæt ind uformateret</editorpasteunformattedcaption>
+        <editorquotecaption>Indsæt citat</editorquotecaption>
+        <editorquotemenucaption>Citat...</editorquotemenucaption>
+        <editorredocaption>Gentag</editorredocaption>
+        <editorrefreshcaption>Opdater</editorrefreshcaption>
+        <editorremoveformattingcaption>	Fjern formatering</editorremoveformattingcaption>
+        <editorrightcaption>Højrejusteret</editorrightcaption>
+        <editorselectallcaption>Alt</editorselectallcaption>
+        <editorselectcontractcaption>Formindske</editorselectcontractcaption>
+        <editorselectexpandcaption>Forøge</editorselectexpandcaption>
+        <editorselectnextcaption>Næste</editorselectnextcaption>
+        <editorselectpreviouscaption>Forrige</editorselectpreviouscaption>
+        <editorselectsectioncaption>Afsnit</editorselectsectioncaption>
+        <editorselectsubmenucaption>Marker</editorselectsubmenucaption>
+        <editorselecttablecaption>Tabel</editorselecttablecaption>
+        <editorselecttablecellcaption>Celle</editorselecttablecellcaption>
+        <editorselecttablecolumncaption>Kolonne</editorselecttablecolumncaption>
+        <editorselecttablerowcaption>Række</editorselecttablerowcaption>
+        <editorspellcheckcaption>		Stavekontrol</editorspellcheckcaption>
+        <editorspellcheckmenucaption>	Stavekontrol...</editorspellcheckmenucaption>
+        <editortabledeletecolscaption>		Fjern kolonner</editortabledeletecolscaption>
+        <editortabledeleterowscaption>		Fjern rækker</editortabledeleterowscaption>
+        <editortabledeletetablecaption>		Fjern tabel</editortabledeletetablecaption>
+        <editortableinsertcolaftercaption>	Indsæt kolonne efter</editortableinsertcolaftercaption>
+        <editortableinsertcolbeforecaption>	Indsæt kolonne før</editortableinsertcolbeforecaption>
+        <editortableinsertrowaftercaption>	Indsæt række efter</editortableinsertrowaftercaption>
+        <editortableinsertrowbeforecaption>	Indsæt række før</editortableinsertrowbeforecaption>
+        <editortablemergecellscaption>		Flet celler</editortablemergecellscaption>
+        <editortablepropertiescaption>	Egenskaber for tabel...</editortablepropertiescaption>
+        <editortablesplithorizontalcaption>	Opdel celle vandret</editortablesplithorizontalcaption>
+        <editortablesplitverticalcaption>	Opdel celle lodret</editortablesplitverticalcaption>
+        <editortablesubmenucaption>		Tabel</editortablesubmenucaption>
+        <editortogglehtmlcaption>Vis/Skjul HTML-kode</editortogglehtmlcaption>
+        <editortogglehtmlmenucaption>	Vis kilde</editortogglehtmlmenucaption>
+        <editorunderlinecaption>Understregning</editorunderlinecaption>
+        <editorundocaption>Fortryd</editorundocaption>
+        <heading>Rediger egenskab</heading>
+        <headingnew>Opret ny egenskab</headingnew>
+        <helpcaption>Hjælpetekst</helpcaption>
+        <info />
+        <inheritcaption>Arver værdi</inheritcaption>
+        <inuseproperty>En egenskab med navnet "{0}" findes allerede</inuseproperty>
+        <languagespecificcaption>Unik værdi per sprog</languagespecificcaption>
+        <namecaption>Navn</namecaption>
+        <nodefaultcaption>Ingen standardværdi</nodefaultcaption>
+        <objectcaption>Speciel redigeringshåndtering via objekt</objectcaption>
+        <requiredcaption>Værdi skal anføres</requiredcaption>
+        <reservedproperty>"{0}" er et navn, der er reserveret til metadataegenskaber</reservedproperty>
+        <searchablecaption>Søgbar egenskab</searchablecaption>
+        <tabinfo>Oplysninger</tabinfo>
+        <typeappsettings>Dynamisk liste (én valgmulighed)</typeappsettings>
+        <typeappsettingsmultiple>Dynamisk liste (flere valgmuligheder)</typeappsettingsmultiple>
+        <typeboolean>Valgt/ikke valgt</typeboolean>
+        <typecaption>Type</typecaption>
+        <typecategory>Kategorityper</typecategory>
+        <typedate>Dato/Tid</typedate>
+        <typedocumenturl>URL til dokument</typedocumenturl>
+        <typefilesortorder>Sorteringsrækkefølge for filer</typefilesortorder>
+        <typefloatnumber>Flydende tal</typefloatnumber>
+        <typeform>Formular</typeform>
+        <typeframe>RAM</typeframe>
+        <typeimageurl>URL til billede</typeimageurl>
+        <typelanguage>Sprog</typelanguage>
+        <typelanguagebranch>Sidesprog (en indstilling)</typelanguagebranch>
+        <typelanguagebranchlist>Sidesprog (flere indstillinger)</typelanguagebranchlist>
+        <typelinkcollection>Linksamling</typelinkcollection>
+        <typelongstring>Lang streng (&gt;255)</typelongstring>
+        <typenumber>Heltal</typenumber>
+        <typepagelink>Side</typepagelink>
+        <typepagereference>Side</typepagereference>
+        <typepagetype>Sidetype</typepagetype>
+        <typepassword>Adgangskode</typepassword>
+        <typeselector>Egenskab på siden</typeselector>
+        <typesortorder>Sorteringsrækkefølge for sider</typesortorder>
+        <typestring>Streng (&lt;= 255)</typestring>
+        <typeuilanguage>Systemsprog</typeuilanguage>
+        <typeurl>URL til side/ekstern adresse</typeurl>
+        <typeweekday>Ugedag</typeweekday>
+        <typexform>XForms-formular</typexform>
+        <typexhtmlstring>Xhtml-streng (&gt;255)</typexhtmlstring>
+      </editpagetypefield>
+      <edituser>
+        <bademailadress>E-mail-adressen er ikke gyldig</bademailadress>
+        <changepassword>		Skift adgangskode</changepassword>
+        <charsnotallowed>Brugernavnet er ikke gyldigt. Følgende tegn er ikke tilladt: {0}Gruppe-/brugernavnet er ikke gyldigt. Følgende tegn er ikke tilladt: {0}</charsnotallowed>
+        <confirmdeleteuser>		Vil du fjerne brugeren/gruppen {0}?</confirmdeleteuser>
+        <confirmremoveuser>Fjern {0} fra gruppe</confirmremoveuser>
+        <duplicateemailaddress>Brugerkontoregistrering tillader ikke to identiske e-mail-adresser</duplicateemailaddress>
+        <duplicateprovideruserkey>Brugerkontoregistrering kræver entydige nøgler</duplicateprovideruserkey>
+        <duplicateusername>Brugernavnet findes allerede</duplicateusername>
+        <enterpassword>			Skriv adgangskoden</enterpassword>
+        <invalidemail>E-mail-adressen er ugyldig</invalidemail>
+        <invalidpassword>Ugyldig adgangskode, minimumlængde: {0}, minimum ikke-alfanumeriske tegn: {1}</invalidpassword>
+        <invalidpasswordanswer>Det er obligatorisk at besvare adgangskodespørgsmålet</invalidpasswordanswer>
+        <invalidpasswordquestion>Adgangskodespørgsmålet er obligatorisk</invalidpasswordquestion>
+        <invalidprovideruserkey>Den entydige nøgle til brugerkontoregistrering er af en forkert type</invalidprovideruserkey>
+        <invalidusername>Brugernavnet er ugyldigt</invalidusername>
+        <keeppassword>			Behold den tidligere adgangskode</keeppassword>
+        <mailsent>				Der er sendt en e-mail til brugeren</mailsent>
+        <maintabname>			Indstillinger</maintabname>
+        <missmatchpassword>Adgangskode og Bekræft adgangskode er ikke identiske</missmatchpassword>
+        <notificationfailed>	E-mail-forsendelsen mislykkedes, fordi alle indstillinger ikke er angivet under indstillinger for ekstranetbrugere</notificationfailed>
+        <notificationquestion>	Brugeren modtager automatisk en meddelelse med e-mail, om at kontoen er blevet aktiveret.</notificationquestion>
+        <passwordmismatch>		Ikke samme adgangskode i begge felter</passwordmismatch>
+        <providererror>Medlemskabsudbyderen registrerede en fejl efter registrering</providererror>
+        <repeatpassword>		Skriv adgangskoden igen</repeatpassword>
+        <usercreated>Oprettelsesdato</usercreated>
+        <userdeleted>			Brugeren/gruppen er fjernet</userdeleted>
+        <userguisettings>
+          <displayname>Indstillinger for visning</displayname>
+          <settings>
+            <legendlanguagesettings>Sprogindstillinger</legendlanguagesettings>
+            <statusexpired>Det planlagte udgivelsestidspunkt for denne side er overskredet</statusexpired>
+            <statuslanguagefallback>Siden mangler for det aktuelle sprog og vil blive vist på et andet sprog. Hvis det andet sprog har en ikon, bruges det som angivelse.</statuslanguagefallback>
+            <statuslanguagemissing>Siden mangler for det aktuelle sprog og vil ikke blive vist</statuslanguagemissing>
+            <statusnew>Ny side, der er oprettet inden for de seneste 48 timer</statusnew>
+            <statusnotpublished>Siden har ikke været udgivet</statusnotpublished>
+            <statusnotstarted>Der er planlagt udgivelse af denne side, og siden er endnu ikke udgivet</statusnotstarted>
+            <statusnotvisibleinmenu>Siden vises ikke i menuer</statusnotvisibleinmenu>
+            <statuspageprovider>Siden er ikke en CMS-side på en lokal EPiServer. Sideudbyderen bruger et ikon, hvis der er defineret et.</statuspageprovider>
+            <statusreadonly>Du har ikke rettigheder til at ændre siden</statusreadonly>
+            <toolbar>Værktøjslinje</toolbar>
+            <treesymbols>Symboler i træstrukturen</treesymbols>
+            <usedefaultsettings>Brug standardindstillinger</usedefaultsettings>
+            <usesystemlanguage>Brug systemsprog</usesystemlanguage>
+          </settings>
+        </userguisettings>
+        <userlastlogin>Dato for sidste pålogning</userlastlogin>
+        <usernotfound>Brugeren '{0}' blev ikke fundet En anden administrator kan have slettet brugeren.</usernotfound>
+        <usernotsaved>			Brugeren/gruppen kunne ikke gemmes</usernotsaved>
+        <userrejected>Registrering af brugerkontoen blev afvist</userrejected>
+        <usersaved>				Brugeren/gruppen er gemt</usersaved>
+        <usersuccess>Brugerkontoen blev gemt</usersuccess>
+      </edituser>
+      <exportdata>
+        <abortexport>Annuller eksport</abortexport>
+        <description />
+        <displayname>Eksporter data</displayname>
+        <errorconnectiontoserver>Forbindelsen til serveren er blevet afbrudt.\r\nPrøv at genindlæse, og start igen.</errorconnectiontoserver>
+        <errorsoccured>Følgende fejl opstod</errorsoccured>
+        <exportbutton>Eksporter</exportbutton>
+        <exportcategories>Eksporter kategorier</exportcategories>
+        <exportdownloadexportfile>Hent eksportfil</exportdownloadexportfile>
+        <exportdynamicpropertydefinitions>Eksporter dynamiske egenskabsdefinitioner</exportdynamicpropertydefinitions>
+        <exportfiles>Eksporter filer</exportfiles>
+        <exportframes>Eksporter rammer</exportframes>
+        <exporthasbeenaborted>Eksporten er blevet annulleret</exporthasbeenaborted>
+        <exporthaserrortext>Der er en fejl ved eksporten. Vil du hente eksportfilen alligevel?</exporthaserrortext>
+        <exportinprogressimagetooltip>Igangværende eksport ...</exportinprogressimagetooltip>
+        <exportpagedependencies>Eksporter automatisk tilknyttede sidetyper</exportpagedependencies>
+        <exportpagefiles>Eksporter filer, som siderne er sammenkædet med</exportpagefiles>
+        <exportpagelanguages>Eksporter globaliserede sider</exportpagelanguages>
+        <exportpages>Eksporter sider</exportpages>
+        <exportpagetypes>Eksporter sidetyper</exportpagetypes>
+        <exportsucceeded>Eksporten blev udført uden fejl eller advarsler</exportsucceeded>
+        <exporttabdefinitions>Eksporter faner</exporttabdefinitions>
+        <gobacktoexportdata>Gå tilbage til Eksporter data</gobacktoexportdata>
+        <heading>Eksporter data</heading>
+        <info>Eksporter data fra en EPiServer CMS til en anden.</info>
+        <pagecount>Antal eksporterede sider: </pagecount>
+        <selectpage>Vælg en del af strukturen</selectpage>
+        <testexportbutton>Prøvekør med fejllog</testexportbutton>
+        <warningsoccured>Følgende advarsler blev genereret</warningsoccured>
+      </exportdata>
+      <filebrowser>
+        <heading>Vælg fil</heading>
+      </filebrowser>
+      <filemanagement>
+        <description>Indlæs og organiser filer og biblioteker.</description>
+        <displayname>Filhåndtering</displayname>
+      </filemanagement>
+      <frames>
+        <confirmdelete>Er du sikker på, du vil fjerne rammen "[name]"?</confirmdelete>
+        <duplicateframeserror>Der må ikke være flere rammer med samme navn</duplicateframeserror>
+        <heading>Rediger felt</heading>
+        <info>Definer, hvilke rammer dit websted anvender. Disse vil være tilgængelige som "målrammer" ved oprettelse af links.</info>
+        <tabledescription>Beskrivelse</tabledescription>
+        <tablename>Feltnavn</tablename>
+      </frames>
+      <headings>
+        <confirmdelete>Er du sikker på, du vil fjerne fanen "[name]"?</confirmdelete>
+        <heading>Rediger faner</heading>
+        <info>Definer de faner, der er tilgængelige under fanen rediger. Når du opretter eller redigerer en egenskab, kan du vælge den fane, egenskaben skal vises under.</info>
+        <tableaccesslevel>Kræver autorisationsniveau</tableaccesslevel>
+        <tablename>Fane</tablename>
+        <tablesortindex>Sorteringsindeks</tablesortindex>
+        <tablevisible>Synlig</tablevisible>
+      </headings>
+      <importdata>
+        <abortimport>Annuller import</abortimport>
+        <beginimport>Start importen</beginimport>
+        <categorycount>Antal kategorier</categorycount>
+        <createnotsupported>Sideudbyderen, der leverer den valgte side, understøtter ikke oprettelsen af sider.</createnotsupported>
+        <description />
+        <displayname>Importer data</displayname>
+        <dynamicpropertydefinitioncount>Antal dynamiske egenskabsdefinitioner</dynamicpropertydefinitioncount>
+        <errorconnectiontoserver>Forbindelsen til serveren er blevet afbrudt.\r\nPrøv at genindlæse, og start igen.</errorconnectiontoserver>
+        <errorsoccured>Følgende fejl opstod</errorsoccured>
+        <filecount>Antal filer</filecount>
+        <framecount>Antal rammer</framecount>
+        <gobacktoimportdata>Gå tilbage til Importer data</gobacktoimportdata>
+        <heading>Importer data</heading>
+        <importcompleted>Importen er udført</importcompleted>
+        <importhasbeenaborted>Importen er blevet annulleret</importhasbeenaborted>
+        <importinprogressimagetooltip>Igangværende import ...</importinprogressimagetooltip>
+        <importsucceeded>Importen lykkedes</importsucceeded>
+        <info>Importer data fra en anden EPiServer CMS.</info>
+        <nofileuploaded>Der blev ikke indlæst en fil</nofileuploaded>
+        <of>i</of>
+        <pagecount>Antal sider</pagecount>
+        <pagetypecount>Antal sidetyper</pagetypecount>
+        <selectfile>Vælg en eksportfil, som skal indlæses</selectfile>
+        <selectpageroot>Vælg destination til sider</selectpageroot>
+        <show>Vis</show>
+        <tabdefinitioncount>Antal faner</tabdefinitioncount>
+        <testsucceeded>Importfilen er kontrolleret, og der blev ikke genereret nogen fejl eller advarsler</testsucceeded>
+        <uploadfile>Indlæs og kontroller fil</uploadfile>
+        <warningsoccured>Følgende advarsler blev genereret</warningsoccured>
+        <verifyimportfile>Send og bekræft fil</verifyimportfile>
+      </importdata>
+      <license>
+        <heading>Licensoplysninger</heading>
+        <info />
+        <licensedcompany>Licenseret til firma</licensedcompany>
+        <licensedto>Licenseret til privat</licensedto>
+        <licenseid>Licens-id</licenseid>
+        <licenserestrictions>Begrænsninger</licenserestrictions>
+        <newfileinstalled>Den nye licensfil er installeret</newfileinstalled>
+        <selectfile>Vælg ny licensfil</selectfile>
+        <tabinfo>Oplysninger</tabinfo>
+        <tabinstallnew>Installer en ny licens</tabinstallnew>
+        <uploadlicense>Indlæs og bekræft licens</uploadlicense>
+      </license>
+      <menu>
+        <admingroups>			Administrer grupper</admingroups>
+        <archive>				Arkiveringsfunktion</archive>
+        <cleanupupload see="/admin/cleanupupload/heading" />
+        <convertpagetype>Konverter sider</convertpagetype>
+        <copypagetype>			Kopier sidetype</copypagetype>
+        <createuser>			Opret bruger</createuser>
+        <databasemaintenance>	Databasevedligeholdelse</databasemaintenance>
+        <datatypes>				Rediger egenskabstyper</datatypes>
+        <defaultgroup see="/admin/registrationsettings/heading" />
+        <editcategories>		Rediger kategorier</editcategories>
+        <editdynamicproperty>	Dynamiske egenskaber</editdynamicproperty>
+        <editframes>			Rediger rammer</editframes>
+        <editheadings>			Rediger faner</editheadings>
+        <editlanguage>			Sprogkode</editlanguage>
+        <editlanguagebranches>Administrer webstedssprog</editlanguagebranches>
+        <editremotesite>		Eksterne websteder</editremotesite>
+        <language>				Sprog</language>
+        <license>Licensoplysninger</license>
+        <newpagetype>			Opret ny sidetype</newpagetype>
+        <pagetype>				Sidetyper</pagetype>
+        <plugins>				Værktøj</plugins>
+        <productupdate>			Produktopdateringer</productupdate>
+        <scheduledjobs>Planlagt opgave</scheduledjobs>
+        <searchuser>			Søg efter bruger/gruppe</searchuser>
+        <security>				Rettigheder</security>
+        <setloglevel>			Angiv logniveau</setloglevel>
+        <setpermission>Adgang til funktioner</setpermission>
+        <setsecurity>			Angiv rettigheder</setsecurity>
+        <settings>				Systemindstillinger</settings>
+        <systemadministration>	Systemadministration</systemadministration>
+        <systemmessages>		Vis systemmeddelelser</systemmessages>
+        <tooltipedit>			Redigeringstilstand</tooltipedit>
+        <tooltiphelp>			Hjælp</tooltiphelp>
+        <tooltipview>			Visningstilstand</tooltipview>
+        <wastebasket>			Tømning af papirkurv</wastebasket>
+        <workflowdefinition>	Arbejdsprocesser</workflowdefinition>
+        <workflowdefinitionedit>Rediger arbejdsproces</workflowdefinitionedit>
+        <workflowdefinitionnew>	Opret ny arbejdsproces</workflowdefinitionnew>
+      </menu>
+      <menuheadings>
+        <accessrights see="/admin/menu/security" />
+        <generalsettings>Generelle indstillinger</generalsettings>
+        <managepagetypes>Administrer sidetyper</managepagetypes>
+        <nopagetypestext>Der er ikke defineret nogen sidetyper</nopagetypestext>
+        <noscheduledjobstext>Der er ikke defineret nogen planlagte opgaver</noscheduledjobstext>
+        <notoolsettingstext>Der er ikke defineret nogen indstillinger for værktøjer</notoolsettingstext>
+        <notoolstext>Der er ikke defineret nogen værktøjer</notoolstext>
+        <pagetypes see="/admin/menu/pagetype" />
+        <pagetypesorting>
+          <sortalphabetically>Sorter alfabetisk</sortalphabetically>
+          <sortbyindex>Sorter efter indeks</sortbyindex>
+        </pagetypesorting>
+        <scheduledjobs see="/admin/menu/scheduledjobs" />
+        <security>Sikkerhed</security>
+        <systemadministration see="/admin/menu/systemadministration" />
+        <systemconfiguration>Systemkonfiguration</systemconfiguration>
+        <tools see="/admin/menu/plugins" />
+        <toolsettings>Indstillinger for værktøjer</toolsettings>
+      </menuheadings>
+      <menutabs>
+        <admin>Admin</admin>
+        <config>Konfig</config>
+        <pagetypes see="/pagetypes/common/property[@name='PageTypeName']/caption" />
+      </menutabs>
+      <pagedefinitiontype>
+        <heading>				Rediger egenskabstyper</heading>
+        <info>					Her kan du definere nye typer, der kan anvendes som egenskaber på sider i EPiServer CMS.</info>
+      </pagedefinitiontype>
+      <pagedefinitiontypeedit>
+        <assemblynamecaption>Navn på samlingen</assemblynamecaption>
+        <assemblynamehelp>Navnet på samlingsklassen ligger i (f.eks. EPiServerSample)</assemblynamehelp>
+        <confirmdelete>Er du sikker på, du vil fjerne denne egenskabstype?</confirmdelete>
+        <duplicatecustomproperty>Der findes allerede en egenskab med navnet '{0}'. </duplicatecustomproperty>
+        <heading>				Rediger datatype</heading>
+        <headingnew>			Opret ny datatype</headingnew>
+        <info />
+        <namecaption>Navn</namecaption>
+        <namehelp>Et valgfrit navn på egenskabstypen</namehelp>
+        <property name="property">
+          <caption>	Egenskabstype</caption>
+        </property>
+        <propertycaption>Basetype</propertycaption>
+        <tabinfo>				Definition</tabinfo>
+        <typeinuse>Denne type kan ikke fjernes, da den bruges af følgende egenskaber:</typeinuse>
+        <typenamecaption>Klassenavn</typenamecaption>
+        <typenamehelp>Klassenavn og sti til klassen (f.eks. EPiServer.SpecializedProperties.PropertyPassword)</typenamehelp>
+      </pagedefinitiontypeedit>
+      <permission>
+        <editpermission>Brugere/grupper, som har rettighed "{0}"</editpermission>
+        <heading>Adgang til funktioner</heading>
+        <info>	Giv brugere/grupper adgang til specifikke funktioner i EPiServer CMS.</info>
+        <sidsaved>		De nye indstillinger for funktionen er gemt</sidsaved>
+      </permission>
+      <plugin>
+        <displayname see="/admin/plugin/heading" />
+        <editorpluginattribute>Editor</editorpluginattribute>
+        <guipluginattribute>Brugergrænseflade</guipluginattribute>
+        <heading>Modulhåndtering</heading>
+        <info>På listen nedenfor vises de moduler, der er registreret i EPiServer CMS. Klik på navnet på en plug-in for at få vist detaljerede oplysninger om den.</info>
+        <overviewtab>Oversigt</overviewtab>
+        <pagedefinitiontypepluginattribute>Selvregistrerende egenskabstyper</pagedefinitiontypepluginattribute>
+        <pagepluginattribute>Sideudvidelser</pagepluginattribute>
+        <plugintab>Moduler</plugintab>
+        <scheduledpluginattribute>Administration af planlagt opgave</scheduledpluginattribute>
+        <subscriptionpluginattribute>Abonnement</subscriptionpluginattribute>
+        <workflowpluginattribute>Typer af trin i arbejdsprocessen</workflowpluginattribute>
+      </plugin>
+      <pluginadminsettings>
+        <nosettings>Dette modul har ingen indstillinger</nosettings>
+      </pluginadminsettings>
+      <pluginedit>
+        <configurationtab>Indstillinger</configurationtab>
+        <heading>Rediger indstillinger for modul</heading>
+        <info />
+        <overviewtab>Oversigt</overviewtab>
+      </pluginedit>
+      <plugingrouplist>
+        <company>Firma</company>
+        <description>Beskrivelse</description>
+        <license>Licensering</license>
+        <moreinfo>Flere oplysninger</moreinfo>
+        <name>Navn</name>
+        <version>Version</version>
+      </plugingrouplist>
+      <pluginlist>
+        <description>Beskrivelse</description>
+        <enabled>Aktiveret</enabled>
+        <license>Licensering</license>
+        <name>Navn</name>
+        <plugin>Moduler</plugin>
+      </pluginlist>
+      <rebuildurlsegments>
+        <description>Erstat navnet på webadresser for at oprette links, der afspejler strukturen på webstedet</description>
+        <displayname>Genopret navn på webadresser</displayname>
+        <heading>Erstat sidenavne i webadresser</heading>
+        <pages>Scannede sider</pages>
+        <pagestoreplace>Faste sider</pagestoreplace>
+        <rebuild>Genopret links</rebuild>
+        <rebuildnonempty>Genopret alle sidenavne i webadresser (overskriv eksisterende links)</rebuildnonempty>
+        <rebuildwarning>
+                    {0} sider har ikke et navn på webadressen. Webadresserne for disse sider\n genereres sammen med sidens identitet, f.eks. opretter http://.../10/40 link til siden.\n Vi anbefaler, at du genopretter navnene på disse webadresser med værktøjet "Genopret navn\n på webadresser", før du ændrer webadresserne, så de afspejler strukturen på webstedet.\n\n Klik på OK for at bruge webadresser, der afspejler strukturen af webstedet.\n
+                </rebuildwarning>
+        <status>Status</status>
+        <statusended>Inaktive</statusended>
+        <statusstarted>Erstatte links</statusstarted>
+      </rebuildurlsegments>
+      <remotesite>
+        <heading>Eksterne websteder</heading>
+        <info>Registrerede eksterne websteder til udgående trafik samt signeret indgående og udgående trafik. Hvilke rettigheder og dermed hvilke anonyme websteder, der skal kunne kommunikere med dette websted, konfigureres i web.config.</info>
+        <localsite>Lokalt navn på webstedet</localsite>
+        <name>Navn</name>
+        <ping>Test tilslutning</ping>
+        <pingfalse>Webstedet "{0}" svarede, men accepterede ikke signaturen, eller der var ikke angivet nogen signaturWebstedet "{0}" besvarede, men godkendte ikke signaturen, eller der er ikke angivet en signatur</pingfalse>
+        <pingtrue>Webstedet "{0}" svarede og accepterede signaturenWebstedet "{0}" besvarede og godkendte signaturenWebstedet "{0}" besvarede og godkendte brugeren</pingtrue>
+        <url>URL</url>
+      </remotesite>
+      <remotesiteedit>
+        <allowurllookup>Tillad at navne angives i en sti (f.eks. page.aspx?id=30__mysite)</allowurllookup>
+        <confirmdelete>Er du sikker på, du vil fjerne fjernwebstedet?</confirmdelete>
+        <domain>Domæne</domain>
+        <heading>Rediger eksterne websteder</heading>
+        <info>Bemærk, at navne ikke ubetinget bør ændres, hvis det allerede anvendes på dette sted. Opret en delt adgangskode, som manuelt skal kopieres over til det andet websted for at signere al indgående og udgående trafik. Dette skal ses som en ekstra sikkerhed, så ingen kan ændre oplysningerne, mens de overføres mellem webstederne.Undlad at ændre navnet på et eksternt websted, da det kan have været brugt med kode. </info>
+        <istrusted>Tillad at fungere som "front-end"</istrusted>
+        <istrustedwarning>Sikkerhedsadvarsel! Dette sted vil kunne læse samlingsoplysninger om egenskaber samt rettighedsindstillinger. Dette kræver også en gyldig signatur og delt adgangskode på begge websteder.</istrustedwarning>
+        <name>Navn</name>
+        <nameisnotunique>Navnet '{0}' bruges allerede af et andet fjernwebsted.</nameisnotunique>
+        <password>Adgangskode</password>
+        <sharedsecret>Delt adgangskode til signatur</sharedsecret>
+        <url>URL</url>
+        <username>Brugernavn</username>
+      </remotesiteedit>
+      <remotewebsite>
+        <localsitebadchars>
+                    Strengen skal enten være en tom streng eller en kombination af alfanumeriske tegn, punktummer (.) og bindestreger (-) på op til 256 tegn, f.eks. 'websted.com' eller 'MitWebsted-2'.
+                </localsitebadchars>
+      </remotewebsite>
+      <searchusers>
+        <descriptioncaption>	Beskrivelse</descriptioncaption>
+        <heading>				Søg brugere/grupper</heading>
+        <info />
+        <namecaption>			Navn</namecaption>
+        <nomembershipprovider>Der er ikke konfigureret en medlemskabsudbyder i web.konfig!</nomembershipprovider>
+        <pagingsize>		Antal forekomster pr. side</pagingsize>
+        <searchname>Navn</searchname>
+        <typecaption>			Type</typecaption>
+        <typegroup>				Grupper</typegroup>
+        <typeuser>				Bruger</typeuser>
+      </searchusers>
+      <secedit>
+        <alpharequiredpassword>	Adgangskoden skal indeholde bogstaver.</alpharequiredpassword>
+        <changepassword>Skift adgangskode</changepassword>
+        <editactive>Aktivt</editactive>
+        <editaddress>Adresse</editaddress>
+        <editadspath>			ActiveDirectory name</editadspath>
+        <editchanged>Ændret</editchanged>
+        <editcompany>Firma</editcompany>
+        <editconfirmpassword>Bekræft adgangskode</editconfirmpassword>
+        <editcountry>Land</editcountry>
+        <editcreated>Oprettet</editcreated>
+        <editdescription>Beskrivelse</editdescription>
+        <editemail>E-mail adresse</editemail>
+        <editgroupheading>Rediger gruppe</editgroupheading>
+        <editlanguage>Eget sprog</editlanguage>
+        <editname>Brugernavn</editname>
+        <editpassword>Adgangskode</editpassword>
+        <editpostaladdress>Poststed</editpostaladdress>
+        <editpostalnumber>Postnummer</editpostalnumber>
+        <edittelephone>Telefonnummer</edittelephone>
+        <edituserheading>Rediger bruger</edituserheading>
+        <editvalidto>Gyldigt til og med</editvalidto>
+        <firstname>				Fornavn</firstname>
+        <info />
+        <ipaddress>				Logon kan kun ske fra denne IP-adresse</ipaddress>
+        <ipmask>				Undernetmaske for IP-adresse ukendt</ipmask>
+        <lastname>				Efternavn</lastname>
+        <listcontains>Indeholder</listcontains>
+        <listmemberof>Medlem af</listmemberof>
+        <listnotcontains>Indeholder ikke</listnotcontains>
+        <listnotmemberof>Ej medlem af</listnotmemberof>
+        <lockedout>				Kontoen er låst (for mange ugyldige logonforsøg)</lockedout>
+        <missingpassword>		Du skal angive en adgangskode.</missingpassword>
+        <mobile>				Mobiltelefon</mobile>
+        <newuserheading>Ny bruger</newuserheading>
+        <numberrequiredpassword>Adgangskoden skal indeholde tal.</numberrequiredpassword>
+        <passwordanswer>Svar</passwordanswer>
+        <passwordquestion>Adgangskodespørgsmål</passwordquestion>
+        <providerdonotsupportcreateuser>Den aktuelle udbyder ({0}) understøtter ikke oprettelse/registrering af brugere</providerdonotsupportcreateuser>
+        <symbolrequiredpassword>Adgangskoden skal indeholde symboler (andre tegn end tal og bogstaver).</symbolrequiredpassword>
+        <title>					Titel</title>
+        <tooshortpassword>		Adgangskoden skal indeholde mindst {0} tegn.</tooshortpassword>
+        <usernameexists>		Brugernavnet {0} er i brug.</usernameexists>
+      </secedit>
+      <security>
+        <applyrecursive>Anvend indstillinger for undersider</applyrecursive>
+        <heading>					Angiv rettigheder for side "{0}"</heading>
+        <info>						Her kan du nulstille rettigheder i EPiServer CMS på sider, hvor adgangen eller lignende helt er fjernet. Du har mulighed for at ændre samtlige rettigheder på alle sider.</info>
+        <mark>Marker</mark>
+        <markall>Marker alle</markall>
+        <notselectedinfo>Indstillingerne for denne række påvirkes ikke under handlingerne Gem eller Fjern</notselectedinfo>
+        <notsupportedoperation>Handlingen understøttes ikke for eksterne sider</notsupportedoperation>
+        <recursivedeleteconfirm>Indstillingerne for de valgte rækker for den markerede side og for alle undersiderne slettes. Vælg OK for at fortsætte.</recursivedeleteconfirm>
+        <recursiveinfo>Hvis du vælger Gem eller Slet, og "Anvend indstillinger for undersider" er valgt, tildeles eller slettes rettigheder til de valgte rækker på den markerede side og alle undersider</recursiveinfo>
+        <recursivereplaceconfirm>Hvis de valgte rækker har andre rettigheder for undersiderne, overskrives disse, og rækker, der ikke er markeret, slettes fra alle undersiderne. Vælg OK for at fortsætte.</recursivereplaceconfirm>
+        <recursivesaveconfirm>Hvis de valgte rækker har andre indstillinger for undersiderne, overskrives disse indstillinger. Vælg OK for at fortsætte.</recursivesaveconfirm>
+        <removeaccessrightstext>Tilføj valgte rækker, og slet ikke-valgte rækker </removeaccessrightstext>
+        <removeaccessrightstexttooltip>Hvis du vælger Gem, tildeles rettigheder til alle valgte rækker. Ikke-valgte rækker slettes. Bruges normalt til overskrivning af gamle rettigheder.</removeaccessrightstexttooltip>
+        <removeconfirm>Er du sikker på, du vil fjerne rettighederne til de markerede rækker for den valgte side? Vælg OK for at fortsætte.</removeconfirm>
+        <replaceconfirm>Hvis de valgte rækker har andre indstillinger for den markerede side, overskrives disse indstillinger. De ikke-valgte rækker slettes på den markerede side. Vælg OK for at fortsætte.</replaceconfirm>
+        <savemessage>				De nye rettigheder er gemt</savemessage>
+        <selectedinfo>Indstillingerne for denne række påvirkes under handlingerne Gem eller Fjern</selectedinfo>
+        <unmark>Fjern markering</unmark>
+        <unmarkall>Fjern markering af alle</unmarkall>
+      </security>
+      <settings>
+        <databasetab>					Database</databasetab>
+        <defaultsubscriptionhandler>
+          <description>EPiServer CMS indbyggede håndtering af abonnementsudsendelse</description>
+          <displayname>EPiServer CMS-standardformat</displayname>
+        </defaultsubscriptionhandler>
+        <editordivonreturncaption>		Anvend DIV i editor i stedet for P</editordivonreturncaption>
+        <edittab>						Redigering</edittab>
+        <epfbrowserlanguagedetectioncaption>Registrer sprog ved hjælp af browserens sprogindstillinger</epfbrowserlanguagedetectioncaption>
+        <epfenableglobalizationsupportcaption>Aktiver globalisering</epfenableglobalizationsupportcaption>
+        <epfencryptsensitiveinformationcaption>Kryptere filen web.config</epfencryptsensitiveinformationcaption>
+        <epfkeeploggedoncaption>				Aktiver cookies for at beholde logon</epfkeeploggedoncaption>
+        <epncategoryidcaption>			Startpunkt for kategorier</epncategoryidcaption>
+        <epneditorheightcaption>				Højde på editoren (pixel)</epneditorheightcaption>
+        <epneditorwidthcaption>Redigeringsprogrammets bredde (pixel)</epneditorwidthcaption>
+        <epnversioncountcaption>		Maks. antal gamle versioner af side</epnversioncountcaption>
+        <epsconnectioncaption>		Databaseforbindelse</epsconnectioncaption>
+        <epseditcontrolversion>		Aktuel version af ActiveX-editoren (f.eks. 2,0,0,31)</epseditcontrolversion>
+        <epseditcsscaption>			Sti til CSS-fil for editoren</epseditcsscaption>
+        <epserrorhandling>	Filhåndtering i EPiServer CMS</epserrorhandling>
+        <epserrorhandlingoff>			Slukket</epserrorhandlingoff>
+        <epserrorhandlingon>			Aktiveret for alle</epserrorhandlingon>
+        <epserrorhandlingremoteonly>	Aktiveret for besøgere udefra</epserrorhandlingremoteonly>
+        <epserrormail>		E-mail-adresse som fejlrapporter skal sendes til </epserrormail>
+        <epshosturlcaption>			URL til dit websted (f.eks. http://www.x.y)</epshosturlcaption>
+        <epsldappasswordcaption>				Adgangskode til brugernavn</epsldappasswordcaption>
+        <epsldapservercaption>				LDAP-server (f.eks. company.com, lad stå tom, hvis der ikke er nogen LDAP-håndtering)</epsldapservercaption>
+        <epsldapusercaption>					Brugernavn til at læse info fra LDAP-server</epsldapusercaption>
+        <epsrootdircaption>			Rodbibliotek</epsrootdircaption>
+        <epssitenamecaption>			Navn på websted</epssitenamecaption>
+        <epssubscriptionhandler>Håndtering af abonnementsudsendelse</epssubscriptionhandler>
+        <heading>						Systemindstillinger</heading>
+        <info>							&lt;b&gt;ADVARSEL!&lt;/b&gt; Forkerte ændringer på denne side kan medføre, at din web-site holder op med at fungere.</info>
+        <inforequired>					Obligatoriske felter er markeret med *</inforequired>
+        <pageuploadcaption>				Opload filer til specifik side</pageuploadcaption>
+        <renamefiledircaption>			Omdøb fil/bibliotek i linkværktøjet</renamefiledircaption>
+        <restricteduploadcaption>		Kontrolleret upload-funktion</restricteduploadcaption>
+        <saved>						De nye værdier er gemt</saved>
+        <sitetab>						Generelt</sitetab>
+        <unlimitedversions>Ubegrænsede versioner</unlimitedversions>
+      </settings>
+      <setup>
+        <cancelmessage>Gå tilbage til denne side, hvis du vil udføre installationen på et senere tidspunkt</cancelmessage>
+        <emptysample>Kun startside uden sidetype eller indhold</emptysample>
+        <englishsample>Engelske eksempler på skabeloner med alle installerede skabeloner</englishsample>
+        <globalizationsample>Globaliserede eksempelskabeloner (engelsk og svensk), hvor alle skabelonerne er installeret</globalizationsample>
+        <heading>Installer grundindhold</heading>
+        <info>Det kræver noget grundlæggende indhold for at begynde at bruge EPiServer CMS. Vælg en af nedenstående valgmuligheder, et systemsprog, og klik på Afslut.</info>
+        <installpackagespathempty>Mappen til importpakker, der er indstillet som parameter, indeholder ingen importpakker [{0}].</installpackagespathempty>
+        <norootpage>Du skal vælge en sidedestination</norootpage>
+        <progress>Vent på, at systemet opdateres</progress>
+        <redirectwarning>Attributten pageStartId for elementet siteSettings i web.konfig er indstillet til 0 (nul), hvilket betyder, at der ikke er installeret indhold.&lt;br/&gt; Indstil pageStartId="1" i web.konfig for at bruge rodsiden som startside.&lt;br/&gt;</redirectwarning>
+        <selectcontent>Vælg indhold</selectcontent>
+        <selectdestination>Vælg sidedestination</selectdestination>
+        <selectlanguage>Vælg systemsprog</selectlanguage>
+        <setupbutton>Afslut</setupbutton>
+        <startpageexists>En startside er allerede konfigureret</startpageexists>
+        <swedishsample>Danske eksempler på skabeloner med alle installerede skabeloner</swedishsample>
+        <utilsetupempty>Der blev ikke fundet importsider i ~/util/setup, og InstallPackagesPath er ikke indstillet som parameter i websideadressen.</utilsetupempty>
+      </setup>
+      <siteinfo>
+        <buttonresetcounters>		Nulstil tællere</buttonresetcounters>
+        <countergetitem>Sider leveret fra cache</countergetitem>
+        <counterlistchildren>Lister leveret fra cache</counterlistchildren>
+        <counteroutputinvalid>Ugyldige sider i HTML-cache</counteroutputinvalid>
+        <counteroutputvalid>Sider, der er afsendt fra HTML-cache</counteroutputvalid>
+        <counterpages>				Sider i cachen</counterpages>
+        <counterreadchildpages>Indlæsninger i database for lister</counterreadchildpages>
+        <counterreadsinglepage>Indlæsninger i database for sider</counterreadsinglepage>
+        <countersince>							Tællere nulstilles</countersince>
+        <dbcachecaption>			Status for databasecache</dbcachecaption>
+        <dbcachehitpercentage>		Hyppighed af forekomster</dbcachehitpercentage>
+        <dbstatcaption>				Databaseoplysninger</dbstatcaption>
+        <dbstatchangedlastweek>		Sider, der er redigeret i den seneste uge</dbstatchangedlastweek>
+        <dbstatepisecusercount>		Ekstranetbrugere (EPiSec)</dbstatepisecusercount>
+        <dbstatntusercount>			Windows-brugere (NT)</dbstatntusercount>
+        <dbstatpagecount>			Det samlede antal sider i databasen</dbstatpagecount>
+        <dbstatsubscribercount>		Abonnenter</dbstatsubscribercount>
+        <dbsystemprocessinfocaption>System- og procesoplysninger</dbsystemprocessinfocaption>
+        <heading>					Statistik</heading>
+        <info />
+        <outputcachecaption>Status for HTML-cache siden</outputcachecaption>
+        <processconfigfile>			Konfigurationsfil</processconfigfile>
+        <processid>					Proces-id</processid>
+        <processpeakmemory>			Maks. brug af hukommelse (MB)</processpeakmemory>
+        <processpubpolicy>			Politikker fra udgiveren</processpubpolicy>
+        <processshadowcopy>			"Skyggekopiering" af programfiler</processshadowcopy>
+        <processshadowdir>			Bibliotek til "skyggekopiering"</processshadowdir>
+        <processstarted>			Arbejdsproces er startet</processstarted>
+      </siteinfo>
+      <tabs>
+        <duplicatetabname>Der findes allerede en fane med dette navn.</duplicatetabname>
+        <invalidsortindex>Ugyldigt sorteringsindeks for fanen. Sorteringsindekset skal være et positivt heltal.</invalidsortindex>
+        <missingsortindex>Du skal angive et sorteringsindeks for fanen</missingsortindex>
+        <missingtabname>Du skal angive et fanenavn</missingtabname>
+        <referencedheadinghelp>Hvis du stadig ønsker at slette denne fane, skal du vælge, hvilken fane ovenstående egenskaber i stedet skal placeres under.</referencedheadinghelp>
+        <referencedheadingmessage>Referencer til "{0}"</referencedheadingmessage>
+      </tabs>
+      <webpartadmin>
+        <consume>Forbrug portlet</consume>
+        <control>Kontrol</control>
+        <description>Beskrivelse</description>
+        <displayname see="/admin/webpartadmin/heading" />
+        <heading>Registrer webdele</heading>
+        <info>Angiv de webdele, der skal være tilgængelige til forbrug</info>
+        <install>Installer webdel</install>
+        <name>Navn</name>
+        <portlet>Portlet</portlet>
+        <producer>Producent</producer>
+      </webpartadmin>
+      <webpartadminedit>
+        <addparameter>Tilføj parameter</addparameter>
+        <ambiguoustypename>Det angivne typenavn er tvetydigt. Navnet matcher følgende brugbare navne.</ambiguoustypename>
+        <assemblyloadfailed>Der opstod en fejl ved indlæsning af samlingen.</assemblyloadfailed>
+        <control>Kontrol</control>
+        <description>Beskrivelse</description>
+        <emptyvalueerror>Parameterværdien skal angives</emptyvalueerror>
+        <heading>Rediger registrering af "{0}"</heading>
+        <headingconsume>Forbrug portlet</headingconsume>
+        <headinginstall>Installer webdel</headinginstall>
+        <info>Angiv egenskaber for webdelen</info>
+        <infoconsume>Angiv egenskaberne for portlet</infoconsume>
+        <invalidcontrol>Det angivne kontrolelement kan ikke indlæses.</invalidcontrol>
+        <name>Navn</name>
+        <nameexists>Der findes allerede en webdel med navnet "{0}"</nameexists>
+        <parametername>Navn</parametername>
+        <parameters>Parametre</parameters>
+        <parametertype>Type</parametertype>
+        <parametervalue>Værdi</parametervalue>
+        <portlet>Portlet</portlet>
+        <producer>Producent</producer>
+        <requiredfield>Der skal angives en værdi for:</requiredfield>
+        <resolvecontrol>Verificer kontrollen</resolvecontrol>
+        <typeconversionerror>Parameterværdien kunne ikke konverteres til den valgte type</typeconversionerror>
+        <typenameblank>Du skal angive et typenavn eller en virtuel sti.</typenameblank>
+        <typenamenotfound>Der kunne ikke findes et kontrolelement med det angivne typenavn.</typenamenotfound>
+        <typenameresolved>Kontrollen blev verificeret.</typenameresolved>
+        <virtualpathloadfailed>Den virtuelle sti kunne ikke indlæses.</virtualpathloadfailed>
+      </webpartadminedit>
+      <wsrpadmin>
+        <description see="/admin/wsrpadmin/info" />
+        <detailederror>Detaljeret fejlbeskrivelse:</detailederror>
+        <displayname see="/admin/wsrpadmin/heading" />
+        <heading>WSRP-kilder</heading>
+        <info>Definer de WSRP-kilder, der skal være tilgængelige til brug.</info>
+      </wsrpadmin>
+    </admin>
+    <april>April</april>
+    <august>August</august>
+    <button>
+      <activate>Aktiver</activate>
+      <add>Tilføj</add>
+      <addgroupsid>Tilføj gruppe</addgroupsid>
+      <addlink>Tilføj link</addlink>
+      <addusergroupsid>	Tilføj brugere/grupper</addusergroupsid>
+      <addusersid>Tilføj bruger</addusersid>
+      <apply>Anvend</apply>
+      <browse>		Gennemse...</browse>
+      <cancel>Annuller</cancel>
+      <change>		Rediger</change>
+      <checkin>Klar til publicering</checkin>
+      <clear>Slet</clear>
+      <close>			Luk</close>
+      <comingmonth>De næste 30 dage</comingmonth>
+      <comingweek>De næste 7 dage</comingweek>
+      <compare>Sammenlign</compare>
+      <continue>Fortsæt</continue>
+      <copy>Kopier</copy>
+      <create>Opret</create>
+      <deactivate>Deaktiver</deactivate>
+      <delaypublish>Tidsstyring</delaypublish>
+      <delete>Slet</delete>
+      <deletefoundposting>Slet alle poster</deletefoundposting>
+      <deleteselected>Slet de markerede poster</deleteselected>
+      <edit>Rediger</edit>
+      <export>Eksporter</export>
+      <exportasxml>Eksporter som XML</exportasxml>
+      <exporttoexcel>Eksporter til Excel</exporttoexcel>
+      <findnext>		Find næste</findnext>
+      <help>Hjælp</help>
+      <ignore>		Ignorer</ignore>
+      <ignoreall>		Ignorer alle</ignoreall>
+      <import>Importer</import>
+      <insert>Indføj</insert>
+      <lastmonth>De seneste 30 dage</lastmonth>
+      <lastweek>De seneste 7 dage</lastweek>
+      <login>Log på</login>
+      <next>			&gt;&gt;</next>
+      <no>Nej</no>
+      <ok>OK</ok>
+      <prev>			&lt;&lt;</prev>
+      <preview>Gennemse</preview>
+      <print>Udskriv</print>
+      <publish>Publicer</publish>
+      <refresh>Opdater</refresh>
+      <reset>Gendan</reset>
+      <resize>Tilpas størrelse</resize>
+      <save>Gem</save>
+      <saveandclose>Gem og luk</saveandclose>
+      <saveandpublish>Gem og offentliggør</saveandpublish>
+      <saveandview>Gem og vis</saveandview>
+      <saveonly>Gem</saveonly>
+      <search>Søg</search>
+      <select>Vælg</select>
+      <send>Send</send>
+      <settings>Indstillinger</settings>
+      <showreport>Vis rapport</showreport>
+      <today>I dag</today>
+      <unpublish>		Afpublicer</unpublish>
+      <yes>Ja</yes>
+      <yesterday>I går</yesterday>
+      <zoom>Zoom</zoom>
+    </button>
+    <clienttools>
+      <installstatus>
+        <componentdescription see="/labels/description" />
+        <componentname>Komponent</componentname>
+        <components>
+          <componentexcelexport>
+            <description>En komponent, som kan eksportere formulardata til Microsoft Excel</description>
+            <heading>Eksport til Excel, Microsoft Office-tilknytning</heading>
+          </componentexcelexport>
+          <componentmultiupload>
+            <description>En komponent, der muliggør understøttelse af avanceret filoverførsel, f.eks. træk og slip</description>
+            <heading>Avanceret filoverførsel</heading>
+          </componentmultiupload>
+          <componentshelltools>
+            <description>Understøttelsesfunktioner for kommunikation med EPiServer, som bla. kan bruges sammen med Microsoft Office-programtilføjelsen</description>
+            <heading>Klientens understøttelsesfunktioner</heading>
+          </componentshelltools>
+          <componentspellchecker>
+            <description>En komponent, som anvender stavekontrollen i Microsoft Word fra editoren</description>
+            <heading>Stavekontrol, Microsoft Office-tilknytning</heading>
+          </componentspellchecker>
+          <currentversion>Du anvender version {0} af {1}</currentversion>
+          <heading>Komponenter</heading>
+          <intro>Visse funktioner kræver, at du har "EPiServer CMS Client Components" installeret på din pc, for at de fungerer. På listen nedenfor vises en status for de forskellige komponenter.</intro>
+        </components>
+        <componentstatus>Status</componentstatus>
+        <componentversion>Version</componentversion>
+        <heading>Klientværktøj</heading>
+        <install>Installer</install>
+        <installversion>Installer version {0}</installversion>
+        <missingactivexsupport>Denne funktionalitet kræver en webbrowser, som understøtter ActiveX, f.eks. Microsoft Internet Explorer.</missingactivexsupport>
+        <officeaddin>
+          <activated>Dette websted er aktiveret for offentliggøring fra din pc</activated>
+          <confirmactivate>Vil du aktiver offentliggøring til følgende websted?</confirmactivate>
+          <confirmdeactivate>Vil du deaktiver offentliggøring til følgende websted?</confirmdeactivate>
+          <heading>Programtilføjelse til Microsoft Office</heading>
+          <installation>Installation</installation>
+          <intro>Med denne programtilføjelse kan du offentliggøre oplysninger til EPiServer CMS fra Microsoft Word, Microsoft Excel og Microsoft PowerPoint</intro>
+          <needssave>Dokumentet skal gemmes inden det offentliggøres til EPiServer CMS, vil du gøre det nu?</needssave>
+          <noaccess>For at kunne installere og anvende dette tilføjelsesprogram skal du have adgangsrettigheder som administrator.</noaccess>
+          <notactivated>Dette websted er ikke aktiveret for offentliggøring fra din pc</notactivated>
+        </officeaddin>
+        <registersite>Registrer webstedet</registersite>
+        <statusinstalled>Komponenten er installeret</statusinstalled>
+        <statusloading>Kontrollerer status...</statusloading>
+        <statusnotinstalled>Komponenten er ikke installeret</statusnotinstalled>
+        <upgrade>Opgrader</upgrade>
+      </installstatus>
+      <preview>
+        <tooltipclose>Afslut dialogboksen, og annuller ændringerne</tooltipclose>
+      </preview>
+      <wizard>
+        <createpage>Vælg, hvilken sidetype du vil oprette på grundlag af dokumentet.</createpage>
+        <doneblock1>Færdig!</doneblock1>
+        <doneblock2>Vælg Gem og vis for at afslutte denne dialogboks og oprette en visning af siden.</doneblock2>
+        <editpage>Valgt sidetype er {0}. Udfyld oplysninger såsom sidens navn og eventuelle tidspunkter for offentliggørelse.</editpage>
+        <noextension>Filen "{0}" har intet filtypenavn og kan derfor ikke identificeres</noextension>
+        <nosupport>Filtypenavnet "{0}" understøttes ikke.</nosupport>
+        <selectpagelanguage>Sprog</selectpagelanguage>
+      </wizard>
+    </clienttools>
+    <cookie>
+      <logincaption>		Hvis du logger på, bliver der anvendt cookies</logincaption>
+      <logininfo>			En cookie med logonoplysninger sendes til din webbrowser. Hvis du vil undgå cookies, kan du ikke logge på webstedet.</logininfo>
+    </cookie>
+    <day>dag</day>
+    <december>December</december>
+    <dope>
+      <adminmode>			Til administratortilstand</adminmode>
+      <cancel>			Afbryd</cancel>
+      <confirmsave>"Hyperlinktype" er indstillet til "Hent data fra en anden side". Hvis du gemmer ændringerne, opretter du en statisk kopi af siden, og dataene hentes ikke længere fra den angivne adresse. Vil du fortsætte?</confirmsave>
+      <copy>				Kopier til Udklipsholder</copy>
+      <delete>			Slet</delete>
+      <disablemenu>		Deaktiver menuen</disablemenu>
+      <edit>				Rediger</edit>
+      <editmode>			Til redigeringstilstand</editmode>
+      <new>				Ny</new>
+      <newwindow>			Åbn i et nyt vindue</newwindow>
+      <print>				Udskriv</print>
+      <properties>		Egenskaber</properties>
+      <quickedit>Hurtigrediger</quickedit>
+      <refresh>			Opdater</refresh>
+      <save>Gem og offentliggør</save>
+      <security>			Rettigheder</security>
+      <viewmode>			Til visningstilstand</viewmode>
+    </dope>
+    <dynamiccontenttypes>
+      <dynamiccontent name="PagePropertyPlugin">
+        <caption>Sideegenskab</caption>
+        <description>Indsætter indholdet af en angivet sideegenskab.</description>
+      </dynamiccontent>
+    </dynamiccontenttypes>
+    <edit>
+      <actionwindow>
+        <heading>Opgavevindue</heading>
+        <hide>Skjul</hide>
+      </actionwindow>
+      <activityloader>
+        <assignedtasks>Mine uddelegerede opgaver</assignedtasks>
+        <duedate>Forfaldsdato</duedate>
+        <grouptask>Gruppens opgaver</grouptask>
+        <noactivity>Ingen aktuelle aktiviteter</noactivity>
+        <personaltask>Personlige opgaver</personaltask>
+        <personaltaskstaskstooltip>Personlige opgaver:</personaltaskstaskstooltip>
+        <readytopublishtooltip>Klar til at publicere:</readytopublishtooltip>
+        <statusnotready>Ikke publiceret</statusnotready>
+        <statusreadytopublish>Klar til at publicere</statusreadytopublish>
+        <statusrejected>Noteret</statusrejected>
+        <workflowowner>Oversigt over workflow</workflowowner>
+      </activityloader>
+      <clienttools>
+        <clientinstaller>
+          <closewindow>Luk vindue</closewindow>
+          <installationstatus>Klientkomponenterne er nu installeret. Du kan nu lukke dette vindue.</installationstatus>
+          <pagetitle>Installation af klientkomponenter</pagetitle>
+          <restartbrowser>Klientkomponenterne er blevet opdateret. Genstart Internet Explorer for at bruge de opgraderede komponenter. Luk alle åbne vinduer i Internet Explorer, og åbn webbrowseren igen.</restartbrowser>
+        </clientinstaller>
+        <multifileupload>
+          <directorynotfound>Mappen {0} blev ikke fundet på serveren.</directorynotfound>
+          <functiondisabled>Du har ikke den nødvendige tilladelse til avanceret filafsendelse. Kontroller, at dette er aktiveret under "Tilladelser til funktioner".</functiondisabled>
+          <permissiondenied>Du har ikke tilladelse til at oprette filer i denne mappe.</permissiondenied>
+        </multifileupload>
+        <wizard>
+          <pagenotfound>
+            <message>
+              Siden, du prøver at opdatere, blev ikke fundet. Den er sandsynligvis blevet slettet.&lt;br/&gt;
+              Denne dialogboks skal annulleres, hvis du vil udgive dette dokument i en anden destination. Vælg derefter "Nej", når du bliver spurgt, om du vil opdatere en eksisterende side.
+            </message>
+            <title>Siden blev ikke fundet</title>
+          </pagenotfound>
+        </wizard>
+      </clienttools>
+      <conflicteditor>
+        <heading>Konflikthåndtering</heading>
+        <info>Oplysningerne i den offentliggjorte version er blevet ændret, efter at denne version blev oprettet</info>
+        <tabmychanges>Mine ændringer</tabmychanges>
+        <tabpublishedchanges>Offentliggjorte ændringer</tabpublishedchanges>
+      </conflicteditor>
+      <contentmirroringadmin>
+        <description>En liste over tilgængelige, definerede kanaler på systemet.</description>
+        <displayname>Godkend spejling af opdateringer</displayname>
+        <failure>Der er opstået en fejl ({0}). Kontakt din webstedsadministrator.</failure>
+        <itemcreated>Oprettet</itemcreated>
+        <itemdeleted>Slettet</itemdeleted>
+        <itemmoved>Flyttet</itemmoved>
+        <itemupdated>Opdateret</itemupdated>
+      </contentmirroringadmin>
+      <deletepage>
+        <deleteconfirmation>Er du sikker på, du vil slette "{0}"?</deleteconfirmation>
+        <deletenotsupported>Sideudbyderen, der leverer denne side, understøtter ikke sletning.</deletenotsupported>
+        <deletesuffix>		"{0}" er slettet</deletesuffix>
+        <deletesystempage>	Papirkurven, startsiden og rodobjektet kan ikke slettes</deletesystempage>
+        <failedreferenced>Følgende sider er fælles med andre dele af systemet og kan derfor ikke slettes:</failedreferenced>
+        <hasentrypointchild>Denne side eller nogle af dens undersider udgør en sideudbyders overordnede side og kan ikke slettes. Du skal først fjerne sideudbyderen i internetkonfigrationen.</hasentrypointchild>
+        <heading>Sletter side "{0}"</heading>
+        <headingfailed>Kan ikke slette én eller flere sider</headingfailed>
+        <info />
+        <movesuffix>		"{0}" er flyttet til papirkurven</movesuffix>
+        <nodeleteaccessrights>Du har ikke rettigheder til at slette denne side.</nodeleteaccessrights>
+        <reftypearchive>{0}&amp;nbsp;er arkivmappe for&amp;nbsp;{1}</reftypearchive>
+        <reftypedefaultarchive>{1} bruges som standardarkiveringsside på sidetypen {0}</reftypedefaultarchive>
+        <reftypeproperty>{0}&amp;nbsp;refererer til en egenskab i&amp;nbsp;{1}</reftypeproperty>
+        <reftypeshortcut>Siden med ID {0} indeholder et link til denne side eller til nogle af dens underliggende sider.</reftypeshortcut>
+      </deletepage>
+      <deletepagelanguage>
+        <alertlangnotselected>Du skal vælge sprog.</alertlangnotselected>
+        <confirmdeletemessage>Hvis du fortsætter, slettes det valgte sprog permanent for siden.</confirmdeletemessage>
+        <confirmdeletequestion>Er du sikker på, du vil slette sproget?</confirmdeletequestion>
+        <deletedlanguage>	Sproget "{0}" er blevet slettet for denne side.</deletedlanguage>
+        <heading>			Slet sprog for siden "{0}"</heading>
+        <info>				Slet et af sprogene for siden uden at slette hele siden. Bemærk! Hvis du sletter et sprog for en side, slettes sproget permanent. Det flyttes altså ikke til papirkurven. Eventuelle undersider på samme sprog slettes ikke.</info>
+        <nothingtodelete>	Der findes kun et sprog for denne side. Brug funktionen "Slet", hvis du vil slette siden og dens undersider.</nothingtodelete>
+        <selectlanguage>	Slet sprog</selectlanguage>
+        <selectlanguageitem>Vælg sprog, der skal slettes</selectlanguageitem>
+      </deletepagelanguage>
+      <dynamiccontent>
+        <dynamicpagepropertysettings>
+          <dynamicproperties>Dynamiske egenskaber</dynamicproperties>
+          <metadataproperties>Indbyggede egenskaber</metadataproperties>
+          <pagelinkerror>Der skal være markeret en side</pagelinkerror>
+          <pagelinklabel>Siden, der skal indlæses data fra</pagelinklabel>
+          <pagetypeproperties>Egenskaber for sidetype</pagetypeproperties>
+          <propertylisterror>Der skal være markeret en egenskab</propertylisterror>
+          <propertylistlabel>Egenskab, der skal indlæses data fra</propertylistlabel>
+        </dynamicpagepropertysettings>
+      </dynamiccontent>
+      <editcommand>
+        <actionwindowhelp>Åbne opgavevindue </actionwindowhelp>
+        <addfavoritecaption>Tilføj til Foretrukne</addfavoritecaption>
+        <adminmodehelp see="/dope/adminmode" />
+        <askdelete>				Skal siden {0} slettes?</askdelete>
+        <askemptywastebasket>	Vil du tømme papirkurven?</askemptywastebasket>
+        <askmove>				Vil du flytte denne side?</askmove>
+        <askprovidermove>Vil du flytte denne side? Flytning af sider mellem forskellige sideudbydere betyder, at de pågældende data flyttes mellem forskellige back-end-lagringssteder.</askprovidermove>
+        <copypagecaption>		Kopier</copypagecaption>
+        <copypagehelp>			Kopier den valgte side</copypagehelp>
+        <createnewpagecaption>	Opret ny</createnewpagecaption>
+        <createnewpagehelp>		Opret en ny side</createnewpagehelp>
+        <cutpagecaption>		Klip</cutpagecaption>
+        <cutpagehelp>			Klip den valgte side ud</cutpagehelp>
+        <deletepagecaption>		Slet</deletepagecaption>
+        <deletepagehelp>		Slet den valgte side</deletepagehelp>
+        <deletepagelanguagecaption>Slet sprog</deletepagelanguagecaption>
+        <editdynpropcaption>	Dynamiske egenskaber</editdynpropcaption>
+        <editdynprophelp>		Skift dynamiske egenskaber</editdynprophelp>
+        <editmode>				Redigeringstilstand</editmode>
+        <editpagecaption>		Rediger</editpagecaption>
+        <favoritesmode>Foretrukne</favoritesmode>
+        <filemanagementhelp>Filhåndtering</filemanagementhelp>
+        <languageoverviewcaption>Sprogoversigt</languageoverviewcaption>
+        <languageoverviewhelp see="/edit/editcommand/languageoverviewcaption" />
+        <languagepagecaption>Sidesprog</languagepagecaption>
+        <languagepagehelp see="/edit/editcommand/languagepagecaption" />
+        <languagesettingscaption>Sprogindstillinger</languagesettingscaption>
+        <languagesettingshelp see="/edit/editcommand/languagesettingscaption" />
+        <logoutdombrowser>Du er logget på som en godkendt Windows-bruger. Før du kan logges helt af, skal du lukke alle browser-vinduer</logoutdombrowser>
+        <logouthelp>			Log af</logouthelp>
+        <movedisabled>Du har ikke den nødvendige tilladelse til at flytte data mellem forskellige sideudbydere. Kontroller, at dette er aktiveret under "Tilladelser til funktioner".</movedisabled>
+        <pagetypenotallowed>	Sidetypen er ikke tilladt på destinationen</pagetypenotallowed>
+        <pastepagecaption>		Sæt ind</pastepagecaption>
+        <pastepagehelp>			Sæt den valgte side ind</pastepagehelp>
+        <personalmode>			Aktiviteter</personalmode>
+        <removefavoritecaption>Fjern fra Foretrukne</removefavoritecaption>
+        <reportcenterhelp>Rapportcenter</reportcenterhelp>
+        <setaccesscaption>		Rettigheder</setaccesscaption>
+        <setaccesshelp>			Skift rettigheder</setaccesshelp>
+        <settingshelp see="/edit/workspace/mysettings" />
+        <viewmode>				Struktur</viewmode>
+        <viewmodehelp see="/dope/viewmode" />
+      </editcommand>
+      <editdynprop>
+        <heading>		Rediger dynamiske egenskaber på side "{0}"</heading>
+        <info />
+        <nodynprop>		Der findes ingen dynamiske egenskaber</nodynprop>
+        <save>			De dynamiske egenskaber er gemt</save>
+      </editdynprop>
+      <editform>
+        <addcolumnbutton>Tilføj kolonne</addcolumnbutton>
+        <addrowbutton>Tilføj række</addrowbutton>
+        <allowanonymouspostcaption>Blanketten kan sendes uden logon</allowanonymouspostcaption>
+        <allowmultiplepostcaption>Samme person kan afsende blanketten flere gange</allowmultiplepostcaption>
+        <buttoncaption>Knaptekst</buttoncaption>
+        <buttonproperties>Egenskaber for knap</buttonproperties>
+        <checkboxproperties>Egenskaber for afkrydsningsfelt</checkboxproperties>
+        <checkedcaption>Valgt på forhånd</checkedcaption>
+        <classcaption>CSS-klasse</classcaption>
+        <confirmdelete>Er du sikker på, at du ønsker at slette dette felt?</confirmdelete>
+        <defaultpropertyheading>Egenskaber</defaultpropertyheading>
+        <deletecolumnbutton>Slet kolonne</deletecolumnbutton>
+        <deletecolumnconfirmmessage>Er du sikker på, at du vil slette den valgte kolonne?</deletecolumnconfirmmessage>
+        <deleterowbutton>Slet række</deleterowbutton>
+        <deleterowconfirmmessage>Er du sikker på, at du vil slette den valgte række?</deleterowconfirmmessage>
+        <descriptionhrproperties>Egenskaber for vandret lineal</descriptionhrproperties>
+        <descriptionproperties>Egenskaber for vejledningstekst</descriptionproperties>
+        <fieldexists>Der er allerede et inputfelt i denne celle</fieldexists>
+        <formcontrolinfotext>Træk et felt til en tabelcelle, eller vælg en celle, og klik på den ønskede felttype.</formcontrolinfotext>
+        <formfields>Formularfelter</formfields>
+        <formnamecaption>Blankettens navn</formnamecaption>
+        <heading>Formularindstillinger</heading>
+        <headingcaption>Overskrift</headingcaption>
+        <heightcaption>Højde (antal rækker)</heightcaption>
+        <horizontal>Horisontalt</horizontal>
+        <horizontalrule>Vandret lineal</horizontalrule>
+        <htmlcode>HTML kode</htmlcode>
+        <importexport>Importer/Eksporter</importexport>
+        <inputcheckbox>Afkrydsningsfelt</inputcheckbox>
+        <inputdescription>Vejledningstekst</inputdescription>
+        <inputradiobutton>Vælgerknap</inputradiobutton>
+        <inputselectbox>Rulleliste</inputselectbox>
+        <inputsubmit>Knap</inputsubmit>
+        <inputtext>Tekstboks</inputtext>
+        <inputtextarea>Tekstrude</inputtextarea>
+        <insertcolumnbutton>Indsæt kolonne</insertcolumnbutton>
+        <insertrowbutton>Indsæt række</insertrowbutton>
+        <mailanddboption>Send e-mail og gem i database</mailanddboption>
+        <namecaption>Navn</namecaption>
+        <optionscaption>Alternativ</optionscaption>
+        <pageafterpost>Hilsen, som vises ved svar</pageafterpost>
+        <placefieldsinmatrix>Placer inputfelt i nedenstående matrix</placefieldsinmatrix>
+        <placementcaption>Placering</placementcaption>
+        <postresultcaption>Resultat ved afsendelse</postresultcaption>
+        <radiobuttonproperties>Egenskaber for vælgerknap</radiobuttonproperties>
+        <requiredcaption>Værdi skal anføres</requiredcaption>
+        <savetodatabaseoption>Gem i database</savetodatabaseoption>
+        <selectboxproperties>Egenskaber for rulleliste</selectboxproperties>
+        <sendemailfromadresscaption>Afsender af e-mail</sendemailfromadresscaption>
+        <sendemailoption>Send e-mail</sendemailoption>
+        <sendemailsubjectcaption>E-mail-emne</sendemailsubjectcaption>
+        <sendemailtoadresscaption>Send e-mail til denne adresse</sendemailtoadresscaption>
+        <sendformtourlcaption>Send blanket til denne URL</sendformtourlcaption>
+        <sendtourloption>Send til anført URL</sendtourloption>
+        <tablelayout>Tabellayout</tablelayout>
+        <textareaproperties>Egenskaber for tekstrude</textareaproperties>
+        <textcaption>Tekst</textcaption>
+        <textinputproperties>Egenskaber for tekstboks</textinputproperties>
+        <tooltipcaption>Værktøjstip</tooltipcaption>
+        <typecaption>Valider som</typecaption>
+        <valuecaption>Værdi</valuecaption>
+        <vertical>Vertikalt</vertical>
+        <widthcaption>Bredde (antal tegn)</widthcaption>
+      </editform>
+      <editformdata>
+        <activexnotinstalled>"EPiServer CMS-klientkomponenter" er tilsyneladende ikke installeret. Vælg rodsiden, og klik på fanen "Komponenter", hvis du vil installere dem.</activexnotinstalled>
+        <alertforselectingexportrow>Vælg mindst én række, der skal eksporteres.</alertforselectingexportrow>
+        <confirmdelete>		Er du sikker på, at du ønsker at slette alle resultater fra denne søgning</confirmdelete>
+        <confirmselecteddelete>Er du sikker på, at du vil slette alle de valgte elementer?</confirmselecteddelete>
+        <date>				Dato</date>
+        <errorexportingdata>Fejl ved eksport af data</errorexportingdata>
+        <excelexport>		Eksportere til Excel</excelexport>
+        <export>			Eksporter</export>
+        <fromdate>			Fra dato</fromdate>
+        <heading>			Formularindstillinger</heading>
+        <matches>			forekomst(er)</matches>
+        <newestfirst>		Nyeste først</newestfirst>
+        <nohits>			Ingen resultater</nohits>
+        <pagingsize>		Antal forekomster pr. side</pagingsize>
+        <selectform>		Vælg formular</selectform>
+        <sortorder>			Sortering</sortorder>
+        <todate>			Til dato</todate>
+        <user>				Brugere</user>
+      </editformdata>
+      <editorguide>
+        <description>Denne vejledning hjælper dig med at oprette brugbart og tilgængeligt webindhold.</description>
+        <displayname>Brugbarhedsvejledning (engelsk)</displayname>
+        <hidesection>Skjul afsnit</hidesection>
+        <showsection>Vis afsnit</showsection>
+      </editorguide>
+      <editpage>
+        <changed>Side ændret</changed>
+        <checkedinversionswarning>Bemærk! En gemt version er klar til publicering. Versionen kan findes på fanen Versionsliste med status Klar til publicering.</checkedinversionswarning>
+        <createdby>Side oprettet af</createdby>
+        <creator>Oprettes af</creator>
+        <externallinkcaption>Link til side på et andet websted</externallinkcaption>
+        <externallinkwarning>Bemærk! "Hyperlinktype" er indstillet til "Link til side på et andet websted". Det betyder, at indholdet hentes fra den angivne adresse. "Hyperlinktype" kan ændres under "Rediger", "Genvej/Eksternt link".</externallinkwarning>
+        <fetchdatacaption>Hent data fra side i EPiServer CMS</fetchdatacaption>
+        <fetchdatawarning>Bemærk! "Hyperlinktype" er indstillet til "Hent data fra side i EPiServer CMS". Det betyder, at indholdet hentes fra en anden side i EPiServer CMS. "Hyperlinktype" kan ændres under "Rediger", "Genvej/Eksternt link".</fetchdatawarning>
+        <mustpublishmasterfirst>Det originale sprog ({0}) for denne side er endnu ikke blevet udgivet. Det oprindelige sprog skal være udgivet, før siden kan udgives på andre sprog.</mustpublishmasterfirst>
+        <nolinkcaption>Intet link, kun tekst</nolinkcaption>
+        <nolinkwarning>Bemærk! "Hyperlinktype" er indstillet til "Intet link, kun tekst". Det betyder, at der ikke vises noget indhold på fanen "Vis", og der vil ikke være link til sidens navn i menuen. "Hyperlinktype" kan ændres under "Rediger", "Genvej/Eksternt link".</nolinkwarning>
+        <normallinkcaption>Link til denne side</normallinkcaption>
+        <normallinkwarning />
+        <publishedby>Side publiceret af</publishedby>
+        <savedby>Senest gemt af</savedby>
+        <shortcutcaption>Genvej til side i EPiServer CMS</shortcutcaption>
+        <shortcutwarning>Bemærk! "Hyperlinktype" er en "Genvej til side i EPiServer CMS". Det betyder, at den besøgende omdirigeres, når der er link til sidens navn. "Hyperlinktype" kan ændres under "Rediger", "Genvej/Eksternt link".</shortcutwarning>
+        <updatechanged>&amp;nbsp;Marker siden som ændret&amp;nbsp;</updatechanged>
+      </editpage>
+      <editpanel>
+        <actionapprove>			Offentliggør</actionapprove>
+        <actioncheckin>			Klar</actioncheckin>
+        <actiondelete>			Slet version</actiondelete>
+        <actionreject>			Kommenter</actionreject>
+        <changelanguageheading>Sidevisning</changelanguageheading>
+        <compareto>Sammenlign med</compareto>
+        <confirmdelete>			Er du sikker på, du vil slette denne version?</confirmdelete>
+        <confirmnavigate>Du har ændret denne side</confirmnavigate>
+        <creatingnewpage>		Opretter en ny side</creatingnewpage>
+        <creatingnewpagelanguage>Oprettelse af side på et nyt sprog</creatingnewpagelanguage>
+        <delayinfo>					Brug tidsstyret offentliggørelse af denne version.</delayinfo>
+        <delaypublishinfo>Aktiver udgivelsesforsinkelse</delaypublishinfo>
+        <delaystartpublishinfo>		Angiv, hvornår denne version skal offentliggøres</delaystartpublishinfo>
+        <notreadyitem>			--- Ikke offentliggjort ---</notreadyitem>
+        <pagenotavailable>Denne side er ikke tilgængelig for det aktive sprog</pagenotavailable>
+        <pagetypeheading>Sidetype</pagetypeheading>
+        <prefixcopyof>			Kopi af</prefixcopyof>
+        <rejectprompt>			Kommentar til forfatter</rejectprompt>
+        <savedelaypublishbutton>	Gem</savedelaypublishbutton>
+        <selectversion>			Version:</selectversion>
+        <showversionlist>       Vise versionslisten</showversionlist>
+        <statusheading>Status</statusheading>
+        <tabedit>
+          <description />
+          <displayname>		Rediger</displayname>
+        </tabedit>
+        <tabformdata>Formulardata</tabformdata>
+        <tabversionlist>
+          <description />
+          <displayname>		Liste over versioner</displayname>
+          <oneunpublishedversionglobalizedtooltip>En uudgivet version for sprog: {0}</oneunpublishedversionglobalizedtooltip>
+          <oneunpublishedversiontooltip>En uudgivet version</oneunpublishedversiontooltip>
+          <unpublishedversionsglobalizedtooltip>{0} uudgivede versioner for sprog: {1}</unpublishedversionsglobalizedtooltip>
+          <unpublishedversionstooltip>{0} uudgivede versioner</unpublishedversionstooltip>
+        </tabversionlist>
+        <tabview>				Vis</tabview>
+        <tooltipapprove>		Offentliggør denne version</tooltipapprove>
+        <tooltipcancel>Afbryd redigering af denne version</tooltipcancel>
+        <tooltipcheckin>Indgiv version til udgivelse</tooltipcheckin>
+        <tooltipdelete>			Slet denne version</tooltipdelete>
+        <tooltipedit>			Rediger denne version</tooltipedit>
+        <tooltipeditnew>		Rediger ny version (lav en kopi af denne version)</tooltipeditnew>
+        <tooltipreject>			Lav kommentar til denne version</tooltipreject>
+        <tooltipsave>			Gem denne versionGem og vis denne version</tooltipsave>
+        <tooltipsaveonly>Gem denne version</tooltipsaveonly>
+        <viewsavedby>			Af</viewsavedby>
+        <viewsaveddate>			Gemt</viewsaveddate>
+        <viewstatus>			Status</viewstatus>
+      </editpanel>
+      <editsecurity>
+        <aclremovepermissionrights>Du har forsøgt at fjerne tilladelser til at administrere denne side. Hvis du vil gøre dette, skal du aktivere administrationstilstanden og angive tilladelser for denne side</aclremovepermissionrights>
+        <heading>		Angiv rettigheder for side "{0}"</heading>
+        <info>			Her kan du vælge, hvilke brugere og/eller grupper der skal have adgang til siden, samt hvad de skal have tilladelse til at gøre.</info>
+        <savemessage comment="heading of savesecurity">De nye sikkerhedsindstillinger er gemt</savemessage>
+        <user>			Du er logget på som {0} og er medlem af følgende grupper</user>
+      </editsecurity>
+      <edittree>
+        <copypage>Kopier "{0}" til "{1}"</copypage>
+        <movepage>Flyt "{0}" til "{1}"</movepage>
+        <nofavoritesfound>			Der er ikke indlæst nogen foretrukne</nofavoritesfound>
+        <notasksfound>				Der er ingen aktiviteter for forekomsten</notasksfound>
+      </edittree>
+      <editversionlist>
+        <columnheadingdatesaved>Gemt</columnheadingdatesaved>
+        <columnheadinglanguage>Sprog</columnheadinglanguage>
+        <columnheadingname>Navn</columnheadingname>
+        <columnheadingsavedby>Af</columnheadingsavedby>
+        <columnheadingstatus>Status</columnheadingstatus>
+        <columnheadingversion>Version</columnheadingversion>
+        <confirmdelete>Er du sikker på, du vil fjerne denne version?</confirmdelete>
+        <showalllanguages>Vis alle sprog</showalllanguages>
+        <versionidtitle>Versions-id: </versionidtitle>
+      </editversionlist>
+      <editxform>
+        <allforms>Alle formularer</allforms>
+        <allpages>Vis data for alle sider</allpages>
+        <changed>Sidst ændret:</changed>
+        <changedby>Ændret af:</changedby>
+        <confirmdelete>Er du sikker på, at du ønsker at slette dette felt?</confirmdelete>
+        <copysuffix>Kopier</copysuffix>
+        <created>Oprettet:</created>
+        <createdby>Oprettet af:</createdby>
+        <createnewformfoldertooltip>Opret ny formularmappe</createnewformfoldertooltip>
+        <datatypes>
+          <date1>
+            <caption>Dato (DD/MM/ÅÅÅÅ)</caption>
+            <errormessage>"{0}" er ikke en gyldig dato. Angiv en dato i formatet "DD/MM/ÅÅÅÅ".</errormessage>
+          </date1>
+          <date2>
+            <caption>Dato (MM/DD/ÅÅÅÅ)</caption>
+            <errormessage>"{0}" er ikke en gyldig dato. Angiv en dato i formatet "MM/DD/ÅÅÅÅ".</errormessage>
+          </date2>
+          <defaulttype>
+            <errormessage>Du har angivet tegn, som ikke er tilladt ("&lt;" eller "&gt;").</errormessage>
+          </defaulttype>
+          <email>
+            <caption>E-mail-adresse</caption>
+            <errormessage>"{0}" er ikke en gyldig e-mail-adresse.</errormessage>
+          </email>
+          <integer>
+            <caption>Heltal</caption>
+            <errormessage>"{0}" er ikke et gyldigt heltal.</errormessage>
+          </integer>
+          <isodate>
+            <caption>Dato (ÅÅÅÅ-MM-DD)</caption>
+            <errormessage>"{0}" er ikke en gyldig dato. Angiv en dato i formatet "ÅÅÅÅ-MM-DD".</errormessage>
+          </isodate>
+          <positiveinteger>
+            <caption>Positivt heltal</caption>
+            <errormessage>"{0}" er ikke et positivt heltal.</errormessage>
+          </positiveinteger>
+        </datatypes>
+        <deleteformfoldertooltip>Slet den valgte formularmappe</deleteformfoldertooltip>
+        <deletequestion>Er du sikker på, at du vil slette den valgte formular?</deletequestion>
+        <editformbutton>Rediger</editformbutton>
+        <editordescription>Fanen Tabellayout bruges til at udforme formularens layout.</editordescription>
+        <errorimporting>Formularen kunne ikke importeres. Sørg for, at filen indeholder gyldig XML.</errorimporting>
+        <existonpages>Bemærk, at denne formular anvendes på flere sider. Ændringer i formularen vil derfor påvirke følgende sider:</existonpages>
+        <folder>Mappe</folder>
+        <folderdialog>
+          <createnewformfolderheading>Opret ny formularmappe</createnewformfolderheading>
+          <createnewformfoldersavewarning>Du skal angive et gyldigt navn til den nye formularmappe (uden tegnene \ / " ' &lt; &gt;).</createnewformfoldersavewarning>
+          <createnewformfoldertext>Navn til ny mappe:</createnewformfoldertext>
+          <deletequestion>Er du sikker på, at du vil slette den valgte formularmappe?</deletequestion>
+          <renamefoldererroralreadyexists>Mappen {0} kunne ikke omdøbes til {1}, da der allerede findes en mappe med dette navn.</renamefoldererroralreadyexists>
+          <renamefoldererrorrootfolder>Rodmappen man ikke omdøbes.</renamefoldererrorrootfolder>
+          <renameformfolderheading>Omdøb formularmappe</renameformfolderheading>
+          <renameformfoldersavewarning>Du skal angive et gyldigt, nyt navn til formularmappen (uden tegnene \ / " ' &lt; &gt;).</renameformfoldersavewarning>
+          <renameformfoldertext>Nyt mappenavn:</renameformfoldertext>
+        </folderdialog>
+        <formdatamailsubject>Formulardata fra "{0}" ({1})</formdatamailsubject>
+        <formfoldercaption>Formularmappe</formfoldercaption>
+        <forminformation>Formularoplysninger</forminformation>
+        <formname>Formularnavn</formname>
+        <formnameempty>Angiv et navn til formularen.</formnameempty>
+        <formnotused>Formularen anvendes ikke på nogen sider.</formnotused>
+        <formusedonpages>Formularen anvendes på følgende sider:</formusedonpages>
+        <fromdate>Fra dato</fromdate>
+        <gridheadingchanged>Ændret</gridheadingchanged>
+        <gridheadingchangedby>Ændret af</gridheadingchangedby>
+        <gridheadingcreated>Oprettet</gridheadingcreated>
+        <gridheadingcreatedby>Oprettet af</gridheadingcreatedby>
+        <heading>Rediger formular</heading>
+        <headingtextrequired>Der skal angives en tekst for labelen.</headingtextrequired>
+        <importinfotext>Import vil overskrive alle ændringer af formularens indhold og layout, der ikke er gemt.</importinfotext>
+        <invalid>Forkert formular.</invalid>
+        <listmyformonly>Vis kun mine formularer:</listmyformonly>
+        <morethanoneoptionselected>Du kan kun vælge én valgmulighed.</morethanoneoptionselected>
+        <multiplevalueinvalid>Ugyldig værdi for indstillinger</multiplevalueinvalid>
+        <nameempty>Der skal angives navne for alle felter.</nameempty>
+        <nameexistsmorethanonce>Flere felter har samme navn: "{0}".</nameexistsmorethanonce>
+        <nameinvalid>Forkert feltnavn. Navnet skal starte med et bogstav og må kun indeholde alfanumeriske tegn (a-z, A-Z, 1-9 og "_", mellemrum er ikke tilladt).</nameinvalid>
+        <namenotallowedcharacters>Forkert feltnavn: "{0}". Navnet må kun indeholde alfanumeriske tegn (a-z, A-Z, 1-9 og "_", mellemrum er ikke tilladt).</namenotallowedcharacters>
+        <namerequired>Der skal angives et navn for feltet.</namerequired>
+        <newformnamecaption>Nyt navn</newformnamecaption>
+        <nofolder>Ingen mappe</nofolder>
+        <noformbutton>Ingen formular</noformbutton>
+        <notselectedrow>Marker en celle.</notselectedrow>
+        <renameformfoldertooltip>Omdøb den valgte formularmappe</renameformfoldertooltip>
+        <saveas>Gem som ...</saveas>
+        <savewarninginfo>Denne formular anvendes på flere sider.</savewarninginfo>
+        <savewarningquestion>Er du sikker på, du vil gemme ændringerne?</savewarningquestion>
+        <selectedfolder>Mappe:</selectedfolder>
+        <selectform>Vælg formular</selectform>
+        <submitdefaultvalue>Send forespørgsel</submitdefaultvalue>
+        <todate>Til dato</todate>
+        <usedonpages>Brugt på siderne</usedonpages>
+        <useformbutton>Anvend</useformbutton>
+      </editxform>
+      <editxformdata>
+        <allpages>Vis data for alle sider</allpages>
+        <fromdate>Fra dato</fromdate>
+        <selectform>Vælg formular</selectform>
+        <todate>Til dato</todate>
+      </editxformdata>
+      <filemanagerbrowser>
+        <directoryselectionerrormessage>Vælg først en mappe.</directoryselectionerrormessage>
+        <fileselectionerrormessage>Vælg først en fil.</fileselectionerrormessage>
+        <imageselectionerrormessage>Vælg først et billede.</imageselectionerrormessage>
+        <selectfile>Vælg fil</selectfile>
+        <selectfolder>Vælg mappe</selectfolder>
+        <selectimage>Vælg billede</selectimage>
+      </filemanagerbrowser>
+      <formpostings>
+        <description>		Vise formulardata</description>
+        <displayname>		Formulardata</displayname>
+      </formpostings>
+      <globalizationcontrol>
+        <description>Få vist status for og få adgang til den aktuelle sides forskellige sprog.</description>
+        <displayname>Sidesprog</displayname>
+        <heading>Sprog for side "{0}"</heading>
+        <published>Udgivet</published>
+        <saved>Gemt</saved>
+      </globalizationcontrol>
+      <globalizationmatrix>
+        <description />
+        <goup>Op</goup>
+        <heading>Sprogoversigt for side "{0}"</heading>
+        <languagestatusnotpublished>Siden er ikke udgivet endnu</languagestatusnotpublished>
+        <languagestatuspublished>Siden er udgivet</languagestatuspublished>
+        <page>Side</page>
+      </globalizationmatrix>
+      <imageeditor>
+        <compressioninformation>
+          <compression>Komprimering</compression>
+          <format>Formater</format>
+          <quality>Kvalitet</quality>
+        </compressioninformation>
+        <cropinformation>
+          <crop>Beskær</crop>
+          <height>Højde</height>
+          <help>Marker et udsnit af billedet, vælg et format blandt et af de forudindstillede, eller angiv værdierne direkte i felterne. Dobbeltklik på der markerede, eller klik på "Anvend" for at beskære billedet.</help>
+          <left>Venstre</left>
+          <top>Top</top>
+          <width>Bredde</width>
+        </cropinformation>
+        <disabledinformation>Du har ikke tilladelse til at redigere billedfilen. Men du kan godt redigere indstillingerne for, hvordan billedet vises på siden.</disabledinformation>
+        <generalinformation>Du kan bruge billedredigeringsprogrammet til at beskære, ændre størrelse på eller transformere billeder. Vælg det ønskede værktøj ovenfor.</generalinformation>
+        <generalinformationheading>Generelle oplysninger</generalinformationheading>
+        <imageformat>
+          <formatgif>GIF</formatgif>
+          <formatjpeg>JPEG</formatjpeg>
+          <formatpng>PNG</formatpng>
+        </imageformat>
+        <imagepreset>
+          <presetmedium>Mellem</presetmedium>
+          <presetselect>Marker</presetselect>
+          <presetsmall>Lille</presetsmall>
+        </imagepreset>
+        <imgpagelabels>
+          <compress>Komprimer</compress>
+          <crop>Beskær</crop>
+          <heading>Billedredigeringsprogram</heading>
+          <height>Højde:</height>
+          <manualdimensionoverflow>Din markering må ikke gå ud over billedets mål.</manualdimensionoverflow>
+          <redo>Annuller Fortryd</redo>
+          <resize>Tilpas størrelse</resize>
+          <reverttooriginal>Vend tilbage</reverttooriginal>
+          <saveas>Gem som</saveas>
+          <transform>Transformer</transform>
+          <undo>Fortryd</undo>
+          <width>Bredde:</width>
+          <zoomminus>Zoom -</zoomminus>
+          <zoomplus>Zoom +</zoomplus>
+        </imgpagelabels>
+        <information>
+          <unitkilobytes>KB</unitkilobytes>
+        </information>
+        <moredisplaysettings>Flere indstillinger</moredisplaysettings>
+        <pageleavemessage>Er du sikker på, du vil lukke billedredigeringsprogrammet uden at gemme dine ændringer?</pageleavemessage>
+        <quality>
+          <high>Høj (anbefales)</high>
+          <low>Lav</low>
+          <maximum>Maksimal</maximum>
+          <medium>Mellem</medium>
+          <veryhigh>Meget høj</veryhigh>
+        </quality>
+        <resizeinformation>
+          <contrainproportion>Bevar proportionerne</contrainproportion>
+          <height>Højde</height>
+          <help>Du kan ændre størrelse på et billede ved at trække i et hjørnehåndtag, ved at vælge et forudindstillet format eller ved at angive værdierne direkte i felterne. Klik på Anvend for at ændre billedets størrelse.</help>
+          <preset>Forudindstillet</preset>
+          <resize>Tilpas størrelse</resize>
+          <width>Bredde</width>
+        </resizeinformation>
+        <saveas>
+          <accessdenied>Du har ikke tilladelse til at gemme billedet "{0}".</accessdenied>
+          <confirmareplaceimage>Det nye billede vil blive brugt på alle ovenstående sider. Klik på OK for at erstatte billedets.</confirmareplaceimage>
+          <directorypath>Sti:</directorypath>
+          <emptyfilename>Skriv et filnavn.</emptyfilename>
+          <fileexists>Filen "{0}" findes allerede.</fileexists>
+          <filename>Filnavn:</filename>
+          <fileusageadditionalpages>og &lt;strong&gt;{0} andre sider&lt;/strong&gt;, der ikke er vist på ovenstående liste.</fileusageadditionalpages>
+          <fileusageheading>Dette billede anvendes på følgende sider:</fileusageheading>
+          <illegalname>"{0}" er ikke et gyldigt filnavn.</illegalname>
+          <invalidcharacters>Filnavnet må ikke indeholde følgende tegn: {0}</invalidcharacters>
+          <pathnotfound>Stien "{0}" findes ikke. Sørg for, at PageFiles-programmet til håndtering af virtuelle stier er korrekt konfigureret, eller at modifiedImagesTargetVirtualPath er indstillet i konfigurationselementet i imageEditor.</pathnotfound>
+          <saveasheading>Gem billedet som ...</saveasheading>
+          <saveastitle>Gem som</saveastitle>
+        </saveas>
+        <saveoptions>
+          <savecopy>Gem billedet som en kopi</savecopy>
+          <saveoriginal>Erstat det originale billede</saveoriginal>
+        </saveoptions>
+        <transforminformation>
+          <flip>Vend</flip>
+          <fliphorizontal>Vend horisontalt</fliphorizontal>
+          <flipvertical>Vend vertikalt</flipvertical>
+          <grayscale>Gråtoneskala</grayscale>
+          <help>Brug transformationsværktøjet til at vende, rotere og fjerne billedoplysninger fra billedet.</help>
+          <rotate>Roter</rotate>
+          <rotateclockwise>Roter med uret</rotateclockwise>
+          <rotatecounterclockwise>Roter mod uret</rotatecounterclockwise>
+          <transformation>Transformation</transformation>
+        </transforminformation>
+      </imageeditor>
+      <languageselection>
+        <heading>Vis sidetræ</heading>
+      </languageselection>
+      <languagesettings>
+        <addwarning>Er du sikker på, at du vil have dine egne sprogindstillinger for denne side i stedet for at bruge indstillingerne fra den overordnede side?</addwarning>
+        <availablelanguagesdescriptionfirst>Siderne på denne del af webstedet skal også være tilgængelige på nedenstående sprog. Det betyder, at siderne kun kan oprettes på og oversættes til disse sprog.</availablelanguagesdescriptionfirst>
+        <availablelanguagesdescriptionsecond>Denne indstilling begrænser de sprog, som redaktørerne kan få adgang til på denne del af webstedet.</availablelanguagesdescriptionsecond>
+        <availablelanguagestitle>Tilgængelige sprog</availablelanguagestitle>
+        <deletewarning>Er du sikker på, at du vil slette sprogindstillingerne for denne side og bruge indstillingerne fra den overordnede side?</deletewarning>
+        <description />
+        <fallbacklanguageheading>Reservesprog</fallbacklanguageheading>
+        <fallbacklanguagesdescriptionfirst>Siderne på denne del af webstedet kan gøres tilgængelige på et andet sprog end det, den besøgende har valgt. Det betyder, at de sider, der endnu ikke er blevet oversat og udgivet på det valgte sprog, i stedet kan vises midlertidigt på et andet sprog.</fallbacklanguagesdescriptionfirst>
+        <fallbacklanguagesdescriptionsecond>Bemærk, at denne indstilling kan medføre blandede sprog under navigation og på lister, og det kan være forvirrende for den besøgende.</fallbacklanguagesdescriptionsecond>
+        <fallbacklanguagestitle>Reservesprog</fallbacklanguagestitle>
+        <heading>Sprogindstillinger for side "{0}"</heading>
+        <inheritsettings>Brug indstillingerne fra den overordnede side: "{0}"</inheritsettings>
+        <replacementlanguageheading>Erstatningssprog</replacementlanguageheading>
+        <replacementlanguagesdescriptionfirst>Siderne på denne del af webstedet skal i nedenstående tilfælde vises på et andet sprog end det, den besøgende har valgt. Det betyder, at de sider, der ikke er tilgængelige på disse sprog, i stedet kan vises på andre sprog.</replacementlanguagesdescriptionfirst>
+        <replacementlanguagesdescriptionsecond>Denne indstilling kan for eksempel bruges, når generelle oplysninger på et bestemt sprog skal være tilgængelige for alle besøgende, uanset hvilket sprog der er valgt.</replacementlanguagesdescriptionsecond>
+        <replacementlanguagestitle>Erstatningssprog</replacementlanguagestitle>
+        <visitorlanguageheading>Den besøgendes sprog</visitorlanguageheading>
+      </languagesettings>
+      <linkcollection>
+        <linkheading>Link</linkheading>
+        <sortheading>Sorter</sortheading>
+      </linkcollection>
+      <loginstatus>Du er logget på som:</loginstatus>
+      <logservice>
+        <realtimeanalyzer>
+          <noreferrer>Direkte adgang til siden</noreferrer>
+          <referrercount>Antal referencer</referrercount>
+          <referrerurl>URL</referrerurl>
+        </realtimeanalyzer>
+        <timespananalyzer>
+          <dayinterval>Dag</dayinterval>
+          <hourinterval>Time</hourinterval>
+          <min5interval>5 minutter</min5interval>
+          <monthinterval>Måned</monthinterval>
+          <nodatabase>Logføringstjenesten er ikke konfigureret med en database. Lagringshistorikken vises ikke.</nodatabase>
+          <problemconnecting>Der kan ikke oprettes forbindelse til logføringstjenesten.</problemconnecting>
+          <selectinterval>Vælg tidsinterval</selectinterval>
+          <statisticsdate>Dato</statisticsdate>
+          <statisticshits>Antal hits</statisticshits>
+          <total>I alt</total>
+          <yearinterval>År</yearinterval>
+        </timespananalyzer>
+      </logservice>
+      <newpage>
+        <heading>Opret ny side</heading>
+        <info>			Vælg, hvilken type side der skal oprettes på listen.</info>
+        <nopagetype>Der er ikke adgang til nogen sidetyper for denne side</nopagetype>
+        <tooltipcancel>Afbryd redigering af denne side</tooltipcancel>
+      </newpage>
+      <pageexplorer>
+        <tooltip>
+                    Sidetype: [PageTypeName]&lt;br/&gt; Oprettet: [Created]&lt;br/&gt; Ændret: [Changed]&lt;br/&gt; Side-id: [PageLink]&lt;br /&gt; Sorteringsindeks: [PagePeerOrder]
+                </tooltip>
+      </pageexplorer>
+      <quicksearch>
+        <notfound>Intet id eller sidenavn passede til søgningen</notfound>
+      </quicksearch>
+      <sidbrowser>
+        <heading>	Tilføj brugere/grupper</heading>
+        <info />
+        <newsid>	Tilføj:</newsid>
+        <orgsid>	Eksisterende:</orgsid>
+        <role>Grupper</role>
+        <user>Brugere</user>
+      </sidbrowser>
+      <timespanview>
+        <displayname>Statistik</displayname>
+      </timespanview>
+      <wastebasketpage>
+        <askemptywastebasket see="/edit/editcommand/askemptywastebasket" />
+        <emptiedmessage>Papirkurven er tømt</emptiedmessage>
+        <emptywastebasket>	Tøm papirkurven</emptywastebasket>
+        <heading>					Papirkurv</heading>
+        <info />
+        <numdeletedpages>			Antal sider i papirkurv</numdeletedpages>
+        <reftypearchive see="/edit/deletepage/reftypearchive" />
+        <reftypeproperty see="/edit/deletepage/reftypeproperty" />
+        <reftypeshortcut see="/edit/deletepage/reftypeshortcut" />
+      </wastebasketpage>
+      <workflowlog>
+        <changed>Ændret</changed>
+        <changedby>Ændret af</changedby>
+        <created>Oprettet</created>
+        <deleted>Slettet</deleted>
+        <heading>Oversigt over workflow</heading>
+        <owner>Ejer</owner>
+        <pagelink>Side</pagelink>
+        <status>Status</status>
+        <statuscomments>Kommentarer</statuscomments>
+        <taskname>Navn</taskname>
+      </workflowlog>
+      <workspace>
+        <license>Licensaftale</license>
+        <mysettings>Mine indstillinger</mysettings>
+        <userinfo>Brugeroplysninger</userinfo>
+        <welcome>Velkommen til EPiServer CMS</welcome>
+      </workspace>
+    </edit>
+    <editor>
+      <tools>
+        <cellproperties>
+          <axis>Akse:</axis>
+          <axiswindowtext>Vælg en eller flere af nedenstående akser, eller opret en ny skrive et navn i indsætningsfeltet.</axiswindowtext>
+          <axiswindowtitle>Vælg akse</axiswindowtitle>
+          <backgroundcolor>Farve:</backgroundcolor>
+          <backgroundheading>Baggrund</backgroundheading>
+          <bordercolor>Farve:</bordercolor>
+          <borderdark>Mørk kant:</borderdark>
+          <borderheading>Kant</borderheading>
+          <borderlight>Lys kant:</borderlight>
+          <datacell>Datacelle</datacell>
+          <halignmentcenter>Centreret</halignmentcenter>
+          <halignmentheading>Vandret justering:</halignmentheading>
+          <halignmentleft>Venstre</halignmentleft>
+          <halignmentright>Højre</halignmentright>
+          <headercell>Rubrikcelle</headercell>
+          <headers>Overskrifter:</headers>
+          <headersheading>Rubrikker</headersheading>
+          <headerswindowtext>Vælg en eller flere af de overskrifter (id-værdier), der findes allerede, eller angiv en værdi, som du vil oprette senere i indsætningsfeltet.</headerswindowtext>
+          <headerswindowtitle>Vælg overskrifter</headerswindowtitle>
+          <id>Id:</id>
+          <layoutheading>Layout</layoutheading>
+          <multiplevalues>Forskellige</multiplevalues>
+          <percent>I procent</percent>
+          <pixels>I pixel</pixels>
+          <scope>Omfang:</scope>
+          <scopecol>Kolonne</scopecol>
+          <scoperow>Række</scoperow>
+          <sizeheading>Størrelse</sizeheading>
+          <specifyheight>Angiv højde:</specifyheight>
+          <specifywidth>Angiv bredde:</specifywidth>
+          <toolheading>Egenskaber for celle</toolheading>
+          <type>Celletype:</type>
+          <usepicture>Anvend baggrundsbillede</usepicture>
+          <valignmentbaseline>Grundlinje</valignmentbaseline>
+          <valignmentbottom>Nederst</valignmentbottom>
+          <valignmentheading>Lodret justering:</valignmentheading>
+          <valignmentmiddle>Midt på vandret</valignmentmiddle>
+          <valignmenttop>Øverst</valignmenttop>
+        </cellproperties>
+        <common>
+          <cssclass>CSS-klasse:</cssclass>
+        </common>
+        <dynamiccontent>
+          <adapterdescriptionlabel>Beskrivelse</adapterdescriptionlabel>
+          <adapterheading>Plug-in</adapterheading>
+          <adapterlistlabel>Vælg plug-in</adapterlistlabel>
+          <adapterpreviewheading>Eksempel</adapterpreviewheading>
+          <adaptersettingheading>Indstillinger</adaptersettingheading>
+          <adaptersettingserror>Brugerkontrolelementet "{0}" kunne ikke indlæses.</adaptersettingserror>
+          <noplugins>Der er ikke konfigureret nogen plug-ins til dynamisk indhold til dette websted.</noplugins>
+          <toolheading>Dynamisk indhold</toolheading>
+        </dynamiccontent>
+        <font>
+          <colorheading>Farve:</colorheading>
+          <effectheading>Effekter:</effectheading>
+          <fontheading>Skrifttypesnit:</fontheading>
+          <samlpeheading>Eksempel</samlpeheading>
+          <sizeheading>Størrelse:</sizeheading>
+          <stylebold>			Fed</stylebold>
+          <stylebolditalic>	Fed kursiv</stylebolditalic>
+          <styleheading>Typografi:</styleheading>
+          <styleitalic>		Kursiv</styleitalic>
+          <styleregular>		Normal</styleregular>
+          <toolheading>Skrifttype</toolheading>
+          <underline>Understreget</underline>
+        </font>
+        <hyperlinkproperties>
+          <address see="/util/linkeditor/urlfieldcaption" />
+          <anchor>Bogmærke:</anchor>
+          <anchorlink>Bogmærke på denne side</anchorlink>
+          <automatically>Automatisk</automatically>
+          <clickableimage>Klikbart billede:</clickableimage>
+          <clickabletext>Klikbar tekst:</clickabletext>
+          <documentaccessdeniedmessage>Du har ikke adgang til det dokument, linket henviser til.</documentaccessdeniedmessage>
+          <documentnotfoundmessage>Det dokument, linket henviser til, findes ikke længere eller er blevet flyttet.</documentnotfoundmessage>
+          <editimageproperties>Rediger egenskaber for billede</editimageproperties>
+          <emailaddress see="/util/linkeditor/mailfieldcaption" />
+          <externaldocumentlink>Dokument på et andet websted</externaldocumentlink>
+          <externallink>Side på et andet websted</externallink>
+          <informationheading see="/editor/tools/imageeditor/informationheading" />
+          <internaldocumentlink>Dokument på dette websted</internaldocumentlink>
+          <internallink>Side på dette websted</internallink>
+          <language>Sprog:</language>
+          <linktargetheading>Mål for linket</linktargetheading>
+          <linktitle see="/util/linkeditor/linktitlefieldcaption" />
+          <networkdocumentlink>Dokument på netværket</networkdocumentlink>
+          <noimageinfovalidationmessage>Du har markeret, at linket skal være et klikbart billede.</noimageinfovalidationmessage>
+          <nourlvalidationmessage>Angiv et mål for linket, inden du gemmer.</nourlvalidationmessage>
+          <page>Side:</page>
+          <pageaccessdeniedmessage>Du har ikke adgang til den side, linket henviser til.</pageaccessdeniedmessage>
+          <pagenotfoundmessage>Den side, linket henviser til, findes ikke længere.</pagenotfoundmessage>
+          <path>Sti:</path>
+          <selectnewdocumentmessage>Vælg et nyt dokument, inden du gemmer, eller vælg en anden type link.</selectnewdocumentmessage>
+          <selectnewpagemessage>Vælg en ny side, inden du gemmer, eller vælg en anden type link.</selectnewpagemessage>
+          <specifyimagemessage>Angiv et billede, inden du gemmer, eller vælg en klikbar tekst i stedet.</specifyimagemessage>
+          <tabs>
+            <document>Dokument</document>
+            <email>E-mail</email>
+            <webpage>Webside</webpage>
+          </tabs>
+          <targetframe see="/util/linkeditor/targetfieldcaption" />
+          <toolheading>Egenskaber for link</toolheading>
+        </hyperlinkproperties>
+        <imageeditor>
+          <alignment>Justering:</alignment>
+          <alignmentbottom>Bund</alignmentbottom>
+          <alignmentleft>Venstre</alignmentleft>
+          <alignmentmiddle>Midt</alignmentmiddle>
+          <alignmentright>Højre</alignmentright>
+          <alignmenttop>Top</alignmenttop>
+          <alttext>Alternativ tekst:</alttext>
+          <borderwidth>Rammebredde:</borderwidth>
+          <edithyperlinkproperties>Rediger egenskaber for link</edithyperlinkproperties>
+          <filename>Filnavn:</filename>
+          <filesize>Filstørrelse:</filesize>
+          <hspace>Vandret område:</hspace>
+          <hyperlinkaddress>Link til:</hyperlinkaddress>
+          <hyperlinkheading>Link</hyperlinkheading>
+          <imagefile>Billedfil:</imagefile>
+          <informationheading>Oplysninger</informationheading>
+          <invalidlink>Ugyldigt link</invalidlink>
+          <layoutheading>Layout og rammer</layoutheading>
+          <lockproportions>Lås højde/breddeforholdet</lockproportions>
+          <noimagevalidationmessage>Angiv et billede, inden du gemmer.</noimagevalidationmessage>
+          <nolinkinfovalidationmessage>Du har markeret, at billedet skal knyttes til et link.</nolinkinfovalidationmessage>
+          <percent>i procent</percent>
+          <pixels>i pixel</pixels>
+          <sizeheading>Visningsstørrelse</sizeheading>
+          <specifyheight>Angiv højde:</specifyheight>
+          <specifylinkinfomessage>Angiv oplysninger om linket, inden du gemmer, eller fjern markeringen.</specifylinkinfomessage>
+          <specifywidth>Angiv bredde:</specifywidth>
+          <toolheading>Billedegenskaber</toolheading>
+          <unitbytes>byte</unitbytes>
+          <uselink>Knyt linket til billedet</uselink>
+          <vspace>Lodret område</vspace>
+        </imageeditor>
+        <insertanchor>
+          <anchorname>Bogmærkets navn:</anchorname>
+          <toolheading>Indsæt bogmærke</toolheading>
+        </insertanchor>
+        <inserttable>
+          <border>Kant</border>
+          <columns>Kolonner</columns>
+          <rows>Rækker</rows>
+          <toolheading>Indsæt tabel</toolheading>
+          <width>Bredde</width>
+        </inserttable>
+        <quote>
+          <blockquote>Blokcitat</blockquote>
+          <citeheading>Referenceoplysninger om citatet</citeheading>
+          <informationheading>Oplysninger</informationheading>
+          <inlinequote>Citat</inlinequote>
+          <quotetypeheading>Citatstype</quotetypeheading>
+          <quotetypenotavailable>Denne citatstype er ikke tilladt i det aktuelle valg.</quotetypenotavailable>
+          <quotetypenotchangeable>Denne citatstype kan ikke ændres.</quotetypenotchangeable>
+          <removequote>Fjern citat</removequote>
+          <titleheading>Titel</titleheading>
+          <toolheading>Indsæt citat</toolheading>
+        </quote>
+        <search>
+          <findheading>Søg efter:</findheading>
+          <finisheddocument>	Søgningen af dokumentet er færdig.</finisheddocument>
+          <matchcase>Forskel på store og små bogstaver</matchcase>
+          <matchwhole>Kun hele ord</matchwhole>
+          <reachedend>		Søgningen er nået til slutningen af dokumentet. Vil du fortsætte søgningen fra begyndelsen af dokumentet?</reachedend>
+          <toolheading>Søg</toolheading>
+        </search>
+        <selectvalue>
+          <newvalue>Ny værdi:</newvalue>
+        </selectvalue>
+        <spellcheck>
+          <cannotspellcheck>	Det markerede kan ikke stavekontrolleres.</cannotspellcheck>
+          <errorspellchecktext>Fejl ved stavekontrol. Kan ikke hente: </errorspellchecktext>
+          <finisheddocument>	Stavekontrollen er færdig.</finisheddocument>
+          <finishedselection>	Det markerede er stavekontrolleret.</finishedselection>
+          <initializing>		(Indlæser stavekontrollen. Vent et øjeblik...)</initializing>
+          <missingdictionary>Microsoft Office har ikke en ordbog installeret til</missingdictionary>
+          <nosuggestions>		(ingen forslag)</nosuggestions>
+          <notindictionary>Ikke i ordbog:</notindictionary>
+          <officenotinstalled>Microsoft Office er ikke installeret på denne computer.</officenotinstalled>
+          <suggestions>Forslag:</suggestions>
+          <textnotfound>		kunne ikke findes i teksten</textnotfound>
+          <toolheading>Stavekontrol</toolheading>
+        </spellcheck>
+        <tableproperties>
+          <alignmentcenter>Centreret</alignmentcenter>
+          <alignmentheading>Justering:</alignmentheading>
+          <alignmentleft>Venstre</alignmentleft>
+          <alignmentright>Højre</alignmentright>
+          <backgroundcolor>Farve:</backgroundcolor>
+          <backgroundheading>Baggrund</backgroundheading>
+          <bordercolor>Farve:</bordercolor>
+          <borderdark>Mørk kant:</borderdark>
+          <borderheading>Kant</borderheading>
+          <borderlight>Lys kant:</borderlight>
+          <bordersize>Størrelse:</bordersize>
+          <caption>Tabelrubrik:</caption>
+          <cellpadding>Cellemargen:</cellpadding>
+          <cellspacing>Celleafstand:</cellspacing>
+          <descriptionheading>Beskrivelse</descriptionheading>
+          <layoutheading>Layout</layoutheading>
+          <percent>I procent</percent>
+          <pixels>I pixel</pixels>
+          <sizeheading>Størrelse</sizeheading>
+          <specifyheight>Angiv højde:</specifyheight>
+          <specifywidth>Angiv bredde:</specifywidth>
+          <summary>Resume:</summary>
+          <toolheading>Egenskaber for tabel</toolheading>
+          <usepicture>Anvend baggrundsbillede</usepicture>
+        </tableproperties>
+      </tools>
+    </editor>
+    <episerver.webparts>
+      <webcontrols>
+        <catalogzone>
+          <emptyzonetext>Katalogzonen indeholder ingen katalogdele.</emptyzonetext>
+          <headertext>Katalogzone</headertext>
+          <instructiontext>Vælg det katalog, du vil gennemse.</instructiontext>
+          <selecttargetzonetext>Tilføj til:</selecttargetzonetext>
+        </catalogzone>
+        <connectionszone>
+          <configureconnectiontitle>Konfigurer forbindelsen</configureconnectiontitle>
+          <connecttoconsumerinstructiontext>Opret forbrugerforbindelser for denne webdel.</connecttoconsumerinstructiontext>
+          <connecttoconsumertext>Opret forbindelse til en forbruger</connecttoconsumertext>
+          <connecttoconsumertitle>Send data til en webdel</connecttoconsumertitle>
+          <connecttoproviderinstructiontext>Opret udbyderforbindelser for denne webdel.</connecttoproviderinstructiontext>
+          <connecttoprovidertext>Opret forbindelse til en udbyder</connecttoprovidertext>
+          <connecttoprovidertitle>Hent data fra webdel</connecttoprovidertitle>
+          <consumersinstructiontext>Webdele, som den aktuelle webdel sender oplysninger til:</consumersinstructiontext>
+          <consumertitle>Forbrugere</consumertitle>
+          <existingconnectionerrormessage />
+          <getfromtext>Fra:</getfromtext>
+          <gettext>Hent:</gettext>
+          <headertext>Forbindelseszone</headertext>
+          <instructiontext>Administrer forbindelserne for den aktuelle webdel.</instructiontext>
+          <instructiontitle>Administrer forbindelserne for {0}</instructiontitle>
+          <newconnectionerrormessage />
+          <noexistingcinnectiontitle>Ingen aktive forbindelser</noexistingcinnectiontitle>
+          <noexistingconnectioninstructiontext>Der er ingen aktive forbindelser i din webdel. Du kan oprette en ny forbindelse ved at vælge ovenstående hyperlinks, hvis der er kompatible webdele på siden.</noexistingconnectioninstructiontext>
+          <providersinstructiontext>Webdele, som den aktuelle webdel henter oplysninger fra:</providersinstructiontext>
+          <providerstitle>Udbydere</providerstitle>
+          <sendtext>Send:</sendtext>
+          <sendtotext>Til:</sendtotext>
+        </connectionszone>
+        <displaymodedropdown>
+          <browse>Gennemse</browse>
+          <catalog>Katalog</catalog>
+          <connect>Tilslut</connect>
+          <design>Design</design>
+          <edit>Rediger</edit>
+        </displaymodedropdown>
+        <editorzone>
+          <emptyzonetext>Redigeringszonen indeholder ingen redigeringsdele.</emptyzonetext>
+          <errortext>Der opstod en fejl under anvendelse af en eller flere redigeringsdele.</errortext>
+          <headertext>Redigeringszone</headertext>
+          <instructiontext>Rediger egenskaberne for webdelen, og klik derefter på OK eller på Anvend for at anvende dine ændringer.</instructiontext>
+        </editorzone>
+        <extendedwebpartzone>
+          <emptyzonetext>Tilføj en webdel til denne zone ved enten af trække en RSS feed eller ved at vælge den fra en mappe.</emptyzonetext>
+        </extendedwebpartzone>
+        <scopedropdown>
+          <all>Ændringerne er delt</all>
+          <user>Ændringerne er private</user>
+        </scopedropdown>
+        <wsrp>
+          <portletcatalogpart>
+            <producer>Producent</producer>
+          </portletcatalogpart>
+        </wsrp>
+      </webcontrols>
+      <verbs>
+        <add>Tilføj</add>
+        <apply>Anvend</apply>
+        <cancel>Annuller</cancel>
+        <close>Luk</close>
+        <configure>Konfigurer</configure>
+        <connect>Tilslut</connect>
+        <delete>Slet</delete>
+        <disconnect>Afbryd</disconnect>
+        <edit>Rediger</edit>
+        <editwsrp>Rediger portlet</editwsrp>
+        <export>Eksporter</export>
+        <help>Hjælp</help>
+        <maximize>Maksimer</maximize>
+        <minimize>Minimer</minimize>
+        <ok>OK</ok>
+        <restore>Gendan</restore>
+        <solo>Solo</solo>
+        <view>Vis</view>
+      </verbs>
+    </episerver.webparts>
+    <exceptionmanager>
+      <errorform>
+        <description>Meddel os gerne, hvis du har fundet noget, som ikke fungerer, så vi kan rette eventuelle fejl. Glem ikke at beskrive, hvordan du klikkede rundt, da fejlen opstod.</description>
+        <messagesentdescription>Din meddelelse er nu sendt. Vi ser nærmere på din fejlbeskrivelse, og retter fejlen.</messagesentdescription>
+        <messagesenttitle>Meddelelse er sendt</messagesenttitle>
+        <sendbutton>Sendt meddelelse</sendbutton>
+      </errorform>
+      <exceptions>
+        <exception type="EPiServer.Core.AccessDeniedException">
+          <description>Du har ikke tilstrækkelige rettigheder til at se denne side.</description>
+          <title>Adgang nægtet</title>
+        </exception>
+        <exception type="EPiServer.Core.PageNotFoundException">
+          <description>Det angivne hyperlink fungerer ikke, enten er siden fjernet eller flyttet. Hvis du klikkede på et hyperlink, bedes du fortælle den ansvarlige for webstedet, at hyperlinket er forkert.</description>
+          <title>Siden findes ikke</title>
+        </exception>
+      </exceptions>
+      <httperrors>
+        <status code="404">
+          <description>Det angivne hyperlink fungerer ikke, enten er siden fjernet eller flyttet. Hvis du klikkede på et hyperlink, bedes du fortælle den ansvarlige for webstedet, at hyperlinket er forkert.</description>
+          <title>Forkert hyperlink</title>
+        </status>
+        <status code="500">
+          <description>Det angivne hyperlink fungerer ikke. Dette kan skyldes en nødvendig vedligeholdelse, eller at hyperlinket er forkert.</description>
+          <title>Siden kunne ikke indlæses</title>
+        </status>
+      </httperrors>
+    </exceptionmanager>
+    <february>Februar</february>
+    <filemanager>
+      <addversion>
+        <title>Opret en ny version</title>
+      </addversion>
+      <browse>
+        <checkedoutby>Tjekket ud af</checkedoutby>
+        <created>Oprettet</created>
+        <emptyfolder>Denne mappe er tom</emptyfolder>
+        <goback>Tilbage</goback>
+        <modified>Ændret</modified>
+        <name>Navn</name>
+        <size>Størrelse</size>
+        <thumbnail>Miniaturebillede</thumbnail>
+      </browse>
+      <checkinselection>
+        <comments>Kommentarer</comments>
+        <currentfile see="/filemanager/search/filename" />
+        <filenotcheckedout>Filen er ikke tjekket ud</filenotcheckedout>
+        <filexofy>fil {0} af {1}</filexofy>
+        <selectversion>Vælg en ny version</selectversion>
+        <title>Indtjekning af fil</title>
+      </checkinselection>
+      <createdirectory>
+        <alreadyexists>Biblioteket findes allerede</alreadyexists>
+        <name>Bibliotekets navn</name>
+        <title>Opret et nyt bibliotek</title>
+      </createdirectory>
+      <deleteselection>
+        <confirmdirectorydelete>Vil du slette hele biblioteket?</confirmdirectorydelete>
+        <confirmfiledelete>Vil du slette filen?</confirmfiledelete>
+        <confirmmultidelete>Der er {0} markerede objekter. Vil du slette disse?</confirmmultidelete>
+        <objectnotfound>Det objekt, som du forsøger at slette, blev ikke fundet. Det er muligvis blevet flyttet af en anden.</objectnotfound>
+        <title>Slet "{0}"</title>
+        <warningmultinotempty>Advarsel! Nogle af bibliotekerne er ikke tomme.</warningmultinotempty>
+        <warningnotempty>Advarsel! Biblioteket er ikke tomt.</warningnotempty>
+      </deleteselection>
+      <dhtmlsupport>
+        <addfavorite>Tilføj til Foretrukne</addfavorite>
+        <addversion>Opret en ny version</addversion>
+        <checkinselection>Tjek ind</checkinselection>
+        <checkoutselection>Tjek ud</checkoutselection>
+        <copyselection>Kopier</copyselection>
+        <createdirectory>Opret bibliotek</createdirectory>
+        <cutselection>Klip</cutselection>
+        <deleteselection>Slet</deleteselection>
+        <directorysecurity>Skift rettigheder</directorysecurity>
+        <editimage>Rediger</editimage>
+        <editinoffice>Rediger i Office</editinoffice>
+        <editsummary>Rediger filoplysninger</editsummary>
+        <notanimage>Den valgte fil er ikke et billede.</notanimage>
+        <openfile>Åbn fil</openfile>
+        <pasteselection>Sæt ind</pasteselection>
+        <removefavorite>Fjern fra Foretrukne</removefavorite>
+        <renamedirectory>Omdøb bibliotek</renamedirectory>
+        <renamefile>Omdøb fil</renamefile>
+        <renameselection see="/filemanager/directorytools/rename" />
+        <undocheckoutselection>Annuller udtjekning</undocheckoutselection>
+        <uploadfile see="/filemanager/directorytools/addfile" />
+        <uploadmultiplefiles>Tilføj flere filer</uploadmultiplefiles>
+        <versionlist>Versionsoversigt</versionlist>
+        <viewfile>Vis oversigt over filer</viewfile>
+      </dhtmlsupport>
+      <directorysecurity>
+        <inheritsecurity>Overtag tilladelser fra overordnet mappe</inheritsecurity>
+        <title>Skift rettigheder for "{0}"</title>
+      </directorysecurity>
+      <directorytools>
+        <addfile>Tilføj fil</addfile>
+        <addfiletooltip>Tilføj en ny fil</addfiletooltip>
+        <create>Opret bibliotek</create>
+        <createtooltip>Opret et nyt bibliotek</createtooltip>
+        <delete>Slet</delete>
+        <deletetooltip>Slet den markerede fil eller mappe</deletetooltip>
+        <gouptooltip>Op</gouptooltip>
+        <rename>Omdøb</rename>
+        <renametooltip>Omdøb den markerede fil eller mappe</renametooltip>
+        <search>Søg</search>
+        <searchtooltip>Søg efter filer</searchtooltip>
+        <security>Sikkerhed</security>
+        <securitytooltip>Rediger rettigheder</securitytooltip>
+        <viewthumbnails>Vis miniaturebilleder</viewthumbnails>
+        <viewthumbnailstooltip>Vis alle billeder som miniaturer</viewthumbnailstooltip>
+      </directorytools>
+      <editfilesummary>
+        <inputauthor>Forfatter</inputauthor>
+        <inputcategory>Kategori</inputcategory>
+        <inputcomments>Kommentarer</inputcomments>
+        <inputdescription>Beskrivelse</inputdescription>
+        <inputdocumenttype>Dokumenttype</inputdocumenttype>
+        <inputkeywords>Nøgleord</inputkeywords>
+        <inputpublisher>Udgiver</inputpublisher>
+        <inputsubject>Beskrivelse</inputsubject>
+        <inputtitle>Titel</inputtitle>
+        <title>Rediger oplysninger for "{0}"</title>
+      </editfilesummary>
+      <filereferencelist>
+        <gotopage>Gå til side</gotopage>
+        <noreferences>Ingen henvisninger</noreferences>
+        <referencewarning>Hvis du fortsætter med handlingen, bliver følgende hyperlinks brudt</referencewarning>
+        <xlinkstoy>{0} hyperlink(s) til{1}</xlinkstoy>
+      </filereferencelist>
+      <filetools>
+        <delete>Slet</delete>
+        <deletetooltip>Slet den aktuelle fil</deletetooltip>
+        <editfilesummary>Rediger filoplysninger</editfilesummary>
+        <editfilesummarytooltip>Rediger oplysningerne om den aktuelle fil</editfilesummarytooltip>
+        <open>Åbn</open>
+        <opentooltip>Åbn den aktuelle fil</opentooltip>
+        <rename>Omdøb</rename>
+        <renametooltip>Rediger navnet på det aktuelle bibliotek</renametooltip>
+        <replacefile>Erstat fil</replacefile>
+        <replacefiletooltip>Erstat den aktuelle fil med en ny fil</replacefiletooltip>
+      </filetools>
+      <illegalname>Tegn {0} er ikke tilladt i fil- eller mappenavne:</illegalname>
+      <invalidcharacters>Navnet indeholder ugyldige tegn</invalidcharacters>
+      <invalidfiledirectoryname>Det er ikke muligt at anvende systemenhedsnavne som fil- eller mappenavne.</invalidfiledirectoryname>
+      <licenseerror>En licensfejl for den valgte leverandør af den virtuelle sti forhindrer, at den kan vises korrekt. </licenseerror>
+      <newpage>Ny side</newpage>
+      <nofileselected>Der er ikke valgt en fil</nofileselected>
+      <notsavedpage>Ikke-gemt side</notsavedpage>
+      <novppconfigured>Der er ingen tilgængelige registrerede udbydere af virtuelle stier</novppconfigured>
+      <pagefoldernotcreated>Der er ikke oprettet et bibliotek til denne side endnu. Vil du oprette biblioteket nu?</pagefoldernotcreated>
+      <pagefoldernotcreatednoaccess>Der er ikke oprettet en mappe til denne side</pagefoldernotcreatednoaccess>
+      <pasteselection>
+        <alreadyexists>Handlingen blev afbrudt, da følgende objekt allerede findes</alreadyexists>
+        <cannotcopyinsideitselfmessage>Handlingen blev annulleret, fordi kopien af følgende mappe ikke kan sættes ind i sig selv</cannotcopyinsideitselfmessage>
+        <cannotmoveinsideitselfmessage>Handlingen blev annulleret, fordi mappen i udklipsholderen ikke kan flyttes ind i sig selv</cannotmoveinsideitselfmessage>
+        <confirmcopy>Der er {0} markerede objekter. Vil du kopiere disse hertil?</confirmcopy>
+        <confirmmove>Der er {0} markerede objekter. Vil du flytte disse hertil?</confirmmove>
+        <title>Sæt "{0}" ind</title>
+      </pasteselection>
+      <path>Sti</path>
+      <renamedirectory>
+        <directorynotfound>
+                    Mappen blev ikke fundet! Den kan være blevet fjernet af en anden.
+                </directorynotfound>
+        <newname>Angiv et nyt biblioteksnavn</newname>
+        <title>Omdøb "{0}"</title>
+      </renamedirectory>
+      <renamefile>
+        <alreadyexists>Der findes allerede en fil med dette navn</alreadyexists>
+        <filenotfound>
+                    Filen blev ikke fundet! Den kan være blevet fjernet af en anden.
+                </filenotfound>
+        <newname>Angiv et nyt filnavn</newname>
+        <title>Omdøb "{0}"</title>
+      </renamefile>
+      <search>
+        <advancedoptions>Avancerede indstillinger</advancedoptions>
+        <allpagefolders>Sidemapper</allpagefolders>
+        <currentdirectory>Aktuel mappe</currentdirectory>
+        <filedirectory>Bibliotek</filedirectory>
+        <filename>Filnavn</filename>
+        <filenamepattern>Filnavn</filenamepattern>
+        <gotodirectory>Gå til mappe</gotodirectory>
+        <locations>Mapper</locations>
+        <modifiedfrom>Ændret efter</modifiedfrom>
+        <modifiedto>Ændret før</modifiedto>
+        <numberofhits>Antal forekomster</numberofhits>
+        <query>Søg efter tekst</query>
+        <searchlimited>Resultatet er blevet begrænset til de {0} bedste forekomster</searchlimited>
+        <viewfileinfo see="/filemanager/dhtmlsupport/viewfile" />
+      </search>
+      <unauthorizedpagefoldercreation>Du har ikke rettigheder til at oprette sidemapper til denne side.</unauthorizedpagefoldercreation>
+      <uploadfile>
+        <confirmreplacefile>Der findes allerede en fil med dette navn. Vil du erstatte den?</confirmreplacefile>
+        <selectfile>Vælg den fil, der skal tilføjes</selectfile>
+        <title>Tilføj fil</title>
+      </uploadfile>
+      <versionlist>
+        <comments>Kommentarer</comments>
+        <created see="/filemanager/browse/created" />
+        <createdby>Oprettet af</createdby>
+        <size see="/filemanager/browse/size" />
+        <title>Versionsoversigt: {0}</title>
+        <version>Version</version>
+      </versionlist>
+      <versionlisttoolbar>
+        <addversion>Opret version</addversion>
+        <addversiontooltip>Opret en ny version</addversiontooltip>
+        <confirmdelete>Er du sikker på, at du vil slette denne version?</confirmdelete>
+        <copyshortcut>Kopier genvej til udklipsholder</copyshortcut>
+        <delete>Slet</delete>
+        <deletetooltip>Slet version</deletetooltip>
+        <download>Hent</download>
+        <downloadtooltip>Hent version</downloadtooltip>
+        <restore>Gendan version</restore>
+        <restoretooltip>Gendan til denne version</restoretooltip>
+      </versionlisttoolbar>
+      <viewfile>
+        <backtofolder>Tilbage til biblioteket</backtofolder>
+        <linkingpages>Sider som hyperlinks</linkingpages>
+      </viewfile>
+      <virtualpath>Virtuel sti</virtualpath>
+    </filemanager>
+    <filemanagernavigator>
+      <currentpage see="/util/linkeditor/pageuploaddir" />
+      <favoritesinfo>Føj mapper til foretrukne ved at højreklikke på den ønskede mappe på listen til højre og bruge genvejsmenuen</favoritesinfo>
+      <folders>Mapper</folders>
+      <hide>Skjul</hide>
+      <myfavorites>Mine foretrukne</myfavorites>
+      <show>Vis</show>
+      <startingpoints>Startpunkter</startingpoints>
+      <uploaddir see="/util/linkeditor/uploaddir" />
+      <virtualpathroots>
+        <virtualpathroot name="Page Files">
+          <name>Sidens bibliotek</name>
+        </virtualpathroot>
+      </virtualpathroots>
+    </filemanagernavigator>
+    <frames>
+      <frame name="_blank">
+        <description>Åbn link i nyt vindue</description>
+      </frame>
+      <frame name="_top">
+        <description>Åbn link i hele vinduet</description>
+      </frame>
+    </frames>
+    <friday>Fredag</friday>
+    <headings>
+      <heading name="Advanced">
+        <description>Avanceret information</description>
+      </heading>
+      <heading name="Advanced_short">
+        <description>Avanceret</description>
+      </heading>
+      <heading name="Categories">
+        <description>Kategorier</description>
+      </heading>
+      <heading name="General">
+        <description>Generelt</description>
+      </heading>
+      <heading name="Information">
+        <description>Information</description>
+      </heading>
+      <heading name="Shortcut">
+        <description>Genvej/eksternt link</description>
+      </heading>
+      <heading name="Subscription">
+        <description>Abonnere</description>
+      </heading>
+    </headings>
+    <hour>time</hour>
+    <january>Januar</january>
+    <javascript>
+      <system>
+        <popupsblocked>Pop-op-vinduer på denne webside blokeres. Aktiver pop-op-vinduer for at få adgang til denne funktion.</popupsblocked>
+      </system>
+    </javascript>
+    <july>Juli</july>
+    <june>Juni</june>
+    <labels>
+      <description>				Beskrivelse</description>
+    </labels>
+    <login>
+      <loginfailed>			Logon mislykkedes</loginfailed>
+      <missingpassword>		Du skal angive en adgangskode</missingpassword>
+      <password>				Adgangskode</password>
+      <persistentlogin>		Log på dette websted automatisk</persistentlogin>
+      <username>				Navn</username>
+      <usernamerequired>		Du skal angive et navn</usernamerequired>
+    </login>
+    <march>Marts</march>
+    <may>Maj</may>
+    <minute>minut</minute>
+    <monday>Mandag</monday>
+    <month>måned</month>
+    <november>November</november>
+    <october>Oktober</october>
+    <pagetypes>
+      <common>
+        <property name="PageArchiveLink">
+          <caption>	Arkiver til siden</caption>
+          <help>		Denne side kan arkiveres på et specielt sted, når "Datoen for afslut publicering" er passeret. Anfør hvilken side, der skal anvendes som arkiv</help>
+        </property>
+        <property name="PageCategory">
+          <caption>	Kategorier</caption>
+          <help>		Vælg de kategorier, din webside skal tilknyttes. </help>
+        </property>
+        <property name="PageChanged">
+          <caption>	Opdateret</caption>
+          <help>		Dato for sidens opdatering</help>
+        </property>
+        <property name="PageChangedOnPublish">
+          <caption>	Marker siden som ændret</caption>
+          <help>		Dato, hvor siden er ændret, opdateres for siden, hvis denne rude er afkrydset. Obligatorisk, hvis siden skal med i f.eks. forhåndsoptællinger</help>
+        </property>
+        <property name="PageChildOrderRule">
+          <caption>	Sorteringsorden</caption>
+          <help>		Viser i hvilken orden underliggende sider til denne vil blive vist</help>
+        </property>
+        <property name="PageCreated">
+          <caption>	Oprettet</caption>
+          <help>		Dato for sidens oprettelse</help>
+        </property>
+        <property name="PageDelayedPublish">
+          <caption>	Fremtidig offentliggørelse</caption>
+          <help>		Marker afkrydsningsfeltet for at få udgivet denne version automatisk på datoen for "Start offentliggørelse"</help>
+        </property>
+        <property name="PageExternalURL">
+          <caption>	Enkel adresse til siden</caption>
+          <help>		Angiv stien fra roden på dit websted, f.eks. "/produkter". Denne side kan så gøres tilgængelig via en enkel adresse uden "?" eller andre symboler. Den besøgende skriver så www.virksomheden.da/produkter, og siden vises </help>
+        </property>
+        <property name="PageFrameID">
+          <caption>	Målramme</caption>
+          <help>		Avgjør hvordan en kobling åpnes (target i &lt;a href&gt;).</help>
+        </property>
+        <property name="PageLanguageID">
+          <caption>	Sidens sprogkode</caption>
+          <help>		Bruges til at tilknytte siden til et andet sprog end systemets</help>
+        </property>
+        <property name="PageLink">
+          <caption>	Sidelink</caption>
+          <help>		Link til side</help>
+        </property>
+        <property name="PageLinkURL">
+          <caption>	Eksternt hyperlink</caption>
+          <help>		Siden åbnes med indhold fra den eksterne side eller det dokument, du har hyperlink til</help>
+        </property>
+        <property name="PageName">
+          <caption>	Navn</caption>
+          <help>		Navn på siden, vises f.eks. som rubrik i menuer</help>
+        </property>
+        <property name="PagePeerOrder">
+          <caption>	Sorteringsindeks</caption>
+          <help>		Anfør et heltal, der gælder som indekstal for denne side. Vælg sorteringsorden "I henhold til sorteringsindeks" for overliggende side, så vil siden med det længste indeks blive vist højst oppe</help>
+        </property>
+        <property name="PageShortcutLink">
+          <caption>	Intern genvej/Hent data fra</caption>
+          <help>		Siden åbner en anden side og flytter den besøgende til den aktuelle side i strukturen (Hent data fra viser indholdet fra en anden side) </help>
+        </property>
+        <property name="PageShortcutType">
+          <caption>Hyperlinktype</caption>
+          <help>		Vælg på listen, hvilken type hyperlink du vil bruge</help>
+        </property>
+        <property name="PageStartPublish">
+          <caption>	Start publicering</caption>
+          <help>		Publicer fra denne dato. Hvis feltet er tomt, publiceres siden med det samme, når du har klikket på knappen publicer</help>
+        </property>
+        <property name="PageStopPublish">
+          <caption>	Afbryd publicering</caption>
+          <help>		Publicer til og med denne dato. Hvis feltet er tomt, skal du fjerne siden manuelt, før publicering afbrydes</help>
+        </property>
+        <property name="PageTargetFrame">
+          <caption>	Målramme</caption>
+          <help>		Bestem, hvordan et hyperlink skal åbnes (mål i &lt;a href&gt;).</help>
+        </property>
+        <property name="PageTypeName">
+          <caption>	Sidetype</caption>
+          <help>		Type af side</help>
+        </property>
+        <property name="PageURLSegment">
+          <caption>	Sidens navn i en webadresse</caption>
+          <help>		Angiv et kort navn, der skal bruges for siden i webadressen</help>
+        </property>
+        <property name="PageVisibleInMenu">
+          <caption>	Vis siden i menuer</caption>
+          <help>		Marker dette afkrydsningsfelt, hvis du ønsker at vise siden i menuer. Hvis feltet er tomt, vises siden kun på lister</help>
+        </property>
+        <property name="SubscriptionMailBody">
+          <caption>Indledende tekst i e-mail om abonnement</caption>
+          <help>Skriv den tekst, som skal udgøre meddelelsesteksten, over listen over ændrede sider, der sendes i abonnements-e-mailen.</help>
+        </property>
+        <property name="SubscriptionMailFrom">
+          <caption>Afsenderadresse for e-mail om abonnement</caption>
+          <help>E-mail-adresse, der bliver brugt som afsender i abonnements-e-mailen.</help>
+        </property>
+        <property name="SubscriptionMailReadMore">
+          <caption>Linktekst i e-mail om abonnement</caption>
+          <help>Denne tekst vil udgøre den hyperlinktekst, som brugeren kan klikke på i abonnements-e-mailen.</help>
+        </property>
+        <property name="SubscriptionMailSubject">
+          <caption>Emne for e-mail om abonnement</caption>
+          <help>Dette er emnefeltet i den abonnements-e-mail, der sendes til abonnenterne.</help>
+        </property>
+      </common>
+      <pagetype name="SysRecycleBin">
+        <description>Træstruktur for papirkurven på webstedet</description>
+        <name>Papirkurv</name>
+      </pagetype>
+      <pagetype name="SysRoot">
+        <description>Første side på webstedet i redigeringstilstand</description>
+        <name>Velkomstside i redigeringstilstand</name>
+      </pagetype>
+    </pagetypes>
+    <permissions>
+      <clienttools>Vise og offentliggøre side fra Microsoft Office-programtilføjelsen</clienttools>
+      <detailederrormessage>Detaljeret fejlmeddelelse ved fejlsøgning</detailederrormessage>
+      <editorunlimitedfunctions>	Alle funktioner er tilgængelige i editoren</editorunlimitedfunctions>
+      <multifileupload>Tillad avanceret overførsel af filer ved hjælp af f.eks. træk og slip</multifileupload>
+      <pageprovidermove>Tillad brugere at flytte data/sider mellem forskellige sideudbydere</pageprovidermove>
+      <webserviceaccess>Tillad brugeren at handle som webtjenestebruger</webserviceaccess>
+      <virtualpathunauthorizedaccess>Uautoriseret adgang til virtuel sti: "{0}"</virtualpathunauthorizedaccess>
+    </permissions>
+    <personalization>
+      <task>
+        <assignedto>		Distribueret til</assignedto>
+        <assignto>				Tildele opgave til</assignto>
+        <buttoncompleted>		Klar</buttoncompleted>
+        <buttoncontinue>		Fortsæt</buttoncontinue>
+        <buttonreject>			Afslå</buttonreject>
+        <changed>			Redigeret</changed>
+        <comments>				Kommentarer</comments>
+        <createdby>				Oprettet af</createdby>
+        <description>			Beskrivelse</description>
+        <duedate>				Forfaldsdato</duedate>
+        <owner>				Distribueret af</owner>
+        <reminder>			Påmindelse</reminder>
+        <status>				Status</status>
+        <statuscompleted>		Fuldført</statuscompleted>
+        <statusinprogress>		Startet</statusinprogress>
+        <statusnotstarted>		Ny</statusnotstarted>
+        <statusrejected>		Afslået</statusrejected>
+        <subject>				Opgave</subject>
+        <timeout>				Forfaldsdatoen er overskredet</timeout>
+        <typeapprovepage>		Eksisterende side</typeapprovepage>
+        <typeautomail>			Sende rapport via e-mail</typeautomail>
+        <typenewpage>			Opret en ny side</typenewpage>
+        <typeurl>				Vise egen URL</typeurl>
+      </task>
+    </personalization>
+    <pleasewait>Vent et øjeblik</pleasewait>
+    <reportcenter>
+      <categories>
+        <category name="pagereports">Siderapporter</category>
+      </categories>
+      <numberofhits>Antal forekomster: {0}</numberofhits>
+      <report name="changedpages">
+        <caption>Ændrede sider</caption>
+        <description>Viser sider, der er blevet ændret i en bestemt periode. </description>
+        <heading>Ændrede sider</heading>
+        <info>
+          Denne rapport viser sider, der er blevet ændret i en bestemt periode.
+          Marker en side på listen over resultater i rapporten for at åbne og redigere den.
+        </info>
+      </report>
+      <report name="expiredpages">
+        <caption>Udløbne sider</caption>
+        <description>Viser sider, der har en dato for afbrydelse af udgivelse i en bestemt periode. </description>
+        <heading>Udløbne sider</heading>
+        <info>
+          Denne rapport viser sider, der har en dato for afbrydelse af udgivelse i en bestemt periode.
+          Marker en side på listen over resultater i rapporten for at åbne og redigere den.
+        </info>
+      </report>
+      <report name="notpublishedpages">
+        <caption>Ikke publicerede sidor</caption>
+        <description>Viser sider, der endnu ikke er publicerede.</description>
+        <heading>Ikke publicerede sidor</heading>
+        <info>
+          Denne rapport viser sider, der endnu ikke er publicered, og som er blevet ændret i en bestemt periode.
+          Marker en side på listen over resultater i rapporten for at åbne og redigere den.
+        </info>
+      </report>
+      <report name="publishedpages">
+        <caption>Publicerede sider</caption>
+        <description>Viser sider, der er udgivet i en bestemt periode. </description>
+        <heading>Publicerede sider</heading>
+        <info>
+          Denne rapport viser sider, der er publicerede i en bestemt periode.
+          Marker en side på listen over resultater i rapporten for at åbne og redigere den.
+        </info>
+      </report>
+      <report name="simpleaddresses">
+        <caption>Enkle adresser</caption>
+        <description>Viser udgivne sider, der har en enkel adresse.</description>
+        <heading>Enkle adresser</heading>
+        <info>
+          Denne rapport viser udgivne sider, der har en enkel adresse.
+          Marker en side på listen over resultater i rapporten for at åbne og redigere den.
+        </info>
+      </report>
+      <reportcolumnheadings>
+        <language>Sprog</language>
+        <modified>Senest ændret</modified>
+        <modifiedby>Ændret af</modifiedby>
+        <notvisibleinmenu>Synlig i menuer</notvisibleinmenu>
+        <pageid>Side-id</pageid>
+        <pagename>Sidenavn</pagename>
+        <pagetypename>Sidetype</pagetypename>
+        <publishedstatus>Udgivelsesstatus</publishedstatus>
+        <simpleaddress>Enkel adresse</simpleaddress>
+        <startpublish>Udgivelsesdato</startpublish>
+        <stoppublish>Udgivelse stoppet</stoppublish>
+        <version>Version</version>
+      </reportcolumnheadings>
+      <reportcriterias>
+        <after>Efter</after>
+        <all>Alle</all>
+        <before>Før</before>
+        <between>Mellem</between>
+        <changed>Ændret</changed>
+        <changedbetween>Senest ændret</changedbetween>
+        <changedbyme>Senest ændret af mig</changedbyme>
+        <expired>Udløbet</expired>
+        <expiringbetween>Udgivelse stoppet</expiringbetween>
+        <heading>Rapportkriterier</heading>
+        <numberofitemsperpage>Antal elementer pr. side</numberofitemsperpage>
+        <published>Udgivet</published>
+        <publishedbetween>Udgivelsesdato</publishedbetween>
+        <publishedbyme>Publiceret af mig</publishedbyme>
+        <readytopublish>Klar til at publicere?</readytopublish>
+        <selectlanguage>Sprog</selectlanguage>
+        <selectrootpage>Søg efter startside</selectrootpage>
+      </reportcriterias>
+      <startpage>
+        <helpimagetext>En ændring af layoutet på dit arbejdsområde kan gøre det lettere at arbejde med Report Center.</helpimagetext>
+        <info>
+          Ønsker du at finde ud af, hvilke sider der er udgivet eller ændret i en bestemt periode? Ønsker du også at vide, hvilke af disse
+          sider, der er blevet ændret af dig? &lt;br/&gt;&lt;br/&gt;
+          EPiServer CMS Rapportcenter gør det let og hurtigt at finde oplysninger om dit websted som en hjælp i det daglige arbejde.
+        </info>
+      </startpage>
+      <title>EPiServer CMS Rapportcenter</title>
+    </reportcenter>
+    <saturday>Lørdag</saturday>
+    <savenochanges>Der er ikke udført nogen ændringer</savenochanges>
+    <second>sekund</second>
+    <september>September</september>
+    <status>
+      <active>		Aktiv</active>
+      <inactive>		Inaktiv</inactive>
+    </status>
+    <subscription>
+      <mailsubject>Seneste nyheder</mailsubject>
+      <pagelinktext>Læs mere</pagelinktext>
+    </subscription>
+    <sunday>Søndag</sunday>
+    <system>
+      <datebrowser>
+        <heading>Vælg dato</heading>
+        <selectmonthcaption>Vælg måned (1-12)</selectmonthcaption>
+        <selectyearcaption>Vælg år</selectyearcaption>
+        <time>Tid</time>
+      </datebrowser>
+      <editutil>
+        <filelisting>
+          <rootpatherror>				Rodbiblioteket er ikke defineret</rootpatherror>
+          <sortorderdatecreated>		Oprettet</sortorderdatecreated>
+          <sortorderdatecreateddesc>		Oprettet faldende</sortorderdatecreateddesc>
+          <sortorderdatelastaccessed>	Sidste adgang</sortorderdatelastaccessed>
+          <sortorderdatelastaccesseddesc>	Sidst tilgået faldende</sortorderdatelastaccesseddesc>
+          <sortorderdatelastmodified>	Sidst gemt</sortorderdatelastmodified>
+          <sortorderdatelastmodifieddesc>	Sidst gemt faldende</sortorderdatelastmodifieddesc>
+          <sortordername>				Navn</sortordername>
+          <sortordernamedesc>				Navn faldende</sortordernamedesc>
+          <sortordernone />
+          <sortordersize>				Størrelse</sortordersize>
+          <sortordersizedesc>				Størrelse faldende</sortordersizedesc>
+          <sortordertype>				Filtype</sortordertype>
+          <sortordertypedesc>				Filtype faldende</sortordertypedesc>
+        </filelisting>
+        <helpcreated>Dato for sidens oprettelse</helpcreated>
+        <helpdynprop>Marker dette afkrydsningsfelt for at sætte den anførte værdi på alle underliggende sider</helpdynprop>
+        <helpdynpropdef>Egenskaben er defineret på denne side</helpdynpropdef>
+        <helpdynpropundef>Egenskaber har ingen værdi</helpdynpropundef>
+        <languagecommonpropertyicontooltiporiginal>Denne egenskab er ens for alle sprog og kan kun redigeres her.</languagecommonpropertyicontooltiporiginal>
+        <languagecommonpropertyicontooltiptranslation>Denne egenskab er fælles for alle sprog og kan kun redigeres på sidens oprindelige sprog</languagecommonpropertyicontooltiptranslation>
+        <leavepagewarning>Du har udført ændringer af den aktuelle side.
+Hvis du går væk fra siden, går ændringerne tabt.
+
+Vælg OK, hvis du vil forlade siden uden at gemme. Vælg Annuller, hvis du vil blive på siden.</leavepagewarning>
+        <sortorder1>Efter oprettelsesdato (seneste først)</sortorder1>
+        <sortorder2>Efter oprettelsesdato (ældste først)</sortorder2>
+        <sortorder3>Alfabetisk</sortorder3>
+        <sortorder4>Efter sorteringsindeks</sortorder4>
+        <sortorder5>Efter ændringsdato (seneste først)</sortorder5>
+        <sortorder7>Efter Start udgivelsesdato (ældste først)</sortorder7>
+        <sortorder8>Efter Start udgivelsesdato (seneste først)</sortorder8>
+      </editutil>
+      <firefox>
+        <functionnotsupported>Denne funktionalitet understøttes ikke i Firefox.</functionnotsupported>
+      </firefox>
+      <pagebrowser>
+        <buttonnolink>Ingen side</buttonnolink>
+        <buttonselflink>Den aktuelle side</buttonselflink>
+        <heading>Vælg side</heading>
+        <infoselflink>Denne side</infoselflink>
+        <noaccesswarning>Dette link er angivet til en side, du ikke har adgang til. Hvis du ændrer linket til noget andet, kan du ikke føre det tilbage til dets forrige værdi.</noaccesswarning>
+        <notfound see="/edit/quicksearch/notfound" />
+        <title>Link til side</title>
+      </pagebrowser>
+    </system>
+    <thursday>Torsdag</thursday>
+    <tuesday>Tirsdag</tuesday>
+    <ui>
+      <title>
+        <process32bit>32-bit-proces</process32bit>
+        <process64bit>64-bit-proces</process64bit>
+      </title>
+    </ui>
+    <util>
+      <editor>
+        <dialogs>
+          <insertanchor>
+            <invalidcharacters>Ugyldigt bogmærke. Der tillades kun alfanumeriske tegn.</invalidcharacters>
+          </insertanchor>
+        </dialogs>
+        <javascript>
+          <quote>
+            <noparentquote>Det markerede tillader ikke denne handling.</noparentquote>
+          </quote>
+        </javascript>
+      </editor>
+      <linkeditor>
+        <alttextfieldcaption>	Alternativ tekst:</alttextfieldcaption>
+        <douploadcaption>		Vælg at sende</douploadcaption>
+        <linktitlefieldcaption>	Hyperlinktitel:</linktitlefieldcaption>
+        <mailfieldcaption>		E-mail-adresse:</mailfieldcaption>
+        <pageuploaddir>			Sidens bibliotek</pageuploaddir>
+        <selectpagecaption>		Vælg side:</selectpagecaption>
+        <targetfieldcaption>	Målramme:</targetfieldcaption>
+        <uploaddir>				Globalt bibliotek</uploaddir>
+        <urlfieldcaption>		URL:</urlfieldcaption>
+      </linkeditor>
+      <logout>
+        <linktologinformsauthenticated>Log på igen</linktologinformsauthenticated>
+        <linktologinwindowsauthenticated>Log på igen</linktologinwindowsauthenticated>
+        <logoutbodytextformsauthenticated>Log på igen ved hjælp af linket nedenfor.</logoutbodytextformsauthenticated>
+        <logoutbodytextwindowsauthenticated>Log på igen ved hjælp af linket nedenfor.</logoutbodytextwindowsauthenticated>
+        <logoutbodytextwindowsauthenticateddombrowser>Log helt af ved at lukke alle browser-vinduer</logoutbodytextwindowsauthenticateddombrowser>
+        <logoutconfirmdialogdombrowser>Du er logget på som Windows-bruger. Før du kan logges helt af, skal du lukke alle browser-vinduer</logoutconfirmdialogdombrowser>
+        <logoutheader>Du er logget af</logoutheader>
+        <logouttitle>Log af</logouttitle>
+      </logout>
+      <plugins>
+        <edittask>
+          <description>Oprette en ny opgave og distribuere den til en bruger i systemet.</description>
+          <displayname>Oprette en ny opgave</displayname>
+        </edittask>
+        <viewtask>
+          <description>Viser en eksisterende opgave i systemet</description>
+          <displayname>Vise eksisterende opgave</displayname>
+        </viewtask>
+      </plugins>
+    </util>
+    <validation>
+      <assurenospaces>"{0}" må ikke indeholde tomme mellemrum</assurenospaces>
+      <assurenumber>"{0}" må kun indeholde tal</assurenumber>
+      <dateorder>Datoen for "{0}" skal være før "{1}".</dateorder>
+      <formrequired>	* Feltet skal udfyldes.</formrequired>
+      <invalidLongstring>	Indholdet af egenskaben "{0}" har medført en fejl med den uoversatte meddelelse "{1}".</invalidLongstring>
+      <invalidvalue>	"{1}" er en ugyldig værdi for "{0}".</invalidvalue>
+      <invalidvalueexception>	"{1}" er en ugyldig værdi for "{0}". ({2})</invalidvalueexception>
+      <namenotunique>Navnet er ikke entydigt</namenotunique>
+      <notrelative>Den relative sti skal starte med ~/ eller /</notrelative>
+      <outofrange>	Du skal angive en værdi mellem {1} og {2} for "{0}".</outofrange>
+      <pagelinksettings>
+        <externalurlrequired>Skriv URL-adressen til det eksterne websted.</externalurlrequired>
+        <fetchdatapagerequired>Vælg den side, som dataene bliver hentet fra.</fetchdatapagerequired>
+        <shortcutpagerequired>Vælg målsiden for genvejen.</shortcutpagerequired>
+      </pagelinksettings>
+      <propertyname>"{0}" skal starte med et bogstav og må kun indeholde alfanumeriske tegn (a-z, A-Z, 0-9), "_" og "-".</propertyname>
+      <required>		"{0}" må ikke være tom.</required>
+      <stringoverflow>"{0}" har overskredet grænsen på {1} tegn.</stringoverflow>
+      <summary>		Følgende problem skal løses:</summary>
+      <urlcharactersonly>Kun tegnene a-z og 0-9 samt bindestreg (-) er tilladt.</urlcharactersonly>
+      <valuealreadyused>"{0}" med værdien "{1}" anvendes allerede af {2}.</valuealreadyused>
+      <valuesameasfolder>"{0}" med værdien "{1}" kan ikke anvendes, fordi værdien er den samme som mappestien "{2}".</valuesameasfolder>
+    </validation>
+    <webcontrols>
+      <explorertree>
+        <!--
+				<infonotpublished>	Ej publicerad</infonotpublished>
+				<infoexpired>		, löpte ut {0}</infoexpired>
+				<infonotstarted>	, börjar {0}</infonotstarted>
+			-->
+        <statusexpired>				Siden løb ud {0}</statusexpired>
+        <statuslanguagefallback>Siden vises på et andet sprog</statuslanguagefallback>
+        <statuslanguagemissing>Siden mangler for det aktuelle sprog og vil ikke blive vist</statuslanguagemissing>
+        <statusnew>					Siden blev skabt for nylig</statusnew>
+        <statusnotlocal>Ekstern side</statusnotlocal>
+        <statusnotpublished>		Siden er ikke publiceret</statusnotpublished>
+        <statusnotstarted>			Siden vil være synlig {0}</statusnotstarted>
+        <statusnotvisibleinmenu>	Siden er ikke synlig i menuer</statusnotvisibleinmenu>
+        <statusreadonly>			Du har ikke ret til at ændre siden</statusreadonly>
+      </explorertree>
+      <paging>
+        <currentpage>Aktuel side</currentpage>
+        <firstpage>Første side</firstpage>
+        <lastpage>Sidste side</lastpage>
+        <nextpage>Næste side</nextpage>
+        <pagenumber>Side {0}</pagenumber>
+        <prevpage>Forrige side</prevpage>
+      </paging>
+    </webcontrols>
+    <wednesday>Onsdag</wednesday>
+    <week>uge</week>
+    <versionstatus>
+      <checkedin>				Klar til offentliggørelse</checkedin>
+      <checkedout>			Ikke klar</checkedout>
+      <delayedpublish>	Tidsstyret offentliggørelse</delayedpublish>
+      <previouslypublished>	Tidligere offentliggjort</previouslypublished>
+      <published>				Offentliggjort version</published>
+      <rejected>				Kommentar</rejected>
+    </versionstatus>
+    <wsrp>
+      <portlets>
+        <wsrpiframecontrol>
+          <description>Vis oplysninger i IFrame</description>
+          <displayname>IFrame</displayname>
+          <keywords>IFrame</keywords>
+          <shorttitle>IFrame-portlet</shorttitle>
+          <title>EPiServer IFrame-portlet</title>
+        </wsrpiframecontrol>
+        <wsrpinfoservicecontrol>
+          <description>Vis oplysninger fra EPiServer</description>
+          <displayname>Oplysningsfremviser</displayname>
+          <keywords>EPiServerOplysninger</keywords>
+          <shorttitle>Oplysningsfremviser</shorttitle>
+          <title>Portlet til EPiServer-oplysningsfremviser</title>
+        </wsrpinfoservicecontrol>
+        <wsrpnewschannelcontrol>
+          <description>Vis nyheder fra EPiServer</description>
+          <displayname>Nyhedskanal</displayname>
+          <keywords>Nyheder</keywords>
+          <shorttitle>Portlet til nyhedskanal</shorttitle>
+          <title>Portlet til EPiServer-nyhedskanal</title>
+        </wsrpnewschannelcontrol>
+        <wsrprsscontrol>
+          <description>Vis oplysninger fra RSS-kilde</description>
+          <displayname>RSS</displayname>
+          <keywords>RSSRich Site SummaryReal Simple Syndication</keywords>
+          <shorttitle>RSS-portlet</shorttitle>
+          <title>EPiServer RSS-portlet</title>
+        </wsrprsscontrol>
+        <wsrpusersettingscontrol>
+          <description>Konfigurer brugerindstillinger</description>
+          <displayname>Brugerindstillinger</displayname>
+          <shorttitle>Portlet til brugerindstillinger</shorttitle>
+          <title>Portlet til EPiServer-brugerindstillinger</title>
+        </wsrpusersettingscontrol>
+      </portlets>
+    </wsrp>
+    <xform>
+      <datatypes>
+        <date1>
+          <caption>Dato (DD/MM/ÅÅÅÅ)</caption>
+          <inlineerrormessage>Ikke en gyldig dato. Angiv en dato i formatet "DD/MM/ÅÅÅÅ".</inlineerrormessage>
+          <summaryerrormessage>* er ikke en gyldig dato. Angiv en dato i formatet "DD/MM/ÅÅÅÅ".</summaryerrormessage>
+        </date1>
+        <date2>
+          <caption>Dato (MM/DD/ÅÅÅÅ)</caption>
+          <inlineerrormessage>Ikke en gyldig dato. Angiv en dato i formatet "MM/DD/ÅÅÅÅ".</inlineerrormessage>
+          <summaryerrormessage>* er ikke en gyldig dato. Angiv en dato i formatet "MM/DD/ÅÅÅÅ".</summaryerrormessage>
+        </date2>
+        <defaulttype>
+          <inlineerrormessage>Du har angivet tegn, som ikke er tilladt ("&lt;" eller "&gt;").</inlineerrormessage>
+          <summaryerrormessage>Du har angivet tegn, som ikke er tilladt ("&lt;" eller "&gt;").</summaryerrormessage>
+        </defaulttype>
+        <email>
+          <caption>E-mail-adresse</caption>
+          <inlineerrormessage>Ikke en gyldig e-mail-adresse.</inlineerrormessage>
+          <summaryerrormessage>* er ikke en gyldig e-mail-adresse.</summaryerrormessage>
+        </email>
+        <integer>
+          <caption>Heltal</caption>
+          <inlineerrormessage>Ikke et gyldigt heltal.</inlineerrormessage>
+          <summaryerrormessage>* er ikke et gyldigt heltal.</summaryerrormessage>
+        </integer>
+        <isodate>
+          <caption>Dato (ÅÅÅÅ-MM-DD)</caption>
+          <inlineerrormessage>Ikke en gyldig dato. Angiv en dato i formatet "ÅÅÅÅ-MM-DD".</inlineerrormessage>
+          <summaryerrormessage>* er ikke en gyldig dato. Angiv en dato i formatet "ÅÅÅÅ-MM-DD".</summaryerrormessage>
+        </isodate>
+        <positiveinteger>
+          <caption>Positivt heltal</caption>
+          <inlineerrormessage>Ikke et positivt heltal.</inlineerrormessage>
+          <summaryerrormessage>* er ikke et positivt heltal.</summaryerrormessage>
+        </positiveinteger>
+      </datatypes>
+      <denymultipleposts>Du har allerede udfyldt denne formular</denymultipleposts>
+      <errorpostingtocustomurl>Formularen kunne ikke sendes til en kundeadresse</errorpostingtocustomurl>
+      <errorpostingtodatabase>Formularen kunne ikke sendes til databasen</errorpostingtodatabase>
+      <errorpostingtoemail>Formularen kunne ikke sendes til en e-mail-adresse</errorpostingtoemail>
+      <requiredfield>
+        <inlineerrormessage>Dette felt er obligatorisk</inlineerrormessage>
+        <summaryerrormessage>Du har ikke udfyldt alle obligatoriske felter</summaryerrormessage>
+      </requiredfield>
+      <requirelogon>Du skal være logget på for at svare</requirelogon>
+    </xform>
+  </language>
+</languages>

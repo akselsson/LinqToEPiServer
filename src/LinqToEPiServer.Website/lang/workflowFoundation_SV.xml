@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<languages>
+  <language name="svenska" id="sv">
+    <admin>
+      <plugin>
+        <activitypluginattribute>Aktiviteter</activitypluginattribute>
+        <workflowtaskattribute>Hanterar arbetsflödets relaterade uppgifter</workflowtaskattribute>
+      </plugin>
+      <workflowadmin>
+        <confirmdelete>Vill du ta bort definitionen?</confirmdelete>
+        <count>Antal</count>
+        <createnew>Skapa definition</createnew>
+        <definitionname>Namn på definitionen</definitionname>
+        <defs>Definierade arbetsflöden</defs>
+        <deftab>Definitioner</deftab>
+        <delete>Ta bort</delete>
+        <description>Administrera arbetsflöden</description>
+        <displayname>Arbetsflöden</displayname>
+        <edit>Ändra</edit>
+        <eventlist>Antal instanser som väntar på EPiServer-relaterade händelser</eventlist>
+        <eventname>Händelse</eventname>
+        <fetchsystem>Hämta data</fetchsystem>
+        <filterondefinition>Filtrera på definition</filterondefinition>
+        <heading>Administration av arbetsflöden</heading>
+        <info>Skapa och administrera definitioner och instanser av arbetsflöden</info>
+        <running>Körande arbetsflöden:</running>
+        <runningtab>Körande instanser</runningtab>
+        <startevents>Triggande händelser</startevents>
+        <systemtab>Systeminformation</systemtab>
+        <type>Typ</type>
+      </workflowadmin>
+      <workflowdefinitionedit>
+        <allpagetypes>Alla sidtyper</allpagetypes>
+        <assemblyerror>Namn på assembly måste anges</assemblyerror>
+        <assemblyname>Namn på assemblyn</assemblyname>
+        <automaticstart>Automatisk start</automaticstart>
+        <basictab>Allmänt</basictab>
+        <cancel>Ångra</cancel>
+        <classerror>Klass måste anges</classerror>
+        <classname>Klassnamn</classname>
+        <completedDefinition>Starta nästa instans automatiskt</completedDefinition>
+        <configureparams>Konfigurera startparametrar</configureparams>
+        <confirmdelete>Vill du ta bort definitionen?</confirmdelete>
+        <confirmuser>Vill du ta bort valda grupper/användare?</confirmuser>
+        <copy>Kopiera</copy>
+        <defname>Definitionens namn</defname>
+        <delete>Ta bort</delete>
+        <description>Beskrivning</description>
+        <heading>Konfigurering av definition</heading>
+        <info>Det är möjligt att skapa flera definitioner baserade på samma klass. Varje definition måste ha ett unikt namn.&lt;br/&gt;Klassen måste anges med fullständigt namn.</info>
+        <layout>Layoutfil</layout>
+        <layoutfileloaded>Layout är uppladdad</layoutfileloaded>
+        <multiplename>Det finns redan en definition med det namnet</multiplename>
+        <namecopy>Kopia av</namecopy>
+        <nameerror>Namn måste anges</nameerror>
+        <namenumbercopy>Kopia ({0}) av</namenumbercopy>
+        <nolayoutfileloaded>Ingen layoutfil är uppladdad</nolayoutfileloaded>
+        <none>Ingen</none>
+        <notworkflowtype>Typen måste ärva av SequentialWorkflowActivity eller StateMachineWorkflowActivity</notworkflowtype>
+        <noxomlfileloaded>Ingen Xoml är uppladdad</noxomlfileloaded>
+        <pageroot>Startsida för definitionen</pageroot>
+        <pagetypes>Gäller för följande sidtyper</pagetypes>
+        <running>Körande arbetsflöden:</running>
+        <runningtab>Körande instanser</runningtab>
+        <save>Spara</save>
+        <securitytab>Säkerhet</securitytab>
+        <startevent>Händelser som startar en instans</startevent>
+        <typenotloadable>Kunde inte ladda angiven klass. Kontakta administratören och försäkra att klassen finns i bin-katalogen på servern.</typenotloadable>
+        <view>Visa layoutbild</view>
+        <xoml>Xoml fil</xoml>
+        <xomlfileloaded>Xoml är uppladdad</xomlfileloaded>
+      </workflowdefinitionedit>
+      <workflowstartparams>
+        <cancel>Ångra</cancel>
+        <heading>Startparametrar</heading>
+        <noattribute>Det definierade arbetsflödet har inte WorkflowPlugInAttribute</noattribute>
+        <nointerface>Den angivna kontrollen i WorkflowPlugInAttribute implementerar inte IWorkflowStartParameterHandler</nointerface>
+        <pathfailure>Kunde inte ladda den angivna kontrollen från </pathfailure>
+        <save>Spara</save>
+      </workflowstartparams>
+    </admin>
+    <workflow>
+      <edit>
+        <commandaction>
+          <tooltip>Starta arbetsflöde</tooltip>
+        </commandaction>
+        <task>
+          <description>Arbetsflödets relaterade uppgifter</description>
+          <displayname>Arbetsflödets uppgifter</displayname>
+          <notset>Ej angivet</notset>
+        </task>
+        <taskcontrol>
+          <eventinvoked>Data skickat till arbetsflöde</eventinvoked>
+          <eventinvokedtaskdeleted>Data skickat till arbetsflöde, uppgift borttagen</eventinvokedtaskdeleted>
+          <instancenotfound>Arbetsflödet för denna uppgift finns inte (har troligen avslutats)</instancenotfound>
+          <invoke>Skicka</invoke>
+          <loaderror>Kunde inte ladda angiven användarkontroll, orsak:</loaderror>
+          <nocontrolfound>Det fanns ingen väntande aktivitet som registrerat en kontroll</nocontrolfound>
+          <view>Visa</view>
+        </taskcontrol>
+        <workfloweditcontrol>
+          <displayname>Arbetsflöde</displayname>
+          <info>Inga instanser eller uppgifter relaterade till denna sida finns tillgängliga</info>
+          <selectdefinition>Välj definition att starta instans av</selectdefinition>
+          <startworkflow>Starta</startworkflow>
+          <tasksforpage>Uppgifter relatereade till sida</tasksforpage>
+          <workflow>Arbetsflöde</workflow>
+        </workfloweditcontrol>
+        <workflowhistory>
+          <details>Detaljer</details>
+          <history>Historik</history>
+          <user>Användare</user>
+        </workflowhistory>
+        <workflowinstance>
+          <page>
+            <description>Körande arbetsflöden</description>
+            <displayname>Arbetsflöden</displayname>
+            <running>Körande arbetsflöden:</running>
+          </page>
+          <start>
+            <definitiontostart>Skapa en instans av</definitiontostart>
+            <description>Starta ett nytt arbetsflöde</description>
+            <displayname>Starta arbetsflöde</displayname>
+            <instancestartcanceled>Start av instansen stoppades av en händelsehanterare, orsak:</instancestartcanceled>
+            <instancestarted>En instans har startats av definition</instancestarted>
+            <nodefinition>Det finns inga definitioner av arbetsflöden tillgängliga</nodefinition>
+            <selectdefinition>Välj definition att starta en instans av</selectdefinition>
+            <start>Starta</start>
+          </start>
+        </workflowinstance>
+        <workflowlist>
+          <confirmterminate>Vill du avsluta arbetsflödet?</confirmterminate>
+          <confirmterminateall>Vill du avsluta arbetsflödena?</confirmterminateall>
+          <count>Antal instanser</count>
+          <definitionname>Definitionsnamn</definitionname>
+          <details>Detaljer<definitionname>Definitionsnamn</definitionname><history>Historik</history><initiator>Skapare</initiator><instanceid>Instansnummer</instanceid><page>Sida</page><task>Nuvarande uppgifter</task><terminate>Avsluta</terminate><type>Typ</type><waitingevents>Väntande händelser</waitingevents><view>Visa</view></details>
+          <fetch>Visa</fetch>
+          <initiator>Skapare</initiator>
+          <missingdeleteaccess>Vissa instanser har du inte rättighet att avsluta</missingdeleteaccess>
+          <terminateall>Avsluta alla</terminateall>
+          <type>Typ</type>
+        </workflowlist>
+        <workflowtask>
+          <assignedto>Tilldelad</assignedto>
+          <confirmdelete>Vill du ta bort uppgiften?</confirmdelete>
+          <created>Skapad</created>
+          <description>Beskrivning</description>
+          <duedate>Förfallodatum</duedate>
+          <subject>Ämne</subject>
+        </workflowtask>
+      </edit>
+      <runtime>
+        <adduserdata>
+          <description>Nyckel: </description>
+          <subject>Användardata tillagt</subject>
+        </adduserdata>
+        <associatedwithpage>
+          <description>Sidnummer: </description>
+          <subject>Associerad vid sida</subject>
+        </associatedwithpage>
+        <instancestarted>
+          <description>Arbetsflödet startades</description>
+          <subject>Arbetsflöde startat</subject>
+        </instancestarted>
+        <taskcreated>
+          <description>Uppgiftsbeskrivning: </description>
+          <subject>Uppgift skapad, ämne: </subject>
+        </taskcreated>
+        <taskdeleted>
+          <description>Uppgiftsnummer: </description>
+          <subject>Uppgift borttagen</subject>
+        </taskdeleted>
+        <taskupdated>
+          <description>Uppgiftsbeskrivning: </description>
+          <subject>Uppgift ändrad, ämne: </subject>
+        </taskupdated>
+      </runtime>
+    </workflow>
+    <workflows>
+      <approval>
+        <approvaltask>
+          <pageheading>Godkännande arbetsflöde för sida</pageheading>
+          <subject>Godkänn sida</subject>
+        </approvaltask>
+        <approvedevent>
+          <approved>Godkänd</approved>
+          <approvedby>{0} godkände sidan.</approvedby>
+          <comment>Kommentar</comment>
+          <notapproved>Ej godkänd</notapproved>
+          <pageapproved>{0} godkändes</pageapproved>
+        </approvedevent>
+        <history>
+          <approved>Sidan godkändes</approved>
+          <notapproved>Sidan blev inte godkänd</notapproved>
+        </history>
+        <parallel>
+          <description>Arbetsflöde för parallellt godkännande</description>
+        </parallel>
+        <sequential>
+          <description>Arbetsflöde för sekventiellt godkännande</description>
+        </sequential>
+        <startparameters>
+          <approversvisible>Val av godkännare möjligt i redigeraläget</approversvisible>
+          <description>Beskrivning för godkännare</description>
+          <isrole>Grupp</isrole>
+          <name>Namn</name>
+          <noapprovers>Minst en godkännare måste anges</noapprovers>
+          <noapproversvisible>Minst en godkännare måste väljas om val av godkännare inte är tillåtet i redigeraläget</noapproversvisible>
+          <nopage>{SidNamn}</nopage>
+          <notnumber>Antal godkännare måste vara ett nummer</notnumber>
+          <notpublishrights>Användare {0} har inte läs eller publiceringsrättigheter för {1}</notpublishrights>
+          <notvalidpage>Ingen giltig sida är vald för godkännande arbetsflöde</notvalidpage>
+          <numberofapprovers>Ange minsta antal som måste godkänna</numberofapprovers>
+          <numbersvisible>Val av antal godkännare möjligt i redigeraläge</numbersvisible>
+          <positivenumber>Antal godkännare måste vara större än 0</positivenumber>
+          <publishedversion>Den valda sidversionen är redan publicerad</publishedversion>
+          <required>Obligatorisk</required>
+          <selectapprovers>Välj användare/grupper som ska godkänna</selectapprovers>
+          <tolarge>Minsta antal godkännare kan inte vara större än totala antalet godkännare</tolarge>
+        </startparameters>
+        <versioncontrol>
+          <changeddescription>Sidversion ändrad från {0} till {1}</changeddescription>
+          <changedsubject>Ändrad sidversion</changedsubject>
+          <differs>Den laddade sidversionen i redigeraläge skiljer sig från den version som processas i arbetsflödet</differs>
+          <loadedversion>Version i redigeraläge</loadedversion>
+          <selectversion>Välj vilken sidversion som ska godkännas i flödet</selectversion>
+          <workflowversion>Version i arbetsflödet</workflowversion>
+        </versioncontrol>
+      </approval>
+      <feedbackrequest>
+        <description>Beskrivning för återkoppling</description>
+        <feedback>Återkoppling</feedback>
+        <feedbackposted>Återkoppling mottaget</feedbackposted>
+        <finish>Avsluta arbetsflödet</finish>
+        <heading>Inställningar för önskemål om återkopplingsflöde</heading>
+        <nodescription>Beskrivning måste anges</nodescription>
+        <noowner>Ägare måste anges</noowner>
+        <nousers>Inga användare valda</nousers>
+        <ownerdescription>Återkoppling från användare</ownerdescription>
+        <ownerheading>Återkoppling för begäran</ownerheading>
+        <ownersubject>Återkoppling</ownersubject>
+        <pageroot>Välj sida</pageroot>
+        <plugin>
+          <description>Arbetsflöde för begäran om återkoppling</description>
+        </plugin>
+        <post>Posta</post>
+        <selectusers>Välj användare/grupper du önskar återkoppling av</selectusers>
+        <subject>Återkoppling önskas</subject>
+        <timetolive>Ange tid för återkoppling (timmar)</timetolive>
+        <userheading>Ge återkoppling</userheading>
+      </feedbackrequest>
+      <translate>
+        <addtranslator>Lägg till översättare för</addtranslator>
+        <cancelled>Det finns redan ett körande arbetsflöde av denna typ för denna sida</cancelled>
+        <completedescription>har översatts till</completedescription>
+        <completesubject>En sida har översatts</completesubject>
+        <fallback>Översättare för ej angivna språk</fallback>
+        <forpage>för sidan</forpage>
+        <heading>Konfigurera översättare för arbetsflöde som notifierar översättare</heading>
+        <hours>timmar</hours>
+        <initialdelay>Start fördröjning</initialdelay>
+        <initialdescription>Kan du översätta</initialdescription>
+        <initialsubject>Översätt sida</initialsubject>
+        <language>Språk</language>
+        <minutes>minuter</minutes>
+        <notcompletedescription>har inte översatts till</notcompletedescription>
+        <notcompletesubject>En sida har inte översatts fullständigt</notcompletesubject>
+        <owner>Processägare</owner>
+        <plugin>
+          <description>Arbetsflöde för notifiering vid översättning</description>
+        </plugin>
+        <positivenumber>Måste vara ett positivt heltal</positivenumber>
+        <publishneeded>Språkversionen måste publiceras</publishneeded>
+        <reminder>Tid tills påminnelse skickas</reminder>
+        <terminate>Tid för översättning</terminate>
+        <to>till</to>
+        <translators>Översättare</translators>
+      </translate>
+    </workflows>
+  </language>
+</languages>

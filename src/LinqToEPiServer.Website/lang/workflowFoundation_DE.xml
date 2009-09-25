@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<languages>
+  <language name="Deutsch" id="de">
+    <admin>
+      <plugin>
+        <activitypluginattribute>Benutzerdefinierte Aktivitäten</activitypluginattribute>
+        <workflowtaskattribute>Regelt Aufgaben im Zus.hang mit dem Workflow</workflowtaskattribute>
+      </plugin>
+      <workflowadmin>
+        <confirmdelete>Möchten Sie die Definition entfernen?</confirmdelete>
+        <count>Anzahl</count>
+        <createnew>Definition erstellen</createnew>
+        <definitionname>Definitionsname</definitionname>
+        <defs>Festgelegte Workflows:</defs>
+        <deftab>Definitionen</deftab>
+        <delete>Löschen</delete>
+        <description>Verwalten von Workflows</description>
+        <displayname>Workflows</displayname>
+        <edit>Bearbeiten</edit>
+        <eventlist>Die Anzahl der Instanzen (falls vorhanden), die auf ein EPiServer CMS-bezogenes Ereignis warten.</eventlist>
+        <eventname>Ereignis</eventname>
+        <fetchsystem>Daten holen</fetchsystem>
+        <filterondefinition>Filter auf Definition</filterondefinition>
+        <heading>Verwaltung von Workflows</heading>
+        <info>Workflow-Definitionen und -Instanzen erstellen und verwalten</info>
+        <running>Ausführen von Workflows:</running>
+        <runningtab>Ausführen von Instanzen</runningtab>
+        <startevents>Auslösen eines Ereignisses</startevents>
+        <systemtab>Systeminformationen</systemtab>
+        <type>Typ</type>
+      </workflowadmin>
+      <workflowdefinitionedit>
+        <allpagetypes>Alle Seitentypen</allpagetypes>
+        <assemblyerror>Assembly muss angegeben werden</assemblyerror>
+        <assemblyname>Assemblyname</assemblyname>
+        <automaticstart>Automatischer Start</automaticstart>
+        <basictab>Allgemein</basictab>
+        <cancel>Abbrechen</cancel>
+        <classerror>Klasse muss angegeben werden</classerror>
+        <classname>Klassenname</classname>
+        <completedDefinition>Nächste Instanz automatisch starten</completedDefinition>
+        <configureparams>Startparameter konfigurieren</configureparams>
+        <confirmdelete>Möchten Sie die Definition entfernen?</confirmdelete>
+        <confirmuser>Möchten Sie gewählte(n) Benutzer/Gruppe entfernen?</confirmuser>
+        <copy>Kopieren</copy>
+        <defname>Definitionsname</defname>
+        <delete>Löschen</delete>
+        <description>Beschreibung</description>
+        <heading>Konfiguration der Definition</heading>
+        <info>Es kann mehrere Definitionen basierend auf derselben Klasse geben. Jede Definition muss einen eindeutigen Namen haben.&lt;br/&gt;Die Klasse muss mit dem vollqualifizierten Namen (einschließlich Namespace) definiert werden.</info>
+        <layout>Layout-Datei</layout>
+        <layoutfileloaded>Layout wird upgeloaded</layoutfileloaded>
+        <multiplename>Es gibt bereits eine Definition mit dem angegebenen Namen.</multiplename>
+        <namecopy>Kopie von</namecopy>
+        <nameerror>Name muss angegeben werden</nameerror>
+        <namenumbercopy>Kopie ({0}) von</namenumbercopy>
+        <nolayoutfileloaded>Kein Layout wird upgeloaded</nolayoutfileloaded>
+        <none>Keine</none>
+        <notworkflowtype>Typ muss SequentialWorkflowActivity oder StateMachineWorkflowActivity erben</notworkflowtype>
+        <noxomlfileloaded>Keine Xoml wird upgeloaded</noxomlfileloaded>
+        <pageroot>Startseite für Definition</pageroot>
+        <pagetypes>Für Seitentypen übernehmen</pagetypes>
+        <running>Ausführen von Workflows:</running>
+        <runningtab>Ausführen von Instanzen</runningtab>
+        <save>Speichern</save>
+        <securitytab>Sicherheit</securitytab>
+        <startevent>Ereignis(se) zum Starten der Instanz</startevent>
+        <typenotloadable>Vorliegender Typ konnte nicht geladen werden; darauf achten, dass Typ in Bin-Verzeichnis installiert ist.</typenotloadable>
+        <view>Workflow-Bild zeigen</view>
+        <xoml>Xoml-Datei</xoml>
+        <xomlfileloaded>Xoml wird upgeloaded</xomlfileloaded>
+      </workflowdefinitionedit>
+      <workflowstartparams>
+        <cancel>Abbrechen</cancel>
+        <heading>Startparameter</heading>
+        <noattribute>Der festgelegte Workflow besitzt kein WorkflowPlugInAttribute</noattribute>
+        <nointerface>Die vorliegende Steuerung in WorkflowPlugInAttribute implementiert nicht IWorkflowStartParameterHandler</nointerface>
+        <pathfailure>Vorliegende Steuerung konnte nicht geladen werden von </pathfailure>
+        <save>Speichern</save>
+      </workflowstartparams>
+    </admin>
+    <workflow>
+      <edit>
+        <commandaction>
+          <tooltip>Workflow-Instanz starten</tooltip>
+        </commandaction>
+        <task>
+          <description>Aufgaben im Zus.hang mit dem Workflow</description>
+          <displayname>Workflow-Aufgaben</displayname>
+          <notset>Nicht festgelegt</notset>
+        </task>
+        <taskcontrol>
+          <eventinvoked>Daten an Workflow gesendet</eventinvoked>
+          <eventinvokedtaskdeleted>Daten an Workflow gesendet, Aufgabe gelöscht</eventinvokedtaskdeleted>
+          <instancenotfound>Die Workflow-Instanz für diese Aufgabe konnte nicht geladen werden (ist wahrscheinlich beendet).</instancenotfound>
+          <invoke>Senden</invoke>
+          <loaderror>Angegebene Benutzersteuerung konnte nicht geladen werden, Ausnahme:</loaderror>
+          <nocontrolfound>Es gibt keine wartende Aktivität mit registrierter Benutzersteuerung.</nocontrolfound>
+          <view>Anzeigen</view>
+        </taskcontrol>
+        <workfloweditcontrol>
+          <displayname>Workflow</displayname>
+          <info>Es sind keine Instanzen oder Aufgaben verfügbar, die sich auf diese Seite beziehen.</info>
+          <selectdefinition>Definition wählen zum Starten der Instanz von</selectdefinition>
+          <startworkflow>Starten</startworkflow>
+          <tasksforpage>Auf Seite bezogene Aufgaben</tasksforpage>
+          <workflow>Workflow</workflow>
+        </workfloweditcontrol>
+        <workflowhistory>
+          <details>Details</details>
+          <history>Verlauf</history>
+          <user>Benutzer</user>
+        </workflowhistory>
+        <workflowinstance>
+          <page>
+            <description>Ausführen von Workflows</description>
+            <displayname>Workflows</displayname>
+            <running>Ausführen von Workflows:</running>
+          </page>
+          <start>
+            <definitiontostart>Erstellen einer Instanz von</definitiontostart>
+            <description>Neuen Workflow erstellen</description>
+            <displayname>Workflow erstellen</displayname>
+            <instancestartcanceled>Starten der Instanz wurde von einem Ereignis-Handler abgebrochen, Grund:</instancestartcanceled>
+            <instancestarted>Eine Instanz wurde gestartet von der Definition</instancestarted>
+            <nodefinition>Keine Workflow-Definitionen verfügbar</nodefinition>
+            <selectdefinition>Definition wählen zum Starten der Instanz von</selectdefinition>
+            <start>Starten</start>
+          </start>
+        </workflowinstance>
+        <workflowlist>
+          <confirmterminate>Möchten Sie die Instanz beenden?</confirmterminate>
+          <confirmterminateall>Möchten Sie die Instanzen beenden?</confirmterminateall>
+          <count>Anzahl der Instanzen</count>
+          <definitionname>Definitionsname</definitionname>
+          <details>Details<definitionname>Definitionsname</definitionname><history>Verlauf</history><initiator>Erstellt von</initiator><instanceid>Instanzkennung</instanceid><page>Seite</page><task>Aktuelle Aufgaben</task><terminate>Beenden</terminate><type>Typ</type><waitingevents>Wartende Ereignisse</waitingevents><view>Anzeigen</view></details>
+          <fetch>Zeigen</fetch>
+          <initiator>Erstellt von</initiator>
+          <missingdeleteaccess>Es gibt einige Instanzen, auf die Sie keinen Zugriff zum Beenden haben.</missingdeleteaccess>
+          <terminateall>Alle beenden</terminateall>
+          <type>Typ</type>
+        </workflowlist>
+        <workflowtask>
+          <assignedto>Zuweisung an</assignedto>
+          <confirmdelete>Möchten Sie die Aufgabe entfernen?</confirmdelete>
+          <created>Erstellt</created>
+          <description>Beschreibung</description>
+          <duedate>Fälligkeitsdatum</duedate>
+          <subject>Betreff</subject>
+        </workflowtask>
+      </edit>
+      <runtime>
+        <adduserdata>
+          <description>Schlüssel: </description>
+          <subject>Benutzerdaten hinzugefügt</subject>
+        </adduserdata>
+        <associatedwithpage>
+          <description>Seitenkennung: </description>
+          <subject>Mit Seite verknüpft</subject>
+        </associatedwithpage>
+        <instancestarted>
+          <description>Workflow-Instanz gestartet</description>
+          <subject>Workflow gestartet</subject>
+        </instancestarted>
+        <taskcreated>
+          <description>Aufgabenbeschreibung: </description>
+          <subject>Aufgabe erstellt, Betreff: </subject>
+        </taskcreated>
+        <taskdeleted>
+          <description>Aufgabenkennung: </description>
+          <subject>Aufgabe gelöscht</subject>
+        </taskdeleted>
+        <taskupdated>
+          <description>Aufgabenbeschreibung: </description>
+          <subject>Aufgabe aktualisiert, Betreff: </subject>
+        </taskupdated>
+      </runtime>
+    </workflow>
+    <workflows>
+      <approval>
+        <approvaltask>
+          <pageheading>Genehmigungs-Workflow für Seite</pageheading>
+          <subject>Seite genehmigen</subject>
+        </approvaltask>
+        <approvedevent>
+          <approved>Genehmigt</approved>
+          <approvedby>Seite wurde genehmigt von {0}</approvedby>
+          <comment>Kommentar</comment>
+          <notapproved>Nicht genehmigt</notapproved>
+          <pageapproved>{0} wurde genehmigt</pageapproved>
+        </approvedevent>
+        <history>
+          <approved>Seite wurde genehmigt</approved>
+          <notapproved>Seite wurde nicht genehmigt</notapproved>
+        </history>
+        <parallel>
+          <description>Ein paralleler Genehmigungs-Workflow</description>
+        </parallel>
+        <sequential>
+          <description>Ein sequenzieller Genehmigungs-Workflow</description>
+        </sequential>
+        <startparameters>
+          <approversvisible>Auswahl von Genehmigern im Bearbeitungsmodus verfügbar</approversvisible>
+          <description>Beschreibung für Genehmiger</description>
+          <isrole>Gruppe</isrole>
+          <name>Name</name>
+          <noapprovers>Mindestens ein Genehmiger muss ausgewählt sein</noapprovers>
+          <noapproversvisible>Mindestens ein Genehmiger muss ausgewählt werden, wenn Genehmigerauswahl im Bearbeitungsmodus nicht verfügbar ist.</noapproversvisible>
+          <nopage>{PageName}</nopage>
+          <notnumber>Anzahl von Genehmigungen muss eine Zahl sein</notnumber>
+          <notpublishrights>Benutzer {0} hat keinen Lese- oder Veröffentlichungszugriff für {1}</notpublishrights>
+          <notvalidpage>Keine gültige Seite für Genehmigungs-Workflow ausgewählt</notvalidpage>
+          <numberofapprovers>Mindestanzahl festlegen zur Genehmigung von</numberofapprovers>
+          <numbersvisible>Auswahl der Anzahl von Genehmigern im Bearbeitungsmodus verfügbar</numbersvisible>
+          <positivenumber>Anzahl von Genehmigungen muss eine positive Zahl sein</positivenumber>
+          <publishedversion>Version der markierten Seite ist bereits veröffentlicht</publishedversion>
+          <required>Erforderlich</required>
+          <selectapprovers>Benutzer/Gruppen auswählen zur Genehmigung von</selectapprovers>
+          <tolarge>Mindestanzahl von Genehmigern kann nicht größer als Anzahl der Genehmiger sein</tolarge>
+        </startparameters>
+        <versioncontrol>
+          <changeddescription>Seitenversion geändert von {0} in {1}</changeddescription>
+          <changedsubject>Seitenversion geändert</changedsubject>
+          <differs>Die im Bearbeitungsfenster geladene Seitenversion weicht von der Seitenversion in der Workflow-Instanz ab.</differs>
+          <loadedversion>In Bearbeitungsfenster geladene Version</loadedversion>
+          <selectversion>Seitenversion wählen, die im Genehmigungs-Workflow verarbeitet werden soll</selectversion>
+          <workflowversion>Version in Workflow-Instanz</workflowversion>
+        </versioncontrol>
+      </approval>
+      <feedbackrequest>
+        <description>Beschreibung für Feedback</description>
+        <feedback>Feedback</feedback>
+        <feedbackposted>Feedback erhalten</feedbackposted>
+        <finish>Workflow abschließen</finish>
+        <heading>Einstellungen für Workflow für Feedback-Anforderung</heading>
+        <nodescription>Beschreibung muss gesendet werden</nodescription>
+        <noowner>Eigentümer muss festgelegt werden</noowner>
+        <nousers>Keine Benutzer ausgewählt</nousers>
+        <ownerdescription>Feedback von Benutzern</ownerdescription>
+        <ownerheading>Feedback auf Anforderung</ownerheading>
+        <ownersubject>Feedback</ownersubject>
+        <pageroot>Seite auswählen</pageroot>
+        <plugin>
+          <description>Workflow für Feedback-Anforderungen</description>
+        </plugin>
+        <post>Senden</post>
+        <selectusers>Benutzer/Gruppen auswählen, von denen Sie Feedback wünschen</selectusers>
+        <subject>Feedback-Anforderung</subject>
+        <timetolive>Zeit für Feedback festlegen (Stunden)</timetolive>
+        <userheading>Bitte Feedback senden.</userheading>
+      </feedbackrequest>
+      <translate>
+        <addtranslator>Übersetzer hinzufügen für</addtranslator>
+        <cancelled>Ein Workflow dieses Typs wird bereits für diese Seite ausgeführt</cancelled>
+        <completedescription>ist übersetzt in</completedescription>
+        <completesubject>Seite wurde vollständig übersetzt</completesubject>
+        <fallback>Übersetzer für nicht angegebene Sprachen</fallback>
+        <forpage>für Seite</forpage>
+        <heading>Übersetzer für Workflow für Übersetzungsmitteilungen konfigurieren</heading>
+        <hours>Stunde</hours>
+        <initialdelay>Startverzögerung</initialdelay>
+        <initialdescription>Bitte übersetzen</initialdescription>
+        <initialsubject>Seite übersetzen</initialsubject>
+        <language>Sprache</language>
+        <minutes>Minuten</minutes>
+        <notcompletedescription>ist nicht übersetzt in</notcompletedescription>
+        <notcompletesubject>Eine Seite ist nicht vollständig übersetzt</notcompletesubject>
+        <owner>Eigentümer des Prozesses</owner>
+        <plugin>
+          <description>Ein Workflow für Übersetzungsmitteilungen</description>
+        </plugin>
+        <positivenumber>Muss eine positive Zahl sein.</positivenumber>
+        <publishneeded>Sprachversion zur Veröffentlichung</publishneeded>
+        <reminder>Zeit, bis Erinnerung gesendet wird</reminder>
+        <terminate>Zeit für Übersetzung</terminate>
+        <to>an</to>
+        <translators>Übersetzer</translators>
+      </translate>
+    </workflows>
+  </language>
+</languages>

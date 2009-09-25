@@ -1,0 +1,3013 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<languages>
+  <language name="svenska" id="sv">
+    <accesslevels>
+      <accesslevel name="Administer">
+        <description>	Administrera</description>
+      </accesslevel>
+      <accesslevel name="Create">
+        <description>	Skapa</description>
+      </accesslevel>
+      <accesslevel name="Delete">
+        <description>	Radera</description>
+      </accesslevel>
+      <accesslevel name="Edit">
+        <description>	Ändra</description>
+      </accesslevel>
+      <accesslevel name="NoAccess">
+        <description>Ingen behörighet</description>
+      </accesslevel>
+      <accesslevel name="Publish">
+        <description>	Publicera</description>
+      </accesslevel>
+      <accesslevel name="Read">
+        <description>	Läs</description>
+      </accesslevel>
+    </accesslevels>
+    <admin>
+      <admingroup>
+        <approvedheading>Godkänd</approvedheading>
+        <deletegrouptooltip>Ta bort grupp</deletegrouptooltip>
+        <description see="/labels/description" />
+        <group>				Grupp</group>
+        <groupexists>		Det finns redan en grupp med namn {0}</groupexists>
+        <heading>			Administrera grupper</heading>
+        <info>				Här kan du ta bort eller lägga till grupper som används för att tilldela rättigheter.</info>
+        <ldapinfo>	Importera gruppinformation från LDAP server. Ange sökuttryck i fältet, t ex User* kommer att visa alla grupper/OU:s som börjar med texten User.</ldapinfo>
+        <ldappath>			LDAP-server</ldappath>
+        <localgroup>		Windowsgrupper</localgroup>
+        <lockedoutheading>Utlåst</lockedoutheading>
+        <membersofrole>Användare i gruppen '{0}'.</membersofrole>
+        <newgroupinfo>Skapa grupp för användning i EPiServer</newgroupinfo>
+        <noroleprovider>Det finns ingen tjänst som hanterar grupper konfigurerad i Web.config!</noroleprovider>
+        <provider>Tillhandahållare</provider>
+        <removeuserfromgrouptooltip>Ta bort användare från grupp</removeuserfromgrouptooltip>
+        <roledeletefailed>Borttagning av gruppen "{0}" misslyckades.</roledeletefailed>
+        <rolenameinvalid>Ogiltigt gruppnamn.</rolenameinvalid>
+        <syncbutton>		Synkronisera</syncbutton>
+        <syncinfo>	Synkronisera lokal gruppinformation till EPiServer</syncinfo>
+        <syncldapbutton>	Importera från LDAP-server</syncldapbutton>
+        <userremovedfromrole>Användare '{0}' i gruppen '{1}' har borttagits</userremovedfromrole>
+      </admingroup>
+      <categories>
+        <deleletereferencewarning>En eller fler sidor refererar till kategorin "{0}" som du försöker ta bort.</deleletereferencewarning>
+        <deleteconfirmmessage>Vill du ta bort kategori "{0}" samt dess underkategorier?</deleteconfirmmessage>
+        <delreferenceconfirm>	Vill du ta bort den här kategorin i alla fall?</delreferenceconfirm>
+        <heading>				Kategorier</heading>
+        <helpadd>				Lägg till kategori under vald kategori. Observera att du måste spara för att förändringen skall slå igenom</helpadd>
+        <helpdelete>			Ta bort kategori. Observera att om kategorin har underliggande kategorier kommer de att flyttas upp en nivå</helpdelete>
+        <helpmovedown>			Flyttar kategorin ner ett steg i listan.</helpmovedown>
+        <info>					Definiera de kategorier som din webbplats använder. Dessa kommer att vara tillgängliga i redigeraläget för varje sida under "Kategorier".</info>
+        <movedown>				Flytta ner</movedown>
+        <moveup>				Flytta upp</moveup>
+        <notselectable>Inte valbar</notselectable>
+        <notvisible>Inte synlig</notvisible>
+        <tabledescription>		Beskrivning</tabledescription>
+        <tablename>				Namn</tablename>
+        <tableselectable>		Valbar</tableselectable>
+        <tablevisible>			Synlig</tablevisible>
+      </categories>
+      <cleanupupload>
+        <directory>Katalogen</directory>
+        <heading>		Ta bort oanvända filer</heading>
+        <info>I redigeraläge kan redaktörer ladda upp filer till "Sidans katalog". Dessa filer ligger kvar på servern när en sida tas bort. Här kan du ta bort oanvända filer som lagrats i "Sidans katalog".</info>
+        <leftintact>är oförändrad.</leftintact>
+        <notdeleted>	Kunde inte ta bort&amp;nbsp;</notdeleted>
+        <nothing>		Det fanns inget att ta bort</nothing>
+        <wasdeleted>togs bort.</wasdeleted>
+        <wasnotdeleted>togs inte bort.</wasnotdeleted>
+      </cleanupupload>
+      <confirmlanguagespecific>
+        <heading>Konverterar existerande innehåll</heading>
+        <info>Värden för egenskapen kommer att raderas för sidor som använder språk som ej är originalspråket.</info>
+        <pagelist>Sidor som kommer att påverkas ({0})</pagelist>
+        <title>Varning</title>
+      </confirmlanguagespecific>
+      <contentmirroring>
+        <description>Nedan visas en lista över de kanaler som finns definierade i systemet.</description>
+        <displayname see="/admin/contentmirroring/heading" />
+        <heading>Speglingsinställningar</heading>
+        <info>Definierar innehåll som skall speglas ut från EPiServer CMS till en extern mottagare.</info>
+        <name>Namn</name>
+      </contentmirroring>
+      <contentmirroringedit>
+        <activatefilter>Aktivera filter</activatefilter>
+        <alllanguages>Aktivt (alla språk speglas till mottagare med globaliseringsstöd)</alllanguages>
+        <automatic>Överföringsläge</automatic>
+        <automaticapproval>Godkänn förändringar automatiskt</automaticapproval>
+        <channeltype>Typ av spegling</channeltype>
+        <confirmdelete>Är du säker på att du vill ta bort speglingsinställningarna?</confirmdelete>
+        <filterpropertyname>Egenskapsnamn för filterfunktion</filterpropertyname>
+        <filterpropertyvalue>Värde på egenskap</filterpropertyvalue>
+        <frompagelink>Startsida</frompagelink>
+        <globalizationsupport>Globaliseringsstöd</globalizationsupport>
+        <heading>Speglingsinställningar</heading>
+        <impersonatedomain>Domän</impersonatedomain>
+        <impersonatepassword>Sätt lösenord</impersonatepassword>
+        <impersonateusername>Användarnamn</impersonateusername>
+        <includeroot>Inkludera startsidan</includeroot>
+        <info>Definierar inställningar som gäller för denna kanal</info>
+        <language>Språk</language>
+        <name>Namn</name>
+        <noglobalizationsupport>Inaktivt (originalspråk speglas till mottagare utan globaliseringsstöd)</noglobalizationsupport>
+        <runasanonymoususer>Kör under en anonym användare</runasanonymoususer>
+        <singlelanguage>Endast "{0}" speglas till mottagare utan globaliseringsstöd</singlelanguage>
+        <tabfilter>Egenskapsfilter</tabfilter>
+        <tabinformation>Information</tabinformation>
+        <types>
+          <list>Lista</list>
+          <search>Sökning (endast uppdaterade sidor)</search>
+          <tree>Träd</tree>
+        </types>
+      </contentmirroringedit>
+      <contentmirroringmanager>
+        <description />
+        <displayname>Aktivering av speglingar</displayname>
+      </contentmirroringmanager>
+      <contentmirroringmapping>
+        <delete>Ta bort</delete>
+        <deleteall>Ta bort alla kopplingar</deleteall>
+        <deleteallmessage>Är du säker på att du vill ta bort alla kopplingar för den här kanalen?</deleteallmessage>
+        <deletemessage>Är du säker på att du vill ta bort kopplingen?</deletemessage>
+        <foldermapping>Katalogkopplingar</foldermapping>
+        <message>Här visas hur sidor respekive kataloger på käll- och destinationswebbplatsen är kopplade. Genom att ta bort en koppling kommer destinationssidan eller destinationskatalogen frikopplas från källan. Senare speglingsuppdateringar kommer resultera i återskapande av destinationssidan eller destinationskatalogen och eventuellt kataloginnehåll.</message>
+        <pagemapping>Sidkopplingar</pagemapping>
+        <pagename>Sidnamn</pagename>
+        <sourceid>Källans ID</sourceid>
+        <targetid>Destinationens ID</targetid>
+        <title>Speglingskopplingar för "{0}"</title>
+      </contentmirroringmapping>
+      <contentmirroringqueue>
+        <created>Skapat</created>
+        <deletepackage>Ta bort paket</deletepackage>
+        <deletewarningi0>Är du säker på att du vill ta bort förändringar från kön?</deletewarningi0>
+        <deletewarningi1>Flytt och borttagning måste göras manuellt på destinationen.</deletewarningi1>
+        <deletewarningi2>Uppdaterade och skapade sidor måste ompubliceras.</deletewarningi2>
+        <info>Visar sidorna som kommer att speglas nästa gång speglingen körs.</info>
+        <packagetitle>Paket</packagetitle>
+        <pageid>Sidans ID</pageid>
+        <pagename>Sidnamn</pagename>
+        <title>Speglingskö för destinationen "{0}" på "{1}"</title>
+        <type>Typ av ändring</type>
+        <warning>Varning! Sidor som raderas från paketet kommer inte inkluderas nästa gång webbplatsen speglas. Detta kan orsaka problem för framtida speglingar. Klicka inte "Ta bort" om du vill att alla sidor i paketet ska inkluderas nästa gång speglingen körs.</warning>
+      </contentmirroringqueue>
+      <contentmirroringview>
+        <continuereset>Genomför återställning</continuereset>
+        <createdestination>Skapa destination</createdestination>
+        <editmappings>Kopplingar</editmappings>
+        <editqueue>Redigera kö</editqueue>
+        <errorsamechannelname>Kanalnamnet "{0}" används redan av en annan kanal</errorsamechannelname>
+        <heading>Destinationsöversikt</heading>
+        <htmlmirroring>HTML</htmlmirroring>
+        <info>Översiktssidan visar de destinationer som har definerats för denna kanal.</info>
+        <lastchanges>Förändringar accepterades senast</lastchanges>
+        <lastexecution>Senaste körning</lastexecution>
+        <laststatus>Nuvarande status</laststatus>
+        <name>Destinationer</name>
+        <noaction>Inga förändringar accepterade</noaction>
+        <notallowedsourcepage>Spegling är ej tillåten från rotsidan eller papperskorgen</notallowedsourcepage>
+        <nousername>Inget användarnamn är givet</nousername>
+        <pagemirroring>EPiServer CMS</pagemirroring>
+        <queuelength>Paket i kö</queuelength>
+        <reset>Återställning</reset>
+        <resetwarning1>Om du fortsätter med denna åtgärd kommer samtliga sidor som kanalen identifierar visas som nya sidor</resetwarning1>
+        <resetwarning2>Åtgärden kan innebära att förändringar som inte ännu skickats till destinationen går förlorade.</resetwarning2>
+        <settingslocked>Inställningarna för den här kanalen och alla dess destinationer är låsta eftersom ett speglingsjobb redan utförts med aktuella inställningar. Efterföljande jobb kräver identiska inställningar för att ge ett korrekt resultat. För att göra ändringar krävs att information om tidigare jobb återställs genom att välja "Återställning".</settingslocked>
+        <title>Destinationer definierade för kanal "{0}"</title>
+        <type>Speglingstyp</type>
+        <xmlmirroring>XML</xmlmirroring>
+      </contentmirroringview>
+      <contentpublisheredit>
+        <applyfilterontemplates>Applicera kanalens filter</applyfilterontemplates>
+        <changelog>Förändringsloggfil</changelog>
+        <confirmdelete>Är du säker på att du vill ta bort destinationen?</confirmdelete>
+        <defaultdocument>Standardnamn på filer</defaultdocument>
+        <destinationnameduplicate>En destination med samma namn finns redan</destinationnameduplicate>
+        <flatfiles>En fil per sida</flatfiles>
+        <heading>Destination</heading>
+        <info>Anger en mottagare av sidor som hanteras av en speglingskanal</info>
+        <instantpublish>Publicera sidor</instantpublish>
+        <name>Namn</name>
+        <nopageref>Värdet måste kunna tolkas som en sidreferens.</nopageref>
+        <pathnameproperty>Basera sidors katalognamn på följande egenskap</pathnameproperty>
+        <queuecreated>Posten skapades</queuecreated>
+        <queueid>Könummer</queueid>
+        <remotesite>Webbplats att spegla mot</remotesite>
+        <rootdir>Relativ rotsökväg</rootdir>
+        <selecttype>Välj typ av mottagare</selecttype>
+        <sitemap>En global översiktsfil</sitemap>
+        <tabqueue>Utgående kö</tabqueue>
+        <tabsettings>Information</tabsettings>
+        <targetdirectory>Målkatalog på servern</targetdirectory>
+        <topagelink>Sida att spegla mot</topagelink>
+        <usedirectoryweblinks>Inkludera inte filnamn i länkar</usedirectoryweblinks>
+        <verifychecksum>Kontrollera alla sidors checksumma vare gång</verifychecksum>
+        <xmloutputstyle>Skapa filformat</xmloutputstyle>
+        <xslfile>Sökväg till XSL-mall</xslfile>
+      </contentpublisheredit>
+      <convertpagetype>
+        <cancel>Avbryt</cancel>
+        <confirmconvertcheckbox>Jag vill ta bort dessa egenskaper permanent</confirmconvertcheckbox>
+        <convert>Konvertera</convert>
+        <converterror>Kunde ej konvertera sidan: </converterror>
+        <converterrorsameproperty>
+          En ny egenskap är mappad mot flera gamla egenskaper. Nya egenskaper får endast
+          mappas till en gammal egenskap.
+        </converterrorsameproperty>
+        <frompageproperties>Konvertera från egenskap</frompageproperties>
+        <frompagetype>Konvertera från sidtyp</frompagetype>
+        <heading>Konvertera sidor</heading>
+        <info>
+          Konverterar sidtypen för en eller flera sidor i trädstrukturen till en annan sidtyp.&lt;br/&gt;
+          &lt;b&gt;Obs!&lt;/b&gt; Denna operation kan ta bort innehåll permanent för att aldrig kunna återskapas.
+        </info>
+        <istesting>Testresultat</istesting>
+        <languageid>Sidans språkkodning</languageid>
+        <log>
+          <clearcache>Rensar cache för sidan {0}.</clearcache>
+          <clearcacheall>Rensar cachen för alla sidor.</clearcacheall>
+          <cntpages>{0} sidor konverterades.</cntpages>
+          <cntpagestest>{0} sidor skulle konverteras.</cntpagestest>
+          <commit>Transaktionen utfördes utan fel.</commit>
+          <convertedpagetype>{0} st sidor av sidtypen {1} konverterades till sidtypen {2}.</convertedpagetype>
+          <convertedpagetypetest>{0} st sidor av sidtypen {1} skulle konverteras till sidtypen {2}.</convertedpagetypetest>
+          <heading>Följande konverterades för sidan {0} (inklusive versioner).</heading>
+          <headingrecursive>Följande konverterades för sidan {0} (inklusive versioner och undersidor av vald sidtyp).</headingrecursive>
+          <headingrecursivetest>Följande skulle konverteras för sidan {0} (inklusive versioner och undersidor av vald sidtyp).</headingrecursivetest>
+          <headingtest>Följande skulle konverteras för sidan {0} (inklusive versioner).</headingtest>
+          <noproperty>Inga egenskaper av typen {0} funna.</noproperty>
+          <removeproperty>{0} st egenskaper av typen {1} permanent borttagna.</removeproperty>
+          <removepropertytest>{0} st egenskaper av typen {1} permanent borttagna.</removepropertytest>
+          <updateproperty>{0} st egenskaper av typen {1} konverterades till typen {2}.</updateproperty>
+          <updatepropertytest>{0} st egenskaper av typen {1} skulle konverteras till typen {2}.</updatepropertytest>
+        </log>
+        <nomatchingpages>Det finns inga undersidor av vald sidtyp. Den valda rotsidan har sidtyp {0}.</nomatchingpages>
+        <noselectedpage>Välj sida att konvertera från</noselectedpage>
+        <notaccepted>Användaren avbröt operationen</notaccepted>
+        <notmatchingpagetype>Den valda sidtypen matchar inte vald sida. Den valda sidan har sidtyp {0}.</notmatchingpagetype>
+        <ok>OK</ok>
+        <recursive>Konvertera vald sida och alla undersidor (av vald sidtyp)</recursive>
+        <remotepage>Konvertering av sidor stödjs bara för sidor från den lokala EPiServer CMS databasen.</remotepage>
+        <removelanguage>Ta bort språkkodning</removelanguage>
+        <removepropertywarning1>Se till att ingen för närvarande redigerar någon sida av sidtypen som skall konverteras.</removepropertywarning1>
+        <removepropertywarning2>Alla värden på egenskaperna som du väljer att ta bort permanent kommer att tas bort permanent från databasen och kommer inte att kunna återställas.</removepropertywarning2>
+        <removepropertywarningheading>Denna operation kan skada innehållet på webbplatsen!</removepropertywarningheading>
+        <removepropety>Ta bort egenskapen permanent</removepropety>
+        <requierdremovecomfirmation>Verifiering av att ta bort egenskaper permanent måste vara ifylld för att fortsätta</requierdremovecomfirmation>
+        <runtest>Provkör med fellogg</runtest>
+        <selectpageroot>Välj sidor att konvertera</selectpageroot>
+        <topageproperties>Konvertera till egenskap</topageproperties>
+        <topagetype>Konvertera till sidtyp</topagetype>
+      </convertpagetype>
+      <copypagetype>
+        <caption>	Gör kopia av</caption>
+        <heading>	Kopiera sidtyp</heading>
+        <info>		Välj sidtyp att kopiera.</info>
+      </copypagetype>
+      <databasejob>
+        <activecaption>		Aktiv</activecaption>
+        <archive>
+          <description>		Ställ in om arkivfunktionen är aktiv/inaktiv och hur ofta arkivering ska göras. Arkiveringsfunktionen flyttar sidor med passerat slutpubliceringsdatum till arkiveringsfolder om sådan angivits.</description>
+          <displayname>		Arkivfunktion</displayname>
+        </archive>
+        <delayedpublish>
+          <displayname>Publicering av tidsstyrda versioner</displayname>
+        </delayedpublish>
+        <logdate>			Datum</logdate>
+        <logmessage>Meddelande</logmessage>
+        <logstatus>			Status</logstatus>
+        <nextexecution>Nästa körningstillfälle</nextexecution>
+        <savemessage>		Inställningarna har sparats.</savemessage>
+        <schedulecaption>	Jobb ska köras var</schedulecaption>
+        <starterrormessage>	Ett fel inträffade när jobbet kördes: {0}</starterrormessage>
+        <startokmessage>	Jobbet kördes utan problem.</startokmessage>
+        <subscription>
+          <description>Prenumerationsjobbet skickar ut e-post till användare som prenumererar på uppdateringar i olika delar av webbplatsen.</description>
+          <displayname>Prenumeration</displayname>
+          <mailsubject>Senaste nytt</mailsubject>
+          <pagelinktext>Läs mer</pagelinktext>
+        </subscription>
+        <tabhistory>Historik</tabhistory>
+        <tabsettings>		Inställningar</tabsettings>
+        <testbutton>		Provkör manuellt</testbutton>
+        <wastebasket>
+          <description>	Ställ in om tömningen är aktiv/inaktiv och hur ofta arbetet skall utföras. Jobbet innebär att sidor som är äldre än 30 dagar kommer tas bort permanent ut papperskorgen.</description>
+          <displayname>Automatisk tömning av papperskorgen</displayname>
+        </wastebasket>
+      </databasejob>
+      <deletemembershipdialog>
+        <confirmdeleteuserorgroup>Vill du ta bort användaren/gruppen {0}?</confirmdeleteuserorgroup>
+        <deletemembershipaccessrights>Ta bort rättigheter för sidor</deletemembershipaccessrights>
+        <deletemembershippermissionrights>Ta bort rättigheter för åtkomst till funktioner</deletemembershippermissionrights>
+        <deletemembershipunifiedrights>Ta bort rättigheter för filer</deletemembershipunifiedrights>
+        <deletemembershipworkflowrights>Ta bort rättigheter för arbetsflöden</deletemembershipworkflowrights>
+        <deleterightsforrole>Ta bort rättigheter för gruppen </deleterightsforrole>
+        <deleterightsforuser>Ta bort rättigheter för användaren </deleterightsforuser>
+        <groupdeleted>Gruppen "{0}" har tagits bort</groupdeleted>
+        <heading>Ta bort användare/grupp</heading>
+        <info>Här kan du ta bort en användare eller grupp från systemet samt eventuella rättigheter för denna.</info>
+        <userdeletefailed>Borttagning av användaren {0} misslyckades.</userdeletefailed>
+        <userremoved>Användaren '{0}' har borttagits</userremoved>
+      </deletemembershipdialog>
+      <editdynprop>
+        <heading>	Redigera dynamiska egenskaper</heading>
+        <info>		Dynamiska egenskaper finns tillgängliga oavsett vilken sidtyp du använder.</info>
+      </editdynprop>
+      <editdynpropfield>
+        <advancedcaption see="/admin/editpagetypefield/advancedcaption" />
+        <editcaption see="/admin/editpagetypefield/editcaption" />
+        <heading>	Redigera dynamisk egenskap</heading>
+        <headingnew>Skapa ny dynamisk egenskap</headingnew>
+        <helptextcaption see="/admin/editpagetypefield/helpcaption" />
+        <info />
+        <longstringsettingscaption see="/admin/editpagetypefield/editorhelp" />
+        <namecaption see="/admin/editpagetypefield/namecaption" />
+        <tabinfo>	Information</tabinfo>
+        <typecaption see="/admin/editpagetypefield/typecaption" />
+      </editdynpropfield>
+      <editlanguage>
+        <charsetcaption>		Teckenuppsättning</charsetcaption>
+        <currentsystemdefaultcaption>Nuvarande standardkodning för systemet</currentsystemdefaultcaption>
+        <fontcharsetcaption>	Font för editorn</fontcharsetcaption>
+        <heading>				Språkkodning</heading>
+        <info>&lt;b&gt;VARNING!&lt;/b&gt; Felaktiga ändringar på den här sidan kan leda till att din webbplats slutar fungera.</info>
+        <languageidcaption>		Språkkod</languageidcaption>
+        <languagenamecaption>	Lokalt språknamn</languagenamecaption>
+        <languagenameencaption>	Engelskt språknamn</languagenameencaption>
+        <localecaption>			Formattering av datum/tid</localecaption>
+        <mailcodepagecaption>	Teckenuppsättning för e-post</mailcodepagecaption>
+        <setsystemdefaultcaption>Sätt som systemets standardkodning</setsystemdefaultcaption>
+      </editlanguage>
+      <editlanguagebranch>
+        <cantsave>Kan inte spara webbplatsspråket.</cantsave>
+        <confirmdelete>Är du säker på att du vill ta bort språket?</confirmdelete>
+        <customiconcaption>Mallikon</customiconcaption>
+        <customiconhelp>Sökväg till egendefinierad bild att använda på mallsidor. Måste starta med "/" eller "~/".</customiconhelp>
+        <enabledcaption>Aktiv</enabledcaption>
+        <enabledlanguageexception>Om du har globaliseringen aktiverad måste du alltid ha minst ett aktivt språk</enabledlanguageexception>
+        <errorcantdelteusedlanguage>Språket används i språkinställningar på följande sidor och kan inte tas bort: {0}.</errorcantdelteusedlanguage>
+        <errorlanguageonpage>Språket kan inte tas bort eftersom det används på följande sidor: {0}.</errorlanguageonpage>
+        <headingnew>Skapa nytt webbplatsspråk</headingnew>
+        <iconcaption>Ikon</iconcaption>
+        <info>Definera ett nytt webbplatsspråk som ska kunna visas för besökare på din webbplats.</info>
+        <invalidiconpath>Sökvägen för mallikonen måste börja med "/" eller "~/".</invalidiconpath>
+        <namecaption>Namn</namecaption>
+        <urlsegmentcaption>Prefix för webbadress</urlsegmentcaption>
+        <warningchangelanguage>Varning! Språkkoden används på flera platser i systemet, t.ex. för länkar och ersättningsspråk. Ändra endast denna inställning vid initial konfigurering av webbplatsen.</warningchangelanguage>
+      </editlanguagebranch>
+      <editlanguagebranches>
+        <addlanguage>Lägg till språk</addlanguage>
+        <customiconcaption>Mallikon</customiconcaption>
+        <enabledcaption>Aktiv</enabledcaption>
+        <heading>Hantera webbplatsens språk</heading>
+        <iconcaption>Ikon</iconcaption>
+        <idcaption>Språkkod</idcaption>
+        <info>Definera de språk som ska kunna visas för besökare på din webbplats.</info>
+        <namecaption>Namn</namecaption>
+        <registered>Registrerad</registered>
+        <registeredcaption>Redan registrerad</registeredcaption>
+        <systemiconcaption>Systemikon</systemiconcaption>
+      </editlanguagebranches>
+      <editpagetype>
+        <addproperty>			Lägg till egenskap</addproperty>
+      </editpagetype>
+      <editpagetypebase>
+        <alltypeavailable>	Alla sidtyper är tillgängliga</alltypeavailable>
+        <archivepagelinkcaption see="/pagetypes/common/property[@name='PageArchiveLink']/caption" />
+        <archivepagelinkhelp see="/pagetypes/common/property[@name='PageArchiveLink']/help" />
+        <availablecaption>	Tillgänglig i redigeraläge</availablecaption>
+        <childorderrulecaption see="/pagetypes/common/property[@name='PageChildOrderRule']/caption" />
+        <childorderrulehelp see="/pagetypes/common/property[@name='PageChildOrderRule']/help" />
+        <defaultidcaption see="#usecustomdefaultcaption" />
+        <defaultidhelp see="#usecustomdefaulthelp" />
+        <defaultnamecaption see="/pagetypes/common/property[@name='PageName']/caption" />
+        <defaultnamehelp see="/pagetypes/common/property[@name='PageName']/help" />
+        <defaultstartpublishcaption>Startpubliceringsdatum relativt från när sidan skapas</defaultstartpublishcaption>
+        <defaultstoppublishcaption>	Slutpubliceringsdatum relativt från när sidan skapas</defaultstoppublishcaption>
+        <delete>			Vill du ta bort den här sidtypen ?</delete>
+        <descriptioncaption>Beskrivning</descriptioncaption>
+        <editpagecaption>	Anpassad redigeringssida</editpagecaption>
+        <filenamecaption>		Filnamn</filenamecaption>
+        <filenameerror>Filnamnet ska vara relativt roten på siten, starta med '/' och avsluta med en .aspx fil, till exempel '/templates/Page.aspx'.</filenameerror>
+        <frameidcaption see="/pagetypes/common/property[@name='PageFrameID']/caption" />
+        <frameidhelp see="/pagetypes/common/property[@name='PageFrameID']/help" />
+        <heading>			Redigera "{0}"</heading>
+        <headingdeleted>	Sidtypen har raderats</headingdeleted>
+        <headingdeletefailed>		Sidtypen kunde inte tas bort - det finns sidor av denna typ</headingdeletefailed>
+        <headingnew>		Skapa ny sidtyp</headingnew>
+        <headingsaved>		Sidtypen har sparats</headingsaved>
+        <info>				Här redigerar du grundläggande information om sidtypen.</info>
+        <namecaption>		Namn</namecaption>
+        <peerordercaption see="/pagetypes/common/property[@name='PagePeerOrder']/caption" />
+        <peerorderhelp see="/pagetypes/common/property[@name='PagePeerOrder']/help" />
+        <sortordercaption>	Sorteringsindex</sortordercaption>
+        <tabdefaultvalues>			Standardvärden</tabdefaultvalues>
+        <tabinfo>					Information</tabinfo>
+        <tabtypetotype>				Tillgängliga sidtyper</tabtypetotype>
+        <typetotype>		Välj vilka sidtyper som får skapas under den här sidtypen</typetotype>
+        <usecustomdefaultcaption>Ange anpassade standardvärden för sidor som använder sidtypen</usecustomdefaultcaption>
+        <usecustomdefaulthelp>		Använd anpassade standardvärden om du inte vill att dessa sätts automatiskt av systemet</usecustomdefaulthelp>
+        <visibleinmenucaption see="/pagetypes/common/property[@name='PageVisibleInMenu']/caption" />
+        <visibleinmenuhelp see="/pagetypes/common/property[@name='PageVisibleInMenu']/help" />
+      </editpagetypebase>
+      <editpagetypefield>
+        <advancedcaption>			Placera under flik</advancedcaption>
+        <confirmdelete>Är du säker på att du vill ta bort egenskapen?</confirmdelete>
+        <defaultcaption>			Standardvärde</defaultcaption>
+        <displayeditui>Visa i Redigeraläge</displayeditui>
+        <editcaption>				Redigeringsrubrik</editcaption>
+        <editoraboutcaption>			Om...</editoraboutcaption>
+        <editorboldcaption>			Fet stil</editorboldcaption>
+        <editorbulletscaption>		Punktlista</editorbulletscaption>
+        <editorcellpropertiescaption>	Cellegenskaper...</editorcellpropertiescaption>
+        <editorcellsubmenucaption>Cell</editorcellsubmenucaption>
+        <editorcentercaption>		Centrera</editorcentercaption>
+        <editorcopycaption>				Kopiera</editorcopycaption>
+        <editorcutcaption>				Klipp ut</editorcutcaption>
+        <editordynamiccontentcaption>Infoga dynamiskt innehåll</editordynamiccontentcaption>
+        <editordynamiccontentmenucaption>Dynamiskt innehåll...</editordynamiccontentmenucaption>
+        <editorfindcaption>			Sök</editorfindcaption>
+        <editorfindmenucaption>			Sök text...</editorfindmenucaption>
+        <editorfontcaption>			Tecken</editorfontcaption>
+        <editorfontmenucaption>			Tecken...</editorfontmenucaption>
+        <editorformatparagraphcaption>	Formatera stycke</editorformatparagraphcaption>
+        <editorhelp>				Egenskaper för Editorn - avmarkera alla för att använda textarea istället för Editorn</editorhelp>
+        <editorhyperlinkpropertiescaption>Länkegenskaper...</editorhyperlinkpropertiescaption>
+        <editorimagepropertiescaption>Bildegenskaper...</editorimagepropertiescaption>
+        <editorinsertanchorcaption>	Infoga bokmärke</editorinsertanchorcaption>
+        <editorinsertanchormenucaption>	Bokmärke...</editorinsertanchormenucaption>
+        <editorinsertdoccaption>	Infoga dokument</editorinsertdoccaption>
+        <editorinsertdocmenucaption>	Dokument...</editorinsertdocmenucaption>
+        <editorinserthrcaption>Horisontell linje</editorinserthrcaption>
+        <editorinsertimagecaption>	Infoga bild från fil</editorinsertimagecaption>
+        <editorinsertimagemenucaption>	Bild...</editorinsertimagemenucaption>
+        <editorinsertsubmenucaption>	Infoga</editorinsertsubmenucaption>
+        <editorinserttablecaption>	Infoga tabell</editorinserttablecaption>
+        <editorinserttablemenucaption>	Tabell...</editorinserttablemenucaption>
+        <editorinserturlcaption>	Infoga hyperlänk</editorinserturlcaption>
+        <editorinserturlmenucaption>	Hyperlänk...</editorinserturlmenucaption>
+        <editoritaliccaption>		Kursiv stil</editoritaliccaption>
+        <editorleftcaption>			Vänsterjustera</editorleftcaption>
+        <editorloading>Laddar editor...</editorloading>
+        <editormaximizercaption>Maximera/återställ editor</editormaximizercaption>
+        <editornumbercaption>		Numrerad lista</editornumbercaption>
+        <editorpastecaption>			Klistra in</editorpastecaption>
+        <editorpasteunformattedcaption>	Klistra in oformaterat</editorpasteunformattedcaption>
+        <editorquotecaption>Infoga citat</editorquotecaption>
+        <editorquotemenucaption>Citat...</editorquotemenucaption>
+        <editorredocaption>			Gör om</editorredocaption>
+        <editorrefreshcaption>		Uppdatera</editorrefreshcaption>
+        <editorremoveformattingcaption>	Tag bort formatering</editorremoveformattingcaption>
+        <editorrightcaption>		Högerjustera</editorrightcaption>
+        <editorselectallcaption>Allt</editorselectallcaption>
+        <editorselectcontractcaption>Minska</editorselectcontractcaption>
+        <editorselectexpandcaption>Utöka</editorselectexpandcaption>
+        <editorselectnextcaption>Nästa</editorselectnextcaption>
+        <editorselectpreviouscaption>Föregående</editorselectpreviouscaption>
+        <editorselectsectioncaption>Stycke</editorselectsectioncaption>
+        <editorselectsubmenucaption>Markera</editorselectsubmenucaption>
+        <editorselecttablecaption>Tabell</editorselecttablecaption>
+        <editorselecttablecellcaption>Cell</editorselecttablecellcaption>
+        <editorselecttablecolumncaption>Kolumn</editorselecttablecolumncaption>
+        <editorselecttablerowcaption>Rad</editorselecttablerowcaption>
+        <editorspellcheckcaption>		Stavningskontroll</editorspellcheckcaption>
+        <editorspellcheckmenucaption>	Stavningskontroll...</editorspellcheckmenucaption>
+        <editortabledeletecolscaption>		Tag bort kolumner</editortabledeletecolscaption>
+        <editortabledeleterowscaption>		Tag bort rader</editortabledeleterowscaption>
+        <editortabledeletetablecaption>		Tag bort tabell</editortabledeletetablecaption>
+        <editortableinsertcolaftercaption>	Infoga kolumn efter</editortableinsertcolaftercaption>
+        <editortableinsertcolbeforecaption>	Infoga kolumn före</editortableinsertcolbeforecaption>
+        <editortableinsertrowaftercaption>	Infoga rad efter</editortableinsertrowaftercaption>
+        <editortableinsertrowbeforecaption>	Infoga rad före</editortableinsertrowbeforecaption>
+        <editortablemergecellscaption>		Slå ihop celler</editortablemergecellscaption>
+        <editortablepropertiescaption>	Tabellegenskaper...</editortablepropertiescaption>
+        <editortablesplithorizontalcaption>	Dela cell horisontellt</editortablesplithorizontalcaption>
+        <editortablesplitverticalcaption>	Dela cell vertikalt</editortablesplitverticalcaption>
+        <editortablesubmenucaption>		Tabell</editortablesubmenucaption>
+        <editortogglehtmlcaption>	Visa/Dölj HTML-kod</editortogglehtmlcaption>
+        <editortogglehtmlmenucaption>	Visa källa</editortogglehtmlmenucaption>
+        <editorunderlinecaption>	Understrykning</editorunderlinecaption>
+        <editorundocaption>			Ångra</editorundocaption>
+        <heading>					Redigera egenskap</heading>
+        <headingnew>				Skapa ny egenskap</headingnew>
+        <helpcaption>				Hjälptext</helpcaption>
+        <info />
+        <inheritcaption>			Ärver värde</inheritcaption>
+        <inuseproperty>En egenskap med namn "{0}" existerar redan</inuseproperty>
+        <languagespecificcaption>Unikt värde per språk</languagespecificcaption>
+        <namecaption>				Namn</namecaption>
+        <nodefaultcaption>			Inget standardvärde</nodefaultcaption>
+        <objectcaption>				Speciell edithantering via objekt</objectcaption>
+        <requiredcaption>			Värde måste anges</requiredcaption>
+        <reservedproperty>"{0}" är ett reserverat namn för meta data egenskaper</reservedproperty>
+        <searchablecaption>			Sökbar egenskap</searchablecaption>
+        <tabinfo>					Information</tabinfo>
+        <typeappsettings>Dynamisk lista (ett val)</typeappsettings>
+        <typeappsettingsmultiple>Dynamisk lista (flera val)</typeappsettingsmultiple>
+        <typeboolean>				Vald/ej vald</typeboolean>
+        <typecaption>				Typ</typecaption>
+        <typecategory>				Kategoriurval</typecategory>
+        <typedate>					Datum/Tid</typedate>
+        <typedocumenturl>URL till dokument</typedocumenturl>
+        <typefilesortorder>Sorteringsordning för filer</typefilesortorder>
+        <typefloatnumber>			Flyttal</typefloatnumber>
+        <typeform>Formulär</typeform>
+        <typeframe>Ram</typeframe>
+        <typeimageurl>URL till bild</typeimageurl>
+        <typelanguage>Språk</typelanguage>
+        <typelanguagebranch>Sidspråk (ett val)</typelanguagebranch>
+        <typelanguagebranchlist>Sidspråk (flera val)</typelanguagebranchlist>
+        <typelinkcollection>Länklista</typelinkcollection>
+        <typelongstring>			Lång sträng (&gt;255)</typelongstring>
+        <typenumber>				Heltal</typenumber>
+        <typepagelink>				Sida</typepagelink>
+        <typepagereference>Sida</typepagereference>
+        <typepagetype>				Sidtyp</typepagetype>
+        <typepassword>Lösenord</typepassword>
+        <typeselector>Egenskap på sidan</typeselector>
+        <typesortorder>Sorteringsordning för sidor</typesortorder>
+        <typestring>				Sträng (&lt;= 255)</typestring>
+        <typeuilanguage>Systemspråk</typeuilanguage>
+        <typeurl>URL till sida/extern adress</typeurl>
+        <typeweekday>Veckodag</typeweekday>
+        <typexform>XForms-formulär</typexform>
+        <typexhtmlstring>			Xhtml-sträng (&gt;255)</typexhtmlstring>
+      </editpagetypefield>
+      <edituser>
+        <bademailadress>E-postadressen är inte giltig</bademailadress>
+        <changepassword>		Ändra lösenordet</changepassword>
+        <charsnotallowed>Gruppnamn/användarnamn är inte giltigt. Följande tecken är inte tillåtna: {0}</charsnotallowed>
+        <confirmdeleteuser>		Vill du ta bort användaren/gruppen {0} ?</confirmdeleteuser>
+        <confirmremoveuser>Ta bort {0} från grupp</confirmremoveuser>
+        <duplicateemailaddress>Användarkontot tillåter inte dubletter av e-postadresser</duplicateemailaddress>
+        <duplicateprovideruserkey>Användarkontot kräver unika nycklar</duplicateprovideruserkey>
+        <duplicateusername>Användarnamnet finns redan registrerat</duplicateusername>
+        <enterpassword>			Skriv lösenordet</enterpassword>
+        <invalidemail>Ogiltig e-postadress</invalidemail>
+        <invalidpassword>Lösenordet är ogiltigt, minst antal tecken: {0}, minst antal ej alfanumeriska tecken: {1}.</invalidpassword>
+        <invalidpasswordanswer>Svar på lösenordsfråga är obligatoriskt</invalidpasswordanswer>
+        <invalidpasswordquestion>Lösenordsfråga är obligatoriskt</invalidpasswordquestion>
+        <invalidprovideruserkey>Nyckeln för ett användarkontot är av felaktig typ</invalidprovideruserkey>
+        <invalidusername>Ogiltigt användarnamn</invalidusername>
+        <keeppassword>			Behåll gamla lösenordet</keeppassword>
+        <mailsent>				Ett e-postmeddelande har gått iväg till användaren</mailsent>
+        <maintabname>			Inställningar</maintabname>
+        <missmatchpassword>'Lösenord' och 'Bekräfta lösenord' är inte samma</missmatchpassword>
+        <notificationfailed>	E-postutskicket misslyckades på grund av att alla inställningar inte är konfigurerade under inställningar för extranätanvändare</notificationfailed>
+        <notificationquestion>	Användaren kommer att meddelas automatiskt via e-post att kontot är aktiverat.</notificationquestion>
+        <passwordmismatch>		Ej samma lösenord i bägge fälten</passwordmismatch>
+        <providererror>Tjänsten för användarhantering angav fel vid registrering</providererror>
+        <repeatpassword>		Repetera lösenordet</repeatpassword>
+        <usercreated>Skapad datum</usercreated>
+        <userdeleted>			Användaren/gruppen har tagits bort</userdeleted>
+        <userguisettings>
+          <displayname>Visningsalternativ</displayname>
+          <settings>
+            <legendlanguagesettings>Språkinställningar</legendlanguagesettings>
+            <statusexpired>Sidan har tidsstyrd publicering där tiden har passerat</statusexpired>
+            <statuslanguagefallback>Sidan saknas på det aktuella språket och kommer att visas på ett annat språk. Eventuell ikon för det andra språket används i första hand som indikering.</statuslanguagefallback>
+            <statuslanguagemissing>Sidan saknas på det aktuella språket och kommer inte att visas</statuslanguagemissing>
+            <statusnew>Ny sida skapad inom senaste 48 timmarna</statusnew>
+            <statusnotpublished>Sidan är ej publicerad</statusnotpublished>
+            <statusnotstarted>Sidan har tidsstyrd publicering och har inte publicerats ännu</statusnotstarted>
+            <statusnotvisibleinmenu>Sidan visas inte i menyer</statusnotvisibleinmenu>
+            <statuspageprovider>Sidan är inte en lokal EPiServer CMS sida. Sidtillhandahållaren visar en ikon om någon har definierats.</statuspageprovider>
+            <statusreadonly>Du har inte rättighet att ändra sidan</statusreadonly>
+            <toolbar>Verktygsfält</toolbar>
+            <treesymbols>Symboler i trädstrukturen</treesymbols>
+            <usedefaultsettings>Använd standardinställningar</usedefaultsettings>
+            <usesystemlanguage>Använd systemspråk</usesystemlanguage>
+          </settings>
+        </userguisettings>
+        <userlastlogin>Senaste login datum</userlastlogin>
+        <usernotfound>Användaren '{0}' hittades ej. Användaren kan ha tagits bort av en annan administratör.</usernotfound>
+        <usernotsaved>			Användaren/gruppen kunde inte sparas</usernotsaved>
+        <userrejected>Registrering av användarkontot nekades</userrejected>
+        <usersaved>				Användaren/gruppen är sparad</usersaved>
+        <usersuccess>Användarkontot är sparat</usersuccess>
+      </edituser>
+      <exportdata>
+        <abortexport>Avbryt export</abortexport>
+        <description />
+        <displayname>Exportera data</displayname>
+        <errorconnectiontoserver>Kopplingen till servern har blivit avbruten. Var god försök igen.</errorconnectiontoserver>
+        <errorsoccured>Följande fel inträffade</errorsoccured>
+        <exportbutton>Exportera</exportbutton>
+        <exportcategories>Exportera kategorier</exportcategories>
+        <exportdownloadexportfile>Ladda ner exportfilen</exportdownloadexportfile>
+        <exportdynamicpropertydefinitions>Exportera dynamiska egenskapsdefinitioner</exportdynamicpropertydefinitions>
+        <exportfiles>Exportera filer</exportfiles>
+        <exportframes>Exportera ramar</exportframes>
+        <exporthasbeenaborted>Exporten har blivit avbruten</exporthasbeenaborted>
+        <exporthaserrortext>Exporten misslyckades, vill du ladda ner exportfilen ändå?</exporthaserrortext>
+        <exportinprogressimagetooltip>Export av data utförs...</exportinprogressimagetooltip>
+        <exportpagedependencies>Exportera automatiskt kopplade sidtyper</exportpagedependencies>
+        <exportpagefiles>Exportera filer som sidorna länkar till</exportpagefiles>
+        <exportpagelanguages>Exportera globaliserade sidor</exportpagelanguages>
+        <exportpages>Exportera sidor</exportpages>
+        <exportpagetypes>Exportera sidtyper</exportpagetypes>
+        <exportsucceeded>Exporten slutfördes utan fel eller varningar</exportsucceeded>
+        <exporttabdefinitions>Exportera flikar</exporttabdefinitions>
+        <gobacktoexportdata>Tillbaka till Exportera DataTillbaka till Exportera data</gobacktoexportdata>
+        <heading>Exportera data</heading>
+        <info>Exportera data från en EPiServer CMS till en annan.</info>
+        <pagecount>Antal exporterade sidor: </pagecount>
+        <selectpage>Välj del av trädet</selectpage>
+        <testexportbutton>Provkör med fellogg</testexportbutton>
+        <warningsoccured>Följande varningar genererades</warningsoccured>
+      </exportdata>
+      <filebrowser>
+        <heading>Välj fil</heading>
+      </filebrowser>
+      <filemanagement>
+        <description>Ladda upp och organisera filer och kataloger.</description>
+        <displayname>Filhantering</displayname>
+      </filemanagement>
+      <frames>
+        <confirmdelete>Är du säker på att du vill ta bort ramen "[name]"?</confirmdelete>
+        <duplicateframeserror>Du kan inte ha flera ramar med samma namn</duplicateframeserror>
+        <heading>			Redigera ram</heading>
+        <info>				Definiera de ramar som din webbplats använder. Dessa kommer att vara tillgängliga som alternativ för "Målram" vid olika typer av länkningar.</info>
+        <tabledescription>	Beskrivning</tabledescription>
+        <tablename>			Ramnamn</tablename>
+      </frames>
+      <headings>
+        <confirmdelete>Är du säker på att du vill ta bort fliken "[name]"?</confirmdelete>
+        <heading>			Redigera flikar</heading>
+        <info>				Definiera de flikar som finns tillgängliga i under fliken redigera. När du skapar eller redigerar en egenskap kan du välja under vilken flik som egenskapen ska presenteras.</info>
+        <tableaccesslevel>	Kräver behörighetsnivå</tableaccesslevel>
+        <tablename>			Flik</tablename>
+        <tablesortindex>	Sorteringsindex</tablesortindex>
+        <tablevisible>		Synlig</tablevisible>
+      </headings>
+      <importdata>
+        <abortimport>Avbryt import</abortimport>
+        <beginimport>Starta importen</beginimport>
+        <categorycount>Antal kategorier</categorycount>
+        <createnotsupported>Sidtillhandahållaren som hanterar den valda sidan stödjer inte skapande av sidor.</createnotsupported>
+        <description />
+        <displayname>Importera data</displayname>
+        <dynamicpropertydefinitioncount>Antal dynamiska egenskapdefinitioner</dynamicpropertydefinitioncount>
+        <errorconnectiontoserver>Kopplingen till servern har blivit avbruten. Var god och försök igen</errorconnectiontoserver>
+        <errorsoccured>Följande fel inträffade</errorsoccured>
+        <filecount>Antal filer</filecount>
+        <framecount>Antal ramar</framecount>
+        <gobacktoimportdata>Tillbaka till Importera data</gobacktoimportdata>
+        <heading>Importera data</heading>
+        <importcompleted>Importen har slutförts</importcompleted>
+        <importhasbeenaborted>Importen har blivit avbruten</importhasbeenaborted>
+        <importinprogressimagetooltip>Import av data utförs...</importinprogressimagetooltip>
+        <importsucceeded>Importen lyckades</importsucceeded>
+        <info>Importera data från en annan EPiServer CMS.</info>
+        <nofileuploaded>Ingen fil laddades upp</nofileuploaded>
+        <of>av</of>
+        <pagecount>Antal sidor</pagecount>
+        <pagetypecount>Antal sidtyper</pagetypecount>
+        <selectfile>Välj en exportfil att ladda upp</selectfile>
+        <selectpageroot>Välj destination för sidor</selectpageroot>
+        <show>Visa</show>
+        <tabdefinitioncount>Antal flikar</tabdefinitioncount>
+        <testsucceeded>Importfilen verifierades och inga fel eller varningar genererades</testsucceeded>
+        <uploadfile>Ladda upp och verifiera fil</uploadfile>
+        <warningsoccured>Följande varningar genererades</warningsoccured>
+        <verifyimportfile>Verifiera fil</verifyimportfile>
+      </importdata>
+      <license>
+        <heading>Licensinformation</heading>
+        <info />
+        <licensedcompany>Licensierad till företag</licensedcompany>
+        <licensedto>Licensierad till person</licensedto>
+        <licenseid>Licens ID</licenseid>
+        <licenserestrictions>Begränsningar</licenserestrictions>
+        <newfileinstalled>Den nya licensfilen har installerats</newfileinstalled>
+        <selectfile>Välj ny licensfil</selectfile>
+        <tabinfo>Information</tabinfo>
+        <tabinstallnew>Installera en ny licens</tabinstallnew>
+        <uploadlicense>Ladda upp och verifiera licens</uploadlicense>
+      </license>
+      <menu>
+        <admingroups>			Administrera grupper</admingroups>
+        <archive>				Arkivfunktion</archive>
+        <cleanupupload see="/admin/cleanupupload/heading" />
+        <convertpagetype>Konvertera sidor</convertpagetype>
+        <copypagetype>			Kopiera sidtyp</copypagetype>
+        <createuser>			Skapa användare</createuser>
+        <databasemaintenance>	Databasunderhåll</databasemaintenance>
+        <datatypes>				Redigera egenskapstyper</datatypes>
+        <defaultgroup see="/admin/registrationsettings/heading" />
+        <editcategories>		Redigera kategorier</editcategories>
+        <editdynamicproperty>	Dynamiska egenskaper</editdynamicproperty>
+        <editframes>			Redigera ramar</editframes>
+        <editheadings>			Redigera flikar</editheadings>
+        <editlanguage>Språkkodning</editlanguage>
+        <editlanguagebranches>Hantera webbplatsens språk</editlanguagebranches>
+        <editremotesite>		Externa webbplatser</editremotesite>
+        <language>				Språk</language>
+        <license>				Licensinformation</license>
+        <newpagetype>			Skapa ny sidtyp</newpagetype>
+        <pagetype>				Sidtyper</pagetype>
+        <plugins>				Verktyg</plugins>
+        <productupdate>			Produktuppdateringar</productupdate>
+        <scheduledjobs>			Schemalagda jobb</scheduledjobs>
+        <searchuser>			Sök användare/grupp</searchuser>
+        <security>				Rättigheter</security>
+        <setloglevel>			Sätt loggnivå</setloglevel>
+        <setpermission>			Åtkomst till funktioner</setpermission>
+        <setsecurity>			Sätt rättigheter</setsecurity>
+        <settings>				Systeminställningar</settings>
+        <systemadministration>	Systemadministration</systemadministration>
+        <systemmessages>		Visa systemmeddelanden</systemmessages>
+        <tooltipedit>			Redigeraläge</tooltipedit>
+        <tooltiphelp>			Hjälp</tooltiphelp>
+        <tooltipview>			Visaläge</tooltipview>
+        <wastebasket>			Tömning av papperskorg</wastebasket>
+        <workflowdefinition>	Arbetsflöden</workflowdefinition>
+        <workflowdefinitionedit>Redigera arbetsflöde</workflowdefinitionedit>
+        <workflowdefinitionnew>	Skapa nytt arbetsflöde</workflowdefinitionnew>
+      </menu>
+      <menuheadings>
+        <accessrights see="/admin/menu/security" />
+        <generalsettings>Generella inställningar</generalsettings>
+        <managepagetypes>Hantera sidtyper</managepagetypes>
+        <nopagetypestext>Inga sidtyper har definierats</nopagetypestext>
+        <noscheduledjobstext>Inga schemalagda jobb har definierats</noscheduledjobstext>
+        <notoolsettingstext>Inga verktygsinställningar har definierats</notoolsettingstext>
+        <notoolstext>Inga verktyg har definierats</notoolstext>
+        <pagetypes see="/admin/menu/pagetype" />
+        <pagetypesorting>
+          <sortalphabetically>Sortera alfabetiskt</sortalphabetically>
+          <sortbyindex>Sortera efter index</sortbyindex>
+        </pagetypesorting>
+        <scheduledjobs see="/admin/menu/scheduledjobs" />
+        <security>Säkerhet</security>
+        <systemadministration see="/admin/menu/systemadministration" />
+        <systemconfiguration>Systemkonfiguration</systemconfiguration>
+        <tools see="/admin/menu/plugins" />
+        <toolsettings>Verktygsinställningar</toolsettings>
+      </menuheadings>
+      <menutabs>
+        <admin>Admin</admin>
+        <config>Konfig</config>
+        <pagetypes see="/pagetypes/common/property[@name='PageTypeName']/caption" />
+      </menutabs>
+      <pagedefinitiontype>
+        <heading>				Redigera egenskapstyper</heading>
+        <info>					Här kan du definiera nya typer att använda som egenskaper på sidor i EPiServer CMS.</info>
+      </pagedefinitiontype>
+      <pagedefinitiontypeedit>
+        <assemblynamecaption>Namn på assemblyn</assemblynamecaption>
+        <assemblynamehelp>Namn på assemblyn klassen ligger i (ex EPiServerSample)</assemblynamehelp>
+        <confirmdelete>Är du säker på att du vill ta bort egenskapstypen?</confirmdelete>
+        <duplicatecustomproperty>Det finns redan egenskap med namnet '{0}'.</duplicatecustomproperty>
+        <heading>				Redigera datatyp</heading>
+        <headingnew>			Skapa ny datatyp</headingnew>
+        <info />
+        <namecaption>Namn</namecaption>
+        <namehelp>Ett valfritt namn på egenskapstypen</namehelp>
+        <property name="property">
+          <caption>	Egenskapstyp</caption>
+        </property>
+        <propertycaption>Bastyp</propertycaption>
+        <tabinfo>				Definition</tabinfo>
+        <typeinuse>Denna typ kan inte tas bort då den används av följande egenskaper:</typeinuse>
+        <typenamecaption>Klassnamn</typenamecaption>
+        <typenamehelp>Klassnamn samt sökväg till klassen (ex. EPiServer.SpecializedProperties.PropertyPassword)</typenamehelp>
+      </pagedefinitiontypeedit>
+      <permission>
+        <editpermission>Användare/grupper som har rättighet "{0}"</editpermission>
+        <heading>Åtkomst till funktioner</heading>
+        <info>	Ge användare/grupper tillgång till specifika funktioner i EPiServer CMS.</info>
+        <sidsaved>		Nya inställningar för funktionen har sparats</sidsaved>
+      </permission>
+      <plugin>
+        <displayname see="/admin/plugin/heading" />
+        <editorpluginattribute>Editor</editorpluginattribute>
+        <guipluginattribute>Användargränssnitt</guipluginattribute>
+        <heading>Modulhantering</heading>
+        <info>Listan nedan visar moduler som har registrerats i EPiServer CMS. Klicka på namnet för att se detaljer om en enskild plug-in.</info>
+        <overviewtab>Översikt</overviewtab>
+        <pagedefinitiontypepluginattribute>Självregistrerande egenskapstyper</pagedefinitiontypepluginattribute>
+        <pagepluginattribute>Sidhanterare</pagepluginattribute>
+        <plugintab>Moduler</plugintab>
+        <scheduledpluginattribute>Administration för schemalagda jobb</scheduledpluginattribute>
+        <subscriptionpluginattribute>Prenumeration</subscriptionpluginattribute>
+        <workflowpluginattribute>Arbetsflöden</workflowpluginattribute>
+      </plugin>
+      <pluginadminsettings>
+        <nosettings>Denna modul har inga inställningar</nosettings>
+      </pluginadminsettings>
+      <pluginedit>
+        <configurationtab>Inställningar</configurationtab>
+        <heading>Redigera inställningar för modul</heading>
+        <info />
+        <overviewtab>Översikt</overviewtab>
+      </pluginedit>
+      <plugingrouplist>
+        <company>Företag</company>
+        <description>Beskrivning</description>
+        <license>Licensiering</license>
+        <moreinfo>Mer information</moreinfo>
+        <name>Namn</name>
+        <version>Version</version>
+      </plugingrouplist>
+      <pluginlist>
+        <description>Beskrivning</description>
+        <enabled>Aktiverad</enabled>
+        <license>Licensiering</license>
+        <name>Namn</name>
+        <plugin>Moduler</plugin>
+      </pluginlist>
+      <rebuildurlsegments>
+        <description>Byter ut sidors namn i adressfältet för att bygga upp adresser som återspeglar webbplatsens struktur</description>
+        <displayname>Bygg om namn för webbadresser</displayname>
+        <heading>Byt ut sidors namn i webbadress</heading>
+        <pages>Antal genomsökta sidor</pages>
+        <pagestoreplace>Åtgärdade sidor</pagestoreplace>
+        <rebuild>Bygg om länkar</rebuild>
+        <rebuildnonempty>Bygg om alla sidors namn i webbadress (även redan existerande)</rebuildnonempty>
+        <rebuildwarning>
+          {0} sidor har inte angivna webbadresser. Webbadressen för dessa sidor kommer att skapas med\n
+          sididentitet, till exempel http://.../10/40 kommer att länka till sidan.\n
+          Vi rekommenderar att du bygger om namn för dessa webbadresser med verktyget "Bygg om namn\n
+          för webbadresser" innan du byter till webbadresser som återspeglar webbplatsens struktur.\n\n
+
+          Klicka på OK för att använda webbadresser som återspeglar webbplatsens struktur.\n
+        </rebuildwarning>
+        <status>Status</status>
+        <statusended>Inaktiv</statusended>
+        <statusstarted>Byter ut länkar</statusstarted>
+      </rebuildurlsegments>
+      <remotesite>
+        <heading>Externa webbplatser</heading>
+        <info>Registrerade externa webbplatser för utgående trafik samt signerad inkommande och utgående trafik. Vilka rättigheter och därmed hurvida anonyma webbplatser som skall kunna kommunicera med denna webbplats konfigureras i web.config.</info>
+        <localsite>Lokalt namn på webbplatsen</localsite>
+        <name>Namn</name>
+        <ping>Testa anslutning</ping>
+        <pingfalse>Webbplatsen "{0}" svarade men accepterade inte användaren</pingfalse>
+        <pingtrue>Webbplatsen "{0}" svarade samt accepterade användaren</pingtrue>
+        <url>URL</url>
+      </remotesite>
+      <remotesiteedit>
+        <allowurllookup>Tillåt att namn anges i en url (tex page.aspx?id=30__mysite)</allowurllookup>
+        <confirmdelete>Är du säker på att du vill ta bort den externa webbplatsen?</confirmdelete>
+        <domain>Domän</domain>
+        <heading>Redigera extern webbplats</heading>
+        <info>Tänk på att namnet inte bör ändras om det redan används i denna webbplats.</info>
+        <istrusted>Tillåt agera som "front-end"</istrusted>
+        <istrustedwarning>Säkerhetsvarning! Denna webbplats kommer kunna läsa ut assemblyinformation om egenskaper samt rättighetsinställningar. Detta kräver även en giltig signatur och delat lösenord på båda webbplatser.</istrustedwarning>
+        <name>Namn</name>
+        <nameisnotunique>Namnet '{0}' används redan av en annan extern webbplats</nameisnotunique>
+        <password>Lösenord</password>
+        <sharedsecret>Delat lösenord för signatur</sharedsecret>
+        <url>URL</url>
+        <username>Användarnamn</username>
+      </remotesiteedit>
+      <remotewebsite>
+        <localsitebadchars>Strängen måste vara tom eller en kombination av alfanumeriska tecken, punkter (.) eller bindetecken (-) max 256 tecken lång. Ex: 'site.com' or 'MySite-2'</localsitebadchars>
+      </remotewebsite>
+      <searchusers>
+        <descriptioncaption>	Beskrivning</descriptioncaption>
+        <heading>				Sök användare/grupper</heading>
+        <info />
+        <namecaption>			Namn</namecaption>
+        <nomembershipprovider>Det finns ingen tjänst som hanterar användare konfigurerad i Web.config!</nomembershipprovider>
+        <pagingsize>		Antal träffar per sida</pagingsize>
+        <searchname>Namn</searchname>
+        <typecaption>			Typ</typecaption>
+        <typegroup>				Grupper</typegroup>
+        <typeuser>				Användare</typeuser>
+      </searchusers>
+      <secedit>
+        <alpharequiredpassword>	Lösenordet måste innehålla bokstäver.</alpharequiredpassword>
+        <changepassword>Byt lösenord</changepassword>
+        <editactive>			Aktivt</editactive>
+        <editaddress>			Adress</editaddress>
+        <editadspath>			ActiveDirectory-namn</editadspath>
+        <editchanged>Ändrad</editchanged>
+        <editcompany>			Företag</editcompany>
+        <editconfirmpassword>	Bekräfta lösenord</editconfirmpassword>
+        <editcountry>Land</editcountry>
+        <editcreated>Skapad</editcreated>
+        <editdescription>		Beskrivning</editdescription>
+        <editemail>				E-postadress</editemail>
+        <editgroupheading>		Redigera grupp</editgroupheading>
+        <editlanguage>Personligt språk</editlanguage>
+        <editname>				Användarnamn</editname>
+        <editpassword>			Lösenord</editpassword>
+        <editpostaladdress>		Postort</editpostaladdress>
+        <editpostalnumber>		Postnummer</editpostalnumber>
+        <edittelephone>			Telefonnummer</edittelephone>
+        <edituserheading>		Redigera användare</edituserheading>
+        <editvalidto>			Giltigt t o m</editvalidto>
+        <firstname>				Förnamn</firstname>
+        <info />
+        <ipaddress>				Påloggning endast från den här IP-adressen</ipaddress>
+        <ipmask>				Subnät-mask för IP-adress ovan</ipmask>
+        <lastname>				Efternamn</lastname>
+        <listcontains>			Innehåller</listcontains>
+        <listmemberof>			Medlem av</listmemberof>
+        <listnotcontains>		Innehåller ej</listnotcontains>
+        <listnotmemberof>		Ej medlem av</listnotmemberof>
+        <lockedout>				Kontot låst (för många felaktiga påloggningar)</lockedout>
+        <missingpassword>		Du måste ange ett lösenord.</missingpassword>
+        <mobile>				Mobiltelefon</mobile>
+        <newuserheading>		Ny användare</newuserheading>
+        <numberrequiredpassword>Lösenordet måste innehålla siffror.</numberrequiredpassword>
+        <passwordanswer>Svar</passwordanswer>
+        <passwordquestion>Lösenordsfråga</passwordquestion>
+        <providerdonotsupportcreateuser>Nuvarande tillhandahållare ({0}) har inte stöd för att skapa/registrera nya användare.</providerdonotsupportcreateuser>
+        <symbolrequiredpassword>Lösenordet måste innehålla symboler (andra tecken än siffor och bokstäver).</symbolrequiredpassword>
+        <title>					Titel</title>
+        <tooshortpassword>		Lösenordet måste ha minst {0} tecken.</tooshortpassword>
+        <usernameexists>		Användarnamnet {0} är upptaget.</usernameexists>
+      </secedit>
+      <security>
+        <applyrecursive>Tillämpa inställningar för underliggande sidor</applyrecursive>
+        <heading>					Sätt rättigheter för sida "{0}"</heading>
+        <info>						Här kan du återställa rättigheter i EPiServer CMS på sidor som man helt har tagit bort åtkomst till eller liknande. Du har möjlighet att ändra samtliga rättigheter på alla sidor.</info>
+        <mark>Markera</mark>
+        <markall>Markera alla rader</markall>
+        <notselectedinfo>Radens rättigheter kommer inte att påverkas vid Spara eller Ta bort</notselectedinfo>
+        <notsupportedoperation> Operationen stöds inte för externa sidor</notsupportedoperation>
+        <recursivedeleteconfirm>Rättigheterna för de markerade raderna kommer att raderas på aktuell sida och alla dess undersidor. Välj OK om du vill fortsätta.</recursivedeleteconfirm>
+        <recursiveinfo>Markera detta alternativ för att Spara eller Ta bort markerade rader på aktuell sida och dess undersidor</recursiveinfo>
+        <recursivereplaceconfirm>Rättigheter för de markerade raderna kommer att skrivas över på underliggande sidor. De omarkerade raderna kommer att raderas. Välj OK om du vill fortsätta.</recursivereplaceconfirm>
+        <recursivesaveconfirm>Rättigheter för de markerade raderna kommer att skrivas över på underliggande sidor. Omarkerade rader kommer inte att påverkas. Välj OK om du vill fortsätta.</recursivesaveconfirm>
+        <removeaccessrightstext>Lägg till markerade rader samtidigt som omarkerade tas bort</removeaccessrightstext>
+        <removeaccessrightstexttooltip>Om du väljer Spara med detta alternativ markerat kommer markerade rader att läggas till. Omarkerade rader kommer att raderas. Används ofta för att "skriva över" gamla rättigheter.</removeaccessrightstexttooltip>
+        <removeconfirm>Är du säker på att du vill ta bort rättigheterna för markerade rader? Välj OK om du vill fortsätta.</removeconfirm>
+        <replaceconfirm>Rättigheter för de markerade raderna kommer att skrivas över på denna sida. De rader som inte är valda kommer att tas bort. Välj OK om du vill fortsätta.</replaceconfirm>
+        <savemessage>				Nya rättigheter har sparats</savemessage>
+        <selectedinfo>Radens rättigheter kommer att påverkas vid Spara eller Ta bort</selectedinfo>
+        <unmark>Avmarkera</unmark>
+        <unmarkall>Avmarkera alla rader</unmarkall>
+      </security>
+      <settings>
+        <databasetab>Databas</databasetab>
+        <defaultsubscriptionhandler>
+          <description>EPiServer CMS inbyggda hantering för prenumerationsutskick.</description>
+          <displayname>EPiServer CMS standardformat</displayname>
+        </defaultsubscriptionhandler>
+        <editordivonreturncaption>Använd DIV i editorn istället för P</editordivonreturncaption>
+        <edittab>Redigering</edittab>
+        <epfbrowserlanguagedetectioncaption>Detektera språk via webbläsarens språkinställning</epfbrowserlanguagedetectioncaption>
+        <epfenableglobalizationsupportcaption>Aktivera globalisering</epfenableglobalizationsupportcaption>
+        <epfencryptsensitiveinformationcaption>Kryptera filen web.config</epfencryptsensitiveinformationcaption>
+        <epfkeeploggedoncaption>Aktivera cookies för att behålla påloggning</epfkeeploggedoncaption>
+        <epncategoryidcaption>Startpunkt för kategorier</epncategoryidcaption>
+        <epneditorheightcaption>Höjd på Editorn (pixels)</epneditorheightcaption>
+        <epneditorwidthcaption>Bredd på editorn (pixlar)</epneditorwidthcaption>
+        <epnversioncountcaption>Max antal gamla versioner av sida</epnversioncountcaption>
+        <epsconnectioncaption>Databaskoppling</epsconnectioncaption>
+        <epseditcontrolversion>Aktuell version av ActiveX-editorn (t ex 2,0,0,31)</epseditcontrolversion>
+        <epseditcsscaption>Sökväg till CSS-fil för Editorn</epseditcsscaption>
+        <epserrorhandling>Felhantering i EPiServer CMS</epserrorhandling>
+        <epserrorhandlingoff>Avstängd</epserrorhandlingoff>
+        <epserrorhandlingon>Aktiverad för alla</epserrorhandlingon>
+        <epserrorhandlingremoteonly>Aktiverad för besökare utifrån</epserrorhandlingremoteonly>
+        <epserrormail>E-postadress att skicka felrapporter till </epserrormail>
+        <epshosturlcaption>Adress till din webbplats (t ex http://www.x.y)</epshosturlcaption>
+        <epsldappasswordcaption>Lösenord till användarnamn</epsldappasswordcaption>
+        <epsldapservercaption>LDAP-server (t ex company.com, lämna tom för ingen LDAP-hantering)</epsldapservercaption>
+        <epsldapusercaption>Användarnamn för att läsa info från LDAP-server</epsldapusercaption>
+        <epsrootdircaption>Rotkatalog</epsrootdircaption>
+        <epssitenamecaption>Namn på webbplatsen</epssitenamecaption>
+        <epssubscriptionhandler>Hantering av prenumerationsutskick</epssubscriptionhandler>
+        <heading>Systeminställningar</heading>
+        <info>&lt;b&gt;VARNING!&lt;/b&gt; Felaktiga ändringar på den här sidan kan leda till att din webbplats slutar fungera.</info>
+        <inforequired>Fält som måste fyllas i är markerade med *</inforequired>
+        <pageuploadcaption>Ladda upp filer till specifik sida</pageuploadcaption>
+        <renamefiledircaption>Döp om fil/katalog i länkverktyget</renamefiledircaption>
+        <restricteduploadcaption>Styrd uppladdningsfunktion</restricteduploadcaption>
+        <saved>Nya värden har sparats</saved>
+        <sitetab>Generellt</sitetab>
+        <unlimitedversions>Obegränsat antal versioner</unlimitedversions>
+      </settings>
+      <setup>
+        <cancelmessage>Vänligen gå tillbaka till denna sida vid ett senare tillfälle för att slutföra installationen</cancelmessage>
+        <emptysample>Endast startsida utan några sidtyper eller innehåll</emptysample>
+        <englishsample>Engelska exempelmallar med samtliga mallar installerade</englishsample>
+        <globalizationsample>Globaliserade exempelmallar (engelska och svenska) med samtliga mallar installerade</globalizationsample>
+        <heading>Installera grundinnehåll</heading>
+        <info>För att din EPiServer CMS ska kunna användas behöver den fyllas på med grundinnehåll. Välj något av nedanstående alternativ och ett systemspråk och klicka på Slutför.</info>
+        <installpackagespathempty>Katalogen som har angetts som parameter för importpaket innehåller inga importpaket [{0}].</installpackagespathempty>
+        <norootpage>Välja en destination för sidorna</norootpage>
+        <progress>Vänligen vänta medan systemet uppdateras</progress>
+        <redirectwarning>Attributet pageStartId i elementet siteSettings i web.config är satt till 0 (noll), vilket indikerar att inget innehåll har installerats.&lt;br/&gt;
+          Sätt pageStartId="1" i web.config för att använda rootsidan som startsida.&lt;br/&gt;</redirectwarning>
+        <selectcontent>Välj innehåll</selectcontent>
+        <selectdestination>Välj destination för sidor</selectdestination>
+        <selectlanguage>Välj systemspråk</selectlanguage>
+        <setupbutton>Slutför</setupbutton>
+        <startpageexists>En startsida är redan konfigurerad</startpageexists>
+        <swedishsample>Svenska exempelmallar med samtliga mallar installerade</swedishsample>
+        <utilsetupempty>Inga importpaket hittades i ~/util/setup och InstallPackagesPath har inte angetts som parameter i webbsidesadressen.</utilsetupempty>
+      </setup>
+      <siteinfo>
+        <buttonresetcounters>		Nollställ räknare</buttonresetcounters>
+        <countergetitem>			Sidor levererade från cache</countergetitem>
+        <counterlistchildren>			Listningar levererade från cache</counterlistchildren>
+        <counteroutputinvalid>		Ogiltiga sidor i HTML-cache</counteroutputinvalid>
+        <counteroutputvalid>		Sidor som skickats från HTML-cache</counteroutputvalid>
+        <counterpages>				Sidor i cache</counterpages>
+        <counterreadchildpages>		Läsningar i databas för listningar</counterreadchildpages>
+        <counterreadsinglepage>		Läsningar i databas för sidor</counterreadsinglepage>
+        <countersince>				Räknare nollställdes</countersince>
+        <dbcachecaption>			Status för databas-cache</dbcachecaption>
+        <dbcachehitpercentage>		Träffrekvens</dbcachehitpercentage>
+        <dbstatcaption>				Databasinformation</dbstatcaption>
+        <dbstatchangedlastweek>		Sidor som redigerats senaste veckan</dbstatchangedlastweek>
+        <dbstatepisecusercount>		Extranätanvändare (EPiSec)</dbstatepisecusercount>
+        <dbstatntusercount>			Windowsanvändare (NT)</dbstatntusercount>
+        <dbstatpagecount>			Totalt antal sidor i databasen</dbstatpagecount>
+        <dbstatsubscribercount>		Prenumeranter</dbstatsubscribercount>
+        <dbsystemprocessinfocaption>System-/processinformation</dbsystemprocessinfocaption>
+        <heading>					Statistik</heading>
+        <info />
+        <outputcachecaption>		Status för HTML-cache sedan </outputcachecaption>
+        <processconfigfile>			Konfigurationsfil</processconfigfile>
+        <processid>					Process-id</processid>
+        <processpeakmemory>			Max minnesanvändning (MB)</processpeakmemory>
+        <processpubpolicy>			Policies från utgivare</processpubpolicy>
+        <processshadowcopy>			"Skuggkopiering" av programfiler</processshadowcopy>
+        <processshadowdir>			Katalog för "skuggkopiering"</processshadowdir>
+        <processstarted>			Arbetsprocess startad</processstarted>
+      </siteinfo>
+      <tabs>
+        <duplicatetabname>En flik med det namnet finns redan.</duplicatetabname>
+        <invalidsortindex>Ogiltigt sorteringsindex för fliken. Sorteringsindex måste vara ett positivt heltal.</invalidsortindex>
+        <missingsortindex>Du måste ange ett sorteringsindex för fliken.</missingsortindex>
+        <missingtabname>Du måste ange ett namn på fliken.</missingtabname>
+        <referencedheadinghelp>		Om du fortfarande vill ta bort den här fliken, välj vilken flik som ovanstående egenskaper ska placeras under istället.</referencedheadinghelp>
+        <referencedheadingmessage>	Referenser till "{0}"</referencedheadingmessage>
+      </tabs>
+      <webpartadmin>
+        <consume>Konsumera portlet</consume>
+        <control>Kontroll</control>
+        <description>Beskrivning</description>
+        <displayname see="/admin/webpartadmin/heading" />
+        <heading>Registrera webbdelar</heading>
+        <info>Definera de webbdelar som ska vara tillgängliga för konsumtion</info>
+        <install>Installera webbdel</install>
+        <name>Namn</name>
+        <portlet>Portlet</portlet>
+        <producer>Producent</producer>
+      </webpartadmin>
+      <webpartadminedit>
+        <addparameter>Lägg till parameter</addparameter>
+        <ambiguoustypename>Namnet på kontrollen är tvetydigt. Namnet överensstämmer med följande specifika namn.</ambiguoustypename>
+        <assemblyloadfailed>Ett fel uppstod när assemblyt laddades.</assemblyloadfailed>
+        <control>Kontroll</control>
+        <description>Beskrivning</description>
+        <emptyvalueerror>Ett parametervärde måste anges</emptyvalueerror>
+        <heading>Inställningar för "{0}"</heading>
+        <headingconsume>Konsumera portlet</headingconsume>
+        <headinginstall>Installera webbdel</headinginstall>
+        <info>Ange egenskaperna för webbdelen nedan</info>
+        <infoconsume>Ange egenskaperna för portlet:en nedan</infoconsume>
+        <invalidcontrol>Den angivna kontrollen kan inte laddas.</invalidcontrol>
+        <name>Namn</name>
+        <nameexists>En webbdel har redan registrerats med namnet '{0}'</nameexists>
+        <parametername>Namn</parametername>
+        <parameters>Parametrar</parameters>
+        <parametertype>Datatyp</parametertype>
+        <parametervalue>Värde</parametervalue>
+        <portlet>Portlet</portlet>
+        <producer>Producent</producer>
+        <requiredfield>Ett värde måste anges för:</requiredfield>
+        <resolvecontrol>Verifiera</resolvecontrol>
+        <typeconversionerror>Parametervärdet kunde inte konverteras till vald datatyp</typeconversionerror>
+        <typenameblank>Du måste ange en virtuell sökväg.</typenameblank>
+        <typenamenotfound>Det gick inte att hitta en kontroll med angivet namn.</typenamenotfound>
+        <typenameresolved>Kontrollen verifierades.</typenameresolved>
+        <virtualpathloadfailed>Det gick inte att ladda den virtuella sökvägen.</virtualpathloadfailed>
+      </webpartadminedit>
+      <wsrpadmin>
+        <description see="/admin/wsrpadmin/info" />
+        <detailederror>Detaljerad felbeskrivning:</detailederror>
+        <displayname see="/admin/wsrpadmin/heading" />
+        <heading>WSRP-källor</heading>
+        <info>Definera de WSRP-källor som ska vara tillgängliga för portalsidor.</info>
+      </wsrpadmin>
+    </admin>
+    <april>		April</april>
+    <august>	Augusti</august>
+    <button>
+      <activate>		Aktivera</activate>
+      <add>			Lägg till</add>
+      <addgroupsid>	Lägg till grupp</addgroupsid>
+      <addlink>Lägg till länk</addlink>
+      <addusergroupsid>	Lägg till användare/grupper</addusergroupsid>
+      <addusersid>	Lägg till användare</addusersid>
+      <apply>Utför</apply>
+      <browse>		Bläddra...</browse>
+      <cancel>		Avbryt</cancel>
+      <change>		Ändra</change>
+      <checkin>		Klar för publicering</checkin>
+      <clear>			Rensa</clear>
+      <close>			Stäng</close>
+      <comingmonth>Kommande 30 dagar</comingmonth>
+      <comingweek>Kommande 7 dagar</comingweek>
+      <compare>		Jämför</compare>
+      <continue>Fortsätt</continue>
+      <copy>			Kopiera</copy>
+      <create>		Skapa</create>
+      <deactivate>	Inaktivera</deactivate>
+      <delaypublish>	Tidsstyrning</delaypublish>
+      <delete>		Ta bort</delete>
+      <deletefoundposting>Radera alla poster</deletefoundposting>
+      <deleteselected>Radera valda poster</deleteselected>
+      <edit>			Ändra</edit>
+      <export>Exportera</export>
+      <exportasxml>Exportera som XML</exportasxml>
+      <exporttoexcel>Exportera till Excel</exporttoexcel>
+      <findnext>		Sök nästa</findnext>
+      <help>			Hjälp</help>
+      <ignore>		Ignorera</ignore>
+      <ignoreall>		Ignorera alla</ignoreall>
+      <import>Importera</import>
+      <insert>		Infoga</insert>
+      <lastmonth>Senaste 30 dagarna</lastmonth>
+      <lastweek>Senaste 7 dagarna</lastweek>
+      <login>			Logga in</login>
+      <next>			&gt;&gt;</next>
+      <no>			Nej</no>
+      <ok>			OK</ok>
+      <prev>			&lt;&lt;</prev>
+      <preview>		Förhandsgranska</preview>
+      <print>			Skriv ut</print>
+      <publish>		Publicera</publish>
+      <refresh>		Uppdatera</refresh>
+      <reset>			Återställ</reset>
+      <resize>Ändra storlek</resize>
+      <save>			Spara</save>
+      <saveandclose>Spara och stäng</saveandclose>
+      <saveandpublish>Spara och publicera</saveandpublish>
+      <saveandview>Spara och visa</saveandview>
+      <saveonly>Spara</saveonly>
+      <search>		Sök</search>
+      <select>		Välj</select>
+      <send>			Skicka</send>
+      <settings>		Inställningar</settings>
+      <showreport>Visa rapport</showreport>
+      <today>Idag</today>
+      <unpublish>		Avpublicera</unpublish>
+      <yes>			Ja</yes>
+      <yesterday>Igår</yesterday>
+      <zoom>Zooma</zoom>
+    </button>
+    <clienttools>
+      <installstatus>
+        <componentdescription see="/labels/description" />
+        <componentname>Komponent</componentname>
+        <components>
+          <componentexcelexport>
+            <description>En komponent som kan exportera formulärdata till Microsoft Excel</description>
+            <heading>Exportera till Excel, Microsoft Office-koppling</heading>
+          </componentexcelexport>
+          <componentmultiupload>
+            <description>En komponent som stödjer avancerad uppladdning av filer via t.ex. drag och släpp</description>
+            <heading>Avancerad filuppladdning</heading>
+          </componentmultiupload>
+          <componentshelltools>
+            <description>Stödfunktioner för att kommunicera med EPiServer som bland annat används Microsoft Office-tillägg</description>
+            <heading>Klientstödfunktioner</heading>
+          </componentshelltools>
+          <componentspellchecker>
+            <description>En komponent som använder rättstavning i Microsoft Word från editorn</description>
+            <heading>Rättstavning, Microsoft Office-koppling</heading>
+          </componentspellchecker>
+          <currentversion>Du använder version {0} av {1}</currentversion>
+          <heading>Komponenter</heading>
+          <intro>Vissa funktioner kräver att du har "EPiServer CMS Client Components" installerade på din dator för att fungera, i listan nedan visas status på de olika komponenterna.</intro>
+        </components>
+        <componentstatus>Status</componentstatus>
+        <componentversion>Version</componentversion>
+        <heading>Klientverktyg</heading>
+        <install>Installera</install>
+        <installversion>Installera version {0}</installversion>
+        <missingactivexsupport>Funktionaliteten kräver en webbläsare med stöd för ActiveX, såsom Microsoft Internet Explorer.</missingactivexsupport>
+        <officeaddin>
+          <activated>Denna webbplats är aktiverad för publicering från din dator</activated>
+          <confirmactivate>Vill du aktivera publicering till följande webbplats</confirmactivate>
+          <confirmdeactivate>Vill du inaktivera publicering till följande webbplats</confirmdeactivate>
+          <heading>Microsoft Office-tillägg</heading>
+          <installation>Installation</installation>
+          <intro>Detta tillägg ger möjlighet att publicera information till EPiServer CMS från Microsoft Word, Microsoft Excel samt Microsoft PowerPoint</intro>
+          <needssave>Dokumentet måste sparas innan det kan publiceras till EPiServer CMS, vill du göra det nu?</needssave>
+          <noaccess>För att kunna installera och använda detta tillägg krävs att du tilldelas funktionsrättigheter av en administratör.</noaccess>
+          <notactivated>Denna webbplats är inte aktiverad för publicering från din dator</notactivated>
+        </officeaddin>
+        <registersite>Registrera webbplatsen</registersite>
+        <statusinstalled>Komponenten är installerad</statusinstalled>
+        <statusloading>Kontrollerar status...</statusloading>
+        <statusnotinstalled>Komponenten är inte installerad</statusnotinstalled>
+        <upgrade>Uppgradera</upgrade>
+      </installstatus>
+      <preview>
+        <tooltipclose>Stäng fönstret och ta bort förändringarna</tooltipclose>
+      </preview>
+      <wizard>
+        <createpage>Välj vilken sidtyp som du vill skapa baserat på dokumentet.</createpage>
+        <doneblock1>Klart!</doneblock1>
+        <doneblock2>Välj Spara och visa för att avsluta denna dialogruta och skapa en förhandsvisning av sidan.</doneblock2>
+        <editpage>Vald sidtyp är {0}. Fyll i information såsom sidans namn och eventuella publiceringstider.</editpage>
+        <noextension>Filen "{0}" saknar filändelse och kan därför inte identifieras</noextension>
+        <nosupport>Det finns inget stöd för filändelse "{0}"</nosupport>
+        <selectpagelanguage>Välj sidspråk</selectpagelanguage>
+      </wizard>
+    </clienttools>
+    <cookie>
+      <logincaption>		Om du loggar in kommer cookies att användas</logincaption>
+      <logininfo>
+                En cookie med inloggningsinformation kommer att skickas till din webbläsare.
+                Om du vill undvika cookies, kan du inte logga in på webbplatsen.
+            </logininfo>
+    </cookie>
+    <day>		dag</day>
+    <december>	December</december>
+    <dope>
+      <adminmode>			Till adminläge</adminmode>
+      <cancel>			Avbryt</cancel>
+      <confirmsave>Typ av länk är satt till att hämta information från en annan sida. Om du ändrar innehåll som hämtas från en annan sida kommer innehållet att sparas som kopia för den här sidan istället. Vill du fortsätta?</confirmsave>
+      <copy>				Kopiera till urklipp</copy>
+      <delete>			Ta bort</delete>
+      <disablemenu>		Avaktivera menyn</disablemenu>
+      <edit>				Ändra</edit>
+      <editmode>			Till redigeraläge</editmode>
+      <new>				Ny</new>
+      <newwindow>			Öppna i nytt fönster</newwindow>
+      <print>				Skriv ut</print>
+      <properties>		Egenskaper</properties>
+      <quickedit>Snabbredigera</quickedit>
+      <refresh>			Uppdatera</refresh>
+      <save>Spara och publicera</save>
+      <security>			Rättigheter</security>
+      <viewmode>			Till visaläge</viewmode>
+    </dope>
+    <dynamiccontenttypes>
+      <dynamiccontent name="PagePropertyPlugin">
+        <caption>Sidegenskap</caption>
+        <description>Lägger till innehållet från en angiven sidegenskap.</description>
+      </dynamiccontent>
+    </dynamiccontenttypes>
+    <edit>
+      <actionwindow>
+        <heading>Åtgärdsfönster</heading>
+        <hide>Dölj</hide>
+      </actionwindow>
+      <activityloader>
+        <assignedtasks>Mina utdelade uppgifter</assignedtasks>
+        <duedate>				Förfallodatum</duedate>
+        <grouptask>				Gruppens uppgifter</grouptask>
+        <noactivity>			Inga pågående aktiviteter</noactivity>
+        <personaltask>			Personliga uppgifter</personaltask>
+        <personaltaskstaskstooltip>Personliga uppgifter:</personaltaskstaskstooltip>
+        <readytopublishtooltip>Klar att publicera:</readytopublishtooltip>
+        <statusnotready>		Ej publicerad</statusnotready>
+        <statusreadytopublish>	Klar att publicera</statusreadytopublish>
+        <statusrejected>		Kommenterade</statusrejected>
+        <workflowowner>			Översikt över arbetsflöde</workflowowner>
+      </activityloader>
+      <clienttools>
+        <clientinstaller>
+          <closewindow>Stäng fönstret</closewindow>
+          <installationstatus>Komponenterna har installerats. Du kan nu stänga detta fönster.</installationstatus>
+          <pagetitle>Installation av klientkomponenter</pagetitle>
+          <restartbrowser>Klientkomponenterna har uppdaterats. Starta om Internet Explorer för att använda de uppdaterade komponenterna. Stäng alla öppna Internet Explorer-fönster och öppna webbläsaren igen.</restartbrowser>
+        </clientinstaller>
+        <multifileupload>
+          <directorynotfound>Mappen "{0}" kunde inte hittas på servern.</directorynotfound>
+          <functiondisabled>Du saknar behörighet för avancerad filuppladdning. Kontrollera att stödet är aktiverat i "Åtkomst till funktioner".</functiondisabled>
+          <permissiondenied>Du saknar behörighet för att skapa filer i mappen.</permissiondenied>
+        </multifileupload>
+        <wizard>
+          <pagenotfound>
+            <message>
+              Sidan du försökte uppdatera kunde inte hittas. Troligtvis har den raderats.&lt;br/&gt;
+              För att publicera dokumentet på en ny plats måste du först avsluta publiceringsdialogen. Svara därefter "Nej" när du får frågan om du vill uppdatera en existerande sida.
+            </message>
+            <title>Sidan saknas</title>
+          </pagenotfound>
+        </wizard>
+      </clienttools>
+      <conflicteditor>
+        <heading>Konflikthantering</heading>
+        <info>Information på den publicerade versionen har modifierats efter att denna version skapades</info>
+        <tabmychanges>Mina förändringar</tabmychanges>
+        <tabpublishedchanges>Publicerade förändringar</tabpublishedchanges>
+      </conflicteditor>
+      <contentmirroringadmin>
+        <description>En lista över de kanaler som finns definierade i systemet.</description>
+        <displayname>Godkänn speglingar</displayname>
+        <failure>Ett fel inträffade {0} kontakta administratören för webbplatsen.</failure>
+        <itemcreated>Skapad</itemcreated>
+        <itemdeleted>Borttagen</itemdeleted>
+        <itemmoved>Flyttad</itemmoved>
+        <itemupdated>Uppdaterad</itemupdated>
+      </contentmirroringadmin>
+      <deletepage>
+        <deleteconfirmation>Vill du verkligen radera "{0}"?</deleteconfirmation>
+        <deletenotsupported>Sidtillhandahållaren som hanterar denna sida stödjer inte borttagning.</deletenotsupported>
+        <deletesuffix>		"{0}" har tagits bort</deletesuffix>
+        <deletesystempage>	Papperskorgen, startsidan eller rotobjektet kan inte tas bort</deletesystempage>
+        <failedreferenced>	Följande sidor refereras från andra delar av systemet och kan därför inte tas bort:</failedreferenced>
+        <hasentrypointchild>Sidan eller dess undersidor är överordnad i en sidtillhandahållare och kan inte raderas. Radera sidtillhandahållaren först i web.config.</hasentrypointchild>
+        <heading>Raderar sidan "{0}"</heading>
+        <headingfailed>		Kan inte ta bort en eller flera sidor</headingfailed>
+        <info />
+        <movesuffix>		"{0}" har flyttats till papperskorgen</movesuffix>
+        <nodeleteaccessrights>Du har inte tillräckliga rättigheter för att ta bort denna sida.</nodeleteaccessrights>
+        <reftypearchive>	{0}&amp;nbsp;är arkivfolder för&amp;nbsp;{1}</reftypearchive>
+        <reftypedefaultarchive>			{1} används som standardarkiveringssida på sidtypen {0}</reftypedefaultarchive>
+        <reftypeproperty>	{0}&amp;nbsp;refereras av en egenskap i&amp;nbsp;{1}</reftypeproperty>
+        <reftypeshortcut>Sidan med ID {0} länkar till denna sida eller dess undersidor.</reftypeshortcut>
+      </deletepage>
+      <deletepagelanguage>
+        <alertlangnotselected>Du måste välja ett språk.</alertlangnotselected>
+        <confirmdeletemessage>Om du fortsätter kommer det valda språket att tas bort permanent för sidan.</confirmdeletemessage>
+        <confirmdeletequestion>Är du säker på att du vill ta bort språket?</confirmdeletequestion>
+        <deletedlanguage>	Språket "{0}" har tagits bort för denna sida.</deletedlanguage>
+        <heading>			Ta bort språk för sida "{0}"</heading>
+        <info>				Här kan du ta bort ett av språken för en sida utan att ta bort hela sidan. OBS! När du tar bort ett språk för en sida kommer det att raderas permanent, dvs. det kommer inte att hamna i papperskorgen. Eventuella underliggande sidor på samma språk kommer inte att tas bort.</info>
+        <nothingtodelete>	Det finns bara ett språk för denna sida. Använd funktionen "Ta bort" om du vill ta bort sidan och dess undersidor.</nothingtodelete>
+        <selectlanguage>	Ta bort språk</selectlanguage>
+        <selectlanguageitem>Välj språk som ska tas bort</selectlanguageitem>
+      </deletepagelanguage>
+      <dynamiccontent>
+        <dynamicpagepropertysettings>
+          <dynamicproperties>Dynamiska egenskaper</dynamicproperties>
+          <metadataproperties>Inbyggda egenskaper</metadataproperties>
+          <pagelinkerror>En sida måste anges</pagelinkerror>
+          <pagelinklabel>Sida att visa data från</pagelinklabel>
+          <pagetypeproperties>Sidtypsegenskaper</pagetypeproperties>
+          <propertylisterror>En egenskap måste anges</propertylisterror>
+          <propertylistlabel>Egenskap att visa data från</propertylistlabel>
+        </dynamicpagepropertysettings>
+      </dynamiccontent>
+      <editcommand>
+        <actionwindowhelp>		Öppna Åtgärdsfönstret</actionwindowhelp>
+        <addfavoritecaption>	Lägg till favorit</addfavoritecaption>
+        <adminmodehelp see="/dope/adminmode" />
+        <askdelete>				Vill du ta bort sidan {0} ?</askdelete>
+        <askemptywastebasket>	Vill du tömma papperskorgen ?</askemptywastebasket>
+        <askmove>				Vill du flytta den här sidan ?</askmove>
+        <askprovidermove>Vill du flytta den här sidan? Flyttning av sidor mellan sidtillhandahållare betyder att underliggande data flyttas mellan data källor.</askprovidermove>
+        <copypagecaption>		Kopiera</copypagecaption>
+        <copypagehelp>			Kopiera vald sida</copypagehelp>
+        <createnewpagecaption>	Skapa ny</createnewpagecaption>
+        <createnewpagehelp>		Skapa ny sida</createnewpagehelp>
+        <cutpagecaption>		Klipp ut</cutpagecaption>
+        <cutpagehelp>			Klipp ut vald sida</cutpagehelp>
+        <deletepagecaption>		Ta bort</deletepagecaption>
+        <deletepagehelp>		Ta bort vald sida</deletepagehelp>
+        <deletepagelanguagecaption>Ta bort språk</deletepagelanguagecaption>
+        <editdynpropcaption>	Dynamiska egenskaper</editdynpropcaption>
+        <editdynprophelp>		Ändra dynamiska egenskaper</editdynprophelp>
+        <editmode>				Redigeraläge</editmode>
+        <editpagecaption>		Redigera</editpagecaption>
+        <favoritesmode>			Favoriter</favoritesmode>
+        <filemanagementhelp>	Filhantering</filemanagementhelp>
+        <languageoverviewcaption>Språköversikt</languageoverviewcaption>
+        <languageoverviewhelp see="/edit/editcommand/languageoverviewcaption" />
+        <languagepagecaption>Sidans språk</languagepagecaption>
+        <languagepagehelp see="/edit/editcommand/languagepagecaption" />
+        <languagesettingscaption>Språkinställningar</languagesettingscaption>
+        <languagesettingshelp see="/edit/editcommand/languagesettingscaption" />
+        <logoutdombrowser>Du är inloggad som en Windowsanvändare, för att du ska bli helt utloggad måste du stänga ner alla webbläsare</logoutdombrowser>
+        <logouthelp>			Logga ut</logouthelp>
+        <movedisabled>Du saknar behörighet för flyttning av data mellan sidtillhandahållare. Kontrollera att stödet är aktiverat i "Åtkomst till funktioner".</movedisabled>
+        <pagetypenotallowed>	Sidtypen är inte tillåten på destinationen</pagetypenotallowed>
+        <pastepagecaption>		Klistra in</pastepagecaption>
+        <pastepagehelp>			Klistra in vald sida</pastepagehelp>
+        <personalmode>			Aktiviteter</personalmode>
+        <removefavoritecaption>	Ta bort favorit</removefavoritecaption>
+        <reportcenterhelp>Rapportcenter</reportcenterhelp>
+        <setaccesscaption>		Rättigheter</setaccesscaption>
+        <setaccesshelp>			Ändra rättigheter</setaccesshelp>
+        <settingshelp see="/edit/workspace/mysettings" />
+        <viewmode>				Struktur</viewmode>
+        <viewmodehelp see="/dope/viewmode" />
+      </editcommand>
+      <editdynprop>
+        <heading>		Redigera dynamiska egenskaper på sida "{0}"</heading>
+        <info />
+        <nodynprop>		Det finns inga dynamiska egenskaper</nodynprop>
+        <save>			Dynamiska egenskaper har sparats</save>
+      </editdynprop>
+      <editform>
+        <addcolumnbutton>			Lägg till kolumn</addcolumnbutton>
+        <addrowbutton>				Lägg till rad</addrowbutton>
+        <allowanonymouspostcaption>	Formuläret kan skickas utan inloggning</allowanonymouspostcaption>
+        <allowmultiplepostcaption>	Samma person kan skicka formuläret flera gånger</allowmultiplepostcaption>
+        <buttoncaption>Knapptext</buttoncaption>
+        <buttonproperties>			Egenskaper för knapp</buttonproperties>
+        <checkboxproperties>		Egenskaper för kryssruta</checkboxproperties>
+        <checkedcaption>Förvald</checkedcaption>
+        <classcaption>				CSS-klass</classcaption>
+        <confirmdelete>				Är du säker på att du vill ta bort fältet</confirmdelete>
+        <defaultpropertyheading>Egenskaper</defaultpropertyheading>
+        <deletecolumnbutton>		Ta bort kolumn</deletecolumnbutton>
+        <deletecolumnconfirmmessage>Är du säker på att du vill ta bort den valda kolumnen?</deletecolumnconfirmmessage>
+        <deleterowbutton>			Ta bort rad</deleterowbutton>
+        <deleterowconfirmmessage>Är du säker på att du vill ta bort den valda raden?</deleterowconfirmmessage>
+        <descriptionhrproperties>Egenskaper för horisontell linje</descriptionhrproperties>
+        <descriptionproperties>		Egenskaper för ledtext</descriptionproperties>
+        <fieldexists>				Det finns redan ett inmatningsfält i den cellen</fieldexists>
+        <formcontrolinfotext>Dra en fält till en cell i tabellen eller markera en cell och klicka på en fälttyp.</formcontrolinfotext>
+        <formfields>Formulärfält</formfields>
+        <formnamecaption>			Namn på formuläret</formnamecaption>
+        <heading>					Formulärinställningar</heading>
+        <headingcaption>Ledtext</headingcaption>
+        <heightcaption>				Höjd (antal rader)</heightcaption>
+        <horizontal>				Horisontellt</horizontal>
+        <horizontalrule>Horisontell linje</horizontalrule>
+        <htmlcode>					HTML kod</htmlcode>
+        <importexport>Importera/Exportera</importexport>
+        <inputcheckbox>				Kryssruta</inputcheckbox>
+        <inputdescription>			Ledtext</inputdescription>
+        <inputradiobutton>			Alternativknapp</inputradiobutton>
+        <inputselectbox>			Flervalslista</inputselectbox>
+        <inputsubmit>Knapp</inputsubmit>
+        <inputtext>					Textfält</inputtext>
+        <inputtextarea>				Textruta</inputtextarea>
+        <insertcolumnbutton>		Infoga kolumn</insertcolumnbutton>
+        <insertrowbutton>			Infoga rad</insertrowbutton>
+        <mailanddboption>			Sänd e-post och spara i databas</mailanddboption>
+        <namecaption>				Namn</namecaption>
+        <optionscaption>			Alternativ</optionscaption>
+        <pageafterpost>				Tacksida som visas vid svar</pageafterpost>
+        <placefieldsinmatrix>		Placera inmatningsfält i matrisen nedan</placefieldsinmatrix>
+        <placementcaption>			Placering</placementcaption>
+        <postresultcaption>			Resultat vid svar</postresultcaption>
+        <radiobuttonproperties>		Egenskaper för alternativknapp</radiobuttonproperties>
+        <requiredcaption>			Värde måste anges</requiredcaption>
+        <savetodatabaseoption>		Spara i databas</savetodatabaseoption>
+        <selectboxproperties>		Egenskaper för flervalslista</selectboxproperties>
+        <sendemailfromadresscaption>Avsändare för e-post</sendemailfromadresscaption>
+        <sendemailoption>			Sänd e-post</sendemailoption>
+        <sendemailsubjectcaption>Ämne för e-post</sendemailsubjectcaption>
+        <sendemailtoadresscaption>	Skicka e-post till den här adressen</sendemailtoadresscaption>
+        <sendformtourlcaption>		Sänd formulär till den här URL:en</sendformtourlcaption>
+        <sendtourloption>			Sänd till angiven URL</sendtourloption>
+        <tablelayout>Tabellayout</tablelayout>
+        <textareaproperties>		Egenskaper för textruta</textareaproperties>
+        <textcaption>				Text</textcaption>
+        <textinputproperties>		Egenskaper för textfält</textinputproperties>
+        <tooltipcaption>Skärmtips</tooltipcaption>
+        <typecaption>Validera som</typecaption>
+        <valuecaption>Värde</valuecaption>
+        <vertical>					Vertikalt</vertical>
+        <widthcaption>				Bredd (antal tecken)</widthcaption>
+      </editform>
+      <editformdata>
+        <activexnotinstalled>"EPiServer CMS Client Components" verkar inte vara installerat. Klicka på rotsidan och välj sedan fliken "Komponenter" för att installera denna komponent.</activexnotinstalled>
+        <alertforselectingexportrow>Välj minst en rad att exportera.</alertforselectingexportrow>
+        <confirmdelete>		Är du säker på att du vill ta bort samtliga träffar från denna sökning?</confirmdelete>
+        <confirmselecteddelete>Är du säker på att du vill radera alla valda poster?</confirmselecteddelete>
+        <date>				Datum</date>
+        <errorexportingdata>Fel vid export av data</errorexportingdata>
+        <excelexport>		Exportera till Excel</excelexport>
+        <export>			Exportera</export>
+        <fromdate>			Från datum</fromdate>
+        <heading>			Formulärdata</heading>
+        <matches>			träff(ar)</matches>
+        <newestfirst>		Yngst först</newestfirst>
+        <nohits>			Inga träffar</nohits>
+        <pagingsize>		Antal träffar per sida</pagingsize>
+        <selectform>		Välj formulär</selectform>
+        <sortorder>			Sortering</sortorder>
+        <todate>			Till datum</todate>
+        <user>				Användare</user>
+      </editformdata>
+      <editorguide>
+        <description>Guiden som hjälper dig att skapa användbart och tillgängligt innehåll anpassat för webben.</description>
+        <displayname>Användbarhetsguide</displayname>
+        <hidesection>Dölj avsnitt</hidesection>
+        <showsection>Visa avsnitt</showsection>
+      </editorguide>
+      <editpage>
+        <changed>				Sida ändrad</changed>
+        <checkedinversionswarning>OBS! En sparad version är klar för publicering. Versionen hittas på fliken versionslista med status klar för publicering.</checkedinversionswarning>
+        <createdby>				Sida skapad av</createdby>
+        <creator>				Skapas av</creator>
+        <externallinkcaption>	Länk till sida på annan webbplats</externallinkcaption>
+        <externallinkwarning>OBS! "Typ av länk" är satt till "Länk till sida på annan webbplats". Detta innebär att en annan webbsida eller dokument visas vid förhandsgranskning. "Typ av länk" kan ändras under "Redigera", "Genväg/extern länk".</externallinkwarning>
+        <fetchdatacaption>		Hämta data från sida i EPiServer CMS</fetchdatacaption>
+        <fetchdatawarning>OBS! "Typ av länk" är satt till "Hämta data från sida i EPiServer CMS". Detta innebär att informationen som visas vid förhandsgranskning hämtas från en annan sida. "Typ av länk" kan ändras under "Redigera", "Genväg/extern länk".</fetchdatawarning>
+        <mustpublishmasterfirst>Originalspråket ({0}) för denna sida är ännu inte publicerat. Originalspråket måste publiceras innan sidan kan publiceras på andra språk.</mustpublishmasterfirst>
+        <nolinkcaption>Ingen länk, bara text</nolinkcaption>
+        <nolinkwarning>OBS! "Typ av länk" är satt till "Ingen länk, bara text". Detta innebär att sidans innehåll inte kommer att visas vid förhandsgransking och att sidans namn i menyn är inte länkat. "Typ av länk" kan ändras under "Redigera", "Genväg/extern länk".</nolinkwarning>
+        <normallinkcaption>Länk till den här sidan</normallinkcaption>
+        <normallinkwarning />
+        <publishedby>			Sida publicerad av</publishedby>
+        <savedby>				Senast sparad av</savedby>
+        <shortcutcaption>		Genväg till sida i EPiServer CMS</shortcutcaption>
+        <shortcutwarning>OBS! "Typ av länk" är satt till "Genväg till sida i EPiServer CMS". Detta innebär att målsidan för genvägen visas vid förhandsgranskning. "Typ av länk" kan ändras under "Redigera", "Genväg/extern länk".</shortcutwarning>
+        <updatechanged>			&amp;nbsp;Markera sidan som ändrad&amp;nbsp;</updatechanged>
+      </editpage>
+      <editpanel>
+        <actionapprove>			Publicera</actionapprove>
+        <actioncheckin>			Klar</actioncheckin>
+        <actiondelete>			Ta bort version</actiondelete>
+        <actionreject>			Kommentera</actionreject>
+        <changelanguageheading>Sidvy</changelanguageheading>
+        <compareto>Jämför med</compareto>
+        <confirmdelete>			Vill du verkligen ta bort den här versionen?</confirmdelete>
+        <confirmnavigate>		Du har gjort ändringar på den här sidan</confirmnavigate>
+        <creatingnewpage>		Skapar ny sida</creatingnewpage>
+        <creatingnewpagelanguage>Skapar nytt sidspråk</creatingnewpagelanguage>
+        <delayinfo>					Hantera tidsstyrd publicering av den här versionen.</delayinfo>
+        <delaypublishinfo>Aktivera tidsstyrning</delaypublishinfo>
+        <delaystartpublishinfo>		Ange när den här versionen ska publiceras</delaystartpublishinfo>
+        <notreadyitem>			--- Ej publicerad ---</notreadyitem>
+        <pagenotavailable>Sidan är inte tillgänglig för aktuellt språk</pagenotavailable>
+        <pagetypeheading>Sidtyp</pagetypeheading>
+        <prefixcopyof>			Kopia av</prefixcopyof>
+        <rejectprompt>			Kommentar till skribent</rejectprompt>
+        <savedelaypublishbutton>	Spara</savedelaypublishbutton>
+        <selectversion>			Version:</selectversion>
+        <showversionlist>       Visa versionslista</showversionlist>
+        <statusheading>Status</statusheading>
+        <tabedit>
+          <description />
+          <displayname>		Redigera</displayname>
+        </tabedit>
+        <tabformdata>			Formulärdata</tabformdata>
+        <tabversionlist>
+          <description />
+          <displayname>		Versionslista</displayname>
+          <oneunpublishedversionglobalizedtooltip>En opublicerad version för språk: {0}</oneunpublishedversionglobalizedtooltip>
+          <oneunpublishedversiontooltip>En opublicerad version</oneunpublishedversiontooltip>
+          <unpublishedversionsglobalizedtooltip>{0} opublicerade versioner för språk: {1}</unpublishedversionsglobalizedtooltip>
+          <unpublishedversionstooltip>{0} opublicerade versioner</unpublishedversionstooltip>
+        </tabversionlist>
+        <tabview>				Visa</tabview>
+        <tooltipapprove>		Spara och publicera den här versionen</tooltipapprove>
+        <tooltipcancel>				Avbryt redigeringen av versionen</tooltipcancel>
+        <tooltipcheckin>		Versionen lämnas in för publicering</tooltipcheckin>
+        <tooltipdelete>			Ta bort den här versionen</tooltipdelete>
+        <tooltipedit>			Redigera den här versionen</tooltipedit>
+        <tooltipeditnew>		Redigera ny version (gör kopia av den här versionen)</tooltipeditnew>
+        <tooltipreject>			Kommentera den här versionen</tooltipreject>
+        <tooltipsave>			Spara och visa den här versionenSpara och visa den här versionen</tooltipsave>
+        <tooltipsaveonly>Spara den här versionen</tooltipsaveonly>
+        <viewsavedby>			Av</viewsavedby>
+        <viewsaveddate>			Sparad</viewsaveddate>
+        <viewstatus>			Status</viewstatus>
+      </editpanel>
+      <editsecurity>
+        <aclremovepermissionrights>Du försökte ta bort rättigheter att administrera denna sida. Om du verkligen vill ta bort dessa måste du gå till adminiläge för att sätta rättigheter för denna sidan</aclremovepermissionrights>
+        <heading>		Sätt rättigheter för sida "{0}"</heading>
+        <info>			Här kan du välja vilka användare och/eller grupper som ska få tillgång till sidan samt vad de tillåts göra.</info>
+        <savemessage comment="heading of savesecurity">Nya säkerhetsinställningar har sparats</savemessage>
+        <user>			Du är påloggad som {0} och är medlem i följande grupper</user>
+      </editsecurity>
+      <edittree>
+        <copypage>Kopiera "{0}" till "{1}"</copypage>
+        <movepage>Flytta "{0}" till "{1}"</movepage>
+        <nofavoritesfound>			Det finns inga favoriter upplagda</nofavoritesfound>
+        <notasksfound>				Det finns inga aktiviteter för tillfället</notasksfound>
+      </edittree>
+      <editversionlist>
+        <columnheadingdatesaved>	Sparad</columnheadingdatesaved>
+        <columnheadinglanguage>Språk</columnheadinglanguage>
+        <columnheadingname>			Namn</columnheadingname>
+        <columnheadingsavedby>		Av</columnheadingsavedby>
+        <columnheadingstatus>		Status</columnheadingstatus>
+        <columnheadingversion>		Version</columnheadingversion>
+        <confirmdelete>Är du säker på att du vill ta bort versionen?</confirmdelete>
+        <showalllanguages>Visa alla språk</showalllanguages>
+        <versionidtitle>Versionsid: </versionidtitle>
+      </editversionlist>
+      <editxform>
+        <allforms>Alla formulär</allforms>
+        <allpages>Visa data för alla sidor</allpages>
+        <changed>Senast ändrat:</changed>
+        <changedby>Ändrat av:</changedby>
+        <confirmdelete>Är du säker på att du vill ta bort fältet?</confirmdelete>
+        <copysuffix>Kopiera</copysuffix>
+        <created>Skapat:</created>
+        <createdby>Skapat av:</createdby>
+        <createnewformfoldertooltip>Skapa ny formulärkatalog</createnewformfoldertooltip>
+        <datatypes>
+          <date1>
+            <caption>Datum (DD/MM/ÅÅÅÅ)</caption>
+            <errormessage>"{0}" är inte ett giltigt datum. Var god ange ett datum på formen "DD/MM/ÅÅÅÅ".</errormessage>
+          </date1>
+          <date2>
+            <caption>Datum (MM/DD/ÅÅÅÅ)</caption>
+            <errormessage>"{0}" är inte ett giltigt datum. Var god ange ett datum på formen "MM/DD/ÅÅÅÅ".</errormessage>
+          </date2>
+          <defaulttype>
+            <errormessage>Du har angett icke tillåtna tecken ("&lt;" eller "&gt;").</errormessage>
+          </defaulttype>
+          <email>
+            <caption>E-postadress</caption>
+            <errormessage>"{0}" är inte en giltig e-postadress.</errormessage>
+          </email>
+          <integer>
+            <caption>Heltal</caption>
+            <errormessage>"{0}" är inte ett giltigt heltal.</errormessage>
+          </integer>
+          <isodate>
+            <caption>Datum (ÅÅÅÅ-MM-DD)</caption>
+            <errormessage>"{0}" är inte ett giltigt datum. Var god ange ett datum på formen "ÅÅÅÅ-MM-DD".</errormessage>
+          </isodate>
+          <positiveinteger>
+            <caption>Positivt heltal</caption>
+            <errormessage>"{0}" är inte ett giltigt positivt heltal.</errormessage>
+          </positiveinteger>
+        </datatypes>
+        <deleteformfoldertooltip>Ta bort vald formulärkatalog</deleteformfoldertooltip>
+        <deletequestion>Är du säker på att du vill ta bort det valda formuläret?</deletequestion>
+        <editformbutton>Redigera</editformbutton>
+        <editordescription>Fliken "Tabellayout" används för att skapa layouten på ditt formulär.</editordescription>
+        <errorimporting>Formuläret kunde inte importeras. Kontrollera att filen innehåller validerad XML.</errorimporting>
+        <existonpages>Observera att detta formulär används på flera sidor. Förändringar i formuläret kommer därför att påverka följande sidor:</existonpages>
+        <folder>Katalog</folder>
+        <folderdialog>
+          <createnewformfolderheading>Skapa ny formulärkatalog</createnewformfolderheading>
+          <createnewformfoldersavewarning>Du måste ange ett giltigt namn för den nya formulärkatalogen (utan tecknen \ / " ' &lt; &gt;).</createnewformfoldersavewarning>
+          <createnewformfoldertext>Namn på ny katalog:</createnewformfoldertext>
+          <deletequestion>Är du säker på att du vill ta bort den valda formulärkatalogen?</deletequestion>
+          <renamefoldererroralreadyexists>Katalogen {0} kunde inte döpas om till {1} eftersom en katalog med samma namn redan finns.</renamefoldererroralreadyexists>
+          <renamefoldererrorrootfolder>Rotkatalogen kan ej döpas om.</renamefoldererrorrootfolder>
+          <renameformfolderheading>Ändra namn på formulärkatalog</renameformfolderheading>
+          <renameformfoldersavewarning>Du måste ange ett giltigt nytt namn för formulärkatalogen (utan tecknen \ / " ' &lt; &gt;).</renameformfoldersavewarning>
+          <renameformfoldertext>Nytt namn på katalog:</renameformfoldertext>
+        </folderdialog>
+        <formdatamailsubject>Formulärdata från "{0}" ({1})</formdatamailsubject>
+        <formfoldercaption>Katalog för formuläret</formfoldercaption>
+        <forminformation>Formulärinformation</forminformation>
+        <formname>Formulärnamn</formname>
+        <formnameempty>Du måste ange namn på formuläret.</formnameempty>
+        <formnotused>Formuläret används inte på någon sida.</formnotused>
+        <formusedonpages>Formuläret används på följande sidor:</formusedonpages>
+        <fromdate>Från datum</fromdate>
+        <gridheadingchanged>Ändrat</gridheadingchanged>
+        <gridheadingchangedby>Ändrat av</gridheadingchangedby>
+        <gridheadingcreated>Skapat</gridheadingcreated>
+        <gridheadingcreatedby>Skapat av</gridheadingcreatedby>
+        <heading>Redigera formulär</heading>
+        <headingtextrequired>Du måste ange en text för ledtexten.</headingtextrequired>
+        <importinfotext>Import kommer att skriva över eventuella förändringar till formulärets innehåll och layout.</importinfotext>
+        <invalid>Felaktigt formulär.</invalid>
+        <listmyformonly>Visa mina formulär:</listmyformonly>
+        <morethanoneoptionselected>Välj endast ett alternativ.</morethanoneoptionselected>
+        <multiplevalueinvalid>Ogiltigt värde för alternativ</multiplevalueinvalid>
+        <nameempty>Du måste ange namn på alla inmatningsfält.</nameempty>
+        <nameexistsmorethanonce>Flera inmatningsfält har samma namn: "{0}".</nameexistsmorethanonce>
+        <nameinvalid>Felaktigt namn på inmatningsfältet. Namnet måste börja med en bokstav och får endast innehålla alfanumeriska tecken (a-z, A-Z, 1-9 och "_", mellanslag får inte användas).</nameinvalid>
+        <namenotallowedcharacters>Felaktigt namn på inmatningsfält: "{0}". Namnet får endast innehålla alfanumeriska tecken (a-z, A-Z, 1-9 och _, mellanslag får inte användas).</namenotallowedcharacters>
+        <namerequired>Du måste ange namn på inmatningsfältet.</namerequired>
+        <newformnamecaption>Nytt namn</newformnamecaption>
+        <nofolder>Ingen katalog</nofolder>
+        <noformbutton>Inget formulär</noformbutton>
+        <notselectedrow>Välj en cell.</notselectedrow>
+        <renameformfoldertooltip>Ändra namn på vald formulärkatalog</renameformfoldertooltip>
+        <saveas>Spara som ...</saveas>
+        <savewarninginfo>Detta formulär används på flera sidor.</savewarninginfo>
+        <savewarningquestion>Är du säker på att du vill spara ändringarna?</savewarningquestion>
+        <selectedfolder>Katalog:</selectedfolder>
+        <selectform>Välj formulär</selectform>
+        <submitdefaultvalue>Skicka</submitdefaultvalue>
+        <todate>Till datum</todate>
+        <usedonpages>Används på sidor</usedonpages>
+        <useformbutton>Använd</useformbutton>
+      </editxform>
+      <editxformdata>
+        <allpages>Visa data för alla sidor</allpages>
+        <fromdate>Från datum</fromdate>
+        <selectform>Välj formulär</selectform>
+        <todate>Till datum</todate>
+      </editxformdata>
+      <filemanagerbrowser>
+        <directoryselectionerrormessage>Var god välj en katalog först.</directoryselectionerrormessage>
+        <fileselectionerrormessage>Var god välj ett dokument först.</fileselectionerrormessage>
+        <imageselectionerrormessage>Var god välj en bild först.</imageselectionerrormessage>
+        <selectfile>Välj dokument</selectfile>
+        <selectfolder>Välj katalog</selectfolder>
+        <selectimage>Välj bild</selectimage>
+      </filemanagerbrowser>
+      <formpostings>
+        <description>		Visa formulärdata</description>
+        <displayname>		Formulärdata</displayname>
+      </formpostings>
+      <globalizationcontrol>
+        <description>Se status för och kom åt aktuell sidas olika språk.</description>
+        <displayname>Sidans språk</displayname>
+        <heading>Språk för sida "{0}"</heading>
+        <published>Publicerad</published>
+        <saved>Sparad</saved>
+      </globalizationcontrol>
+      <globalizationmatrix>
+        <description />
+        <goup>Uppåt</goup>
+        <heading>Språköversikt för sida "{0}"</heading>
+        <languagestatusnotpublished>Sidan är ännu inte publicerad</languagestatusnotpublished>
+        <languagestatuspublished>Sidan är publicerad</languagestatuspublished>
+        <page>Sida</page>
+      </globalizationmatrix>
+      <imageeditor>
+        <compressioninformation>
+          <compression>Komprimering</compression>
+          <format>Format</format>
+          <quality>Kvalitet</quality>
+        </compressioninformation>
+        <cropinformation>
+          <crop>Beskär</crop>
+          <height>Höjd</height>
+          <help>Markera en yta direkt i bilden eller välj ett förinställt format. Du kan också ange värden i fälten. Dubbelklicka i markeringen eller klicka "Utför" för att utföra beskärningen.</help>
+          <left>Vänster</left>
+          <top>Överkant</top>
+          <width>Bredd</width>
+        </cropinformation>
+        <disabledinformation>Du saknar behörighet för att redigera bildfilen. Däremot kan du redigera inställningar för hur bilden ska visas på sidan.</disabledinformation>
+        <generalinformation>Med bildredigeringsverktyget kan du storleksförändra, beskära och transformera bilder. Välj bland verktygen ovan.</generalinformation>
+        <generalinformationheading>Generell information</generalinformationheading>
+        <imageformat>
+          <formatgif>GIF</formatgif>
+          <formatjpeg>JPEG</formatjpeg>
+          <formatpng>PNG</formatpng>
+        </imageformat>
+        <imagepreset>
+          <presetmedium>Medel</presetmedium>
+          <presetselect>Välj</presetselect>
+          <presetsmall>Liten</presetsmall>
+        </imagepreset>
+        <imgpagelabels>
+          <compress>Komprimering</compress>
+          <crop>Beskär</crop>
+          <heading>Bildredigerare</heading>
+          <height>Höjd:</height>
+          <manualdimensionoverflow>Din markering får inte överskrida bildens dimensioner.</manualdimensionoverflow>
+          <redo>Gör om</redo>
+          <resize>Ändra storlek</resize>
+          <reverttooriginal>Återställ</reverttooriginal>
+          <saveas>Spara som</saveas>
+          <transform>Omforma</transform>
+          <undo>Ångra</undo>
+          <width>Bredd:</width>
+          <zoomminus>Zooma -</zoomminus>
+          <zoomplus>Zooma +</zoomplus>
+        </imgpagelabels>
+        <information>
+          <unitkilobytes>KB</unitkilobytes>
+        </information>
+        <moredisplaysettings>Fler inställningar</moredisplaysettings>
+        <pageleavemessage>Är det säkert att du vill stänga Bildredigeraren utan att spara din förändringar?</pageleavemessage>
+        <quality>
+          <high>Hög (rekommenderat)</high>
+          <low>Låg</low>
+          <maximum>Maximum</maximum>
+          <medium>Medel</medium>
+          <veryhigh>Mycket hög</veryhigh>
+        </quality>
+        <resizeinformation>
+          <contrainproportion>Behåll proportioner</contrainproportion>
+          <height>Höjd</height>
+          <help>Ändra bildens storlek genom att dra i nedre högra hörnet eller använd en av de förinställda formaten. Du kan också ange värden direkt i fälten. Klicka på Utför för att utföra förändringen.</help>
+          <preset>Förinställning</preset>
+          <resize>Ändra storlek</resize>
+          <width>Bredd</width>
+        </resizeinformation>
+        <saveas>
+          <accessdenied>Du saknar behörighet att spara bilden "{0}".</accessdenied>
+          <confirmareplaceimage>Den nya bilden kommer att användas på samtliga sidor ovan. Välj OK för att ersätta bilden.</confirmareplaceimage>
+          <directorypath>Sökväg:</directorypath>
+          <emptyfilename>Ange ett filnamn.</emptyfilename>
+          <fileexists>Filen "{0}" finns redan.</fileexists>
+          <filename>Filnamn:</filename>
+          <fileusageadditionalpages>samt &lt;strong&gt;{0} ytterligare sidor&lt;/strong&gt; som inte visas i listan ovan.</fileusageadditionalpages>
+          <fileusageheading>Bilden används på följande sidor:</fileusageheading>
+          <illegalname>"{0}" är inte ett tillåtet filnamn.</illegalname>
+          <invalidcharacters>Filnamnet får inte innehålla något av följande tecken: {0}</invalidcharacters>
+          <pathnotfound>Katalogen "{0}" saknas. Säkerställ att antingen sidans katalog är korrekt konfigurerad eller att konfigureringsnyckeln modifiedImagesTargetVirtualPath är tillagd på konfigurationselementet imageEditor i web.config.</pathnotfound>
+          <saveasheading>Spara bilden som</saveasheading>
+          <saveastitle>Spara som</saveastitle>
+        </saveas>
+        <saveoptions>
+          <savecopy>Spara bilden som en kopia</savecopy>
+          <saveoriginal>Ersätt originalbilden</saveoriginal>
+        </saveoptions>
+        <transforminformation>
+          <flip>Vänd</flip>
+          <fliphorizontal>Vänd horisontellt</fliphorizontal>
+          <flipvertical>Vänd vertikalt</flipvertical>
+          <grayscale>Gråskala</grayscale>
+          <help>Med omformningsverktygen kan du rotera, vända eller ta bort färginformationen ur bilden.</help>
+          <rotate>Rotera</rotate>
+          <rotateclockwise>Rotera medsols</rotateclockwise>
+          <rotatecounterclockwise>Rotera motsols</rotatecounterclockwise>
+          <transformation>Omforma</transformation>
+        </transforminformation>
+      </imageeditor>
+      <languageselection>
+        <heading>Visa sidträd för</heading>
+      </languageselection>
+      <languagesettings>
+        <addwarning>Är du säker på att du vill ha egna språkinställningar för denna sida istället för att ärva inställningarna från överordnad sida?</addwarning>
+        <availablelanguagesdescriptionfirst>Sidor på denna del av webbplatsen ska vara tillgängliga på språken nedan. Det innebär att sidor kan skapas på och översättas till endast dessa språk.</availablelanguagesdescriptionfirst>
+        <availablelanguagesdescriptionsecond>Denna inställning kommer att begränsa vilka språk redaktörerna kan komma åt för denna del av webbplatsen.</availablelanguagesdescriptionsecond>
+        <availablelanguagestitle>Tillgängliga språk</availablelanguagestitle>
+        <deletewarning>Är du säker på att du vill radera språkinställningarna för denna sida och istället ärva inställningarna från överordnad sida?</deletewarning>
+        <description />
+        <fallbacklanguageheading>Reservspråk</fallbacklanguageheading>
+        <fallbacklanguagesdescriptionfirst>Sidor på denna del av webbplatsen kan göras tillgängliga på ett annat språk än det besökaren valt. Det innebär att sidor som för tillfället inte finns översatta och publicerade på det valda språket istället kan visas på ett annat språk så länge.</fallbacklanguagesdescriptionfirst>
+        <fallbacklanguagesdescriptionsecond>Observera att denna inställning kan orsaka blandade språk i navigering och listningar vilket kan uppfattas som förvirrande för besökaren.</fallbacklanguagesdescriptionsecond>
+        <fallbacklanguagestitle>Reservspråk</fallbacklanguagestitle>
+        <heading>Språkinställningar för sida "{0}"</heading>
+        <inheritsettings>Ärv inställningar från den överordnade sidan: "{0}"</inheritsettings>
+        <replacementlanguageheading>Ersättningsspråk</replacementlanguageheading>
+        <replacementlanguagesdescriptionfirst>Sidor på denna del av webbplatsen ska i fallen nedan visas på ett annat språk än det besökaren valt. Det innebär att sidor som inte är tillgängliga på dessa språk istället kan visas på andra språk.</replacementlanguagesdescriptionfirst>
+        <replacementlanguagesdescriptionsecond>Detta kan till exempel användas då generell information på ett speciellt språk skall vara tillgängligt för alla besökare oavsett språkval.</replacementlanguagesdescriptionsecond>
+        <replacementlanguagestitle>Ersättningsspråk</replacementlanguagestitle>
+        <visitorlanguageheading>Besökarens språk</visitorlanguageheading>
+      </languagesettings>
+      <linkcollection>
+        <linkheading>Länk</linkheading>
+        <sortheading>Sortera</sortheading>
+      </linkcollection>
+      <loginstatus>Du är inloggad som:</loginstatus>
+      <logservice>
+        <realtimeanalyzer>
+          <noreferrer>Direkt till sidan</noreferrer>
+          <referrercount>Antal hänvisningar</referrercount>
+          <referrerurl>URL</referrerurl>
+        </realtimeanalyzer>
+        <timespananalyzer>
+          <dayinterval>Dag</dayinterval>
+          <hourinterval>Timme</hourinterval>
+          <min5interval>5 minuter</min5interval>
+          <monthinterval>Månad</monthinterval>
+          <nodatabase>Loggtjänsten är ej konfigurerad med en databas. Ingen sparad historik kommer att visas.</nodatabase>
+          <problemconnecting>Kan ej komma åt loggtjänsten.</problemconnecting>
+          <selectinterval>Välj intervall</selectinterval>
+          <statisticsdate>Datum</statisticsdate>
+          <statisticshits>Antal visningar</statisticshits>
+          <total>Totalt</total>
+          <yearinterval>År</yearinterval>
+        </timespananalyzer>
+      </logservice>
+      <newpage>
+        <heading>		Skapa ny sida</heading>
+        <info>			Välj typ av sida att skapa från listan.</info>
+        <nopagetype>	Inga sidtyper finns tillgängliga för den här sidan</nopagetype>
+        <tooltipcancel>Avbryt skapa ny sida</tooltipcancel>
+      </newpage>
+      <pageexplorer>
+        <tooltip>
+          Sidtyp: [PageTypeName]&lt;br/&gt;
+          Skapad: [Created]&lt;br/&gt;
+          Ändrad: [Changed]&lt;br/&gt;
+          Sidans id: [PageLink]&lt;br /&gt;
+          Sorteringsindex: [PagePeerOrder]
+        </tooltip>
+      </pageexplorer>
+      <quicksearch>
+        <notfound>Inget id eller sidnamn matchade sökningen</notfound>
+      </quicksearch>
+      <sidbrowser>
+        <heading>	Lägg till användare/grupper</heading>
+        <info />
+        <newsid>	Lägg till:</newsid>
+        <orgsid>	Befintliga:</orgsid>
+        <role>Grupper</role>
+        <user>Användare</user>
+      </sidbrowser>
+      <timespanview>
+        <displayname>Statistik</displayname>
+      </timespanview>
+      <wastebasketpage>
+        <askemptywastebasket see="/edit/editcommand/askemptywastebasket" />
+        <emptiedmessage>Papperskorgen har tömts</emptiedmessage>
+        <emptywastebasket>	Töm papperskorgen</emptywastebasket>
+        <heading>					Papperskorgen</heading>
+        <info />
+        <numdeletedpages>			Antal sidor i papperskorgen</numdeletedpages>
+        <reftypearchive see="/edit/deletepage/reftypearchive" />
+        <reftypeproperty see="/edit/deletepage/reftypeproperty" />
+        <reftypeshortcut see="/edit/deletepage/reftypeshortcut" />
+      </wastebasketpage>
+      <workflowlog>
+        <changed>			Ändrad</changed>
+        <changedby>			Ändrad av</changedby>
+        <created>			Skapad</created>
+        <deleted>			Raderad</deleted>
+        <heading>			Översikt över arbetsflöde</heading>
+        <owner>				Ägare</owner>
+        <pagelink>			Sida</pagelink>
+        <status>			Status</status>
+        <statuscomments>	Kommentarer</statuscomments>
+        <taskname>			Namn</taskname>
+      </workflowlog>
+      <workspace>
+        <license>				Licensavtal</license>
+        <mysettings>			Mina inställningar</mysettings>
+        <userinfo>				Användarinformation</userinfo>
+        <welcome>				Välkommen till EPiServer CMS</welcome>
+      </workspace>
+    </edit>
+    <editor>
+      <tools>
+        <cellproperties>
+          <axis>Axis:</axis>
+          <axiswindowtext>Välj en eller flera av nedanstående axis, eller skapa en ny genom att fylla i ett namn i inmatningsfältet.</axiswindowtext>
+          <axiswindowtitle>Välj axis</axiswindowtitle>
+          <backgroundcolor>Färg:</backgroundcolor>
+          <backgroundheading>Bakgrund</backgroundheading>
+          <bordercolor>Färg:</bordercolor>
+          <borderdark>Mörk kantlinje:</borderdark>
+          <borderheading>Kantlinjer</borderheading>
+          <borderlight>Ljus kantlinje:</borderlight>
+          <datacell>Datacell</datacell>
+          <halignmentcenter>Centrera</halignmentcenter>
+          <halignmentheading>Vågrät justering:</halignmentheading>
+          <halignmentleft>Vänster</halignmentleft>
+          <halignmentright>Höger</halignmentright>
+          <headercell>Rubrikcell</headercell>
+          <headers>Headers:</headers>
+          <headersheading>Rubriker</headersheading>
+          <headerswindowtext>Välj en eller flera av de headers (id värden) som finns nedan, eller ange ett värde som du senare tänker skapa i inmatningsfältet.</headerswindowtext>
+          <headerswindowtitle>Välj headers</headerswindowtitle>
+          <id>Id:</id>
+          <layoutheading>Layout</layoutheading>
+          <multiplevalues>Olika</multiplevalues>
+          <percent>i procent</percent>
+          <pixels>i bildpunkter</pixels>
+          <scope>Scope:</scope>
+          <scopecol>Kolumn</scopecol>
+          <scoperow>Rad</scoperow>
+          <sizeheading>Storlek</sizeheading>
+          <specifyheight>Ange höjd:</specifyheight>
+          <specifywidth>Ange bredd:</specifywidth>
+          <toolheading>Cellegenskaper</toolheading>
+          <type>Celltyp:</type>
+          <usepicture>Använd bakgrundsbild</usepicture>
+          <valignmentbaseline>Baslinje</valignmentbaseline>
+          <valignmentbottom>Botten</valignmentbottom>
+          <valignmentheading>Lodrät justering:</valignmentheading>
+          <valignmentmiddle>Mitten</valignmentmiddle>
+          <valignmenttop>Topp</valignmenttop>
+        </cellproperties>
+        <common>
+          <cssclass>CSS-klass:</cssclass>
+        </common>
+        <dynamiccontent>
+          <adapterdescriptionlabel>Beskrivning</adapterdescriptionlabel>
+          <adapterheading>Plugin</adapterheading>
+          <adapterlistlabel>Välj plugin</adapterlistlabel>
+          <adapterpreviewheading>Förhandsgranskning</adapterpreviewheading>
+          <adaptersettingheading>Inställningar</adaptersettingheading>
+          <adaptersettingserror>Användarkontrollen "{0}" kunde inte laddas.</adaptersettingserror>
+          <noplugins>Inga plugins för dynamiskt innehåll är konfigurerade för den här webbplatsen.</noplugins>
+          <toolheading>Dynamiskt innehåll</toolheading>
+        </dynamiccontent>
+        <font>
+          <colorheading>Färg:</colorheading>
+          <effectheading>Effekter:</effectheading>
+          <fontheading>Typsnitt:</fontheading>
+          <samlpeheading>Exempel</samlpeheading>
+          <sizeheading>Storlek:</sizeheading>
+          <stylebold>			Fet</stylebold>
+          <stylebolditalic>	Fet kursiv</stylebolditalic>
+          <styleheading>Stil:</styleheading>
+          <styleitalic>		Kursiv</styleitalic>
+          <styleregular>		Normal</styleregular>
+          <toolheading>Tecken</toolheading>
+          <underline>Understruken</underline>
+        </font>
+        <hyperlinkproperties>
+          <address see="/util/linkeditor/urlfieldcaption" />
+          <anchor>Bokmärke:</anchor>
+          <anchorlink>Bokmärke på denna sida</anchorlink>
+          <automatically>Automatiskt</automatically>
+          <clickableimage>Klickbar bild:</clickableimage>
+          <clickabletext>Klickbar text:</clickabletext>
+          <documentaccessdeniedmessage>Du har inte rätt att komma åt dokumentet som denna länk länkade till.</documentaccessdeniedmessage>
+          <documentnotfoundmessage>Dokumentet som denna länk länkade till finns inte längre eller har flyttats.</documentnotfoundmessage>
+          <editimageproperties>Ändra bildegenskaper</editimageproperties>
+          <emailaddress see="/util/linkeditor/mailfieldcaption" />
+          <externaldocumentlink>Dokument på annan webbplats</externaldocumentlink>
+          <externallink>Sida på annan webbplats</externallink>
+          <informationheading see="/editor/tools/imageeditor/informationheading" />
+          <internaldocumentlink>Dokument på denna webbplats</internaldocumentlink>
+          <internallink>Sida på denna webbplats</internallink>
+          <language>Språk:</language>
+          <linktargetheading>Länkmål</linktargetheading>
+          <linktitle see="/util/linkeditor/linktitlefieldcaption" />
+          <networkdocumentlink>Dokument på nätverket</networkdocumentlink>
+          <noimageinfovalidationmessage>Du har angett att länken ska utgöras av en klickbar bild.</noimageinfovalidationmessage>
+          <nourlvalidationmessage>Var god ange länkmål innan du sparar.</nourlvalidationmessage>
+          <page>Sida:</page>
+          <pageaccessdeniedmessage>Du har inte rätt att komma åt sidan som denna länk länkade till.</pageaccessdeniedmessage>
+          <pagenotfoundmessage>Sidan som denna länk länkade till finns inte längre.</pagenotfoundmessage>
+          <path>Sökväg:</path>
+          <selectnewdocumentmessage>Välj ett nytt dokument innan du sparar eller ändra till annan typ av länk.</selectnewdocumentmessage>
+          <selectnewpagemessage>Välj en ny sida innan du sparar eller ändra till annan typ av länk.</selectnewpagemessage>
+          <specifyimagemessage>Var god ange bild innan du sparar eller ändra till klickbar text.</specifyimagemessage>
+          <tabs>
+            <document>Dokument</document>
+            <email>E-post</email>
+            <webpage>Webbsida</webpage>
+          </tabs>
+          <targetframe see="/util/linkeditor/targetfieldcaption" />
+          <toolheading>Länkegenskaper</toolheading>
+        </hyperlinkproperties>
+        <imageeditor>
+          <alignment>Justering:</alignment>
+          <alignmentbottom>Botten</alignmentbottom>
+          <alignmentleft>Vänster</alignmentleft>
+          <alignmentmiddle>Mitten</alignmentmiddle>
+          <alignmentright>Höger</alignmentright>
+          <alignmenttop>Topp</alignmenttop>
+          <alttext>Alternativ text:</alttext>
+          <borderwidth>Ramens bredd:</borderwidth>
+          <edithyperlinkproperties>Ändra länkegenskaper</edithyperlinkproperties>
+          <filename>Filnamn:</filename>
+          <filesize>Filstorlek:</filesize>
+          <hspace>Horisontellt utrymme:</hspace>
+          <hyperlinkaddress>Länk till:</hyperlinkaddress>
+          <hyperlinkheading>Hyperlänk</hyperlinkheading>
+          <imagefile>Bildfil:</imagefile>
+          <informationheading>Information</informationheading>
+          <invalidlink>Ogiltig länk</invalidlink>
+          <layoutheading>Layout och ramar</layoutheading>
+          <lockproportions>Lås höjd/bredd-förhållande</lockproportions>
+          <noimagevalidationmessage>Var god ange en bild innan du sparar.</noimagevalidationmessage>
+          <nolinkinfovalidationmessage>Du har angett att bilden ska kopplas till en länk.</nolinkinfovalidationmessage>
+          <percent>i procent</percent>
+          <pixels>i pixel</pixels>
+          <sizeheading>Visningsstorlek</sizeheading>
+          <specifyheight>Ange höjd:</specifyheight>
+          <specifylinkinfomessage>Var god ange länkinformation innan du sparar eller ändra detta val.</specifylinkinfomessage>
+          <specifywidth>Ange bredd:</specifywidth>
+          <toolheading>Bildegenskaper</toolheading>
+          <unitbytes>bytes</unitbytes>
+          <uselink>Koppla länk till bilden</uselink>
+          <vspace>Vertikalt utrymme:</vspace>
+        </imageeditor>
+        <insertanchor>
+          <anchorname>Bokmärkets namn:</anchorname>
+          <toolheading>Infoga bokmärke</toolheading>
+        </insertanchor>
+        <inserttable>
+          <border>Kantlinje</border>
+          <columns>Kolumner</columns>
+          <rows>Rader</rows>
+          <toolheading>Infoga tabell</toolheading>
+          <width>Bredd</width>
+        </inserttable>
+        <quote>
+          <blockquote>Citatstycke</blockquote>
+          <citeheading>Källa för citatet</citeheading>
+          <informationheading>Information</informationheading>
+          <inlinequote>Citat</inlinequote>
+          <quotetypeheading>Citattyp</quotetypeheading>
+          <quotetypenotavailable>Den nuvarande markeringen tillåter inte den här citattypen.</quotetypenotavailable>
+          <quotetypenotchangeable>Citattyp går inte att ändra.</quotetypenotchangeable>
+          <removequote>Ta bort citat</removequote>
+          <titleheading>Titel</titleheading>
+          <toolheading>Infoga citat</toolheading>
+        </quote>
+        <search>
+          <findheading>Sök efter:</findheading>
+          <finisheddocument>	Sökningen av dokumentet har avslutats.</finisheddocument>
+          <matchcase>Matcha versaler</matchcase>
+          <matchwhole>Matcha endast hela ord</matchwhole>
+          <reachedend>		Sökningen har kommit till slutet av dokumentet. Vill du fortsätta sökningen från början?</reachedend>
+          <toolheading>Sök</toolheading>
+        </search>
+        <selectvalue>
+          <newvalue>Nytt värde:</newvalue>
+        </selectvalue>
+        <spellcheck>
+          <cannotspellcheck>	Den nuvarande markeringen kan inte stavningskontrolleras.</cannotspellcheck>
+          <errorspellchecktext>Fel vid stavningskontroll Kan inte hämta: </errorspellchecktext>
+          <finisheddocument>	Stavningskontrollen är färdig.</finisheddocument>
+          <finishedselection>	Markeringen är färdigkontrollerad.</finishedselection>
+          <initializing>		(Laddar stavningskontroll, var god vänta...)</initializing>
+          <missingdictionary>Microsoft Office har inte ordlistan installerad för</missingdictionary>
+          <nosuggestions>		(inga stavningsförslag)</nosuggestions>
+          <notindictionary>Inte i ordlistan:</notindictionary>
+          <officenotinstalled>Microsoft Office är inte installerat på denna dator</officenotinstalled>
+          <suggestions>Förslag:</suggestions>
+          <textnotfound>		kunde inte hittas i texten.</textnotfound>
+          <toolheading>Stavning</toolheading>
+        </spellcheck>
+        <tableproperties>
+          <alignmentcenter>Centrera</alignmentcenter>
+          <alignmentheading>Justering:</alignmentheading>
+          <alignmentleft>Vänster</alignmentleft>
+          <alignmentright>Höger</alignmentright>
+          <backgroundcolor>Färg:</backgroundcolor>
+          <backgroundheading>Bakgrund</backgroundheading>
+          <bordercolor>Färg:</bordercolor>
+          <borderdark>Mörk kantlinje:</borderdark>
+          <borderheading>Kantlinjer</borderheading>
+          <borderlight>Ljus kantlinje:</borderlight>
+          <bordersize>Storlek:</bordersize>
+          <caption>Tabellrubrik:</caption>
+          <cellpadding>Cellutfyllnad:</cellpadding>
+          <cellspacing>Cellavstånd:</cellspacing>
+          <descriptionheading>Beskrivning</descriptionheading>
+          <layoutheading>Layout</layoutheading>
+          <percent>i procent</percent>
+          <pixels>i bildpunkter</pixels>
+          <sizeheading>Storlek</sizeheading>
+          <specifyheight>Ange höjd:</specifyheight>
+          <specifywidth>Ange bredd:</specifywidth>
+          <summary>Sammanfattning:</summary>
+          <toolheading>Tabellegenskaper</toolheading>
+          <usepicture>Använd bakgrundsbild</usepicture>
+        </tableproperties>
+      </tools>
+    </editor>
+    <episerver.webparts>
+      <webcontrols>
+        <catalogzone>
+          <emptyzonetext>Katalogzonen innehåller inga kataloger.</emptyzonetext>
+          <headertext>Katalogzon</headertext>
+          <instructiontext>Välj katalog att lista.</instructiontext>
+          <selecttargetzonetext>Lägg till i:</selecttargetzonetext>
+        </catalogzone>
+        <connectionszone>
+          <configureconnectiontitle>Konfigurera kopplingar</configureconnectiontitle>
+          <connecttoconsumerinstructiontext>Skapa koppling till en konsumerande webbdel.</connecttoconsumerinstructiontext>
+          <connecttoconsumertext>Skapa koppling till en konsument</connecttoconsumertext>
+          <connecttoconsumertitle>Skicka data till webbdel</connecttoconsumertitle>
+          <connecttoproviderinstructiontext>Skapa kopplingar till levererande webbdel.</connecttoproviderinstructiontext>
+          <connecttoprovidertext>Skapa kopplingar till levererande webbdel.</connecttoprovidertext>
+          <connecttoprovidertitle>Hämta data från webbdel</connecttoprovidertitle>
+          <consumersinstructiontext>Följande webbdelar konsumerar information från aktuell webbdel:</consumersinstructiontext>
+          <consumertitle>Konsumenter</consumertitle>
+          <existingconnectionerrormessage />
+          <getfromtext>Från</getfromtext>
+          <gettext>Hämta</gettext>
+          <headertext>Kopplingszon</headertext>
+          <instructiontext>Administrera kopplingar för aktuell webbdel.</instructiontext>
+          <instructiontitle>Administrera kopplingar för {0}</instructiontitle>
+          <newconnectionerrormessage />
+          <noexistingcinnectiontitle>Inga aktiva kopplingar</noexistingcinnectiontitle>
+          <noexistingconnectioninstructiontext>Det finns inga aktiva kopplingar i aktuell webbdel. Du kan skapa en ny koppling genom att välja länken ovan om det finns kompatibla webbdelar på sidan.</noexistingconnectioninstructiontext>
+          <providersinstructiontext>Webbdelar som aktuell webbdel konsumerar information ifrån.</providersinstructiontext>
+          <providerstitle>Leverantörer</providerstitle>
+          <sendtext>Skicka:</sendtext>
+          <sendtotext>Till:</sendtotext>
+        </connectionszone>
+        <displaymodedropdown>
+          <browse>Visa</browse>
+          <catalog>Katalog</catalog>
+          <connect>Koppla</connect>
+          <design>Ändra</design>
+          <edit>Inställningar</edit>
+        </displaymodedropdown>
+        <editorzone>
+          <emptyzonetext>Inställningszonen innehåller inga inställningsdelar.</emptyzonetext>
+          <errortext>Ett fel uppstod när en eller flera ändringar skulle verkställas.</errortext>
+          <headertext>Inställningszon</headertext>
+          <instructiontext>Ändra egenskaper för webbdelen. Välj därefter OK eller Verkställ för att spara dina ändringar.</instructiontext>
+        </editorzone>
+        <extendedwebpartzone>
+          <emptyzonetext>Lägg till en webbdel genom att antingen dra en RSS-källa hit eller välja en webbdel från en katalog.</emptyzonetext>
+        </extendedwebpartzone>
+        <scopedropdown>
+          <all>Ändringar gäller alla</all>
+          <user>Ändringar är personliga</user>
+        </scopedropdown>
+        <wsrp>
+          <portletcatalogpart>
+            <producer>Producent</producer>
+          </portletcatalogpart>
+        </wsrp>
+      </webcontrols>
+      <verbs>
+        <add>Lägg till</add>
+        <apply>Verkställ</apply>
+        <cancel>Avbryt</cancel>
+        <close>Stäng</close>
+        <configure>Konfigurera</configure>
+        <connect>Koppla</connect>
+        <delete>Ta bort</delete>
+        <disconnect>Frikoppla</disconnect>
+        <edit>Redigera</edit>
+        <editwsrp>Redigera portlet</editwsrp>
+        <export>Exportera</export>
+        <help>Hjälp</help>
+        <maximize>Maximera</maximize>
+        <minimize>Minimera</minimize>
+        <ok>OK</ok>
+        <restore>Återställ</restore>
+        <solo>Solo</solo>
+        <view>Visa</view>
+      </verbs>
+    </episerver.webparts>
+    <exceptionmanager>
+      <errorform>
+        <description>Meddela oss gärna om du har hittat något som inte fungerar så vi kan åtgärda ett eventuellt fel, glöm inte att beskriva hur du klickade när felet inträffade.</description>
+        <messagesentdescription>Ditt meddelande har nu skickats, vi kommer titta närmare på din felbeskrivning och åtgärda detta.</messagesentdescription>
+        <messagesenttitle>Meddelande har skickats</messagesenttitle>
+        <sendbutton>Skicka meddelande</sendbutton>
+      </errorform>
+      <exceptions>
+        <exception type="EPiServer.Core.AccessDeniedException">
+          <description>Du har inte tillräckliga rättigheter för att se denna sida.</description>
+          <title>Åtkomst nekad</title>
+        </exception>
+        <exception type="EPiServer.Core.PageNotFoundException">
+          <description>Länken som du angav fungerar inte, antingen är sidan borttagen eller flyttad. Om du klickade på en länk vänligen meddela ansvarig på den webbplatsen att länken är felaktig.</description>
+          <title>Sidan finns inte</title>
+        </exception>
+      </exceptions>
+      <httperrors>
+        <status code="404">
+          <description>Länken som du angav fungerar inte, antingen är sidan borttagen eller flyttad. Om du klickade på en länk vänligen meddela ansvarig på den webbplatsen att länken är felaktig.</description>
+          <title>Felaktig länk</title>
+        </status>
+        <status code="500">
+          <description>Länken som du angav fungerar inte, detta kan bero på tillfälligt underhåll alternativt att länken är felaktig.</description>
+          <title>Sidan kunde inte laddas</title>
+        </status>
+      </httperrors>
+    </exceptionmanager>
+    <february>	Februari</february>
+    <filemanager>
+      <addversion>
+        <title>Skapa ny version</title>
+      </addversion>
+      <browse>
+        <checkedoutby>Utcheckad av</checkedoutby>
+        <created>Skapad</created>
+        <emptyfolder>Denna katalog är tom</emptyfolder>
+        <goback>Tillbaka</goback>
+        <modified>Modifierad</modified>
+        <name>Namn</name>
+        <size>Storlek</size>
+        <thumbnail>Miniatyrbild</thumbnail>
+      </browse>
+      <checkinselection>
+        <comments>Kommentar</comments>
+        <currentfile see="/filemanager/search/filename" />
+        <filenotcheckedout>Filen är inte utcheckad</filenotcheckedout>
+        <filexofy>fil {0} av {1}</filexofy>
+        <selectversion>Välj ny version</selectversion>
+        <title>Checka in fil</title>
+      </checkinselection>
+      <createdirectory>
+        <alreadyexists>Katalogen existerar redan</alreadyexists>
+        <name>Katalogens namn</name>
+        <title>Skapa ny katalog</title>
+      </createdirectory>
+      <deleteselection>
+        <confirmdirectorydelete>Är du säker på att du vill ta bort hela katalogen?</confirmdirectorydelete>
+        <confirmfiledelete>Är du säker på att du vill ta bort filen?</confirmfiledelete>
+        <confirmmultidelete>{0} objekt är markerade, är du säker på att du vill ta bort dessa?</confirmmultidelete>
+        <objectnotfound>Det går inte att radera vald fil/katalog. Den kan ha tagits bort av en annan användare.</objectnotfound>
+        <title>Ta bort "{0}"</title>
+        <warningmultinotempty>Varning! Vissa av katalogerna är inte tomma.</warningmultinotempty>
+        <warningnotempty>Varning! Katalogen är inte tom.</warningnotempty>
+      </deleteselection>
+      <dhtmlsupport>
+        <addfavorite>Lägg till favorit</addfavorite>
+        <addversion>Skapa ny version</addversion>
+        <checkinselection>Checka in</checkinselection>
+        <checkoutselection>Checka ut</checkoutselection>
+        <copyselection>Kopiera</copyselection>
+        <createdirectory>Skapa katalog</createdirectory>
+        <cutselection>Klipp ut</cutselection>
+        <deleteselection>Ta bort</deleteselection>
+        <directorysecurity>Ändra rättigheter</directorysecurity>
+        <editimage>Redigera</editimage>
+        <editinoffice>Redigera i Office</editinoffice>
+        <editsummary>Redigera filinformation</editsummary>
+        <notanimage>Den valda filen är ingen bild.</notanimage>
+        <openfile>Öppna fil</openfile>
+        <pasteselection>Klistra in</pasteselection>
+        <removefavorite>Ta bort favorit</removefavorite>
+        <renamedirectory>Ändra katalognamn</renamedirectory>
+        <renamefile>Ändra filnamn</renamefile>
+        <renameselection see="/filemanager/directorytools/rename" />
+        <undocheckoutselection>Ångra utcheckning</undocheckoutselection>
+        <uploadfile see="/filemanager/directorytools/addfile" />
+        <uploadmultiplefiles>Lägg till flera filer</uploadmultiplefiles>
+        <versionlist>Versionshistorik</versionlist>
+        <viewfile>Visa filinformation</viewfile>
+      </dhtmlsupport>
+      <directorysecurity>
+        <inheritsecurity>Ärv rättigheter från överordnad katalog</inheritsecurity>
+        <title>Ändra rättigheter för "{0}"</title>
+      </directorysecurity>
+      <directorytools>
+        <addfile>Lägg till fil</addfile>
+        <addfiletooltip>Lägg till en ny fil</addfiletooltip>
+        <create>Skapa katalog</create>
+        <createtooltip>Skapa en ny katalog</createtooltip>
+        <delete>Ta bort</delete>
+        <deletetooltip>Ta bort vald fil eller katalog</deletetooltip>
+        <gouptooltip>Uppåt</gouptooltip>
+        <rename>Ändra namn</rename>
+        <renametooltip>Ändra namn på vald fil eller katalog</renametooltip>
+        <search>Sök</search>
+        <searchtooltip>Sök efter filer</searchtooltip>
+        <security>Säkerhet</security>
+        <securitytooltip>Ändra rättighetsinställningarna</securitytooltip>
+        <viewthumbnails>Visa miniatyrbilder</viewthumbnails>
+        <viewthumbnailstooltip>Visa alla bilder som miniatyrer</viewthumbnailstooltip>
+      </directorytools>
+      <editfilesummary>
+        <inputauthor>Skribent</inputauthor>
+        <inputcategory>Kategori</inputcategory>
+        <inputcomments>Kommentarer</inputcomments>
+        <inputdescription>Beskrivning</inputdescription>
+        <inputdocumenttype>Typ av dokument</inputdocumenttype>
+        <inputkeywords>Nyckelord</inputkeywords>
+        <inputpublisher>Utgivare</inputpublisher>
+        <inputsubject>Beskrivning</inputsubject>
+        <inputtitle>Titel</inputtitle>
+        <title>Redigera information för "{0}"</title>
+      </editfilesummary>
+      <filereferencelist>
+        <gotopage>Visa sidan</gotopage>
+        <noreferences>Inga referenser</noreferences>
+        <referencewarning>Om du fortsätter med åtgärden kommer följande länkar att brytas</referencewarning>
+        <xlinkstoy>{0} länkar till {1}</xlinkstoy>
+      </filereferencelist>
+      <filetools>
+        <delete>Ta bort</delete>
+        <deletetooltip>Ta bort aktuell fil</deletetooltip>
+        <editfilesummary>Redigera filinformation</editfilesummary>
+        <editfilesummarytooltip>Redigera informationen om den aktuella filen</editfilesummarytooltip>
+        <open>Öppna</open>
+        <opentooltip>Öppna den aktuell filen</opentooltip>
+        <rename>Ändra namn</rename>
+        <renametooltip>Ändra namn på den aktuella filen</renametooltip>
+        <replacefile>Ersätt fil</replacefile>
+        <replacefiletooltip>Ersätt den aktuella filen med en ny fil</replacefiletooltip>
+      </filetools>
+      <illegalname>Tecknen {0} är inte tillåtna i fil eller katalognamn.</illegalname>
+      <invalidcharacters>Ogiltiga tecken i namnet</invalidcharacters>
+      <invalidfiledirectoryname>Det är inte tillåtet att använda enheter i Windows som fil eller katalognamn.</invalidfiledirectoryname>
+      <licenseerror>Ett licensfel för den valda tillhandahållaren av filer gör att den inte kan visas.</licenseerror>
+      <newpage>Ny sida</newpage>
+      <nofileselected>Ingen fil har valts</nofileselected>
+      <notsavedpage>Osparad sida</notsavedpage>
+      <novppconfigured>Inga registrerade tillhandahållare är åtkomliga för filsystemet</novppconfigured>
+      <pagefoldernotcreated>En egen katalog för denna sida har inte skapats ännu, vill du skapa den katalogen nu ?</pagefoldernotcreated>
+      <pagefoldernotcreatednoaccess>En egen katalog för denna sida har inte skapats ännu</pagefoldernotcreatednoaccess>
+      <pasteselection>
+        <alreadyexists>Åtgärden avbröts då följande objekt redan existerar</alreadyexists>
+        <cannotcopyinsideitselfmessage>Åtgärden avbröts då kopian av följande mapp inte kan klistras in inuti sig själv</cannotcopyinsideitselfmessage>
+        <cannotmoveinsideitselfmessage>Åtgärden avbröts då följande utklippta mapp inte kan flyttas inuti sig själv</cannotmoveinsideitselfmessage>
+        <confirmcopy>{0} objekt är markerade, vill du kopiera dessa hit?</confirmcopy>
+        <confirmmove>{0} objekt är markerade, vill du flytta dessa hit?</confirmmove>
+        <title>Klistra in "{0}"</title>
+      </pasteselection>
+      <path>Sökväg</path>
+      <renamedirectory>
+        <directorynotfound>Katalogen kunde inte hittas! Den kan ha tagits bort av en annan användare.</directorynotfound>
+        <newname>Ange nytt katalognamn</newname>
+        <title>Ändra namn på "{0}"</title>
+      </renamedirectory>
+      <renamefile>
+        <alreadyexists>Det finns redan en fil med det namnet</alreadyexists>
+        <filenotfound>Filen kunde inte hittas! Den kan ha tagits bort av en annan användare.</filenotfound>
+        <newname>Ange nytt filnamn</newname>
+        <title>Ändra namn på "{0}"</title>
+      </renamefile>
+      <search>
+        <advancedoptions>Avancerade alternativ</advancedoptions>
+        <allpagefolders>Sidornas egna kataloger</allpagefolders>
+        <currentdirectory>Aktuell katalog</currentdirectory>
+        <filedirectory>Katalog</filedirectory>
+        <filename>Filnamn</filename>
+        <filenamepattern>Filnamn</filenamepattern>
+        <gotodirectory>Gå till katalogen</gotodirectory>
+        <locations>Kataloger</locations>
+        <modifiedfrom>Modifierad efter</modifiedfrom>
+        <modifiedto>Modifierad innan</modifiedto>
+        <numberofhits>Antal träffar</numberofhits>
+        <query>Sök efter text</query>
+        <searchlimited>Resultatet har begränsats till de {0} bästa träffarna</searchlimited>
+        <viewfileinfo see="/filemanager/dhtmlsupport/viewfile" />
+      </search>
+      <unauthorizedpagefoldercreation>Du har inte rättigheter att skapa sidkataloger för denna sida.</unauthorizedpagefoldercreation>
+      <uploadfile>
+        <confirmreplacefile>Det finns redan en fil med det namnet, vill du ersätta den?</confirmreplacefile>
+        <selectfile>Välj fil att lägga till</selectfile>
+        <title>Lägg till fil</title>
+      </uploadfile>
+      <versionlist>
+        <comments>Kommentar</comments>
+        <created see="/filemanager/browse/created" />
+        <createdby>Skapad av</createdby>
+        <size see="/filemanager/browse/size" />
+        <title>Versionshistorik: {0}</title>
+        <version>Version</version>
+      </versionlist>
+      <versionlisttoolbar>
+        <addversion>Ny version</addversion>
+        <addversiontooltip>Skapa ny version</addversiontooltip>
+        <confirmdelete>Är du säker på att du vill ta bort versionen?</confirmdelete>
+        <copyshortcut>Kopiera genväg till urklipp</copyshortcut>
+        <delete>Ta bort</delete>
+        <deletetooltip>Ta bort denna version</deletetooltip>
+        <download>Ladda ner</download>
+        <downloadtooltip>Ladda ner version</downloadtooltip>
+        <restore>Återställ version</restore>
+        <restoretooltip>Återställ till denna version</restoretooltip>
+      </versionlisttoolbar>
+      <viewfile>
+        <backtofolder>Tillbaka till katalogen</backtofolder>
+        <linkingpages>Sidor som länkar</linkingpages>
+      </viewfile>
+      <virtualpath>Virtuell sökväg</virtualpath>
+    </filemanager>
+    <filemanagernavigator>
+      <currentpage see="/util/linkeditor/pageuploaddir" />
+      <favoritesinfo>Lägg till mappfavoriter med hjälp av högerklicksmenyn för valfri mapp i listan till höger</favoritesinfo>
+      <folders>Mappar</folders>
+      <hide>Dölj</hide>
+      <myfavorites>Mina favoriter</myfavorites>
+      <show>Visa</show>
+      <startingpoints>Startpunkter</startingpoints>
+      <uploaddir see="/util/linkeditor/uploaddir" />
+      <virtualpathroots>
+        <virtualpathroot name="Page Files">
+          <name>Sidfiler</name>
+        </virtualpathroot>
+      </virtualpathroots>
+    </filemanagernavigator>
+    <frames>
+      <frame name="_blank">
+        <description>Öppna länken i nytt fönster</description>
+      </frame>
+      <frame name="_top">
+        <description>Öppna länken i hela fönstret</description>
+      </frame>
+    </frames>
+    <friday>	Fredag</friday>
+    <headings>
+      <heading name="Advanced">
+        <description>	Avancerad information</description>
+      </heading>
+      <heading name="Advanced_short">
+        <description>Avancerat</description>
+      </heading>
+      <heading name="Categories">
+        <description>	Kategorier</description>
+      </heading>
+      <heading name="General">
+        <description>Allmänt</description>
+      </heading>
+      <heading name="Information">
+        <description>	Information</description>
+      </heading>
+      <heading name="Shortcut">
+        <description>Genväg / extern länk</description>
+      </heading>
+      <heading name="Subscription">
+        <description>Prenumeration</description>
+      </heading>
+    </headings>
+    <hour>		timme</hour>
+    <january>	Januari</january>
+    <javascript>
+      <system>
+        <popupsblocked>Popup-fönster är blockerade för webbplatsen. Tillåt popup-fönster för att komma åt funktionen.</popupsblocked>
+      </system>
+    </javascript>
+    <july>		Juli</july>
+    <june>		Juni</june>
+    <labels>
+      <description>			Beskrivning</description>
+    </labels>
+    <login>
+      <loginfailed>			Inloggningen misslyckades</loginfailed>
+      <missingpassword>		Du måste ange ett lösenord</missingpassword>
+      <password>				Lösenord</password>
+      <persistentlogin>		Automatisk påloggning mot den här webbplatsen</persistentlogin>
+      <username>				Namn</username>
+      <usernamerequired>		Du måste ange ett namn</usernamerequired>
+    </login>
+    <march>		Mars</march>
+    <may>		Maj</may>
+    <minute>	minut</minute>
+    <monday>	Måndag</monday>
+    <month>		månad</month>
+    <november>	November</november>
+    <october>	Oktober</october>
+    <pagetypes>
+      <common>
+        <property name="PageArchiveLink">
+          <caption>	Arkivera till sida</caption>
+          <help>		Den här sidan kan arkiveras på speciell plats när "Sluta publicera-datumet" har passerats. Ange vilken sida som ska användas som arkiv.</help>
+        </property>
+        <property name="PageCategory">
+          <caption>	Kategorier</caption>
+          <help>		Välj de kategorier din sida ska kopplas till. </help>
+        </property>
+        <property name="PageChanged">
+          <caption>	Ändrad</caption>
+          <help>		Datum när sidan markerades som ändrad.</help>
+        </property>
+        <property name="PageChangedOnPublish">
+          <caption>   Markera sidan som ändrad</caption>
+          <help>		Datum för när sidan ändrades uppdateras om den här rutan är markerad. Används också för att sidan skall skickas med i ex prenumerationer</help>
+        </property>
+        <property name="PageChildOrderRule">
+          <caption>	Sorteringsordning</caption>
+          <help>		Anger i vilken ordning underliggande sidor till den här sidan kommer att visas</help>
+        </property>
+        <property name="PageCreated">
+          <caption>	Skapad</caption>
+          <help>		Datum när sidan skapades.</help>
+        </property>
+        <property name="PageDelayedPublish">
+          <caption>	Framtida publicering</caption>
+          <help>		Kryssa för rutan för att få den här versionen att automatiskt publiceras vid "Börja publicera" datumet</help>
+        </property>
+        <property name="PageExternalURL">
+          <caption>	Enkel adress till sidan</caption>
+          <help>		Ange sökvägen från roten på din webbplats, t ex "/produkter". Den här sidan kan då göras åtkomlig via en enkel adress utan "?" eller andra symboler. Besökaren skriver då www.foretaget.se/produkter och sidan visas </help>
+        </property>
+        <property name="PageFrameID">
+          <caption>	Målram</caption>
+          <help>		Avgör hur en länk kommer att öppnas (target i &lt;a href&gt;).</help>
+        </property>
+        <property name="PageLanguageID">
+          <caption>	Sidans språkkodning</caption>
+          <help>		Använd för att koppla sidan till ett språk annat är systemets</help>
+        </property>
+        <property name="PageLink">
+          <caption>	Sidlänk</caption>
+          <help>		Länk till sidan</help>
+        </property>
+        <property name="PageLinkURL">
+          <caption>	Extern länk</caption>
+          <help>		Sidan öppnas med innehåll från den externa sidan eller dokument du länkat till</help>
+        </property>
+        <property name="PageName">
+          <caption>	Namn</caption>
+          <help>		Namn på sidan, visas exempelvis som rubrik i menyer</help>
+        </property>
+        <property name="PagePeerOrder">
+          <caption>	Sorteringsindex</caption>
+          <help>		Ange ett heltal som gäller som indextal för den här sidan. Välj sorteringsordning "Enligt sorteringsindex" för överliggande sida och den sida med lägst index kommer att visas högst upp</help>
+        </property>
+        <property name="PageShortcutLink">
+          <caption>	Intern genväg/Hämta data från</caption>
+          <help>		Sidan öppnar en annan sida och förlyttar besökaren till den aktuella sidan i strukturen (Hämta data från visar innehållet från en annan sida) </help>
+        </property>
+        <property name="PageShortcutType">
+          <caption>Typ av länk</caption>
+          <help>		Välj i listan vilken typ av länk du vill använda</help>
+        </property>
+        <property name="PageStartPublish">
+          <caption>	Börja publicera</caption>
+          <help>		Publicera fr o m detta datum. Om fältet lämnas tomt kommer sidan att publicera direkt när du klickat på publiceraknappen</help>
+        </property>
+        <property name="PageStopPublish">
+          <caption>	Sluta publicera</caption>
+          <help>		Publicera t o m detta datum. Om fältet lämnas tomt måste du manuellt ta bort sidan för att den skall sluta publiceras</help>
+        </property>
+        <property name="PageTargetFrame">
+          <caption>	Målram</caption>
+          <help>		Avgör hur en länk kommer att öppnas (target i &lt;a href&gt;).</help>
+        </property>
+        <property name="PageTypeName">
+          <caption>	Sidtyp</caption>
+          <help>		Namn på sidans sidtyp.</help>
+        </property>
+        <property name="PageURLSegment">
+          <caption>	Sidans namn i webbadress</caption>
+          <help>		Använd för att ge sidan ett kort namn som används i webbadressen</help>
+        </property>
+        <property name="PageVisibleInMenu">
+          <caption>	Visa sidan i menyer</caption>
+          <help>		Markera denna kryssruta om du vill visa sidan i menyer. Om rutan är tom kommer sidan endast att visas i listningar</help>
+        </property>
+        <property name="SubscriptionMailBody">
+          <caption>Introduktionstext till prenumerationsutskick</caption>
+          <help>Ange den text som du vill inleda ditt prenumerationsmeddelande med. Meddelandet skickas ut till alla prenumeranter via e-post.</help>
+        </property>
+        <property name="SubscriptionMailFrom">
+          <caption>Avsändareadress för prenumerationsutskick</caption>
+          <help>Ange den e-postadress som skall stå som avsändare på de e-postmeddelanden som skickas med prenumerationen.</help>
+        </property>
+        <property name="SubscriptionMailReadMore">
+          <caption>Text i prenumerationsutskick för länkar till sidor</caption>
+          <help>Denna text kommer att fungera som länk till den sida som ändrats och som prenumerationsfunktionen därmed har skickat ut.</help>
+        </property>
+        <property name="SubscriptionMailSubject">
+          <caption>Ämnesrad för prenumerationsutskick</caption>
+          <help>Det som anges här kommer att stå i rubriken på prenumerationsutskicken.</help>
+        </property>
+      </common>
+      <pagetype name="SysRecycleBin">
+        <description>Trädstruktur för papperskorgen på webbplatsen</description>
+        <name>Papperskorg</name>
+      </pagetype>
+      <pagetype name="SysRoot">
+        <description>Första sida på webbplatsen i redigeraläge</description>
+        <name>Välkomstsida i redigeraläge</name>
+      </pagetype>
+    </pagetypes>
+    <permissions>
+      <clienttools>Visa och publicera sidor från Microsoft Office-tillägg</clienttools>
+      <detailederrormessage>Detaljerade felmeddelanden för felsökning</detailederrormessage>
+      <editorunlimitedfunctions>	Alla funktioner tillgängliga i editorn</editorunlimitedfunctions>
+      <multifileupload>Tillåt avancerad uppladdning av filer via t.ex. drag and drop</multifileupload>
+      <pageprovidermove>Tillåt användare att flytta data/sidor mellan sidtillhandahållare</pageprovidermove>
+      <webserviceaccess>Tillåt användaren att komma åt EPiServer via web service anrop</webserviceaccess>
+      <virtualpathunauthorizedaccess>Ej behörighet till virtuell sökväg: "{0}"</virtualpathunauthorizedaccess>
+    </permissions>
+    <personalization>
+      <task>
+        <assignedto>		Utdelad till</assignedto>
+        <assignto>				Tilldela uppgift till</assignto>
+        <buttoncompleted>		Klar</buttoncompleted>
+        <buttoncontinue>		Fortsätt</buttoncontinue>
+        <buttonreject>			Avböj</buttonreject>
+        <changed>			Ändrad</changed>
+        <comments>				Kommentarer</comments>
+        <createdby>				Skapad av</createdby>
+        <description>			Beskrivning</description>
+        <duedate>				Förfallodatum</duedate>
+        <owner>				Utdelad av</owner>
+        <reminder>			Påminnelse</reminder>
+        <status>				Status</status>
+        <statuscompleted>		Avslutad</statuscompleted>
+        <statusinprogress>		Påbörjad</statusinprogress>
+        <statusnotstarted>		Ny</statusnotstarted>
+        <statusrejected>		Avböjd</statusrejected>
+        <subject>				Uppgift</subject>
+        <timeout>				Förfallodatum passerat</timeout>
+        <typeapprovepage>		Befintlig sida</typeapprovepage>
+        <typeautomail>			Skicka rapport via e-post</typeautomail>
+        <typenewpage>			Skapa ny sida</typenewpage>
+        <typeurl>				Visa egen URL</typeurl>
+      </task>
+    </personalization>
+    <pleasewait>Var god vänta</pleasewait>
+    <reportcenter>
+      <categories>
+        <category name="pagereports">Sidrapporter</category>
+      </categories>
+      <numberofhits>Antal träffar: {0}</numberofhits>
+      <report name="changedpages">
+        <caption>Ändrade sidor</caption>
+        <description>Visar sidor som har ett ändringsdatum inom en viss tidsperiod.</description>
+        <heading>Ändrade sidor</heading>
+        <info>
+          Den här rapporten visar sidor som har ett ändringsdatum inom en viss tidsperiod.
+          Välj en sida i resultatlistan för att öppna den i redigeraläget.
+        </info>
+      </report>
+      <report name="expiredpages">
+        <caption>Utgångna sidor</caption>
+        <description>Visar sidor där slutpubliceringsdatum utgår inom en viss tidsperiod.</description>
+        <heading>Utgångna sidor</heading>
+        <info>
+          Den här rapporten visar sidor där publiceringsdatumet utgår inom en viss tidsperiod.
+          Välj en sida i resultatlistan för att öppna den i redigeraläget.
+        </info>
+      </report>
+      <report name="notpublishedpages">
+        <caption>Ej publicerade sidor</caption>
+        <description>Visar sidor som inte har publicerats än.</description>
+        <heading>Ej publicerade sidor</heading>
+        <info>
+          Den här rapporten visar sidor som inte har publicerats än och som senast ändrats inom en viss tidsperiod.
+          Välj en sida i resultatlistan för att öppna den i redigeraläget.
+        </info>
+      </report>
+      <report name="publishedpages">
+        <caption>Publicerade sidor</caption>
+        <description>Visar sidor som publicerades inom en viss tidsperiod.</description>
+        <heading>Publicerade sidor</heading>
+        <info>
+          Den här rapporten visar sidor som publicerades inom en viss tidsperiod.
+          Välj en sida i resultatlistan för att öppna den i redigeraläget.
+        </info>
+      </report>
+      <report name="simpleaddresses">
+        <caption>Enkla adresser</caption>
+        <description>Visar publicerade sidor som har en enkel adress.</description>
+        <heading>Enkla adresser</heading>
+        <info>
+          Den här rapporten visar publicerade sidor som har en enkel adress.
+          Välj en sida i resultatlistan för att öppna den i redigeraläget.
+        </info>
+      </report>
+      <reportcolumnheadings>
+        <language>Språk</language>
+        <modified>Senast ändrad</modified>
+        <modifiedby>Ändrad av</modifiedby>
+        <notvisibleinmenu>Synlig i menyer</notvisibleinmenu>
+        <pageid>Sidans id</pageid>
+        <pagename>Sidans namn</pagename>
+        <pagetypename>Sidtyp</pagetypename>
+        <publishedstatus>Publiceringsstatus</publishedstatus>
+        <simpleaddress>Enkel adress</simpleaddress>
+        <startpublish>Publiceringsdatum</startpublish>
+        <stoppublish>Avpubliceringsdatum</stoppublish>
+        <version>Version</version>
+      </reportcolumnheadings>
+      <reportcriterias>
+        <after>Efter</after>
+        <all>Alla</all>
+        <before>Före</before>
+        <between>Mellan</between>
+        <changed>Ändrade</changed>
+        <changedbetween>Senast ändrad</changedbetween>
+        <changedbyme>Senast ändrade av mig</changedbyme>
+        <expired>Avpublicerade</expired>
+        <expiringbetween>Avpubliceringsdatum</expiringbetween>
+        <heading>Rapportkriterier</heading>
+        <numberofitemsperpage>Antal träffar per sida</numberofitemsperpage>
+        <published>Publicerade</published>
+        <publishedbetween>Publiceringsdatum</publishedbetween>
+        <publishedbyme>Publicerade av mig</publishedbyme>
+        <readytopublish>Klar att publicera?</readytopublish>
+        <selectlanguage>Språk</selectlanguage>
+        <selectrootpage>Startsida för sökningen</selectrootpage>
+      </reportcriterias>
+      <startpage>
+        <helpimagetext>Prova att flytta runt fönstren i din arbetsyta för att underlätta arbetet med rapportcenter.</helpimagetext>
+        <info>
+          Vill du veta vilka sidor har publicerats eller ändrats inom en viss tidsperiod? Vill du också veta vilka av dessa sidor
+          har ändrats av dig? &lt;br/&gt;&lt;br/&gt;
+          EPiServer CMS rapportcenter gör det lätt att snabbt hitta information om din webbplats som underlättar i ditt dagliga arbete.
+        </info>
+      </startpage>
+      <title>Rapportcenter</title>
+    </reportcenter>
+    <saturday>	Lördag</saturday>
+    <savenochanges>	Inga ändringar har gjorts</savenochanges>
+    <second>	sekund</second>
+    <september>	September</september>
+    <status>
+      <active>		Aktiv</active>
+      <inactive>		Inaktiv</inactive>
+    </status>
+    <subscription>
+      <mailsubject>Senaste nytt</mailsubject>
+      <pagelinktext>Läs mer</pagelinktext>
+    </subscription>
+    <sunday>	Söndag</sunday>
+    <system>
+      <datebrowser>
+        <heading>Välj datum</heading>
+        <selectmonthcaption>	Välj månad att flyta till (1-12)</selectmonthcaption>
+        <selectyearcaption>		Välj år att flytta till</selectyearcaption>
+        <time>					Tid</time>
+      </datebrowser>
+      <editutil>
+        <filelisting>
+          <rootpatherror>				Rootkatalogen är inte definerad</rootpatherror>
+          <sortorderdatecreated>		Skapad</sortorderdatecreated>
+          <sortorderdatecreateddesc>		Skapad fallande</sortorderdatecreateddesc>
+          <sortorderdatelastaccessed>	Sista åtkomst</sortorderdatelastaccessed>
+          <sortorderdatelastaccesseddesc>	Sista åtkomst fallande</sortorderdatelastaccesseddesc>
+          <sortorderdatelastmodified>	Senast sparad</sortorderdatelastmodified>
+          <sortorderdatelastmodifieddesc>	Senast sparad fallande</sortorderdatelastmodifieddesc>
+          <sortordername>				Namn</sortordername>
+          <sortordernamedesc>				Namn fallande</sortordernamedesc>
+          <sortordernone />
+          <sortordersize>				Storlek</sortordersize>
+          <sortordersizedesc>				Storlek fallande</sortordersizedesc>
+          <sortordertype>				Filtyp</sortordertype>
+          <sortordertypedesc>				Filtyp fallande</sortordertypedesc>
+        </filelisting>
+        <helpcreated>			Datum när sidan skapades</helpcreated>
+        <helpdynprop>			Markera den här kryssrutan för att sätta angivet värdet på alla underliggande sidor</helpdynprop>
+        <helpdynpropdef>		Egenskapen är definierad på den här sidan</helpdynpropdef>
+        <helpdynpropundef>		Egenskapen har inget värde</helpdynpropundef>
+        <languagecommonpropertyicontooltiporiginal>Den här egenskapen är gemensam för alla språk och kan endast redigeras här</languagecommonpropertyicontooltiporiginal>
+        <languagecommonpropertyicontooltiptranslation>Den här egenskapen är gemensam för alla språk och kan endast redigeras på sidans originalspråk</languagecommonpropertyicontooltiptranslation>
+        <leavepagewarning>Du har gjort ändringar på sidan som inte är sparade.
+Om du lämnar sidan förlorar du dessa förändringar.
+
+Välj OK om du vill du lämna sidan utan att spara. Välj Avbryt om du inte vill lämna sidan.</leavepagewarning>
+        <sortorder1>Enligt skapadatum (senast överst)</sortorder1>
+        <sortorder2>Enligt skapadatum (äldst överst)</sortorder2>
+        <sortorder3>Alfabetiskt</sortorder3>
+        <sortorder4>Enligt sorteringsindex</sortorder4>
+        <sortorder5>Enligt ändradatum (senast överst)</sortorder5>
+        <sortorder7>Enligt publiceradatum (äldst överst)</sortorder7>
+        <sortorder8>Enligt publiceradatum (senast överst)</sortorder8>
+      </editutil>
+      <firefox>
+        <functionnotsupported>Denna funktion stöds inte i Firefox</functionnotsupported>
+      </firefox>
+      <pagebrowser>
+        <buttonnolink>Ingen sida</buttonnolink>
+        <buttonselflink>Den aktuella sidan</buttonselflink>
+        <heading>Välj sida</heading>
+        <infoselflink>		Den här sidan</infoselflink>
+        <noaccesswarning>Länken är satt till en sida som du inte har läsrättigheter till. Om du ändrar den så kommer du inte kunna sätta tillbaka den till dess gamla värde.</noaccesswarning>
+        <notfound see="/edit/quicksearch/notfound" />
+        <title>				Länk till sida</title>
+      </pagebrowser>
+    </system>
+    <thursday>	Torsdag</thursday>
+    <tuesday>	Tisdag</tuesday>
+    <ui>
+      <title>
+        <process32bit>32-bitars process</process32bit>
+        <process64bit>64-bitars process</process64bit>
+      </title>
+    </ui>
+    <util>
+      <editor>
+        <dialogs>
+          <insertanchor>
+            <invalidcharacters>Ogiltigt bokmärke. Endast engelska bokstäver och siffror är tillåtna.</invalidcharacters>
+          </insertanchor>
+        </dialogs>
+        <javascript>
+          <quote>
+            <noparentquote>Markeringen tillåter inte den här operationen.</noparentquote>
+          </quote>
+        </javascript>
+      </editor>
+      <linkeditor>
+        <alttextfieldcaption>	Alternativ text:</alttextfieldcaption>
+        <douploadcaption>		Välj fil att ladda upp</douploadcaption>
+        <linktitlefieldcaption>	Länktitel:</linktitlefieldcaption>
+        <mailfieldcaption>		E-postadress:</mailfieldcaption>
+        <pageuploaddir>			Sidans katalog</pageuploaddir>
+        <selectpagecaption>		Välj sida:</selectpagecaption>
+        <targetfieldcaption>	Målram:</targetfieldcaption>
+        <uploaddir>				Global katalog</uploaddir>
+        <urlfieldcaption>		Adress:</urlfieldcaption>
+      </linkeditor>
+      <logout>
+        <linktologinformsauthenticated>Logga in igen</linktologinformsauthenticated>
+        <linktologinwindowsauthenticated>Logga in igen</linktologinwindowsauthenticated>
+        <logoutbodytextformsauthenticated>Du är nu helt utloggad.</logoutbodytextformsauthenticated>
+        <logoutbodytextwindowsauthenticated>Du är nu helt utloggad.</logoutbodytextwindowsauthenticated>
+        <logoutbodytextwindowsauthenticateddombrowser>För att du skall vara helt utloggad måste du stänga alla webbläsare</logoutbodytextwindowsauthenticateddombrowser>
+        <logoutconfirmdialogdombrowser>Du är inloggad som en Windowsanvändare, för att du ska bli helt utloggad måste du stänga ner alla webbläsare</logoutconfirmdialogdombrowser>
+        <logoutheader>Logga ut</logoutheader>
+        <logouttitle>Logga ut</logouttitle>
+      </logout>
+      <plugins>
+        <edittask>
+          <description>Skapa en ny uppgift och dela ut den till en användare i systemet.</description>
+          <displayname>Skapa en ny uppgift</displayname>
+        </edittask>
+        <viewtask>
+          <description>Visar en befintlig uppgift i systemet</description>
+          <displayname>Visa befintlig uppgift</displayname>
+        </viewtask>
+      </plugins>
+    </util>
+    <validation>
+      <assurenospaces>"{0}" får inte innehålla mellanslag</assurenospaces>
+      <assurenumber>"{0}" kan bara innehålla siffror</assurenumber>
+      <dateorder>Datumet för "{0}" måste vara före "{1}".</dateorder>
+      <formrequired>	* Du måste fylla i fältet.</formrequired>
+      <invalidlongstring>Innehållet i egenskapen "{0}" har genererat ett fel med det oöversatta meddelandet "{1}".</invalidlongstring>
+      <invalidvalue>	"{1}" är ett ogiltigt värde för "{0}".</invalidvalue>
+      <invalidvalueexception>	"{1}" är ett ogiltigt värde för "{0}". ({2})</invalidvalueexception>
+      <namenotunique>Namnet är inte unikt</namenotunique>
+      <notrelative>En relativ sökväg måste starta med ~/ eller /</notrelative>
+      <outofrange>	Du måste ange ett värde mellan {1} och {2} för "{0}".</outofrange>
+      <pagelinksettings>
+        <externalurlrequired>Ange en URL för länken till den externa webbplatsen.</externalurlrequired>
+        <fetchdatapagerequired>Ange sidan som data ska hämtas från.</fetchdatapagerequired>
+        <shortcutpagerequired>Ange sidan som genvägen ska länka till.</shortcutpagerequired>
+      </pagelinksettings>
+      <propertyname>"{0}" måste börja med bokstav och endast innehålla alfanumeriska tecken (a-z, A-Z, 0-9), '_' samt '-'.</propertyname>
+      <required>		"{0}" kan inte vara tom.</required>
+      <stringoverflow>"{0}" har överskridit gränsen på {1} tecken.</stringoverflow>
+      <summary>		Följande problem behöver åtgärdas:</summary>
+      <urlcharactersonly>Endast följande tecken är tillåtna för att konstruera en webbadress: {0}.</urlcharactersonly>
+      <valuealreadyused>"{0}" med värde "{1}" används redan av {2}.</valuealreadyused>
+      <valuesameasfolder>"{0}" med värde "{1}" kan inte användas då värdet sammanfaller med sökvägen till katalogen "{2}".</valuesameasfolder>
+    </validation>
+    <webcontrols>
+      <explorertree>
+        <!--
+				<infonotpublished>	Ej publicerad</infonotpublished>
+				<infoexpired>		, löpte ut {0}</infoexpired>
+				<infonotstarted>	, börjar {0}</infonotstarted>
+			-->
+        <statusexpired>				Sidan löpte ut {0}</statusexpired>
+        <statuslanguagefallback>Sidan visas på ett annat språk</statuslanguagefallback>
+        <statuslanguagemissing>Sidan saknas på det aktuella språket och kommer inte att visas</statuslanguagemissing>
+        <statusnew>					Sidan skapades nyligen</statusnew>
+        <statusnotlocal>Extern sida</statusnotlocal>
+        <statusnotpublished>		Sidan har inte publicerats</statusnotpublished>
+        <statusnotstarted>			Sidan kommer vara synlig {0}</statusnotstarted>
+        <statusnotvisibleinmenu>	Sidan är inte synlig i menyer</statusnotvisibleinmenu>
+        <statusreadonly>			Du har inte rätt att ändra sidan</statusreadonly>
+      </explorertree>
+      <paging>
+        <currentpage>Aktuell sida</currentpage>
+        <firstpage>Första sidan</firstpage>
+        <lastpage>Sista sidan</lastpage>
+        <nextpage>Nästa sida</nextpage>
+        <pagenumber>Sid {0}</pagenumber>
+        <prevpage>Föregående sida</prevpage>
+      </paging>
+    </webcontrols>
+    <wednesday>	Onsdag</wednesday>
+    <week>		vecka</week>
+    <versionstatus>
+      <checkedin>				Klar för publicering</checkedin>
+      <checkedout>			Ej klar</checkedout>
+      <delayedpublish>	Tidsstyrd publicering</delayedpublish>
+      <previouslypublished>	Tidigare publicerad</previouslypublished>
+      <published>				Publicerad version</published>
+      <rejected>				Kommentar</rejected>
+    </versionstatus>
+    <wsrp>
+      <portlets>
+        <wsrpiframecontrol>
+          <description>Visa information i en IFrame</description>
+          <displayname>IFrame</displayname>
+          <keywords>IFrame</keywords>
+          <shorttitle>IFrame-portlet</shorttitle>
+          <title>EPiServer IFrame-portlet</title>
+        </wsrpiframecontrol>
+        <wsrpinfoservicecontrol>
+          <description>Visa information från EPiServer</description>
+          <displayname>Infovisare</displayname>
+          <keywords>EPiServerInformation</keywords>
+          <shorttitle>Informationsvisaren</shorttitle>
+          <title>EPiServer informationsvisningsportlet</title>
+        </wsrpinfoservicecontrol>
+        <wsrpnewschannelcontrol>
+          <description>Visa nyheter från EPiServer</description>
+          <displayname>Nyheter</displayname>
+          <keywords>Nyheter</keywords>
+          <shorttitle>Nyhetsportlet</shorttitle>
+          <title>EPiServer nyhetskanal</title>
+        </wsrpnewschannelcontrol>
+        <wsrprsscontrol>
+          <description>Visa RSS-information</description>
+          <displayname>RSS</displayname>
+          <keywords>RSSRich Site SummaryReal Simple Syndication</keywords>
+          <shorttitle>RSS-portlet</shorttitle>
+          <title>EPiServer RSS-portlet</title>
+        </wsrprsscontrol>
+        <wsrpusersettingscontrol>
+          <description>Ändra information om användare i EPiServer</description>
+          <displayname>Användarinställningar</displayname>
+          <shorttitle>Användarinställningar</shorttitle>
+          <title>EPiServer användarinställningar</title>
+        </wsrpusersettingscontrol>
+      </portlets>
+    </wsrp>
+    <xform>
+      <datatypes>
+        <date1>
+          <caption>Datum (DD/MM/ÅÅÅÅ)</caption>
+          <inlineerrormessage>Inte ett godkänt datum. Var vänlig och ange i formatet "DD/MM/ÅÅÅÅ".</inlineerrormessage>
+          <summaryerrormessage>* är inte ett godkänt datum. Var vänlig och ange i formatet "DD/MM/ÅÅÅÅ".</summaryerrormessage>
+        </date1>
+        <date2>
+          <caption>Datum (MM/DD/ÅÅÅÅ)</caption>
+          <inlineerrormessage>Inte ett godkänt datum. Var vänlig och ange i formatet "MM/DD/ÅÅÅÅ".</inlineerrormessage>
+          <summaryerrormessage>* är inte ett godkänt datum. Var vänlig och ange i formatet "MM/DD/ÅÅÅÅ".</summaryerrormessage>
+        </date2>
+        <defaulttype>
+          <inlineerrormessage>Du har angivit tecken som inte är godkända ("&lt;" or "&gt;").</inlineerrormessage>
+          <summaryerrormessage>Du har angivit tecken som inte är godkända ("&lt;" or "&gt;").</summaryerrormessage>
+        </defaulttype>
+        <email>
+          <caption>E-postadress</caption>
+          <inlineerrormessage>Inte en godkänd e-postadress</inlineerrormessage>
+          <summaryerrormessage>* är inte en godkänd e-postadress</summaryerrormessage>
+        </email>
+        <integer>
+          <caption>Heltal</caption>
+          <inlineerrormessage>Inte ett godkänt heltal</inlineerrormessage>
+          <summaryerrormessage>* är inte ett godkänt heltal</summaryerrormessage>
+        </integer>
+        <isodate>
+          <caption>Datum (ÅÅÅÅ-MM-DD)</caption>
+          <inlineerrormessage>Inte ett godkänt datum. Var vänlig och ange i formatet "ÅÅÅÅ-MM-DD".</inlineerrormessage>
+          <summaryerrormessage>* är inte ett godkänt datum. Var vänlig och ange i formatet "ÅÅÅÅ-MM-DD".</summaryerrormessage>
+        </isodate>
+        <positiveinteger>
+          <caption>Positivt heltal</caption>
+          <inlineerrormessage>Inte ett godkänt positivt heltal</inlineerrormessage>
+          <summaryerrormessage>* är inte ett positivt heltal</summaryerrormessage>
+        </positiveinteger>
+      </datatypes>
+      <denymultipleposts>Du har redan skickat detta formulär</denymultipleposts>
+      <errorpostingtocustomurl>Formuläret kunde inte skickas till angiven adress</errorpostingtocustomurl>
+      <errorpostingtodatabase>Formuläret kunde inte skickas till databasen</errorpostingtodatabase>
+      <errorpostingtoemail>Formuläret kunde inte skickas till angiven e-postadress</errorpostingtoemail>
+      <requiredfield>
+        <inlineerrormessage>Detta fält är tvingande</inlineerrormessage>
+        <summaryerrormessage>Du har inte fyllt alla tvingande fält</summaryerrormessage>
+      </requiredfield>
+      <requirelogon>Du måste vara inloggad för att kunna skicka</requirelogon>
+    </xform>
+  </language>
+</languages>

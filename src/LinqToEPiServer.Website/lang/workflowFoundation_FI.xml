@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<languages>
+  <language name="suomi" id="fi">
+    <admin>
+      <plugin>
+        <activitypluginattribute>Mukautetut toiminnot</activitypluginattribute>
+        <workflowtaskattribute>Käsittelee työnkulkuun liittyviä tehtäviä</workflowtaskattribute>
+      </plugin>
+      <workflowadmin>
+        <confirmdelete>Haluatko poistaa määrityksen?</confirmdelete>
+        <count>Määrä</count>
+        <createnew>Luo määritys</createnew>
+        <definitionname>Määrityksen nimi</definitionname>
+        <defs>Määritetyt työnkulut:</defs>
+        <deftab>Määritykset</deftab>
+        <delete>Poista</delete>
+        <description>Työnkulkujen hallinta</description>
+        <displayname>Työnkulut</displayname>
+        <edit>Muokkaa</edit>
+        <eventlist>Kutakin EPiServer CMS -palvelimeen liittyvää tapahtumaa odottavien esiintymien määrä.</eventlist>
+        <eventname>Tapahtuma</eventname>
+        <fetchsystem>Hae tiedot</fetchsystem>
+        <filterondefinition>Suodata määrityksen mukaan</filterondefinition>
+        <heading>Työnkulkujen hallinta</heading>
+        <info>Luo ja hallitse työnkulkujen määrityksiä ja esiintymiä</info>
+        <running>Käytössä olevat työnkulut:</running>
+        <runningtab>Käynnissä olevat esiintymät</runningtab>
+        <startevents>Käynnistävä tapahtuma</startevents>
+        <systemtab>Järjestelmän tiedot</systemtab>
+        <type>Tyyppi</type>
+      </workflowadmin>
+      <workflowdefinitionedit>
+        <allpagetypes>Kaikki sivutyypit</allpagetypes>
+        <assemblyerror>Kokoonpano on määritettävä</assemblyerror>
+        <assemblyname>Kokoonpanon nimi</assemblyname>
+        <automaticstart>Automaattinen käynnistys</automaticstart>
+        <basictab>Yleiset</basictab>
+        <cancel>Peruuta</cancel>
+        <classerror>Luokka on määritettävä</classerror>
+        <classname>Luokan nimi</classname>
+        <completedDefinition>Käynnistä seuraava esiintymä automaattisesti</completedDefinition>
+        <configureparams>Määritä käynnistysparametrit</configureparams>
+        <confirmdelete>Haluatko poistaa määrityksen?</confirmdelete>
+        <confirmuser>Haluatko poistaa valitun käyttäjän tai ryhmän?</confirmuser>
+        <copy>Kopioi</copy>
+        <defname>Määrityksen nimi</defname>
+        <delete>Poista</delete>
+        <description>Kuvaus</description>
+        <heading>Määrityksen määrittäminen</heading>
+        <info>Samaan luokkaan perustuvia määrityksiä voi olla useita. Määrityksen nimen on oltava yksilöivä.&lt;br/&gt;Luokkaa määritettäessä on käytettävä täydellistä nimeä (myös nimitilaa).</info>
+        <layout>Asettelutiedosto</layout>
+        <layoutfileloaded>Asettelutiedosto on ladattu</layoutfileloaded>
+        <multiplename>Määritetty nimi on jo määrityksen käytössä</multiplename>
+        <namecopy>Kopio:</namecopy>
+        <nameerror>Nimi on määritettävä</nameerror>
+        <namenumbercopy>Kopio ({0}) /</namenumbercopy>
+        <nolayoutfileloaded>Asettelutiedostoa ei ole ladattu</nolayoutfileloaded>
+        <none>Ei mitään</none>
+        <notworkflowtype>Tyypin on perittävä kohteesta SequentialWorkflowActivity tai StateMachineWorkflowActivity</notworkflowtype>
+        <noxomlfileloaded>Xoml-tiedostoa ei ole ladattu</noxomlfileloaded>
+        <pageroot>Määritysten aloitussivu</pageroot>
+        <pagetypes>Käytä sivutyyppeihin</pagetypes>
+        <running>Käytössä olevat työnkulut:</running>
+        <runningtab>Käynnissä olevat esiintymät</runningtab>
+        <save>Tallenna</save>
+        <securitytab>Suojaus</securitytab>
+        <startevent>Esiintymän käynnistävä(t) tapahtuma(t)</startevent>
+        <typenotloadable>Määritettyä tyyppiä ei voi ladata. Varmista, että se on otettu käyttöön bin-hakemistossa</typenotloadable>
+        <view>Näytä työnkulkukuva</view>
+        <xoml>Xoml-tiedosto</xoml>
+        <xomlfileloaded>Xoml-tiedosto on ladattu</xomlfileloaded>
+      </workflowdefinitionedit>
+      <workflowstartparams>
+        <cancel>Peruuta</cancel>
+        <heading>Käynnistysparametrit</heading>
+        <noattribute>Määritetyllä työnkululla ei ole kohdetta WorkflowPlugInAttribute</noattribute>
+        <nointerface>Määritetty ohjainobjekti kohteessa WorkflowPlugInAttribute ei ota käyttöön kohdetta IWorkflowStartParameterHandler</nointerface>
+        <pathfailure>Määritettyä ohjainobjektia ei voitu ladata kohteesta </pathfailure>
+        <save>Tallenna</save>
+      </workflowstartparams>
+    </admin>
+    <workflow>
+      <edit>
+        <commandaction>
+          <tooltip>Käynnistä työnkulun esiintymä</tooltip>
+        </commandaction>
+        <task>
+          <description>Työnkulkuun liittyvät tehtävät</description>
+          <displayname>Työnkulun tehtävät</displayname>
+          <notset>Ei määritetty</notset>
+        </task>
+        <taskcontrol>
+          <eventinvoked>Tiedot lähetettiin työnkulkuun</eventinvoked>
+          <eventinvokedtaskdeleted>Tiedot lähetettiin työnkulkuun, ja tehtävä poistettiin</eventinvokedtaskdeleted>
+          <instancenotfound>Tämän tehtävän työnkulkuesiintymää ei voitu ladata. (Esiintymä on todennäköisesti lopetettu.)</instancenotfound>
+          <invoke>Lähetä</invoke>
+          <loaderror>Määritettyä käyttäjän ohjainobjektia ei voitu ladata. Poikkeus:</loaderror>
+          <nocontrolfound>Ei odottavia toimintoja, joille on rekisteröity käyttäjän ohjainobjekti</nocontrolfound>
+          <view>Näytä</view>
+        </taskcontrol>
+        <workfloweditcontrol>
+          <displayname>Työnkulku</displayname>
+          <info>Käytettävissä ei ole tähän sivuun liittyviä esiintymiä tai tehtäviä</info>
+          <selectdefinition>Valitse määritys, jolla käynnistetään seuraavan kohteen esiintymä:</selectdefinition>
+          <startworkflow>Käynnistä</startworkflow>
+          <tasksforpage>Sivuun liittyvät tehtävät</tasksforpage>
+          <workflow>työnkulku</workflow>
+        </workfloweditcontrol>
+        <workflowhistory>
+          <details>Tiedot</details>
+          <history>Historia</history>
+          <user>Käyttäjä</user>
+        </workflowhistory>
+        <workflowinstance>
+          <page>
+            <description>Käytössä olevat työnkulut</description>
+            <displayname>Työnkulut</displayname>
+            <running>Käytössä olevat työnkulut:</running>
+          </page>
+          <start>
+            <definitiontostart>Luo seuraavan kohteen esiintymä:</definitiontostart>
+            <description>Luo uusi työnkulku</description>
+            <displayname>Luo työnkulku</displayname>
+            <instancestartcanceled>Tapahtuman käsittelijä peruutti esiintymän käynnistyksen. Syy:</instancestartcanceled>
+            <instancestarted>Esiintymän käynnistänyt määritys</instancestarted>
+            <nodefinition>Työnkulkumäärityksiä ei ole käytettävissä</nodefinition>
+            <selectdefinition>Valitse määritys, jolla käynnistetään seuraavan kohteen esiintymä:</selectdefinition>
+            <start>Käynnistä</start>
+          </start>
+        </workflowinstance>
+        <workflowlist>
+          <confirmterminate>Haluatko lopettaa esiintymän?</confirmterminate>
+          <confirmterminateall>Haluatko lopettaa esiintymät?</confirmterminateall>
+          <count>Esiintymien määrä</count>
+          <definitionname>Määrityksen nimi</definitionname>
+          <details>Tiedot<definitionname>Määrityksen nimi</definitionname><history>Historia</history><initiator>Tekijä</initiator><instanceid>Esiintymän tunnus</instanceid><page>Sivu</page><task>Nykyiset tehtävät</task><terminate>Lopeta</terminate><type>Tyyppi</type><waitingevents>Odottavat tapahtumat</waitingevents><view>Näytä</view></details>
+          <fetch>Näytä</fetch>
+          <initiator>Tekijä</initiator>
+          <missingdeleteaccess>Sinulla ei ole oikeuksia kaikkien esiintymien lopettamiseen</missingdeleteaccess>
+          <terminateall>Lopeta kaikki</terminateall>
+          <type>Tyyppi</type>
+        </workflowlist>
+        <workflowtask>
+          <assignedto>Vastuuhenkilö</assignedto>
+          <confirmdelete>Haluatko poistaa tehtävän?</confirmdelete>
+          <created>Luotu</created>
+          <description>Kuvaus</description>
+          <duedate>Eräpäivä</duedate>
+          <subject>Aihe</subject>
+        </workflowtask>
+      </edit>
+      <runtime>
+        <adduserdata>
+          <description>Tunniste: </description>
+          <subject>Käyttäjän tiedot lisättiin</subject>
+        </adduserdata>
+        <associatedwithpage>
+          <description>Sivun tunnus: </description>
+          <subject>Liitetty sivuun</subject>
+        </associatedwithpage>
+        <instancestarted>
+          <description>Työnkulun esiintymä käynnistettiin</description>
+          <subject>Työnkulku käynnistettiin</subject>
+        </instancestarted>
+        <taskcreated>
+          <description>Tehtävän kuvaus: </description>
+          <subject>Tehtävä luotiin. Aihe: </subject>
+        </taskcreated>
+        <taskdeleted>
+          <description>Tehtävän tunnus: </description>
+          <subject>Tehtävä poistettiin</subject>
+        </taskdeleted>
+        <taskupdated>
+          <description>Tehtävän kuvaus: </description>
+          <subject>Tehtävä päivitettiin. Aihe: </subject>
+        </taskupdated>
+      </runtime>
+    </workflow>
+    <workflows>
+      <approval>
+        <approvaltask>
+          <pageheading>Seuraavan sivun hyväksyntätyönkulku</pageheading>
+          <subject>Hyväksy sivu</subject>
+        </approvaltask>
+        <approvedevent>
+          <approved>Hyväksytty</approved>
+          <approvedby>{0} hyväksyi sivun</approvedby>
+          <comment>Huomautus</comment>
+          <notapproved>Hylätty</notapproved>
+          <pageapproved>{0} hyväksyttiin</pageapproved>
+        </approvedevent>
+        <history>
+          <approved>Sivu hyväksyttiin</approved>
+          <notapproved>Sivu hylättiin</notapproved>
+        </history>
+        <parallel>
+          <description>Rinnakkainen hyväksyntätyönkulku</description>
+        </parallel>
+        <sequential>
+          <description>Peräkkäinen hyväksyntätyönkulku</description>
+        </sequential>
+        <startparameters>
+          <approversvisible>Muokkaustilassa käytettävissä olevien hyväksyjien valinta</approversvisible>
+          <description>Hyväksyjien kuvaus</description>
+          <isrole>Ryhmä</isrole>
+          <name>Nimi</name>
+          <noapprovers>Valitse vähintään yksi hyväksyjä</noapprovers>
+          <noapproversvisible>Jos muokkaustilassa käytettävissä olevien hyväksyjien valita ei ole käytettävissä, valitse vähintään yksi hyväksyjä</noapproversvisible>
+          <nopage>{PageName}</nopage>
+          <notnumber>Hyväksymisten määrän tulee olla luku</notnumber>
+          <notpublishrights>Käyttäjällä {0} ei ole kohteen {1} luku- tai julkaisuoikeuksia</notpublishrights>
+          <notvalidpage>Hyväksyntätyönkulun kelvollista sivua ei ole valittu</notvalidpage>
+          <numberofapprovers>Valitse hyväksyjien vähimmäismäärä</numberofapprovers>
+          <numbersvisible>Muokkaustilassa käytettävissä olevien hyväksyjien määrän valinta</numbersvisible>
+          <positivenumber>Hyväksymisten määrän tulee olla positiivinen luku</positivenumber>
+          <publishedversion>Valittu sivun versio on jo julkaistu</publishedversion>
+          <required>Pakollinen</required>
+          <selectapprovers>Valitse hyväksyvät käyttäjät tai ryhmät</selectapprovers>
+          <tolarge>Hyväksyjien vähimmäismäärä ei voi olla suurempi kuin hyväksyjien määrä</tolarge>
+        </startparameters>
+        <versioncontrol>
+          <changeddescription>Sivun versio {0} muutettiin versioksi {1}</changeddescription>
+          <changedsubject>Sivun versiota muutettiin</changedsubject>
+          <differs>Muokkauspaneeliin ladatun sivun versio eroaa työnkulkuesiintymän sivun versiosta</differs>
+          <loadedversion>Muokkauspaneeliin ladattu versio</loadedversion>
+          <selectversion>Valitse sivun versio, joka on käsiteltävä hyväksyntätyönkulussa</selectversion>
+          <workflowversion>Työnkulun esiintymän versio</workflowversion>
+        </versioncontrol>
+      </approval>
+      <feedbackrequest>
+        <description>Palautteen kuvaus</description>
+        <feedback>Palaute</feedback>
+        <feedbackposted>Palaute vastaanotettiin</feedbackposted>
+        <finish>Viimeistele työnkulku</finish>
+        <heading>Palautetyönkulun pyynnön asetukset</heading>
+        <nodescription>Kuvaus on lähetettävä</nodescription>
+        <noowner>Vastuuhenkilö on määritettävä</noowner>
+        <nousers>Käyttäjiä ei ole valittu</nousers>
+        <ownerdescription>Käyttäjäpalaute</ownerdescription>
+        <ownerheading>Palautepyyntö</ownerheading>
+        <ownersubject>Palaute</ownersubject>
+        <pageroot>Valitse sivu</pageroot>
+        <plugin>
+          <description>Palautetyönkulun pyyntö</description>
+        </plugin>
+        <post>Julkaise</post>
+        <selectusers>Valitse käyttäjät tai ryhmät, joilta haluat palautetta</selectusers>
+        <subject>Palautepyyntö</subject>
+        <timetolive>Määritä palautteen aika (tuntia)</timetolive>
+        <userheading>Julkaise palaute</userheading>
+      </feedbackrequest>
+      <translate>
+        <addtranslator>Lisää kääntäjä kohteeseen</addtranslator>
+        <cancelled>Tämän sivun käytössä on jo tämän tyypin työnkulku</cancelled>
+        <completedescription>on käännetty:</completedescription>
+        <completesubject>Sivu käännettiin kokonaan</completesubject>
+        <fallback>Määrittämättömien kielten kääntäjä</fallback>
+        <forpage>sivu:</forpage>
+        <heading>Määritä käännösilmoituksen työnkulun kääntäjät</heading>
+        <hours>tunti</hours>
+        <initialdelay>Käynnistysviive</initialdelay>
+        <initialdescription>Käännä</initialdescription>
+        <initialsubject>Käännä sivu</initialsubject>
+        <language>Kieli</language>
+        <minutes>minuuttia</minutes>
+        <notcompletedescription>ei ole käännetty:</notcompletedescription>
+        <notcompletesubject>Sivua ei ole käännetty kokonaan</notcompletesubject>
+        <owner>Prosessin vastuuhenkilö</owner>
+        <plugin>
+          <description>Käännösilmoituksen työnkulku</description>
+        </plugin>
+        <positivenumber>On oltava positiivinen luku</positivenumber>
+        <publishneeded>Kieliversio on julkaistava</publishneeded>
+        <reminder>Muistutusta edeltävä aika on lähetetty</reminder>
+        <terminate>Käännösaika</terminate>
+        <to>kohde:</to>
+        <translators>Kääntäjät</translators>
+      </translate>
+    </workflows>
+  </language>
+</languages>

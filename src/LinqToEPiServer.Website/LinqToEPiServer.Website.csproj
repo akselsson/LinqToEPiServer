@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D747824F-F1AB-4098-8015-56133497637E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LinqToEPiServer.Website</RootNamespace>
+    <AssemblyName>LinqToEPiServer.Website</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPiServer">
+      <HintPath>bin\EPiServer.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Web.WebControls">
+      <HintPath>bin\EPiServer.Web.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="ElektroPost.Licensing">
+      <HintPath>bin\ElektroPost.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.BaseLibrary">
+      <HintPath>bin\EPiServer.BaseLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Scheduler">
+      <HintPath>bin\EPiServer.Scheduler.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Implementation">
+      <HintPath>bin\EPiServer.Implementation.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Wsrp">
+      <HintPath>bin\EPiServer.Wsrp.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.XForms">
+      <HintPath>bin\EPiServer.XForms.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Enterprise">
+      <HintPath>bin\EPiServer.Enterprise.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Configuration">
+      <HintPath>bin\EPiServer.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.WorkflowFoundation">
+      <HintPath>bin\EPiServer.WorkflowFoundation.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Lucene">
+      <HintPath>bin\EPiServer.Lucene.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>bin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Services3">
+      <HintPath>bin\Microsoft.Web.Services3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="App_Data\EPiServerDB.mdf" />
+    <Content Include="App_Data\EPiServerDB_log.LDF">
+      <DependentUpon>EPiServerDB.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.config" />
+    <None Include="connectionStrings.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="FileSummary.config" />
+    <None Include="EPiServerLog.config" />
+    <None Include="lang\lang.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>6666</DevelopmentServerPort>
+          <DevelopmentServerVPath>/LinqToEPiServer.Website</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

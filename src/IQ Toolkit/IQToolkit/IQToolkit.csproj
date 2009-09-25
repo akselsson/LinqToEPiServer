@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0DA62A7C-3B40-456F-A4B2-B3E19ED4080E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IQToolkit</RootNamespace>
+    <AssemblyName>IQToolkit</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CompoundKey.cs" />
+    <Compile Include="Data\Common\Translation\SkipToRowNumberRewriter.cs" />
+    <Compile Include="Data\DbEntityProvider.cs" />
+    <Compile Include="Data\Common\DbEntitySessionBase.cs" />
+    <Compile Include="Data\Common\Expressions\Aggregator.cs" />
+    <Compile Include="Data\Mapping\AttributeMapping.cs" />
+    <Compile Include="Data\Common\Mapping\AdvancedMapping.cs" />
+    <Compile Include="Data\Common\Mapping\BasicMapping.cs" />
+    <Compile Include="Data\DbEntitySession.cs" />
+    <Compile Include="Data\Common\Translation\CrossJoinIsolator.cs" />
+    <Compile Include="IEntityProvider.cs" />
+    <Compile Include="Data\Common\Language\QueryTypeSystem.cs" />
+    <Compile Include="Data\Common\Expressions\DbExpressionExtensions.cs" />
+    <Compile Include="Data\Common\Expressions\DbExpressionWriter.cs" />
+    <Compile Include="Data\Common\Language\SqlFormatter.cs" />
+    <Compile Include="Data\Common\Translation\CrossJoinRewriter.cs" />
+    <Compile Include="Data\Common\Translation\ComparisonRewriter.cs" />
+    <Compile Include="Data\Common\Translation\NamedValueGatherer.cs" />
+    <Compile Include="Data\Common\Language\TSqlTypeSystem.cs" />
+    <Compile Include="Data\Mapping\XmlMapping.cs" />
+    <Compile Include="Data\Common\Translation\ReferencedColumnGatherer.cs" />
+    <Compile Include="Data\Common\Translation\SkipToNestedOrderByRewriter.cs" />
+    <Compile Include="DeferredValue.cs" />
+    <Compile Include="EnumerateOnce.cs" />
+    <Compile Include="ExpressionExtensions.cs" />
+    <Compile Include="IEntitySession.cs" />
+    <Compile Include="ReadOnlyExtensions.cs" />
+    <Compile Include="Data\Common\Translation\RelationshipIncluder.cs" />
+    <Compile Include="Data\Common\Translation\RedundantColumnRemover.cs" />
+    <Compile Include="Data\Common\Translation\ReferencedAliasGatherer.cs" />
+    <Compile Include="Data\Common\Translation\SelectGatherer.cs" />
+    <Compile Include="DeferredList.cs" />
+    <Compile Include="ExpressionReplacer.cs" />
+    <Compile Include="ExpressionWriter.cs" />
+    <Compile Include="Query.cs" />
+    <Compile Include="ReflectionExtensions.cs" />
+    <Compile Include="ScopedDictionary.cs" />
+    <Compile Include="Grouping.cs" />
+    <Compile Include="Data\Common\ExecutionBuilder.cs" />
+    <Compile Include="Data\Common\QueryCommand.cs" />
+    <Compile Include="QueryCompiler.cs" />
+    <Compile Include="Data\Common\Translation\QueryDuplicator.cs" />
+    <Compile Include="Data\Common\QueryPolicy.cs" />
+    <Compile Include="TopologicalSort.cs" />
+    <Compile Include="TypedSubtreeFinder.cs" />
+    <Compile Include="Data\Common\Translation\AggregateChecker.cs" />
+    <Compile Include="Data\Common\Translation\AggregateRewriter.cs" />
+    <Compile Include="Data\Common\Translation\DeclaredAliasGatherer.cs" />
+    <Compile Include="Data\Common\Translation\RelationshipBinder.cs" />
+    <Compile Include="Data\Common\Translation\ColumnMapper.cs" />
+    <Compile Include="Data\Common\Translation\ColumnProjector.cs" />
+    <Compile Include="Data\Common\Translation\CrossApplyRewriter.cs" />
+    <Compile Include="Data\Common\Expressions\DbExpressionComparer.cs" />
+    <Compile Include="Data\Common\Expressions\DbExpressions.cs" />
+    <Compile Include="Data\Common\Expressions\DbExpressionVisitor.cs" />
+    <Compile Include="Data\Common\DbEntityProviderBase.cs" />
+    <Compile Include="PartialEvaluator.cs" />
+    <Compile Include="ExpressionComparer.cs" />
+    <Compile Include="ExpressionVisitor.cs" />
+    <Compile Include="Data\Mapping\ImplicitMapping.cs" />
+    <Compile Include="Data\Common\Mapping\QueryMapping.cs" />
+    <Compile Include="Data\Common\Translation\OrderByRewriter.cs" />
+    <Compile Include="Data\Common\Translation\Parameterizer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Data\Common\Translation\ClientJoinedProjectionRewriter.cs" />
+    <Compile Include="Data\Common\Translation\QueryBinder.cs" />
+    <Compile Include="Data\Common\Language\QueryLanguage.cs" />
+    <Compile Include="QueryProvider.cs" />
+    <Compile Include="Data\Common\Translation\RedundantJoinRemover.cs" />
+    <Compile Include="Data\Common\Translation\RedundantSubqueryRemover.cs" />
+    <Compile Include="Data\Common\Expressions\DbExpressionReplacer.cs" />
+    <Compile Include="Data\Common\Translation\SubqueryRemover.cs" />
+    <Compile Include="Data\Common\Translation\SingletonProjectionRewriter.cs" />
+    <Compile Include="TypeHelper.cs" />
+    <Compile Include="Data\Common\Translation\UnusedColumnRemover.cs" />
+    <Compile Include="Updatable.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

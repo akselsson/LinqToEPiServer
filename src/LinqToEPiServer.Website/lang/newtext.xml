@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<languages>
+  <language name="English" id="en">
+    <admin>
+      <editpagetypefield>
+        <editordynamiccontentcaption>Insert dynamic content (not applicable to Long string (&gt;255))</editordynamiccontentcaption>
+      </editpagetypefield>
+    </admin>
+  </language>
+  
+  <language name="svenska" id="sv">
+    <admin>
+      <editpagetypefield>
+        <editordynamiccontentcaption>Infoga dynamiskt innehåll (gäller ej Lång sträng (&gt;255))</editordynamiccontentcaption>
+      </editpagetypefield>
+    </admin>
+  </language>
+</languages>

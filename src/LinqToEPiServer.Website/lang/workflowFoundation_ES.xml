@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<languages>
+  <language name="español" id="es">
+    <admin>
+      <plugin>
+        <activitypluginattribute>Actividades personalizadas</activitypluginattribute>
+        <workflowtaskattribute>Controla las tareas relacionadas con flujos de trabajo</workflowtaskattribute>
+      </plugin>
+      <workflowadmin>
+        <confirmdelete>¿Desea eliminar la definición?</confirmdelete>
+        <count>Recuento</count>
+        <createnew>Crear definición</createnew>
+        <definitionname>Nombre de la definición</definitionname>
+        <defs>Flujos de trabajo definidos:</defs>
+        <deftab>Definiciones</deftab>
+        <delete>Eliminar</delete>
+        <description>Administrar flujos de trabajo</description>
+        <displayname>Flujos de trabajo</displayname>
+        <edit>Editar</edit>
+        <eventlist>Número de instancias (si existen) que esperan a los eventos EPiServer CMS.</eventlist>
+        <eventname>Evento</eventname>
+        <fetchsystem>Obtener datos</fetchsystem>
+        <filterondefinition>Filtrar definición</filterondefinition>
+        <heading>Administración de flujos de trabajo</heading>
+        <info>Crear y administrar instancias y definiciones de flujos de trabajo</info>
+        <running>Flujos de trabajo en ejecución:</running>
+        <runningtab>Instancias en ejecución</runningtab>
+        <startevents>Desencadenando evento</startevents>
+        <systemtab>Información del sistema</systemtab>
+        <type>Tipo</type>
+      </workflowadmin>
+      <workflowdefinitionedit>
+        <allpagetypes>Todos los tipos de páginas</allpagetypes>
+        <assemblyerror>Debe especificar un ensamblado</assemblyerror>
+        <assemblyname>Nombre de ensamblado</assemblyname>
+        <automaticstart>Inicio automático</automaticstart>
+        <basictab>General</basictab>
+        <cancel>Cancelar</cancel>
+        <classerror>Debe especificar una clase</classerror>
+        <classname>Nombre de clase</classname>
+        <completedDefinition>Iniciar la siguiente instancia automáticamente</completedDefinition>
+        <configureparams>Configurar parámetros de inicio</configureparams>
+        <confirmdelete>¿Desea eliminar la definición?</confirmdelete>
+        <confirmuser>¿Desea eliminar el usuario o grupo seleccionado?</confirmuser>
+        <copy>Copiar</copy>
+        <defname>Nombre de la definición</defname>
+        <delete>Eliminar</delete>
+        <description>Descripción</description>
+        <heading>Configuración de la definición</heading>
+        <info>Es posible que varias definiciones se basen en la misma clase. Todas las definiciones deben tener un nombre único.&lt;br/&gt;La clase se debe definir mediante el nombre completo (incluido el espacio de nombres).</info>
+        <layout>Archivo de diseño</layout>
+        <layoutfileloaded>El archivo de diseño se ha cargado</layoutfileloaded>
+        <multiplename>Ya hay una definición con el nombre especificado</multiplename>
+        <namecopy>Copia de</namecopy>
+        <nameerror>Debe especificar un nombre</nameerror>
+        <namenumbercopy>Copia ({0}) de</namenumbercopy>
+        <nolayoutfileloaded>No se ha cargado ningún archivo de diseño</nolayoutfileloaded>
+        <none>Ninguna</none>
+        <notworkflowtype>El tipo debe heredar SequentialWorkflowActivity o StateMachineWorkflowActivity</notworkflowtype>
+        <noxomlfileloaded>No se ha cargado ningún archivo Xoml</noxomlfileloaded>
+        <pageroot>Página de inicio para la definición</pageroot>
+        <pagetypes>Aplicar a tipos de páginas</pagetypes>
+        <running>Flujos de trabajo en ejecución:</running>
+        <runningtab>Instancias en ejecución</runningtab>
+        <save>Guardar</save>
+        <securitytab>Seguridad</securitytab>
+        <startevent>Eventos que inician la instancia</startevent>
+        <typenotloadable>No se ha podido cargar el tipo especificado, asegúrese de que está implementado en el directorio bin</typenotloadable>
+        <view>Mostrar imagen de flujo de trabajo</view>
+        <xoml>Archivo Xoml</xoml>
+        <xomlfileloaded>El archivo Xoml se ha cargado</xomlfileloaded>
+      </workflowdefinitionedit>
+      <workflowstartparams>
+        <cancel>Cancelar</cancel>
+        <heading>Parámetros de inicio</heading>
+        <noattribute>El flujo de trabajo definido no tiene ningún valor WorkflowPlugInAttribute</noattribute>
+        <nointerface>El control especificado en WorkflowPlugInAttribute no implementa IWorkflowStartParameterHandler</nointerface>
+        <pathfailure>No se ha podido cargar el control especificado desde </pathfailure>
+        <save>Guardar</save>
+      </workflowstartparams>
+    </admin>
+    <workflow>
+      <edit>
+        <commandaction>
+          <tooltip>Iniciar instancia de flujo de trabajo</tooltip>
+        </commandaction>
+        <task>
+          <description>Tareas relacionadas con flujos de trabajo</description>
+          <displayname>Tareas de flujos de trabajo</displayname>
+          <notset>Sin establecer</notset>
+        </task>
+        <taskcontrol>
+          <eventinvoked>Los datos se han enviado al flujo</eventinvoked>
+          <eventinvokedtaskdeleted>Los datos se han enviado al flujo. La tarea se ha eliminado.</eventinvokedtaskdeleted>
+          <instancenotfound>No se ha podido cargar la instancia de flujo de trabajo de esta tarea (probablemente se haya interrumpido)</instancenotfound>
+          <invoke>Enviar</invoke>
+          <loaderror>No se ha podido cargar el control de usuario especificado. Excepción:</loaderror>
+          <nocontrolfound>No hay ninguna actividad de espera con control de usuario registrada</nocontrolfound>
+          <view>Ver</view>
+        </taskcontrol>
+        <workfloweditcontrol>
+          <displayname>Flujo de trabajo</displayname>
+          <info>No hay instancias ni tareas relacionadas con esta página disponibles</info>
+          <selectdefinition>Seleccione una definición para iniciar la instancia de</selectdefinition>
+          <startworkflow>Iniciar</startworkflow>
+          <tasksforpage>Tareas relacionadas con páginas</tasksforpage>
+          <workflow>flujo de trabajo</workflow>
+        </workfloweditcontrol>
+        <workflowhistory>
+          <details>Detalles</details>
+          <history>Historial</history>
+          <user>Usuario</user>
+        </workflowhistory>
+        <workflowinstance>
+          <page>
+            <description>Flujos de trabajo en ejecución</description>
+            <displayname>Flujos de trabajo</displayname>
+            <running>Flujos de trabajo en ejecución:</running>
+          </page>
+          <start>
+            <definitiontostart>Crear una instancia de</definitiontostart>
+            <description>Crear nuevo flujo de trabajo</description>
+            <displayname>Crear flujo de trabajo</displayname>
+            <instancestartcanceled>Un controlador de eventos ha cancelado el inicio de la instancia. Motivo:</instancestartcanceled>
+            <instancestarted>Se ha iniciado una instancia de definición</instancestarted>
+            <nodefinition>No hay definiciones de flujo de trabajo disponibles</nodefinition>
+            <selectdefinition>Seleccione una definición para iniciar la instancia de</selectdefinition>
+            <start>Iniciar</start>
+          </start>
+        </workflowinstance>
+        <workflowlist>
+          <confirmterminate>¿Desea interrumpir la instancia?</confirmterminate>
+          <confirmterminateall>¿Desea interrumpir las instancias?</confirmterminateall>
+          <count>Número de instancias</count>
+          <definitionname>Nombre de la definición</definitionname>
+          <details>Detalles<definitionname>Nombre de la definición</definitionname><history>Historial</history><initiator>Creador</initiator><instanceid>Id. de la instancia:</instanceid><page>Página</page><task>Tareas actuales</task><terminate>Interrumpir</terminate><type>Tipo</type><waitingevents>Eventos en espera</waitingevents><view>Ver</view></details>
+          <fetch>Mostrar</fetch>
+          <initiator>Creador</initiator>
+          <missingdeleteaccess>En algunos casos no tendrá acceso de finalización a</missingdeleteaccess>
+          <terminateall>Interrumpir todo</terminateall>
+          <type>Tipo</type>
+        </workflowlist>
+        <workflowtask>
+          <assignedto>Asignado a</assignedto>
+          <confirmdelete>¿Desea eliminar la tarea?</confirmdelete>
+          <created>Creado</created>
+          <description>Descripción</description>
+          <duedate>Fecha de vencimiento</duedate>
+          <subject>Asunto</subject>
+        </workflowtask>
+      </edit>
+      <runtime>
+        <adduserdata>
+          <description>Clave: </description>
+          <subject>Datos de usuario agregados</subject>
+        </adduserdata>
+        <associatedwithpage>
+          <description>Id. de página: </description>
+          <subject>Asociada con la página</subject>
+        </associatedwithpage>
+        <instancestarted>
+          <description>Instancia de flujo de trabajo iniciada</description>
+          <subject>Flujo de trabajo iniciado</subject>
+        </instancestarted>
+        <taskcreated>
+          <description>Descripción de la tarea: </description>
+          <subject>Tarea creada. Asunto: </subject>
+        </taskcreated>
+        <taskdeleted>
+          <description>Id. de la tarea: </description>
+          <subject>Tarea eliminada</subject>
+        </taskdeleted>
+        <taskupdated>
+          <description>Descripción de la tarea: </description>
+          <subject>Tarea actualizada. Asunto: </subject>
+        </taskupdated>
+      </runtime>
+    </workflow>
+    <workflows>
+      <approval>
+        <approvaltask>
+          <pageheading>Flujo de trabajo de aprobación para la página</pageheading>
+          <subject>Aprobar página</subject>
+        </approvaltask>
+        <approvedevent>
+          <approved>Aprobado</approved>
+          <approvedby>{0} ha aprobado la página</approvedby>
+          <comment>Comentario</comment>
+          <notapproved>No aprobado</notapproved>
+          <pageapproved>{0} se ha aprobado</pageapproved>
+        </approvedevent>
+        <history>
+          <approved>La página se ha aprobado</approved>
+          <notapproved>La página no se ha aprobado</notapproved>
+        </history>
+        <parallel>
+          <description>Flujo de trabajo de aprobación paralela</description>
+        </parallel>
+        <sequential>
+          <description>Flujo de trabajo de aprobación secuencial</description>
+        </sequential>
+        <startparameters>
+          <approversvisible>La selección de aprobadores está disponible en modo edición</approversvisible>
+          <description>Descripción de los aprobadores</description>
+          <isrole>Grupo</isrole>
+          <name>Nombre</name>
+          <noapprovers>Debe seleccionar al menos un aprobador</noapprovers>
+          <noapproversvisible>Se debe seleccionar al menos un aprobador si la selección de aprobadores no está disponible en modo edición</noapproversvisible>
+          <nopage>{PageName}</nopage>
+          <notnumber>El valor de aprobaciones debe ser un número</notnumber>
+          <notpublishrights>El usuario {0} no ha leído ni publicado el acceso para {1}</notpublishrights>
+          <notvalidpage>No se ha seleccionado ninguna página válida para el flujo de trabajo de aprobación</notvalidpage>
+          <numberofapprovers>Seleccione el número mínimo que se debe aprobar</numberofapprovers>
+          <numbersvisible>La selección del número de aprobadores está disponible en modo edición</numbersvisible>
+          <positivenumber>El valor de aprobaciones debe ser un número positivo</positivenumber>
+          <publishedversion>La versión de la página seleccionada ya se ha publicado</publishedversion>
+          <required>Obligatorio</required>
+          <selectapprovers>Seleccione los usuarios o grupos que se deben aprobar</selectapprovers>
+          <tolarge>El número mínimo de aprobadores no puede ser superior al número de aprobadores</tolarge>
+        </startparameters>
+        <versioncontrol>
+          <changeddescription>La versión de la página ha cambiado de {0} a {1}</changeddescription>
+          <changedsubject>Versión de página cambiada</changedsubject>
+          <differs>La versión de la página cargada en el panel de edición difiere de la de la instancia de flujo de trabajo</differs>
+          <loadedversion>Versión cargada en el panel de edición</loadedversion>
+          <selectversion>Elija la versión de la página que se debe procesar en el flujo de trabajo de aprobación</selectversion>
+          <workflowversion>Versión de la instancia de flujo de trabajo</workflowversion>
+        </versioncontrol>
+      </approval>
+      <feedbackrequest>
+        <description>Descripción de los comentarios</description>
+        <feedback>Comentarios</feedback>
+        <feedbackposted>Comentarios recibidos</feedbackposted>
+        <finish>Completar flujo de trabajo</finish>
+        <heading>Configuración de solicitud de flujo de trabajo de comentarios</heading>
+        <nodescription>Debe enviar la descripción</nodescription>
+        <noowner>Debe definir el propietario</noowner>
+        <nousers>No se ha seleccionado ningún usuario</nousers>
+        <ownerdescription>Comentarios de los usuarios</ownerdescription>
+        <ownerheading>Comentarios para solicitar</ownerheading>
+        <ownersubject>Comentarios</ownersubject>
+        <pageroot>Seleccionar página</pageroot>
+        <plugin>
+          <description>Solicitud de flujo de trabajo de comentarios</description>
+        </plugin>
+        <post>Publicar</post>
+        <selectusers>Seleccione los usuarios o grupos de los que desea recibir comentarios</selectusers>
+        <subject>Solicitud de comentarios</subject>
+        <timetolive>Establecer tiempo para los comentarios (horas)</timetolive>
+        <userheading>Publique los comentarios</userheading>
+      </feedbackrequest>
+      <translate>
+        <addtranslator>Agregar traductor para</addtranslator>
+        <cancelled>Ya se está ejecutando un flujo de trabajo de este tipo para esta página</cancelled>
+        <completedescription>se ha traducido a</completedescription>
+        <completesubject>La página se ha traducido por completo</completesubject>
+        <fallback>Traductor de los idiomas no especificados</fallback>
+        <forpage>para la página</forpage>
+        <heading>Configurar traductores para un flujo de trabajo de notificación de traducción</heading>
+        <hours>hora</hours>
+        <initialdelay>Retraso de inicio</initialdelay>
+        <initialdescription>Traducir</initialdescription>
+        <initialsubject>Traducir página</initialsubject>
+        <language>Idioma</language>
+        <minutes>minutos</minutes>
+        <notcompletedescription>no se ha traducido a</notcompletedescription>
+        <notcompletesubject>Una página no se ha traducido por completo</notcompletesubject>
+        <owner>Propietario del proceso</owner>
+        <plugin>
+          <description>Flujo de trabajo de notificación de traducción</description>
+        </plugin>
+        <positivenumber>Debe ser un número positivo</positivenumber>
+        <publishneeded>Se debe publicar la versión del idioma</publishneeded>
+        <reminder>Tiempo antes de que se envíe un recordatorio</reminder>
+        <terminate>Tiempo para traducir</terminate>
+        <to>a</to>
+        <translators>Traductores</translators>
+      </translate>
+    </workflows>
+  </language>
+</languages>
