@@ -11,3 +11,4 @@ _ReSharper.*
 *.swp
 lib/EPiServer/*
 *~
+License.config
