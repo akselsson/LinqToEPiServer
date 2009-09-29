@@ -1,27 +1,35 @@
 using System;
-using System.IO;
 using System.Security.Principal;
 using System.Threading;
 using System.Transactions;
+using LinqToEPiServer.Tests.Helpers;
 using NUnit.Framework;
 
 namespace LinqToEPiServer.Tests.IntegrationTests
 {
-    [TestFixture,Category("Integration")]
+    [TestFixture, Category("Integration")]
     public class IntegrationTestsBase : EPiTestBase
     {
         private TransactionScope _transaction;
         private IPrincipal _originalPrincipal;
-        private readonly FileInfo _databaseFile = new FileInfo(@"..\..\..\LinqToEPiServer.WebSite\App_Data\EPiServerDB.mdf");
-
-        protected override void setup_epi(Helpers.EPiTester context)
+        private static bool DatabaseIsRestored;
+        [TestFixtureSetUp]
+        public void init_database()
         {
-            context.ConnectionString = string.Format(@"Data Source=.;integrated security=true;MultipleActiveResultSets=True;AttachDbFilename={0}", _databaseFile.FullName);
+            if(DatabaseIsRestored)
+                return;
+            IntegrationTestDatabase.Restore();
+            DatabaseIsRestored = true;
+        }
+
+        protected override void setup_epi(EPiTester context)
+        {
+            context.ConnectionString = IntegrationTestDatabase.ConnectionString;
             base.setup_epi(context);
         }
         protected override void before_each_test()
         {
-            _transaction = new TransactionScope(TransactionScopeOption.RequiresNew,TimeSpan.FromMinutes(20));
+            _transaction = new TransactionScope(TransactionScopeOption.RequiresNew, TimeSpan.FromMinutes(20));
             _originalPrincipal = Thread.CurrentPrincipal;
             Thread.CurrentPrincipal = new GenericPrincipal(new GenericIdentity("admin"), new[] { "administrators" });
             base.before_each_test();

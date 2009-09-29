@@ -86,6 +86,7 @@
     <Compile Include="Helpers\ExpressionTransformerTester.cs" />
     <Compile Include="Helpers\TestEPiServerSection.cs" />
     <Compile Include="Helpers\TestSiteElementCollection.cs" />
+    <Compile Include="Helpers\IntegrationTestDatabase.cs" />
     <Compile Include="QueryTranslation\NegationTransformerSpec.cs" />
     <Compile Include="Helpers\EPiTester.cs" />
     <Compile Include="Helpers\EquatableCriteria.cs" />
@@ -125,6 +126,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DB\LinqToEPiServer_IntegrationTests.bak">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="License.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
