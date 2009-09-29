@@ -13,8 +13,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IQ Toolkit", "IQ Toolkit", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IQToolkit", "IQ Toolkit\IQToolkit\IQToolkit.csproj", "{0DA62A7C-3B40-456F-A4B2-B3E19ED4080E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqToEPiServer.Website", "LinqToEPiServer.Website\LinqToEPiServer.Website.csproj", "{D747824F-F1AB-4098-8015-56133497637E}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,10 +35,6 @@ Global
 		{0DA62A7C-3B40-456F-A4B2-B3E19ED4080E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DA62A7C-3B40-456F-A4B2-B3E19ED4080E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DA62A7C-3B40-456F-A4B2-B3E19ED4080E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D747824F-F1AB-4098-8015-56133497637E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D747824F-F1AB-4098-8015-56133497637E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D747824F-F1AB-4098-8015-56133497637E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D747824F-F1AB-4098-8015-56133497637E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
