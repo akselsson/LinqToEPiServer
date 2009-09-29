@@ -1,4 +1,4 @@
-To compile, copy EPiServer binaires to lib/EPiServer
+To compile, copy EPiServer binaires to lib/EPiServer and a license file to src/LinqToEPiServer.Tests
 
 LICENSE:
 
