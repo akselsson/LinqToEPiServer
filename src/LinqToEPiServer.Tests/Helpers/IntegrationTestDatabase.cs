@@ -7,10 +7,7 @@ namespace LinqToEPiServer.Tests.Helpers
 {
     public class IntegrationTestDatabase
     {
-        private const string _connectionString =
-            @"Data Source=.;integrated security=true;MultipleActiveResultSets=True;Initial Catalog=LinqToEPiServer_IntegrationTests";
-
-        public const string BackupScriptFormat =
+        private const string BackupScriptFormat =
             @"
 RESTORE DATABASE [LinqToEPiServer_IntegrationTests] 
 FROM  DISK = N'{0}\LinqToEPiServer_IntegrationTests.bak' 
@@ -22,13 +19,11 @@ STATS = 10
 ";
 
         private const string MasterConnectionString = @"Data Source=.;integrated security=true;initial catalog=master";
-        
-        public static readonly DirectoryInfo DbFolder = new DirectoryInfo("DB");
 
-        public static string ConnectionString
-        {
-            get { return _connectionString; }
-        }
+        private static readonly DirectoryInfo DbFolder = new DirectoryInfo("DB");
+
+        public const string ConnectionString =
+     @"Data Source=.;integrated security=true;MultipleActiveResultSets=True;Initial Catalog=LinqToEPiServer_IntegrationTests";
 
         public static void Restore()
         {
