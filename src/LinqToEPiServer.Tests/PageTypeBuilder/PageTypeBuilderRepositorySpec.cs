@@ -51,7 +51,7 @@ namespace LinqToEPiServer.Tests.PageTypeBuilder
 
 
             [Test]
-            public void should_add_type_criteria_to_executed_query()
+            public void should_add_page_type_criteria_to_executed_query()
             {
                 query.should_be_translated_to(new PropertyCriteria
                 {
@@ -102,20 +102,20 @@ namespace LinqToEPiServer.Tests.PageTypeBuilder
     {
         private readonly MethodInfo QueryableOfType = ReflectionHelper.MethodOf<IQueryable>(q => q.OfType<T>());
         private readonly MethodInfo QueryableWhere = ReflectionHelper.MethodOf<IQueryable<PageData>>(q => q.Where(pd=>true));
-        private readonly Expression<Func<PageData, bool>> OfTypePredicate = pd => pd.PageTypeID == 1;
+        private readonly Expression<Func<PageData, bool>> PageTypeIDPredicate = pd => pd.PageTypeID == 1;
 
         protected override Expression VisitMethodCall(MethodCallExpression m)
         {
             if (m.Method == QueryableOfType)
             {
-                return AddPageTypeWhere(m.Arguments[0]);
+                return AddPageTypeIDWhere(m.Arguments[0]);
             }
             return base.VisitMethodCall(m);
         }
 
-        private Expression AddPageTypeWhere(Expression expression)
+        private Expression AddPageTypeIDWhere(Expression expression)
         {
-            return Expression.Call(QueryableWhere, expression, OfTypePredicate);
+            return Expression.Call(QueryableWhere, expression, PageTypeIDPredicate);
         }
     }
 }
