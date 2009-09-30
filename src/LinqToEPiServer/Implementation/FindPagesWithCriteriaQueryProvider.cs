@@ -12,12 +12,17 @@ namespace LinqToEPiServer.Implementation
 {
     public class FindPagesWithCriteriaQueryProvider : QueryProvider
     {
+        private readonly IList<IExpressionRewriter> _rewriters = new List<IExpressionRewriter>
+                                                                     {
+                                                                         new ComparisonFlipper(),
+                                                                         new NegationFlattener(),
+                                                                         new EmptySelectRemover(),
+                                                                         new QuoteStripper(),
+                                                                         new WhereCombiner()
+                                                                     };
+
         private readonly PageReference _startPoint;
         private IQueryExecutor _executor;
-        private readonly IList<IExpressionRewriter> _rewriters = new List<IExpressionRewriter>()
-            {new ComparisonFlipper(),
-                new NegationFlattener(),new EmptySelectRemover(),new QuoteStripper(),new WhereCombiner()
-            };
 
         public FindPagesWithCriteriaQueryProvider(PageReference startPoint, IQueryExecutor executor)
         {
@@ -58,7 +63,7 @@ namespace LinqToEPiServer.Implementation
         private Expression Rewrite(Expression expression)
         {
             Expression rewritten = expression;
-            foreach (var rewriter in _rewriters)
+            foreach (IExpressionRewriter rewriter in _rewriters)
             {
                 rewritten = rewriter.Rewrite(rewritten);
             }
