@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using EPiServer;
@@ -13,6 +14,10 @@ namespace LinqToEPiServer.Implementation
     {
         private readonly PageReference _startPoint;
         private IQueryExecutor _executor;
+        private readonly IList<IExpressionRewriter> _rewriters = new List<IExpressionRewriter>()
+            {new ComparisonFlipper(),
+                new NegationFlattener(),new EmptySelectRemover(),new QuoteStripper(),new WhereCombiner()
+            };
 
         public FindPagesWithCriteriaQueryProvider(PageReference startPoint, IQueryExecutor executor)
         {
@@ -44,15 +49,20 @@ namespace LinqToEPiServer.Implementation
             return string.Join(", ", criteria.Select(c => c.ToString()).ToArray());
         }
 
-        private static PropertyCriteriaCollection GetCriteria(Expression expression)
+        private PropertyCriteriaCollection GetCriteria(Expression expression)
+        {
+            Expression rewritten = Rewrite(expression);
+            return PropertyCriteriaExtractor.GetCriteria(rewritten);
+        }
+
+        private Expression Rewrite(Expression expression)
         {
             Expression rewritten = expression;
-            rewritten = new ComparisonFlipper().Rewrite(rewritten);
-            rewritten = new NegationFlattener().Rewrite(rewritten);
-            rewritten = new EmptySelectRemover().Rewrite(rewritten);
-            rewritten = new QuoteStripper().Rewrite(rewritten);
-            rewritten = new WhereCombiner().Rewrite(rewritten);
-            return PropertyCriteriaExtractor.GetCriteria(rewritten);
+            foreach (var rewriter in _rewriters)
+            {
+                rewritten = rewriter.Rewrite(rewritten);
+            }
+            return rewritten;
         }
     }
 }
