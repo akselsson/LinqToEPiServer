@@ -68,7 +68,7 @@ namespace LinqToEPiServer.Tests.PageTypeBuilder
             public void should_return_enumerable_of_correct_type()
             {
                 // Add a result transformer
-                Assert.IsNull(query.ToArray());
+                Assert.IsNotNull(query.ToArray());
             }
 
             [Test]
