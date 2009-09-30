@@ -17,7 +17,7 @@ namespace LinqToEPiServer.Tests.Helpers
             CollectionAssert.AreEquivalent(expected, actual);
         }
 
-        public static void should_be_translated_to(this IQueryable<PageData> query, params PropertyCriteria[] expected)
+        public static void should_be_translated_to(this IQueryable query, params PropertyCriteria[] expected)
         {
             PropertyCriteria[] actual = Translate(query);
             CollectionAssert.AreEqual(EquatableCriteria.MakeEquatable(expected), EquatableCriteria.MakeEquatable(actual));
@@ -39,7 +39,7 @@ namespace LinqToEPiServer.Tests.Helpers
             Assert.Throws<NotSupportedException>(() => query.Execute());
         }
 
-        private static PropertyCriteria[] Translate(IQueryable<PageData> query)
+        private static PropertyCriteria[] Translate(IQueryable query)
         {
             Assert.IsInstanceOf<FindPagesWithCriteriaQueryProvider>(query.Provider);
             var executor = new StubQueryExecutor();

@@ -69,5 +69,10 @@ namespace LinqToEPiServer.Implementation
             }
             return rewritten;
         }
+
+        public void AddRewriter(IExpressionRewriter rewriter)
+        {
+            _rewriters.Add(rewriter);
+        }
     }
 }

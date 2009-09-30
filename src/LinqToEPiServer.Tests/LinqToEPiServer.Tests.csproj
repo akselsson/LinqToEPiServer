@@ -87,6 +87,7 @@
     <Compile Include="Helpers\TestEPiServerSection.cs" />
     <Compile Include="Helpers\TestSiteElementCollection.cs" />
     <Compile Include="Helpers\IntegrationTestDatabase.cs" />
+    <Compile Include="PageTypeBuilder\PageTypeBuilderRepositorySpec.cs" />
     <Compile Include="QueryTranslation\NegationTransformerSpec.cs" />
     <Compile Include="Helpers\EPiTester.cs" />
     <Compile Include="Helpers\EquatableCriteria.cs" />

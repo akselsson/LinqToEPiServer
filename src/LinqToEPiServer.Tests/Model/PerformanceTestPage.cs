@@ -15,4 +15,11 @@ namespace LinqToEPiServer.Tests.Model
         [PageTypeProperty]
         public virtual int Number { get; set; }
     }
+
+    [PageType("29BC37E9-67BC-4C1C-AF97-2E356759EAD1")]
+    public class QueryPage : TypedPageData
+    {
+        [PageTypeProperty(Type = typeof(PropertyString))]
+        public virtual string Text { get; set; }
+    }
 }
