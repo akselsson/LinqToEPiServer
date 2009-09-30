@@ -1,8 +1,4 @@
 ﻿using System;
-using System;
-using System;
-using System;
-using System;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
@@ -16,7 +12,6 @@ using LinqToEPiServer.Tests.Helpers;
 using LinqToEPiServer.Tests.Model;
 using NUnit.Framework;
 using PageTypeBuilder;
-using LinqToEPiServer.Implementation.Visitors;
 
 namespace LinqToEPiServer.Tests.PageTypeBuilder
 {
