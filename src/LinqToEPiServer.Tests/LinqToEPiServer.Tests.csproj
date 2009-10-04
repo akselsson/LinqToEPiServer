@@ -108,6 +108,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Helpers\QueryTestHelper.cs" />
     <Compile Include="UnitTests\PageDataRepositorySpec.cs" />
+    <Compile Include="UnitTests\QueryTranslation\PropertyCriteriaExtractorSpec.cs" />
     <Compile Include="UnitTests\QueryTranslation\QueryTranslationSpec.cs" />
     <Compile Include="Fakes\StubQueryExecutor.cs" />
     <Compile Include="IntegrationTests\QueryPerformance.cs" />

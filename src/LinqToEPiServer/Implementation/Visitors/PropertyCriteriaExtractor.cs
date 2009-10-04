@@ -11,26 +11,23 @@ namespace LinqToEPiServer.Implementation.Visitors
 {
     public class PropertyCriteriaExtractor : ExpressionVisitor
     {
-        private readonly IList<IPropertyReferenceExtractor> _extractors;
         private static readonly MethodInfo QueryablePageDataWhere = MethodInfoHelper.MethodOf<IQueryable<PageData>>(q => q.Where(pd => true));
 
-        private readonly PropertyCriteriaCollection _criteria = new PropertyCriteriaCollection();
+        private readonly PropertyCriteriaCollection _criteria;
+        private readonly IList<IPropertyReferenceExtractor> _extractors;
 
         public PropertyCriteriaExtractor(IEnumerable<IPropertyReferenceExtractor> extractors)
         {
             if (extractors == null) throw new ArgumentNullException("extractors");
             _extractors = extractors.ToList();
+            _criteria = new PropertyCriteriaCollection();
         }
 
-        protected PropertyCriteriaCollection Criteria
+        public PropertyCriteriaCollection ConvertToCriteria(Expression expression)
         {
-            get { return _criteria; }
-        }
-
-        public PropertyCriteriaCollection GetCriteria(Expression expression)
-        {
+            _criteria.Clear();
             Visit(expression);
-            return Criteria;
+            return _criteria;
         }
 
         protected override Expression VisitMethodCall(MethodCallExpression m)

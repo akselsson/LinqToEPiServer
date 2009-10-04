@@ -94,7 +94,7 @@ namespace LinqToEPiServer.Implementation
         {
             Expression rewritten = Rewrite(expression);
             var extractor = new PropertyCriteriaExtractor(_propertyReferenceExtractors);
-            return extractor.GetCriteria(rewritten);
+            return extractor.ConvertToCriteria(rewritten);
         }
 
         private Expression Rewrite(Expression expression)
