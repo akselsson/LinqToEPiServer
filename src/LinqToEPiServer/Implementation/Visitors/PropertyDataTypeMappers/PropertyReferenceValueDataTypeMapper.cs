@@ -1,13 +1,21 @@
 using System;
+using EPiServer.Core;
 using LinqToEPiServer.Implementation.Expressions;
 
 namespace LinqToEPiServer.Implementation.Visitors.PropertyDataTypeMappers
 {
-    public class PropertyReferenceValueDataTypeMapper : TypeBasedPropertyDataTypeMapperBase
+    public class PropertyReferenceValueDataTypeMapper : IPropertyDataTypeMapper
     {
-        protected override Type GetType(PropertyComparison propertyComparison)
+        public bool TryMap(PropertyComparison propertyComparison, out PropertyDataType type)
         {
-            return propertyComparison.PropertyValueType;
+            var mapped = propertyComparison.Property.Type;
+            if (mapped.HasValue)
+            {
+                type = mapped.Value;
+                return true;
+            }
+            type = default(PropertyDataType);
+            return false;
         }
     }
 }

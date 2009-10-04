@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Linq;
 using EPiServer;
-using EPiServer.BaseLibrary.Search;
 using EPiServer.Core;
 using EPiServer.Filters;
-using IQToolkit;
-using LinqToEPiServer.Implementation;
 using LinqToEpiServer.PageTypeBuilder;
 using LinqToEPiServer.Tests.Fakes;
 using LinqToEPiServer.Tests.Model;
@@ -51,7 +45,7 @@ namespace LinqToEPiServer.Tests.UnitTests.PageTypeBuilder
                                              {
                                                  Condition = CompareCondition.Equal,
                                                  IsNull = false,
-                                                 Name = "LinkePageType",
+                                                 Name = "LinkedPageType",
                                                  Required = true,
                                                  Type = PropertyDataType.PageType,
                                                  Value = "12"

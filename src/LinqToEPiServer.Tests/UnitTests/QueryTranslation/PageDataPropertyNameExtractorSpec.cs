@@ -19,14 +19,15 @@ namespace LinqToEPiServer.Tests.UnitTests.QueryTranslation
             protected override void because()
             {
                 base.because();
-                _extractor = GetExtractor();
+                _extractor = system_under_test;
                 _result = _extractor.GetPropertyReference(expression);
             }
 
-            protected abstract IPropertyReferenceExtractor GetExtractor();
+            protected abstract IPropertyReferenceExtractor system_under_test { get; }
+            protected abstract PropertyDataType? expected_property_type { get; }
 
             [Test]
-            public void should_get_type_of_property()
+            public void should_get_clr_type_of_property()
             {
                 Assert.AreEqual(typeof(TProperty), _result.ValueType);
             }
@@ -43,6 +44,13 @@ namespace LinqToEPiServer.Tests.UnitTests.QueryTranslation
             {
                 Assert.IsTrue(_extractor.AppliesTo(expression));
             }
+
+            [Test]
+            public void should_get_property_data_type()
+            {
+                Assert.AreEqual(expected_property_type,_result.Type);
+            }
+
         }
 
         public class PageName : GetPropertyName<string>
@@ -57,9 +65,14 @@ namespace LinqToEPiServer.Tests.UnitTests.QueryTranslation
                 get { return "PageName"; }
             }
 
-            protected override IPropertyReferenceExtractor GetExtractor()
+            protected override IPropertyReferenceExtractor system_under_test
             {
-                return new PageDataMemberPropertyReferenceExtractor();
+                get { return new PageDataMemberPropertyReferenceExtractor(); }
+            }
+
+            protected override PropertyDataType? expected_property_type
+            {
+                get { return PropertyDataType.String; }
             }
         }
 
@@ -75,9 +88,14 @@ namespace LinqToEPiServer.Tests.UnitTests.QueryTranslation
                 get { return "PageURLSegment"; }
             }
 
-            protected override IPropertyReferenceExtractor GetExtractor()
+            protected override IPropertyReferenceExtractor system_under_test
             {
-                return new PageDataMemberPropertyReferenceExtractor();
+                get { return new PageDataMemberPropertyReferenceExtractor(); }
+            }
+
+            protected override PropertyDataType? expected_property_type
+            {
+                get { return PropertyDataType.String; }
             }
         }
 
@@ -93,9 +111,14 @@ namespace LinqToEPiServer.Tests.UnitTests.QueryTranslation
                 get { return "test"; }
             }
 
-            protected override IPropertyReferenceExtractor GetExtractor()
+            protected override IPropertyReferenceExtractor system_under_test
             {
-                return new PageDataIndexerPropertyReferenceExtractor();
+                get { return new PageDataIndexerPropertyReferenceExtractor(); }
+            }
+
+            protected override PropertyDataType? expected_property_type
+            {
+                get { return PropertyDataType.Number; }
             }
         }
 
@@ -111,10 +134,39 @@ namespace LinqToEPiServer.Tests.UnitTests.QueryTranslation
                 get { return "test"; }
             }
 
-            protected override IPropertyReferenceExtractor GetExtractor()
+            protected override IPropertyReferenceExtractor system_under_test
             {
-                return new PageDataIndexerPropertyReferenceExtractor();
+                get { return new PageDataIndexerPropertyReferenceExtractor(); }
+            }
+
+            protected override PropertyDataType? expected_property_type
+            {
+                get { return PropertyDataType.Number; }
             }
         }
+
+        public class Indexer : GetPropertyName<object>
+        {
+            protected override Expression<Func<PageData, object>> expression
+            {
+                get { return pd => pd["test"]; }
+            }
+
+            protected override string expected_property_name
+            {
+                get { return "test"; }
+            }
+
+            protected override IPropertyReferenceExtractor system_under_test
+            {
+                get { return new PageDataIndexerPropertyReferenceExtractor(); }
+            }
+
+            protected override PropertyDataType? expected_property_type
+            {
+                get { return null; }
+            }
+        }
+
     }
 }

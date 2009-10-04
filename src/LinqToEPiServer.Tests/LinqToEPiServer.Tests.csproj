@@ -92,6 +92,7 @@
     <Compile Include="UnitTests\PageTypeBuilder\FilterByTypeSpec.cs" />
     <Compile Include="UnitTests\PageTypeBuilder\PageTypeBuilderQueryTranslations.cs" />
     <Compile Include="UnitTests\PageTypeBuilder\PageTypeBuilderRepositorySpec.cs" />
+    <Compile Include="UnitTests\PageTypeBuilder\PropertyReferenceExtractorSpec.cs" />
     <Compile Include="UnitTests\QueryTranslation\NegationTransformerSpec.cs" />
     <Compile Include="Helpers\EPiTester.cs" />
     <Compile Include="Fakes\NullCache.cs" />
