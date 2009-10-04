@@ -14,7 +14,7 @@ namespace LinqToEPiServer.Tests.UnitTests.PageTypeBuilder
             system_under_test = new FilterByType<string>();
         }
         [Test]
-        public void when_input_is_null_should_throw()
+        public void should_throw_when_input_is_null()
         {
             Assert.Throws<ArgumentNullException>(() => system_under_test.Transform(null));
         }
