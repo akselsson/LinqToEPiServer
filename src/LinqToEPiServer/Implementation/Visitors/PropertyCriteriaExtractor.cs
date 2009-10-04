@@ -24,16 +24,21 @@ namespace LinqToEPiServer.Implementation.Visitors
             _criteria = new PropertyCriteriaCollection();
         }
 
-        private bool IsFirstProcessedWhereClause
-        {
-            get { return _criteria.Count == 0; }
-        }
-
         public PropertyCriteriaCollection ConvertToCriteria(Expression expression)
         {
             _criteria.Clear();
             Visit(expression);
             return _criteria;
+        }
+
+        private bool IsFirstProcessedWhereClause
+        {
+            get { return _criteria.Count == 0; }
+        }
+
+        private static bool IsWhere(MethodInfo method)
+        {
+            return method.HasSameGenericMethodDefinitionAs(QueryablePageDataWhere);
         }
 
         protected override Expression VisitMethodCall(MethodCallExpression m)
@@ -50,11 +55,6 @@ namespace LinqToEPiServer.Implementation.Visitors
             Expression queryable = m.Arguments[0];
             AddCriteriaFromWhereMethod(m);
             return Visit(queryable);
-        }
-
-        private static bool IsWhere(MethodInfo method)
-        {
-            return method.HasSameGenericMethodDefinitionAs(QueryablePageDataWhere);
         }
 
         private void AddCriteriaFromWhereMethod(MethodCallExpression m)
