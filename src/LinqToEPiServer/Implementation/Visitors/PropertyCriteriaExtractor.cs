@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
@@ -10,20 +11,26 @@ namespace LinqToEPiServer.Implementation.Visitors
 {
     public class PropertyCriteriaExtractor : ExpressionVisitor
     {
+        private readonly IList<IPropertyReferenceExtractor> _extractors;
         private static readonly MethodInfo QueryablePageDataWhere = ReflectionHelper.MethodOf<IQueryable<PageData>>(q => q.Where(pd => true));
 
         private readonly PropertyCriteriaCollection _criteria = new PropertyCriteriaCollection();
+
+        public PropertyCriteriaExtractor(IEnumerable<IPropertyReferenceExtractor> extractors)
+        {
+            if (extractors == null) throw new ArgumentNullException("extractors");
+            _extractors = extractors.ToList();
+        }
 
         protected PropertyCriteriaCollection Criteria
         {
             get { return _criteria; }
         }
 
-        public static PropertyCriteriaCollection GetCriteria(Expression expression)
+        public PropertyCriteriaCollection GetCriteria(Expression expression)
         {
-            var visitor = new PropertyCriteriaExtractor();
-            visitor.Visit(expression);
-            return visitor.Criteria;
+            Visit(expression);
+            return Criteria;
         }
 
         protected override Expression VisitMethodCall(MethodCallExpression m)
@@ -46,7 +53,9 @@ namespace LinqToEPiServer.Implementation.Visitors
         {
             if (_criteria.Count > 0)
                 throw new NotSupportedException("Multiple where clauses are not supported");
-            _criteria.AddRange(PredicateVisitor.ConvertToCriteriaCollection(m.Arguments[1]));
+            var predicate = m.Arguments[1];
+            var criterion = PredicateVisitor.ConvertToCriteriaCollection(predicate,_extractors);
+            _criteria.AddRange(criterion);
         }
     }
 }

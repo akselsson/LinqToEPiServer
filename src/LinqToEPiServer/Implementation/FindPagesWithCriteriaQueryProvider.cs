@@ -29,6 +29,11 @@ namespace LinqToEPiServer.Implementation
 
         private readonly PageReference _startPoint;
         private IQueryExecutor _executor;
+        private readonly IList<IPropertyReferenceExtractor> _propertyReferenceExtractors = new List<IPropertyReferenceExtractor>()
+                                                                                      {
+                                                                                          new PageDataMemberPropertyReferenceExtractor(),
+                                                                                          new PageDataIndexerPropertyReferenceExtractor()
+                                                                                      };
 
         public FindPagesWithCriteriaQueryProvider(PageReference startPoint, IQueryExecutor executor)
         {
@@ -50,7 +55,18 @@ namespace LinqToEPiServer.Implementation
         public override object Execute(Expression expression)
         {
             PropertyCriteriaCollection criteria = GetCriteria(expression);
-            object result = _executor.FindPagesWithCriteria(_startPoint, criteria.ToArray());
+            var result = FindPagesMatching(criteria);
+            var transformed = Transform(result);
+            return transformed;
+        }
+
+        private PageDataCollection FindPagesMatching(IEnumerable<PropertyCriteria> criteria)
+        {
+            return _executor.FindPagesWithCriteria(_startPoint, criteria.ToArray());
+        }
+
+        private object Transform(object result)
+        {
             foreach (var transformer in _transformers)
             {
                 result = transformer.Transform(result);
@@ -68,7 +84,8 @@ namespace LinqToEPiServer.Implementation
         private PropertyCriteriaCollection GetCriteria(Expression expression)
         {
             Expression rewritten = Rewrite(expression);
-            return PropertyCriteriaExtractor.GetCriteria(rewritten);
+            var extractor = new PropertyCriteriaExtractor(_propertyReferenceExtractors);
+            return extractor.GetCriteria(rewritten);
         }
 
         private Expression Rewrite(Expression expression)
@@ -90,10 +107,10 @@ namespace LinqToEPiServer.Implementation
         {
             _transformers.Add(transformer);
         }
-    }
 
-    public interface IResultTransformer
-    {
-        object Transform(object input);
+        public void AddPropertyReferenceExtractor(IPropertyReferenceExtractor extractor)
+        {
+            _propertyReferenceExtractors.Add(extractor);
+        }
     }
 }

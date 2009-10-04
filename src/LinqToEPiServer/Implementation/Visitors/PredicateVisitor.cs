@@ -11,25 +11,32 @@ namespace LinqToEPiServer.Implementation.Visitors
 {
     public class PredicateVisitor : ExpressionVisitor
     {
+        private readonly IList<IPropertyReferenceExtractor> _extractors;
         private readonly PropertyCriteriaCollection _criteria = new PropertyCriteriaCollection();
         private readonly CriteriaFactory _criteriaFactory = new CriteriaFactory();
+
+        private PredicateVisitor(IList<IPropertyReferenceExtractor> extractors)
+        {
+            if (extractors == null) throw new ArgumentNullException("extractors");
+            _extractors = extractors;
+        }
 
         protected PropertyCriteriaCollection Criteria
         {
             get { return _criteria; }
         }
 
-        public static PropertyCriteriaCollection ConvertToCriteriaCollection(Expression expression)
+        public static PropertyCriteriaCollection ConvertToCriteriaCollection(Expression expression, IList<IPropertyReferenceExtractor> extractors)
         {
-            var visitor = new PredicateVisitor();
+            var visitor = new PredicateVisitor(extractors);
             visitor.Visit(expression);
             return visitor.Criteria;
         }
 
-        private static IEnumerable<PropertyCriteriaCollection> ConvertAllToCriteriaCollections(
+        private IEnumerable<PropertyCriteriaCollection> ConvertAllToCriteriaCollections(
             IEnumerable<Expression> expressions)
         {
-            return expressions.Select(e => ConvertToCriteriaCollection(e)).ToList();
+            return expressions.Select(e => ConvertToCriteriaCollection(e, _extractors)).ToList();
         }
 
         protected override Expression VisitMethodCall(MethodCallExpression m)
@@ -124,7 +131,7 @@ namespace LinqToEPiServer.Implementation.Visitors
         {
             if (u.NodeType != ExpressionType.Not)
                 throw new InvalidOperationException(string.Format("Expression must be Not, was {0}", u));
-            PropertyCriteriaCollection innerCriteria = ConvertToCriteriaCollection(u.Operand);
+            PropertyCriteriaCollection innerCriteria = ConvertToCriteriaCollection(u.Operand,_extractors);
             if (innerCriteria.Count > 1)
                 throw new NotSupportedException(string.Format("Can not negate more than one criteria at once, was {0}",
                                                               u));
@@ -236,13 +243,7 @@ namespace LinqToEPiServer.Implementation.Visitors
 
         private PropertyReference GetPropertyReference(Expression param)
         {
-            var extractors = new IPropertyReferenceExtractor[]
-                                 {
-                                     new PageDataIndexerPropertyReferenceExtractor(),
-                                     new PageDataMemberPropertyReferenceExtractor(),
-                                     new PageTypeBuilderPropertyReferenceExtractor(),
-                                 };
-            foreach (var extractor in extractors)
+            foreach (var extractor in _extractors)
             {
                 if (extractor.AppliesTo(param))
                     return extractor.GetPropertyReference(param);

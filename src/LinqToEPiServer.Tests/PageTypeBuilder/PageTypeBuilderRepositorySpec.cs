@@ -8,6 +8,7 @@ using EPiServer.Core;
 using EPiServer.Filters;
 using IQToolkit;
 using LinqToEPiServer.Implementation;
+using LinqToEPiServer.Implementation.Visitors;
 using LinqToEPiServer.Implementation.Visitors.Rewriters;
 using LinqToEPiServer.Tests.Fakes;
 using LinqToEPiServer.Tests.Helpers;
@@ -99,6 +100,7 @@ namespace LinqToEPiServer.Tests.PageTypeBuilder
         public IQueryable<T> FindDescendantsOf<T>(PageReference reference) where T : TypedPageData
         {
             var provider = new FindPagesWithCriteriaQueryProvider(reference, _executor);
+            provider.AddPropertyReferenceExtractor(new PageTypeBuilderPropertyReferenceExtractor());
             provider.AddResultTransformer(new OfTypeEnumerableTransformer<T>());
             return new Query<T>(provider);
         }
