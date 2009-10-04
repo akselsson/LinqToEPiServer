@@ -5,7 +5,7 @@ using EPiServer.Core;
 using IQToolkit;
 using LinqToEPiServer.Implementation.Expressions;
 
-namespace LinqToEPiServer.Implementation.Visitors
+namespace LinqToEPiServer.Implementation.Visitors.PropertyReferenceExtractors
 {
     public class PageDataIndexerPropertyReferenceExtractor : ExpressionVisitor, IPropertyReferenceExtractor
     {

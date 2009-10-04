@@ -1,6 +1,6 @@
 using System.Linq.Expressions;
 using LinqToEPiServer.Implementation.Expressions;
-using LinqToEPiServer.Implementation.Visitors;
+using LinqToEPiServer.Implementation.Visitors.PropertyReferenceExtractors;
 using PageTypeBuilder;
 
 namespace LinqToEpiServer.PageTypeBuilder

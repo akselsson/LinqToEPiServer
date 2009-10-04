@@ -5,6 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using LinqToEPiServer.Implementation.Visitors;
 using EPiServer.Core;
+using LinqToEPiServer.Implementation.Visitors.PropertyReferenceExtractors;
 using LinqToEPiServer.Tests.Helpers;
 using NUnit.Framework;
 

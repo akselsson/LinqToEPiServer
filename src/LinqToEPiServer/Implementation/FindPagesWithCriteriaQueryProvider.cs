@@ -6,6 +6,7 @@ using EPiServer;
 using EPiServer.Core;
 using IQToolkit;
 using LinqToEPiServer.Implementation.Visitors;
+using LinqToEPiServer.Implementation.Visitors.PropertyReferenceExtractors;
 using LinqToEPiServer.Implementation.Visitors.Rewriters;
 using LinqToEPiServer.Tests.Helpers;
 

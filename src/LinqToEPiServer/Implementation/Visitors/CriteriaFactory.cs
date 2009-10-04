@@ -10,12 +10,6 @@ namespace LinqToEPiServer.Implementation.Visitors
 {
     public class CriteriaFactory
     {
-        private static readonly Dictionary<Type, Func<object, string>> ConverterMap
-            = new Dictionary<Type, Func<object, string>>
-                  {
-                      {typeof (PageType), o => ((PageType) o).ID.ToString()}
-                  };
-
         private static readonly IPropertyDataTypeMapper[] PropertyDataTypeMappers =
             new IPropertyDataTypeMapper[]
                 {
@@ -41,11 +35,6 @@ namespace LinqToEPiServer.Implementation.Visitors
         {
             if (value == null)
                 return null;
-            Func<object, string> converter;
-            if (ConverterMap.TryGetValue(value.GetType(), out converter))
-            {
-                return converter(value);
-            }
             return Convert.ToString(value);
         }
 

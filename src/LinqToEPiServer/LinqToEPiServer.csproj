@@ -57,8 +57,8 @@
     <Compile Include="Implementation\EquatableCriteria.cs" />
     <Compile Include="Implementation\IResultTransformer.cs" />
     <Compile Include="Implementation\MethodInfoHelper.cs" />
-    <Compile Include="Implementation\Visitors\MemberPropertyReferenceExtractorBase.cs" />
-    <Compile Include="Implementation\Visitors\PageDataMemberPropertyReferenceExtractor.cs" />
+    <Compile Include="Implementation\Visitors\PropertyReferenceExtractors\MemberPropertyReferenceExtractorBase.cs" />
+    <Compile Include="Implementation\Visitors\PropertyReferenceExtractors\PageDataMemberPropertyReferenceExtractor.cs" />
     <Compile Include="IPropertyReferenceExtractor.cs" />
     <Compile Include="Implementation\Visitors\Rewriters\WhereCombiner.cs" />
     <Compile Include="IPageDataRepository.cs" />
@@ -80,7 +80,7 @@
     <Compile Include="Implementation\Visitors\IPropertyDataTypeMapper.cs" />
     <Compile Include="Implementation\Expressions\PropertyComparison.cs" />
     <Compile Include="Implementation\Expressions\PropertyReference.cs" />
-    <Compile Include="Implementation\Visitors\PageDataIndexerPropertyReferenceExtractor.cs" />
+    <Compile Include="Implementation\Visitors\PropertyReferenceExtractors\PageDataIndexerPropertyReferenceExtractor.cs" />
     <Compile Include="Implementation\Visitors\ParameterSearcher.cs" />
     <Compile Include="Implementation\Visitors\PropertyDataTypeMappers\PropertyReferenceValueDataTypeMapper.cs" />
     <Compile Include="Implementation\Visitors\PropertyCriteriaExtractor.cs" />

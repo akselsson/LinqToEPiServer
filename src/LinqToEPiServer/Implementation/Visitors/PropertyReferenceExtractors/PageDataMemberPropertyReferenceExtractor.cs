@@ -2,7 +2,7 @@ using System.Linq.Expressions;
 using EPiServer.Core;
 using LinqToEPiServer.Implementation.Expressions;
 
-namespace LinqToEPiServer.Implementation.Visitors
+namespace LinqToEPiServer.Implementation.Visitors.PropertyReferenceExtractors
 {
     public class PageDataMemberPropertyReferenceExtractor : MemberPropertyReferenceExtractorBase
     {

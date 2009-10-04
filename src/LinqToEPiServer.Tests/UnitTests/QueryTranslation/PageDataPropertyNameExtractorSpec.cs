@@ -2,7 +2,7 @@
 using System.Linq.Expressions;
 using EPiServer.Core;
 using LinqToEPiServer.Implementation.Expressions;
-using LinqToEPiServer.Implementation.Visitors;
+using LinqToEPiServer.Implementation.Visitors.PropertyReferenceExtractors;
 using NUnit.Framework;
 
 namespace LinqToEPiServer.Tests.UnitTests.QueryTranslation

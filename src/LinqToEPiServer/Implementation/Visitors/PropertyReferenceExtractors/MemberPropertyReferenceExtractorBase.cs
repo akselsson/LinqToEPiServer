@@ -3,7 +3,7 @@ using System.Linq.Expressions;
 using IQToolkit;
 using LinqToEPiServer.Implementation.Expressions;
 
-namespace LinqToEPiServer.Implementation.Visitors
+namespace LinqToEPiServer.Implementation.Visitors.PropertyReferenceExtractors
 {
     public abstract class MemberPropertyReferenceExtractorBase : IPropertyReferenceExtractor
     {
