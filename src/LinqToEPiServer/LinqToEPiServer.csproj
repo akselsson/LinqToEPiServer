@@ -58,7 +58,6 @@
     <Compile Include="Implementation\ReflectionHelper.cs" />
     <Compile Include="Implementation\Visitors\MemberPropertyReferenceExtractorBase.cs" />
     <Compile Include="Implementation\Visitors\PageDataMemberPropertyReferenceExtractor.cs" />
-    <Compile Include="Implementation\Visitors\PageTypeBuilderPropertyReferenceExtractor.cs" />
     <Compile Include="IPropertyReferenceExtractor.cs" />
     <Compile Include="Implementation\Visitors\Rewriters\WhereCombiner.cs" />
     <Compile Include="IPageDataRepository.cs" />
@@ -92,10 +91,6 @@
     <ProjectReference Include="..\IQ Toolkit\IQToolkit\IQToolkit.csproj">
       <Project>{0DA62A7C-3B40-456F-A4B2-B3E19ED4080E}</Project>
       <Name>IQToolkit</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PageTypeBuilder\PageTypeBuilder\PageTypeBuilder.csproj">
-      <Project>{E6723D8E-6D57-4388-B746-0E887E6B4B1C}</Project>
-      <Name>PageTypeBuilder %28PageTypeBuilder\PageTypeBuilder%29</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

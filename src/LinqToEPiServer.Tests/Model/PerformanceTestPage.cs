@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using EPiServer.Core;
+﻿using EPiServer.Core;
 using PageTypeBuilder;
 
 namespace LinqToEPiServer.Tests.Model

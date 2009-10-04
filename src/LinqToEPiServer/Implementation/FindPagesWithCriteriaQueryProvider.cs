@@ -10,30 +10,28 @@ using LinqToEPiServer.Implementation.Visitors.Rewriters;
 
 namespace LinqToEPiServer.Implementation
 {
-    public interface IResultTransformerContainer
+    public class FindPagesWithCriteriaQueryProvider : QueryProvider
     {
-        void AddResultTransformer(IResultTransformer transformer);
-    }
+        private readonly IList<IPropertyReferenceExtractor> _propertyReferenceExtractors =
+            new List<IPropertyReferenceExtractor>
+                {
+                    new PageDataMemberPropertyReferenceExtractor(),
+                    new PageDataIndexerPropertyReferenceExtractor()
+                };
 
-    public class FindPagesWithCriteriaQueryProvider : QueryProvider, IResultTransformerContainer
-    {
-        private readonly IList<IExpressionRewriter> _rewriters = new List<IExpressionRewriter>
-                                                                     {
-                                                                         new ComparisonFlipper(),
-                                                                         new NegationFlattener(),
-                                                                         new EmptySelectRemover(),
-                                                                         new QuoteStripper(),
-                                                                         new WhereCombiner()
-                                                                     };
-        private readonly IList<IResultTransformer> _transformers = new List<IResultTransformer>();
+        private readonly IList<IExpressionRewriter> _rewriters =
+            new List<IExpressionRewriter>
+                {
+                    new ComparisonFlipper(),
+                    new NegationFlattener(),
+                    new EmptySelectRemover(),
+                    new QuoteStripper(),
+                    new WhereCombiner()
+                };
 
         private readonly PageReference _startPoint;
+        private readonly IList<IResultTransformer> _transformers = new List<IResultTransformer>();
         private IQueryExecutor _executor;
-        private readonly IList<IPropertyReferenceExtractor> _propertyReferenceExtractors = new List<IPropertyReferenceExtractor>()
-                                                                                      {
-                                                                                          new PageDataMemberPropertyReferenceExtractor(),
-                                                                                          new PageDataIndexerPropertyReferenceExtractor()
-                                                                                      };
 
         public FindPagesWithCriteriaQueryProvider(PageReference startPoint, IQueryExecutor executor)
         {
@@ -52,11 +50,20 @@ namespace LinqToEPiServer.Implementation
             }
         }
 
+        #region IResultTransformerContainer Members
+
+        public void AddResultTransformer(IResultTransformer transformer)
+        {
+            _transformers.Add(transformer);
+        }
+
+        #endregion
+
         public override object Execute(Expression expression)
         {
             PropertyCriteriaCollection criteria = GetCriteria(expression);
-            var result = FindPagesMatching(criteria);
-            var transformed = Transform(result);
+            PageDataCollection result = FindPagesMatching(criteria);
+            object transformed = Transform(result);
             return transformed;
         }
 
@@ -67,7 +74,7 @@ namespace LinqToEPiServer.Implementation
 
         private object Transform(object result)
         {
-            foreach (var transformer in _transformers)
+            foreach (IResultTransformer transformer in _transformers)
             {
                 result = transformer.Transform(result);
             }
@@ -101,11 +108,6 @@ namespace LinqToEPiServer.Implementation
         public void AddRewriter(IExpressionRewriter rewriter)
         {
             _rewriters.Add(rewriter);
-        }
-
-        public void AddResultTransformer(IResultTransformer transformer)
-        {
-            _transformers.Add(transformer);
         }
 
         public void AddPropertyReferenceExtractor(IPropertyReferenceExtractor extractor)

@@ -1,8 +1,9 @@
 using System.Linq.Expressions;
 using LinqToEPiServer.Implementation.Expressions;
+using LinqToEPiServer.Implementation.Visitors;
 using PageTypeBuilder;
 
-namespace LinqToEPiServer.Implementation.Visitors
+namespace LinqToEpiServer.PageTypeBuilder
 {
     public class PageTypeBuilderPropertyReferenceExtractor : MemberPropertyReferenceExtractorBase
     {

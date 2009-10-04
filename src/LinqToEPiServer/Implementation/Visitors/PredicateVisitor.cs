@@ -29,14 +29,18 @@ namespace LinqToEPiServer.Implementation.Visitors
         public static PropertyCriteriaCollection ConvertToCriteriaCollection(Expression expression, IList<IPropertyReferenceExtractor> extractors)
         {
             var visitor = new PredicateVisitor(extractors);
-            visitor.Visit(expression);
-            return visitor.Criteria;
+            return visitor.ConvertToCriteriaCollection(expression);
         }
 
-        private IEnumerable<PropertyCriteriaCollection> ConvertAllToCriteriaCollections(
-            IEnumerable<Expression> expressions)
+        private PropertyCriteriaCollection ConvertToCriteriaCollection(Expression expression)
         {
-            return expressions.Select(e => ConvertToCriteriaCollection(e, _extractors)).ToList();
+            Visit(expression);
+            return Criteria;
+        }
+
+        private IEnumerable<PropertyCriteriaCollection> ConvertAllToCriteriaCollections(IEnumerable<Expression> expressions)
+        {
+            return expressions.Select(e => new PredicateVisitor(_extractors).ConvertToCriteriaCollection(e)).ToList();
         }
 
         protected override Expression VisitMethodCall(MethodCallExpression m)

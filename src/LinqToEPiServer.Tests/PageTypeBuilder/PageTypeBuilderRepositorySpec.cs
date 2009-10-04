@@ -1,20 +1,12 @@
-﻿using System;
-using System.Collections;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Reflection;
+﻿using System.Linq;
 using EPiServer;
 using EPiServer.Core;
 using EPiServer.Filters;
-using IQToolkit;
-using LinqToEPiServer.Implementation;
-using LinqToEPiServer.Implementation.Visitors;
-using LinqToEPiServer.Implementation.Visitors.Rewriters;
+using LinqToEpiServer.PageTypeBuilder;
 using LinqToEPiServer.Tests.Fakes;
 using LinqToEPiServer.Tests.Helpers;
 using LinqToEPiServer.Tests.Model;
 using NUnit.Framework;
-using PageTypeBuilder;
 
 namespace LinqToEPiServer.Tests.PageTypeBuilder
 {
@@ -66,9 +58,9 @@ namespace LinqToEPiServer.Tests.PageTypeBuilder
             protected override void because()
             {
                 base.because();
-                query =
-                    system_under_test.FindDescendantsOf<QueryPage>(PageReference.StartPage).Where(
-                        qp => qp.Text == "test");
+                query = system_under_test
+                    .FindDescendantsOf<QueryPage>(PageReference.StartPage)
+                    .Where(qp => qp.Text == "test");
             }
 
             [Test]
@@ -84,59 +76,6 @@ namespace LinqToEPiServer.Tests.PageTypeBuilder
                                                       Value = "test"
                                                   });
             }
-        }
-    }
-
-    public class PageTypeBuilderRepository
-    {
-        private readonly StubQueryExecutor _executor;
-
-        public PageTypeBuilderRepository(StubQueryExecutor executor)
-        {
-            if (executor == null) throw new ArgumentNullException("executor");
-            _executor = executor;
-        }
-
-        public IQueryable<T> FindDescendantsOf<T>(PageReference reference) where T : TypedPageData
-        {
-            var provider = new FindPagesWithCriteriaQueryProvider(reference, _executor);
-            provider.AddPropertyReferenceExtractor(new PageTypeBuilderPropertyReferenceExtractor());
-            provider.AddResultTransformer(new OfTypeEnumerableTransformer<T>());
-            return new Query<T>(provider);
-        }
-    }
-
-    public class RemoveOfTypeRewriter<T> : ExpressionRewriterBase
-    {
-        private readonly IResultTransformerContainer _provider;
-        private readonly MethodInfo _queryableOfType = ReflectionHelper.MethodOf<IQueryable>(q => q.OfType<T>());
-
-        public RemoveOfTypeRewriter(IResultTransformerContainer provider)
-        {
-            _provider = provider;
-            if (provider == null) throw new ArgumentNullException("provider");
-        }
-
-        protected override Expression VisitMethodCall(MethodCallExpression m)
-        {
-            if (m.Method == _queryableOfType)
-            {
-                _provider.AddResultTransformer(new OfTypeEnumerableTransformer<T>());
-                return base.Visit(m.Arguments[0]);
-            }
-            return base.VisitMethodCall(m);
-        }
-    }
-
-    public class OfTypeEnumerableTransformer<T> : IResultTransformer
-    {
-        public object Transform(object input)
-        {
-            if (input == null) throw new ArgumentNullException("input");
-
-            var enumerable = input as IEnumerable;
-            if (enumerable == null) throw new InvalidOperationException(string.Format("input must be IEnumerable, was {0}", input.GetType()));
-            return enumerable.OfType<T>();
         }
     }
 }

@@ -117,6 +117,10 @@
       <Project>{0DA62A7C-3B40-456F-A4B2-B3E19ED4080E}</Project>
       <Name>IQToolkit</Name>
     </ProjectReference>
+    <ProjectReference Include="..\LinqToEpiServer.PageTypeBuilder\LinqToEpiServer.PageTypeBuilder.csproj">
+      <Project>{8B996B7D-A940-4D96-9335-441473CC2CA3}</Project>
+      <Name>LinqToEpiServer.PageTypeBuilder</Name>
+    </ProjectReference>
     <ProjectReference Include="..\LinqToEPiServer\LinqToEPiServer.csproj">
       <Project>{37A69F7D-9A58-417C-8D8B-EDA4F344F0D5}</Project>
       <Name>LinqToEPiServer</Name>
