@@ -33,9 +33,20 @@ namespace LinqToEPiServer.Implementation.Expressions
             get { return Property.PropertyName; }
         }
 
-        public PropertyDataType? PropertyDataType
+        public PropertyDataType GetPropertyDataType()
         {
-            get { return _property.Type; }
+            return _property.Type ?? GetPropertyDataTypeFromComparisonValue();
+        }
+
+        private PropertyDataType GetPropertyDataTypeFromComparisonValue()
+        {
+            if(ComparisonValue == null)
+                throw new InvalidOperationException("Can not get PropertyDataType from null ComparisonValue");
+
+            PropertyDataType ret;
+            if(TypeToPropertyDataTypeMapper.TryMap(ComparisonValue.GetType(),out ret))
+                return ret;
+            throw new NotSupportedException(string.Format("Unable to map {0} of type {1} to PropertyDataType", ComparisonValue,ComparisonValue.GetType()));
         }
     }
 }

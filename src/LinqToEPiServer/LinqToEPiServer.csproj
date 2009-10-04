@@ -76,18 +76,13 @@
     <Compile Include="Implementation\Visitors\Rewriters\ExpressionRewriterBase.cs" />
     <Compile Include="Implementation\Visitors\IExpressionRewriter.cs" />
     <Compile Include="Implementation\Visitors\Rewriters\NegationFlattener.cs" />
-    <Compile Include="Implementation\Visitors\PropertyDataTypeMappers\ComparisonValuePropertyDataTypeMapper.cs" />
     <Compile Include="Implementation\Visitors\ConstantValueExtractor.cs" />
-    <Compile Include="Implementation\Visitors\IPropertyDataTypeMapper.cs" />
     <Compile Include="Implementation\Expressions\PropertyComparison.cs" />
     <Compile Include="Implementation\Expressions\PropertyReference.cs" />
     <Compile Include="Implementation\Visitors\PropertyReferenceExtractors\PageDataIndexerPropertyReferenceExtractor.cs" />
     <Compile Include="Implementation\Visitors\ParameterSearcher.cs" />
-    <Compile Include="Implementation\Visitors\PropertyDataTypeMappers\PropertyReferenceValueDataTypeMapper.cs" />
     <Compile Include="Implementation\Visitors\PropertyCriteriaExtractor.cs" />
     <Compile Include="Implementation\Visitors\PredicateVisitor.cs" />
-    <Compile Include="Implementation\Visitors\PropertyDataTypeMappers\PropertyNameDataTypeMapper.cs" />
-    <Compile Include="Implementation\Visitors\PropertyDataTypeMappers\TypeBasedPropertyDataTypeMapperBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\IQ Toolkit\IQToolkit\IQToolkit.csproj">
