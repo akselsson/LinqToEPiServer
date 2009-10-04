@@ -11,7 +11,8 @@ namespace LinqToEPiServer.Implementation.Visitors
 {
     public class PropertyCriteriaExtractor : ExpressionVisitor
     {
-        private static readonly MethodInfo QueryablePageDataWhere = MethodInfoHelper.MethodOf<IQueryable<PageData>>(q => q.Where(pd => true));
+        private static readonly MethodInfo QueryablePageDataWhere =
+            MethodInfoHelper.MethodOf<IQueryable<PageData>>(q => q.Where(pd => true));
 
         private readonly PropertyCriteriaCollection _criteria;
         private readonly IList<IPropertyReferenceExtractor> _extractors;
@@ -23,6 +24,11 @@ namespace LinqToEPiServer.Implementation.Visitors
             _criteria = new PropertyCriteriaCollection();
         }
 
+        private bool IsFirstProcessedWhereClause
+        {
+            get { return _criteria.Count == 0; }
+        }
+
         public PropertyCriteriaCollection ConvertToCriteria(Expression expression)
         {
             _criteria.Clear();
@@ -32,18 +38,18 @@ namespace LinqToEPiServer.Implementation.Visitors
 
         protected override Expression VisitMethodCall(MethodCallExpression m)
         {
-            var method = m.Method;
+            MethodInfo method = m.Method;
 
-            if (IsWhere(method))
+            if (!IsWhere(method))
             {
-                AddCriteriaFromWhere(m);
-                return Visit(m.Arguments[0]);
+                throw new NotSupportedException(
+                    string.Format("Method {0} is not supported. Try enumerating the result set with AsEnumerable first. Expression: {1}", method, m)
+                    );
             }
-            throw new NotSupportedException(
-                string.Format(
-                    "Method {0} is not supported. Try enumerating the result set with AsEnumerable first. Expression: {1}",
-                    method, m)
-                );
+
+            Expression queryable = m.Arguments[0];
+            AddCriteriaFromWhereMethod(m);
+            return Visit(queryable);
         }
 
         private static bool IsWhere(MethodInfo method)
@@ -51,18 +57,13 @@ namespace LinqToEPiServer.Implementation.Visitors
             return method.HasSameGenericMethodDefinitionAs(QueryablePageDataWhere);
         }
 
-        private void AddCriteriaFromWhere(MethodCallExpression m)
+        private void AddCriteriaFromWhereMethod(MethodCallExpression m)
         {
-            if (!IsFirstCriteria)
+            if (!IsFirstProcessedWhereClause)
                 throw new NotSupportedException("Multiple where clauses are not supported");
-            var predicate = m.Arguments[1];
-            var criteria = PredicateVisitor.ConvertToCriteriaCollection(predicate, _extractors);
+            Expression predicate = m.Arguments[1];
+            PropertyCriteriaCollection criteria = PredicateVisitor.ConvertToCriteriaCollection(predicate, _extractors);
             _criteria.AddRange(criteria);
-        }
-
-        private bool IsFirstCriteria
-        {
-            get { return _criteria.Count == 0; }
         }
     }
 }
