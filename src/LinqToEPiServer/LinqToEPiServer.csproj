@@ -55,6 +55,10 @@
   <ItemGroup>
     <Compile Include="DataFactoryQueryExecutor.cs" />
     <Compile Include="Implementation\ReflectionHelper.cs" />
+    <Compile Include="Implementation\Visitors\MemberPropertyReferenceExtractorBase.cs" />
+    <Compile Include="Implementation\Visitors\PageDataMemberPropertyReferenceExtractor.cs" />
+    <Compile Include="Implementation\Visitors\PageTypeBuilderPropertyReferenceExtractor.cs" />
+    <Compile Include="IPropertyReferenceExtractor.cs" />
     <Compile Include="Implementation\Visitors\Rewriters\WhereCombiner.cs" />
     <Compile Include="IPageDataRepository.cs" />
     <Compile Include="Linq\EnumerableExtensions.cs" />

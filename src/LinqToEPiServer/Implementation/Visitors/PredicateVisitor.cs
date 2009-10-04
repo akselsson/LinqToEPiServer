@@ -240,7 +240,7 @@ namespace LinqToEPiServer.Implementation.Visitors
                                  {
                                      new PageDataIndexerPropertyReferenceExtractor(),
                                      new PageDataMemberPropertyReferenceExtractor(),
-                                     new PageTypeBuilderProppertyReferenceExtractor(),
+                                     new PageTypeBuilderPropertyReferenceExtractor(),
                                  };
             foreach (var extractor in extractors)
             {
