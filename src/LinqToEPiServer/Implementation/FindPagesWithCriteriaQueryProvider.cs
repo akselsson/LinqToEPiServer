@@ -52,35 +52,18 @@ namespace LinqToEPiServer.Implementation
             }
         }
 
-        #region IResultTransformerContainer Members
-
-        public void AddResultTransformer(IResultTransformer transformer)
-        {
-            _transformers.Add(transformer);
-        }
-
-        #endregion
-
+      
         public override object Execute(Expression expression)
         {
             PropertyCriteriaCollection criteria = GetCriteria(expression);
             PageDataCollection result = FindPagesMatching(criteria);
-            object transformed = Transform(result);
+            object transformed = TransformResult(result);
             return transformed;
         }
 
         private PageDataCollection FindPagesMatching(IEnumerable<PropertyCriteria> criteria)
         {
             return _executor.FindPagesWithCriteria(_startPoint, criteria.ToArray());
-        }
-
-        private object Transform(object result)
-        {
-            foreach (IResultTransformer transformer in _transformers)
-            {
-                result = transformer.Transform(result);
-            }
-            return result;
         }
 
         public override string GetQueryText(Expression expression)
@@ -93,12 +76,12 @@ namespace LinqToEPiServer.Implementation
 
         private PropertyCriteriaCollection GetCriteria(Expression expression)
         {
-            Expression rewritten = Rewrite(expression);
+            Expression rewritten = RewriteExpression(expression);
             var extractor = new PropertyCriteriaExtractor(_propertyReferenceExtractors);
             return extractor.ConvertToCriteria(rewritten);
         }
 
-        private Expression Rewrite(Expression expression)
+        private Expression RewriteExpression(Expression expression)
         {
             Expression rewritten = expression;
             foreach (IExpressionRewriter rewriter in _rewriters)
@@ -106,6 +89,15 @@ namespace LinqToEPiServer.Implementation
                 rewritten = rewriter.Rewrite(rewritten);
             }
             return rewritten;
+        }
+
+        private object TransformResult(object result)
+        {
+            foreach (IResultTransformer transformer in _transformers)
+            {
+                result = transformer.Transform(result);
+            }
+            return result;
         }
 
         public void AddRewriter(IExpressionRewriter rewriter)
@@ -117,5 +109,11 @@ namespace LinqToEPiServer.Implementation
         {
             _propertyReferenceExtractors.Add(extractor);
         }
+
+        public void AddResultTransformer(IResultTransformer transformer)
+        {
+            _transformers.Add(transformer);
+        }
+
     }
 }

@@ -31,16 +31,6 @@ namespace LinqToEPiServer.Implementation.Visitors
             return _criteria;
         }
 
-        private bool IsFirstProcessedWhereClause
-        {
-            get { return _criteria.Count == 0; }
-        }
-
-        private static bool IsWhere(MethodInfo method)
-        {
-            return method.HasSameGenericMethodDefinitionAs(QueryablePageDataWhere);
-        }
-
         protected override Expression VisitMethodCall(MethodCallExpression m)
         {
             MethodInfo method = m.Method;
@@ -64,6 +54,16 @@ namespace LinqToEPiServer.Implementation.Visitors
             Expression predicate = m.Arguments[1];
             PropertyCriteriaCollection criteria = PredicateVisitor.ConvertToCriteriaCollection(predicate, _extractors);
             _criteria.AddRange(criteria);
+        }
+
+        private bool IsFirstProcessedWhereClause
+        {
+            get { return _criteria.Count == 0; }
+        }
+
+        private static bool IsWhere(MethodInfo method)
+        {
+            return method.HasSameGenericMethodDefinitionAs(QueryablePageDataWhere);
         }
     }
 }

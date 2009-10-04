@@ -92,7 +92,6 @@
     <Compile Include="UnitTests\PageTypeBuilder\FilterByTypeSpec.cs" />
     <Compile Include="UnitTests\PageTypeBuilder\PageTypeBuilderQueryTranslations.cs" />
     <Compile Include="UnitTests\PageTypeBuilder\PageTypeBuilderRepositorySpec.cs" />
-    <Compile Include="UnitTests\PageTypeBuilder\PropertyReferenceExtractorSpec.cs" />
     <Compile Include="UnitTests\QueryTranslation\NegationTransformerSpec.cs" />
     <Compile Include="Helpers\EPiTester.cs" />
     <Compile Include="Fakes\NullCache.cs" />
@@ -105,11 +104,14 @@
     <Compile Include="IntegrationTests\SmokeTests.cs" />
     <Compile Include="IntegrationTests\IntegrationTestsBase.cs" />
     <Compile Include="Model\PerformanceTestPage.cs" />
-    <Compile Include="UnitTests\QueryTranslation\PageDataPropertyNameExtractorSpec.cs" />
+    <Compile Include="UnitTests\QueryTranslation\PageDataIndexerPropertyReferenceExtractorSpec.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Helpers\QueryTestHelper.cs" />
     <Compile Include="UnitTests\PageDataRepositorySpec.cs" />
+    <Compile Include="UnitTests\QueryTranslation\PageDataMemberPropertyReferenceExtractorSpec.cs" />
+    <Compile Include="UnitTests\PageTypeBuilder\PageTypeBuilderPropertyReferenceExtractorSpec.cs" />
     <Compile Include="UnitTests\QueryTranslation\PropertyCriteriaExtractorSpec.cs" />
+    <Compile Include="UnitTests\QueryTranslation\PropertyReferenceExtractorSpec.cs" />
     <Compile Include="UnitTests\QueryTranslation\QueryTranslationSpec.cs" />
     <Compile Include="Fakes\StubQueryExecutor.cs" />
     <Compile Include="IntegrationTests\QueryPerformance.cs" />

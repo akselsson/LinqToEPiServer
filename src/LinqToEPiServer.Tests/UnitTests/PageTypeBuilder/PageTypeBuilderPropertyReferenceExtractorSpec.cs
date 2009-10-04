@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System;
 using System.Linq.Expressions;
-using System.Text;
 using EPiServer.Core;
 using LinqToEpiServer.PageTypeBuilder;
 using LinqToEPiServer.Tests.Model;
@@ -10,9 +7,9 @@ using LinqToEPiServer.Tests.UnitTests.QueryTranslation;
 
 namespace LinqToEPiServer.Tests.UnitTests.PageTypeBuilder
 {
-    public class PropertyReferenceExtractorSpec
+    public class PageTypeBuilderPropertyReferenceExtractorSpec
     {
-        public class PageReferenceProperty : PageDataPropertyNameExtractorSpec.GetPropertyName<PageReference>
+        public class PageReferenceProperty : PropertyReferenceExtractorSpec<PageReference>
         {
             protected override Expression<Func<PageData, PageReference>> expression
             {
@@ -34,8 +31,8 @@ namespace LinqToEPiServer.Tests.UnitTests.PageTypeBuilder
                 get { return PropertyDataType.PageReference; }
             }
         }
-        
-        public class PageTypeProperty : PageDataPropertyNameExtractorSpec.GetPropertyName<int>
+
+        public class PageTypeProperty : PropertyReferenceExtractorSpec<int>
         {
             protected override Expression<Func<PageData, int>> expression
             {
