@@ -15,10 +15,10 @@ namespace LinqToEPiServer.Implementation.Visitors
         private readonly PropertyCriteriaCollection _criteria = new PropertyCriteriaCollection();
         private readonly CriteriaFactory _criteriaFactory = new CriteriaFactory();
 
-        private PredicateVisitor(IList<IPropertyReferenceExtractor> extractors)
+        private PredicateVisitor(IEnumerable<IPropertyReferenceExtractor> extractors)
         {
             if (extractors == null) throw new ArgumentNullException("extractors");
-            _extractors = extractors;
+            _extractors =  extractors.ToList();
         }
 
         protected PropertyCriteriaCollection Criteria

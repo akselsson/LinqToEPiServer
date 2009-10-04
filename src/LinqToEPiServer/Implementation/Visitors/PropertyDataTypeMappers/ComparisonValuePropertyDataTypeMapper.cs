@@ -7,7 +7,9 @@ namespace LinqToEPiServer.Implementation.Visitors.PropertyDataTypeMappers
     {
         protected override Type GetType(PropertyComparison propertyComparison)
         {
-            return propertyComparison.ComparisonValue != null ? propertyComparison.ComparisonValue.GetType() : null;
+            return propertyComparison.ComparisonValue != null ?
+                propertyComparison.ComparisonValue.GetType() :
+                null;
         }
     }
 }
