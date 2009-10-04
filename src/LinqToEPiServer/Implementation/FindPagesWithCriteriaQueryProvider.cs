@@ -10,7 +10,12 @@ using LinqToEPiServer.Implementation.Visitors.Rewriters;
 
 namespace LinqToEPiServer.Implementation
 {
-    public class FindPagesWithCriteriaQueryProvider : QueryProvider
+    public interface IResultTransformerContainer
+    {
+        void AddResultTransformer(IResultTransformer transformer);
+    }
+
+    public class FindPagesWithCriteriaQueryProvider : QueryProvider, IResultTransformerContainer
     {
         private readonly IList<IExpressionRewriter> _rewriters = new List<IExpressionRewriter>
                                                                      {
@@ -20,6 +25,7 @@ namespace LinqToEPiServer.Implementation
                                                                          new QuoteStripper(),
                                                                          new WhereCombiner()
                                                                      };
+        private readonly IList<IResultTransformer> _transformers = new List<IResultTransformer>();
 
         private readonly PageReference _startPoint;
         private IQueryExecutor _executor;
@@ -44,7 +50,12 @@ namespace LinqToEPiServer.Implementation
         public override object Execute(Expression expression)
         {
             PropertyCriteriaCollection criteria = GetCriteria(expression);
-            return _executor.FindPagesWithCriteria(_startPoint, criteria.ToArray());
+            object result = _executor.FindPagesWithCriteria(_startPoint, criteria.ToArray());
+            foreach (var transformer in _transformers)
+            {
+                result = transformer.Transform(result);
+            }
+            return result;
         }
 
         public override string GetQueryText(Expression expression)
@@ -74,5 +85,15 @@ namespace LinqToEPiServer.Implementation
         {
             _rewriters.Add(rewriter);
         }
+
+        public void AddResultTransformer(IResultTransformer transformer)
+        {
+            _transformers.Add(transformer);
+        }
+    }
+
+    public interface IResultTransformer
+    {
+        object Transform(object input);
     }
 }

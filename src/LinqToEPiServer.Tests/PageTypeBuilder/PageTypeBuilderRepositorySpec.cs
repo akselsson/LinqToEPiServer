@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
@@ -27,7 +28,7 @@ namespace LinqToEPiServer.Tests.PageTypeBuilder
             system_under_test = new PageTypeBuilderRepository(query_executor);
         }
 
-        public class when_query_returns_empty_result_set : PageTypeBuilderRepositorySpec
+        public class with_empty_query : PageTypeBuilderRepositorySpec
         {
             private IQueryable<QueryPage> query;
 
@@ -37,41 +38,23 @@ namespace LinqToEPiServer.Tests.PageTypeBuilder
                 query = system_under_test.FindDescendantsOf<QueryPage>(PageReference.StartPage);
             }
 
-
             [Test]
             public void should_return_enumerable_collection()
             {
                 CollectionAssert.IsEmpty(query);
             }
 
-
             [Test]
-            public void should_add_page_type_criteria_to_executed_query()
+            public void should_not_changed_criteria()
             {
-                query.should_be_translated_to(new PropertyCriteria
-                {
-                    Condition = CompareCondition.Equal,
-                    IsNull = false,
-                    Name = "PageTypeID",
-                    Required = true,
-                    Type = PropertyDataType.PageType,
-                    Value = "1"
-                });
+                query.should_be_translated_to();
             }
 
             [Test]
             public void should_return_enumerable_of_correct_type()
             {
-                // Add a result transformer
                 Assert.IsNotNull(query.ToArray());
             }
-
-            [Test]
-            public void should_get_page_type_id_from_page_type_resolver()
-            {
-                Assert.Fail("Not implemented");
-            }
-
         }
     }
 
@@ -88,29 +71,42 @@ namespace LinqToEPiServer.Tests.PageTypeBuilder
         public IQueryable<T> FindDescendantsOf<T>(PageReference reference) where T : TypedPageData
         {
             var provider = new FindPagesWithCriteriaQueryProvider(reference, _executor);
-            provider.AddRewriter(new RemoveOfTypeRewriter<T>());
+            provider.AddRewriter(new RemoveOfTypeRewriter<T>(provider));
             return new PageDataQuery(provider).OfType<T>();
         }
     }
 
     public class RemoveOfTypeRewriter<T> : ExpressionRewriterBase
     {
-        private readonly MethodInfo QueryableOfType = ReflectionHelper.MethodOf<IQueryable>(q => q.OfType<T>());
-        private readonly MethodInfo QueryableWhere = ReflectionHelper.MethodOf<IQueryable<PageData>>(q => q.Where(pd=>true));
-        private readonly Expression<Func<PageData, bool>> PageTypeIDPredicate = pd => pd.PageTypeID == 1;
+        private readonly IResultTransformerContainer _provider;
+        private readonly MethodInfo _queryableOfType = ReflectionHelper.MethodOf<IQueryable>(q => q.OfType<T>());
+
+        public RemoveOfTypeRewriter(IResultTransformerContainer provider)
+        {
+            _provider = provider;
+            if (provider == null) throw new ArgumentNullException("provider");
+        }
 
         protected override Expression VisitMethodCall(MethodCallExpression m)
         {
-            if (m.Method == QueryableOfType)
+            if (m.Method == _queryableOfType)
             {
-                return AddPageTypeIDWhere(m.Arguments[0]);
+                _provider.AddResultTransformer(new OfTypeEnumerableTransformer<T>());
+                return base.Visit(m.Arguments[0]);
             }
             return base.VisitMethodCall(m);
         }
+    }
 
-        private Expression AddPageTypeIDWhere(Expression expression)
+    public class OfTypeEnumerableTransformer<T> : IResultTransformer
+    {
+        public object Transform(object input)
         {
-            return Expression.Call(QueryableWhere, expression, PageTypeIDPredicate);
+            if (input == null) throw new ArgumentNullException("input");
+
+            var enumerable = input as IEnumerable;
+            if (enumerable == null) throw new InvalidOperationException(string.Format("input must be IEnumerable, was {0}", input.GetType()));
+            return enumerable.OfType<T>();
         }
     }
 }
