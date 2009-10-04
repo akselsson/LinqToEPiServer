@@ -54,8 +54,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataFactoryQueryExecutor.cs" />
+    <Compile Include="Implementation\EquatableCriteria.cs" />
     <Compile Include="Implementation\IResultTransformer.cs" />
-    <Compile Include="Implementation\ReflectionHelper.cs" />
+    <Compile Include="Implementation\MethodInfoHelper.cs" />
     <Compile Include="Implementation\Visitors\MemberPropertyReferenceExtractorBase.cs" />
     <Compile Include="Implementation\Visitors\PageDataMemberPropertyReferenceExtractor.cs" />
     <Compile Include="IPropertyReferenceExtractor.cs" />

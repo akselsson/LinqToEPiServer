@@ -7,6 +7,7 @@ using EPiServer.Core;
 using IQToolkit;
 using LinqToEPiServer.Implementation.Visitors;
 using LinqToEPiServer.Implementation.Visitors.Rewriters;
+using LinqToEPiServer.Tests.Helpers;
 
 namespace LinqToEPiServer.Implementation
 {
@@ -84,8 +85,7 @@ namespace LinqToEPiServer.Implementation
         public override string GetQueryText(Expression expression)
         {
             PropertyCriteriaCollection criteria = GetCriteria(expression);
-            //TODO: Criteria ToString
-            return string.Join(", ", criteria.Select(c => c.ToString()).ToArray());
+            return string.Join(Environment.NewLine, EquatableCriteria.MakeEquatable(criteria).Select(c => c.ToString()).ToArray());
         }
 
         private PropertyCriteriaCollection GetCriteria(Expression expression)

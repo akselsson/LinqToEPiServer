@@ -8,7 +8,7 @@ namespace LinqToEPiServer.Implementation.Visitors.Rewriters
 {
     public class WhereCombiner : ExpressionRewriterBase
     {
-        private static readonly MethodInfo QueryableWhere = ReflectionHelper.MethodOf<IQueryable<PageData>>(pd => pd.Where(x => true));
+        private static readonly MethodInfo QueryableWhere = MethodInfoHelper.MethodOf<IQueryable<PageData>>(pd => pd.Where(x => true));
         private readonly QuoteStripper _quoteStripper = new QuoteStripper();
 
         private Expression NotModified(MethodCallExpression m)

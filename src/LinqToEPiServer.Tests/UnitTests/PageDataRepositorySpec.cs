@@ -4,7 +4,7 @@ using LinqToEPiServer.Linq;
 using NUnit.Framework;
 using Rhino.Mocks;
 
-namespace LinqToEPiServer.Tests.QueryTranslation
+namespace LinqToEPiServer.Tests.UnitTests
 {
     public class PageDataRepositorySpec : EPiTestBase
     {

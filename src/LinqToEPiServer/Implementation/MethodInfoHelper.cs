@@ -4,7 +4,7 @@ using System.Reflection;
 
 namespace LinqToEPiServer.Implementation
 {
-    public static class ReflectionHelper
+    public static class MethodInfoHelper
     {
         public static MethodInfo MethodOf<T>(Expression<Action<T>> methodCall)
         {
@@ -18,7 +18,7 @@ namespace LinqToEPiServer.Implementation
         public static MethodInfo MethodOf<TTarget,TOutput>(Expression<Func<TTarget,TOutput>> methodCall)
         {
             if (methodCall == null) throw new ArgumentNullException("methodCall");
-            if (!(methodCall.Body is MethodCallExpression)) throw new ArgumentException("Expression must be a method call", "methodCall");
+            if (!(methodCall.Body is MethodCallExpression)) throw new ArgumentException(string.Format("Expression must be a method call, was {0}", methodCall.NodeType), "methodCall");
 
             var expression = (MethodCallExpression)methodCall.Body;
             return expression.Method;

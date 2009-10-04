@@ -12,7 +12,7 @@ namespace LinqToEPiServer.Implementation.Visitors
     public class PropertyCriteriaExtractor : ExpressionVisitor
     {
         private readonly IList<IPropertyReferenceExtractor> _extractors;
-        private static readonly MethodInfo QueryablePageDataWhere = ReflectionHelper.MethodOf<IQueryable<PageData>>(q => q.Where(pd => true));
+        private static readonly MethodInfo QueryablePageDataWhere = MethodInfoHelper.MethodOf<IQueryable<PageData>>(q => q.Where(pd => true));
 
         private readonly PropertyCriteriaCollection _criteria = new PropertyCriteriaCollection();
 

@@ -9,8 +9,8 @@ namespace LinqToEPiServer.Implementation.Visitors
 {
     public class PageDataIndexerPropertyReferenceExtractor : ExpressionVisitor, IPropertyReferenceExtractor
     {
-        private readonly MethodInfo _getValue = ReflectionHelper.MethodOf<PageData>(pd => pd.GetValue(""));
-        private readonly MethodInfo _indexer = ReflectionHelper.MethodOf<PageData, object>(pd => pd[""]);
+        private readonly MethodInfo _getValue = MethodInfoHelper.MethodOf<PageData>(pd => pd.GetValue(""));
+        private readonly MethodInfo _indexer = MethodInfoHelper.MethodOf<PageData, object>(pd => pd[""]);
 
         private string _propertyName;
         private Type _type = typeof (object);
