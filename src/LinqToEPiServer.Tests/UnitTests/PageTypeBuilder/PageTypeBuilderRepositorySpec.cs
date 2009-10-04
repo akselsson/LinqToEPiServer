@@ -8,7 +8,7 @@ using LinqToEPiServer.Tests.Helpers;
 using LinqToEPiServer.Tests.Model;
 using NUnit.Framework;
 
-namespace LinqToEPiServer.Tests.PageTypeBuilder
+namespace LinqToEPiServer.Tests.UnitTests.PageTypeBuilder
 {
     public class PageTypeBuilderRepositorySpec : EPiTestBase
     {

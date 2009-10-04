@@ -3,7 +3,7 @@ using System.Collections;
 using LinqToEpiServer.PageTypeBuilder;
 using NUnit.Framework;
 
-namespace LinqToEPiServer.Tests.PageTypeBuilder
+namespace LinqToEPiServer.Tests.UnitTests.PageTypeBuilder
 {
     public class FilterByTypeSpec :EPiTestBase
     {

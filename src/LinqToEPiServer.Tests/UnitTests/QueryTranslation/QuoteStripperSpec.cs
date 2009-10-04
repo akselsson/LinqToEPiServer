@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
+﻿using System.Linq.Expressions;
 using LinqToEPiServer.Implementation.Visitors.Rewriters;
 using NUnit.Framework;
 
-namespace LinqToEPiServer.Tests.QueryTranslation
+namespace LinqToEPiServer.Tests.UnitTests.QueryTranslation
 {
     public class QuoteStripperSpec : EPiTestBase
     {

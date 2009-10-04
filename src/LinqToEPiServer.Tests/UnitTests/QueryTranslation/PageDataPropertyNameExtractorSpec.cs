@@ -5,7 +5,7 @@ using LinqToEPiServer.Implementation.Expressions;
 using LinqToEPiServer.Implementation.Visitors;
 using NUnit.Framework;
 
-namespace LinqToEPiServer.Tests.QueryTranslation
+namespace LinqToEPiServer.Tests.UnitTests.QueryTranslation
 {
     public class PageDataPropertyNameExtractorSpec : EPiTestBase
     {

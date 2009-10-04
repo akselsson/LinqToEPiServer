@@ -4,7 +4,7 @@ using LinqToEPiServer.Implementation.Visitors.Rewriters;
 using LinqToEPiServer.Tests.Helpers;
 using NUnit.Framework;
 
-namespace LinqToEPiServer.Tests.QueryTranslation
+namespace LinqToEPiServer.Tests.UnitTests.QueryTranslation
 {
     public class WhereCombinerSpec : EPiTestBase
     {
