@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IQToolkit", "IQ Toolkit\IQT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqToEpiServer.PageTypeBuilder", "LinqToEpiServer.PageTypeBuilder\LinqToEpiServer.PageTypeBuilder.csproj", "{8B996B7D-A940-4D96-9335-441473CC2CA3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PageTypeBuilder.Tests", "PageTypeBuilder\PageTypeBuilder.Tests\PageTypeBuilder.Tests.csproj", "{338A60B0-B052-4554-9764-69B7B15915F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,12 +43,17 @@ Global
 		{8B996B7D-A940-4D96-9335-441473CC2CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B996B7D-A940-4D96-9335-441473CC2CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B996B7D-A940-4D96-9335-441473CC2CA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{338A60B0-B052-4554-9764-69B7B15915F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{338A60B0-B052-4554-9764-69B7B15915F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{338A60B0-B052-4554-9764-69B7B15915F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{338A60B0-B052-4554-9764-69B7B15915F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E6723D8E-6D57-4388-B746-0E887E6B4B1C} = {58534EC2-A1F3-42B3-8BA2-5BEEAD526BD0}
+		{338A60B0-B052-4554-9764-69B7B15915F7} = {58534EC2-A1F3-42B3-8BA2-5BEEAD526BD0}
 		{0DA62A7C-3B40-456F-A4B2-B3E19ED4080E} = {038807DE-F31C-4D62-9444-D51E1BD24443}
 	EndGlobalSection
 EndGlobal

@@ -13,38 +13,47 @@ namespace LinqToEpiServer.PageTypeBuilder
     {
         protected override PropertyReference GetPropertyReferencFromMember(MemberExpression e)
         {
-            var member = e.Member;
-            PropertyDataType propertyDataType = GetPropertyDataType(member);
-            return new PropertyReference(member.Name,e.Type, propertyDataType);
+            PropertyDataType propertyDataType = GetPropertyDataType(e);
+            return new PropertyReference(e.Member.Name, propertyDataType);
         }
 
         protected override bool AppliesToMember(MemberExpression e)
         {
-            return typeof(TypedPageData).IsAssignableFrom(e.Member.DeclaringType);
+            return typeof (TypedPageData).IsAssignableFrom(e.Member.DeclaringType);
         }
 
-        private PropertyDataType GetPropertyDataType(MemberInfo member)
+        private PropertyDataType GetPropertyDataType(MemberExpression expression)
         {
-            PageTypePropertyAttribute pageTypePropertyAttribute = GetPageTypePropertyAttribute(member);
+            PageTypePropertyAttribute pageTypePropertyAttribute = GetPageTypePropertyAttribute(expression.Member);
+            if (pageTypePropertyAttribute.Type == null)
+                return GetPropertyTypeFromReturnType(expression);
             PropertyData propertyData = GetEmptyPropertyData(pageTypePropertyAttribute);
             return propertyData.Type;
         }
 
+        private PropertyDataType GetPropertyTypeFromReturnType(MemberExpression member)
+        {
+            PropertyDataType propertyDataType;
+            if (TypeToPropertyDataTypeMapper.TryMap(member.Type, out propertyDataType))
+                return propertyDataType;
+            throw new NotSupportedException(string.Format("Could not map member {0} to PropertyDataType", member));
+        }
+
         private PropertyData GetEmptyPropertyData(PageTypePropertyAttribute pageTypePropertyAttribute)
         {
-            return (PropertyData)Activator.CreateInstance(pageTypePropertyAttribute.Type);
+            return (PropertyData) Activator.CreateInstance(pageTypePropertyAttribute.Type);
         }
 
         private PageTypePropertyAttribute GetPageTypePropertyAttribute(MemberInfo member)
         {
             var pageTypePropertyAttribute = member
-                .GetCustomAttributes(typeof(PageTypePropertyAttribute), false)
+                .GetCustomAttributes(typeof (PageTypePropertyAttribute), false)
                 .OfType<PageTypePropertyAttribute>().SingleOrDefault();
 
             if (pageTypePropertyAttribute == null)
-                throw new InvalidOperationException(string.Format("Property {0} does not have PageTypePropertyAttribute", member));
+                throw new InvalidOperationException(string.Format(
+                                                        "Property {0} does not have PageTypePropertyAttribute", member));
             return pageTypePropertyAttribute;
         }
-
     }
 }

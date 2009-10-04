@@ -10,6 +10,9 @@ namespace LinqToEPiServer.Tests.Model
         [PageTypeProperty(Type = typeof(PropertyString))]
         public virtual string Text { get; set; }
 
+        [PageTypeProperty]
+        public virtual string Text2 { get; set; }
+
         [PageTypeProperty(Type = typeof(PropertyPageReference))]
         public virtual PageReference LinkedPage { get; set; }
 

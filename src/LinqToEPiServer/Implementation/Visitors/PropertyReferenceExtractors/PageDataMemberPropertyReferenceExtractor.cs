@@ -13,15 +13,15 @@ namespace LinqToEPiServer.Implementation.Visitors.PropertyReferenceExtractors
         protected override PropertyReference GetPropertyReferencFromMember(MemberExpression e)
         {
             string memberName = e.Member.Name;
-            memberName = EnsureNameIsPrefixedWithPage(memberName);
+            memberName = EnsureNameIsPrefixed(memberName);
 
             if (RepresentsPageTypeMember(memberName))
-                return new PropertyReference(memberName, e.Type, PropertyDataType.PageType);
+                return new PropertyReference(memberName, PropertyDataType.PageType);
 
             return new PropertyReference(memberName, e.Type);
         }
 
-        private static string EnsureNameIsPrefixedWithPage(string memberName)
+        private static string EnsureNameIsPrefixed(string memberName)
         {
             if (!memberName.StartsWith(PropertyPrefix))
             {

@@ -24,12 +24,6 @@ namespace LinqToEPiServer.Tests.UnitTests.QueryTranslation
         protected abstract string expected_property_name { get; }
 
         [Test]
-        public void should_get_clr_type_of_property()
-        {
-            Assert.AreEqual(typeof(TProperty), _result.ValueType);
-        }
-
-        [Test]
         public void should_get_correct_property_name()
         {
             Assert.AreEqual(expected_property_name, _result.PropertyName);
