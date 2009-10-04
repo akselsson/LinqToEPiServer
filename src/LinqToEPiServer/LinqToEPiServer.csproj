@@ -72,7 +72,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Implementation\Visitors\Rewriters\QuoteStripper.cs" />
     <Compile Include="Implementation\Visitors\Rewriters\ComparisonFlipper.cs" />
-    <Compile Include="Implementation\Visitors\CriteriaFactory.cs" />
     <Compile Include="Implementation\Visitors\Rewriters\ExpressionRewriterBase.cs" />
     <Compile Include="Implementation\Visitors\IExpressionRewriter.cs" />
     <Compile Include="Implementation\Visitors\Rewriters\NegationFlattener.cs" />

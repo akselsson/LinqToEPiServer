@@ -1,4 +1,5 @@
 using System;
+using EPiServer;
 using EPiServer.Core;
 using EPiServer.Filters;
 
@@ -28,25 +29,52 @@ namespace LinqToEPiServer.Implementation.Expressions
 
         public object ComparisonValue { get; set; }
 
-        public string PropertyName
+        public PropertyCriteria GetCriteria()
+        {
+            return new PropertyCriteria
+            {
+                Condition = CompareCondition,
+                IsNull = ComparisonValueIsNull,
+                Name = PropertyName,
+                Required = true,
+                Type = GetPropertyDataType(),
+                Value = ComparisonValueString
+            };
+        }
+
+        private string PropertyName
         {
             get { return Property.PropertyName; }
         }
 
-        public PropertyDataType GetPropertyDataType()
+        private bool ComparisonValueIsNull
+        {
+            get { return ComparisonValue == null; }
+        }
+
+        private string ComparisonValueString
+        {
+            get { return ComparisonValue != null ? Convert.ToString(ComparisonValue) : null; }
+        }
+
+        private PropertyDataType GetPropertyDataType()
         {
             return _property.Type ?? GetPropertyDataTypeFromComparisonValue();
         }
 
         private PropertyDataType GetPropertyDataTypeFromComparisonValue()
         {
-            if(ComparisonValue == null)
+            if (ComparisonValue == null)
                 throw new InvalidOperationException("Can not get PropertyDataType from null ComparisonValue");
 
             PropertyDataType ret;
-            if(TypeToPropertyDataTypeMapper.TryMap(ComparisonValue.GetType(),out ret))
+            if (TypeToPropertyDataTypeMapper.TryMap(ComparisonValue.GetType(), out ret))
                 return ret;
-            throw new NotSupportedException(string.Format("Unable to map {0} of type {1} to PropertyDataType", ComparisonValue,ComparisonValue.GetType()));
+            throw new NotSupportedException(String.Format("Unable to map {0} of type {1} to PropertyDataType",
+                                                          ComparisonValue, ComparisonValue.GetType()));
         }
+
+
+        
     }
 }

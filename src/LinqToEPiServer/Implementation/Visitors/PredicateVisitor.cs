@@ -13,7 +13,6 @@ namespace LinqToEPiServer.Implementation.Visitors
     {
         private readonly IList<IPropertyReferenceExtractor> _extractors;
         private readonly PropertyCriteriaCollection _criteria = new PropertyCriteriaCollection();
-        private readonly CriteriaFactory _criteriaFactory = new CriteriaFactory();
 
         public PredicateVisitor(IEnumerable<IPropertyReferenceExtractor> extractors)
         {
@@ -265,7 +264,7 @@ namespace LinqToEPiServer.Implementation.Visitors
 
         private void AddCriteria(PropertyComparison comparison)
         {
-            PropertyCriteria criteria = _criteriaFactory.GetCriteria(comparison);
+            PropertyCriteria criteria = comparison.GetCriteria();
             _criteria.Add(criteria);
         }
     }
