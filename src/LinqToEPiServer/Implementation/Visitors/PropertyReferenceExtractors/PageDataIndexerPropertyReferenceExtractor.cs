@@ -13,30 +13,22 @@ namespace LinqToEPiServer.Implementation.Visitors.PropertyReferenceExtractors
         private readonly MethodInfo _indexer = MethodInfoHelper.MethodOf<PageData, object>(pd => pd[""]);
 
         private string _propertyName;
-        private Type _type = typeof (object);
-
-        private string PropertyName
-        {
-            get { return _propertyName; }
-        }
-
-        private Type Type
-        {
-            get { return _type; }
-        }
+        private Type _type;
 
         #region IPropertyReferenceExtractor Members
 
         public PropertyReference GetPropertyReference(Expression expression)
         {
+            Reset();
             Visit(expression);
-            return new PropertyReference(PropertyName, Type);
+            return new PropertyReference(_propertyName, _type);
         }
+
 
         public bool AppliesTo(Expression expression)
         {
             Visit(expression);
-            return PropertyName != null;
+            return _propertyName != null;
         }
 
         #endregion
@@ -73,6 +65,12 @@ namespace LinqToEPiServer.Implementation.Visitors.PropertyReferenceExtractors
         private void ExtractPropertyNameFromFirstArgument(MethodCallExpression m)
         {
             _propertyName = (string) ConstantValueExtractor.GetValue(m.Arguments[0]);
+        }
+
+        private void Reset()
+        {
+            _propertyName = null;
+            _type = typeof (object);
         }
     }
 }

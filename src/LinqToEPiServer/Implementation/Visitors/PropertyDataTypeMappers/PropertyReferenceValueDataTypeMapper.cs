@@ -8,7 +8,7 @@ namespace LinqToEPiServer.Implementation.Visitors.PropertyDataTypeMappers
     {
         public bool TryMap(PropertyComparison propertyComparison, out PropertyDataType type)
         {
-            var mapped = propertyComparison.Property.Type;
+            var mapped = propertyComparison.PropertyDataType;
             if (mapped.HasValue)
             {
                 type = mapped.Value;

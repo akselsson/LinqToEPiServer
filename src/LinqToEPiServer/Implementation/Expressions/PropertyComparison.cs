@@ -1,4 +1,5 @@
 using System;
+using EPiServer.Core;
 using EPiServer.Filters;
 
 namespace LinqToEPiServer.Implementation.Expressions
@@ -27,14 +28,14 @@ namespace LinqToEPiServer.Implementation.Expressions
 
         public object ComparisonValue { get; set; }
 
-        public Type PropertyValueType
-        {
-            get { return Property.ValueType; }
-        }
-
         public string PropertyName
         {
             get { return Property.PropertyName; }
+        }
+
+        public PropertyDataType? PropertyDataType
+        {
+            get { return _property.Type; }
         }
     }
 }

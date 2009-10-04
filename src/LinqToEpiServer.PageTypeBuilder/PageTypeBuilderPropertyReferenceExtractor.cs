@@ -18,7 +18,6 @@ namespace LinqToEpiServer.PageTypeBuilder
             return new PropertyReference(member.Name,e.Type, propertyDataType);
         }
 
-       
         protected override bool AppliesToMember(MemberExpression e)
         {
             return typeof(TypedPageData).IsAssignableFrom(e.Member.DeclaringType);
@@ -27,11 +26,11 @@ namespace LinqToEpiServer.PageTypeBuilder
         private PropertyDataType GetPropertyDataType(MemberInfo member)
         {
             PageTypePropertyAttribute pageTypePropertyAttribute = GetPageTypePropertyAttribute(member);
-            PropertyData propertyData = GetDefaultPropertyData(pageTypePropertyAttribute);
+            PropertyData propertyData = GetEmptyPropertyData(pageTypePropertyAttribute);
             return propertyData.Type;
         }
 
-        private PropertyData GetDefaultPropertyData(PageTypePropertyAttribute pageTypePropertyAttribute)
+        private PropertyData GetEmptyPropertyData(PageTypePropertyAttribute pageTypePropertyAttribute)
         {
             return (PropertyData)Activator.CreateInstance(pageTypePropertyAttribute.Type);
         }

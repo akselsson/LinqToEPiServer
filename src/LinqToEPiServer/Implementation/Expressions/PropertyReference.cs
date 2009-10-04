@@ -1,40 +1,20 @@
 using System;
-using System.Collections.Generic;
 using EPiServer.Core;
 
 namespace LinqToEPiServer.Implementation.Expressions
 {
     public class PropertyReference
     {
-        private static readonly Dictionary<Type, PropertyDataType> TypeMap
-          = new Dictionary<Type, PropertyDataType>
-                  {
-                      {typeof (string), PropertyDataType.String},
-                      {typeof (int), PropertyDataType.Number},
-                      {typeof (int?), PropertyDataType.Number},
-                      {typeof (DateTime), PropertyDataType.Date},
-                      {typeof (DateTime?), PropertyDataType.Date},
-                      {typeof (bool), PropertyDataType.Boolean},
-                      {typeof (bool?), PropertyDataType.Boolean},
-                      {typeof (double), PropertyDataType.FloatNumber},
-                      {typeof (double?), PropertyDataType.FloatNumber},
-                      {typeof (float), PropertyDataType.FloatNumber},
-                      {typeof (float?), PropertyDataType.FloatNumber},
-                      {typeof (PageReference), PropertyDataType.PageReference},
-                  };
-
         public PropertyReference(string name, Type type)
         {
             if (name == null) throw new ArgumentNullException("name");
             if (type == null) throw new ArgumentNullException("type");
             PropertyName = name;
             ValueType = type;
-
-            PropertyDataType pdt;
-            if (TypeMap.TryGetValue(type, out pdt))
-                Type = pdt;
+            MapTypeToPropertyDataType(type);
         }
 
+       
         public PropertyReference(string name, Type clrType, PropertyDataType propertyDataType)
         {
             if (name == null) throw new ArgumentNullException("name");
@@ -52,5 +32,25 @@ namespace LinqToEPiServer.Implementation.Expressions
         {
             return string.Format("PropertyName: {0}, ValueType: {1}, Type: {2}", PropertyName, ValueType, Type);
         }
+
+        private void MapTypeToPropertyDataType(Type type)
+        {
+            if (type == typeof(object))
+            {
+                Type = null;
+                return;
+            }
+
+            PropertyDataType propertyDataType;
+            if (TypeToPropertyDataTypeMapper.TryMap(type, out propertyDataType))
+            {
+                Type = propertyDataType;
+            }
+            else
+            {
+                throw new NotSupportedException(string.Format("Can not map type {0} to PropertyDataType", type));
+            }
+        }
+
     }
 }
