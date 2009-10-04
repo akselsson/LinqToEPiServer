@@ -9,7 +9,7 @@ using LinqToEPiServer.Tests.Fakes;
 using LinqToEPiServer.Tests.Helpers;
 using NUnit.Framework;
 
-namespace LinqToEPiServer.Tests.QueryTranslation
+namespace LinqToEPiServer.Tests.UnitTests.QueryTranslation
 {
     public class QueryTranslationSpec : EPiTestBase
     {
@@ -67,14 +67,14 @@ namespace LinqToEPiServer.Tests.QueryTranslation
                 system_under_test
                     .Where(pd=>pd["start"] as DateTime? == date)
                     .should_be_translated_to(new PropertyCriteria
-                    {
-                        Condition = CompareCondition.Equal,
-                        IsNull = false,
-                        Name = "start",
-                        Required = true,
-                        Type = PropertyDataType.Date,
-                        Value = "2001-01-01 00:00:00"
-                    });
+                                                 {
+                                                     Condition = CompareCondition.Equal,
+                                                     IsNull = false,
+                                                     Name = "start",
+                                                     Required = true,
+                                                     Type = PropertyDataType.Date,
+                                                     Value = "2001-01-01 00:00:00"
+                                                 });
             }
 
             [Test]
@@ -85,14 +85,14 @@ namespace LinqToEPiServer.Tests.QueryTranslation
                 system_under_test
                     .Where(pd => pd["start"] as DateTime? < date)
                     .should_be_translated_to(new PropertyCriteria
-                    {
-                        Condition = CompareCondition.LessThan,
-                        IsNull = false,
-                        Name = "start",
-                        Required = true,
-                        Type = PropertyDataType.Date,
-                        Value = "2001-01-01 00:00:00"
-                    });
+                                                 {
+                                                     Condition = CompareCondition.LessThan,
+                                                     IsNull = false,
+                                                     Name = "start",
+                                                     Required = true,
+                                                     Type = PropertyDataType.Date,
+                                                     Value = "2001-01-01 00:00:00"
+                                                 });
             }
 
             [Test]
