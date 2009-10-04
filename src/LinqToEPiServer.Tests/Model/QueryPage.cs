@@ -1,3 +1,4 @@
+using System;
 using EPiServer.Core;
 using PageTypeBuilder;
 
@@ -8,5 +9,11 @@ namespace LinqToEPiServer.Tests.Model
     {
         [PageTypeProperty(Type = typeof(PropertyString))]
         public virtual string Text { get; set; }
+
+        [PageTypeProperty(Type = typeof(PropertyPageReference))]
+        public virtual PageReference LinkedPage { get; set; }
+
+        [PageTypeProperty(Type = typeof(PropertyPageType))]
+        public virtual int LinkedPageType { get; set; }
     }
 }

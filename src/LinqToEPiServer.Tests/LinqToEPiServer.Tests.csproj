@@ -87,8 +87,10 @@
     <Compile Include="Helpers\TestEPiServerSection.cs" />
     <Compile Include="Helpers\TestSiteElementCollection.cs" />
     <Compile Include="Helpers\IntegrationTestDatabase.cs" />
+    <Compile Include="Model\QueryPage.cs" />
     <Compile Include="UnitTests\FindPagesWithCriteriaQueryProviderSpec.cs" />
     <Compile Include="UnitTests\PageTypeBuilder\FilterByTypeSpec.cs" />
+    <Compile Include="UnitTests\PageTypeBuilder\PageTypeBuilderQueryTranslations.cs" />
     <Compile Include="UnitTests\PageTypeBuilder\PageTypeBuilderRepositorySpec.cs" />
     <Compile Include="UnitTests\QueryTranslation\NegationTransformerSpec.cs" />
     <Compile Include="Helpers\EPiTester.cs" />
