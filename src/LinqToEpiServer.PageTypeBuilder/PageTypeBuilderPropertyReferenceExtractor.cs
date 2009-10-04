@@ -19,16 +19,23 @@ namespace LinqToEpiServer.PageTypeBuilder
 
         protected override bool AppliesToMember(MemberExpression e)
         {
-            return typeof (TypedPageData).IsAssignableFrom(e.Member.DeclaringType);
+            return HasPageTypePropertyAttribute(e.Member);
+        }
+
+        private static bool HasPageTypePropertyAttribute(ICustomAttributeProvider member)
+        {
+            return member.GetCustomAttributes(typeof (PageTypePropertyAttribute), false).Any();
         }
 
         private PropertyDataType GetPropertyDataType(MemberExpression expression)
         {
             PageTypePropertyAttribute pageTypePropertyAttribute = GetPageTypePropertyAttribute(expression.Member);
+            
             if (pageTypePropertyAttribute.Type == null)
                 return GetPropertyTypeFromReturnType(expression);
-            PropertyData propertyData = GetEmptyPropertyData(pageTypePropertyAttribute);
-            return propertyData.Type;
+
+            PropertyData emptyPropertyData = GetEmptyPropertyData(pageTypePropertyAttribute);
+            return emptyPropertyData.Type;
         }
 
         private PropertyDataType GetPropertyTypeFromReturnType(MemberExpression member)
@@ -48,7 +55,8 @@ namespace LinqToEpiServer.PageTypeBuilder
         {
             var pageTypePropertyAttribute = member
                 .GetCustomAttributes(typeof (PageTypePropertyAttribute), false)
-                .OfType<PageTypePropertyAttribute>().SingleOrDefault();
+                .OfType<PageTypePropertyAttribute>()
+                .SingleOrDefault();
 
             if (pageTypePropertyAttribute == null)
                 throw new InvalidOperationException(string.Format(

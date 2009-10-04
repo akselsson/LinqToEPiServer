@@ -54,19 +54,20 @@ namespace LinqToEPiServer.Tests.UnitTests.PageTypeBuilder
         }
 
         [Test]
-        public void string_property_without_type_attribute()
+        public void string_property_with_null_type_in_attribute()
         {
             system_under_test
-                .Where(pd=>pd.Text2 == "test")
+                .Where(pd=>pd.TextWithImplicitPropertyType == "test")
                 .should_be_translated_to(new PropertyCriteria()
                                              {
                                                  Condition = CompareCondition.Equal,
                                                  IsNull = false,
-                                                 Name = "Text2",
+                                                 Name = "TextWithImplicitPropertyType",
                                                  Required = true,
                                                  Type = PropertyDataType.String,
                                                  Value = "test"
                                              });
         }
+
     }
 }

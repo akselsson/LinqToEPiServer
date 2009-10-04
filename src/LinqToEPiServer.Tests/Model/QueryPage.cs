@@ -11,7 +11,7 @@ namespace LinqToEPiServer.Tests.Model
         public virtual string Text { get; set; }
 
         [PageTypeProperty]
-        public virtual string Text2 { get; set; }
+        public virtual string TextWithImplicitPropertyType { get; set; }
 
         [PageTypeProperty(Type = typeof(PropertyPageReference))]
         public virtual PageReference LinkedPage { get; set; }
