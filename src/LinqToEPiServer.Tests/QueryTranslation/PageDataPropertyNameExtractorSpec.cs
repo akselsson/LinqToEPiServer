@@ -9,22 +9,26 @@ namespace LinqToEPiServer.Tests.QueryTranslation
 {
     public class PageDataPropertyNameExtractorSpec : EPiTestBase
     {
-        public abstract class GetPropertyName<T> : PageDataPropertyNameExtractorSpec
+        public abstract class GetPropertyName<TProperty> : PageDataPropertyNameExtractorSpec
         {
             private PropertyReference _result;
-            protected abstract Expression<Func<PageData, T>> expression { get; }
+            private IPropertyReferenceExtractor _extractor;
+            protected abstract Expression<Func<PageData, TProperty>> expression { get; }
             protected abstract string expected_property_name { get; }
 
             protected override void because()
             {
                 base.because();
-                _result = PageDataPropertyReferenceExtractor.GetPropertyReference(expression);
+                _extractor = GetExtractor();
+                _result = _extractor.GetPropertyReference(expression);
             }
+
+            protected abstract IPropertyReferenceExtractor GetExtractor();
 
             [Test]
             public void should_get_type_of_property()
             {
-                Assert.AreEqual(typeof(T), _result.ValueType);
+                Assert.AreEqual(typeof(TProperty), _result.ValueType);
             }
 
 
@@ -32,6 +36,12 @@ namespace LinqToEPiServer.Tests.QueryTranslation
             public void should_get_name_of_property()
             {
                 Assert.AreEqual(expected_property_name, _result.PropertyName);
+            }
+
+            [Test]
+            public void should_apply_to()
+            {
+                Assert.IsTrue(_extractor.AppliesTo(expression));
             }
         }
 
@@ -46,6 +56,11 @@ namespace LinqToEPiServer.Tests.QueryTranslation
             {
                 get { return "PageName"; }
             }
+
+            protected override IPropertyReferenceExtractor GetExtractor()
+            {
+                return new PageDataMemberPropertyReferenceExtractor();
+            }
         }
 
         public class UrlSegment : GetPropertyName<string>
@@ -58,6 +73,11 @@ namespace LinqToEPiServer.Tests.QueryTranslation
             protected override string expected_property_name
             {
                 get { return "PageURLSegment"; }
+            }
+
+            protected override IPropertyReferenceExtractor GetExtractor()
+            {
+                return new PageDataMemberPropertyReferenceExtractor();
             }
         }
 
@@ -72,6 +92,11 @@ namespace LinqToEPiServer.Tests.QueryTranslation
             {
                 get { return "test"; }
             }
+
+            protected override IPropertyReferenceExtractor GetExtractor()
+            {
+                return new PageDataIndexerPropertyReferenceExtractor();
+            }
         }
 
         public class Indexer_cast_to_nullbale_int : GetPropertyName<int?>
@@ -84,6 +109,11 @@ namespace LinqToEPiServer.Tests.QueryTranslation
             protected override string expected_property_name
             {
                 get { return "test"; }
+            }
+
+            protected override IPropertyReferenceExtractor GetExtractor()
+            {
+                return new PageDataIndexerPropertyReferenceExtractor();
             }
         }
     }

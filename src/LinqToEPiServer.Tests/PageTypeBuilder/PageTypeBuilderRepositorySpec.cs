@@ -6,6 +6,7 @@ using System.Reflection;
 using EPiServer;
 using EPiServer.Core;
 using EPiServer.Filters;
+using IQToolkit;
 using LinqToEPiServer.Implementation;
 using LinqToEPiServer.Implementation.Visitors.Rewriters;
 using LinqToEPiServer.Tests.Fakes;
@@ -56,6 +57,33 @@ namespace LinqToEPiServer.Tests.PageTypeBuilder
                 Assert.IsNotNull(query.ToArray());
             }
         }
+
+        public class with_query_for_one_property : PageTypeBuilderRepositorySpec
+        {
+            private IQueryable<QueryPage> query;
+
+            protected override void because()
+            {
+                base.because();
+                query =
+                    system_under_test.FindDescendantsOf<QueryPage>(PageReference.StartPage).Where(
+                        qp => qp.Text == "test");
+            }
+
+            [Test]
+            public void should_add_criteria_for_property()
+            {
+                query.should_be_translated_to(new PropertyCriteria()
+                                                  {
+                                                      Condition = CompareCondition.Equal,
+                                                      IsNull = false,
+                                                      Name = "Text",
+                                                      Required = true,
+                                                      Type = PropertyDataType.String,
+                                                      Value = "test"
+                                                  });
+            }
+        }
     }
 
     public class PageTypeBuilderRepository
@@ -71,8 +99,8 @@ namespace LinqToEPiServer.Tests.PageTypeBuilder
         public IQueryable<T> FindDescendantsOf<T>(PageReference reference) where T : TypedPageData
         {
             var provider = new FindPagesWithCriteriaQueryProvider(reference, _executor);
-            provider.AddRewriter(new RemoveOfTypeRewriter<T>(provider));
-            return new PageDataQuery(provider).OfType<T>();
+            provider.AddResultTransformer(new OfTypeEnumerableTransformer<T>());
+            return new Query<T>(provider);
         }
     }
 

@@ -229,15 +229,31 @@ namespace LinqToEPiServer.Implementation.Visitors
         private void AddCriteriaForMethod(MethodCallExpression comparisonMethod, CompareCondition condition)
         {
             object value = ConstantValueExtractor.GetValue(comparisonMethod.Arguments[0]);
-            PropertyReference propertyAccess = PageDataPropertyReferenceExtractor.GetPropertyReference(comparisonMethod.Object);
+            PropertyReference propertyAccess = GetPropertyReference(comparisonMethod.Object);
             var comparison = new PropertyComparison(propertyAccess, condition) {ComparisonValue = value};
             AddCriteria(comparison);
+        }
+
+        private PropertyReference GetPropertyReference(Expression param)
+        {
+            var extractors = new IPropertyReferenceExtractor[]
+                                 {
+                                     new PageDataIndexerPropertyReferenceExtractor(),
+                                     new PageDataMemberPropertyReferenceExtractor(),
+                                     new PageTypeBuilderProppertyReferenceExtractor(),
+                                 };
+            foreach (var extractor in extractors)
+            {
+                if (extractor.AppliesTo(param))
+                    return extractor.GetPropertyReference(param);
+            }
+            throw new NotSupportedException(string.Format("Parameter reference {0} is not supported", param));
         }
 
         private void AddCriteriaForBinaryExpression(BinaryExpression b, CompareCondition condition)
         {
             object value = ConstantValueExtractor.GetValue(b.Right);
-            PropertyReference propertyAccess = PageDataPropertyReferenceExtractor.GetPropertyReference(b.Left);
+            PropertyReference propertyAccess = GetPropertyReference(b.Left);
             var comparison = new PropertyComparison(propertyAccess, condition) {ComparisonValue = value};
             AddCriteria(comparison);
         }

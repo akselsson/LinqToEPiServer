@@ -4,7 +4,7 @@ using System.Reflection;
 
 namespace LinqToEPiServer.Implementation
 {
-    public class ReflectionHelper
+    public static class ReflectionHelper
     {
         public static MethodInfo MethodOf<T>(Expression<Action<T>> methodCall)
         {
@@ -13,6 +13,28 @@ namespace LinqToEPiServer.Implementation
 
             var expression = (MethodCallExpression)methodCall.Body;
             return expression.Method;
+        }
+
+        public static MethodInfo MethodOf<TTarget,TOutput>(Expression<Func<TTarget,TOutput>> methodCall)
+        {
+            if (methodCall == null) throw new ArgumentNullException("methodCall");
+            if (!(methodCall.Body is MethodCallExpression)) throw new ArgumentException("Expression must be a method call", "methodCall");
+
+            var expression = (MethodCallExpression)methodCall.Body;
+            return expression.Method;
+        }
+
+        public static bool HasSameGenericMethodDefinitionAs(this MethodInfo first, MethodInfo second)
+        {
+            if (!first.IsGenericMethod)
+                return first == second;
+            if (!second.IsGenericMethod)
+                return first == second;
+            
+            var firstDefinition = first.GetGenericMethodDefinition();
+            var secondDefinition = second.GetGenericMethodDefinition();
+            
+            return firstDefinition == secondDefinition;
         }
     }
 }

@@ -28,8 +28,9 @@ namespace LinqToEPiServer.Implementation.Visitors
 
         protected override Expression VisitMethodCall(MethodCallExpression m)
         {
-            
-            if (m.Method == QueryablePageDataWhere)
+            var method = m.Method;
+
+            if (method.HasSameGenericMethodDefinitionAs(QueryablePageDataWhere))
             {
                 AddCriteriaFromWhere(m);
                 return Visit(m.Arguments[0]);
@@ -37,7 +38,7 @@ namespace LinqToEPiServer.Implementation.Visitors
             throw new NotSupportedException(
                 string.Format(
                     "Method {0} is not supported. Try enumerating the result set with AsEnumerable first. Expression: {1}",
-                    m.Method, m)
+                    method, m)
                 );
         }
 
