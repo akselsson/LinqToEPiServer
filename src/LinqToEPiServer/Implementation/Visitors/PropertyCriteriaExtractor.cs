@@ -37,7 +37,7 @@ namespace LinqToEPiServer.Implementation.Visitors
         {
             var method = m.Method;
 
-            if (method.HasSameGenericMethodDefinitionAs(QueryablePageDataWhere))
+            if (IsWhere(method))
             {
                 AddCriteriaFromWhere(m);
                 return Visit(m.Arguments[0]);
@@ -49,13 +49,23 @@ namespace LinqToEPiServer.Implementation.Visitors
                 );
         }
 
+        private static bool IsWhere(MethodInfo method)
+        {
+            return method.HasSameGenericMethodDefinitionAs(QueryablePageDataWhere);
+        }
+
         private void AddCriteriaFromWhere(MethodCallExpression m)
         {
-            if (_criteria.Count > 0)
+            if (!IsFirstCriteria)
                 throw new NotSupportedException("Multiple where clauses are not supported");
             var predicate = m.Arguments[1];
-            var criterion = PredicateVisitor.ConvertToCriteriaCollection(predicate,_extractors);
-            _criteria.AddRange(criterion);
+            var criteria = PredicateVisitor.ConvertToCriteriaCollection(predicate, _extractors);
+            _criteria.AddRange(criteria);
+        }
+
+        private bool IsFirstCriteria
+        {
+            get { return _criteria.Count == 0; }
         }
     }
 }

@@ -84,8 +84,10 @@ namespace LinqToEPiServer.Implementation
 
         public override string GetQueryText(Expression expression)
         {
-            PropertyCriteriaCollection criteria = GetCriteria(expression);
-            return string.Join(Environment.NewLine, EquatableCriteria.MakeEquatable(criteria).Select(c => c.ToString()).ToArray());
+            var criteria = GetCriteria(expression);
+            var equatableCriterias = EquatableCriteria.MakeEquatable(criteria);
+            var criteriaStrings = equatableCriterias.Select(c => c.ToString()).ToArray();
+            return string.Join(Environment.NewLine, criteriaStrings);
         }
 
         private PropertyCriteriaCollection GetCriteria(Expression expression)
