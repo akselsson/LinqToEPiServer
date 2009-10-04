@@ -1,4 +1,5 @@
 using System.Linq.Expressions;
+using System.Reflection;
 using EPiServer.Core;
 using LinqToEPiServer.Implementation.Expressions;
 
@@ -15,7 +16,7 @@ namespace LinqToEPiServer.Implementation.Visitors.PropertyReferenceExtractors
             string memberName = e.Member.Name;
             memberName = EnsureNameIsPrefixed(memberName);
 
-            if (RepresentsPageTypeMember(memberName))
+            if (RepresentsPageTypeMember(e.Member))
                 return new PropertyReference(memberName, PropertyDataType.PageType);
 
             return new PropertyReference(memberName, e.Type);
@@ -30,9 +31,9 @@ namespace LinqToEPiServer.Implementation.Visitors.PropertyReferenceExtractors
             return memberName;
         }
 
-        private static bool RepresentsPageTypeMember(string memberName)
+        private static bool RepresentsPageTypeMember(MemberInfo member)
         {
-            return memberName == PagetypeID || memberName == PageTypeName;
+            return member.Name == PagetypeID || member.Name == PageTypeName;
         }
 
         protected override bool AppliesToMember(MemberExpression e)
