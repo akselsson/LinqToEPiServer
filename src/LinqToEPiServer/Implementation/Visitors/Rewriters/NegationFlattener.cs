@@ -43,9 +43,7 @@ namespace LinqToEPiServer.Implementation.Visitors.Rewriters
             public override Expression Rewrite(Expression expression)
             {
                 Expression transformed = base.Rewrite(expression);
-                if (_expressionWasNegated)
-                    return transformed;
-                return Expression.Not(transformed);
+                return _expressionWasNegated ? transformed : Expression.Not(transformed);
             }
 
             protected override void Reset()
@@ -65,11 +63,7 @@ namespace LinqToEPiServer.Implementation.Visitors.Rewriters
                 }
             }
 
-            private static Expression StopProcessing(Expression u)
-            {
-                return u;
-            }
-
+            
             protected override Expression VisitBinary(BinaryExpression b)
             {
                 _expressionWasNegated = true;
@@ -95,6 +89,12 @@ namespace LinqToEPiServer.Implementation.Visitors.Rewriters
                 _expressionWasNegated = false;
                 return StopProcessing(b);
             }
+
+            private static Expression StopProcessing(Expression u)
+            {
+                return u;
+            }
+
         }
 
         #endregion
