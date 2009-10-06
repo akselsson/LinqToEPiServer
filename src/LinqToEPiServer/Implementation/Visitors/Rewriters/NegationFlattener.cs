@@ -38,37 +38,37 @@ namespace LinqToEPiServer.Implementation.Visitors.Rewriters
 
         private class ExpressionNegater : ExpressionRewriterBase
         {
-            private bool _wasInverted;
+            private bool _expressionWasNegated;
 
             public override Expression Rewrite(Expression expression)
             {
                 Expression transformed = base.Rewrite(expression);
-                if (_wasInverted)
+                if (_expressionWasNegated)
                     return transformed;
                 return Expression.Not(transformed);
             }
 
             protected override void Reset()
             {
-                _wasInverted = false;
+                _expressionWasNegated = false;
             }
 
             protected override Expression VisitUnary(UnaryExpression u)
             {
-                _wasInverted = true;
+                _expressionWasNegated = true;
                 switch (u.NodeType)
                 {
                     case ExpressionType.Not:
                         return u.Operand;
                     default:
-                        _wasInverted = false;
+                        _expressionWasNegated = false;
                         return u;
                 }
             }
 
             protected override Expression VisitBinary(BinaryExpression b)
             {
-                _wasInverted = true;
+                _expressionWasNegated = true;
                 switch (b.NodeType)
                 {
                     case ExpressionType.AndAlso:
