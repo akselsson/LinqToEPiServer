@@ -55,15 +55,19 @@ namespace LinqToEPiServer.Implementation.Visitors.Rewriters
 
             protected override Expression VisitUnary(UnaryExpression u)
             {
-                _expressionWasNegated = true;
                 switch (u.NodeType)
                 {
                     case ExpressionType.Not:
+                        _expressionWasNegated = true;
                         return u.Operand;
                     default:
-                        _expressionWasNegated = false;
-                        return u;
+                        return StopProcessing(u);
                 }
+            }
+
+            private static Expression StopProcessing(Expression u)
+            {
+                return u;
             }
 
             protected override Expression VisitBinary(BinaryExpression b)
@@ -88,7 +92,8 @@ namespace LinqToEPiServer.Implementation.Visitors.Rewriters
                     case ExpressionType.GreaterThanOrEqual:
                         return Expression.LessThan(b.Left, b.Right);
                 }
-                return b;
+                _expressionWasNegated = false;
+                return StopProcessing(b);
             }
         }
 
