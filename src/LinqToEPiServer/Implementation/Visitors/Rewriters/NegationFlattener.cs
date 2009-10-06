@@ -6,6 +6,7 @@ namespace LinqToEPiServer.Implementation.Visitors.Rewriters
     public class NegationFlattener : ExpressionRewriterBase
     {
         private readonly HashSet<Expression> _transformed = new HashSet<Expression>();
+        private readonly ExpressionNegater _negater = new ExpressionNegater();
 
         protected override Expression VisitUnary(UnaryExpression u)
         {
@@ -22,7 +23,7 @@ namespace LinqToEPiServer.Implementation.Visitors.Rewriters
 
         private Expression Negate(Expression expression)
         {
-            Expression transformed = new ExpressionNegater().Rewrite(expression);
+            Expression transformed = _negater.Rewrite(expression);
             _transformed.Add(transformed);
             return Visit(transformed);
         }

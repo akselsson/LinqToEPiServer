@@ -55,6 +55,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\EPiServer\EPiServer.Implementation.dll</HintPath>
     </Reference>
+    <Reference Include="IQToolkit, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\IQToolkit\IQToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework, Version=2.5.1.9189, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\NUnit\nunit.framework.dll</HintPath>
@@ -121,10 +125,6 @@
     <Compile Include="UnitTests\ReflectionHelperSpec.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\IQ Toolkit\IQToolkit\IQToolkit.csproj">
-      <Project>{0DA62A7C-3B40-456F-A4B2-B3E19ED4080E}</Project>
-      <Name>IQToolkit</Name>
-    </ProjectReference>
     <ProjectReference Include="..\LinqToEpiServer.PageTypeBuilder\LinqToEpiServer.PageTypeBuilder.csproj">
       <Project>{8B996B7D-A940-4D96-9335-441473CC2CA3}</Project>
       <Name>LinqToEpiServer.PageTypeBuilder</Name>

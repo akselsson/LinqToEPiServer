@@ -39,6 +39,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\EPiServer\EPiServer.BaseLibrary.dll</HintPath>
     </Reference>
+    <Reference Include="IQToolkit, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\IQToolkit\IQToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -82,12 +86,6 @@
     <Compile Include="Implementation\Visitors\ParameterSearcher.cs" />
     <Compile Include="Implementation\Visitors\PropertyCriteriaExtractor.cs" />
     <Compile Include="Implementation\Visitors\PredicateVisitor.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\IQ Toolkit\IQToolkit\IQToolkit.csproj">
-      <Project>{0DA62A7C-3B40-456F-A4B2-B3E19ED4080E}</Project>
-      <Name>IQToolkit</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
