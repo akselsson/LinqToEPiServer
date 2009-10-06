@@ -4,6 +4,7 @@ using EPiServer.Core;
 using LinqToEPiServer.Implementation.Visitors.Rewriters;
 using LinqToEPiServer.Tests.Helpers;
 using NUnit.Framework;
+using System.Linq;
 
 namespace LinqToEPiServer.Tests.UnitTests.QueryTranslation
 {
@@ -88,6 +89,13 @@ namespace LinqToEPiServer.Tests.UnitTests.QueryTranslation
             var value = 1;
             the_expression(pd=>!(value == 1 || !(value == 2 || value == 3)))
                 .should_be_transformed_to(pd=>value!= 1 && (value == 2 || value == 3));
+        }
+
+        [Test]
+        public void nested_predicate_should_not_be_transformed()
+        {
+            the_expression(pd=>!pd.PageLanguages.Where(pl=>pl == "test").Any())
+                .should_not_be_transformed();
         }
 
         private Expression<Func<PageData, bool>> MakeLambda(Expression input)

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq.Expressions;
 
 namespace LinqToEPiServer.Implementation.Visitors.Rewriters
@@ -12,12 +13,11 @@ namespace LinqToEPiServer.Implementation.Visitors.Rewriters
         {
             if (_transformed.Contains(u))
                 return base.VisitUnary(u);
-            switch (u.NodeType)
-            {
-                case ExpressionType.Not:
-                    return Negate(u.Operand);
-            }
-            return base.VisitUnary(u);
+
+            if (u.NodeType != ExpressionType.Not)
+                return base.VisitUnary(u);
+
+            return Negate(u.Operand);
         }
 
 
@@ -51,20 +51,32 @@ namespace LinqToEPiServer.Implementation.Visitors.Rewriters
                 _expressionWasNegated = false;
             }
 
-            protected override Expression VisitUnary(UnaryExpression u)
+            protected override Expression Visit(Expression exp)
             {
-                switch (u.NodeType)
-                {
-                    case ExpressionType.Not:
-                        _expressionWasNegated = true;
-                        return u.Operand;
-                    default:
-                        return StopProcessing(u);
-                }
+                if (exp == null)
+                    return StopProcessing(exp);
+                if(exp.Type != typeof(bool))
+                    return StopProcessing(exp);
+                return base.Visit(exp);
             }
 
-            
+            protected override Expression VisitUnary(UnaryExpression u)
+            {
+                if (u.NodeType == ExpressionType.Not)
+                {
+                    _expressionWasNegated = true;
+                    return StopProcessing(u.Operand);
+                }
+
+                return StopProcessing(u);
+            }
+
             protected override Expression VisitBinary(BinaryExpression b)
+            {
+                return StopProcessing(NegateBinary(b));
+            }
+
+            private Expression NegateBinary(BinaryExpression b)
             {
                 _expressionWasNegated = true;
                 switch (b.NodeType)
@@ -85,9 +97,9 @@ namespace LinqToEPiServer.Implementation.Visitors.Rewriters
                         return Expression.GreaterThan(b.Left, b.Right);
                     case ExpressionType.GreaterThanOrEqual:
                         return Expression.LessThan(b.Left, b.Right);
+                    default:
+                        return Expression.Not(b);
                 }
-                _expressionWasNegated = false;
-                return StopProcessing(b);
             }
 
             private static Expression StopProcessing(Expression u)
