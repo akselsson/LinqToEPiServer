@@ -1,12 +1,13 @@
 using System;
 using EPiServer;
 using EPiServer.Core;
+using LinqToEPiServer.Implementation.Helpers;
 
 namespace LinqToEPiServer.Tests.Helpers
 {
     public class ConsoleLoggingQueryExecutor : IQueryExecutor
     {
-        private IQueryExecutor _inner;
+        private readonly IQueryExecutor _inner;
 
         public ConsoleLoggingQueryExecutor(IQueryExecutor inner)
         {
@@ -17,7 +18,7 @@ namespace LinqToEPiServer.Tests.Helpers
         {
             foreach (var criterion in criteria)
             {
-                Console.WriteLine(EquatableCriteria.MakeEquatable(criterion));
+                Console.WriteLine(criterion.EquatableWithFormatting());
             }
             return _inner.FindPagesWithCriteria(start, criteria);
         }

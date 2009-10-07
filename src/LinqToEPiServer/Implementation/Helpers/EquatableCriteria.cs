@@ -1,15 +1,13 @@
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using EPiServer;
 using EPiServer.Core;
 using EPiServer.Filters;
 
-namespace LinqToEPiServer.Tests.Helpers
+namespace LinqToEPiServer.Implementation.Helpers
 {
     public class EquatableCriteria : PropertyCriteria
     {
-
         public override string ToString()
         {
             var builder = new StringBuilder();
@@ -44,24 +42,6 @@ namespace LinqToEPiServer.Tests.Helpers
             num = (-1521134295*num) + EqualityComparer<bool>.Default.GetHashCode(Required);
             num = (-1521134295*num) + EqualityComparer<PropertyDataType>.Default.GetHashCode(Type);
             return (-1521134295*num) + EqualityComparer<string>.Default.GetHashCode(Value);
-        }
-
-        public static EquatableCriteria[] MakeEquatable(IEnumerable<PropertyCriteria> criteria)
-        {
-            return criteria.Select(c =>MakeEquatable(c)).ToArray();
-        }
-
-        public static EquatableCriteria MakeEquatable(PropertyCriteria criteria)
-        {
-            return new EquatableCriteria
-                {
-                    Condition = criteria.Condition,
-                    IsNull = criteria.IsNull,
-                    Name = criteria.Name,
-                    Required = criteria.Required,
-                    Type = criteria.Type,
-                    Value = criteria.Value
-                };
         }
     }
 }

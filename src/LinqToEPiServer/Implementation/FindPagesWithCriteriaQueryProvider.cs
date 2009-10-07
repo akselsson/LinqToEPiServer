@@ -5,10 +5,10 @@ using System.Linq.Expressions;
 using EPiServer;
 using EPiServer.Core;
 using IQToolkit;
+using LinqToEPiServer.Implementation.Helpers;
 using LinqToEPiServer.Implementation.Visitors;
 using LinqToEPiServer.Implementation.Visitors.PropertyReferenceExtractors;
 using LinqToEPiServer.Implementation.Visitors.Rewriters;
-using LinqToEPiServer.Tests.Helpers;
 
 namespace LinqToEPiServer.Implementation
 {
@@ -69,7 +69,7 @@ namespace LinqToEPiServer.Implementation
         public override string GetQueryText(Expression expression)
         {
             var criteria = GetCriteria(expression);
-            var equatableCriterias = EquatableCriteria.MakeEquatable(criteria);
+            var equatableCriterias = criteria.EquatableWithFormatting();
             var criteriaStrings = equatableCriterias.Select(c => c.ToString()).ToArray();
             return string.Join(Environment.NewLine, criteriaStrings);
         }

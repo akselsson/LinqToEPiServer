@@ -58,10 +58,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataFactoryQueryExecutor.cs" />
-    <Compile Include="Implementation\EquatableCriteria.cs" />
+    <Compile Include="Implementation\Helpers\CriteriaExtensions.cs" />
+    <Compile Include="Implementation\Helpers\EquatableCriteria.cs" />
     <Compile Include="Implementation\Expressions\TypeToPropertyDataTypeMapper.cs" />
     <Compile Include="Implementation\IResultTransformer.cs" />
-    <Compile Include="Implementation\MethodInfoHelper.cs" />
+    <Compile Include="Implementation\Helpers\MethodInfoHelper.cs" />
     <Compile Include="Implementation\Visitors\PropertyReferenceExtractors\MemberPropertyReferenceExtractorBase.cs" />
     <Compile Include="Implementation\Visitors\PropertyReferenceExtractors\PageDataMemberPropertyReferenceExtractor.cs" />
     <Compile Include="Implementation\Visitors\Rewriters\ShallowExpressionRewriterBase.cs" />

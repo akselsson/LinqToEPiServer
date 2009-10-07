@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Linq;
 using System.Linq.Expressions;
+using LinqToEPiServer.Implementation.Helpers;
 using LinqToEPiServer.Implementation.Visitors;
 using EPiServer.Core;
 using LinqToEPiServer.Implementation.Visitors.PropertyReferenceExtractors;
-using LinqToEPiServer.Tests.Helpers;
 using NUnit.Framework;
 
 namespace LinqToEPiServer.Tests.UnitTests.QueryTranslation
@@ -26,7 +26,7 @@ namespace LinqToEPiServer.Tests.UnitTests.QueryTranslation
             var first = system_under_test.ConvertToCriteria(expression);
             var second = system_under_test.ConvertToCriteria(expression);
 
-            CollectionAssert.AreEqual(EquatableCriteria.MakeEquatable(first),EquatableCriteria.MakeEquatable(second));
+            CollectionAssert.AreEqual(first.EquatableWithFormatting(),second.EquatableWithFormatting());
         }
     }
 }

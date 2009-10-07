@@ -3,6 +3,7 @@ using System.Linq;
 using EPiServer;
 using EPiServer.Core;
 using LinqToEPiServer.Implementation;
+using LinqToEPiServer.Implementation.Helpers;
 using LinqToEPiServer.Tests.Fakes;
 using NUnit.Framework;
 
@@ -20,7 +21,7 @@ namespace LinqToEPiServer.Tests.Helpers
         public static void should_be_translated_to(this IQueryable query, params PropertyCriteria[] expected)
         {
             PropertyCriteria[] actual = Translate(query);
-            CollectionAssert.AreEqual(EquatableCriteria.MakeEquatable(expected), EquatableCriteria.MakeEquatable(actual));
+            CollectionAssert.AreEqual(expected.EquatableWithFormatting(), actual.EquatableWithFormatting());
         }
 
         public static void should_be_equivalent_to(this IQueryable<PageData> query, IQueryable<PageData> expected)
