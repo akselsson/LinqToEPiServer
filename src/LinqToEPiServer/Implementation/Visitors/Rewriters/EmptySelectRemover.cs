@@ -1,12 +1,19 @@
+using System.Linq;
 using System.Linq.Expressions;
+using System.Reflection;
+using TIgnored = System.Object;
 
 namespace LinqToEPiServer.Implementation.Visitors.Rewriters
 {
     public class EmptySelectRemover : ExpressionRewriterBase
     {
+        private static readonly MethodInfo Select = MethodInfoHelper
+            .MethodOf<IQueryable<TIgnored>>(o => o.Select(o1 => 1))
+            .GetGenericMethodDefinition();
+
         protected override Expression VisitMethodCall(MethodCallExpression m)
         {
-            if (m.Method.Name == "Select")
+            if (m.Method.HasSameGenericMethodDefinitionAs(Select))
             {
                 return TryRewriteSelect(m);
             }

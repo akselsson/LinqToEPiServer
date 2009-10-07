@@ -36,9 +36,10 @@ namespace LinqToEPiServer.Implementation.Visitors.Rewriters
 
         #region Nested type: ExpressionNegater
 
-        private class ExpressionNegater : ExpressionRewriterBase
+        private class ExpressionNegater : ShallowExpressionRewriterBase
         {
             private bool _expressionWasNegated;
+
 
             public override Expression Rewrite(Expression expression)
             {
@@ -48,16 +49,8 @@ namespace LinqToEPiServer.Implementation.Visitors.Rewriters
 
             protected override void Reset()
             {
+                base.Reset();
                 _expressionWasNegated = false;
-            }
-
-            protected override Expression Visit(Expression exp)
-            {
-                if (exp == null)
-                    return StopProcessing(exp);
-                if(exp.Type != typeof(bool))
-                    return StopProcessing(exp);
-                return base.Visit(exp);
             }
 
             protected override Expression VisitUnary(UnaryExpression u)
@@ -101,12 +94,6 @@ namespace LinqToEPiServer.Implementation.Visitors.Rewriters
                         return Expression.Not(b);
                 }
             }
-
-            private static Expression StopProcessing(Expression u)
-            {
-                return u;
-            }
-
         }
 
         #endregion

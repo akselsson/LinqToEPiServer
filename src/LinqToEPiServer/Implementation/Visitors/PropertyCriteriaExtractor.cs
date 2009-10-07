@@ -4,15 +4,16 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 using EPiServer;
-using EPiServer.Core;
 using IQToolkit;
+using TIgnored = System.Object;
 
 namespace LinqToEPiServer.Implementation.Visitors
 {
     public class PropertyCriteriaExtractor : ExpressionVisitor
     {
-        private static readonly MethodInfo QueryablePageDataWhere =
-            MethodInfoHelper.MethodOf<IQueryable<PageData>>(q => q.Where(pd => true));
+        private static readonly MethodInfo QueryableWhere = MethodInfoHelper
+            .MethodOf<IQueryable<TIgnored>>(q => q.Where(o => true))
+            .GetGenericMethodDefinition();
 
         private readonly PropertyCriteriaCollection _criteria;
         private readonly IList<IPropertyReferenceExtractor> _extractors;
@@ -63,7 +64,7 @@ namespace LinqToEPiServer.Implementation.Visitors
 
         private static bool IsWhere(MethodInfo method)
         {
-            return method.HasSameGenericMethodDefinitionAs(QueryablePageDataWhere);
+            return method.HasSameGenericMethodDefinitionAs(QueryableWhere);
         }
     }
 }

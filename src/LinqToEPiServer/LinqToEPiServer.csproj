@@ -64,6 +64,7 @@
     <Compile Include="Implementation\MethodInfoHelper.cs" />
     <Compile Include="Implementation\Visitors\PropertyReferenceExtractors\MemberPropertyReferenceExtractorBase.cs" />
     <Compile Include="Implementation\Visitors\PropertyReferenceExtractors\PageDataMemberPropertyReferenceExtractor.cs" />
+    <Compile Include="Implementation\Visitors\Rewriters\ShallowExpressionRewriterBase.cs" />
     <Compile Include="IPropertyReferenceExtractor.cs" />
     <Compile Include="Implementation\Visitors\Rewriters\WhereCombiner.cs" />
     <Compile Include="IPageDataRepository.cs" />

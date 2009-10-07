@@ -92,11 +92,20 @@ namespace LinqToEPiServer.Tests.UnitTests.QueryTranslation
         }
 
         [Test]
-        public void nested_predicate_should_not_be_transformed()
+        public void nested_predicate_in_method_should_not_be_transformed()
         {
             the_expression(pd=>!pd.PageLanguages.Where(pl=>pl == "test").Any())
                 .should_not_be_transformed();
         }
+
+        [Test]
+        public void nested_predicate_in_method_should_not_be_transformed_2()
+        {
+            var value = 1;
+            the_expression(pd => !pd.CheckPublishedStatus(PagePublishedStatus.Published).Equals(2 == value))
+                .should_not_be_transformed();
+        }
+
 
         private Expression<Func<PageData, bool>> MakeLambda(Expression input)
         {
