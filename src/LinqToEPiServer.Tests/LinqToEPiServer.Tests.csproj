@@ -87,7 +87,7 @@
     <Compile Include="EPiTestBase.cs" />
     <Compile Include="Helpers\IPageDataFactory.cs" />
     <Compile Include="Helpers\PageDataFactory.cs" />
-    <Compile Include="Helpers\ExpressionTransformerTester.cs" />
+    <Compile Include="Helpers\ExpressionRewriterTester.cs" />
     <Compile Include="Helpers\TestEPiServerSection.cs" />
     <Compile Include="Helpers\TestSiteElementCollection.cs" />
     <Compile Include="Helpers\IntegrationTestDatabase.cs" />
@@ -96,7 +96,7 @@
     <Compile Include="UnitTests\PageTypeBuilder\FilterByTypeSpec.cs" />
     <Compile Include="UnitTests\PageTypeBuilder\PageTypeBuilderQueryTranslations.cs" />
     <Compile Include="UnitTests\PageTypeBuilder\PageTypeBuilderRepositorySpec.cs" />
-    <Compile Include="UnitTests\QueryTranslation\NegationTransformerSpec.cs" />
+    <Compile Include="UnitTests\QueryTranslation\NegationFlattenerSpec.cs" />
     <Compile Include="Helpers\EPiTester.cs" />
     <Compile Include="Fakes\NullCache.cs" />
     <Compile Include="Fakes\NullContext.cs" />
@@ -110,7 +110,7 @@
     <Compile Include="Model\PerformanceTestPage.cs" />
     <Compile Include="UnitTests\QueryTranslation\PageDataIndexerPropertyReferenceExtractorSpec.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Helpers\QueryTestHelper.cs" />
+    <Compile Include="Helpers\QueryableExtensions.cs" />
     <Compile Include="UnitTests\PageDataRepositorySpec.cs" />
     <Compile Include="UnitTests\QueryTranslation\PageDataMemberPropertyReferenceExtractorSpec.cs" />
     <Compile Include="UnitTests\PageTypeBuilder\PageTypeBuilderPropertyReferenceExtractorSpec.cs" />

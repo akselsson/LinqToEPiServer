@@ -2,7 +2,7 @@ using System.Linq;
 
 namespace LinqToEPiServer.Tests.Helpers
 {
-    public static class QueryTestHelper
+    public static class QueryableExtensions
     {
         public static void Execute(this IQueryable queryable)
         {

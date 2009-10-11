@@ -18,7 +18,7 @@ namespace LinqToEPiServer.Implementation.Visitors.Rewriters
         
         protected override Expression VisitMethodCall(MethodCallExpression m)
         {
-            if (m.Method != QueryableWhere)
+            if (!m.Method.HasSameGenericMethodDefinitionAs(QueryableWhere))
                 return NotModified(m);
             
             return RewriteWhere(m);
@@ -31,7 +31,7 @@ namespace LinqToEPiServer.Implementation.Visitors.Rewriters
             if (innerWhere == null)
                 return NotModified(outerWhere);
 
-            if (innerWhere.Method != QueryableWhere)
+            if (!innerWhere.Method.HasSameGenericMethodDefinitionAs(QueryableWhere))
                 return NotModified(outerWhere);
 
             Expression combined = Combine(outerWhere, innerWhere);
