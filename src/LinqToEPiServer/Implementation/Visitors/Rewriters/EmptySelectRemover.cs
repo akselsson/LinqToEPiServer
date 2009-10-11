@@ -13,11 +13,16 @@ namespace LinqToEPiServer.Implementation.Visitors.Rewriters
 
         protected override Expression VisitMethodCall(MethodCallExpression m)
         {
-            if (m.Method.HasSameGenericMethodDefinitionAs(Select))
+            if (IsSelect(m))
             {
                 return TryRewriteSelect(m);
             }
             return base.VisitMethodCall(m);
+        }
+
+        private static bool IsSelect(MethodCallExpression m)
+        {
+            return m.Method.HasSameGenericMethodDefinitionAs(Select);
         }
 
         private Expression TryRewriteSelect(MethodCallExpression expression)
