@@ -8,7 +8,7 @@ namespace LinqToEPiServer.Implementation.Helpers
     {
         public static EquatableCriteria[] EquatableWithFormatting(this IEnumerable<PropertyCriteria> criteria)
         {
-            return criteria.Select(c =>EquatableWithFormatting((PropertyCriteria) c)).ToArray();
+            return criteria.Select(c => EquatableWithFormatting((PropertyCriteria) c)).ToArray();
         }
 
         public static EquatableCriteria EquatableWithFormatting(this PropertyCriteria criteria)

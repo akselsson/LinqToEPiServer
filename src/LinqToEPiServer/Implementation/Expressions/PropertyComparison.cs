@@ -32,14 +32,14 @@ namespace LinqToEPiServer.Implementation.Expressions
         public PropertyCriteria GetCriteria()
         {
             return new PropertyCriteria
-            {
-                Condition = CompareCondition,
-                IsNull = ComparisonValueIsNull,
-                Name = PropertyName,
-                Required = true,
-                Type = GetPropertyDataType(),
-                Value = ComparisonValueString
-            };
+                       {
+                           Condition = CompareCondition,
+                           IsNull = ComparisonValueIsNull,
+                           Name = PropertyName,
+                           Required = true,
+                           Type = GetPropertyDataType(),
+                           Value = ComparisonValueString
+                       };
         }
 
         private string PropertyName
@@ -73,8 +73,5 @@ namespace LinqToEPiServer.Implementation.Expressions
             throw new NotSupportedException(String.Format("Unable to map {0} of type {1} to PropertyDataType",
                                                           ComparisonValue, ComparisonValue.GetType()));
         }
-
-
-        
     }
 }

@@ -8,19 +8,21 @@ namespace LinqToEPiServer.Implementation.Visitors.Rewriters
 {
     public class WhereCombiner : ExpressionRewriterBase
     {
-        private static readonly MethodInfo QueryableWhere = MethodInfoHelper.MethodOf<IQueryable<PageData>>(pd => pd.Where(x => true));
+        private static readonly MethodInfo QueryableWhere =
+            MethodInfoHelper.MethodOf<IQueryable<PageData>>(pd => pd.Where(x => true));
+
         private readonly QuoteStripper _quoteStripper = new QuoteStripper();
 
         private Expression NotModified(MethodCallExpression m)
         {
             return base.VisitMethodCall(m);
         }
-        
+
         protected override Expression VisitMethodCall(MethodCallExpression m)
         {
             if (!m.Method.HasSameGenericMethodDefinitionAs(QueryableWhere))
                 return NotModified(m);
-            
+
             return RewriteWhere(m);
         }
 
@@ -68,7 +70,8 @@ namespace LinqToEPiServer.Implementation.Visitors.Rewriters
             predicateExpression = StripQuotes(predicateExpression);
             var lambda = predicateExpression as LambdaExpression;
             if (lambda == null)
-                throw new InvalidOperationException(string.Format("Expected Lambda was {0}, {1}", predicateExpression.NodeType, predicateExpression));
+                throw new InvalidOperationException(string.Format("Expected Lambda was {0}, {1}",
+                                                                  predicateExpression.NodeType, predicateExpression));
             return lambda;
         }
 

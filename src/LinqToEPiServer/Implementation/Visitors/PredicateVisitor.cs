@@ -17,7 +17,7 @@ namespace LinqToEPiServer.Implementation.Visitors
         public PredicateVisitor(IEnumerable<IPropertyReferenceExtractor> extractors)
         {
             if (extractors == null) throw new ArgumentNullException("extractors");
-            _extractors =  extractors.ToList();
+            _extractors = extractors.ToList();
         }
 
         protected PropertyCriteriaCollection Criteria
@@ -25,7 +25,9 @@ namespace LinqToEPiServer.Implementation.Visitors
             get { return _criteria; }
         }
 
-        public static PropertyCriteriaCollection ConvertToCriteriaCollection(Expression expression, IList<IPropertyReferenceExtractor> extractors)
+        public static PropertyCriteriaCollection ConvertToCriteriaCollection(Expression expression,
+                                                                             IList<IPropertyReferenceExtractor>
+                                                                                 extractors)
         {
             var visitor = new PredicateVisitor(extractors);
             return visitor.ConvertToCriteriaCollection(expression);
@@ -37,7 +39,8 @@ namespace LinqToEPiServer.Implementation.Visitors
             return Criteria;
         }
 
-        private IEnumerable<PropertyCriteriaCollection> ConvertAllToCriteriaCollections(IEnumerable<Expression> expressions)
+        private IEnumerable<PropertyCriteriaCollection> ConvertAllToCriteriaCollections(
+            IEnumerable<Expression> expressions)
         {
             return expressions.Select(e => new PredicateVisitor(_extractors).ConvertToCriteriaCollection(e)).ToList();
         }
@@ -134,7 +137,7 @@ namespace LinqToEPiServer.Implementation.Visitors
         {
             if (u.NodeType != ExpressionType.Not)
                 throw new InvalidOperationException(string.Format("Expression must be Not, was {0}", u));
-            PropertyCriteriaCollection innerCriteria = ConvertToCriteriaCollection(u.Operand,_extractors);
+            PropertyCriteriaCollection innerCriteria = ConvertToCriteriaCollection(u.Operand, _extractors);
             if (innerCriteria.Count > 1)
                 throw new NotSupportedException(string.Format("Can not negate more than one criteria at once, was {0}",
                                                               u));

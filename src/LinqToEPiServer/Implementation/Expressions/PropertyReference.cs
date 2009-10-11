@@ -12,7 +12,7 @@ namespace LinqToEPiServer.Implementation.Expressions
             PropertyName = name;
             MapTypeToPropertyDataType(type);
         }
-       
+
         public PropertyReference(string name, PropertyDataType propertyDataType)
         {
             if (name == null) throw new ArgumentNullException("name");
@@ -30,7 +30,7 @@ namespace LinqToEPiServer.Implementation.Expressions
 
         private void MapTypeToPropertyDataType(Type type)
         {
-            if (type == typeof(object))
+            if (type == typeof (object))
             {
                 Type = null;
                 return;
@@ -46,6 +46,5 @@ namespace LinqToEPiServer.Implementation.Expressions
                 throw new NotSupportedException(string.Format("Can not map type {0} to PropertyDataType", type));
             }
         }
-
     }
 }

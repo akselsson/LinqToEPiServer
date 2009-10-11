@@ -23,10 +23,9 @@ namespace LinqToEPiServer.Implementation.Expressions
                       {typeof (PageReference), PropertyDataType.PageReference},
                   };
 
-        public static bool TryMap(Type type,out PropertyDataType propertyDataType)
+        public static bool TryMap(Type type, out PropertyDataType propertyDataType)
         {
             return TypeMap.TryGetValue(type, out propertyDataType);
         }
-        
     }
 }

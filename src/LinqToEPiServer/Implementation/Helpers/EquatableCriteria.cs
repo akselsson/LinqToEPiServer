@@ -30,7 +30,12 @@ namespace LinqToEPiServer.Implementation.Helpers
         public override bool Equals(object value)
         {
             var type = value as EquatableCriteria;
-            return (type != null) && EqualityComparer<CompareCondition>.Default.Equals(type.Condition, Condition) && EqualityComparer<bool>.Default.Equals(type.IsNull, IsNull) && EqualityComparer<string>.Default.Equals(type.Name, Name) && EqualityComparer<bool>.Default.Equals(type.Required, Required) && EqualityComparer<PropertyDataType>.Default.Equals(type.Type, Type) && EqualityComparer<string>.Default.Equals(type.Value, Value);
+            return (type != null) && EqualityComparer<CompareCondition>.Default.Equals(type.Condition, Condition) &&
+                   EqualityComparer<bool>.Default.Equals(type.IsNull, IsNull) &&
+                   EqualityComparer<string>.Default.Equals(type.Name, Name) &&
+                   EqualityComparer<bool>.Default.Equals(type.Required, Required) &&
+                   EqualityComparer<PropertyDataType>.Default.Equals(type.Type, Type) &&
+                   EqualityComparer<string>.Default.Equals(type.Value, Value);
         }
 
         public override int GetHashCode()

@@ -45,6 +45,5 @@ namespace LinqToEPiServer.Implementation.Visitors.PropertyReferenceExtractors
                 return m;
             }
         }
-
     }
 }

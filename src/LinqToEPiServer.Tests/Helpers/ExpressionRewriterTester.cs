@@ -2,7 +2,6 @@ using System;
 using System.Linq;
 using System.Linq.Expressions;
 using EPiServer.Core;
-using IQToolkit;
 using LinqToEPiServer.Implementation.Visitors;
 using NUnit.Framework;
 

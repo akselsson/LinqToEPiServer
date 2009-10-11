@@ -52,7 +52,7 @@ namespace LinqToEPiServer.Implementation
             }
         }
 
-      
+
         public override object Execute(Expression expression)
         {
             PropertyCriteriaCollection criteria = GetCriteria(expression);
@@ -114,6 +114,5 @@ namespace LinqToEPiServer.Implementation
         {
             _transformers.Add(transformer);
         }
-
     }
 }

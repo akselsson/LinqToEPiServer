@@ -39,7 +39,9 @@ namespace LinqToEPiServer.Implementation.Visitors
             if (!IsWhere(method))
             {
                 throw new NotSupportedException(
-                    string.Format("Method {0} is not supported. Try enumerating the result set with AsEnumerable first. Expression: {1}", method, m)
+                    string.Format(
+                        "Method {0} is not supported. Try enumerating the result set with AsEnumerable first. Expression: {1}",
+                        method, m)
                     );
             }
 
