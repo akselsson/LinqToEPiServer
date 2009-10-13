@@ -128,7 +128,7 @@ namespace PageTypeBuilder.Synchronization
         {
             get
             {
-                Type[] nativeProperties = new Type[9];
+                var nativeProperties = new Type[9];
                 nativeProperties[0] = typeof(PropertyBoolean);
                 nativeProperties[1] = typeof(PropertyNumber);
                 nativeProperties[2] = typeof(PropertyFloatNumber);

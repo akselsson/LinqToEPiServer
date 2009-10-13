@@ -42,6 +42,7 @@
     <Reference Include="EPiServer, Version=5.2.375.226, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\EPiServer\EPiServer.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="EPiServer.BaseLibrary, Version=5.2.375.226, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -91,6 +92,7 @@
     <Compile Include="Helpers\TestEPiServerSection.cs" />
     <Compile Include="Helpers\TestSiteElementCollection.cs" />
     <Compile Include="Helpers\IntegrationTestDatabase.cs" />
+    <Compile Include="Helpers\Plugins.cs" />
     <Compile Include="Model\QueryPage.cs" />
     <Compile Include="UnitTests\FindPagesWithCriteriaQueryProviderSpec.cs" />
     <Compile Include="UnitTests\PageTypeBuilder\FilterByTypeSpec.cs" />

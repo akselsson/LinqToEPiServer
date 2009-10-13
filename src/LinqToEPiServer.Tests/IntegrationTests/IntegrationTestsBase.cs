@@ -2,8 +2,10 @@ using System;
 using System.Security.Principal;
 using System.Threading;
 using System.Transactions;
+using EPiServer.PlugIn;
 using LinqToEPiServer.Tests.Helpers;
 using NUnit.Framework;
+using PageTypeBuilder;
 
 namespace LinqToEPiServer.Tests.IntegrationTests
 {
@@ -12,14 +14,15 @@ namespace LinqToEPiServer.Tests.IntegrationTests
     {
         private TransactionScope _transaction;
         private IPrincipal _originalPrincipal;
-        private static bool DatabaseIsRestored;
+        private static bool _databaseIsRestored;
+
         [TestFixtureSetUp]
         public void init_database()
         {
-            if(DatabaseIsRestored)
+            if(_databaseIsRestored)
                 return;
             IntegrationTestDatabase.Restore();
-            DatabaseIsRestored = true;
+            _databaseIsRestored = true;
         }
 
         protected override void setup_epi(EPiTester context)
@@ -32,6 +35,9 @@ namespace LinqToEPiServer.Tests.IntegrationTests
             _transaction = new TransactionScope(TransactionScopeOption.RequiresNew, TimeSpan.FromMinutes(20));
             _originalPrincipal = Thread.CurrentPrincipal;
             Thread.CurrentPrincipal = new GenericPrincipal(new GenericIdentity("admin"), new[] { "administrators" });
+            Plugins.LocateFromReferencedAssembly();
+            PageDefinitionTypePlugInAttribute.Start();
+            Initializer.Start();
             base.before_each_test();
         }
 

@@ -25,7 +25,6 @@ namespace LinqToEPiServer.Tests.IntegrationTests
         [Test]
         public void it_is_possible_to_add_a_page()
         {
-            Initializer.Start();
             var page = DataFactory.Instance.GetDefaultPageData(PageReference.RootPage,
                                                                PageType.List().First().ID);
             page.PageName = "test";
@@ -36,7 +35,6 @@ namespace LinqToEPiServer.Tests.IntegrationTests
         [Test]
         public void it_is_possible_to_add_a_page2()
         {
-            Initializer.Start();
             var page = DataFactory.Instance.GetDefaultPageData(PageReference.RootPage,
                                                                PageType.List().First().ID);
             page.PageName = "test";

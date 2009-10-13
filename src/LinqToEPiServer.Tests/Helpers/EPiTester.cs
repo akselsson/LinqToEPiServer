@@ -66,6 +66,8 @@ namespace LinqToEPiServer.Tests.Helpers
 
             DataFactoryCache.Initialize(DataFactory.Instance);
             CacheManager.Clear();
+
+            LanguageManager.Instance = new LanguageManager(".");
         }
 
         public void Shutdown()
