@@ -1,8 +1,8 @@
 using EPiServer.Configuration;
 
-namespace LinqToEPiServer.Tests.Helpers
+namespace LinqToEPiServer.Tests.Fakes
 {
-    class TestSiteElementCollection : SiteElementCollection
+    class MutableSiteElementCollection : SiteElementCollection
     {
         public void Add(SiteElement e)
         {

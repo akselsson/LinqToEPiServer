@@ -89,8 +89,8 @@
     <Compile Include="Helpers\IPageDataFactory.cs" />
     <Compile Include="Helpers\PageDataFactory.cs" />
     <Compile Include="Helpers\ExpressionRewriterTester.cs" />
-    <Compile Include="Helpers\TestEPiServerSection.cs" />
-    <Compile Include="Helpers\TestSiteElementCollection.cs" />
+    <Compile Include="Fakes\MutableEPiServerSection.cs" />
+    <Compile Include="Fakes\MutableSiteElementCollection.cs" />
     <Compile Include="Helpers\IntegrationTestDatabase.cs" />
     <Compile Include="Helpers\Plugins.cs" />
     <Compile Include="Model\QueryPage.cs" />
@@ -101,10 +101,9 @@
     <Compile Include="UnitTests\QueryTranslation\NegationFlattenerSpec.cs" />
     <Compile Include="Helpers\EPiTester.cs" />
     <Compile Include="Fakes\NullCache.cs" />
-    <Compile Include="Fakes\NullContext.cs" />
     <Compile Include="Fakes\InMemoryCache.cs" />
     <Compile Include="Helpers\ConsoleLoggingQueryExecutor.cs" />
-    <Compile Include="Helpers\RuntimeCache.cs" />
+    <Compile Include="Fakes\RuntimeCache.cs" />
     <Compile Include="Helpers\AssertionExtensions.cs" />
     <Compile Include="IntegrationTests\QueryIntegrationTests.cs" />
     <Compile Include="IntegrationTests\SmokeTests.cs" />

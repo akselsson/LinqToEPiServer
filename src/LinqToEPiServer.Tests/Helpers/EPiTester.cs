@@ -24,7 +24,7 @@ namespace LinqToEPiServer.Tests.Helpers
         public EPiTester()
         {
             Cache = new InMemoryCache();
-            var section = new TestEPiServerSection();
+            var section = new MutableEPiServerSection();
             section.AddSite(new SiteElement {SiteId = "test"});
             _epiServerSection = section;
         }
@@ -55,19 +55,19 @@ namespace LinqToEPiServer.Tests.Helpers
             Settings.InitializeAllSettings();
             Settings.Instance = EPiServerSection.Instance.Sites[0].SiteSettings;
 
-            Context.Current = new NullContext();
+            LanguageManager.Instance = new LanguageManager(".");
+
+            ClassFactory.Instance = new DefaultBaseLibraryFactory("test");
+            ClassFactory.Instance.RegisterClass(typeof(IRuntimeCache), typeof(RuntimeCache));
+
             ContentLanguage.PreferredCulture = CultureInfo.CurrentCulture;
             DataAccessBase.DatabaseFactory =
                 new SqlDatabaseFactory(new ConnectionStringSettings("EPiServerDB", _connectionString,
                                                                     "System.Data.SqlClient"));
-
-            ClassFactory.Instance = new DefaultBaseLibraryFactory("test");
-            ClassFactory.Instance.RegisterClass(typeof (IRuntimeCache), typeof (RuntimeCache));
-
+            
             DataFactoryCache.Initialize(DataFactory.Instance);
             CacheManager.Clear();
 
-            LanguageManager.Instance = new LanguageManager(".");
         }
 
         public void Shutdown()
