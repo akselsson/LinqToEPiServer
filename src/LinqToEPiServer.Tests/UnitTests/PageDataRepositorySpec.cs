@@ -6,7 +6,7 @@ using Rhino.Mocks;
 
 namespace LinqToEPiServer.Tests.UnitTests
 {
-    public class PageDataRepositorySpec : EPiTestBase
+    public class PageDataRepositorySpec : EPiSpecBase
     {
         private PageDataRepository system_under_test;
         private IQueryExecutor executor;

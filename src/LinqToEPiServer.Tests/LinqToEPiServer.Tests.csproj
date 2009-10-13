@@ -85,7 +85,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EPiTestBase.cs" />
+    <Compile Include="EPiSpecBase.cs" />
     <Compile Include="Helpers\IPageDataFactory.cs" />
     <Compile Include="Helpers\PageDataFactory.cs" />
     <Compile Include="Helpers\ExpressionRewriterTester.cs" />
@@ -94,6 +94,7 @@
     <Compile Include="Helpers\IntegrationTestDatabase.cs" />
     <Compile Include="Helpers\Plugins.cs" />
     <Compile Include="Model\QueryPage.cs" />
+    <Compile Include="SpecBase.cs" />
     <Compile Include="UnitTests\FindPagesWithCriteriaQueryProviderSpec.cs" />
     <Compile Include="UnitTests\PageTypeBuilder\FilterByTypeSpec.cs" />
     <Compile Include="UnitTests\PageTypeBuilder\PageTypeBuilderQueryTranslations.cs" />

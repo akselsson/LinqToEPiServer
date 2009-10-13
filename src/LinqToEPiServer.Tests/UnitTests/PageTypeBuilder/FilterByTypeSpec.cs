@@ -5,7 +5,7 @@ using NUnit.Framework;
 
 namespace LinqToEPiServer.Tests.UnitTests.PageTypeBuilder
 {
-    public class FilterByTypeSpec :EPiTestBase
+    public class FilterByTypeSpec :EPiSpecBase
     {
         private FilterByType<string> system_under_test;
         protected override void establish_context()

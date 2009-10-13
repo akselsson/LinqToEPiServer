@@ -10,7 +10,7 @@ using Rhino.Mocks;
 
 namespace LinqToEPiServer.Tests.UnitTests
 {
-    public class FindPagesWithCriteriaQueryProviderSpec : EPiTestBase
+    public class FindPagesWithCriteriaQueryProviderSpec : EPiSpecBase
     {
         private FindPagesWithCriteriaQueryProvider system_under_test;
 

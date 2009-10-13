@@ -6,7 +6,7 @@ using PageTypeBuilder;
 
 namespace LinqToEPiServer.Tests.UnitTests
 {
-    public class ReflectionHelperSpec : EPiTestBase
+    public class ReflectionHelperSpec : EPiSpecBase
     {
         [Test]
         public void should_get_indexer()

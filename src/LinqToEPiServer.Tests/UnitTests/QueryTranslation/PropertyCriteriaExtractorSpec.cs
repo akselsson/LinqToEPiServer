@@ -9,7 +9,7 @@ using NUnit.Framework;
 
 namespace LinqToEPiServer.Tests.UnitTests.QueryTranslation
 {
-    public class PropertyCriteriaExtractorSpec :EPiTestBase
+    public class PropertyCriteriaExtractorSpec :EPiSpecBase
     {
         private PropertyCriteriaExtractor system_under_test;
         protected override void establish_context()

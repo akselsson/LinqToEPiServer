@@ -6,7 +6,7 @@ using NUnit.Framework;
 
 namespace LinqToEPiServer.Tests.UnitTests.QueryTranslation
 {
-    public class WhereCombinerSpec : EPiTestBase
+    public class WhereCombinerSpec : EPiSpecBase
     {
         private IQueryable<PageData> _queryable;
 
