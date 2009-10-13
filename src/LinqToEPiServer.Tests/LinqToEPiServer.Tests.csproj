@@ -92,7 +92,7 @@
     <Compile Include="Helpers\TestEPiServerSection.cs" />
     <Compile Include="Helpers\TestSiteElementCollection.cs" />
     <Compile Include="Helpers\IntegrationTestDatabase.cs" />
-    <Compile Include="Helpers\Plugins.cs" />
+    <Compile Include="Helpers\PluginLocator.cs" />
     <Compile Include="Model\QueryPage.cs" />
     <Compile Include="UnitTests\FindPagesWithCriteriaQueryProviderSpec.cs" />
     <Compile Include="UnitTests\PageTypeBuilder\FilterByTypeSpec.cs" />
