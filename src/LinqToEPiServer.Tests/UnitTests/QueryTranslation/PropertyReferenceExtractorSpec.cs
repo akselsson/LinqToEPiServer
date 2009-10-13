@@ -6,7 +6,7 @@ using NUnit.Framework;
 
 namespace LinqToEPiServer.Tests.UnitTests.QueryTranslation
 {
-    public abstract class PropertyReferenceExtractorSpec<TProperty> : EPiSpecBase
+    public abstract class PropertyReferenceExtractorSpec<TProperty> : SpecRequiringEPiRuntime
     {
         private PropertyReference _result;
         private IPropertyReferenceExtractor _extractor;

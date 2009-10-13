@@ -8,7 +8,7 @@ using System.Linq;
 
 namespace LinqToEPiServer.Tests.UnitTests.QueryTranslation
 {
-    public class NegationFlattenerSpec : EPiSpecBase
+    public class NegationFlattenerSpec : SpecBase
     {
         [Test]
         public void simple_not()

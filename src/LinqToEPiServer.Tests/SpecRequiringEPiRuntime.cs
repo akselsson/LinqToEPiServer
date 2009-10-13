@@ -1,9 +1,8 @@
-using System;
 using LinqToEPiServer.Tests.Helpers;
 
 namespace LinqToEPiServer.Tests
 {
-    public class EPiSpecBase : SpecBase
+    public class SpecRequiringEPiRuntime : SpecBase
     {
         private EPiTester _epiContext;
 

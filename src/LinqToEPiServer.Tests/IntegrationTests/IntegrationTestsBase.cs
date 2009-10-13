@@ -10,7 +10,7 @@ using PageTypeBuilder;
 namespace LinqToEPiServer.Tests.IntegrationTests
 {
     [TestFixture]
-    public class IntegrationTestsBase : EPiSpecBase
+    public class IntegrationTestsBase : SpecRequiringEPiRuntime
     {
         private TransactionScope _transaction;
         private IPrincipal _originalPrincipal;

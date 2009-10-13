@@ -10,7 +10,7 @@ using LinqToEPiServer.Tests.Helpers;
 
 namespace LinqToEPiServer.Tests.UnitTests.PageTypeBuilder
 {
-    public class PageTypeBuilderQueryTranslations : EPiSpecBase
+    public class PageTypeBuilderQueryTranslations : SpecRequiringEPiRuntime
     {
         private IQueryable<QueryPage> system_under_test;
         protected override void establish_context()

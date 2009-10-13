@@ -3,7 +3,7 @@ using NUnit.Framework;
 namespace LinqToEPiServer.Tests
 {
     [TestFixture]
-    public abstract class SpecBase
+    public class SpecBase
     {
         [SetUp]
         public void init()

@@ -10,7 +10,7 @@ using NUnit.Framework;
 
 namespace LinqToEPiServer.Tests.UnitTests.PageTypeBuilder
 {
-    public class PageTypeBuilderRepositorySpec : EPiSpecBase
+    public class PageTypeBuilderRepositorySpec : SpecRequiringEPiRuntime
     {
         public PageTypeBuilderRepository system_under_test;
         public StubQueryExecutor query_executor;

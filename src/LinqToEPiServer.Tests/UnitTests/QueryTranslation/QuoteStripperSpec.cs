@@ -4,7 +4,7 @@ using NUnit.Framework;
 
 namespace LinqToEPiServer.Tests.UnitTests.QueryTranslation
 {
-    public class QuoteStripperSpec : EPiSpecBase
+    public class QuoteStripperSpec : SpecBase
     {
         [Test]
         public void should_remove_outer_quote()

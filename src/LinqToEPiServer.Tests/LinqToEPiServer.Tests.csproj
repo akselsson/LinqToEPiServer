@@ -85,7 +85,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EPiSpecBase.cs" />
+    <Compile Include="SpecRequiringEPiRuntime.cs" />
     <Compile Include="Helpers\IPageDataFactory.cs" />
     <Compile Include="Helpers\PageDataFactory.cs" />
     <Compile Include="Helpers\ExpressionRewriterTester.cs" />

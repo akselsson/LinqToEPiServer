@@ -5,14 +5,16 @@ using NUnit.Framework;
 
 namespace LinqToEPiServer.Tests.UnitTests.PageTypeBuilder
 {
-    public class FilterByTypeSpec :EPiSpecBase
+    public class FilterByTypeSpec : SpecBase
     {
         private FilterByType<string> system_under_test;
+
         protected override void establish_context()
         {
             base.establish_context();
             system_under_test = new FilterByType<string>();
         }
+
         [Test]
         public void when_input_is_null_should_throw()
         {
@@ -28,9 +30,9 @@ namespace LinqToEPiServer.Tests.UnitTests.PageTypeBuilder
         [Test]
         public void should_remove_objects_not_of_correct_type()
         {
-            var actual = (IEnumerable)system_under_test.Transform(new[]{"test",new object()});
-            var expected = new[]{"test"};
-            CollectionAssert.AreEquivalent(expected,actual);
+            var actual = (IEnumerable) system_under_test.Transform(new[] {"test", new object()});
+            var expected = new[] {"test"};
+            CollectionAssert.AreEquivalent(expected, actual);
         }
     }
 }

@@ -11,7 +11,7 @@ using NUnit.Framework;
 
 namespace LinqToEPiServer.Tests.UnitTests.QueryTranslation
 {
-    public class QueryTranslationSpec : EPiSpecBase
+    public class QueryTranslationSpec : SpecRequiringEPiRuntime
     {
         private StubQueryExecutor query_executor;
         protected PageDataQuery system_under_test;
