@@ -7,17 +7,27 @@ param(
 )
 
 function Load-EPiSnapins(){
-  $snapIn = Get-PSSnapin -Name EPiServer.Install.Common.1 -ErrorAction SilentlyContinue
-  if ($snapIn -eq $null)
-  {
-	  Add-PSSnapin EPiServer.Install.Common.1
-  }
+	$snapIn = Get-PSSnapin -Name EPiServer.Install.Common.1 -ErrorAction SilentlyContinue
+	if ($snapIn -eq $null)
+	{
+		Add-PSSnapin EPiServer.Install.Common.1
+	}
 
-  $snapIn = Get-PSSnapin -Name EPiServer.Install.CMS.$EpiVersion -ErrorAction SilentlyContinue
-  if ($snapIn -eq $null)
-  {
-	  Add-PSSnapin EPiServer.Install.CMS.$EpiVersion
-  }
+	$snapIn = Get-PSSnapin -Name EPiServer.Install.CMS.$EpiVersion -ErrorAction SilentlyContinue
+	if ($snapIn -eq $null)
+	{
+		Add-PSSnapin EPiServer.Install.CMS.$EpiVersion
+	}
+  
+}
+
+function Get-EPiProductInfo(){
+	$epiProductInfo = Get-EPiProductInformation -ProductName $Product -ProductVersion $EpiVersion
+	if (!$epiProductInfo.IsInstalled)
+	{
+		throw(New-Object ApplicationException($resources.GetString("ErrorInstallationDirectoryNotFound")))
+	}
+	return $epiProductInfo
 }
 
 function Ensure-EPiTransaction([scriptblock] $block){
@@ -48,11 +58,7 @@ function Remove-Database(){
 }
 
 function Install-Database(){
-	$epiProductInfo = Get-EPiProductInformation -ProductName $Product -ProductVersion $EpiVersion
-	if (!$epiProductInfo.IsInstalled)
-	{
-		throw(New-Object ApplicationException($resources.GetString("ErrorInstallationDirectoryNotFound")))
-	}
+	$epiProductInfo = Get-EPiProductInfo
 	$dbScriptFile = [System.IO.Path]::Combine($epiProductInfo.InstallationPath, "Database\MSSQL\EPiServerRelease*.sql") | dir
 	$dbScriptFilePath = $dbScriptFile.FullName
 
@@ -78,9 +84,20 @@ function Install-Database(){
 
 }
 
+function Copy-EPiBinaries(){
+	$epiProductInfo = Get-EPiProductInfo
+	$sourceDir = [System.IO.Path]::Combine($epiProductInfo.InstallationPath,"bin")
+	$targetDir = "lib/EPiServer"
+	Remove-EPiDirectory -DirectoryPath $targetDir
+	Copy-EPiFiles -SourceDirectoryPath $sourceDir -DestinationDirectoryPath $targetDir
+}
+
 Load-EPiSnapins
-Remove-Database
-Install-Database
+Ensure-EPiTransaction{
+	Remove-Database
+	Install-Database
+	Copy-EPiBinaries
+}
 
 
 
