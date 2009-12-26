@@ -114,7 +114,7 @@ task Update-Config{
 	$rootPath = Get-Item config | % {$_.FullName}
 	Get-Item .\config\**\*.config | `
 		% { @{"Source"=$_.FullName; "Dest"= $_.FullName.Replace($rootPath,"src")}} | `
-		% {copy $_["Source"] $_["Dest"]}
+		% { $source = [io.file]::ReadAllText($_["Source"]) -replace "(`")", '`$1' ; $ExecutionContext.InvokeCommand.ExpandString($source) | set-content $_["Dest"] }
 	
 }
 
