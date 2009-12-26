@@ -8,7 +8,6 @@ param(
 
 task default -depends Remove-Database, Install-Database, Copy-EPiBinaries, Build, Test
 
-
 function Ensure-EPiTransaction([scriptblock] $block){
 	$inTransaction = Get-EPiIsBulkInstalling
 	

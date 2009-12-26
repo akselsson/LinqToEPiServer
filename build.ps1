@@ -1,2 +1,2 @@
-import-module .\psake\psake.psm1
+import-module .\lib\psake\psake.psm1
 invoke-psake
