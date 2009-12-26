@@ -7,6 +7,7 @@ param(
 )
 
 function Load-EPiSnapins(){
+	write-host "Loading EPiServer snapins"
 	$snapIn = Get-PSSnapin -Name EPiServer.Install.Common.1 -ErrorAction SilentlyContinue
 	if ($snapIn -eq $null)
 	{
@@ -30,15 +31,24 @@ function Get-EPiProductInfo(){
 	return $epiProductInfo
 }
 
+function Get-EPiInstallationAbsolutePath($relativePath){
+	$epiProductInfo = Get-EPiProductInfo
+	return [System.IO.Path]::Combine($epiProductInfo.InstallationPath, $relativePath)
+}
+
 function Ensure-EPiTransaction([scriptblock] $block){
+	$inTransaction = Get-EPiIsBulkInstalling
+	
 	trap [Exception]{
-		write-error "Install failed"
-		write-error "$_.Exception"
-		Rollback-EPiBulkInstall
+		if($inTransaction -eq $false){
+			write-error "	Rolling back transaction"
+			Rollback-EPiBulkInstall
+		}
 	}
 	
 	if($inTransaction -eq $false)
 	{
+		write-host "	Starting transaction"
 		Begin-EPiBulkInstall
 	}
 	
@@ -46,20 +56,23 @@ function Ensure-EPiTransaction([scriptblock] $block){
 	
 	if($inTransaction -eq $false)
 	{
+		write-host "	Committing transaction"
 		Commit-EPiBulkInstall
 	}
 	
 }
 
 function Remove-Database(){
+	write-host "Removing test database"
 	Ensure-EPiTransaction {
 		Remove-EPiSqlSvrDb -SqlServerName $DatabaseServerName -DatabaseName $DatabaseName -IgnoreMissingDatabase
 	}
 }
 
 function Install-Database(){
+	write-host "Installing test-database"
 	$epiProductInfo = Get-EPiProductInfo
-	$dbScriptFile = [System.IO.Path]::Combine($epiProductInfo.InstallationPath, "Database\MSSQL\EPiServerRelease*.sql") | dir
+	$dbScriptFile = Get-EPiInstallationAbsolutePath "Database\MSSQL\EPiServerRelease*.sql" | dir
 	$dbScriptFilePath = $dbScriptFile.FullName
 
 	Ensure-EPiTransaction {
@@ -85,19 +98,21 @@ function Install-Database(){
 }
 
 function Copy-EPiBinaries(){
-	$epiProductInfo = Get-EPiProductInfo
-	$sourceDir = [System.IO.Path]::Combine($epiProductInfo.InstallationPath,"bin")
-	$targetDir = "lib/EPiServer"
-	Remove-EPiDirectory -DirectoryPath $targetDir
-	Copy-EPiFiles -SourceDirectoryPath $sourceDir -DestinationDirectoryPath $targetDir
+	write-host "Copying EPiServer binaries"
+	Ensure-EPiTransaction{
+		$epiProductInfo = Get-EPiProductInfo
+		$sourceDir = Get-EPiInstallationAbsolutePath "bin"
+		$targetDir = "lib/EPiServer"
+		Remove-EPiDirectory -DirectoryPath $targetDir
+		Copy-EPiFiles -SourceDirectoryPath $sourceDir -DestinationDirectoryPath $targetDir
+	}
 }
 
 Load-EPiSnapins
-Ensure-EPiTransaction{
-	Remove-Database
-	Install-Database
-	Copy-EPiBinaries
-}
+Remove-Database
+Install-Database
+Copy-EPiBinaries
+
 
 
 
