@@ -11,7 +11,9 @@ _ReSharper.*
 *.swp
 lib/EPiServer/*
 *~
+
 License.config
 mstest.exe
 mstest.exe.config
 TestResult.xml
+App.config
