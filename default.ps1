@@ -6,7 +6,8 @@ param(
     $Product = "CMS"
 )
 
-task default -depends Remove-Database, Install-Database, Copy-EPiBinaries, Build, Test
+task default -depends Remove-Database, devenv, Build, Test
+task devenv -depends Install-Database, Copy-EPiBinaries, Update-Config, Fake-License
 
 function Ensure-EPiTransaction([scriptblock] $block){
 	$inTransaction = Get-EPiIsBulkInstalling
@@ -118,7 +119,7 @@ task Update-Config{
 	
 }
 
-task Build -depends Fake-License{
+task Build -depends Fake-License, Update-Config{
 		msbuild src\linqtoepiserver.sln -property:Outdir=..\..\bin\
 }
 
