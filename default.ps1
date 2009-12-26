@@ -110,6 +110,14 @@ task Fake-License{
 	}
 }
 
+task Update-Config{
+	$rootPath = Get-Item config | % {$_.FullName}
+	Get-Item .\config\**\*.config | `
+		% { @{"Source"=$_.FullName; "Dest"= $_.FullName.Replace($rootPath,"src")}} | `
+		% {copy $_["Source"] $_["Dest"]}
+	
+}
+
 task Build -depends Fake-License{
 		msbuild src\linqtoepiserver.sln -property:Outdir=..\..\bin\
 }
