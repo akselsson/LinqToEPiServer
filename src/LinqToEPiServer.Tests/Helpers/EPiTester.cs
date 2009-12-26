@@ -32,7 +32,7 @@ namespace LinqToEPiServer.Tests.Helpers
         private readonly Configuration _configuration =
             ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
 
-        private string _connectionString = @"Data Source=.;Initial Catalog=dbR2ExampleSite;Integrated Security=true";
+        private string _connectionString = IntegrationTestDatabase.ConnectionString;
         private readonly EPiServerSection _epiServerSection;
 
         public string ConnectionString

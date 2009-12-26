@@ -111,7 +111,7 @@ task Fake-License{
 	}
 }
 
-task Build -depends Copy-EPiBinaries, Fake-License{
+task Build -depends Fake-License{
 		msbuild src\linqtoepiserver.sln -property:Outdir=..\..\bin\
 }
 

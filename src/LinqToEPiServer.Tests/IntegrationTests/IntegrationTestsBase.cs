@@ -18,28 +18,20 @@ namespace LinqToEPiServer.Tests.IntegrationTests
     {
         private TransactionScope _transaction;
         private IPrincipal _originalPrincipal;
-        private static bool _databaseIsRestored;
         private static bool _pageTypeBuilderInitialisedOnce = false;
-
-        [TestFixtureSetUp]
-        public void init_database()
-        {
-            if (_databaseIsRestored)
-                return;
-            _databaseIsRestored = true;
-        }
 
         protected override void setup_epi(EPiTester context)
         {
             context.ConnectionString = IntegrationTestDatabase.ConnectionString;
             base.setup_epi(context);
         }
+
         protected override void before_each_test()
         {
             base.before_each_test();
             _transaction = new TransactionScope(TransactionScopeOption.RequiresNew, TimeSpan.FromMinutes(20));
             _originalPrincipal = Thread.CurrentPrincipal;
-            Thread.CurrentPrincipal = new GenericPrincipal(new GenericIdentity("admin"), new[] { "administrators" });
+            Thread.CurrentPrincipal = new GenericPrincipal(new GenericIdentity("admin"), new[] {"administrators"});
             EnableCustomPropertyTypes();
             InitPageTypeBuilder();
         }
@@ -52,14 +44,16 @@ namespace LinqToEPiServer.Tests.IntegrationTests
 
         private void InitPageTypeBuilder()
         {
+            typeof (PageTypeResolver).GetProperty("Instance").SetValue(null, null, null);
             Initializer.Start();
             if (_pageTypeBuilderInitialisedOnce)
             {
                 var synchronizer = new PageTypeSynchronizer(new PageTypeDefinitionLocator(),
                                                             new PageTypeBuilderConfiguration());
                 // HACK: Requried because SynchronizePageTypes is internal.
-                typeof(PageTypeSynchronizer).InvokeMember("SynchronizePageTypes",
-                                                           BindingFlags.NonPublic | BindingFlags.InvokeMethod | BindingFlags.Instance,
+                typeof (PageTypeSynchronizer).InvokeMember("SynchronizePageTypes",
+                                                           BindingFlags.NonPublic | BindingFlags.InvokeMethod |
+                                                           BindingFlags.Instance,
                                                            null,
                                                            synchronizer,
                                                            new object[0]);
