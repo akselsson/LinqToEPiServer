@@ -104,7 +104,11 @@ task Copy-EPiBinaries -depends Load-EPiSnapins{
 	}
 }
 
-task Build -depends Copy-EPiBinaries{
+task Fake-License{
+	"" >> src\linqtoepiserver.tests\License.config
+}
+
+task Build -depends Copy-EPiBinaries, Fake-License{
 	msbuild src\linqtoepiserver.sln -property:Outdir=..\..\bin\
 }
 
