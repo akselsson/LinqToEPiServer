@@ -105,11 +105,14 @@ task Copy-EPiBinaries -depends Load-EPiSnapins{
 }
 
 task Fake-License{
-	"" >> src\linqtoepiserver.tests\License.config
+	$licenseExists = Test-Path src\LinqToEPiServer.Tests\License.config
+	if(!$licenseExists){
+		"" >> src\linqtoepiserver.tests\License.config
+	}
 }
 
 task Build -depends Copy-EPiBinaries, Fake-License{
-	msbuild src\linqtoepiserver.sln -property:Outdir=..\..\bin\
+		msbuild src\linqtoepiserver.sln -property:Outdir=..\..\bin\
 }
 
 task Fake-MSTest{
