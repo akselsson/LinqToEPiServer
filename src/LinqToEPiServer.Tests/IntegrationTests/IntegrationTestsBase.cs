@@ -1,4 +1,5 @@
 using System;
+using System.Reflection;
 using System.Security.Principal;
 using System.Threading;
 using System.Transactions;
@@ -6,6 +7,9 @@ using EPiServer.PlugIn;
 using LinqToEPiServer.Tests.Helpers;
 using NUnit.Framework;
 using PageTypeBuilder;
+using PageTypeBuilder.Configuration;
+using PageTypeBuilder.Discovery;
+using PageTypeBuilder.Synchronization;
 
 namespace LinqToEPiServer.Tests.IntegrationTests
 {
@@ -15,13 +19,13 @@ namespace LinqToEPiServer.Tests.IntegrationTests
         private TransactionScope _transaction;
         private IPrincipal _originalPrincipal;
         private static bool _databaseIsRestored;
+        private static bool _pageTypeBuilderInitialisedOnce = false;
 
         [TestFixtureSetUp]
         public void init_database()
         {
-            if(_databaseIsRestored)
+            if (_databaseIsRestored)
                 return;
-            IntegrationTestDatabase.Restore();
             _databaseIsRestored = true;
         }
 
@@ -36,9 +40,31 @@ namespace LinqToEPiServer.Tests.IntegrationTests
             _transaction = new TransactionScope(TransactionScopeOption.RequiresNew, TimeSpan.FromMinutes(20));
             _originalPrincipal = Thread.CurrentPrincipal;
             Thread.CurrentPrincipal = new GenericPrincipal(new GenericIdentity("admin"), new[] { "administrators" });
+            EnableCustomPropertyTypes();
+            InitPageTypeBuilder();
+        }
+
+        private void EnableCustomPropertyTypes()
+        {
             Plugins.LocateFromReferencedAssembly();
             PageDefinitionTypePlugInAttribute.Start();
+        }
+
+        private void InitPageTypeBuilder()
+        {
             Initializer.Start();
+            if (_pageTypeBuilderInitialisedOnce)
+            {
+                var synchronizer = new PageTypeSynchronizer(new PageTypeDefinitionLocator(),
+                                                            new PageTypeBuilderConfiguration());
+                // HACK: Requried because SynchronizePageTypes is internal.
+                typeof(PageTypeSynchronizer).InvokeMember("SynchronizePageTypes",
+                                                           BindingFlags.NonPublic | BindingFlags.InvokeMethod | BindingFlags.Instance,
+                                                           null,
+                                                           synchronizer,
+                                                           new object[0]);
+            }
+            _pageTypeBuilderInitialisedOnce = true;
         }
 
         protected override void after_each_test()

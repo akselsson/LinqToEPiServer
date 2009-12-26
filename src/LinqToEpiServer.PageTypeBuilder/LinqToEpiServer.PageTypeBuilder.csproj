@@ -43,6 +43,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\IQToolkit\IQToolkit.dll</HintPath>
     </Reference>
+    <Reference Include="PageTypeBuilder, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\PageTypeBuilder\PageTypeBuilder.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -67,10 +71,6 @@
     <ProjectReference Include="..\LinqToEPiServer\LinqToEPiServer.csproj">
       <Project>{37A69F7D-9A58-417C-8D8B-EDA4F344F0D5}</Project>
       <Name>LinqToEPiServer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PageTypeBuilder\PageTypeBuilder\PageTypeBuilder.csproj">
-      <Project>{E6723D8E-6D57-4388-B746-0E887E6B4B1C}</Project>
-      <Name>PageTypeBuilder %28PageTypeBuilder\PageTypeBuilder%29</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

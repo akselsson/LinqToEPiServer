@@ -12,3 +12,6 @@ _ReSharper.*
 lib/EPiServer/*
 *~
 License.config
+mstest.exe
+mstest.exe.config
+TestResult.xml
