@@ -1,13 +1,14 @@
-param(
-    $EPiVersion="5.2.375.236",
-    $DatabaseServerName='.\sqlexpress',
-    $DatabaseName='LinqToEPiServer_IntegrationTests',
-    $uiPath="/ui",
+properties {
+    $EPiVersion="5.2.375.236"
+    $DatabaseServer='.\sqlexpress'
+    $DatabaseName='LinqToEPiServer_IntegrationTests'
+    $uiPath="/ui"
     $Product = "CMS"
-)
+	$LicenseFile = "License.config"
+}
 
 task default -depends Remove-Database, devenv, Build, Test
-task devenv -depends Install-Database, Copy-EPiBinaries, Update-Config, Fake-License
+task devenv -depends Install-Database, Copy-EPiBinaries, Build-Config, Copy-License
 
 function Ensure-EPiTransaction([scriptblock] $block){
 	$inTransaction = Get-EPiIsBulkInstalling
@@ -47,6 +48,12 @@ function Get-EPiInstallationAbsolutePath($relativePath){
 	return [System.IO.Path]::Combine($epiProductInfo.InstallationPath, $relativePath)
 }
 
+function Generate-Config($source,$destination){
+	$sourceContent = [io.file]::ReadAllText($source) -replace "(`")", '`$1' ; 
+	$expanded_config = $ExecutionContext.InvokeCommand.ExpandString($sourceContent)
+	set-content -path $destination -value $expanded_config
+}
+
 task Load-EPiSnapins{
 	$snapIn = Get-PSSnapin -Name EPiServer.Install.Common.1 -ErrorAction SilentlyContinue
 	if ($snapIn -eq $null)
@@ -63,7 +70,7 @@ task Load-EPiSnapins{
 
 task Remove-Database -depends Load-EPiSnapins{
 	Ensure-EPiTransaction {
-		Remove-EPiSqlSvrDb -SqlServerName $DatabaseServerName -DatabaseName $DatabaseName -IgnoreMissingDatabase
+		Remove-EPiSqlSvrDb -SqlServerName $DatabaseServer -DatabaseName $DatabaseName -IgnoreMissingDatabase
 	}
 }
 
@@ -74,7 +81,7 @@ task Install-Database -depends Load-EPiSnapins{
 
 	Ensure-EPiTransaction {
 		New-EPiSqlSvrDB `
-		-SqlServerName $DatabaseServerName `
+		-SqlServerName $DatabaseServer `
 		-DatabaseName $DatabaseName `
 		-EPiScriptPath $dbScriptFilePath `
 		-EPiServerScript `
@@ -84,14 +91,13 @@ task Install-Database -depends Load-EPiSnapins{
 		if (![System.String]::IsNullOrEmpty($uiPath)) 
 		{
 			Set-EPiBuiltInPageTypePaths `
-				-SqlServerName $DatabaseServerName `
+				-SqlServerName $DatabaseServer `
 				-DatabaseName $DatabaseName `
 				-UiPath "~$uiPath" `
 				-AvoidDbTransaction
 		}
 	
 	}
-
 }
 
 task Copy-EPiBinaries -depends Load-EPiSnapins{
@@ -104,26 +110,29 @@ task Copy-EPiBinaries -depends Load-EPiSnapins{
 	}
 }
 
-task Fake-License{
-	$licenseExists = Test-Path src\LinqToEPiServer.Tests\License.config
+task Copy-License{
+	$licenseTarget = "src\linqtoepiserver.tests\License.config"
+	$licenseExists = Test-Path $LicenseFile
 	if(!$licenseExists){
-		"" >> src\linqtoepiserver.tests\License.config
+		"" >> $licenseTarget
+	}
+	else {
+		copy $LicenseFile $licenseTarget
 	}
 }
 
-task Update-Config{
-	$rootPath = Get-Item config | % {$_.FullName}
+task Build-Config{
+	$rootPath = Get-Item config
 	Get-Item .\config\**\*.config | `
-		% { @{"Source"=$_.FullName; "Dest"= $_.FullName.Replace($rootPath,"src")}} | `
-		% { $source = [io.file]::ReadAllText($_["Source"]) -replace "(`")", '`$1' ; $ExecutionContext.InvokeCommand.ExpandString($source) | set-content $_["Dest"] }
+		% { Generate-Config $_.FullName $_.FullName.Replace($rootPath.FullName,"src") }
 	
 }
 
-task Build -depends Fake-License, Update-Config{
+task Build -depends Copy-License, Build-Config{
 		msbuild src\linqtoepiserver.sln -property:Outdir=..\..\bin\
 }
 
-task Fake-MSTest{
+task Impersonate-MSTest{
 	copy lib\nunit\nunit-console.exe lib\nunit\mstest.exe
 	copy lib\nunit\nunit-console.exe.config lib\nunit\mstest.exe.config
 }
@@ -132,7 +141,7 @@ task Start-MSDTC {
 	net start "MSDTC"
 }
 
-task Test -depends Build, Fake-MSTest, Start-MSDTC {
+task Test -depends Build, Impersonate-MSTest, Start-MSDTC {
 	lib\nunit\mstest.exe bin\linqtoepiserver.tests.dll
 }
 
