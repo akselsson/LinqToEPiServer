@@ -89,6 +89,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\PageTypeBuilderHelper.cs" />
     <Compile Include="SpecRequiringEPiRuntime.cs" />
     <Compile Include="Helpers\IPageDataFactory.cs" />
     <Compile Include="Helpers\PageDataFactory.cs" />
@@ -96,7 +97,7 @@
     <Compile Include="Fakes\MutableEPiServerSection.cs" />
     <Compile Include="Fakes\MutableSiteElementCollection.cs" />
     <Compile Include="Helpers\IntegrationTestDatabase.cs" />
-    <Compile Include="Helpers\Plugins.cs" />
+    <Compile Include="Helpers\PluginHelper.cs" />
     <Compile Include="Model\QueryPage.cs" />
     <Compile Include="SpecBase.cs" />
     <Compile Include="UnitTests\FindPagesWithCriteriaQueryProviderSpec.cs" />

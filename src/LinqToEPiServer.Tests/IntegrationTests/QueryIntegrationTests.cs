@@ -34,7 +34,7 @@ namespace LinqToEPiServer.Tests.IntegrationTests
             var child = DataFactory.Instance.GetDefaultPageData(start.PageLink, pageType.ID);
             child.PageName = "child";
             child.URLSegment = "child";
-            _child = DataFactory.Instance.Save(child,SaveAction.Publish);
+            _child = DataFactory.Instance.Save(child, SaveAction.Publish);
 
             var child2 = DataFactory.Instance.GetDefaultPageData(start.PageLink, pageType.ID);
             child2.PageName = "child";
@@ -46,7 +46,7 @@ namespace LinqToEPiServer.Tests.IntegrationTests
         [Test]
         public void and_or_with_PageLink_PageName_PageStopPublish()
         {
-            IQueryable<PageData> query = _repository.FindDescendantsOf(_root).Where(pd=>(pd.PageLink==_start || pd.PageName == "child") && (DateTime?)pd["PageStopPublish"] == null);
+            IQueryable<PageData> query = _repository.FindDescendantsOf(_root).Where(pd => (pd.PageLink == _start || pd.PageName == "child") && (DateTime?)pd["PageStopPublish"] == null);
             query.should_return(_start, _child);
         }
 

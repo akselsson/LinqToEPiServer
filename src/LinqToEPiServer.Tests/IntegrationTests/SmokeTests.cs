@@ -4,8 +4,6 @@ using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAccess;
 using NUnit.Framework;
-using PageTypeBuilder;
-using System;
 
 namespace LinqToEPiServer.Tests.IntegrationTests
 {
@@ -23,11 +21,15 @@ namespace LinqToEPiServer.Tests.IntegrationTests
             Assert.AreEqual(1, DataFactory.Instance.GetDescendents(PageReference.RootPage).Count);
         }
 
+        private static int RandomPageTypeID
+        {
+            get { return PageType.List().First().ID; }
+        }
+
         [Test]
         public void it_is_possible_to_add_a_page()
         {
-            var page = DataFactory.Instance.GetDefaultPageData(PageReference.RootPage,
-                                                               PageType.List().First().ID);
+            var page = DataFactory.Instance.GetDefaultPageData(PageReference.RootPage,RandomPageTypeID);
             page.PageName = "test";
             DataFactory.Instance.Save(page, SaveAction.Publish);
             Assert.AreEqual("test", DataFactory.Instance.GetPage(page.PageLink).PageName);
@@ -36,8 +38,7 @@ namespace LinqToEPiServer.Tests.IntegrationTests
         [Test]
         public void it_is_possible_to_add_a_page2()
         {
-            var page = DataFactory.Instance.GetDefaultPageData(PageReference.RootPage,
-                                                               PageType.List().First().ID);
+            var page = DataFactory.Instance.GetDefaultPageData(PageReference.RootPage,RandomPageTypeID);
             page.PageName = "test";
             DataFactory.Instance.Save(page, SaveAction.Publish);
             Assert.AreEqual("test", DataFactory.Instance.GetPage(page.PageLink).PageName);
