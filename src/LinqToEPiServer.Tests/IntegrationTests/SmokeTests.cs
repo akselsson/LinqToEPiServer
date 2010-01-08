@@ -42,17 +42,5 @@ namespace LinqToEPiServer.Tests.IntegrationTests
             DataFactory.Instance.Save(page, SaveAction.Publish);
             Assert.AreEqual("test", DataFactory.Instance.GetPage(page.PageLink).PageName);
         }
-
-        [Test]
-        public void console_out()
-        {
-            Console.WriteLine("testar");
-        }
-
-        [Test]
-        public void failing()
-        {
-            Assert.Fail("meddelande");
-        }
     }
 }
