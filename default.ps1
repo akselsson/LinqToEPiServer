@@ -1,6 +1,6 @@
 properties {
     $EPiVersion="5.2.375.236"
-    $DatabaseServer='.\sqlexpress'
+    $DatabaseServer='.'
     $DatabaseName='LinqToEPiServer_IntegrationTests'
     $uiPath="/ui"
     $Product = "CMS"
