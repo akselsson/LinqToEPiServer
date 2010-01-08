@@ -5,6 +5,7 @@ using EPiServer.DataAbstraction;
 using EPiServer.DataAccess;
 using NUnit.Framework;
 using PageTypeBuilder;
+using System;
 
 namespace LinqToEPiServer.Tests.IntegrationTests
 {
@@ -40,6 +41,18 @@ namespace LinqToEPiServer.Tests.IntegrationTests
             page.PageName = "test";
             DataFactory.Instance.Save(page, SaveAction.Publish);
             Assert.AreEqual("test", DataFactory.Instance.GetPage(page.PageLink).PageName);
+        }
+
+        [Test]
+        public void console_out()
+        {
+            Console.WriteLine("testar");
+        }
+
+        [Test]
+        public void failing()
+        {
+            Assert.Fail("meddelande");
         }
     }
 }
