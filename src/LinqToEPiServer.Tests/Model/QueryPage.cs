@@ -13,10 +13,16 @@ namespace LinqToEPiServer.Tests.Model
         [PageTypeProperty]
         public virtual string TextWithImplicitPropertyType { get; set; }
 
+        [PageTypeProperty]
+        public virtual DateTime? Date { get; set; }
+
         [PageTypeProperty(Type = typeof(PropertyPageReference))]
         public virtual PageReference LinkedPage { get; set; }
 
         [PageTypeProperty(Type = typeof(PropertyPageType))]
         public virtual int LinkedPageType { get; set; }
+
+        [PageTypeProperty]
+        public virtual int? Number { get; set; }
     }
 }

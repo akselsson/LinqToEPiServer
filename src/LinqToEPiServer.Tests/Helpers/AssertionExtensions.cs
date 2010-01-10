@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using EPiServer;
 using EPiServer.Core;
@@ -49,6 +50,11 @@ namespace LinqToEPiServer.Tests.Helpers
             queryProvider.Executor = executor;
             query.Execute();
             return executor.Last;
+        }
+
+        public static void should_be_equivalent_to(this IEnumerable<PageData> expected, IEnumerable<PageData> actual)
+        {
+            CollectionAssert.AreEquivalent(expected.Select(p => p.PageLink).ToArray(), actual.Select(p => p.PageLink).ToArray());
         }
     }
 }

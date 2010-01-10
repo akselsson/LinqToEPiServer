@@ -82,6 +82,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Helpers\PageTypeBuilderHelper.cs" />
+    <Compile Include="IntegrationTests\RecursiveGetChildrenEquivalence.cs" />
+    <Compile Include="Helpers\RecursiveGetChildrenRepository.cs" />
     <Compile Include="SpecRequiringEPiRuntime.cs" />
     <Compile Include="Helpers\IPageDataFactory.cs" />
     <Compile Include="Helpers\PageDataFactory.cs" />
