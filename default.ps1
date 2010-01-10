@@ -14,26 +14,20 @@ task devenv -depends Install-Database, Copy-EPiBinaries, Build-Config, Copy-Lice
 
 function Ensure-EPiTransaction([scriptblock] $block){
 	$inTransaction = Get-EPiIsBulkInstalling
-	
-	trap [Exception]{
-		write-error $_.Exception
-		if($inTransaction -eq $false){
-			write-error "Rolling back transaction"
-			Rollback-EPiBulkInstall
-		}
-	}
-	
-	if($inTransaction -eq $false)
-	{		
-		Begin-EPiBulkInstall
-	}
-	
-	invoke-command -scriptblock $block
-	
-	if($inTransaction -eq $false)
-	{
+    if($inTransaction){
+        invoke-command -scriptblock $block
+        return
+    }
+    
+    try{
+    	Begin-EPiBulkInstall
+        invoke-command -scriptblock $block
 		Commit-EPiBulkInstall
-	}
+    }
+    catch{
+		Rollback-EPiBulkInstall
+        throw
+    }
 }
 
 function Get-EPiProductInfo(){
@@ -57,17 +51,11 @@ function Generate-Config($source,$destination){
 }
 
 task Load-EPiSnapins{
-	$snapIn = Get-PSSnapin -Name EPiServer.Install.Common.1 -ErrorAction SilentlyContinue
-	if ($snapIn -eq $null)
-	{
-		Add-PSSnapin EPiServer.Install.Common.1
-	}
+	Remove-PSSnapin EPiServer.Install.Common.1 -ErrorAction SilentlyContinue
+	Add-PSSnapin EPiServer.Install.Common.1
 
-	$snapIn = Get-PSSnapin -Name EPiServer.Install.CMS.$EpiVersion -ErrorAction SilentlyContinue
-	if ($snapIn -eq $null)
-	{
-		Add-PSSnapin EPiServer.Install.CMS.$EpiVersion
-	}	
+	Remove-PSSnapin -Name EPiServer.Install.CMS.$EpiVersion -ErrorAction SilentlyContinue
+	Add-PSSnapin EPiServer.Install.CMS.$EpiVersion
 }
 
 task Clean-Database -depends Load-EPiSnapins{
@@ -77,7 +65,6 @@ task Clean-Database -depends Load-EPiSnapins{
 }
 
 task Install-Database -depends Load-EPiSnapins{
-	$epiProductInfo = Get-EPiProductInfo
 	$dbScriptFile = Get-EPiInstallationAbsolutePath "Database\MSSQL\EPiServerRelease*.sql" | dir
 	$dbScriptFilePath = $dbScriptFile.FullName
 
@@ -133,7 +120,7 @@ task Build-Config{
 }
 
 task Build-Solution{
-		msbuild src\linqtoepiserver.sln -property:Outdir=..\..\bin\
+	msbuild src\linqtoepiserver.sln -property:Outdir=..\..\bin\
 }
 
 task Clean-Solution {
