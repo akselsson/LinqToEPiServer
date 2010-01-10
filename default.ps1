@@ -7,7 +7,7 @@ properties {
 	$LicenseFile = "License.config"
 }
 
-task default -depends Remove-Database, devenv, Build, Test
+task default -depends Remove-Database, Clean, devenv, Build, Test
 task devenv -depends Install-Database, Copy-EPiBinaries, Build-Config, Copy-License
 
 function Ensure-EPiTransaction([scriptblock] $block){
@@ -145,3 +145,6 @@ task Test -depends Build, Impersonate-MSTest, Start-MSDTC {
 	lib\nunit\mstest.exe bin\linqtoepiserver.tests.dll
 }
 
+task Clean {
+    msbuild src\linqtoepiserver.sln -t:Clean
+}
