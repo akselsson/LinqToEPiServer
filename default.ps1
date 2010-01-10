@@ -7,7 +7,9 @@ properties {
 	$LicenseFile = "License.config"
 }
 
-task default -depends Remove-Database, Clean, devenv, Build, Test
+task default -depends clean, devenv, build, Test
+task clean -depends Clean-Database, Clean-Solution, Clean-EPiBinaries
+task build -depends  Build-Config, Copy-License, Build-Solution
 task devenv -depends Install-Database, Copy-EPiBinaries, Build-Config, Copy-License
 
 function Ensure-EPiTransaction([scriptblock] $block){
@@ -68,7 +70,7 @@ task Load-EPiSnapins{
 	}	
 }
 
-task Remove-Database -depends Load-EPiSnapins{
+task Clean-Database -depends Load-EPiSnapins{
 	Ensure-EPiTransaction {
 		Remove-EPiSqlSvrDb -SqlServerName $DatabaseServer -DatabaseName $DatabaseName -IgnoreMissingDatabase
 	}
@@ -100,14 +102,16 @@ task Install-Database -depends Load-EPiSnapins{
 	}
 }
 
-task Copy-EPiBinaries -depends Load-EPiSnapins{
+task Copy-EPiBinaries -depends Clean-EPiBinaries, Load-EPiSnapins{
 	Ensure-EPiTransaction{
-		$epiProductInfo = Get-EPiProductInfo
 		$sourceDir = Get-EPiInstallationAbsolutePath "bin"
 		$targetDir = "lib/EPiServer"
-		Remove-EPiDirectory -DirectoryPath $targetDir
 		Copy-EPiFiles -SourceDirectoryPath $sourceDir -DestinationDirectoryPath $targetDir
 	}
+}
+
+task Clean-EPiBinaries {
+    rm -recurse lib\EPiServer -ErrorAction SilentlyContinue 
 }
 
 task Copy-License{
@@ -128,8 +132,12 @@ task Build-Config{
 	
 }
 
-task Build -depends Copy-License, Build-Config{
+task Build-Solution{
 		msbuild src\linqtoepiserver.sln -property:Outdir=..\..\bin\
+}
+
+task Clean-Solution {
+    msbuild src\linqtoepiserver.sln -t:Clean
 }
 
 task Impersonate-MSTest{
@@ -141,10 +149,7 @@ task Start-MSDTC {
 	net start "MSDTC"
 }
 
-task Test -depends Build, Impersonate-MSTest, Start-MSDTC {
+task Test -depends build, Impersonate-MSTest, Start-MSDTC {
 	lib\nunit\mstest.exe bin\linqtoepiserver.tests.dll
 }
 
-task Clean {
-    msbuild src\linqtoepiserver.sln -t:Clean
-}
